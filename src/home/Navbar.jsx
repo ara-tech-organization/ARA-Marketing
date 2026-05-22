@@ -39,7 +39,7 @@ export default function Navbar() {
                 <Rocket size={16} />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">Ara</span>
-              <span className="text-xl font-bold text-blue-400 tracking-tight -ml-1.5">Discover</span>
+              <span className="text-xl font-bold text-blue-400 tracking-tight -ml-1.5">Marketing</span>
             </a>
 
             {/* Desktop links */}
