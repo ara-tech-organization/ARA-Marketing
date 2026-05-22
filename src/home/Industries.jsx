@@ -87,13 +87,13 @@ export default function Industries() {
                 key={ind.label}
                 className={`industry-pill bg-white border border-blue-200 rounded-full
                   flex items-center gap-3 cursor-pointer transition-all duration-300
-                  hover:bg-blue-600 hover:border-blue-600 group
-                  shadow-sm hover:shadow-lg hover:shadow-blue-600/25
+                  hover:bg-blue-100 hover:border-blue-400 group
+                  shadow-sm hover:shadow-lg hover:shadow-blue-200/60
                   delay-${(i % 4) + 1}
                   ${sizeClasses[ind.size]}`}
               >
-                <Icon size={sz} className="text-blue-600 flex-shrink-0 group-hover:text-white transition-colors duration-300" />
-                <span className="font-semibold text-slate-700 group-hover:text-white transition-colors duration-300">{ind.label}</span>
+                <Icon size={sz} className="text-blue-600 flex-shrink-0 group-hover:text-slate-900 transition-colors duration-300" />
+                <span className="font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">{ind.label}</span>
               </div>
             )
           })}

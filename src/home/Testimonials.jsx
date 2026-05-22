@@ -33,9 +33,10 @@ function TestiCard({ t, featured }) {
       className={`rounded-2xl p-8 flex flex-col cursor-default transition-all duration-300
         hover:-translate-y-1 hover:shadow-xl
         ${featured
-          ? 'bg-blue-600 border border-blue-500 hover:shadow-blue-600/30'
+          ? 'border hover:shadow-blue-900/40'
           : 'bg-white border border-blue-100 hover:border-blue-300 hover:shadow-blue-100/80'
         }`}
+        style={featured ? { background: '#0a1628', borderColor: 'rgba(37,99,235,0.3)' } : {}}
     >
       {/* Stars */}
       <div className="flex gap-1 mb-4">
@@ -87,21 +88,21 @@ export default function Testimonials() {
     >
       {/* Blurred orb — top left */}
       <div className="absolute -top-24 -left-24 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(59,130,246,0.18) 0%, transparent 70%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%)' }} />
       {/* Blurred orb — bottom right */}
       <div className="absolute -bottom-20 -right-20 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.13) 0%, transparent 70%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%)' }} />
 
       {/* Rotated diamond — top right */}
       <div className="absolute -top-12 -right-12 w-44 h-44 pointer-events-none"
-        style={{ border: '1.5px solid rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
+        style={{ border: '1.5px solid rgba(37,99,235,0.2)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
       <div className="absolute top-4 right-4 w-20 h-20 pointer-events-none"
-        style={{ border: '1px dashed rgba(37,99,235,0.12)', transform: 'rotate(45deg)', borderRadius: '8px' }} />
+        style={{ border: '1px dashed rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '8px' }} />
       {/* Rotated diamond — bottom left */}
       <div className="absolute -bottom-12 -left-12 w-44 h-44 pointer-events-none"
-        style={{ border: '1.5px solid rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
+        style={{ border: '1.5px solid rgba(37,99,235,0.2)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
       <div className="absolute bottom-4 left-4 w-20 h-20 pointer-events-none"
-        style={{ border: '1px dashed rgba(37,99,235,0.12)', transform: 'rotate(45deg)', borderRadius: '8px' }} />
+        style={{ border: '1px dashed rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '8px' }} />
 
       <div className="max-w-[1200px] mx-auto px-7 relative z-10">
 

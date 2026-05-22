@@ -136,8 +136,8 @@ export default function Portfolio() {
                 key={ind}
                 className="industry-pill inline-flex items-center px-5 py-2.5 bg-slate-50
                   border border-slate-200 rounded-full text-[13px] font-semibold text-slate-700
-                  transition-all duration-300 hover:bg-blue-600 hover:text-white
-                  hover:border-blue-600 cursor-default"
+                  transition-all duration-300 hover:bg-blue-100 hover:text-slate-900
+                  hover:border-blue-400 cursor-default"
               >
                 {ind}
               </span>
