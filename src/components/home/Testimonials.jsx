@@ -1,5 +1,5 @@
-import { Star, Quote, CheckCheck } from 'lucide-react'
-import useTilt from '../hooks/useTilt'
+﻿import { Star, Quote, CheckCheck } from 'lucide-react'
+import useTilt from '../../hooks/useTilt'
 
 const testimonials = [
   {
@@ -10,7 +10,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    text: 'Their branding and advertising strategies helped our business grow faster online. Professional support, transparent reporting — one of the best digital marketing companies in Thanjavur.',
+    text: 'Their branding and advertising strategies helped our business grow faster online. Professional support, transparent reporting â€” one of the best digital marketing companies in Thanjavur.',
     name: 'Pooja Menon',
     role: 'Marketing Director',
     initials: 'PM',
@@ -86,19 +86,19 @@ export default function Testimonials() {
     <section id="testimonials" className="relative py-24 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
     >
-      {/* Blurred orb — top left */}
+      {/* Blurred orb â€” top left */}
       <div className="absolute -top-24 -left-24 w-[380px] h-[380px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%)' }} />
-      {/* Blurred orb — bottom right */}
+      {/* Blurred orb â€” bottom right */}
       <div className="absolute -bottom-20 -right-20 w-[320px] h-[320px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%)' }} />
 
-      {/* Rotated diamond — top right */}
+      {/* Rotated diamond â€” top right */}
       <div className="absolute -top-12 -right-12 w-44 h-44 pointer-events-none"
         style={{ border: '1.5px solid rgba(37,99,235,0.2)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
       <div className="absolute top-4 right-4 w-20 h-20 pointer-events-none"
         style={{ border: '1px dashed rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '8px' }} />
-      {/* Rotated diamond — bottom left */}
+      {/* Rotated diamond â€” bottom left */}
       <div className="absolute -bottom-12 -left-12 w-44 h-44 pointer-events-none"
         style={{ border: '1.5px solid rgba(37,99,235,0.2)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
       <div className="absolute bottom-4 left-4 w-20 h-20 pointer-events-none"
@@ -116,7 +116,7 @@ export default function Testimonials() {
             What Our Clients Say<br />About Our Services
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            Real results, real stories — from businesses we have partnered with
+            Real results, real stories â€” from businesses we have partnered with
             to achieve outstanding digital growth and brand visibility.
           </p>
         </div>
@@ -136,3 +136,4 @@ export default function Testimonials() {
     </section>
   )
 }
+

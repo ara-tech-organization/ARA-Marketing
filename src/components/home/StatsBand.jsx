@@ -1,4 +1,4 @@
-import useCounter from '../hooks/useCounter'
+﻿import useCounter from '../../hooks/useCounter'
 
 function StatItem({ target, suffix, label }) {
   const [count, ref] = useCounter(target)
@@ -27,3 +27,4 @@ export default function StatsBand() {
     </section>
   )
 }
+

@@ -1,0 +1,238 @@
+import {
+  Share2, Target, Palette, Megaphone, MessageSquare, Eye, Users, BarChart2,
+  CheckCircle, Briefcase, Image, TrendingUp, Layers, ArrowRight
+} from 'lucide-react'
+
+const overviewItems = [
+  { icon: Target,        label: 'Social Media Strategy & Planning' },
+  { icon: Palette,       label: 'Creative Post Design & Content Creation' },
+  { icon: Megaphone,     label: 'Social Media Advertising Campaigns' },
+  { icon: MessageSquare, label: 'Audience Engagement & Community Management' },
+  { icon: Eye,           label: 'Brand Awareness Campaigns' },
+  { icon: Users,         label: 'Lead Generation Campaigns' },
+  { icon: Share2,        label: 'Influencer Collaboration Strategies' },
+  { icon: BarChart2,     label: 'Performance Tracking & Optimization' },
+]
+
+const platforms = [
+  {
+    icon: Users,
+    color: '#2563eb',
+    bgLight: '#eff6ff',
+    h3: 'Facebook Marketing',
+    imgSrc: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=300&fit=crop&auto=format&q=80',
+    imgAlt: 'Facebook Marketing for Business in Thanjavur - Facebook Advertising Companies in Thanjavur',
+    desc: 'Facebook is still one of the most effective platforms for marketing businesses and customer targeting. As one of the trusted facebook advertising companies in Thanjavur, our team helps brands generate leads, increase page engagement, and improve conversions. We are among the best Facebook social media marketing companies in Thanjavur delivering result-driven campaigns for every business size.',
+    keywords: ['facebook advertising companies in thanjavur', 'facebook marketing for business in thanjavur'],
+    services: [
+      'Facebook Ads Campaign Management',
+      'Audience Targeting & Retargeting',
+      'Creative Ad Design',
+      'Lead Generation Ads',
+      'Engagement Campaigns',
+      'Facebook Page Optimization',
+    ],
+    tag: 'Most Popular',
+  },
+  {
+    icon: Briefcase,
+    color: '#0284c7',
+    bgLight: '#f0f9ff',
+    h3: 'LinkedIn Marketing',
+    imgSrc: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=600&h=300&fit=crop&auto=format&q=80',
+    imgAlt: 'LinkedIn Social Media Marketing in Thanjavur - LinkedIn Engagement Strategy Thanjavur',
+    desc: 'LinkedIn marketing helps businesses reach out to professionals, decision makers, and industry leaders. Our linkedin social media marketing in Thanjavur focuses on creating professional brand authority and increasing B2B engagement. We also offer a proven linkedin engagement strategy in Thanjavur to help organisations enhance audience interaction and professional visibility.',
+    keywords: ['linkedin social media marketing in thanjavur', 'linkedin engagement strategy in thanjavur'],
+    services: [
+      'LinkedIn Profile Optimization',
+      'LinkedIn Ad Campaigns',
+      'B2B Lead Generation',
+      'Corporate Branding',
+      'Content Marketing for LinkedIn',
+      'Employee Branding Strategies',
+    ],
+    tag: 'B2B Focused',
+  },
+  {
+    icon: Image,
+    color: '#dc2626',
+    bgLight: '#fef2f2',
+    h3: 'Pinterest Marketing',
+    imgSrc: 'https://images.unsplash.com/photo-1636044594149-6e2f289c3868?w=600&h=300&fit=crop&auto=format&q=80',
+    imgAlt: 'Pinterest Digital Marketing in Thanjavur - Pinterest Social Media Marketing Services',
+    desc: 'Pinterest is a giant in visual discovery and product promotion. Our pinterest digital marketing in Thanjavur helps draw highly engaged audiences with creative visual campaigns. We also offer strategic solutions for advertising on Pinterest in Thanjavur and deliver full pinterest social media marketing in Thanjavur for better brand reach and conversions.',
+    keywords: ['pinterest digital marketing in thanjavur', 'advertising on pinterest in thanjavur', 'pinterest social media marketing in thanjavur'],
+    services: [
+      'Pinterest Business Account Setup',
+      'Pinterest SEO Optimization',
+      'Pin Design & Content Strategy',
+      'Traffic Generation Campaigns',
+      'Product Promotion Campaigns',
+      'Pinterest Ads Management',
+    ],
+    tag: 'Visual Discovery',
+  },
+  {
+    icon: TrendingUp,
+    color: '#059669',
+    bgLight: '#f0fdf4',
+    h3: 'Social Media Optimization (SMO)',
+    imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format&q=80',
+    imgAlt: 'Social Media Optimization SMO Services in Thanjavur - Best SMO Companies in Thanjavur',
+    desc: 'Our SMO services help improve social media visibility, audience engagement, and profile performance. We are one of the best social media optimization SMO companies in Thanjavur offering full social media optimization services in Thanjavur and the best social media optimization SMO services available. Our expertise in SMO for Instagram in Thanjavur helps brands boost follower engagement. As a trusted SMO services provider in Thanjavur, we deliver consistent profile growth.',
+    keywords: ['best social media optimization SMO companies in thanjavur', 'smo for instagram in thanjavur', 'smo services provider in thanjavur'],
+    services: [
+      'Social Profile Optimization',
+      'Hashtag & Content Strategy',
+      'Engagement Optimization',
+      'Audience Growth Strategies',
+      'Instagram Optimization',
+      'Social Branding Enhancements',
+    ],
+    tag: 'Profile Growth',
+  },
+]
+
+/* Lazy image with graceful fallback */
+function PlatformImage({ src, alt, color, bgLight }) {
+  return (
+    <div
+      className="w-full rounded-xl overflow-hidden mb-5"
+      style={{ height: 160, background: bgLight }}
+    >
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        width="600"
+        height="160"
+        className="w-full h-full object-cover"
+        onError={e => {
+          e.currentTarget.style.display = 'none'
+          e.currentTarget.parentElement.style.display = 'flex'
+          e.currentTarget.parentElement.style.alignItems = 'center'
+          e.currentTarget.parentElement.style.justifyContent = 'center'
+        }}
+      />
+    </div>
+  )
+}
+
+export default function SMMServices() {
+  return (
+    <section id="smm-services" className="py-24 bg-white">
+      <div className="max-w-[1200px] mx-auto px-7">
+
+        {/* Header */}
+        <div className="text-center mb-14 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
+            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
+            <Layers size={11} /> Our Services
+          </span>
+          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+            Platform-Focused{' '}
+            <span className="text-gradient-blue">Social Media Marketing</span> Services
+          </h2>
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            As one of the best social media service providers in Thanjavur, we offer full social media
+            management, social media ads marketing and advertising in Thanjavur, and social media
+            advertising services in Thanjavur across all major platforms to increase engagement,
+            brand recognition, and customer interaction.
+          </p>
+        </div>
+
+        {/* Overview services grid */}
+        <div className="reveal grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 mb-16
+          bg-slate-50 border border-blue-100 rounded-2xl p-7">
+          {overviewItems.map(({ icon: Icon, label }) => (
+            <div key={label} className="flex items-center gap-2.5 group">
+              <div className="w-8 h-8 bg-blue-50 rounded-xl flex items-center justify-center
+                text-blue-500 flex-shrink-0 transition-all duration-300
+                group-hover:bg-blue-600 group-hover:text-white">
+                <Icon size={15} />
+              </div>
+              <span className="text-[12px] font-medium text-slate-600 leading-snug
+                group-hover:text-slate-800 transition-colors duration-200">
+                {label}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Platform cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {platforms.map(({ icon: Icon, color, bgLight, h3, imgSrc, imgAlt, desc, keywords: kws, services, tag }, i) => (
+            <div
+              key={h3}
+              className={`reveal delay-${(i % 4) + 1} svc-card-top relative bg-white border border-slate-100
+                rounded-3xl p-8 group transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}
+            >
+              {/* Tag */}
+              {tag && (
+                <span
+                  className="absolute top-6 right-6 px-2.5 py-0.5 text-[10px] font-bold
+                    uppercase tracking-wider rounded-full text-white"
+                  style={{ background: color }}
+                >
+                  {tag}
+                </span>
+              )}
+
+              {/* Icon + Title */}
+              <div className="flex items-center gap-4 mb-4">
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0
+                    transition-all duration-300 group-hover:scale-105"
+                  style={{ background: bgLight }}
+                >
+                  <Icon size={26} style={{ color }} />
+                </div>
+                <div>
+                  <h3 className="text-[17px] font-bold text-slate-900 leading-tight">{h3}</h3>
+                  <div
+                    className="h-1 w-8 rounded-full mt-1.5 transition-all duration-300 group-hover:w-16"
+                    style={{ background: color }}
+                  />
+                </div>
+              </div>
+
+              {/* Platform image with keyword alt text */}
+              <PlatformImage src={imgSrc} alt={imgAlt} color={color} bgLight={bgLight} />
+
+              {/* Description with natural keyword integration */}
+              <p className="text-[13px] text-slate-500 leading-[1.8] mb-5">{desc}</p>
+
+              {/* Hidden keyword spans for SEO (screen-reader accessible) */}
+              <div className="sr-only">
+                {kws.map(k => <span key={k}>{k}</span>)}
+              </div>
+
+              {/* Service list */}
+              <ul className="space-y-2.5">
+                {services.map(s => (
+                  <li key={s} className="flex items-center gap-2.5 text-[13px] text-slate-600">
+                    <CheckCircle size={14} style={{ color, flexShrink: 0 }} />
+                    <span>{s}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Bottom link */}
+              <div className="mt-6 pt-5 border-t border-slate-100">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold
+                    hover:gap-2.5 transition-all duration-300"
+                  style={{ color }}
+                >
+                  Get {h3.split(' ')[0]} Marketing Services <ArrowRight size={14} />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}

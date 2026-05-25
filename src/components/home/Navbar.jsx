@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Rocket, ArrowRight, Menu, X } from 'lucide-react'
 
 const links = [
-  ['/', 'Home'],
-  ['#services', 'SMM'],
-  ['#services', 'Web Design'],
-  ['#services', 'Graphic Design'],
-  ['#services', 'Video Editing'],
+  { href: '/', label: 'Home', isRoute: true },
+  { href: '/services/social-media-marketing', label: 'SMM', isRoute: true },
+  { href: '#services', label: 'Web Design', isRoute: false },
+  { href: '#services', label: 'Graphic Design', isRoute: false },
+  { href: '#services', label: 'Video Editing', isRoute: false },
 ]
 
 export default function Navbar() {
@@ -44,15 +45,26 @@ export default function Navbar() {
 
             {/* Desktop links */}
             <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
-              {links.map(([href, label]) => (
-                <a
-                  key={href}
-                  href={href}
-                  className="relative px-3.5 py-2 text-sm font-medium text-white/70
-                    hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
-                >
-                  {label}
-                </a>
+              {links.map(({ href, label, isRoute }) => (
+                isRoute ? (
+                  <Link
+                    key={label}
+                    to={href}
+                    className="relative px-3.5 py-2 text-sm font-medium text-white/70
+                      hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
+                  >
+                    {label}
+                  </Link>
+                ) : (
+                  <a
+                    key={label}
+                    href={href}
+                    className="relative px-3.5 py-2 text-sm font-medium text-white/70
+                      hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
+                  >
+                    {label}
+                  </a>
+                )
               ))}
             </div>
 
@@ -90,17 +102,30 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className={`mobile-menu-panel-dark ${open ? 'open' : ''}`}>
-        {links.map(([href, label]) => (
-          <a
-            key={href}
-            href={href}
-            onClick={() => setOpen(false)}
-            className="block py-3.5 text-sm font-medium text-white/70
-              border-b border-white/10 hover:text-white hover:pl-2
-              transition-all duration-300"
-          >
-            {label}
-          </a>
+        {links.map(({ href, label, isRoute }) => (
+          isRoute ? (
+            <Link
+              key={label}
+              to={href}
+              onClick={() => setOpen(false)}
+              className="block py-3.5 text-sm font-medium text-white/70
+                border-b border-white/10 hover:text-white hover:pl-2
+                transition-all duration-300"
+            >
+              {label}
+            </Link>
+          ) : (
+            <a
+              key={label}
+              href={href}
+              onClick={() => setOpen(false)}
+              className="block py-3.5 text-sm font-medium text-white/70
+                border-b border-white/10 hover:text-white hover:pl-2
+                transition-all duration-300"
+            >
+              {label}
+            </a>
+          )
         ))}
         <a
           href="#faq"

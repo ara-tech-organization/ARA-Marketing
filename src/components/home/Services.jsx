@@ -12,7 +12,7 @@ const services = [
     icon: Share2,
     title: 'Social Media Marketing (SMM)',
     desc: 'High-performing campaigns on Facebook, Instagram, LinkedIn and Pinterest to boost brand awareness and customer engagement. One of the best digital marketing companies in Thanjavur creating campaigns that increase reach.',
-    link: '/services/smm',
+    link: '/services/social-media-marketing',
   },
   {
     icon: BarChart2,

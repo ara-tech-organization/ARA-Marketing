@@ -1,7 +1,7 @@
 import { Rocket, Globe2, Camera, Link, MessageCircle, Play, MapPin, Phone, Mail, ArrowRight } from 'lucide-react'
 
-const services = ['SEO Services', 'Social Media Marketing', 'Google Ads / SEM', 'Branding & Advertising', 'Video Editing', 'Email Marketing', 'Lead Generation']
-const company  = ['About Us', 'Our Team', 'Case Studies', 'Portfolio', 'Blog', 'Careers', 'Contact Us']
+const services = ['SMM', 'Web Design', 'Graphic Design', 'Video Editing']
+const company  = ['Home', 'About Us', 'Portfolio', 'Contact Us']
 const socials  = [[Globe2, 'Website'], [Camera, 'Instagram'], [Link, 'LinkedIn'], [MessageCircle, 'WhatsApp'], [Play, 'YouTube']]
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
                 <Rocket size={15} />
               </div>
               <span className="text-lg font-bold text-white">
-                Ara<span className="text-blue-400">Discover</span>
+                Ara<span className="text-blue-400">Marketing</span>
               </span>
             </div>
             <p className="text-sm leading-[1.85] text-white/40 mb-7">
