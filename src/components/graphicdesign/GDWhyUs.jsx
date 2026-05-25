@@ -35,36 +35,18 @@ const reasons = [
 
 export default function GDWhyUs() {
   return (
-    <section
-      className="relative overflow-hidden py-24"
-      style={{ background: 'linear-gradient(180deg, #f0f7ff 0%, #e8f3ff 100%)' }}
-    >
-      {/* Dot grid */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)',
-          backgroundSize: '28px 28px',
-          opacity: 0.25,
-        }}
-      />
+    <section className="relative overflow-hidden py-24 bg-white">
 
-      {/* Corner rings */}
-      <div className="absolute -top-10 -left-10 w-52 h-52 rounded-full pointer-events-none"
-        style={{ border: '2px solid rgba(147,197,253,0.3)' }} />
-      <div className="absolute -top-4 -left-4 w-36 h-36 rounded-full pointer-events-none"
-        style={{ border: '1.5px solid rgba(147,197,253,0.2)' }} />
-      <div className="absolute -bottom-10 -right-10 w-52 h-52 rounded-full pointer-events-none"
-        style={{ border: '2px solid rgba(96,165,250,0.25)' }} />
 
-      {/* Wave top */}
-      <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
-        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,0 L0,0 Z" fill="rgba(191,219,254,0.4)" />
-      </svg>
-      {/* Wave bottom */}
-      <svg className="absolute bottom-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
-        <path d="M0,30 C200,0 400,60 600,30 C800,0 1000,60 1200,30 L1200,60 L0,60 Z" fill="rgba(191,219,254,0.4)" />
-      </svg>
+      {/* Top border line */}
+      <div className="absolute top-0 left-0 right-0 h-px pointer-events-none"
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(147,197,253,0.5), transparent)' }} />
+      {/* Bottom border line */}
+      <div className="absolute bottom-0 left-0 right-0 h-px pointer-events-none"
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(147,197,253,0.5), transparent)' }} />
+      {/* Subtle center glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse, rgba(219,234,254,0.35) 0%, transparent 70%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-7">
 
@@ -84,18 +66,6 @@ export default function GDWhyUs() {
             As one of the best advertisement designs in Thanjavur, we ensure that every design
             reflects your brand identity and business values.
           </p>
-        </div>
-
-        {/* Banner image */}
-        <div className="reveal rounded-3xl overflow-hidden mb-14" style={{ height: 260 }}>
-          <img
-            src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1200&h=260&fit=crop&auto=format&q=80"
-            alt="Best Graphic Design Agencies in Thanjavur - Why Choose Ara Discover Marketing"
-            loading="lazy"
-            width="1200"
-            height="260"
-            className="w-full h-full object-cover"
-          />
         </div>
 
         {/* Cards */}

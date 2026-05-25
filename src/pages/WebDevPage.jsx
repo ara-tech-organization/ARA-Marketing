@@ -13,7 +13,7 @@ import WebDevTech         from '../components/webdev/WebDevTech'
 import WebDevIndustries   from '../components/webdev/WebDevIndustries'
 import WebDevAssurance    from '../components/webdev/WebDevAssurance'
 import WebDevTestimonials from '../components/webdev/WebDevTestimonials'
-import WebDevCTA          from '../components/webdev/WebDevCTA'
+
 import WebDevFAQ          from '../components/webdev/WebDevFAQ'
 
 const webDevSchema = {
@@ -76,7 +76,7 @@ export default function WebDevPage() {
         <WebDevIndustries />
         <WebDevAssurance />
         <WebDevTestimonials />
-        <WebDevCTA />
+
         <WebDevFAQ />
       </main>
       <Footer />

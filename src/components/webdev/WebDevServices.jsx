@@ -5,14 +5,14 @@ import {
 } from 'lucide-react'
 
 const serviceItems = [
-  { icon: Globe2,          label: 'Business Website Development',            color: '#2563eb', bg: '#eff6ff' },
-  { icon: ShoppingCart,    label: 'E-commerce Website Development',          color: '#059669', bg: '#f0fdf4' },
-  { icon: Building2,       label: 'Corporate Website Design',                color: '#7c3aed', bg: '#f5f3ff' },
-  { icon: LayoutDashboard, label: 'Landing Page Design',                     color: '#0284c7', bg: '#f0f9ff' },
-  { icon: Palette,         label: 'UI/UX Design',                            color: '#ea580c', bg: '#fff7ed' },
-  { icon: RefreshCw,       label: 'Website Redesign Services',               color: '#0891b2', bg: '#ecfeff' },
-  { icon: Code2,           label: 'CMS Development (WordPress, Custom CMS)', color: '#9333ea', bg: '#faf5ff' },
-  { icon: Wrench,          label: 'Maintenance & Support Services',          color: '#64748b', bg: '#f8fafc' },
+  { icon: Globe2,          label: 'Business Website Development',            color: '#2563eb', bg: '#dbeafe' },
+  { icon: ShoppingCart,    label: 'E-commerce Website Development',          color: '#059669', bg: '#d1fae5' },
+  { icon: Building2,       label: 'Corporate Website Design',                color: '#7c3aed', bg: '#ede9fe' },
+  { icon: LayoutDashboard, label: 'Landing Page Design',                     color: '#d97706', bg: '#fef3c7' },
+  { icon: Palette,         label: 'UI/UX Design',                            color: '#db2777', bg: '#fce7f3' },
+  { icon: RefreshCw,       label: 'Website Redesign Services',               color: '#0891b2', bg: '#cffafe' },
+  { icon: Code2,           label: 'CMS Development (WordPress, Custom CMS)', color: '#2563eb', bg: '#dbeafe' },
+  { icon: Wrench,          label: 'Maintenance & Support Services',          color: '#059669', bg: '#d1fae5' },
 ]
 
 const customFeatures = [

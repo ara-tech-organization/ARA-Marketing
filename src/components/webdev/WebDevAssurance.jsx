@@ -2,11 +2,11 @@ import { Smartphone, Search, Zap, Shield, Headphones, Eye, Phone, ArrowRight, La
 
 const assurances = [
   { icon: Smartphone, title: 'Fully Responsive Website Design',  color: '#2563eb', num: '01' },
-  { icon: Search,     title: 'SEO-Optimized Website Structure',   color: '#0284c7', num: '02' },
-  { icon: Zap,        title: 'Fast Loading & High Performance',   color: '#059669', num: '03' },
-  { icon: Shield,     title: 'Secure & Scalable Development',     color: '#7c3aed', num: '04' },
-  { icon: Headphones, title: 'Dedicated Support & Maintenance',   color: '#ea580c', num: '05' },
-  { icon: Eye,        title: 'Transparent Development Process',   color: '#0891b2', num: '06' },
+  { icon: Search,     title: 'SEO-Optimized Website Structure',  color: '#7c3aed', num: '02' },
+  { icon: Zap,        title: 'Fast Loading & High Performance',  color: '#059669', num: '03' },
+  { icon: Shield,     title: 'Secure & Scalable Development',    color: '#d97706', num: '04' },
+  { icon: Headphones, title: 'Dedicated Support & Maintenance',  color: '#db2777', num: '05' },
+  { icon: Eye,        title: 'Transparent Development Process',  color: '#0891b2', num: '06' },
 ]
 
 export default function WebDevAssurance() {

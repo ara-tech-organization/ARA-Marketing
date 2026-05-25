@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Rocket, ArrowRight, Menu, X } from 'lucide-react'
 
 const links = [
@@ -13,6 +13,9 @@ const links = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { pathname } = useLocation()
+
+  const isActive = (href) => pathname === href || (href !== '/' && pathname.startsWith(href))
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 20)
@@ -45,15 +48,25 @@ export default function Navbar() {
 
             {/* Desktop links */}
             <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
-              {links.map(({ href, label, isRoute }) => (
-                isRoute ? (
+              {links.map(({ href, label, isRoute }) => {
+                const active = isRoute && isActive(href)
+                return isRoute ? (
                   <Link
                     key={label}
                     to={href}
-                    className="relative px-3.5 py-2 text-sm font-medium text-white/70
-                      hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300"
+                    className={`relative px-3.5 py-2 text-sm font-semibold rounded-lg transition-all duration-300
+                      ${active
+                        ? 'text-blue-400 bg-blue-600/15 border border-blue-500/30'
+                        : 'text-white/70 hover:text-white hover:bg-white/5'
+                      }`}
                   >
                     {label}
+                    {active && (
+                      <span
+                        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-0.5 rounded-full"
+                        style={{ background: 'linear-gradient(90deg, #60a5fa, #2563eb)' }}
+                      />
+                    )}
                   </Link>
                 ) : (
                   <a
@@ -65,7 +78,7 @@ export default function Navbar() {
                     {label}
                   </a>
                 )
-              ))}
+              })}
             </div>
 
             {/* Actions */}
@@ -102,17 +115,21 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className={`mobile-menu-panel-dark ${open ? 'open' : ''}`}>
-        {links.map(({ href, label, isRoute }) => (
-          isRoute ? (
+        {links.map(({ href, label, isRoute }) => {
+          const active = isRoute && isActive(href)
+          return isRoute ? (
             <Link
               key={label}
               to={href}
               onClick={() => setOpen(false)}
-              className="block py-3.5 text-sm font-medium text-white/70
-                border-b border-white/10 hover:text-white hover:pl-2
-                transition-all duration-300"
+              className={`flex items-center justify-between py-3.5 text-sm font-semibold
+                border-b border-white/10 transition-all duration-300
+                ${active ? 'text-blue-400 pl-2' : 'text-white/70 hover:text-white hover:pl-2'}`}
             >
               {label}
+              {active && (
+                <span className="w-2 h-2 rounded-full bg-blue-400 flex-shrink-0" />
+              )}
             </Link>
           ) : (
             <a
@@ -126,7 +143,7 @@ export default function Navbar() {
               {label}
             </a>
           )
-        ))}
+        })}
         <a
           href="#faq"
           onClick={() => setOpen(false)}

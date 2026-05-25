@@ -9,9 +9,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main:   resolve(__dirname, 'index.html'),
-        smm:    resolve(__dirname, 'services/social-media-marketing/index.html'),
-        webdev: resolve(__dirname, 'services/website-development/index.html'),
+        main:    resolve(__dirname, 'index.html'),
+        smm:     resolve(__dirname, 'services/social-media-marketing/index.html'),
+        webdev:  resolve(__dirname, 'services/website-development/index.html'),
+        graphic: resolve(__dirname, 'services/graphic-design/index.html'),
       },
     },
   },

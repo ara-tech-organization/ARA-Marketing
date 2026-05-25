@@ -29,11 +29,12 @@ const faqs = [
 ]
 
 export default function GDFAQ() {
-  const [open, setOpen] = useState(null)
+  const [openIdx, setOpenIdx] = useState(null)
+  const toggle = (i) => setOpenIdx(prev => (prev === i ? null : i))
 
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="py-24"
       style={{ background: 'linear-gradient(180deg, #f0f7ff 0%, #e8f3ff 100%)' }}
     >
       {/* Dot grid */}
@@ -46,12 +47,7 @@ export default function GDFAQ() {
         }}
       />
 
-      {/* Wave top */}
-      <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
-        <path d="M0,30 C200,0 400,60 600,30 C800,0 1000,60 1200,30 L1200,0 L0,0 Z" fill="rgba(255,255,255,0.8)" />
-      </svg>
-
-      <div className="relative max-w-[860px] mx-auto px-7">
+      <div className="max-w-[860px] mx-auto px-7 relative">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">
@@ -69,31 +65,90 @@ export default function GDFAQ() {
         </div>
 
         {/* Accordion */}
-        <div className="flex flex-col gap-3">
-          {faqs.map(({ q, a }, i) => {
-            const isOpen = open === i
+        <div className="flex flex-col gap-3 reveal">
+          {faqs.map((faq, i) => {
+            const isOpen = openIdx === i
             return (
               <div
-                key={q}
-                className={`reveal delay-${(i % 4) + 1} bg-white rounded-2xl border overflow-hidden
-                  transition-all duration-300
-                  ${isOpen ? 'border-blue-300 shadow-lg shadow-blue-100/50' : 'border-blue-100 hover:border-blue-200'}`}
+                key={i}
+                style={{
+                  background: '#fff',
+                  border: `1.5px solid ${isOpen ? '#93c5fd' : '#e2e8f0'}`,
+                  borderRadius: 16,
+                  overflow: 'hidden',
+                  transition: 'border-color 0.25s ease, box-shadow 0.25s ease',
+                  boxShadow: isOpen ? '0 4px 24px rgba(37,99,235,0.10)' : 'none',
+                }}
               >
+                {/* Question row */}
                 <button
-                  onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                  type="button"
+                  onClick={() => toggle(i)}
+                  style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    gap: 16,
+                    padding: '18px 24px',
+                    background: isOpen ? 'rgba(239,246,255,0.6)' : '#fff',
+                    border: 'none',
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                    transition: 'background 0.25s ease',
+                  }}
                 >
-                  <span className="text-[14px] font-bold text-slate-800 leading-snug">{q}</span>
-                  <ChevronDown
-                    size={18}
-                    className={`flex-shrink-0 text-blue-500 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-                  />
+                  <span style={{
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: isOpen ? '#1e40af' : '#1e293b',
+                    lineHeight: 1.45,
+                    transition: 'color 0.25s ease',
+                  }}>
+                    {faq.q}
+                  </span>
+                  <span style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    width: 30,
+                    height: 30,
+                    borderRadius: '50%',
+                    background: isOpen ? '#2563eb' : '#eff6ff',
+                    transition: 'background 0.25s ease',
+                  }}>
+                    <ChevronDown
+                      size={15}
+                      style={{
+                        color: isOpen ? '#fff' : '#2563eb',
+                        transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.3s cubic-bezier(0.4,0,0.2,1)',
+                      }}
+                    />
+                  </span>
                 </button>
-                <div
-                  className="overflow-hidden transition-all duration-300"
-                  style={{ maxHeight: isOpen ? '400px' : '0px' }}
-                >
-                  <p className="px-6 pb-5 text-[13.5px] text-slate-500 leading-[1.8]">{a}</p>
+
+                {/* Answer panel */}
+                <div style={{
+                  overflow: 'hidden',
+                  maxHeight: isOpen ? '300px' : '0px',
+                  transition: 'max-height 0.38s cubic-bezier(0.4,0,0.2,1)',
+                }}>
+                  <div style={{
+                    padding: '0 24px 20px',
+                    borderTop: '1px solid #dbeafe',
+                    background: 'rgba(239,246,255,0.35)',
+                  }}>
+                    <p style={{
+                      fontSize: 13,
+                      color: '#64748b',
+                      lineHeight: 1.85,
+                      paddingTop: 16,
+                    }}>
+                      {faq.a}
+                    </p>
+                  </div>
                 </div>
               </div>
             )

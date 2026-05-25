@@ -10,7 +10,7 @@ const projects = [
     tags: ['Brand Identity', 'Lead Gen', 'CMS'],
     count: '20+',
     color: '#2563eb',
-    bg: '#eff6ff',
+    bg: '#dbeafe',
   },
   {
     num: '02',
@@ -20,7 +20,7 @@ const projects = [
     tags: ['Product Catalog', 'Payment Gateway', 'SEO'],
     count: '15+',
     color: '#059669',
-    bg: '#f0fdf4',
+    bg: '#d1fae5',
   },
   {
     num: '03',
@@ -30,7 +30,7 @@ const projects = [
     tags: ['LMS', 'Admissions Portal', 'Events'],
     count: '10+',
     color: '#7c3aed',
-    bg: '#f5f3ff',
+    bg: '#ede9fe',
   },
   {
     num: '04',
@@ -39,8 +39,8 @@ const projects = [
     desc: 'Trusted healthcare websites with appointment booking and patient portals.',
     tags: ['Appointments', 'Patient Portal', 'Trust Design'],
     count: '8+',
-    color: '#dc2626',
-    bg: '#fff1f2',
+    color: '#db2777',
+    bg: '#fce7f3',
   },
   {
     num: '05',
@@ -49,8 +49,8 @@ const projects = [
     desc: 'Local SEO-focused websites that drive foot traffic and online visibility.',
     tags: ['Google Maps', 'Reviews', 'Local SEO'],
     count: '30+',
-    color: '#ea580c',
-    bg: '#fff7ed',
+    color: '#d97706',
+    bg: '#fef3c7',
   },
   {
     num: '06',
@@ -59,8 +59,8 @@ const projects = [
     desc: 'Clean, credibility-driven service websites with booking and CRM integration.',
     tags: ['Booking', 'Portfolio', 'CRM'],
     count: '18+',
-    color: '#0284c7',
-    bg: '#f0f9ff',
+    color: '#0891b2',
+    bg: '#cffafe',
   },
 ]
 
@@ -78,14 +78,11 @@ function ProjectCard({ num, icon: Icon, title, desc, tags, count, color, bg }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* Top colored bar */}
       <div className="h-1 w-full transition-all duration-300"
         style={{ background: hovered ? `linear-gradient(90deg, ${color}, ${color}88)` : `linear-gradient(90deg, ${color}30, ${color}10)` }} />
 
       <div className="p-6">
-        {/* Header row */}
         <div className="flex items-start justify-between mb-4">
-          {/* Icon box */}
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
               style={{ background: hovered ? color : bg }}>
@@ -97,35 +94,25 @@ function ProjectCard({ num, icon: Icon, title, desc, tags, count, color, bg }) {
             </span>
           </div>
 
-          {/* Count + arrow */}
           <div className="flex items-center gap-1.5">
             <span className="text-[11px] font-bold px-2.5 py-1 rounded-full transition-all duration-300"
-              style={{
-                background: hovered ? color : bg,
-                color: hovered ? '#fff' : color,
-              }}>
+              style={{ background: hovered ? color : bg, color: hovered ? '#fff' : color }}>
               {count} Projects
             </span>
             <div className="w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300"
-              style={{
-                background: hovered ? color : bg,
-                transform: hovered ? 'rotate(0deg)' : 'rotate(-45deg)',
-              }}>
+              style={{ background: hovered ? color : bg, transform: hovered ? 'rotate(0deg)' : 'rotate(-45deg)' }}>
               <ArrowUpRight size={13} style={{ color: hovered ? '#fff' : color }} />
             </div>
           </div>
         </div>
 
-        {/* Title */}
         <h3 className="text-[15px] font-bold mb-2 leading-snug transition-colors duration-300"
           style={{ color: hovered ? color : '#1e293b' }}>
           {title}
         </h3>
 
-        {/* Desc */}
         <p className="text-[13px] text-slate-400 leading-relaxed mb-4">{desc}</p>
 
-        {/* Tags */}
         <div className="flex flex-wrap gap-1.5">
           {tags.map(tag => (
             <span key={tag}

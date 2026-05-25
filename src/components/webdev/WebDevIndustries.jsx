@@ -1,51 +1,42 @@
 import { useState } from 'react'
 import {
   HeartPulse, GraduationCap, Building2, ShoppingCart,
-  UtensilsCrossed, Factory, TrendingUp, Store, Layers
+  UtensilsCrossed, Factory, TrendingUp, Store, Layers, ArrowRight
 } from 'lucide-react'
 
 const industries = [
-  { icon: HeartPulse,      title: 'Healthcare',                color: '#dc2626' },
-  { icon: GraduationCap,   title: 'Education',                 color: '#7c3aed' },
-  { icon: Building2,       title: 'Real Estate',               color: '#1d4ed8' },
-  { icon: ShoppingCart,    title: 'E-commerce',                color: '#059669' },
-  { icon: UtensilsCrossed, title: 'Restaurants & Hospitality', color: '#ea580c' },
-  { icon: Factory,         title: 'Manufacturing',             color: '#0891b2' },
-  { icon: TrendingUp,      title: 'Finance & Consulting',      color: '#0284c7' },
-  { icon: Store,           title: 'Retail Businesses',         color: '#9333ea' },
+  { icon: HeartPulse,      title: 'Healthcare',                color: '#db2777', bg: '#fce7f3' },
+  { icon: GraduationCap,   title: 'Education',                 color: '#7c3aed', bg: '#ede9fe' },
+  { icon: Building2,       title: 'Real Estate',               color: '#2563eb', bg: '#dbeafe' },
+  { icon: ShoppingCart,    title: 'E-commerce',                color: '#059669', bg: '#d1fae5' },
+  { icon: UtensilsCrossed, title: 'Restaurants & Hospitality', color: '#d97706', bg: '#fef3c7' },
+  { icon: Factory,         title: 'Manufacturing',             color: '#0891b2', bg: '#cffafe' },
+  { icon: TrendingUp,      title: 'Finance & Consulting',      color: '#2563eb', bg: '#dbeafe' },
+  { icon: Store,           title: 'Retail Businesses',         color: '#7c3aed', bg: '#ede9fe' },
 ]
 
-function IndustryCard({ icon: Icon, title, color }) {
+function IndustryPill({ icon: Icon, title, color, bg }) {
   const [hovered, setHovered] = useState(false)
   return (
     <div
-      className="relative flex flex-col items-center text-center px-4 py-7 rounded-3xl cursor-default transition-all duration-350 bg-white"
+      className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full cursor-default transition-all duration-300"
       style={{
-        boxShadow: hovered ? `0 20px 48px ${color}28, 0 4px 16px rgba(0,0,0,0.06)` : '0 2px 16px rgba(0,0,0,0.05)',
-        border: hovered ? `1.5px solid ${color}30` : '1.5px solid #f1f5f9',
-        transform: hovered ? 'translateY(-8px)' : 'translateY(0)',
+        background: hovered ? color : bg,
+        border: `1.5px solid ${hovered ? color : color + '30'}`,
+        transform: hovered ? 'translateY(-3px)' : 'translateY(0)',
+        boxShadow: hovered ? `0 10px 28px ${color}28` : 'none',
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="relative mb-5 flex items-center justify-center" style={{ width: 72, height: 72 }}>
-        <div className="absolute inset-0 rounded-full transition-all duration-350"
-          style={{ background: color + (hovered ? '25' : '10'), filter: 'blur(12px)', transform: 'scale(1.5)' }} />
-        <div className="relative flex items-center justify-center rounded-full transition-all duration-350"
-          style={{
-            width: 64, height: 64,
-            background: hovered ? color : color + '12',
-            border: `2px solid ${hovered ? color : color + '30'}`,
-          }}>
-          <Icon size={28} style={{ color: hovered ? '#ffffff' : color, transition: 'color 0.3s ease' }} />
-        </div>
+      <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
+        style={{ background: hovered ? 'rgba(255,255,255,0.2)' : color + '20' }}>
+        <Icon size={14} style={{ color: hovered ? '#fff' : color }} />
       </div>
-      <h3 className="text-[13px] font-bold leading-snug transition-colors duration-300"
-        style={{ color: hovered ? color : '#334155' }}>
+      <span className="text-[13px] font-semibold whitespace-nowrap transition-colors duration-300"
+        style={{ color: hovered ? '#fff' : color }}>
         {title}
-      </h3>
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full transition-all duration-300"
-        style={{ background: hovered ? color : '#e2e8f0' }} />
+      </span>
     </div>
   )
 }
@@ -69,20 +60,29 @@ export default function WebDevIndustries() {
           </p>
         </div>
 
-        <div className="reveal grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+        {/* Pill cloud — centered flex wrap */}
+        <div className="reveal flex flex-wrap justify-center gap-3 mb-12">
           {industries.map((ind, i) => (
             <div key={ind.title} className={`delay-${(i % 4) + 1}`}>
-              <IndustryCard {...ind} />
+              <IndustryPill {...ind} />
             </div>
           ))}
         </div>
 
-        <div className="reveal text-center">
-          <p className="text-[14px] text-slate-500">
+        {/* Bottom CTA strip */}
+        <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-5 px-8 py-6 rounded-2xl"
+          style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)', border: '1.5px solid #bfdbfe' }}>
+          <p className="text-[14px] text-slate-600 leading-relaxed text-center sm:text-left">
             Our expertise makes us one of the{' '}
-            <span className="text-blue-600 font-semibold">professional web development services in Thanjavur</span>
-            {' '}trusted by businesses across industries.
+            <span className="text-blue-700 font-semibold">professional web development services in Thanjavur</span>
+            {' '}trusted by businesses across every sector.
           </p>
+          <a href="#contact"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white
+              rounded-full text-[13px] font-bold hover:bg-blue-500 transition-all duration-300
+              shadow-md hover:-translate-y-0.5 flex-shrink-0">
+            Start Your Project <ArrowRight size={13} />
+          </a>
         </div>
 
       </div>

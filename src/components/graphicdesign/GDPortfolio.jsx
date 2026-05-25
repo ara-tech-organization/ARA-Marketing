@@ -1,12 +1,12 @@
 import { Frame, BookOpen, Megaphone, CreditCard, Share2, Image, Layers } from 'lucide-react'
 
 const categories = [
-  { label: 'Logo Designs',          icon: Frame,     color: '#2563eb', bg: '#eff6ff' },
-  { label: 'Brochure Designs',      icon: BookOpen,  color: '#0284c7', bg: '#e0f7ff' },
-  { label: 'Advertisement Creatives', icon: Image,   color: '#7c3aed', bg: '#f5f3ff' },
-  { label: 'Social Media Campaigns',  icon: Share2, color: '#db2777', bg: '#fdf2f8' },
-  { label: 'Corporate Branding',      icon: Layers,  color: '#059669', bg: '#f0fdf4' },
-  { label: 'Flyer & Poster Designs',  icon: Megaphone, color: '#d97706', bg: '#fffbeb' },
+  { label: 'Logo Designs',           icon: Frame,     color: '#2563eb', bg: '#dbeafe' },
+  { label: 'Brochure Designs',       icon: BookOpen,  color: '#7c3aed', bg: '#ede9fe' },
+  { label: 'Advertisement Creatives',icon: Image,     color: '#059669', bg: '#d1fae5' },
+  { label: 'Social Media Campaigns', icon: Share2,    color: '#db2777', bg: '#fce7f3' },
+  { label: 'Corporate Branding',     icon: Layers,    color: '#0891b2', bg: '#cffafe' },
+  { label: 'Flyer & Poster Designs', icon: Megaphone, color: '#d97706', bg: '#fef3c7' },
 ]
 
 const projects = [

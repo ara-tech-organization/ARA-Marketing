@@ -1,12 +1,12 @@
-import { Smartphone, Search, Zap, Palette, Shield, Headphones, Layers } from 'lucide-react'
+import { Smartphone, Search, Zap, Palette, Shield, Headphones, Layers, CheckCircle2 } from 'lucide-react'
 
 const reasons = [
-  { icon: Smartphone, title: 'Mobile-first responsive design approach',        color: '#2563eb' },
-  { icon: Search,     title: 'SEO-optimized website architecture',             color: '#7c3aed' },
-  { icon: Zap,        title: 'Fast loading & performance-focused development', color: '#059669' },
-  { icon: Palette,    title: 'Custom UI/UX design solutions',                  color: '#ea580c' },
-  { icon: Shield,     title: 'Secure and scalable coding standards',           color: '#0284c7' },
-  { icon: Headphones, title: 'Ongoing technical support & maintenance',        color: '#0891b2' },
+  { icon: Smartphone, title: 'Mobile-first responsive design approach',        desc: 'Every website we build looks flawless on all screen sizes — from desktop to mobile.',        color: '#2563eb' },
+  { icon: Search,     title: 'SEO-optimized website architecture',             desc: 'Clean code structure, fast loading, and semantic HTML built for top Google rankings.',      color: '#7c3aed' },
+  { icon: Zap,        title: 'Fast loading & performance-focused development', desc: 'Optimised assets, lazy loading, and CDN delivery for sub-2s load times.',                   color: '#059669' },
+  { icon: Palette,    title: 'Custom UI/UX design solutions',                  desc: 'Pixel-perfect interfaces tailored to your brand identity and target audience.',              color: '#d97706' },
+  { icon: Shield,     title: 'Secure and scalable coding standards',           desc: 'SSL, best-practice authentication, and architecture that grows with your business.',         color: '#db2777' },
+  { icon: Headphones, title: 'Ongoing technical support & maintenance',        desc: 'Post-launch monitoring, updates, and dedicated support to keep your site running.',          color: '#0891b2' },
 ]
 
 export default function WebDevWhyUs() {
@@ -14,57 +14,86 @@ export default function WebDevWhyUs() {
     <section className="py-24" style={{ background: 'linear-gradient(180deg, #f0f9ff 0%, #f8faff 100%)' }}>
       <div className="max-w-[1200px] mx-auto px-7">
 
-        <div className="text-center mb-12 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
-            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
-            <Layers size={11} /> Why Choose Us
-          </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            Why Businesses Trust Our{' '}
-            <span className="text-gradient-blue">Web Development</span> Expertise
-          </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
-            Ara Discover Marketing stands apart from other professional web development services in
-            Thanjavur by emphasising quality, innovation, and long-term digital success.
-          </p>
-        </div>
+        <div className="reveal grid lg:grid-cols-[42%_58%] gap-14 items-center">
 
-        <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
-          {reasons.map(({ icon: Icon, title, color }, i) => (
-            <div
-              key={title}
-              className="group relative bg-white rounded-2xl overflow-hidden cursor-default transition-all duration-300"
-              style={{ border: '1.5px solid #f1f5f9', boxShadow: '0 2px 10px rgba(0,0,0,0.04)' }}
-              onMouseEnter={e => {
-                e.currentTarget.style.transform = 'translateY(-3px)'
-                e.currentTarget.style.boxShadow = `0 16px 40px ${color}18`
-                e.currentTarget.style.borderColor = color + '40'
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.04)'
-                e.currentTarget.style.borderColor = '#f1f5f9'
-              }}
-            >
-              <div className="absolute left-0 top-0 bottom-0 w-1.5 rounded-r-sm"
-                style={{ background: `linear-gradient(180deg, ${color}, ${color}88)` }} />
-              <div className="flex items-center gap-4 pl-8 pr-6 py-5">
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 font-black leading-none select-none pointer-events-none"
-                  style={{ fontSize: 52, color: color + '0d', fontFamily: 'var(--font-poppins)' }}>
+          {/* Left — sticky intro panel */}
+          <div>
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
+              border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
+              <Layers size={11} /> Why Choose Us
+            </span>
+            <h2 className="text-[clamp(24px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+              Why Businesses Trust Our{' '}
+              <span className="text-gradient-blue">Web Development</span> Expertise
+            </h2>
+            <p className="text-[14.5px] text-slate-500 leading-relaxed mb-8">
+              Ara Discover Marketing stands apart from other professional web development services in
+              Thanjavur by emphasising quality, innovation, and long-term digital success.
+            </p>
+
+            {/* Mini proof strip */}
+            <div className="flex flex-wrap gap-3">
+              {['150+ Websites Delivered', '98% Client Satisfaction', '5+ Years Experience'].map(badge => (
+                <span key={badge} className="inline-flex items-center gap-1.5 px-3 py-1.5
+                  bg-white border border-blue-100 rounded-full text-[11px] font-semibold text-blue-700 shadow-sm">
+                  <CheckCircle2 size={11} className="text-blue-500" />
+                  {badge}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Right — clean row list */}
+          <div className="space-y-1">
+            {reasons.map(({ icon: Icon, title, desc, color }, i) => (
+              <div
+                key={title}
+                className="group flex items-start gap-4 px-5 py-4 rounded-2xl cursor-default transition-all duration-300"
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = color + '08'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = 'transparent'
+                }}
+              >
+                {/* Number */}
+                <span className="text-[11px] font-black w-6 flex-shrink-0 mt-1 select-none"
+                  style={{ color: color + '60', fontFamily: 'var(--font-poppins)' }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0
+
+                {/* Thin divider */}
+                <div className="w-px self-stretch flex-shrink-0 rounded-full mt-1"
+                  style={{ background: color + '30' }} />
+
+                {/* Icon */}
+                <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
                   transition-all duration-300 group-hover:scale-110"
                   style={{ background: color + '12' }}>
-                  <Icon size={20} style={{ color }} />
+                  <Icon size={17} style={{ color }} />
                 </div>
-                <p className="relative text-[14px] font-semibold text-slate-700 leading-snug">{title}</p>
+
+                {/* Text */}
+                <div className="flex-1 min-w-0">
+                  <p className="text-[13.5px] font-bold text-slate-800 mb-0.5 leading-snug
+                    transition-colors duration-200 group-hover:text-slate-900"
+                    style={{}}>
+                    {title}
+                  </p>
+                  <p className="text-[12px] text-slate-400 leading-relaxed">{desc}</p>
+                </div>
+
+                {/* Right dot accent */}
+                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2 opacity-0
+                  group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ background: color }} />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
 
-        <div className="reveal text-center">
+        <div className="reveal text-center mt-12">
           <p className="text-[13.5px] text-slate-500">
             We are also recognised as one of the{' '}
             <span className="text-blue-600 font-semibold">top website design and development companies in Thanjavur</span>

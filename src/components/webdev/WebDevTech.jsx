@@ -1,13 +1,13 @@
 import { Layers, Globe2, Server, Database, BookOpen, Monitor, Cloud } from 'lucide-react'
 
 const techs = [
-  { label: 'HTML5, CSS3, JavaScript', icon: Globe2,    color: '#2563eb', bg: '#eff6ff', tag: 'Frontend',       pct: 98 },
-  { label: 'React & Angular',         icon: Monitor,   color: '#7c3aed', bg: '#f5f3ff', tag: 'Framework',      pct: 95 },
-  { label: 'PHP & Laravel',           icon: Server,    color: '#059669', bg: '#f0fdf4', tag: 'Backend',        pct: 90 },
-  { label: 'WordPress Development',   icon: BookOpen,  color: '#0284c7', bg: '#f0f9ff', tag: 'CMS',            pct: 96 },
-  { label: 'MySQL & MongoDB',         icon: Database,  color: '#ea580c', bg: '#fff7ed', tag: 'Database',       pct: 88 },
-  { label: 'Bootstrap & Tailwind CSS',icon: Layers,    color: '#0891b2', bg: '#ecfeff', tag: 'Styling',        pct: 97 },
-  { label: 'Cloud Hosting Solutions', icon: Cloud,     color: '#9333ea', bg: '#faf5ff', tag: 'Infrastructure', pct: 92 },
+  { label: 'HTML5, CSS3, JavaScript', icon: Globe2,    color: '#2563eb', bg: '#dbeafe', tag: 'Frontend',       pct: 98 },
+  { label: 'React & Angular',         icon: Monitor,   color: '#7c3aed', bg: '#ede9fe', tag: 'Framework',      pct: 95 },
+  { label: 'PHP & Laravel',           icon: Server,    color: '#059669', bg: '#d1fae5', tag: 'Backend',        pct: 90 },
+  { label: 'WordPress Development',   icon: BookOpen,  color: '#d97706', bg: '#fef3c7', tag: 'CMS',            pct: 96 },
+  { label: 'MySQL & MongoDB',         icon: Database,  color: '#db2777', bg: '#fce7f3', tag: 'Database',       pct: 88 },
+  { label: 'Bootstrap & Tailwind CSS',icon: Layers,    color: '#0891b2', bg: '#cffafe', tag: 'Styling',        pct: 97 },
+  { label: 'Cloud Hosting Solutions', icon: Cloud,     color: '#2563eb', bg: '#dbeafe', tag: 'Infrastructure', pct: 92 },
 ]
 
 export default function WebDevTech() {

@@ -1,109 +1,107 @@
-import { useState } from 'react'
-import {
-  Frame, Image, BookOpen, CreditCard, FileText, Share2,
-  Megaphone, Layers, ArrowRight, Check
-} from 'lucide-react'
+import { Frame, Image, BookOpen, CreditCard, FileText, Share2, Megaphone, Layers, Check, ArrowRight } from 'lucide-react'
 
 const services = [
   {
-    id: 'logo',
     icon: Frame,
-    title: 'Logo Design & Brand Identity',
-    shortDesc: 'Unique logos that define your brand personality',
-    fullDesc:
-      'Your logo is the face of your business. Our designers create unique and memorable logos that reflect the personality of your brand and your industry. Every logo is created with strategic thinking, so it works across digital and print platforms.',
-    features: ['Custom logo concepts', 'Brand colour palette', 'Typography selection', 'Brand style guide', 'Multiple file formats'],
+    title: 'Logo Design & Brand Identity Creation',
     keyword: 'Best Professional Logo Design in Thanjavur',
+    desc: 'Your logo is the face of your business. Our designers create unique and memorable logos that reflect the personality of your brand. Every logo is created with strategic thinking — so it works across digital and print platforms.',
+    features: ['Custom logo concepts', 'Brand colour palette', 'Typography selection', 'Brand style guide', 'Multiple file formats'],
+    img: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Best Professional Logo Design in Thanjavur',
+    accent: '#2563eb',
   },
   {
-    id: 'banner',
     icon: Image,
     title: 'Banner & Advertisement Design',
-    shortDesc: 'Eye-catching banners for digital and print',
-    fullDesc:
-      'We design high-impact banners and advertisement creatives that capture attention and drive action. From digital display ads to large-format print banners, every piece is crafted for maximum visibility and brand impact.',
-    features: ['Digital banners (all sizes)', 'Print-ready formats', 'Campaign creatives', 'Outdoor hoardings', 'Brand-aligned layouts'],
     keyword: 'Best Advertisement Design in Thanjavur',
+    desc: 'We design high-impact banners and advertisement creatives that capture attention and drive action. From digital display ads to large-format print banners — crafted for maximum visibility.',
+    features: ['Digital banners (all sizes)', 'Print-ready formats', 'Campaign creatives', 'Outdoor hoardings', 'Brand-aligned layouts'],
+    img: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Best Advertisement Design in Thanjavur',
+    accent: '#7c3aed',
   },
   {
-    id: 'brochure',
     icon: BookOpen,
     title: 'Brochure & Pamphlet Design',
-    shortDesc: 'Compelling brochures that communicate your services',
-    fullDesc:
-      'A brochure or pamphlet is a powerful marketing tool that successfully communicates your services and offers. We create the best brochure design in Thanjavur that captures attention and delivers your message clearly.',
-    features: ['Bi-fold & tri-fold layouts', 'A4 / A5 / DL formats', 'Print-ready PDF output', 'Full-colour illustrations', 'Pamphlet & catalogue design'],
     keyword: 'Best Brochure Design in Thanjavur',
+    desc: 'A brochure or pamphlet is a powerful marketing tool that communicates your services and offers effectively. We create the best brochure design in Thanjavur that captures attention and delivers your message clearly.',
+    features: ['Bi-fold & tri-fold layouts', 'A4 / A5 / DL formats', 'Print-ready PDF output', 'Full-colour illustrations', 'Catalogue design'],
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Best Brochure Design in Thanjavur',
+    accent: '#7c3aed',
   },
   {
-    id: 'card',
     icon: CreditCard,
-    title: 'Business Card & Visiting Card',
-    shortDesc: 'Professional cards that make lasting impressions',
-    fullDesc:
-      'Your stationery materials are a reflection of your business identity. We design professional business cards, visiting cards and letterheads that enhance your brand image and help your business maintain a consistent professional identity.',
-    features: ['Standard & premium finishes', 'Single & double-sided', 'Spot UV & foil options', 'Print-ready artwork', 'Digital card variants'],
+    title: 'Business Card & Visiting Card Design',
     keyword: 'Best Business Card Design in Thanjavur',
+    desc: 'Your stationery materials are a reflection of your business identity. We design professional business cards, visiting cards and letterheads that enhance your brand image and gain the trust of clients.',
+    features: ['Standard & premium finishes', 'Single & double-sided', 'Spot UV & foil options', 'Print-ready artwork', 'Digital card variants'],
+    img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Best Business Card Design in Thanjavur',
+    accent: '#059669',
   },
   {
-    id: 'letterhead',
     icon: FileText,
-    title: 'Letterhead & Corporate Stationery',
-    shortDesc: 'Complete stationery package for your brand',
-    fullDesc:
-      'A consistent corporate stationery package reinforces professionalism and builds client trust. We design letterheads, envelopes, invoice templates and office stationery that align perfectly with your brand identity.',
-    features: ['Letterhead design', 'Envelope & stamp design', 'Invoice template', 'Corporate folder design', 'Email signature design'],
+    title: 'Letterhead Design & Corporate Stationery',
     keyword: 'Corporate Stationery Design in Thanjavur',
+    desc: 'A consistent corporate stationery package reinforces professionalism and builds client trust. We design letterheads, envelopes, invoice templates and office stationery aligned with your brand.',
+    features: ['Letterhead design', 'Envelope & stamp design', 'Invoice template', 'Corporate folder', 'Email signature'],
+    img: 'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Corporate Stationery and Letterhead Design in Thanjavur',
+    accent: '#d97706',
   },
   {
-    id: 'social',
     icon: Share2,
     title: 'Social Media Post Design',
-    shortDesc: 'Scroll-stopping creatives for social platforms',
-    fullDesc:
-      'Visuals are key to successful online marketing on social media. We develop engaging creatives that enhance brand visibility and audience interaction. Our social media ad creatives help improve engagement and brand awareness across all platforms.',
-    features: ['Instagram post & story', 'Facebook cover & ad', 'LinkedIn banner', 'WhatsApp promotional', 'Campaign template sets'],
     keyword: 'Social Media Creative Design in Thanjavur',
+    desc: 'Visuals are key to successful online marketing. We develop engaging social media creatives that enhance brand visibility and audience interaction across Instagram, Facebook, LinkedIn and more.',
+    features: ['Instagram post & story', 'Facebook cover & ad', 'LinkedIn banner', 'WhatsApp promotional', 'Campaign template sets'],
+    img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Social Media Post Design in Thanjavur',
+    accent: '#db2777',
   },
   {
-    id: 'flyer',
     icon: Megaphone,
     title: 'Flyer & Poster Design',
-    shortDesc: 'Marketing materials that widen your reach',
-    fullDesc:
-      'We possess a team of professionals in the best business flyer design in Thanjavur designed to improve marketing reach and customer engagement. Every flyer and poster is designed to be visually appealing and marketing-focused.',
-    features: ['Event & promotional flyers', 'A3 / A4 / A5 posters', 'Product launch designs', 'Retail POS designs', 'Offset-ready artwork'],
     keyword: 'Best Business Flyer Design in Thanjavur',
+    desc: 'We have a team of professionals for the best business flyer design in Thanjavur to improve your marketing reach and customer engagement. Every design is visually appealing and marketing-focused.',
+    features: ['Event & promotional flyers', 'A3 / A4 / A5 posters', 'Product launch designs', 'Retail POS designs', 'Offset-ready artwork'],
+    img: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Best Business Flyer Design in Thanjavur',
+    accent: '#0891b2',
   },
   {
-    id: 'graphic',
     icon: Layers,
     title: 'Graphic Design & Marketing Visuals',
-    shortDesc: 'Complete graphic solutions for all your needs',
-    fullDesc:
-      'We are the best graphic design company in Thanjavur with a wide range of creative services to enhance your brand presence. From promotional graphics to branding templates, we deliver consistent and high-quality design solutions.',
-    features: ['Social media creatives', 'Advertisement designs', 'Promotional graphics', 'Marketing visuals', 'Branding templates'],
     keyword: 'Best Graphic Design Company in Thanjavur',
+    desc: 'We are the best graphic design company in Thanjavur with a wide range of creative services. We deliver consistent, high-quality design solutions for social media, advertisements, promotions and branding.',
+    features: ['Social media creatives', 'Advertisement designs', 'Promotional graphics', 'Marketing visuals', 'Branding templates'],
+    img: 'https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=560&h=380&fit=crop&auto=format&q=80',
+    imgAlt: 'Best Graphic Design Company in Thanjavur - Marketing Visuals',
+    accent: '#2563eb',
   },
 ]
 
 export default function GDServices() {
-  const [active, setActive] = useState(0)
-  const svc = services[active]
-  const Icon = svc.icon
-
   return (
-    <section id="gd-services" className="relative overflow-hidden py-24 bg-white">
-      {/* Subtle radial gradient */}
+    <section
+      id="gd-services"
+      className="relative overflow-hidden py-24 bg-white"
+    >
+      {/* Subtle dot bg */}
       <div
-        className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle at top right, rgba(219,234,254,0.4) 0%, transparent 65%)' }}
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.04) 1px, transparent 1px)',
+          backgroundSize: '36px 36px',
+        }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-7">
 
         {/* Header */}
-        <div className="text-center mb-12 reveal">
+        <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Our Branding Services
@@ -112,98 +110,97 @@ export default function GDServices() {
             Complete Visual Identity &amp;{' '}
             <span className="text-gradient-blue">Creative Design Solutions</span>
           </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
-            We offer full-scale branding and graphic design services to help businesses build a
-            strong market presence and brand recognition across Thanjavur and beyond.
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
+            We offer full-scale branding and graphic design services to help businesses
+            build a strong market presence and brand recognition.
           </p>
         </div>
 
-        {/* Tab + Panel layout */}
-        <div className="reveal grid lg:grid-cols-[320px_1fr] gap-6 items-start">
-
-          {/* Service tab list */}
-          <div className="flex flex-col gap-2">
-            {services.map((s, i) => {
-              const TabIcon = s.icon
-              return (
-                <button
-                  key={s.id}
-                  onClick={() => setActive(i)}
-                  className={`flex items-center gap-3 px-4 py-3.5 rounded-2xl text-left transition-all duration-250 border
-                    ${active === i
-                      ? 'bg-blue-600 text-white border-blue-600 shadow-lg shadow-blue-600/25'
-                      : 'bg-white text-slate-600 border-blue-50 hover:bg-blue-50 hover:border-blue-200'
-                    }`}
-                >
-                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-250
-                    ${active === i ? 'bg-white/20' : 'bg-blue-50'}`}>
-                    <TabIcon size={17} className={active === i ? 'text-white' : 'text-blue-600'} />
-                  </div>
-                  <div className="min-w-0">
-                    <p className={`text-[13px] font-bold leading-tight truncate ${active === i ? 'text-white' : 'text-slate-800'}`}>
-                      {s.title}
-                    </p>
-                    <p className={`text-[11px] mt-0.5 truncate ${active === i ? 'text-blue-100' : 'text-slate-400'}`}>
-                      {s.shortDesc}
-                    </p>
-                  </div>
-                </button>
-              )
-            })}
-          </div>
-
-          {/* Service detail panel */}
-          <div
-            key={svc.id}
-            className="bg-white rounded-3xl border border-blue-100 overflow-hidden"
-            style={{ boxShadow: '0 16px 60px rgba(37,99,235,0.08)' }}
-          >
-            {/* Gradient top bar */}
-            <div className="h-1.5" style={{ background: 'linear-gradient(90deg, #1d4ed8, #38bdf8)' }} />
-
-            <div className="p-8">
-              <div className="flex items-start gap-5 mb-6">
+        {/* ── Service grid — 2-column cards with image top ── */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {services.map(({ icon: Icon, title, keyword, desc, features, img, imgAlt, accent }, i) => (
+            <div
+              key={title}
+              className={`reveal delay-${(i % 4) + 1} group relative bg-white rounded-2xl overflow-hidden border border-slate-100
+                hover:shadow-2xl hover:-translate-y-2 transition-all duration-350`}
+              style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
+            >
+              {/* Image with overlay */}
+              <div className="relative h-40 overflow-hidden">
+                <img
+                  src={img}
+                  alt={imgAlt}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #2563eb, #38bdf8)' }}
-                >
-                  <Icon size={26} className="text-white" />
+                  className="absolute inset-0"
+                  style={{ background: `linear-gradient(180deg, ${accent}99 0%, ${accent}cc 100%)` }}
+                />
+                {/* Icon */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center"
+                    style={{ background: 'rgba(255,255,255,0.2)', border: '1.5px solid rgba(255,255,255,0.35)' }}
+                  >
+                    <Icon size={26} className="text-white" />
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-[20px] font-bold text-slate-900 leading-tight mb-1">{svc.title}</h3>
-                  <span className="inline-block text-[11px] font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">
-                    {svc.keyword}
-                  </span>
-                </div>
+                {/* Accent bar bottom */}
+                <div
+                  className="absolute bottom-0 left-0 right-0 h-1"
+                  style={{ background: accent }}
+                />
               </div>
 
-              <p className="text-[15px] text-slate-500 leading-[1.85] mb-7">{svc.fullDesc}</p>
+              {/* Content */}
+              <div className="p-5">
+                <h3 className="text-[13px] font-bold text-slate-800 leading-snug mb-1.5 group-hover:text-blue-700 transition-colors duration-200">
+                  {title}
+                </h3>
+                <span
+                  className="inline-block text-[9px] font-bold px-2 py-0.5 rounded-full mb-3"
+                  style={{ background: accent + '15', color: accent }}
+                >
+                  {keyword}
+                </span>
+                <p className="text-[12px] text-slate-500 leading-[1.7] mb-4 line-clamp-3">{desc}</p>
 
-              <div className="mb-8">
-                <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3">What's Included</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2.5 gap-x-4">
-                  {svc.features.map((f) => (
-                    <div key={f} className="flex items-center gap-2.5">
-                      <div className="w-5 h-5 rounded-full bg-blue-50 flex items-center justify-center flex-shrink-0">
-                        <Check size={11} className="text-blue-600" />
+                {/* Feature list */}
+                <div className="space-y-1.5 mb-5">
+                  {features.slice(0, 3).map((f) => (
+                    <div key={f} className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0"
+                        style={{ background: accent + '18' }}
+                      >
+                        <Check size={9} style={{ color: accent }} />
                       </div>
-                      <span className="text-[13px] text-slate-600 font-medium">{f}</span>
+                      <span className="text-[11px] text-slate-500 font-medium">{f}</span>
                     </div>
                   ))}
                 </div>
+
+                <a
+                  href="#contact"
+                  className="flex items-center gap-1.5 text-[11px] font-bold transition-all duration-200 group/link"
+                  style={{ color: accent }}
+                >
+                  Get a Quote
+                  <ArrowRight size={11} className="group-hover/link:translate-x-0.5 transition-transform duration-200" />
+                </a>
               </div>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full
-                  text-sm font-semibold shadow-md shadow-blue-600/20 hover:bg-blue-500 transition-all duration-300"
-              >
-                Get a Quote <ArrowRight size={15} />
-              </a>
             </div>
-          </div>
-
+          ))}
         </div>
+
+        {/* Bottom note */}
+        <p className="text-center text-[13px] text-slate-400 mt-10 reveal">
+          Our skilled branding team is the{' '}
+          <span className="font-semibold text-blue-600">best graphic design service in Thanjavur</span>{' '}
+          that businesses turn to when they want creative, professional, and high-impact design solutions.
+        </p>
+
       </div>
     </section>
   )

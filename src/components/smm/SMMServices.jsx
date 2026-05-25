@@ -18,7 +18,7 @@ const platforms = [
   {
     icon: Users,
     color: '#2563eb',
-    bgLight: '#eff6ff',
+    bgLight: '#dbeafe',
     h3: 'Facebook Marketing',
     imgSrc: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'Facebook Marketing for Business in Thanjavur - Facebook Advertising Companies in Thanjavur',
@@ -36,8 +36,8 @@ const platforms = [
   },
   {
     icon: Briefcase,
-    color: '#0284c7',
-    bgLight: '#f0f9ff',
+    color: '#0891b2',
+    bgLight: '#cffafe',
     h3: 'LinkedIn Marketing',
     imgSrc: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'LinkedIn Social Media Marketing in Thanjavur - LinkedIn Engagement Strategy Thanjavur',
@@ -55,8 +55,8 @@ const platforms = [
   },
   {
     icon: Image,
-    color: '#dc2626',
-    bgLight: '#fef2f2',
+    color: '#db2777',
+    bgLight: '#fce7f3',
     h3: 'Pinterest Marketing',
     imgSrc: 'https://images.unsplash.com/photo-1636044594149-6e2f289c3868?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'Pinterest Digital Marketing in Thanjavur - Pinterest Social Media Marketing Services',
@@ -75,7 +75,7 @@ const platforms = [
   {
     icon: TrendingUp,
     color: '#059669',
-    bgLight: '#f0fdf4',
+    bgLight: '#d1fae5',
     h3: 'Social Media Optimization (SMO)',
     imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'Social Media Optimization SMO Services in Thanjavur - Best SMO Companies in Thanjavur',

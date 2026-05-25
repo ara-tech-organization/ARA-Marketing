@@ -4,13 +4,13 @@ import {
 } from 'lucide-react'
 
 const steps = [
-  { num: '01', icon: ClipboardList,   title: 'Business Requirement Analysis',      color: '#2563eb' },
-  { num: '02', icon: Palette,         title: 'UI/UX Design Planning',              color: '#7c3aed' },
-  { num: '03', icon: LayoutDashboard, title: 'Website Architecture & Wireframing', color: '#0284c7' },
-  { num: '04', icon: Code2,           title: 'Frontend & Backend Development',     color: '#059669' },
-  { num: '05', icon: FileText,        title: 'Content Integration & Optimization', color: '#ea580c' },
-  { num: '06', icon: TestTube,        title: 'Testing & Quality Assurance',        color: '#0891b2' },
-  { num: '07', icon: Rocket,          title: 'Launch & Post-Launch Support',       color: '#2563eb' },
+  { num: '01', icon: ClipboardList,   title: 'Business Requirement Analysis',      color: '#2563eb', light: '#dbeafe' },
+  { num: '02', icon: Palette,         title: 'UI/UX Design Planning',              color: '#7c3aed', light: '#ede9fe' },
+  { num: '03', icon: LayoutDashboard, title: 'Website Architecture & Wireframing', color: '#0891b2', light: '#cffafe' },
+  { num: '04', icon: Code2,           title: 'Frontend & Backend Development',     color: '#059669', light: '#d1fae5' },
+  { num: '05', icon: FileText,        title: 'Content Integration & Optimization', color: '#d97706', light: '#fef3c7' },
+  { num: '06', icon: TestTube,        title: 'Testing & Quality Assurance',        color: '#db2777', light: '#fce7f3' },
+  { num: '07', icon: Rocket,          title: 'Launch & Post-Launch Support',       color: '#2563eb', light: '#dbeafe' },
 ]
 
 export default function WebDevProcess() {
@@ -38,7 +38,7 @@ export default function WebDevProcess() {
             <div className="absolute left-4 right-4 pointer-events-none"
               style={{
                 top: 158, height: 2,
-                background: 'linear-gradient(90deg, #bfdbfe 0%, #2563eb 15%, #7c3aed 50%, #2563eb 85%, #bfdbfe 100%)',
+                background: 'linear-gradient(90deg, #bfdbfe 0%, #2563eb 30%, #2563eb 70%, #bfdbfe 100%)',
                 borderRadius: 2,
               }} />
 
@@ -73,7 +73,7 @@ export default function WebDevProcess() {
                         e.currentTarget.style.borderColor = step.color + '22'
                       }}>
                       <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-2 flex-shrink-0"
-                        style={{ background: step.color + '12' }}>
+                        style={{ background: step.light || step.color + '12' }}>
                         <Icon size={16} style={{ color: step.color }} />
                       </div>
                       <h3 className="text-[11px] font-bold text-slate-700 leading-tight">{step.title}</h3>
@@ -104,7 +104,7 @@ export default function WebDevProcess() {
                     style={{ border: `1.5px solid ${step.color}20`, boxShadow: `0 2px 12px ${step.color}08` }}>
                     <div className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                        style={{ background: step.color + '12' }}>
+                        style={{ background: step.light || step.color + '12' }}>
                         <Icon size={16} style={{ color: step.color }} />
                       </div>
                       <h3 className="text-[13.5px] font-bold text-slate-700 leading-snug">{step.title}</h3>
