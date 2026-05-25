@@ -1,0 +1,139 @@
+import { Frame, BookOpen, Megaphone, CreditCard, Share2, Image, Layers } from 'lucide-react'
+
+const categories = [
+  { label: 'Logo Designs',          icon: Frame,     color: '#2563eb', bg: '#eff6ff' },
+  { label: 'Brochure Designs',      icon: BookOpen,  color: '#0284c7', bg: '#e0f7ff' },
+  { label: 'Advertisement Creatives', icon: Image,   color: '#7c3aed', bg: '#f5f3ff' },
+  { label: 'Social Media Campaigns',  icon: Share2, color: '#db2777', bg: '#fdf2f8' },
+  { label: 'Corporate Branding',      icon: Layers,  color: '#059669', bg: '#f0fdf4' },
+  { label: 'Flyer & Poster Designs',  icon: Megaphone, color: '#d97706', bg: '#fffbeb' },
+]
+
+const projects = [
+  {
+    label: 'Restaurant Brand Identity',
+    tag: 'Logo Design',
+    img: 'https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=600&h=400&fit=crop&auto=format&q=80',
+    alt: 'Best Professional Logo Design in Thanjavur for Restaurant Brand',
+  },
+  {
+    label: 'Corporate Brochure Design',
+    tag: 'Brochure',
+    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&auto=format&q=80',
+    alt: 'Best Brochure Design in Thanjavur - Corporate Identity',
+  },
+  {
+    label: 'Social Media Campaign',
+    tag: 'Social Media',
+    img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&h=400&fit=crop&auto=format&q=80',
+    alt: 'Social Media Post Design in Thanjavur - Brand Campaign',
+  },
+  {
+    label: 'Retail Flyer Design',
+    tag: 'Flyer Design',
+    img: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&h=400&fit=crop&auto=format&q=80',
+    alt: 'Best Business Flyer Design in Thanjavur - Retail Marketing',
+  },
+  {
+    label: 'Educational Institution Branding',
+    tag: 'Brand Identity',
+    img: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&h=400&fit=crop&auto=format&q=80',
+    alt: 'Best Graphic Design Companies in Thanjavur - Educational Branding',
+  },
+  {
+    label: 'Business Card Collection',
+    tag: 'Business Cards',
+    img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop&auto=format&q=80',
+    alt: 'Best Business Card Design in Thanjavur - Corporate Stationery',
+  },
+]
+
+export default function GDPortfolio() {
+  return (
+    <section
+      className="relative overflow-hidden py-24"
+      style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}
+    >
+      {/* Wave top */}
+      <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,0 L0,0 Z" fill="rgba(255,255,255,0.9)" />
+      </svg>
+
+      <div className="relative max-w-[1200px] mx-auto px-7">
+
+        {/* Header */}
+        <div className="text-center mb-12 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
+            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
+            <Layers size={11} /> Portfolio
+          </span>
+          <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+            Creative Branding Projects &amp;{' '}
+            <span className="text-gradient-blue">Design Success Stories</span>
+          </h2>
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            We've done branding projects for startups, local businesses, retail stores, restaurants,
+            educational institutions and corporate brands across Thanjavur and beyond.
+          </p>
+        </div>
+
+        {/* Category pills */}
+        <div className="reveal flex flex-wrap justify-center gap-3 mb-10">
+          {categories.map(({ label, icon: Icon, color, bg }) => (
+            <div
+              key={label}
+              className="flex items-center gap-2 px-4 py-2 rounded-full border text-[12px] font-semibold transition-all duration-200 hover:-translate-y-0.5"
+              style={{ background: bg, borderColor: color + '30', color }}
+            >
+              <Icon size={13} />
+              {label}
+            </div>
+          ))}
+        </div>
+
+        {/* Projects grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projects.map(({ label, tag, img, alt }, i) => (
+            <div
+              key={label}
+              className={`reveal delay-${(i % 4) + 1} group relative rounded-2xl overflow-hidden cursor-pointer`}
+              style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.08)' }}
+            >
+              <img
+                src={img}
+                alt={alt}
+                loading="lazy"
+                width="600"
+                height="400"
+                className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              {/* Overlay */}
+              <div
+                className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: 'linear-gradient(180deg, transparent 30%, rgba(30,58,138,0.85) 100%)' }}
+              >
+                <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest mb-1">{tag}</span>
+                <p className="text-[14px] font-bold text-white">{label}</p>
+              </div>
+              {/* Tag chip (always visible) */}
+              <div
+                className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold"
+                style={{ background: 'rgba(37,99,235,0.9)', color: '#fff' }}
+              >
+                {tag}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom note */}
+        <p className="text-center text-[13px] text-slate-400 mt-10 reveal">
+          Proud to be named among the{' '}
+          <span className="font-semibold text-blue-600">best graphic design companies in Thanjavur</span>{' '}
+          for creative, impactful and business-oriented design solutions.
+        </p>
+
+      </div>
+    </section>
+  )
+}

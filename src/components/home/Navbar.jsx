@@ -5,8 +5,8 @@ import { Rocket, ArrowRight, Menu, X } from 'lucide-react'
 const links = [
   { href: '/', label: 'Home', isRoute: true },
   { href: '/services/social-media-marketing', label: 'SMM', isRoute: true },
-  { href: '#services', label: 'Web Design', isRoute: false },
-  { href: '#services', label: 'Graphic Design', isRoute: false },
+  { href: '/services/website-development', label: 'Web Design', isRoute: true },
+  { href: '/services/graphic-design', label: 'Graphic Design', isRoute: true },
   { href: '#services', label: 'Video Editing', isRoute: false },
 ]
 
