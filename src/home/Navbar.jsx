@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import { Rocket, ArrowRight, Menu, X } from 'lucide-react'
 
 const links = [
-  ['#services', 'Services'],
-  ['#why-us', 'About'],
-  ['#process', 'Process'],
-  ['#industries', 'Industries'],
-  ['#blog', 'Blog'],
+  ['/', 'Home'],
+  ['#services', 'SMM'],
+  ['#services', 'Web Design'],
+  ['#services', 'Graphic Design'],
+  ['#services', 'Video Editing'],
 ]
 
 export default function Navbar() {
