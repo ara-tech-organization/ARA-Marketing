@@ -61,7 +61,7 @@ export default function GDCTA() {
               </h2>
               <p className="text-[15px] text-slate-600 leading-[1.8] max-w-[400px]">
                 Team up with Ara Discover Marketing — the{' '}
-                <span className="text-blue-700 font-semibold">Best Graphic Design Company in Thanjavur</span>{' '}
+                <span className="text-blue-700 font-semibold">leading design agency in thanjavur</span>{' '}
                 — for innovative branding, logo designing, brochure designing, and complete visual
                 identity solutions for business growth.
               </p>

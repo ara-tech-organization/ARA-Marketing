@@ -62,13 +62,11 @@ export default function GDProcess() {
             <Layers size={11} /> Our Process
           </span>
           <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            How We Deliver{' '}
-            <span className="text-gradient-blue">Top Graphic Design Studios in Thanjavur</span>{' '}
-            Quality
+            How We Deliver Premium{' '}
+            <span className="text-gradient-blue">Branding Solutions</span>
           </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
-            Our systematic process ensures that every project follows standards of quality,
-            creativity and branding — from brief to final delivery.
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            Our systematic process ensures that every project delivered by our creative design team in thanjavur follows standards of quality, creativity and branding.
           </p>
         </div>
 

@@ -14,13 +14,13 @@ const projects = [
     label: 'Restaurant Brand Identity',
     tag: 'Logo Design',
     img: 'https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=600&h=400&fit=crop&auto=format&q=80',
-    alt: 'Best Professional Logo Design in Thanjavur for Restaurant Brand',
+    alt: 'Professional Brand Logo Design in Thanjavur for Restaurant Brand',
   },
   {
     label: 'Corporate Brochure Design',
     tag: 'Brochure',
     img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&auto=format&q=80',
-    alt: 'Best Brochure Design in Thanjavur - Corporate Identity',
+    alt: 'Corporate Brochure Designs in Thanjavur - Corporate Identity',
   },
   {
     label: 'Social Media Campaign',
@@ -32,7 +32,7 @@ const projects = [
     label: 'Retail Flyer Design',
     tag: 'Flyer Design',
     img: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&h=400&fit=crop&auto=format&q=80',
-    alt: 'Best Business Flyer Design in Thanjavur - Retail Marketing',
+    alt: 'Business Flyer Layouts in Thanjavur - Retail Marketing',
   },
   {
     label: 'Educational Institution Branding',
@@ -128,9 +128,9 @@ export default function GDPortfolio() {
 
         {/* Bottom note */}
         <p className="text-center text-[13px] text-slate-400 mt-10 reveal">
-          Proud to be named among the{' '}
-          <span className="font-semibold text-blue-600">best graphic design companies in Thanjavur</span>{' '}
-          for creative, impactful and business-oriented design solutions.
+          We are proud to be named among the{' '}
+          <span className="font-semibold text-blue-600">top graphic design companies in thanjavur</span>{' '}
+          for offering creative, impactful and business-oriented design solutions.
         </p>
 
       </div>

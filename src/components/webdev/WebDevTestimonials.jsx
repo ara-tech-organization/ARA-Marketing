@@ -8,7 +8,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    text: 'One of the most reliable best website design and development firms in Thanjavur with great technical expertise.',
+    text: 'One of the most reliable website design and development agencies in Thanjavur with great technical expertise.',
     name: 'Marketing Manager',
     role: 'E-Commerce Brand, Tamil Nadu',
     stars: 5,

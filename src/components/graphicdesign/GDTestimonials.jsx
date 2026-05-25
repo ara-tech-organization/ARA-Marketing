@@ -3,46 +3,27 @@ import { Quote, Star, Layers, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing delivered the best graphic design service in Thanjavur for our brand identity. Highly creative and professional team. Our logo, brochures and social media creatives look absolutely world-class. Their designs transformed how our customers perceive our brand.',
+    text: 'Ara Discover Marketing delivered the best graphic design service in thanjavur for our brand identity. Highly creative and professional team.',
     name: 'Rajan Murugan',
     role: 'Founder, RetailHub Thanjavur',
     stars: 5,
   },
   {
-    text: 'One of the top graphic design agencies in Thanjavur with excellent logo and brochure design services. Our brand looks completely transformed.',
+    text: 'One of the top graphic design agencies in thanjavur with excellent logo and brochure design services.',
     name: 'Priya Suresh',
     role: 'Director, EduFirst Academy',
     stars: 5,
   },
   {
-    text: 'Their branding solutions helped us improve our business visibility and customer engagement. The flyer designs brought in so many new clients!',
+    text: 'Their branding solutions helped us improve our business visibility and customer engagement.',
     name: 'Karthik Arumugam',
-    role: 'Owner, Karthik Restaurants',
-    stars: 5,
-  },
-  {
-    text: 'Outstanding logo design! As a startup we needed a strong brand identity and Ara Discover Marketing delivered exactly that. Highly recommended.',
-    name: 'Deepa Nathaniel',
-    role: 'CEO, TechNest Solutions',
-    stars: 5,
-  },
-  {
-    text: 'The social media creatives they designed boosted our online engagement significantly. Truly the best graphic design company in Thanjavur.',
-    name: 'Senthil Kumar',
-    role: 'Marketing Head, FreshGrocer',
-    stars: 5,
-  },
-  {
-    text: 'Professional, affordable and fast. Their brochure and visiting card designs are of excellent quality. Will definitely work with them again.',
-    name: 'Lakshmi Devi',
-    role: 'Principal, Sunrise School',
+    role: 'Owner, Restaurant Group',
     stars: 5,
   },
 ]
 
-const TOTAL = testimonials.length         // 6
-const CLONE = 2                            // clones on each side
-// extended = [t4,t5, t0,t1,t2,t3,t4,t5, t0,t1]
+const TOTAL = testimonials.length
+const CLONE = 1
 const extended = [
   ...testimonials.slice(-CLONE),
   ...testimonials,

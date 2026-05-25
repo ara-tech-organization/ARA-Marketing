@@ -2,7 +2,7 @@ import useCounter from '../../hooks/useCounter'
 import { Share2, Users, TrendingUp, Megaphone } from 'lucide-react'
 
 function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
-  const [count, ref] = useCounter(target, 1800)
+  const [count, ref] = useCounter(target || 0, 1800)
   return (
     <div
       ref={ref}
@@ -27,9 +27,10 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
+          boxDecorationBreak: 'clone',
         }}
       >
-        {count}{suffix}
+        {target !== null ? `${count}${suffix}` : 'Active'}
       </div>
 
       {/* Label */}
@@ -46,10 +47,11 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
 }
 
 const stats = [
-  { target: 200, suffix: '+', label: 'Social Media Campaigns',    sub: 'Successfully Managed',    icon: Share2,     delay: 1 },
-  { target: 95,  suffix: '%', label: 'Client Satisfaction Rate',  sub: 'Across All Projects',     icon: Users,      delay: 2 },
-  { target: 300, suffix: '%', label: 'Average Engagement Growth', sub: 'Compared to Baseline',    icon: TrendingUp, delay: 3 },
-  { target: 150, suffix: '+', label: 'Paid Ad Campaigns',         sub: 'Delivered Successfully',  icon: Megaphone,  delay: 4 },
+  { target: 200, suffix: '+', label: 'Social Media Campaigns Managed', sub: '', icon: Share2, delay: 1 },
+  { target: 95,  suffix: '%', label: 'Client Satisfaction Rate', sub: '', icon: Users, delay: 2 },
+  { target: 300, suffix: '%', label: 'Average Increase in Social Engagement', sub: '', icon: TrendingUp, delay: 3 },
+  { target: 150, suffix: '+', label: 'Successful Paid Advertising Campaigns', sub: '', icon: Megaphone, delay: 4 },
+  { target: null, suffix: '', label: 'Multi-Platform Audience Growth Strategies', sub: '', icon: Share2, delay: 5 },
 ]
 
 export default function SMMStats() {
@@ -95,14 +97,17 @@ export default function SMMStats() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <TrendingUp size={11} /> Our Results
           </span>
-          <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Delivering Measurable Social Media{' '}
             <span className="text-gradient-blue">Growth &amp; Engagement</span>
           </h2>
+          <p className="text-[15px] text-slate-600 font-medium max-w-2xl mx-auto">
+            Our paid social media marketing and agency in Thanjavur helps businesses to maximise engagement, visibility, and customer interaction.
+          </p>
         </div>
 
         {/* Stat cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
           {stats.map(s => <StatCard key={s.label} {...s} />)}
         </div>
 

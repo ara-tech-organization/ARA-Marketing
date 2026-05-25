@@ -2,19 +2,19 @@ import { Star, Quote, Layers } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing helped us improve engagement and generate quality leads through targeted social media campaigns. Their strategies are creative and result-driven.',
+    text: 'Ara Discover Marketing is one of the best social media agencies in Thanjavur that delivered exceptional SMM services for our business growth.',
     name: 'Business Owner',
     role: 'Local Retail Brand, Thanjavur',
     stars: 5,
   },
   {
-    text: 'One of the best social media companies in Thanjavur — known for creative, result-oriented strategies and outstanding client support throughout the campaign.',
+    text: 'Their expertise in social media ads marketing and advertising in Thanjavur significantly improved our online brand visibility.',
     name: 'Marketing Manager',
     role: 'E-Commerce Brand, Tamil Nadu',
     stars: 5,
   },
   {
-    text: 'Their expertise in social media ads, marketing, and advertising in Thanjavur significantly improved our online brand visibility and follower growth across platforms.',
+    text: 'One of the top-rated social media agency services in Thanjavur with highly creative campaigns.',
     name: 'Startup Founder',
     role: 'Tech Startup, Thanjavur',
     stars: 5,

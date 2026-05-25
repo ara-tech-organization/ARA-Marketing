@@ -2,44 +2,44 @@ import { BarChart2, Users, Activity, Palette, Target, Eye, Layers, CheckCircle }
 
 const promises = [
   {
-    icon: BarChart2,
-    title: 'Monthly Performance Reports',
-    desc: 'Detailed monthly social media performance reports covering reach, engagement, conversions, and growth metrics.',
+    icon: Eye,
+    title: 'High Brand Visibility',
+    desc: 'Significantly boost your brand awareness across platforms.',
     color: '#2563eb',
     num: '01',
   },
   {
     icon: Users,
-    title: 'Dedicated SMM Support',
-    desc: 'A dedicated social media marketing team available to support your campaigns and answer questions promptly.',
+    title: 'Targeted Audience Engagement',
+    desc: 'Reach the right people and build active customer interactions.',
     color: '#7c3aed',
     num: '02',
   },
   {
-    icon: Activity,
-    title: 'Real-Time Ad Monitoring',
-    desc: 'Live monitoring of all ad campaigns to ensure they are performing optimally and delivering the expected results.',
+    icon: Palette,
+    title: 'Creative & Engaging Content',
+    desc: 'High-quality, eye-catching creatives tailored to your business.',
     color: '#059669',
     num: '03',
   },
   {
-    icon: Palette,
-    title: 'Creative Content Strategies',
-    desc: 'Consistently fresh, high-quality creative content and branding strategies tailored to your brand voice.',
+    icon: Target,
+    title: 'Lead Generation & Conversions',
+    desc: 'Data-driven campaigns to convert followers into paying customers.',
     color: '#d97706',
     num: '04',
   },
   {
-    icon: Target,
-    title: 'ROI-Focused Advertising',
-    desc: 'Every paid advertising campaign is designed around measurable ROI — your investment is always accounted for.',
+    icon: Activity,
+    title: 'Real-time Campaign Optimization',
+    desc: 'Ongoing ad budget monitoring and refinement to maximize ROI.',
     color: '#db2777',
     num: '05',
   },
   {
-    icon: Eye,
-    title: 'Transparent Audience Insights',
-    desc: 'Clear and honest reporting on audience demographics, behaviour, and campaign insights with no hidden metrics.',
+    icon: BarChart2,
+    title: 'Detailed Performance Reports',
+    desc: 'Clear, transparent monthly reporting with actionable growth insights.',
     color: '#0891b2',
     num: '06',
   },
@@ -64,9 +64,8 @@ export default function SMMPromises() {
             to You
           </h2>
 
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
-            Businesses trust our social media advertising services in Thanjavur for consistent
-            engagement and long-term brand growth — backed by these six core commitments.
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            Businesses trust our social media advertising services in Thanjavur for consistent digital growth and brand excellence.
           </p>
         </div>
 

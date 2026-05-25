@@ -3,28 +3,28 @@ import { ChevronDown, Layers } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Who is the best social media branding services provider in Thanjavur?',
-    a: 'Ara Discover Marketing is one of the best social media companies in Thanjavur, providing Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies for businesses of all sizes.',
+    q: 'Who is the best provider of social media branding services in Thanjavur?',
+    a: 'Ara Discover Marketing is one of the best social media companies in Thanjavur, providing Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies.',
   },
   {
     q: 'How does social media marketing benefit businesses?',
-    a: 'Social media marketing helps businesses achieve growth in brand awareness, customer engagement, lead generation, and long-term customer relationships — connecting your brand directly with your target audience.',
+    a: 'Social media marketing has the potential to help businesses achieve growth in brand awareness, customer engagement, leads, and long-term customer relationships.',
   },
   {
     q: 'Do you provide paid social media advertising in Thanjavur?',
-    a: 'Yes, we run paid social media advertising campaigns in Thanjavur, including Facebook Ads, Instagram Ads, LinkedIn Ads, and targeted audience advertising campaigns designed for maximum ROI.',
+    a: 'Yes, we run paid social media advertising campaigns in Thanjavur, including Facebook Ads, Instagram Ads, LinkedIn Ads, and targeted audience advertising campaigns.',
   },
   {
-    q: 'Which social media platforms do you handle for marketing?',
-    a: 'We manage Facebook, Instagram, LinkedIn, Pinterest, and other social media presence, developing strategies that are customized for your company, its goals, and its target audience.',
+    q: 'Which kind of social media platforms do you handle for marketing purposes?',
+    a: 'We manage your Facebook, Instagram, LinkedIn, Pinterest, and other social media presence, developing strategies that are customized for your company and its goals.',
   },
   {
     q: 'What is Social Media Optimisation (SMO)?',
-    a: "SMO means improving the visibility, engagement, audience, and content performance of your social profiles to make your brand's online presence stronger and more consistent across platforms.",
+    a: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brand’s online presence stronger.',
   },
   {
     q: 'Why choose Ara Discover Marketing for social media marketing services?',
-    a: 'We are one of the best social media service providers in Thanjavur and one of the best social media companies in Thanjavur — delivering the best social media marketing services in Thanjavur through creative campaigns, AI-driven targeting, transparent reporting, and audience-focused strategies that produce measurable results.',
+    a: 'We are one of the best social media service provider in Thanjavur because of our creative campaigns, AI-driven targeting strategies, transparent reporting, and audience-focused marketing approach.',
   },
 ]
 

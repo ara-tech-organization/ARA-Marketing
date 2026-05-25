@@ -85,7 +85,7 @@ export default function WebDevAssurance() {
               <div>
                 <p className="text-[11px] font-bold text-blue-200 uppercase tracking-widest mb-2">Call Us Today</p>
                 <h3 className="text-[clamp(18px,2.5vw,28px)] font-bold text-white leading-tight max-w-lg">
-                  Call us today to work with a trusted web development and designing company in
+                  Call us today to work with a trusted web development and designing agency in
                   Thanjavur for your next digital project.
                 </h3>
               </div>

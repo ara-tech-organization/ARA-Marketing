@@ -3,33 +3,33 @@ import { Target, Palette, Zap, TrendingUp, Activity, BarChart2, Layers } from 'l
 const reasons = [
   {
     icon: Target,
-    title: 'Platform-Specific Strategies',
-    desc: 'Custom marketing strategies crafted for each social platform to maximize reach and engagement across every channel.',
+    title: 'Platform-specific marketing strategies',
+    desc: 'Custom marketing plans tailored for each platform.',
   },
   {
     icon: Palette,
-    title: 'Creative Ad Campaigns',
-    desc: 'Visually stunning ad creatives and branding campaigns that capture audience attention and drive brand recognition.',
+    title: 'Creative ad campaigns & visual branding',
+    desc: 'Visually stunning ad concepts to elevate your brand.',
   },
   {
     icon: Zap,
-    title: 'AI-Driven Targeting',
-    desc: 'AI-powered audience segmentation and targeting for smarter, high-converting campaigns that reach the right people.',
+    title: 'AI-driven audience targeting',
+    desc: 'Smart, AI-powered systems to find and reach your customers.',
   },
   {
     icon: TrendingUp,
-    title: 'Organic & Paid Growth',
-    desc: 'Combined organic growth strategies and paid advertising campaigns for consistent, long-term social media results.',
+    title: 'Organic & paid social media growth',
+    desc: 'A strategic balance of organic reach and paid promotion.',
   },
   {
     icon: Activity,
-    title: 'Real-Time Monitoring',
-    desc: 'Continuous campaign monitoring and optimization to ensure peak performance and maximum ROI at all times.',
+    title: 'Real-time campaign monitoring',
+    desc: 'Continuous tracking to optimize performance and maximize ROI.',
   },
   {
     icon: BarChart2,
-    title: 'Transparent Reporting',
-    desc: 'Clear, detailed analytics and monthly reports so you always know exactly how your campaigns are performing.',
+    title: 'Transparent reporting & analytics',
+    desc: 'Clear, detailed reports with honest campaign insights.',
   },
 ]
 
@@ -109,11 +109,11 @@ export default function SMMWhyUs() {
             Why Do Businesses Choose Our{' '}
             <span className="text-gradient-blue">Social Media Marketing</span> Expertise?
           </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
-            We focus on Engagement, Creativity, and Measurable Growth. Businesses trust Ara Discover
-            Marketing — one of the best social media companies in Thanjavur — for social media
-            branding services in Thanjavur, paid social media marketing and agency in Thanjavur, and
-            custom campaigns that match business goals and consumer behaviour.
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-3xl mx-auto mb-6">
+            We focus on Engagement, Creativity, and Measurable Growth. Businesses trust Ara Discover Marketing. We are one of the best social media service provider in Thanjavur, creating custom campaigns to match business goals and consumer behaviour.
+          </p>
+          <p className="text-[14px] font-bold text-slate-700 tracking-wide uppercase mb-2">
+            Why choose our SMM services:
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function SMMWhyUs() {
         </div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-14">
           {reasons.map(({ icon: Icon, title, desc }, i) => (
             <div
               key={title}
@@ -149,6 +149,13 @@ export default function SMMWhyUs() {
               <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* Footer text */}
+        <div className="text-center reveal max-w-3xl mx-auto">
+          <p className="text-[15px] text-slate-600 leading-relaxed font-medium">
+            With our expertise in social media advertising services in Thanjavur, we help businesses in visibility, customer engagement, and lead generation through strategic social campaigns.
+          </p>
         </div>
 
       </div>

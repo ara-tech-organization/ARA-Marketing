@@ -26,7 +26,7 @@ export default function WebDevIntro() {
                 usability and conversion optimisation.
               </p>
               <p className="text-[15px] text-slate-500 leading-[1.85]">
-                We are the best website design and development agency in Thanjavur with services to
+                We are a top website design and development agency in Thanjavur with services to
                 startups, local businesses and enterprises to build scalable digital platforms. Our
                 development methodology combines innovative thinking, programming skills, and marketing
                 strategy for the creation of high performance websites.

@@ -60,11 +60,13 @@ export default function GDWhyUs() {
             Why Do Businesses Trust Our{' '}
             <span className="text-gradient-blue">Creative Branding Expertise?</span>
           </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-3xl mx-auto">
             Businesses choose Ara Discover Marketing because we are the preferred choice for
             creativity, strategy and market understanding to develop impactful branding solutions.
-            As one of the best advertisement designs in Thanjavur, we ensure that every design
-            reflects your brand identity and business values.
+            One of the best advertisement design in thanjavur, we ensure that every design
+            reflects your brand identity and business values. We are reputed as one of the top
+            graphic design teams in thanjavur to deliver visually appealing and conversion
+            focused branding materials.
           </p>
         </div>
 

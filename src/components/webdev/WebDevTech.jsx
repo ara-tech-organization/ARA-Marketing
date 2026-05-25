@@ -77,7 +77,7 @@ export default function WebDevTech() {
         <div className="reveal mt-8 text-center">
           <p className="text-[13.5px] text-slate-500">
             As a leading{' '}
-            <span className="text-blue-600 font-semibold">best website design and development company in Thanjavur</span>
+            <span className="text-blue-600 font-semibold">website design and development agency in Thanjavur</span>
             {', '}we ensure all websites are built with future-ready technologies.
           </p>
         </div>

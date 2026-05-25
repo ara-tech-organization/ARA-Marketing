@@ -78,22 +78,13 @@ export default function SMMIntro() {
 
             <div className="reveal delay-1 space-y-4">
               <p className="text-[15px] text-slate-500 leading-[1.85]">
-                Social media has become one of the finest methods to keep engaging customers and grow
-                businesses. Ara Discover Marketing is a digital marketing and social media marketing
-                agency in Thanjavur, offering cutting-edge AI-based solutions and advertising social
-                media marketing in Thanjavur for brands aiming to engage their target audience with
-                high-quality creative campaigns.
+                Social media has become one of the finest methods to keep engaging customers and grow businesses. Ara Discover Marketing is a leading agency for digital marketing and social media marketing in Thanjavur, offering advertising social media marketing in Thanjavur and cutting-edge AI-based solutions for brands aiming to engage their target audience with high-quality creative campaigns and performance-oriented marketing strategies.
               </p>
               <p className="text-[15px] text-slate-500 leading-[1.85]">
-                We are one of the best social media companies in Thanjavur that focuses on audience
-                targeting, content creation, and ad optimisation. Our best social media marketing
-                services in Thanjavur help businesses achieve real growth through smart marketing
-                through social media in Thanjavur — driving visibility and customer interaction.
+                We are one of the best social media marketing agencies in Thanjavur that focuses on audience targeting, content creation, ad optimisation, and engagement strategies that increase visibility and customer interaction. Our expertise in marketing through social media in Thanjavur helps businesses to build trust, increase followers, and generate conversions across multiple platforms.
               </p>
               <p className="text-[15px] text-slate-500 leading-[1.85]">
-                As a trusted social advertising agency in Thanjavur, we provide end-to-end social
-                media advertising services in Thanjavur and complete social media agency services in
-                Thanjavur — helping businesses across every industry run high-performing campaigns.
+                We are also a trusted paid ads agency in Thanjavur that helps businesses across industries run high-performing paid advertising campaigns.
               </p>
             </div>
           </div>

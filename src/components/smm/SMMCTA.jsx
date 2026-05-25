@@ -39,7 +39,7 @@ export default function SMMCTA() {
 
         {/* Subtext */}
         <p className="reveal delay-1 text-[15px] text-white/45 leading-[1.85] max-w-xl mx-auto mb-10">
-          Partner with Ara Discover Marketing, a trusted provider of social media agency services in
+          Partner with Ara Discover Marketing, a trusted social media agency in
           Thanjavur, delivering creative campaigns, audience engagement strategies, and high-performing
           paid social advertising solutions.
         </p>

@@ -19,8 +19,8 @@ const smmSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/social-media-marketing',
-      name: 'Social Media Marketing Services in Thanjavur',
-      description: 'Ara Discover Marketing is recognized as one of the best Social Media Marketing (SMM) companies in Thanjavur, offering creative strategies and result-driven campaigns for Facebook, LinkedIn, Pinterest and Instagram.',
+      name: 'Best Social Media Marketing Services in Thanjavur to Grow Your Brand Online',
+      description: 'Ara Discover Marketing is recognized as one of the best Social Media Marketing (SMM) companies in Thanjavur, offering creative strategies and result-driven campaigns.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'Ara Discover Marketing',
@@ -41,11 +41,10 @@ const smmSchema = {
         '@type': 'OfferCatalog',
         name: 'SMM Services',
         itemListElement: [
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Facebook Marketing for Business in Thanjavur' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LinkedIn Social Media Marketing in Thanjavur' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pinterest Digital Marketing in Thanjavur' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Social Media Optimization (SMO) Services in Thanjavur' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Paid Social Media Advertising in Thanjavur' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Facebook Marketing' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LinkedIn Marketing' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pinterest Marketing' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Social Media Optimization (SMO)' } },
         ],
       },
     },
@@ -55,17 +54,7 @@ const smmSchema = {
         {
           '@type': 'Question',
           name: 'Who is the best social media branding services provider in Thanjavur?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is one of the best social media companies in Thanjavur, providing social media branding services in Thanjavur, Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'Do you provide paid social media advertising in Thanjavur?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we run paid social media advertising campaigns in Thanjavur, including Facebook Ads, Instagram Ads, LinkedIn Ads, and targeted audience advertising campaigns. We are also a paid social media marketing and agency in Thanjavur offering complete campaign management.' },
-        },
-        {
-          '@type': 'Question',
-          name: 'What social media advertising services do you offer in Thanjavur?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We offer complete social media advertising services in Thanjavur including social media ads marketing and advertising in Thanjavur, social media agency services in Thanjavur, and social media optimization services in Thanjavur across Facebook, Instagram, LinkedIn, and Pinterest.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is one of the best social media companies in Thanjavur, providing Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies.' },
         },
         {
           '@type': 'Question',
@@ -74,13 +63,18 @@ const smmSchema = {
         },
         {
           '@type': 'Question',
+          name: 'Do you provide paid campaigns on social media in Thanjavur?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we run paid social media advertising campaigns in Thanjavur, including Facebook Ads, Instagram Ads, LinkedIn Ads, and targeted audience advertising campaigns.' },
+        },
+        {
+          '@type': 'Question',
           name: 'Which kind of social media platforms do you handle for marketing purposes?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We manage your Facebook, Instagram, LinkedIn, Pinterest, and other social media presence, developing strategies customized for your company and its goals.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'We manage your Facebook, Instagram, LinkedIn, Pinterest, and other social media presence, developing strategies that are customized for your company and its goals.' },
         },
         {
           '@type': 'Question',
           name: 'What is Social Media Optimisation (SMO)?',
-          acceptedAnswer: { '@type': 'Answer', text: 'SMO means improving the visibility, engagement, audience, and content performance of your social profiles to make your brand\'s online presence stronger.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brand’s online presence stronger.' },
         },
         {
           '@type': 'Question',
@@ -97,7 +91,7 @@ export default function SMMPage() {
   useSEO({
     title: 'Best Social Media Marketing Company (SMM) in Thanjavur | Ara Discover Marketing',
     description: 'Ara Discover Marketing is recognized as one of the best Social Media Marketing (SMM) companies in Thanjavur, offering creative strategies and result-driven campaigns.',
-    keywords: 'best social media companies in thanjavur, best social media marketing services in thanjavur, social advertising agency in thanjavur, advertising social media marketing in thanjavur, best social media service provider in thanjavur, digital marketing and social media marketing in thanjavur, marketing through social media in thanjavur, paid social media advertising in thanjavur, paid social media marketing and agency in thanjavur, social media ads marketing and advertising in thanjavur, social media advertising services in thanjavur, social media agency services in thanjavur, social media branding services in thanjavur, social media optimization services in thanjavur, facebook advertising companies in thanjavur, facebook social media marketing companies in thanjavur, facebook marketing for business in thanjavur, linkedin social media marketing in thanjavur, linkedin engagement strategy in thanjavur, pinterest digital marketing in thanjavur, advertising on pinterest in thanjavur, pinterest social media marketing in thanjavur, best social media optimization SMO companies in thanjavur, best social media optimization SMO services in thanjavur, smo for instagram in thanjavur, smo services provider in thanjavur',
+    keywords: 'best social media companies in thanjavur, best social media marketing services in thanjavur, social advertising agency in thanjavur, facebook advertising companies in thanjavur, linkedin social media marketing in thanjavur, pinterest digital marketing in thanjavur, best social media optimization SMO companies in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/social-media-marketing',
     ogImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: smmSchema,

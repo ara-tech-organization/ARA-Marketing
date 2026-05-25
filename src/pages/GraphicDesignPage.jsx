@@ -19,9 +19,9 @@ const gdSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/graphic-design',
-      name: 'Best Graphic Design Company in Thanjavur',
+      name: 'Ara Discover Marketing Graphic Design Services',
       description:
-        'Ara Discover Marketing is the Best Graphic Design Company in Thanjavur, offering creative, high-quality design services including logo design, brochure design, flyer design, social media creatives, business card design and complete brand identity solutions.',
+        'Ara Discover Marketing offers creative, high-quality design services including logo design, brochure design, flyer design, social media creatives, business card design and complete brand identity solutions in Thanjavur.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'Ara Discover Marketing',
@@ -51,59 +51,6 @@ const gdSchema = {
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Letterhead Design & Corporate Stationery' } },
         ],
       },
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'What is the best graphic design company in Thanjavur?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Ara Discover Marketing is the best graphic design company in Thanjavur which provides logo design, brochure design, social media creatives, and complete branding solutions.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'What services are included in graphic design?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Our graphic design includes logo design, brochure design, flyer design, poster design, business card design, social media creative design and advertisement design.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Do you offer brochure and flyer designing services?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes, we provide the best brochure design in Thanjavur and best business flyer design in Thanjavur for marketing and promotional purposes.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Why is branding important to businesses?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Branding helps businesses to be recognisable, trusted and loyal by customers through a consistent visual identity and professional design.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Are you a social media creative designer?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes, we make good social media content, ads and campaign images to improve engagement and brand visibility.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Why choose Ara Discover Marketing for graphic design services?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Our creativity, industry expertise, innovative design approach, and consistent reputation as one of the top graphic design companies in Thanjavur make us a reliable branding partner.',
-          },
-        },
-      ],
     },
   ],
 }

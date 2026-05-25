@@ -5,44 +5,44 @@ import {
 const steps = [
   {
     num: '01', icon: Search,
-    title: 'Audience & Competitor Research',
-    desc: 'Deep-dive analysis of your target audience, competitor strategies, and market positioning to build a solid campaign foundation.',
+    title: 'Discovery & Requirement Gathering',
+    desc: 'Understanding your business goals and marketing needs.',
     color: '#2563eb', bg: '#dbeafe',
   },
   {
     num: '02', icon: Target,
-    title: 'Platform Selection & Strategy Planning',
-    desc: 'Selecting the most effective social platforms for your business goals and crafting data-driven, platform-specific strategies.',
+    title: 'Target Audience Research & Competitor Analysis',
+    desc: 'Analyzing target segments and competitor positioning.',
     color: '#7c3aed', bg: '#ede9fe',
   },
   {
     num: '03', icon: Palette,
-    title: 'Content Creation & Branding',
-    desc: 'Designing high-quality creative content, visuals, and brand messaging that resonates with your target audience.',
+    title: 'Social Media Marketing Strategy Development',
+    desc: 'Creating a tailored plan for maximum impact across channels.',
     color: '#059669', bg: '#d1fae5',
   },
   {
     num: '04', icon: Megaphone,
-    title: 'Social Media Ad Campaign Setup',
-    desc: 'Building and launching targeted paid advertising campaigns with precise audience segmentation and optimized budgets.',
+    title: 'Creative Content Planning & Design',
+    desc: 'Designing high-quality copy and eye-catching visuals.',
     color: '#d97706', bg: '#fef3c7',
   },
   {
     num: '05', icon: MessageSquare,
-    title: 'Audience Engagement & Community Management',
-    desc: 'Active community management, responding to your audience, and fostering genuine brand-to-customer relationships.',
+    title: 'Paid Advertising Setup & Optimization',
+    desc: 'Setting up and testing target ad campaigns.',
     color: '#db2777', bg: '#fce7f3',
   },
   {
     num: '06', icon: Activity,
-    title: 'Campaign Monitoring & Optimization',
-    desc: 'Continuous real-time performance tracking and iterative campaign optimization for maximum impact and efficiency.',
+    title: 'Campaign Launch & Promotion',
+    desc: 'Publishing content and deploying paid ads.',
     color: '#0891b2', bg: '#cffafe',
   },
   {
     num: '07', icon: BarChart2,
-    title: 'Monthly Reporting & Growth Analysis',
-    desc: 'Comprehensive monthly performance reports with insights, growth metrics, and actionable recommendations for the next cycle.',
+    title: 'Performance Monitoring & Analytics Reporting',
+    desc: 'Analyzing campaign results and delivering reports.',
     color: '#2563eb', bg: '#dbeafe',
   },
 ]
@@ -65,9 +65,8 @@ export default function SMMWorkflow() {
             Our Strategic{' '}
             <span className="text-gradient-blue">Social Media Marketing</span> Workflow
           </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
-            A proven 7-step process that drives consistent engagement, measurable growth,
-            and long-term brand success across all social platforms.
+          <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            As a reliable social advertising agency in Thanjavur, we believe in delivering measurable growth through structured workflow processes.
           </p>
         </div>
 

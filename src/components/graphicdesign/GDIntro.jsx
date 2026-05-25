@@ -56,13 +56,10 @@ export default function GDIntro() {
               <div>
                 <h2 className="text-[clamp(22px,2.8vw,40px)] font-black text-slate-900 leading-[1.1] tracking-tight mb-5">
                   Creative Branding Solutions<br />
-                  That{' '}
-                  <span className="text-gradient-blue">Define Your</span>{' '}
-                  Business Identity
+                  That Define Your Business Identity
                 </h2>
-                <p className="text-[13.5px] text-slate-500 leading-[1.85] max-w-[400px]">
-                  Build a brand that stands out — from logo design to complete brand guidelines,
-                  we craft identities that attract, engage and convert.
+                <p className="text-[13.5px] text-slate-500 leading-[1.85] max-w-[500px]">
+                  Ara Discover Marketing is the best graphic design service in thanjavur for businesses to create visually appealing brand identities that attract, engage and convert customers.
                 </p>
               </div>
               <div className="flex items-center gap-3 mt-6">
@@ -142,12 +139,10 @@ export default function GDIntro() {
                 <Sparkles size={16} className="text-blue-300" />
               </div>
               <p className="text-[14px] text-slate-300 leading-[1.9] mb-4">
-                In today's competitive digital world, a strong brand identity is essential for
-                business success. We build recognition, trust and customer loyalty.
+                Businesses prefer us for premium branding and creative designs in thanjavur due to our creativity, consistency and result oriented design approach that enhances brand visibility across digital and print platforms.
               </p>
-              <p className="text-[12px] text-slate-500 leading-[1.8]">
-                One of the best graphic design companies in Thanjavur providing creative
-                solutions that align with your business goals.
+              <p className="text-[12.5px] text-slate-400 leading-[1.8]">
+                We are one of the top graphic design companies in thanjavur providing creative and strategic design solutions that fit with your business goals.
               </p>
             </div>
             <div className="relative mt-5 inline-flex items-center gap-2 px-3.5 py-2 rounded-full self-start"

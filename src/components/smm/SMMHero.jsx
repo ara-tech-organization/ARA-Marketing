@@ -47,11 +47,11 @@ export default function SMMHero() {
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[520px]">
-              Ara Discover Marketing provides the best social media marketing services in Thanjavur,
-              helping businesses build brand awareness and generate quality leads. As a trusted
-              social advertising agency in Thanjavur, we deliver result-driven campaigns for
-              startups, local businesses, and emerging brands across all platforms.
+            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-4 max-w-[620px]">
+              Ara Discover Marketing provides top-tier social media branding and promotions in Thanjavur, which help businesses to build brand awareness, improve customer engagement, and generate quality leads through result-driven social media strategies. As one of the best social media companies in Thanjavur, we create and optimize high-performance campaigns for startups, local businesses, and emerging brands.
+            </p>
+            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[620px]">
+              From organic building to paid advertising campaigns, our dedicated social media team specializes in platform-specific strategies that keep businesses ahead in today's competitive digital landscape.
             </p>
 
             {/* CTAs */}

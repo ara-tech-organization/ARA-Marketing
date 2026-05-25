@@ -22,7 +22,7 @@ const webDevSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/website-development',
-      name: 'Best Website Design and Development Company in Thanjavur',
+      name: 'Ara Discover Marketing Web Development Services',
       description: 'Ara Discover Marketing is one of the best website design and development companies in Thanjavur, creating AI-driven and SEO-friendly websites for businesses.',
       provider: {
         '@type': 'LocalBusiness',
@@ -46,10 +46,10 @@ const webDevSchema = {
       mainEntity: [
         { '@type': 'Question', name: 'Which company provides the best web design and development services in Thanjavur?', acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is the best web design and development company in Thanjavur, providing custom websites, corporate websites and e-commerce solutions.' } },
         { '@type': 'Question', name: 'What are included services in website development?', acceptedAnswer: { '@type': 'Answer', text: 'Website development includes UI/UX design, frontend & backend development, SEO optimisation, mobile responsiveness and website maintenance.' } },
-        { '@type': 'Question', name: 'Do you develop custom websites for business?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, we are providing custom website development company in Thanjavur solutions according to business needs and functionality requirements.' } },
+        { '@type': 'Question', name: 'Do you develop custom websites for business?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, we provide custom web development and design solutions in Thanjavur tailored to business needs and functionality requirements.' } },
         { '@type': 'Question', name: 'Why is a professional website necessary for business?', acceptedAnswer: { '@type': 'Answer', text: 'A professional website increases brand credibility, enhances online visibility, generates leads and improves customer trust.' } },
         { '@type': 'Question', name: 'Do you provide SEO friendly website development?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, all websites are built with SEO optimised structure for better Google rankings.' } },
-        { '@type': 'Question', name: 'Why choose Ara Discover Marketing for web development services?', acceptedAnswer: { '@type': 'Answer', text: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as a best website design and development company in Thanjavur assures long-term and high-quality digital solutions.' } },
+        { '@type': 'Question', name: 'Why choose Ara Discover Marketing for web development services?', acceptedAnswer: { '@type': 'Answer', text: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as a leading website design and development agency in Thanjavur assures long-term and high-quality digital solutions.' } },
       ],
     },
   ],

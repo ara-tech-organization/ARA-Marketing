@@ -3,28 +3,16 @@ import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'What is the best graphic design company in Thanjavur?',
-    a: 'Ara Discover Marketing is the best graphic design company in Thanjavur which provides logo design, brochure design, social media creatives, and complete branding solutions for businesses of all sizes.',
-  },
-  {
-    q: 'What services are included in graphic design?',
-    a: 'Our graphic design includes logo design, brochure design, flyer design, poster design, business card design, social media creative design, letterhead design, corporate stationery, and advertisement design.',
+    q: 'Which is the top graphic design company in Thanjavur?',
+    a: 'Ara Discover Marketing is the best graphic design company in thanjavur which provides logo design, brochure design, social media creatives, and complete branding solutions for businesses of all sizes.',
   },
   {
     q: 'Do you offer brochure and flyer designing services?',
-    a: 'Yes, we provide the best brochure design in Thanjavur and best business flyer design in Thanjavur for marketing and promotional purposes. All designs are delivered in print-ready and digital formats.',
-  },
-  {
-    q: 'Why is branding important to businesses?',
-    a: 'Branding helps businesses to be recognisable, trusted and loyal by customers through a consistent visual identity and professional design. A strong brand increases perceived value and helps businesses stand out in competitive markets.',
-  },
-  {
-    q: 'Are you a social media creative designer?',
-    a: 'Yes, we make good social media content, ads and campaign images to improve engagement and brand visibility. Our social media creatives are optimised for Instagram, Facebook, LinkedIn and other major platforms.',
+    a: 'Yes, we provide the best brochure design in thanjavur and best business flyer design in thanjavur for marketing and promotional purposes. All designs are delivered in print-ready and digital formats.',
   },
   {
     q: 'Why choose Ara Discover Marketing for graphic design services?',
-    a: 'Our creativity, industry expertise, innovative design approach, and consistent reputation as one of the top graphic design companies in Thanjavur make us a reliable branding partner. We combine strategic thinking with modern design trends to deliver measurable results.',
+    a: 'Our creativity, industry expertise, innovative design approach, and consistent reputation as one of the top graphic design companies in thanjavur make us a reliable branding partner.',
   },
 ]
 

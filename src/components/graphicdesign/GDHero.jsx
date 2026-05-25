@@ -52,28 +52,25 @@ export default function GDHero() {
             {/* H1 */}
             <h1
               className="animate-hero-d2 tracking-tight mb-5 text-white"
-              style={{ fontSize: 'clamp(30px,4vw,56px)', lineHeight: 1.08, fontWeight: 800 }}
+              style={{ fontSize: 'clamp(28px,3.8vw,52px)', lineHeight: 1.12, fontWeight: 800 }}
             >
-              Best Branding &amp;<br />
-              Graphic Design<br />
+              Best Branding &amp; Graphic Design Services in Thanjavur{' '}
               <span style={{
                 background: 'linear-gradient(90deg, #60a5fa 0%, #38bdf8 50%, #a78bfa 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
               }}>
-                Services in Thanjavur
+                to Build a Powerful Brand Identity
               </span>
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[15px] text-slate-400 leading-[1.85] mb-3 max-w-[500px]">
-              Ara Discover Marketing creates visually powerful brand identities that attract, engage
-              and convert customers with creative and strategic design solutions.
+            <p className="animate-hero-d3 text-[15px] text-slate-400 leading-[1.85] mb-4 max-w-[620px]">
+              Ara Discover Marketing is the best graphic design service in thanjavur for businesses to create visually appealing brand identities that attract, engage and convert customers. We create visuals from logos to marketing creatives that tell your brand story effectively and professionally.
             </p>
-            <p className="animate-hero-d3 text-[13.5px] text-slate-500 leading-[1.8] mb-8 max-w-[480px]">
-              As the top-rated graphic design agency in Thanjavur, we offer AI-powered branding
-              solutions — logos, brochures, social media creatives, business cards and more.
+            <p className="animate-hero-d3 text-[14px] text-slate-500 leading-[1.8] mb-8 max-w-[600px]">
+              As the top graphic design agencies in thanjavur, we offer AI powered and modern branding solutions such as logo design, brochures, social media posters, business cards, and digital creatives that help businesses stand out from competitive markets.
             </p>
 
             {/* CTAs */}
