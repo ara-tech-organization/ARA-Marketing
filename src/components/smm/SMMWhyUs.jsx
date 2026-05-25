@@ -36,10 +36,68 @@ const reasons = [
 export default function SMMWhyUs() {
   return (
     <section
-      className="py-24"
+      className="relative overflow-hidden py-24"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}
     >
-      <div className="max-w-[1200px] mx-auto px-7">
+      {/* Full-section dot grid */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+          opacity: 0.28,
+        }}
+      />
+
+      {/* Soft colour wash — top-right */}
+      <div
+        className="absolute top-0 right-0 w-72 h-72 pointer-events-none"
+        style={{ background: 'radial-gradient(circle at top right, rgba(191,219,254,0.5) 0%, transparent 70%)' }}
+      />
+
+      {/* Soft colour wash — bottom-left */}
+      <div
+        className="absolute bottom-0 left-0 w-72 h-72 pointer-events-none"
+        style={{ background: 'radial-gradient(circle at bottom left, rgba(186,230,255,0.45) 0%, transparent 70%)' }}
+      />
+
+      {/* Wave top */}
+      <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,0 L0,0 Z"
+          fill="rgba(191,219,254,0.35)" />
+        <path d="M0,40 C200,70 400,10 600,40 C800,70 1000,10 1200,40 L1200,0 L0,0 Z"
+          fill="rgba(219,234,254,0.25)" />
+      </svg>
+
+      {/* Wave bottom */}
+      <svg className="absolute bottom-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
+        <path d="M0,30 C200,0 400,60 600,30 C800,0 1000,60 1200,30 L1200,60 L0,60 Z"
+          fill="rgba(191,219,254,0.35)" />
+        <path d="M0,20 C200,-10 400,50 600,20 C800,-10 1000,50 1200,20 L1200,60 L0,60 Z"
+          fill="rgba(219,234,254,0.25)" />
+      </svg>
+
+      {/* Corner ring — top-left */}
+      <div
+        className="absolute -top-10 -left-10 w-52 h-52 rounded-full pointer-events-none"
+        style={{ border: '2px solid rgba(147,197,253,0.3)' }}
+      />
+      <div
+        className="absolute -top-4 -left-4 w-36 h-36 rounded-full pointer-events-none"
+        style={{ border: '1.5px solid rgba(147,197,253,0.2)' }}
+      />
+
+      {/* Corner ring — bottom-right */}
+      <div
+        className="absolute -bottom-10 -right-10 w-52 h-52 rounded-full pointer-events-none"
+        style={{ border: '2px solid rgba(96,165,250,0.25)' }}
+      />
+      <div
+        className="absolute -bottom-4 -right-4 w-36 h-36 rounded-full pointer-events-none"
+        style={{ border: '1.5px solid rgba(96,165,250,0.18)' }}
+      />
+
+      <div className="relative max-w-[1200px] mx-auto px-7">
 
         {/* Header */}
         <div className="text-center mb-10 reveal">
