@@ -49,7 +49,7 @@ export default function WhyUs() {
             <div className="relative h-52 flex-shrink-0 overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=350&fit=crop&q=80"
-                alt="Ara Discover Marketing team — best digital marketing agency in Thanjavur"
+                alt="Ara Marketing team — Best Digital Marketing Agency in Thanjavur | Top Digital Branding and Advertising Company in Thanjavur"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0"

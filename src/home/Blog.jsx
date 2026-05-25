@@ -67,7 +67,7 @@ export default function Blog() {
               <div className="relative h-[200px] overflow-hidden">
                 <img
                   src={b.image}
-                  alt={b.title}
+                  alt={`${b.title} — Best Digital Marketing Services in Thanjavur | Ara Marketing`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-slate-900/15 group-hover:bg-slate-900/5 transition-colors duration-300" />
