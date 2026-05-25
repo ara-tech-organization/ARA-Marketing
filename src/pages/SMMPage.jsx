@@ -11,6 +11,7 @@ import SMMWorkflow      from '../components/smm/SMMWorkflow'
 import SMMPromises      from '../components/smm/SMMPromises'
 import SMMTestimonials  from '../components/smm/SMMTestimonials'
 import SMMFAQ           from '../components/smm/SMMFAQ'
+import SMMCTA           from '../components/smm/SMMCTA'
 
 const smmSchema = {
   '@context': 'https://schema.org',
@@ -68,8 +69,23 @@ const smmSchema = {
         },
         {
           '@type': 'Question',
+          name: 'How does social media marketing benefit businesses?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Social media marketing has the potential to help businesses achieve growth in brand awareness, customer engagement, leads, and long-term customer relationships.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which kind of social media platforms do you handle for marketing purposes?',
+          acceptedAnswer: { '@type': 'Answer', text: 'We manage your Facebook, Instagram, LinkedIn, Pinterest, and other social media presence, developing strategies customized for your company and its goals.' },
+        },
+        {
+          '@type': 'Question',
           name: 'What is Social Media Optimisation (SMO)?',
           acceptedAnswer: { '@type': 'Answer', text: 'SMO means improving the visibility, engagement, audience, and content performance of your social profiles to make your brand\'s online presence stronger.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why choose Ara Discover Marketing for social media marketing services?',
+          acceptedAnswer: { '@type': 'Answer', text: 'We are one of the best social media service providers in Thanjavur because of our creative campaigns, AI-driven targeting strategies, transparent reporting, and audience-focused marketing approach.' },
         },
       ],
     },
@@ -100,6 +116,7 @@ export default function SMMPage() {
         <SMMPromises />
         <SMMTestimonials />
         <SMMFAQ />
+        <SMMCTA />
       </main>
       <Footer />
     </>

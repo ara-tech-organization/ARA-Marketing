@@ -1,12 +1,12 @@
 import { BarChart, Users, Eye, Target, TrendingUp, Shield } from 'lucide-react'
 
 const assurances = [
-  { icon: BarChart,   title: 'Monthly Marketing Reports',  desc: 'Detailed monthly campaign performance tracking with clear insights and actionable recommendations.' },
-  { icon: Users,      title: 'Dedicated Marketing Expert', desc: 'A dedicated specialist assigned to your account for direct communication and personalized support.' },
-  { icon: Eye,        title: 'Full Analytics Access',      desc: 'Access to Google Analytics, Ads and Social Media Insights dashboards at all times without restrictions.' },
-  { icon: Target,     title: 'Customized Strategies',      desc: 'Tailored strategies for SEO, SMM and paid advertising that align with your unique business goals.' },
-  { icon: TrendingUp, title: 'ROI-Focused Optimization',   desc: 'Continuous campaign refinement focused on maximizing your return on investment and lead generation.' },
-  { icon: Shield,     title: 'Transparent Reporting',      desc: 'No hidden metrics — honest, transparent reporting with continuous growth improvements every cycle.' },
+  { icon: BarChart,   title: 'Monthly Marketing Reports & Campaign Performance Tracking', desc: 'Detailed monthly campaign performance tracking with clear insights and actionable recommendations.' },
+  { icon: Users,      title: 'Dedicated Marketing Expert & Direct Communication Support', desc: 'A dedicated specialist assigned to your account for direct communication and personalized support.' },
+  { icon: Eye,        title: 'Google Analytics, Ads & Social Media Insights Access',      desc: 'Access to Google Analytics, Ads and Social Media Insights dashboards at all times without restrictions.' },
+  { icon: Target,     title: 'Customized Strategies for SEO, SMM & Paid Advertising',    desc: 'Tailored strategies for SEO, SMM and paid advertising that align with your unique business goals.' },
+  { icon: TrendingUp, title: 'ROI-Focused Campaign Optimization & Lead Generation',       desc: 'Continuous campaign refinement focused on maximizing your return on investment and lead generation.' },
+  { icon: Shield,     title: 'Transparent Reporting with Continuous Growth Improvements', desc: 'No hidden metrics — honest, transparent reporting with continuous growth improvements every cycle.' },
 ]
 
 export default function Assurance() {
@@ -21,11 +21,12 @@ export default function Assurance() {
             <Shield size={11} /> Our Commitment
           </span>
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
-            Our Assurance to Every<br />Business We Partner With
+            Our Assurance
           </h2>
-          <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            We focus on ethical marketing, transparent communication and measurable performance —
-            helping every niche build trust, visibility and lasting customer relationships.
+          <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">
+            At Ara Discover Marketing, we focus on search engine guidelines, ethical marketing strategies,
+            transparent communication and measurable performance. Being the top branding agency in Thanjavur,
+            we want to help all kinds of niches build trust, visibility and long-term customer relationships.
           </p>
         </div>
 
@@ -63,6 +64,11 @@ export default function Assurance() {
             )
           })}
         </div>
+
+        <p className="reveal text-center text-[13.5px] text-slate-500 leading-relaxed max-w-2xl mx-auto mt-12">
+          Contact us today to discuss your digital growth strategy and find out why businesses trust us
+          for the best digital branding and advertising in Thanjavur.
+        </p>
 
       </div>
     </section>

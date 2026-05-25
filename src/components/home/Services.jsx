@@ -1,42 +1,36 @@
-import { Search, Share2, BarChart2, Palette, Video, Megaphone, Layers, LayoutGrid, ArrowRight, ArrowUpRight } from 'lucide-react'
+import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight } from 'lucide-react'
 
 const services = [
   {
     icon: Search,
     title: 'Search Engine Optimization (SEO)',
-    desc: 'AI-powered On-Page, Off-Page, Technical, Local and Mobile SEO to improve search engine rankings and drive consistent organic traffic. We deliver the best digital marketing services in Thanjavur through data-driven SEO optimization.',
+    desc: 'Ara offers AI-powered SEO services like On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and Mobile SEO to improve search engine rankings and organic traffic. Our SEO experts deliver the best digital marketing services in Thanjavur by optimizing websites for users and search engines.',
     link: '/services/seo',
     tag: 'Most Popular',
   },
   {
     icon: Share2,
     title: 'Social Media Marketing (SMM)',
-    desc: 'High-performing campaigns on Facebook, Instagram, LinkedIn and Pinterest to boost brand awareness and customer engagement. One of the best digital marketing companies in Thanjavur creating campaigns that increase reach.',
+    desc: 'Our social media marketing services help businesses boost brand awareness and customer engagement on Facebook, Instagram, LinkedIn and Pinterest. As one of the best digital marketing companies in Thanjavur, we create high-performing campaigns that increase reach and engagement.',
     link: '/services/social-media-marketing',
   },
   {
     icon: BarChart2,
     title: 'Search Engine Marketing (SEM)',
-    desc: 'Expert Google Ads, PPC, Display, YouTube and Shopping Ads to generate qualified leads through targeted paid advertising. Businesses rely on us for top digital marketing services in Thanjavur.',
-    link: '/services/sem',
+    desc: 'We are skilled professionals in Google Ads, PPC campaigns, Display Ads, YouTube Ads and Shopping Ads. Businesses looking for the top digital marketing services in Thanjavur rely on us to generate qualified leads through targeted paid advertising campaigns.',
+    link: '/services/google-ads',
   },
   {
     icon: Palette,
     title: 'Branding & Advertising',
-    desc: 'Creative branding strategies, ad creatives and digital campaigns to establish a strong online presence. Ara Discover Marketing is known as the best digital branding and advertising in Thanjavur.',
-    link: '/services/branding',
+    desc: 'Ara Discover Marketing is also known as the best digital branding and advertising in Thanjavur, helping businesses establish a strong online presence with creative branding strategies, ad creatives and digital campaigns.',
+    link: '/services/graphic-design',
   },
   {
     icon: Video,
     title: 'Video Editing',
-    desc: 'Professional reels, promotional videos, corporate films, motion graphics, color grading and cinematic edits that captivate your target audience and drive meaningful engagement.',
+    desc: 'We create professional video editing solutions that transform raw footage into engaging, high-quality visual content. Our services include reels editing, promotional videos, corporate videos, motion graphics, color correction and cinematic edits.',
     link: '/services/video-editing',
-  },
-  {
-    icon: Megaphone,
-    title: 'Performance Marketing',
-    desc: 'ROI-focused lead generation and performance campaigns that convert the right audience into loyal, long-term customers — measurably. The best digital marketing agency in Thanjavur for scaling your business.',
-    link: '/services/performance',
   },
 ]
 
@@ -142,6 +136,11 @@ export default function Services() {
             View All <ArrowRight size={14} />
           </a>
         </div>
+
+        <p className="reveal text-center text-[14px] text-slate-500 leading-relaxed mt-8">
+          As the top digital branding and advertising in Thanjavur, we help businesses create memorable
+          brand identities and impactful customer experiences.
+        </p>
 
       </div>
     </section>

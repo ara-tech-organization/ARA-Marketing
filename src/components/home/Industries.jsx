@@ -8,7 +8,7 @@ const industries = [
   { icon: Utensils,      label: 'Restaurants',         size: 'medium' },
   { icon: Factory,       label: 'Manufacturing',       size: 'medium' },
   { icon: Shirt,         label: 'Fashion & Lifestyle', size: 'small' },
-  { icon: Landmark,      label: 'Finance & Services',  size: 'small' },
+  { icon: Landmark,      label: 'Finance & Professional Services', size: 'small' },
 ]
 
 const sizeClasses = {
@@ -72,8 +72,7 @@ export default function Industries() {
             Digital Marketing Solutions<br />for Every Industry
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            We understand different customer behaviors and market trends —
-            delivering customized strategies for businesses across all sectors.
+            We provide customized marketing solutions for businesses across all sectors.
           </p>
         </div>
 
@@ -100,8 +99,9 @@ export default function Industries() {
         </div>
 
         {/* Bottom note */}
-        <p className="reveal text-center text-slate-400 text-sm mt-12 font-medium">
-          Serving 100+ businesses across diverse sectors in Thanjavur and beyond
+        <p className="reveal text-center text-[13.5px] text-slate-500 leading-relaxed max-w-xl mx-auto mt-12">
+          We understand different customer behaviors and market trends which is why businesses from all
+          industry sectors choose us as the best digital marketing company in Thanjavur.
         </p>
 
       </div>

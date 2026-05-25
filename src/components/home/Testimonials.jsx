@@ -3,21 +3,21 @@ import useTilt from '../../hooks/useTilt'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing improved our website rankings and generated quality leads consistently. Their transparent approach and data-driven strategies made a real, measurable difference in our business growth.',
+    text: 'Ara Discover Marketing improved our website rankings and generated quality leads consistently.',
     name: 'Arjun Kumar',
     role: 'Business Owner',
     initials: 'AK',
     stars: 5,
   },
   {
-    text: 'Their branding and advertising strategies helped our business grow faster online. Professional support, transparent reporting â€” one of the best digital marketing companies in Thanjavur.',
+    text: 'Their branding and advertising strategies helped our business grow faster online.',
     name: 'Pooja Menon',
     role: 'Marketing Director',
     initials: 'PM',
     stars: 5,
   },
   {
-    text: 'The team at Ara really understands local market dynamics. Their SEO expertise helped us rank for competitive keywords and brought in highly qualified organic traffic to our website.',
+    text: 'One of the best digital marketing companies in Thanjavur with professional support and transparent reporting.',
     name: 'Suresh Babu',
     role: 'eCommerce Entrepreneur',
     initials: 'SB',
@@ -115,10 +115,6 @@ export default function Testimonials() {
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
             What Our Clients Say<br />About Our Services
           </h2>
-          <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            Real results, real stories â€” from businesses we have partnered with
-            to achieve outstanding digital growth and brand visibility.
-          </p>
         </div>
 
         {/* 3 cards grid */}

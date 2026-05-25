@@ -1,138 +1,228 @@
-import { Palette, ChevronRight, ArrowRight, ArrowUpRight } from 'lucide-react'
-
-const serviceChips = [
-  'Logo Design', 'Banner Design', 'Brochure Design', 'Business Card',
-  'Letterhead Design', 'Social Media Post', 'Flyer Design', 'Pamphlet Design',
-]
-
+import { Palette, ChevronRight, ArrowRight, ArrowUpRight, CheckCircle, Frame, Type, Layers } from 'lucide-react'
 
 export default function GDHero() {
   return (
     <section
-      className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(160deg, #0c1527 0%, #0f1f4a 45%, #0d2b6e 75%, #1a4db5 100%)' }}
+      className="relative overflow-hidden pt-[72px] min-h-[100vh] flex items-center"
+      style={{ background: 'linear-gradient(135deg, #050a1a 0%, #0f172a 45%, #1a1040 100%)' }}
     >
-      {/* Abstract orbs */}
-      <div className="absolute top-10 left-[8%] w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 70%)', filter: 'blur(70px)' }} />
-      <div className="absolute top-32 right-[8%] w-[360px] h-[360px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.22) 0%, transparent 70%)', filter: 'blur(60px)' }} />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(96,165,250,0.1) 0%, transparent 70%)', filter: 'blur(40px)' }} />
+      {/* Dot grid */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(147,197,253,0.055) 1px, transparent 1px)',
+          backgroundSize: '30px 30px',
+        }} />
 
-      {/* Subtle grid */}
-      <div className="absolute inset-0 pointer-events-none" style={{
-        backgroundImage: `linear-gradient(rgba(96,165,250,0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(96,165,250,0.04) 1px, transparent 1px)`,
-        backgroundSize: '64px 64px',
-      }} />
+      {/* Glow blobs */}
+      <div className="absolute top-0 right-0 w-[700px] h-[700px] pointer-events-none"
+        style={{ background: 'radial-gradient(circle at 65% 15%, rgba(37,99,235,0.22) 0%, transparent 55%)' }} />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] pointer-events-none"
+        style={{ background: 'radial-gradient(circle at 15% 85%, rgba(124,58,237,0.14) 0%, transparent 55%)' }} />
+      <div className="absolute top-[30%] left-0 w-[350px] h-[350px] pointer-events-none"
+        style={{ background: 'radial-gradient(circle at 5% 50%, rgba(14,165,233,0.09) 0%, transparent 60%)' }} />
 
-      {/* Top gradient line */}
-      <div className="absolute top-[72px] left-0 right-0 h-px pointer-events-none"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(96,165,250,0.3), transparent)' }} />
+      {/* Top border line */}
+      <div className="absolute top-[72px] left-0 right-0 h-px"
+        style={{ background: 'linear-gradient(90deg, transparent, rgba(37,99,235,0.35), transparent)' }} />
 
-      <div className="relative max-w-[1100px] mx-auto px-7 w-full pt-16 pb-0 text-center">
+      <div className="relative max-w-[1200px] mx-auto px-7 w-full py-16">
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-        {/* Breadcrumb */}
-        <nav className="flex items-center justify-center gap-1.5 text-[13px] text-blue-300/60 mb-8 animate-hero-enter">
-          <a href="/ARA-Marketing/" className="hover:text-blue-300 transition-colors">Home</a>
-          <ChevronRight size={12} className="text-blue-400/30" />
-          <span className="text-blue-300/40">Services</span>
-          <ChevronRight size={12} className="text-blue-400/30" />
-          <span className="text-blue-300 font-medium">Graphic Design</span>
-        </nav>
+          {/* ── Left ── */}
+          <div>
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-1.5 text-[13px] text-slate-500 mb-7 animate-hero-enter">
+              <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors">Home</a>
+              <ChevronRight size={12} className="text-slate-600" />
+              <span className="text-slate-600">Services</span>
+              <ChevronRight size={12} className="text-slate-600" />
+              <span className="text-blue-400 font-medium">Graphic Design</span>
+            </nav>
 
-        {/* Badge */}
-        <div className="animate-hero-d1 flex justify-center mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-2
-            bg-blue-500/15 text-blue-300 border border-blue-400/25
-            rounded-full text-[11px] font-bold uppercase tracking-widest">
-            <Palette size={11} /> Branding &amp; Graphic Design
-          </span>
-        </div>
-
-        {/* H1 */}
-        <h1
-          className="animate-hero-d2 text-white tracking-tight mb-6 mx-auto"
-          style={{ fontSize: 'clamp(26px,3.5vw,48px)', lineHeight: 1.18, maxWidth: '1000px', fontWeight: 700 }}
-        >
-          Best Branding &amp; Graphic Design<br />
-          <span style={{
-            background: 'linear-gradient(135deg, #93c5fd, #38bdf8)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}>Services in Thanjavur</span>
-        </h1>
-
-        {/* Description */}
-        <p className="animate-hero-d3 text-[16px] text-blue-100/65 leading-[1.9] mb-4 mx-auto"
-          style={{ maxWidth: '600px' }}>
-          Ara Discover Marketing creates visually appealing brand identities — logos, brochures,
-          social media creatives and business cards — that attract, engage and convert customers.
-        </p>
-        <p className="animate-hero-d3 text-[13.5px] text-blue-200/40 leading-[1.8] mb-10 mx-auto"
-          style={{ maxWidth: '520px' }}>
-          Top-rated graphic design agencies in Thanjavur providing AI-powered and modern branding
-          solutions that help businesses stand out in a competitive market.
-        </p>
-
-        {/* CTAs */}
-        <div className="animate-hero-d4 flex justify-center flex-wrap gap-3 mb-10">
-          <a href="#contact"
-            className="btn-glow inline-flex items-center gap-2 px-8 py-4 bg-blue-500 text-white
-              rounded-full text-sm font-bold shadow-xl shadow-blue-500/40
-              hover:bg-blue-400 transition-all duration-300">
-            Get Free Consultation <ArrowRight size={15} />
-          </a>
-          <a href="#gd-services"
-            className="inline-flex items-center gap-2 px-8 py-4 border border-blue-400/35
-              text-blue-200 rounded-full text-sm font-bold
-              hover:bg-blue-500/15 hover:border-blue-400/60 transition-all duration-300">
-            Explore Services <ArrowUpRight size={15} />
-          </a>
-        </div>
-
-        {/* Service chips */}
-        <div className="animate-hero-d5 flex flex-wrap justify-center gap-2 mb-12">
-          {serviceChips.map(s => (
-            <span key={s}
-              className="text-[11px] font-semibold px-3 py-1.5 rounded-full"
-              style={{
-                background: 'rgba(37,99,235,0.18)',
-                border: '1px solid rgba(96,165,250,0.18)',
-                color: 'rgba(147,197,253,0.8)',
-              }}
-            >{s}</span>
-          ))}
-        </div>
-
-        {/* Stats row */}
-        <div className="flex justify-center mb-16 border-t border-white/8 pt-10 gap-0">
-          {[
-            ['500+', 'Designs Delivered'],
-            ['100+', 'Brands Created'],
-            ['98%',  'Client Satisfaction'],
-          ].map(([num, label], i) => (
-            <div
-              key={label}
-              className={`flex flex-col items-center px-10 ${i < 2 ? 'border-r border-white/10' : ''}`}
-            >
+            {/* Badge */}
+            <div className="animate-hero-d1 mb-5">
               <span
-                className="text-[28px] font-black leading-tight"
-                style={{
-                  background: 'linear-gradient(135deg, #93c5fd, #38bdf8)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
-              >{num}</span>
-              <span className="text-[12px] text-blue-300/55 mt-0.5">{label}</span>
+                className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-blue-300"
+                style={{ background: 'rgba(37,99,235,0.14)', border: '1px solid rgba(96,165,250,0.28)' }}
+              >
+                <Palette size={11} /> Branding &amp; Graphic Design
+              </span>
             </div>
-          ))}
+
+            {/* H1 */}
+            <h1
+              className="animate-hero-d2 tracking-tight mb-5 text-white"
+              style={{ fontSize: 'clamp(30px,4vw,56px)', lineHeight: 1.08, fontWeight: 800 }}
+            >
+              Best Branding &amp;<br />
+              Graphic Design<br />
+              <span style={{
+                background: 'linear-gradient(90deg, #60a5fa 0%, #38bdf8 50%, #a78bfa 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>
+                Services in Thanjavur
+              </span>
+            </h1>
+
+            {/* Description */}
+            <p className="animate-hero-d3 text-[15px] text-slate-400 leading-[1.85] mb-3 max-w-[500px]">
+              Ara Discover Marketing creates visually powerful brand identities that attract, engage
+              and convert customers with creative and strategic design solutions.
+            </p>
+            <p className="animate-hero-d3 text-[13.5px] text-slate-500 leading-[1.8] mb-8 max-w-[480px]">
+              As the top-rated graphic design agency in Thanjavur, we offer AI-powered branding
+              solutions — logos, brochures, social media creatives, business cards and more.
+            </p>
+
+            {/* CTAs */}
+            <div className="animate-hero-d4 flex flex-wrap gap-3 mb-10">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
+                style={{
+                  background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+                  boxShadow: '0 8px 32px rgba(37,99,235,0.45)',
+                }}
+              >
+                Get Free Consultation <ArrowRight size={15} />
+              </a>
+              <a
+                href="#gd-services"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-slate-300 transition-all duration-300 hover:text-white hover:border-blue-400/60"
+                style={{ border: '1.5px solid rgba(148,163,184,0.2)', background: 'rgba(255,255,255,0.03)' }}
+              >
+                View Services <ArrowUpRight size={15} />
+              </a>
+            </div>
+
+            {/* Stats */}
+            <div className="animate-hero-d5 flex gap-0 border-t pt-8" style={{ borderColor: 'rgba(148,163,184,0.1)' }}>
+              {[
+                ['500+', 'Designs Delivered'],
+                ['100+', 'Brands Created'],
+                ['98%',  'Client Satisfaction'],
+              ].map(([num, label], i) => (
+                <div key={label}
+                  className={`flex flex-col pr-8 ${i < 2 ? 'border-r mr-8' : ''}`}
+                  style={{ borderColor: 'rgba(148,163,184,0.1)' }}>
+                  <span
+                    className="text-[24px] font-black leading-tight"
+                    style={{
+                      background: 'linear-gradient(90deg, #60a5fa, #38bdf8)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >{num}</span>
+                  <span className="text-[12px] text-slate-500 mt-0.5">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── Right: Service Tiles Grid ── */}
+          <div className="animate-hero-visual hidden lg:block">
+            <div className="relative grid grid-cols-2 gap-4">
+
+              {/* Tile 1 — Logo Design */}
+              <div
+                className="rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
+                style={{
+                  background: 'linear-gradient(145deg, rgba(37,99,235,0.18) 0%, rgba(37,99,235,0.08) 100%)',
+                  border: '1px solid rgba(96,165,250,0.2)',
+                  boxShadow: '0 8px 32px rgba(37,99,235,0.14)',
+                  aspectRatio: '1',
+                }}
+              >
+                <div className="absolute inset-0 rounded-3xl pointer-events-none"
+                  style={{ backgroundImage: 'radial-gradient(circle, rgba(147,197,253,0.06) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+                <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center"
+                  style={{ background: 'linear-gradient(135deg, #2563eb, #38bdf8)', boxShadow: '0 8px 24px rgba(37,99,235,0.45)' }}>
+                  <Frame size={22} className="text-white" />
+                </div>
+                <div className="relative">
+                  <p className="text-[15px] font-black text-white leading-tight mb-1">Logo Design</p>
+                  <p className="text-[11px] text-slate-500">Brand mark creation</p>
+                </div>
+              </div>
+
+              {/* Tile 2 — Social Media (offset down) */}
+              <div
+                className="rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
+                style={{
+                  background: 'linear-gradient(145deg, rgba(14,165,233,0.18) 0%, rgba(14,165,233,0.07) 100%)',
+                  border: '1px solid rgba(56,189,248,0.2)',
+                  boxShadow: '0 8px 32px rgba(14,165,233,0.12)',
+                  aspectRatio: '1',
+                  marginTop: '32px',
+                }}
+              >
+                <div className="absolute inset-0 rounded-3xl pointer-events-none"
+                  style={{ backgroundImage: 'radial-gradient(circle, rgba(147,197,253,0.06) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+                <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center"
+                  style={{ background: 'linear-gradient(135deg, #0284c7, #38bdf8)', boxShadow: '0 8px 24px rgba(14,165,233,0.45)' }}>
+                  <Layers size={22} className="text-white" />
+                </div>
+                <div className="relative">
+                  <p className="text-[15px] font-black text-white leading-tight mb-1">Social Media</p>
+                  <p className="text-[11px] text-slate-500">Creative post designs</p>
+                </div>
+              </div>
+
+              {/* Tile 3 — Brochure (offset up) */}
+              <div
+                className="rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
+                style={{
+                  background: 'linear-gradient(145deg, rgba(124,58,237,0.18) 0%, rgba(124,58,237,0.07) 100%)',
+                  border: '1px solid rgba(167,139,250,0.2)',
+                  boxShadow: '0 8px 32px rgba(124,58,237,0.12)',
+                  aspectRatio: '1',
+                  marginTop: '-32px',
+                }}
+              >
+                <div className="absolute inset-0 rounded-3xl pointer-events-none"
+                  style={{ backgroundImage: 'radial-gradient(circle, rgba(167,139,250,0.06) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+                <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center"
+                  style={{ background: 'linear-gradient(135deg, #7c3aed, #a78bfa)', boxShadow: '0 8px 24px rgba(124,58,237,0.45)' }}>
+                  <Type size={22} className="text-white" />
+                </div>
+                <div className="relative">
+                  <p className="text-[15px] font-black text-white leading-tight mb-1">Brochure</p>
+                  <p className="text-[11px] text-slate-500">Print &amp; digital design</p>
+                </div>
+              </div>
+
+              {/* Tile 4 — Business Card */}
+              <div
+                className="rounded-3xl p-6 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
+                style={{
+                  background: 'linear-gradient(145deg, rgba(5,150,105,0.18) 0%, rgba(5,150,105,0.07) 100%)',
+                  border: '1px solid rgba(52,211,153,0.2)',
+                  boxShadow: '0 8px 32px rgba(5,150,105,0.12)',
+                  aspectRatio: '1',
+                }}
+              >
+                <div className="absolute inset-0 rounded-3xl pointer-events-none"
+                  style={{ backgroundImage: 'radial-gradient(circle, rgba(52,211,153,0.06) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+                <div className="relative w-12 h-12 rounded-2xl flex items-center justify-center"
+                  style={{ background: 'linear-gradient(135deg, #059669, #34d399)', boxShadow: '0 8px 24px rgba(5,150,105,0.45)' }}>
+                  <CheckCircle size={22} className="text-white" />
+                </div>
+                <div className="relative">
+                  <p className="text-[15px] font-black text-white leading-tight mb-1">Business Card</p>
+                  <p className="text-[11px] text-slate-500">Professional identity</p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
         </div>
       </div>
-
 
       {/* Hidden SEO image */}
       <img

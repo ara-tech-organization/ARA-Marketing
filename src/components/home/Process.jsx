@@ -1,13 +1,13 @@
 import { Search, Target, Globe, BarChart2, Share2, Activity, Rocket } from 'lucide-react'
 
 const steps = [
-  { n: '01', icon: Search,    title: 'Business Analysis',      desc: 'Deep research into your market, audience and competition.',         color: '#2563eb', light: '#dbeafe' },
-  { n: '02', icon: Target,    title: 'Strategy Planning',      desc: 'Customized data-backed digital marketing roadmap for your KPIs.',    color: '#7c3aed', light: '#ede9fe' },
-  { n: '03', icon: Globe,     title: 'SEO & Content',          desc: 'On-page, technical and off-page SEO with high-quality content.',     color: '#059669', light: '#d1fae5' },
-  { n: '04', icon: BarChart2, title: 'Paid Advertising',       desc: 'Google, Meta and display ad campaigns for targeted lead gen.',       color: '#d97706', light: '#fef3c7' },
-  { n: '05', icon: Share2,    title: 'Social Media',           desc: 'Creative campaigns that drive engagement, reach and visibility.',    color: '#db2777', light: '#fce7f3' },
-  { n: '06', icon: Activity,  title: 'Performance Tracking',   desc: 'Real-time analytics and transparent ROI reporting.',                 color: '#0891b2', light: '#cffafe' },
-  { n: '07', icon: Rocket,    title: 'Scale & Optimize',       desc: 'Continuous improvement to accelerate long-term digital growth.',     color: '#2563eb', light: '#dbeafe' },
+  { n: '01', icon: Search,    title: 'Business & Competitor Analysis',    desc: 'Deep research into your market, audience and competition.',         color: '#2563eb', light: '#dbeafe' },
+  { n: '02', icon: Target,    title: 'Strategy Planning & Goal Setting',  desc: 'Customized data-backed digital marketing roadmap for your KPIs.',    color: '#7c3aed', light: '#ede9fe' },
+  { n: '03', icon: Globe,     title: 'SEO & Content Optimization',        desc: 'On-page, technical and off-page SEO with high-quality content.',     color: '#059669', light: '#d1fae5' },
+  { n: '04', icon: BarChart2, title: 'Paid Advertising Campaign Setup',   desc: 'Google, Meta and display ad campaigns for targeted lead gen.',       color: '#d97706', light: '#fef3c7' },
+  { n: '05', icon: Share2,    title: 'Social Media Execution',            desc: 'Creative campaigns that drive engagement, reach and visibility.',    color: '#db2777', light: '#fce7f3' },
+  { n: '06', icon: Activity,  title: 'Performance Tracking & Reporting',  desc: 'Real-time analytics and transparent ROI reporting.',                 color: '#0891b2', light: '#cffafe' },
+  { n: '07', icon: Rocket,    title: 'Continuous Optimization & Scaling', desc: 'Continuous improvement to accelerate long-term digital growth.',     color: '#2563eb', light: '#dbeafe' },
 ]
 
 const row1 = steps.slice(0, 4)
@@ -95,8 +95,8 @@ export default function Process() {
             Our Proven Digital Marketing Workflow
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            A strategic, methodical 7-step approach that ensures maximum ROI
-            and long-term digital success for every client we partner with.
+            As a top digital marketing company in Thanjavur, we follow a strategic and methodical
+            approach that ensures maximum ROI and long-term digital success.
           </p>
         </div>
 

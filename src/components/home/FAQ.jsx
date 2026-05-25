@@ -26,7 +26,7 @@ export default function FAQ() {
             </span>
             <h2 className="text-[clamp(26px,3vw,38px)] font-bold text-slate-900
               leading-tight tracking-tight mb-4">
-              Frequently Asked<br />Questions
+              Frequently Asked<br />Question (FAQs)
             </h2>
             <p className="text-base text-slate-500 leading-relaxed mb-9">
               Have questions about our digital marketing services? Find answers to the most

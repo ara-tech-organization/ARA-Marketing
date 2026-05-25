@@ -44,8 +44,12 @@ const webDevSchema = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Which company provides the best web design and development services in Thanjavur?', acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is the best web design and development company in Thanjavur.' } },
-        { '@type': 'Question', name: 'Do you develop custom websites for business?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, we provide fully tailored website solutions according to business needs.' } },
+        { '@type': 'Question', name: 'Which company provides the best web design and development services in Thanjavur?', acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is the best web design and development company in Thanjavur, providing custom websites, corporate websites and e-commerce solutions.' } },
+        { '@type': 'Question', name: 'What are included services in website development?', acceptedAnswer: { '@type': 'Answer', text: 'Website development includes UI/UX design, frontend & backend development, SEO optimisation, mobile responsiveness and website maintenance.' } },
+        { '@type': 'Question', name: 'Do you develop custom websites for business?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, we are providing custom website development company in Thanjavur solutions according to business needs and functionality requirements.' } },
+        { '@type': 'Question', name: 'Why is a professional website necessary for business?', acceptedAnswer: { '@type': 'Answer', text: 'A professional website increases brand credibility, enhances online visibility, generates leads and improves customer trust.' } },
+        { '@type': 'Question', name: 'Do you provide SEO friendly website development?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, all websites are built with SEO optimised structure for better Google rankings.' } },
+        { '@type': 'Question', name: 'Why choose Ara Discover Marketing for web development services?', acceptedAnswer: { '@type': 'Answer', text: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as a best website design and development company in Thanjavur assures long-term and high-quality digital solutions.' } },
       ],
     },
   ],
@@ -56,7 +60,7 @@ export default function WebDevPage() {
   useSEO({
     title: 'Best Website Design and Development Company in Thanjavur | Ara Discover Marketing',
     description: 'Ara Discover Marketing is one of the best website design and development companies in Thanjavur, creating AI-driven and SEO-friendly websites for businesses.',
-    keywords: 'best website design and development company in thanjavur, custom website development company in thanjavur, professional web development services in thanjavur, web development and designing company in thanjavur',
+    keywords: 'best web design and development companies in thanjavur, best website design and development agency in thanjavur, best website design and development company in thanjavur, best website design and development firms in thanjavur, best website design and development services in thanjavur, best website design and development services providers in thanjavur, custom website development company in thanjavur, custom website development services in thanjavur, professional web development services in thanjavur, top web development firms in thanjavur, top website design and development agencies in thanjavur, web development and designing company in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/website-development',
     schema: webDevSchema,
   })

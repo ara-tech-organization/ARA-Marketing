@@ -2,7 +2,7 @@ import { BarChart, Search, Globe, TrendingUp, BarChart2, Target, MessageSquare, 
 
 const tools = [
   { icon: BarChart,      name: 'Google Analytics', desc: 'Data & Insights' },
-  { icon: Search,        name: 'Search Console',    desc: 'SEO Performance' },
+  { icon: Search,        name: 'Google Search Console', desc: 'SEO Performance' },
   { icon: Globe,         name: 'SEMrush',           desc: 'SEO & Competitor' },
   { icon: TrendingUp,    name: 'Ahrefs',            desc: 'Link Building' },
   { icon: BarChart2,     name: 'Meta Ads Manager',  desc: 'Social Advertising' },
@@ -23,11 +23,11 @@ export default function Tools() {
             <Bot size={11} /> Technology Stack
           </span>
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
-            Advanced AI-Enhanced Marketing<br />Tools &amp; Technologies
+            Advanced AI Enhanced Marketing Tools<br />&amp; Technologies We Use
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            We use the best AI-backed, industry-leading tools and platforms to boost
-            campaign performance, analytics and measurable growth for your business.
+            We use the best AI-backed tools in the industry and AI-powered platforms to boost
+            campaign performance and analytics.
           </p>
         </div>
 
@@ -58,6 +58,11 @@ export default function Tools() {
             )
           })}
         </div>
+
+        <p className="reveal text-center text-[13.5px] text-slate-500 leading-relaxed max-w-xl mx-auto mt-10">
+          Our approach driven by technology has secured us a spot among the top digital marketing
+          companies in Thanjavur.
+        </p>
 
       </div>
     </section>

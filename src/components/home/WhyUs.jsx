@@ -1,12 +1,12 @@
 import { Bot, BarChart, Target, Users, Shield, Clock, Zap, Star, CheckCheck } from 'lucide-react'
 
 const reasons = [
-  { icon: Bot,    title: 'AI-Focused Campaigns',   desc: 'We leverage AI-powered tools to optimize every campaign for maximum ROI and measurable results.' },
-  { icon: BarChart, title: 'Transparent Analytics', desc: 'Real-time reporting dashboards so you always know exactly how your campaigns perform.' },
-  { icon: Target, title: 'Customized Strategies',  desc: 'Strategies built around your goals, target audience and competitive landscape — never generic.' },
-  { icon: Users,  title: 'Experienced Experts',    desc: 'A dedicated team of SEO, advertising and branding specialists with proven, measurable results.' },
-  { icon: Shield, title: 'Ethical & Compliant',    desc: 'We follow search engine guidelines and ethical practices ensuring sustainable long-term growth.' },
-  { icon: Clock,  title: 'Dedicated Support',      desc: 'Direct communication and continuous campaign optimization every step of the way.' },
+  { icon: Target,   title: 'Customized Digital Marketing Strategies', desc: 'Strategies built around your goals, target audience and competitive landscape — never generic.' },
+  { icon: Users,    title: 'Experienced SEO & Advertising Experts',   desc: 'A dedicated team of SEO, advertising and branding specialists with proven, measurable results.' },
+  { icon: BarChart, title: 'Transparent Reporting & Analytics',       desc: 'Real-time reporting dashboards so you always know exactly how your campaigns perform.' },
+  { icon: Bot,      title: 'AI-Focused Marketing Campaigns',          desc: 'We leverage AI-powered tools to optimize every campaign for maximum ROI and measurable results.' },
+  { icon: Shield,   title: 'Affordable Packages for Startups & Enterprises', desc: 'Flexible and affordable digital marketing packages designed for businesses of every size and budget.' },
+  { icon: Clock,    title: 'Dedicated Support & Campaign Optimization', desc: 'Direct communication and continuous campaign optimization every step of the way.' },
 ]
 
 const credStats = [
@@ -30,10 +30,11 @@ export default function WhyUs() {
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
             Why Do Businesses Choose<br />Ara Discover Marketing?
           </h2>
-          <p className="text-base text-slate-500 leading-relaxed max-w-2xl mx-auto mt-3.5">
+          <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">
             Businesses and startups trust Ara because we focus on measurable growth, transparency and
-            long-term success. As one of the top digital marketing companies in Thanjavur, our approach
-            is centered around AI-driven customized strategies that generate real ROI.
+            long-term success. Also one of the top digital marketing companies in Thanjavur, our approach
+            is centered around understanding your business requirements and building AI-driven customized
+            strategies that generate ROI.
           </p>
         </div>
 
@@ -135,8 +136,8 @@ export default function WhyUs() {
             {/* Bottom CTA strip */}
             <div className="pt-7 pb-1 flex flex-wrap items-center justify-between gap-4">
               <p className="text-[13px] text-slate-500 leading-relaxed max-w-sm">
-                Looking for the best digital marketing agency in Thanjavur?
-                Ara Discover Marketing offers a complete digital solution.
+                Are you looking for the best digital marketing agency in Thanjavur? Ara Discover Marketing
+                offers a complete digital solution that drives visibility, engagement and conversions.
               </p>
               <a
                 href="#contact"

@@ -187,7 +187,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-[700px] mx-auto px-7 flex flex-col items-center text-center">
 
         {/* Chip */}
-        <div className="inline-flex items-center gap-2 px-5 py-2 mb-14 rounded-full
+        <div className="inline-flex items-center gap-2 px-5 py-2 mb-5 rounded-full
           text-[12px] font-bold text-blue-400 uppercase tracking-[0.15em]"
           style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.3)' }}
         >
@@ -196,31 +196,38 @@ export default function Hero() {
           <Zap size={12} />
         </div>
 
-        {/* H1 — two lines */}
-        <h1 className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-10"
-          style={{ fontSize: 'clamp(32px, 4.2vw, 56px)' }}
+        {/* H1 */}
+        <h1 className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-6"
+          style={{ fontSize: 'clamp(30px, 4vw, 54px)' }}
         >
-          Best Digital Marketing
-          <br />
+          Best Digital Marketing Company in Thanjavur<br />
           <span style={{
             background: 'linear-gradient(135deg, #93c5fd 0%, #60a5fa 25%, #3b82f6 55%, #818cf8 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}>
-            Company in Thanjavur
+            for Business Growth &amp; Brand Visibility
           </span>
         </h1>
 
         {/* Description */}
-        <p className="text-[16px] leading-[1.75] mb-16 max-w-[500px]"
+        <p className="text-[16px] leading-[1.75] mb-4 max-w-[600px]"
           style={{ color: 'rgba(255,255,255,0.45)' }}
         >
-          Ara Discover Marketing helps startups, local businesses and enterprises generate
-          leads, improve online visibility and increase revenue through AI-powered strategies.
+          Ara Discover Marketing is the best digital marketing company in Thanjavur, helping
+          startups, local businesses and enterprises generate leads, improve online visibility
+          and increase revenue through data-driven strategies.
+        </p>
+        <p className="text-[14px] leading-[1.75] mb-8 max-w-[520px]"
+          style={{ color: 'rgba(255,255,255,0.32)' }}
+        >
+          One of the best digital marketing companies in Thanjavur, delivering complete SEO,
+          social media marketing, paid advertising, branding, video editing and performance
+          marketing solutions tailored for digital businesses.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap gap-4 justify-center mb-14">
+        <div className="flex flex-wrap gap-4 justify-center mb-8">
           <a href="#contact"
             className="btn-glow inline-flex items-center gap-2.5 px-9 py-3.5 bg-blue-600 text-white
               rounded-full font-bold text-[15px] transition-all duration-300

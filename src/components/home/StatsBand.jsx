@@ -14,15 +14,22 @@ function StatItem({ target, suffix, label }) {
 
 export default function StatsBand() {
   return (
-    <section className="relative py-12 bg-white border-y border-slate-100 overflow-hidden">
+    <section className="relative py-16 bg-white border-y border-slate-100 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-7">
-        <div className="flex flex-wrap items-center justify-center gap-0 divide-x divide-slate-200">
-          <StatItem target={150} suffix="+" label="Successful Projects" />
-          <StatItem target={95}  suffix="%" label="Client Satisfaction" />
-          <StatItem target={120} suffix="+" label="SEO Campaigns" />
+        <h2 className="text-center text-[clamp(20px,2.8vw,32px)] font-bold text-slate-900 leading-tight tracking-tight mb-10">
+          Delivering Measurable Growth Through Strategic Marketing
+        </h2>
+        <div className="flex flex-wrap items-center justify-center gap-0 divide-x divide-slate-200 mb-8">
+          <StatItem target={150} suffix="+" label="Successful Projects Completed" />
+          <StatItem target={95}  suffix="%" label="Client Satisfaction Rate" />
+          <StatItem target={120} suffix="+" label="SEO Campaigns Managed" />
           <StatItem target={200} suffix="%" label="Avg. Visibility Increase" />
-          <StatItem target={100} suffix="+" label="Brands Promoted" />
+          <StatItem target={100} suffix="+" label="Brands Successfully Promoted" />
         </div>
+        <p className="text-center text-[13.5px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+          Our AI-driven digital marketing strategies make us the best digital marketing agency in Thanjavur
+          for businesses looking to scale faster and achieve sustainable growth.
+        </p>
       </div>
     </section>
   )
