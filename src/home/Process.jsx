@@ -1,27 +1,87 @@
 import { Search, Target, Globe, BarChart2, Share2, Activity, Rocket } from 'lucide-react'
 
 const steps = [
-  { n: '01', icon: Search,    title: 'Business & Competitor Analysis',   desc: 'Deep research into your market, audience, and competition to identify growth opportunities.',           color: '#3b82f6', glow: 'rgba(59,130,246,0.25)'  },
-  { n: '02', icon: Target,    title: 'Strategy Planning & Goal Setting',  desc: 'Building a customized, data-backed digital marketing roadmap aligned with your KPIs.',                color: '#8b5cf6', glow: 'rgba(139,92,246,0.25)'  },
-  { n: '03', icon: Globe,     title: 'SEO & Content Optimization',        desc: 'On-page, technical and off-page SEO combined with high-quality content to boost rankings.',          color: '#10b981', glow: 'rgba(16,185,129,0.25)'  },
-  { n: '04', icon: BarChart2, title: 'Paid Advertising Setup',            desc: 'Launching and optimizing Google, Meta and display ad campaigns for targeted lead generation.',       color: '#f59e0b', glow: 'rgba(245,158,11,0.25)'  },
-  { n: '05', icon: Share2,    title: 'Social Media Execution',            desc: 'Creative campaigns across platforms that drive engagement, reach and brand visibility.',             color: '#ec4899', glow: 'rgba(236,72,153,0.25)'  },
-  { n: '06', icon: Activity,  title: 'Performance Tracking',              desc: 'Real-time analytics and transparent reporting to measure ROI and campaign effectiveness.',          color: '#06b6d4', glow: 'rgba(6,182,212,0.25)'   },
-  { n: '07', icon: Rocket,    title: 'Optimization & Scaling',            desc: 'Continuous improvement and strategic scaling to accelerate long-term digital growth.',              color: '#3b82f6', glow: 'rgba(59,130,246,0.25)'  },
+  { n: '01', icon: Search,    title: 'Business Analysis',      desc: 'Deep research into your market, audience and competition.',         color: '#2563eb', light: '#dbeafe' },
+  { n: '02', icon: Target,    title: 'Strategy Planning',      desc: 'Customized data-backed digital marketing roadmap for your KPIs.',    color: '#7c3aed', light: '#ede9fe' },
+  { n: '03', icon: Globe,     title: 'SEO & Content',          desc: 'On-page, technical and off-page SEO with high-quality content.',     color: '#059669', light: '#d1fae5' },
+  { n: '04', icon: BarChart2, title: 'Paid Advertising',       desc: 'Google, Meta and display ad campaigns for targeted lead gen.',       color: '#d97706', light: '#fef3c7' },
+  { n: '05', icon: Share2,    title: 'Social Media',           desc: 'Creative campaigns that drive engagement, reach and visibility.',    color: '#db2777', light: '#fce7f3' },
+  { n: '06', icon: Activity,  title: 'Performance Tracking',   desc: 'Real-time analytics and transparent ROI reporting.',                 color: '#0891b2', light: '#cffafe' },
+  { n: '07', icon: Rocket,    title: 'Scale & Optimize',       desc: 'Continuous improvement to accelerate long-term digital growth.',     color: '#2563eb', light: '#dbeafe' },
 ]
+
+const row1 = steps.slice(0, 4)
+const row2 = steps.slice(4)
+
+function StepCard({ s, isLast }) {
+  const Icon = s.icon
+  return (
+    <div className="relative flex flex-col items-center flex-1 min-w-0 group cursor-default">
+      {/* Connector line (not on last in row) */}
+      {!isLast && (
+        <div className="absolute top-[22px] left-1/2 w-full h-[2px] z-0"
+          style={{ background: 'linear-gradient(90deg, rgba(37,99,235,0.3), rgba(37,99,235,0.1))' }} />
+      )}
+
+      {/* Circle node */}
+      <div className="relative z-10 w-11 h-11 rounded-full flex items-center justify-center
+        font-black text-[13px] mb-5 transition-all duration-300
+        group-hover:scale-110 group-hover:shadow-xl border-2"
+        style={{
+          background: '#fff',
+          borderColor: s.color,
+          color: s.color,
+          boxShadow: `0 4px 16px ${s.color}30`,
+        }}>
+        {s.n}
+      </div>
+
+      {/* Card */}
+      <div className="w-full h-full bg-white rounded-2xl p-5 border border-blue-100 shadow-sm
+        text-center transition-all duration-300
+        group-hover:-translate-y-1.5 group-hover:shadow-xl group-hover:shadow-blue-100/80
+        group-hover:border-blue-200">
+
+        {/* Top accent */}
+        <div className="w-8 h-1 rounded-full mx-auto mb-4"
+          style={{ background: s.color }} />
+
+        {/* Icon */}
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center mx-auto mb-4
+          transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]"
+          style={{ background: s.light }}>
+          <Icon size={19} style={{ color: s.color }} />
+        </div>
+
+        {/* Title */}
+        <h3 className="text-[14px] font-bold text-slate-900 mb-2 leading-snug
+          transition-colors duration-300 group-hover:text-blue-700">
+          {s.title}
+        </h3>
+
+        {/* Desc */}
+        <p className="text-[12px] text-slate-400 leading-relaxed">
+          {s.desc}
+        </p>
+      </div>
+    </div>
+  )
+}
 
 export default function Process() {
   return (
-    <section id="process" className="relative py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
-    >
+    <section id="process" className="relative py-24 overflow-hidden bg-white">
       {/* Orbs */}
-      <div className="absolute pointer-events-none rounded-full"
-        style={{ top: '-15%', right: '-10%', width: '600px', height: '600px',
-          background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
-      <div className="absolute pointer-events-none rounded-full"
-        style={{ bottom: '-15%', left: '-8%', width: '500px', height: '500px',
-          background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 65%)' }} />
+      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 70%)' }} />
+      <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)' }} />
+
+      {/* Diamond corners */}
+      <div className="absolute -top-12 -left-12 w-44 h-44 pointer-events-none"
+        style={{ border: '1.5px solid rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
+      <div className="absolute -bottom-12 -right-12 w-44 h-44 pointer-events-none"
+        style={{ border: '1.5px solid rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
 
       <div className="max-w-[1200px] mx-auto px-7 relative z-10">
 
@@ -40,65 +100,38 @@ export default function Process() {
           </p>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {steps.map((s, i) => {
+        {/* Row 1 — steps 01–04 */}
+        <div className="reveal hidden lg:flex items-stretch gap-4 mb-10">
+          {row1.map((s, i) => (
+            <StepCard key={s.n} s={s} isLast={i === row1.length - 1} />
+          ))}
+        </div>
+
+        {/* Row 2 — steps 05–07 (centered) */}
+        <div className="reveal hidden lg:flex items-stretch gap-4 max-w-[780px] mx-auto">
+          {row2.map((s, i) => (
+            <StepCard key={s.n} s={s} isLast={i === row2.length - 1} />
+          ))}
+        </div>
+
+        {/* Mobile: single column */}
+        <div className="lg:hidden flex flex-col gap-4">
+          {steps.map(s => {
             const Icon = s.icon
-            const isLast = i === steps.length - 1
             return (
-              <div
-                key={s.n}
-                className={`reveal delay-${(i % 4) + 1} relative overflow-hidden rounded-2xl p-7
-                  cursor-default group transition-all duration-300
-                  hover:-translate-y-1.5
-                  ${isLast ? 'sm:col-span-2 lg:col-span-1' : ''}`}
-                style={{
-                  background: '#ffffff',
-                  border: '1px solid #e0eaff',
-                  boxShadow: '0 0 0 0 transparent',
-                  transition: 'all 0.3s ease',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.boxShadow = `0 20px 60px ${s.glow}`
-                  e.currentTarget.style.borderColor = `${s.color}40`
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.boxShadow = '0 0 0 0 transparent'
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)'
-                }}
-              >
-                {/* Top accent line */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] rounded-t-2xl"
-                  style={{ background: `linear-gradient(90deg, ${s.color}, transparent)` }} />
-
-                {/* Ghost number watermark */}
-                <div className="absolute -right-3 -bottom-4 font-black select-none pointer-events-none"
-                  style={{ fontSize: '100px', lineHeight: 1, color: '#fff', opacity: 0.03 }}>
-                  {s.n}
+              <div key={s.n} className="flex items-start gap-4 bg-white rounded-2xl p-5
+                border border-blue-100 shadow-sm">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: s.light }}>
+                  <Icon size={18} style={{ color: s.color }} />
                 </div>
-
-                {/* Icon + step badge */}
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-11 h-11 rounded-[13px] flex items-center justify-center flex-shrink-0
-                    transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]"
-                    style={{ background: `${s.color}18`, boxShadow: `0 4px 20px ${s.glow}` }}>
-                    <Icon size={18} style={{ color: s.color }} />
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-[10px] font-black" style={{ color: s.color }}>Step {s.n}</span>
                   </div>
-                  <span className="text-[10px] font-extrabold uppercase tracking-widest"
-                    style={{ color: s.color }}>
-                    Step {s.n}
-                  </span>
+                  <h3 className="text-[14px] font-bold text-slate-900 mb-1">{s.title}</h3>
+                  <p className="text-[12px] text-slate-500 leading-relaxed">{s.desc}</p>
                 </div>
-
-                {/* Title */}
-                <h3 className="text-[15px] font-bold text-slate-900 mb-2.5 leading-snug">
-                  {s.title}
-                </h3>
-
-                {/* Desc */}
-                <p className="text-[13px] text-slate-500 leading-relaxed">
-                  {s.desc}
-                </p>
               </div>
             )
           })}
