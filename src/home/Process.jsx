@@ -1,24 +1,34 @@
 import { Search, Target, Globe, BarChart2, Share2, Activity, Rocket } from 'lucide-react'
 
 const steps = [
-  { n: '01', icon: Search,    title: 'Business & Competitor Analysis',  desc: 'Deep research into your market, audience, and competition to identify growth opportunities.' },
-  { n: '02', icon: Target,    title: 'Strategy Planning & Goal Setting', desc: 'Building a customized, data-backed digital marketing roadmap aligned with your KPIs.' },
-  { n: '03', icon: Globe,     title: 'SEO & Content Optimization',       desc: 'On-page, technical and off-page SEO combined with high-quality content to boost rankings.' },
-  { n: '04', icon: BarChart2, title: 'Paid Advertising Setup',           desc: 'Launching and optimizing Google, Meta and display ad campaigns for targeted lead generation.' },
-  { n: '05', icon: Share2,    title: 'Social Media Execution',           desc: 'Creative campaigns across platforms that drive engagement, reach and brand visibility.' },
-  { n: '06', icon: Activity,  title: 'Performance Tracking',             desc: 'Real-time analytics and transparent reporting to measure ROI and campaign effectiveness.' },
-  { n: '07', icon: Rocket,    title: 'Optimization & Scaling',           desc: 'Continuous improvement and strategic scaling to accelerate long-term digital growth.' },
+  { n: '01', icon: Search,    title: 'Business & Competitor Analysis',   desc: 'Deep research into your market, audience, and competition to identify growth opportunities.',           color: '#3b82f6', glow: 'rgba(59,130,246,0.25)'  },
+  { n: '02', icon: Target,    title: 'Strategy Planning & Goal Setting',  desc: 'Building a customized, data-backed digital marketing roadmap aligned with your KPIs.',                color: '#8b5cf6', glow: 'rgba(139,92,246,0.25)'  },
+  { n: '03', icon: Globe,     title: 'SEO & Content Optimization',        desc: 'On-page, technical and off-page SEO combined with high-quality content to boost rankings.',          color: '#10b981', glow: 'rgba(16,185,129,0.25)'  },
+  { n: '04', icon: BarChart2, title: 'Paid Advertising Setup',            desc: 'Launching and optimizing Google, Meta and display ad campaigns for targeted lead generation.',       color: '#f59e0b', glow: 'rgba(245,158,11,0.25)'  },
+  { n: '05', icon: Share2,    title: 'Social Media Execution',            desc: 'Creative campaigns across platforms that drive engagement, reach and brand visibility.',             color: '#ec4899', glow: 'rgba(236,72,153,0.25)'  },
+  { n: '06', icon: Activity,  title: 'Performance Tracking',              desc: 'Real-time analytics and transparent reporting to measure ROI and campaign effectiveness.',          color: '#06b6d4', glow: 'rgba(6,182,212,0.25)'   },
+  { n: '07', icon: Rocket,    title: 'Optimization & Scaling',            desc: 'Continuous improvement and strategic scaling to accelerate long-term digital growth.',              color: '#3b82f6', glow: 'rgba(59,130,246,0.25)'  },
 ]
 
 export default function Process() {
   return (
-    <section id="process" className="py-24 bg-white overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section id="process" className="relative py-24 overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
+    >
+      {/* Orbs */}
+      <div className="absolute pointer-events-none rounded-full"
+        style={{ top: '-15%', right: '-10%', width: '600px', height: '600px',
+          background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
+      <div className="absolute pointer-events-none rounded-full"
+        style={{ bottom: '-15%', left: '-8%', width: '500px', height: '500px',
+          background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 65%)' }} />
+
+      <div className="max-w-[1200px] mx-auto px-7 relative z-10">
 
         {/* Header */}
-        <div className="text-center mb-20 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
-            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
+        <div className="text-center mb-16 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-100 text-blue-700
+            border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Rocket size={11} /> How We Work
           </span>
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
@@ -30,83 +40,65 @@ export default function Process() {
           </p>
         </div>
 
-        {/* Zigzag timeline — desktop */}
-        <div className="hidden lg:block relative">
-          {/* Vertical center line */}
-          <div className="timeline-line" />
-
-          <div className="flex flex-col gap-0">
-            {steps.map((s, i) => {
-              const Icon = s.icon
-              const isLeft = i % 2 === 0
-              return (
-                <div
-                  key={s.n}
-                  className={`reveal delay-${(i % 4) + 1} relative flex items-center mb-8
-                    ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}
-                >
-                  {/* Content card */}
-                  <div
-                    className={`w-[calc(50%-48px)] group cursor-default
-                      bg-white border border-slate-200 rounded-2xl p-7 shadow-sm
-                      transition-all duration-300 hover:-translate-y-1 hover:shadow-xl
-                      hover:shadow-blue-600/10 hover:border-blue-200
-                      border-l-4 border-l-blue-600
-                      ${isLeft ? 'mr-auto' : 'ml-auto'}`}
-                  >
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="w-10 h-10 bg-blue-600 rounded-[11px] flex items-center
-                        justify-center text-white flex-shrink-0 transition-all duration-300
-                        group-hover:scale-110 group-hover:rotate-[-5deg] group-hover:shadow-lg
-                        group-hover:shadow-blue-600/30">
-                        <Icon size={18} />
-                      </div>
-                      <span className="text-[11px] font-extrabold text-blue-400 uppercase tracking-widest">
-                        Step {s.n}
-                      </span>
-                    </div>
-                    <h3 className="text-[16px] font-bold text-slate-900 mb-2 leading-snug">{s.title}</h3>
-                    <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
-                  </div>
-
-                  {/* Center node */}
-                  <div className="absolute left-1/2 -translate-x-1/2 z-10 flex items-center justify-center">
-                    <div className="w-12 h-12 rounded-full bg-[#0d1f3c] border-4 border-blue-600
-                      flex items-center justify-center shadow-lg shadow-blue-600/30">
-                      <span className="text-[11px] font-extrabold text-blue-400">{s.n}</span>
-                    </div>
-                  </div>
-
-                  {/* Spacer for the other side */}
-                  <div className="w-[calc(50%-48px)]" />
-                </div>
-              )
-            })}
-          </div>
-        </div>
-
-        {/* Mobile: single column vertical list */}
-        <div className="lg:hidden flex flex-col gap-4">
+        {/* Cards grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {steps.map((s, i) => {
             const Icon = s.icon
+            const isLast = i === steps.length - 1
             return (
               <div
                 key={s.n}
-                className={`reveal delay-${(i % 4) + 1} flex items-start gap-4
-                  bg-white border border-slate-200 border-l-4 border-l-blue-600
-                  rounded-2xl p-6 shadow-sm`}
+                className={`reveal delay-${(i % 4) + 1} relative overflow-hidden rounded-2xl p-7
+                  cursor-default group transition-all duration-300
+                  hover:-translate-y-1.5
+                  ${isLast ? 'sm:col-span-2 lg:col-span-1' : ''}`}
+                style={{
+                  background: '#ffffff',
+                  border: '1px solid #e0eaff',
+                  boxShadow: '0 0 0 0 transparent',
+                  transition: 'all 0.3s ease',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.boxShadow = `0 20px 60px ${s.glow}`
+                  e.currentTarget.style.borderColor = `${s.color}40`
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.boxShadow = '0 0 0 0 transparent'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)'
+                }}
               >
-                <div className="w-10 h-10 bg-blue-600 rounded-[11px] flex items-center
-                  justify-center text-white flex-shrink-0">
-                  <Icon size={18} />
+                {/* Top accent line */}
+                <div className="absolute top-0 left-0 right-0 h-[2px] rounded-t-2xl"
+                  style={{ background: `linear-gradient(90deg, ${s.color}, transparent)` }} />
+
+                {/* Ghost number watermark */}
+                <div className="absolute -right-3 -bottom-4 font-black select-none pointer-events-none"
+                  style={{ fontSize: '100px', lineHeight: 1, color: '#fff', opacity: 0.03 }}>
+                  {s.n}
                 </div>
-                <div>
-                  <span className="text-[10px] font-extrabold text-blue-400 uppercase tracking-widest block mb-1">
+
+                {/* Icon + step badge */}
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-11 h-11 rounded-[13px] flex items-center justify-center flex-shrink-0
+                    transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]"
+                    style={{ background: `${s.color}18`, boxShadow: `0 4px 20px ${s.glow}` }}>
+                    <Icon size={18} style={{ color: s.color }} />
+                  </div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest"
+                    style={{ color: s.color }}>
                     Step {s.n}
                   </span>
-                  <h3 className="text-[15px] font-bold text-slate-900 mb-1.5 leading-snug">{s.title}</h3>
-                  <p className="text-[13px] text-slate-500 leading-relaxed">{s.desc}</p>
                 </div>
+
+                {/* Title */}
+                <h3 className="text-[15px] font-bold text-slate-900 mb-2.5 leading-snug">
+                  {s.title}
+                </h3>
+
+                {/* Desc */}
+                <p className="text-[13px] text-slate-500 leading-relaxed">
+                  {s.desc}
+                </p>
               </div>
             )
           })}

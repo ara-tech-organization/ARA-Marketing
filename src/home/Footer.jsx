@@ -113,7 +113,7 @@ export default function Footer() {
         <div className="border-t border-white/8 pt-7 flex flex-wrap justify-between
           items-center gap-4">
           <p className="text-[13px] text-white/30">
-            &copy; 2025 Ara Discover Marketing. All rights reserved.
+            &copy; 2025 Ara Marketing. All rights reserved.
           </p>
           <div className="flex gap-6">
             {['Privacy Policy', 'Terms of Service', 'Sitemap'].map(l => (
