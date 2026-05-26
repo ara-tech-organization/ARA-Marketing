@@ -24,7 +24,7 @@ export default function WebDevHero() {
       />
 
       <div className="relative max-w-[1100px] mx-auto px-7 pt-16 pb-6">
-        <div className="text-center max-w-[820px] mx-auto animate-hero-enter">
+        <div className="text-center max-w-[1000px] mx-auto animate-hero-enter">
           <nav className="flex items-center justify-center gap-1.5 text-[13px] text-slate-400 mb-6">
             <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
             <ChevronRight size={13} className="text-slate-300" />
@@ -39,19 +39,21 @@ export default function WebDevHero() {
           </span>
 
           <h1 className="text-[clamp(28px,4vw,54px)] font-bold text-slate-900 leading-[1.1]
-            tracking-tight mb-6">
+            tracking-tight mb-3">
             Best Website Design and Development{' '}
-            <span className="text-gradient-blue">Company in Thanjavur</span>{' '}
-            for Modern, Fast &amp; Conversion-Focused Websites
+            <span className="text-gradient-blue">Company in Thanjavur</span>
           </h1>
+          <p className="text-[clamp(15px,1.8vw,22px)] font-medium text-slate-400 leading-snug tracking-tight mb-6">
+            for Modern, Fast &amp; Conversion-Focused Websites
+          </p>
 
-          <p className="text-[15px] text-slate-500 leading-[1.85] mb-3 max-w-[640px] mx-auto">
+          <p className="text-[15px] text-slate-500 leading-[1.85] mb-3 max-w-[820px] mx-auto">
             Ara Discover Marketing is one of the best web design and development companies in
             Thanjavur that creates high-performance, mobile responsive and SEO optimised websites
             for businesses of all sizes. We build digital platforms that drive visitors, improve
             engagement and convert leads to customers.
           </p>
-          <p className="text-[14px] text-slate-400 leading-[1.8] mb-9 max-w-[580px] mx-auto">
+          <p className="text-[14px] text-slate-400 leading-[1.8] mb-9 max-w-[820px] mx-auto">
             As one of the most trusted web development and designing company in Thanjavur we create
             visually stunning, technically strong and strategically designed websites for business growth.
           </p>
