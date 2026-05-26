@@ -92,7 +92,7 @@ export default function WebDevServices() {
 
         <div className="reveal mb-16 max-w-3xl mx-auto text-center space-y-2">
           <p className="text-[14px] text-slate-500 leading-[1.8]">
-            As one of the leading website design and development services providers in Thanjavur, we
+            As one of the best website design and development services providers in Thanjavur, we
             develop websites that combine excellent design with high-tech performance.
           </p>
           <p className="text-[14px] text-slate-500 leading-[1.8]">
@@ -113,8 +113,8 @@ export default function WebDevServices() {
                 Tailor-Made Websites Built for Your Business Needs
               </h3>
               <p className="text-[14px] text-blue-100 leading-[1.85] mb-3">
-                Every business goal is unique, and so should be its website. Our custom web
-                development agency in Thanjavur builds fully customised website solutions tailored
+                Every business goal is unique, and so should be its website. Our custom website
+                development company in Thanjavur builds fully customised website solutions tailored
                 to your business requirements and audience needs.
               </p>
               <p className="text-[14px] text-blue-100 leading-[1.85] mb-7">

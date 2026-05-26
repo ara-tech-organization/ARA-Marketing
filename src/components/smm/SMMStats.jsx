@@ -102,7 +102,7 @@ export default function SMMStats() {
             <span className="text-gradient-blue">Growth &amp; Engagement</span>
           </h2>
           <p className="text-[15px] text-slate-600 font-medium max-w-2xl mx-auto">
-            Our paid social media marketing and agency in Thanjavur helps businesses to maximise engagement, visibility, and customer interaction.
+            Our paid social media marketing agency in Thanjavur helps businesses to maximise engagement, visibility, and customer interaction.
           </p>
         </div>
 

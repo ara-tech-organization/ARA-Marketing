@@ -166,7 +166,7 @@ export default function WebDevPortfolio() {
           </p>
           <p className="text-[14px] text-slate-500">
             We are one of the{' '}
-            <span className="text-blue-600 font-semibold">trusted web development agencies in Thanjavur</span>
+            <span className="text-blue-600 font-semibold">top web development firms in Thanjavur</span>
             {' '}with a strong focus on user experience and conversion optimization.
           </p>
         </div>

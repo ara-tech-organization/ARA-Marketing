@@ -27,7 +27,7 @@ export default function WebDevWhyUs() {
               <span className="text-gradient-blue">Web Development</span> Expertise
             </h2>
             <p className="text-[14.5px] text-slate-500 leading-relaxed mb-8">
-              Ara Discover Marketing stands apart from other web development firms in
+              Ara Discover Marketing stands apart from other professional web development services in
               Thanjavur by emphasising quality, innovation, and long-term digital success.
             </p>
 

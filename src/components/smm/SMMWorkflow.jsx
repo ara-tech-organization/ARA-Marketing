@@ -5,44 +5,44 @@ import {
 const steps = [
   {
     num: '01', icon: Search,
-    title: 'Discovery & Requirement Gathering',
-    desc: 'Understanding your business goals and marketing needs.',
+    title: 'Audience & Competitor Research',
+    desc: 'Understanding your target audience segments and analyzing competitor strategies.',
     color: '#2563eb', bg: '#dbeafe',
   },
   {
     num: '02', icon: Target,
-    title: 'Target Audience Research & Competitor Analysis',
-    desc: 'Analyzing target segments and competitor positioning.',
+    title: 'Platform Selection & Strategy Planning',
+    desc: 'Selecting the right platforms and creating a tailored strategy for maximum impact.',
     color: '#7c3aed', bg: '#ede9fe',
   },
   {
     num: '03', icon: Palette,
-    title: 'Social Media Marketing Strategy Development',
-    desc: 'Creating a tailored plan for maximum impact across channels.',
+    title: 'Content Creation & Branding',
+    desc: 'Designing high-quality creative content and visuals aligned with your brand identity.',
     color: '#059669', bg: '#d1fae5',
   },
   {
     num: '04', icon: Megaphone,
-    title: 'Creative Content Planning & Design',
-    desc: 'Designing high-quality copy and eye-catching visuals.',
+    title: 'Social Media Ad Campaign Setup',
+    desc: 'Setting up and configuring targeted paid advertising campaigns across platforms.',
     color: '#d97706', bg: '#fef3c7',
   },
   {
     num: '05', icon: MessageSquare,
-    title: 'Paid Advertising Setup & Optimization',
-    desc: 'Setting up and testing target ad campaigns.',
+    title: 'Audience Engagement & Community Management',
+    desc: 'Managing interactions, responding to audiences and building active communities.',
     color: '#db2777', bg: '#fce7f3',
   },
   {
     num: '06', icon: Activity,
-    title: 'Campaign Launch & Promotion',
-    desc: 'Publishing content and deploying paid ads.',
+    title: 'Campaign Monitoring & Optimization',
+    desc: 'Continuously tracking performance and optimizing campaigns for better ROI.',
     color: '#0891b2', bg: '#cffafe',
   },
   {
     num: '07', icon: BarChart2,
-    title: 'Performance Monitoring & Analytics Reporting',
-    desc: 'Analyzing campaign results and delivering reports.',
+    title: 'Monthly Reporting & Growth Analysis',
+    desc: 'Delivering detailed monthly reports with growth insights and next-step recommendations.',
     color: '#2563eb', bg: '#dbeafe',
   },
 ]
@@ -70,15 +70,14 @@ export default function SMMWorkflow() {
           </p>
         </div>
 
-        {/* Two-column layout: left timeline + right cards */}
+        {/* Two-column layout: left col 01–04, right col 05–07 (offset down) */}
         <div className="grid lg:grid-cols-2 gap-x-14 gap-y-0 max-w-[1100px] mx-auto">
 
-          {/* We split steps: odd indices left col, even indices right col, right col offset down */}
-          {/* Left column — steps 01,03,05,07 */}
+          {/* Left column — steps 01, 02, 03, 04 */}
           <div className="flex flex-col">
-            {steps.filter((_, i) => i % 2 === 0).map((step, idx) => {
+            {steps.slice(0, 4).map((step, idx) => {
               const Icon = step.icon
-              const isLast = idx === Math.ceil(steps.length / 2) - 1
+              const isLast = idx === 3
               return (
                 <div
                   key={step.num}
@@ -135,11 +134,7 @@ export default function SMMWorkflow() {
                         <Icon size={20} style={{ color: step.color }} />
                       </div>
                       <div>
-                        <h3
-                          className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug
-                            transition-colors duration-200"
-                          style={{}}
-                        >
+                        <h3 className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug">
                           {step.title}
                         </h3>
                         <p className="text-[12.5px] text-slate-500 leading-[1.75]">{step.desc}</p>
@@ -151,11 +146,11 @@ export default function SMMWorkflow() {
             })}
           </div>
 
-          {/* Right column — steps 02,04,06 — offset by ~60px top */}
+          {/* Right column — steps 05, 06, 07 — offset down */}
           <div className="flex flex-col mt-0 lg:mt-14">
-            {steps.filter((_, i) => i % 2 === 1).map((step, idx) => {
+            {steps.slice(4).map((step, idx) => {
               const Icon = step.icon
-              const isLast = idx === Math.floor(steps.length / 2) - 1
+              const isLast = idx === 2
               return (
                 <div
                   key={step.num}

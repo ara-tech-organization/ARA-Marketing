@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Why choose Ara Discover Marketing for web development services?',
-    a: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as a leading website design and development agency in Thanjavur assures long-term and high-quality digital solutions.',
+    a: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as the best website design and development company in Thanjavur assures long-term and high-quality digital solutions.',
   },
 ]
 

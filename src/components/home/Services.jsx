@@ -1,4 +1,4 @@
-import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight } from 'lucide-react'
+import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight, TrendingUp } from 'lucide-react'
 
 const services = [
   {
@@ -47,6 +47,31 @@ export default function Services() {
     <section id="services" className="py-24 bg-white">
       <div className="max-w-[1200px] mx-auto px-7">
 
+        {/* Result-Driven intro section */}
+        <div className="mb-16 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
+            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
+            <TrendingUp size={11} /> Digital Marketing Services
+          </span>
+          <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-6">
+            Result-Driven Digital Marketing Services<br />for Modern Businesses
+          </h2>
+          <div className="space-y-4 max-w-3xl">
+            <p className="text-base text-slate-500 leading-relaxed">
+              If you are seeking for Best Digital Marketing Agency in Thanjavur or a Trusted Partner for Branding and Advertising, Ara Discover Marketing is here. We have an Expert Team that Offers AI powered Measurable Growth with Innovative Digital Campaigns.
+            </p>
+            <p className="text-base text-slate-500 leading-relaxed">
+              In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. Ara Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.
+            </p>
+            <p className="text-base text-slate-500 leading-relaxed">
+              Ara Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.
+            </p>
+            <p className="text-base text-slate-500 leading-relaxed">
+              Our company is also the best branding agency in Thanjavur offering strategic branding, advertising and digital identity solutions for businesses in various industries.
+            </p>
+          </div>
+        </div>
+
         {/* Header */}
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
@@ -56,10 +81,6 @@ export default function Services() {
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
             Complete Digital Marketing &amp;<br />Branding Solutions
           </h2>
-          <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
-            If you are seeking the best digital marketing agency in Thanjavur — Ara Discover Marketing
-            offers AI-powered, measurable growth through innovative digital campaigns.
-          </p>
         </div>
 
         {/* Service rows — all 6 */}

@@ -64,9 +64,7 @@ export default function GDWhyUs() {
             Businesses choose Ara Discover Marketing because we are the preferred choice for
             creativity, strategy and market understanding to develop impactful branding solutions.
             One of the best advertisement design in thanjavur, we ensure that every design
-            reflects your brand identity and business values. We are reputed as one of the top
-            graphic design teams in thanjavur to deliver visually appealing and conversion
-            focused branding materials.
+            reflects your brand identity and business values. We are reputed as one of the best graphic design agencies in thanjavur to deliver visually appealing and conversion focused branding materials.
           </p>
         </div>
 
@@ -90,6 +88,13 @@ export default function GDWhyUs() {
               <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* Bottom note */}
+        <div className="text-center mt-10 reveal">
+          <p className="text-[14px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
+            We are reputed as one of the best graphic design agencies in thanjavur to deliver visually appealing and conversion focused branding materials.
+          </p>
         </div>
 
       </div>

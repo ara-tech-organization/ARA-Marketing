@@ -48,16 +48,15 @@ export default function GDCTA() {
 
               <h2 className="text-[clamp(24px,3.5vw,46px)] font-black leading-[1.1] tracking-tight mb-5"
                 style={{ color: '#0f172a' }}>
-                Let's Build a{' '}
+                Let's Build{' '}
                 <span style={{
                   background: 'linear-gradient(135deg, #1d4ed8, #0ea5e9)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
                 }}>
-                  Powerful Brand
-                </span>{' '}
-                Together
+                  With Us
+                </span>
               </h2>
               <p className="text-[15px] text-slate-600 leading-[1.8] max-w-[400px]">
                 Team up with Ara Discover Marketing — the{' '}

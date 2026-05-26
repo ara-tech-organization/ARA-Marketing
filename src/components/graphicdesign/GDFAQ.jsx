@@ -3,7 +3,7 @@ import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Which is the top graphic design company in Thanjavur?',
+    q: 'What is the best graphic design company in Thanjavur?',
     a: 'Ara Discover Marketing is the best graphic design company in thanjavur which provides logo design, brochure design, social media creatives, and complete branding solutions for businesses of all sizes.',
   },
   {
@@ -13,6 +13,18 @@ const faqs = [
   {
     q: 'Why choose Ara Discover Marketing for graphic design services?',
     a: 'Our creativity, industry expertise, innovative design approach, and consistent reputation as one of the top graphic design companies in thanjavur make us a reliable branding partner.',
+  },
+  {
+    q: 'What services are included in your graphic design packages?',
+    a: 'Our graphic design packages include logo design, brochure design, social media creatives, business card design, banner design, flyer design, and complete brand identity solutions. We customize packages based on your business needs and budget.',
+  },
+  {
+    q: 'Why is branding important for my business?',
+    a: 'Branding helps businesses create a strong and recognizable identity that builds customer trust and loyalty. A consistent brand identity across all platforms helps businesses stand out in competitive markets and create a lasting impression on their target audience.',
+  },
+  {
+    q: 'Are you a social media creative designer in Thanjavur?',
+    a: 'Yes, we are one of the best social media creative design service providers in Thanjavur. Our design team creates visually engaging social media posts, stories, banners, and promotional creatives tailored to your brand identity and marketing goals.',
   },
 ]
 
@@ -44,8 +56,7 @@ export default function GDFAQ() {
             <HelpCircle size={11} /> Frequently Asked Questions
           </span>
           <h2 className="text-[clamp(22px,2.8vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            Got Questions About Our{' '}
-            <span className="text-gradient-blue">Graphic Design Services?</span>
+            Frequently Asked Questions (FAQs)
           </h2>
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
             Find answers to the most common questions about our branding and design services in Thanjavur.

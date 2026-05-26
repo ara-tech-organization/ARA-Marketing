@@ -70,7 +70,7 @@ export default function GDHero() {
               Ara Discover Marketing is the best graphic design service in thanjavur for businesses to create visually appealing brand identities that attract, engage and convert customers. We create visuals from logos to marketing creatives that tell your brand story effectively and professionally.
             </p>
             <p className="animate-hero-d3 text-[14px] text-slate-500 leading-[1.8] mb-8 max-w-[600px]">
-              As the top graphic design agencies in thanjavur, we offer AI powered and modern branding solutions such as logo design, brochures, social media posters, business cards, and digital creatives that help businesses stand out from competitive markets.
+              As the top graphic design agency in thanjavur, we offer AI powered and modern branding solutions such as logo design, brochures, social media posters, business cards, and digital creatives that help businesses stand out from competitive markets.
             </p>
 
             {/* CTAs */}

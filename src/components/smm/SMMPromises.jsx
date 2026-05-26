@@ -2,44 +2,44 @@ import { BarChart2, Users, Activity, Palette, Target, Eye, Layers, CheckCircle }
 
 const promises = [
   {
-    icon: Eye,
-    title: 'High Brand Visibility',
-    desc: 'Significantly boost your brand awareness across platforms.',
+    icon: BarChart2,
+    title: 'Monthly Social Media Performance Reports',
+    desc: 'Clear, transparent monthly reporting with actionable growth insights and campaign results.',
     color: '#2563eb',
     num: '01',
   },
   {
     icon: Users,
-    title: 'Targeted Audience Engagement',
-    desc: 'Reach the right people and build active customer interactions.',
+    title: 'Dedicated Social Media Marketing Support',
+    desc: 'A dedicated social media expert assigned to your account for personalized support.',
     color: '#7c3aed',
     num: '02',
   },
   {
-    icon: Palette,
-    title: 'Creative & Engaging Content',
-    desc: 'High-quality, eye-catching creatives tailored to your business.',
+    icon: Activity,
+    title: 'Real-Time Ad Campaign Monitoring',
+    desc: 'Continuous real-time tracking and optimization of all active ad campaigns.',
     color: '#059669',
     num: '03',
   },
   {
-    icon: Target,
-    title: 'Lead Generation & Conversions',
-    desc: 'Data-driven campaigns to convert followers into paying customers.',
+    icon: Palette,
+    title: 'Creative Content & Branding Strategies',
+    desc: 'High-quality, eye-catching creatives and branding strategies tailored to your business.',
     color: '#d97706',
     num: '04',
   },
   {
-    icon: Activity,
-    title: 'Real-time Campaign Optimization',
-    desc: 'Ongoing ad budget monitoring and refinement to maximize ROI.',
+    icon: Target,
+    title: 'ROI-Focused Paid Advertising Campaigns',
+    desc: 'Data-driven paid advertising campaigns designed to maximize return on investment.',
     color: '#db2777',
     num: '05',
   },
   {
-    icon: BarChart2,
-    title: 'Detailed Performance Reports',
-    desc: 'Clear, transparent monthly reporting with actionable growth insights.',
+    icon: Eye,
+    title: 'Transparent Reporting & Audience Insights',
+    desc: 'Honest, transparent reporting with detailed audience insights every campaign cycle.',
     color: '#0891b2',
     num: '06',
   },
@@ -60,8 +60,7 @@ export default function SMMPromises() {
 
           <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Our{' '}
-            <span className="text-gradient-blue">Promises</span>{' '}
-            to You
+            <span className="text-gradient-blue">Promises</span>
           </h2>
 
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto">

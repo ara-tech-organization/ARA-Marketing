@@ -47,7 +47,7 @@ export default function SMMFAQ() {
             <Layers size={11} /> FAQs
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            Frequently Asked Questions
+            Frequently Asked Questions (FAQs)
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
             Everything you need to know about our social media marketing services in Thanjavur.

@@ -87,7 +87,7 @@ export default function WebDevStats() {
             <span className="text-gradient-blue">Development</span>
           </h2>
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
-            We are proud to be among the top-tier website design and development services in Thanjavur
+            We are proud to be among the best website design and development services in Thanjavur
             delivering measurable results across multiple industries.
           </p>
         </div>
