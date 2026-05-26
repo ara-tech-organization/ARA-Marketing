@@ -10,7 +10,7 @@ const tabs = [
     h3: 'On-Page SEO',
     imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=380&fit=crop&auto=format&q=80',
     imgAlt: 'On page optimization services in Thanjavur - Ara Discover Marketing',
-    desc: 'On-page SEO techniques are focused on optimizing the web structure, metadata, headings, web content, images, and user experience of a website. We are experts in on page optimization in digital marketing in Thanjavur, making sure that websites are optimized for both search engines and users. Our knowledge of on-page SEO and off-page SEO in Thanjavur helps companies to improve search visibility and authority at the same time.',
+    desc: 'On-page SEO techniques are focused on optimizing the web structure, metadata, headings, web content, images, and user experience of a website. Are you searching for the best on-page optimization services in Thanjavur? We help businesses to increase their keyword rankings and website engagement. We are experts in on page optimization in digital marketing in Thanjavur, making sure that websites are optimized for both search engines and users. Our knowledge of on-page SEO and off-page SEO in Thanjavur helps companies to improve search visibility and authority at the same time.',
     tag: 'Foundation',
     services: ['Keyword optimization', 'Meta title & description optimization', 'Header structure optimization', 'Internal linking strategies', 'SEO content creation', 'URL optimization', 'Image optimization'],
   },

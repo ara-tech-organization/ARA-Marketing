@@ -78,7 +78,7 @@ export default function SEOAssurance() {
                   rounded-full text-[13px] font-semibold shadow-lg shadow-blue-600/25
                   hover:bg-blue-500 transition-all duration-300 hover:-translate-y-0.5"
               >
-                Call our team for customized SEO solutions <ArrowRight size={14} />
+                Call our team today for customized Search Engine Optimization Service in Thanjavur <ArrowRight size={14} />
               </a>
             </div>
           </div>

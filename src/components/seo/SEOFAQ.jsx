@@ -11,7 +11,7 @@ const faqs = [
     a: 'A professional SEO company helps you to get better online visibility on the search engines, boosts organic traffic, generates highly qualified leads, and helps businesses achieve long-term growth online.',
   },
   {
-    q: 'Do you give SEO services for small businesses in Thanjavur?',
+    q: 'Are you giving SEO services for small businesses in Thanjavur?',
     a: 'Yes, we offer customized SEO services for small businesses in Thanjavur to help startups and local businesses improve local visibility, rankings, and customer engagement.',
   },
   {
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Do you offer international SEO services?',
-    a: 'Yes, we offer international SEO services to help businesses target global markets through multilingual SEO, international SEO strategies, and location-based optimization.',
+    a: 'Yes, we offer international SEO services to help businesses target global markets through multilingual SEO, international SEO strategies, and location-based optimization (Generic Engine Optimization).',
   },
   {
     q: 'Why is Ara Discover Marketing the best SEO agency in Thanjavur?',

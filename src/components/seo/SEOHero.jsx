@@ -167,8 +167,11 @@ export default function SEOHero() {
             <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-3">
               Ara Discover Marketing is one of the best SEO companies in Thanjavur, offering strategic and AI-driven SEO solutions to help businesses improve online visibility, generate high-quality leads, and achieve long-term digital growth.
             </p>
+            <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-3">
+              Our SEO team delivers result-oriented optimization strategies customized for startups, local businesses, and enterprises looking to dominate search engine rankings.
+            </p>
             <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-8">
-              We are a top SEO digital marketing agency in Thanjavur, delivering result-oriented optimization strategies customized for startups, local businesses, and enterprises looking to dominate search engine rankings.
+              We are a top SEO digital marketing agency in Thanjavur, offering modern AI-powered SEO techniques such as technical SEO, high-quality off-page SEO, AI-driven optimization, and content-based marketing campaigns to boost organic traffic and conversions.
             </p>
 
             <div className="animate-hero-d4 flex flex-wrap justify-center gap-3">

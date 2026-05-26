@@ -65,7 +65,7 @@ const seoSchema = {
         },
         {
           '@type': 'Question',
-          name: 'Do you give SEO services for small businesses in Thanjavur?',
+          name: 'Are you giving SEO services for small businesses in Thanjavur?',
           acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer customized SEO services for small businesses in Thanjavur to help startups and local businesses improve local visibility, rankings, and customer engagement.' },
         },
         {
@@ -76,7 +76,7 @@ const seoSchema = {
         {
           '@type': 'Question',
           name: 'Do you offer international SEO services?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer international SEO services to help businesses target global markets through multilingual SEO, international SEO strategies, and location-based optimization.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer international SEO services to help businesses target global markets through multilingual SEO, international SEO strategies, and location-based optimization (Generic Engine Optimization).' },
         },
         {
           '@type': 'Question',
