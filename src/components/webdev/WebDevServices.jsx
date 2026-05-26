@@ -104,7 +104,7 @@ export default function WebDevServices() {
         <div className="reveal">
           <div className="grid lg:grid-cols-[55%_45%] gap-0 rounded-3xl overflow-hidden"
             style={{ boxShadow: '0 20px 60px rgba(37,99,235,0.12)' }}>
-            <div className="p-10" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
+            <div className="p-7 lg:p-10" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
               <span className="inline-flex items-center gap-2 px-3 py-1 bg-white/15 text-white
                 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5">
                 <Code2 size={10} /> Custom Web Development
@@ -128,7 +128,7 @@ export default function WebDevServices() {
                 Get Custom Website <ArrowRight size={15} />
               </a>
             </div>
-            <div className="bg-slate-50 p-10 flex flex-col justify-center">
+            <div className="bg-slate-50 p-7 lg:p-10 flex flex-col justify-center">
               <p className="text-[11px] font-bold text-blue-600 uppercase tracking-widest mb-6">
                 What we deliver
               </p>

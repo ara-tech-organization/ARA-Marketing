@@ -55,7 +55,7 @@ export default function Portfolio() {
         </div>
 
         {/* Case study cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
           {caseStudies.map((c, i) => (
             <div
               key={c.title}
@@ -113,7 +113,7 @@ export default function Portfolio() {
         {/* Industry strip */}
         <div className="reveal rounded-[24px] border border-slate-200 overflow-hidden">
           {/* Top bar */}
-          <div className="flex items-center justify-between gap-4 px-8 py-5 bg-slate-50 border-b border-slate-200">
+          <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-5 bg-slate-50 border-b border-slate-200">
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
                 <Users size={15} />

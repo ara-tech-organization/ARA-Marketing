@@ -167,7 +167,7 @@ export default function SMMServices() {
         </div>
 
         {/* Platform cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {platforms.map(({ icon: Icon, color, bgLight, h3, imgSrc, imgAlt, desc, keywords: kws, services, tag }, i) => (
             <div
               key={h3}

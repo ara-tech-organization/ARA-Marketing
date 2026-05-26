@@ -7,7 +7,7 @@ export default function WebDevCTA() {
         <div className="reveal grid lg:grid-cols-[60%_40%] rounded-3xl overflow-hidden"
           style={{ boxShadow: '0 32px 80px rgba(15,23,42,0.22)' }}>
 
-          <div className="relative p-10 lg:p-14"
+          <div className="relative p-7 sm:p-10 lg:p-14"
             style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 55%, #1e40af 100%)' }}>
             <div className="absolute inset-0 pointer-events-none"
               style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />

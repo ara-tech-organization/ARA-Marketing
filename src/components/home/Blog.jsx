@@ -54,7 +54,7 @@ export default function Blog() {
         </div>
 
         {/* 3-card grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {blogs.map((b, i) => (
             <a
               key={b.title}

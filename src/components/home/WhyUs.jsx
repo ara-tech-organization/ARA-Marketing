@@ -38,6 +38,19 @@ export default function WhyUs() {
           </p>
         </div>
 
+        {/* Mobile credential stats — shown only below lg */}
+        <div className="lg:hidden grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 reveal">
+          {credStats.map(s => (
+            <div
+              key={s.label}
+              className="rounded-2xl p-4 border border-blue-100 bg-blue-50 text-center"
+            >
+              <div className="text-[22px] font-bold text-blue-600 leading-none">{s.val}</div>
+              <div className="text-[11px] text-slate-500 font-medium mt-1.5 leading-tight">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
         {/* Main layout */}
         <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-8 items-stretch">
 

@@ -32,7 +32,7 @@ export default function CTA() {
       <div className="max-w-[1200px] mx-auto px-7 relative z-10">
         <div className="max-w-[720px] mx-auto reveal">
           <div
-            className="cta-border-anim rounded-[32px] p-12"
+            className="cta-border-anim rounded-[20px] sm:rounded-[32px] p-6 sm:p-12"
             style={{ background: 'rgba(10,22,40,0.9)', backdropFilter: 'blur(20px)' }}
           >
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5

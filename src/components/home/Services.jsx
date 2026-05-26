@@ -116,7 +116,7 @@ export default function Services() {
 
                 <a
                   href={s.link}
-                  className="svc-arrow flex-shrink-0 flex items-center gap-1.5 px-4 py-2
+                  className="svc-arrow hidden sm:flex flex-shrink-0 items-center gap-1.5 px-4 py-2
                     rounded-full border border-slate-200 text-slate-500 text-[12px] font-semibold
                     opacity-0 -translate-x-2 transition-all duration-300
                     hover:bg-blue-600 hover:border-blue-600 hover:text-white whitespace-nowrap"

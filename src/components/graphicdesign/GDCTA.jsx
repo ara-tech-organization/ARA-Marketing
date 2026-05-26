@@ -18,7 +18,7 @@ export default function GDCTA() {
 
           {/* ── Left — Light blue creative panel ── */}
           <div
-            className="relative overflow-hidden flex flex-col justify-between p-10 lg:p-14"
+            className="relative overflow-hidden flex flex-col justify-between p-7 sm:p-10 lg:p-14"
             style={{
               background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%)',
               borderRight: '1px solid #bfdbfe',
@@ -82,7 +82,7 @@ export default function GDCTA() {
           </div>
 
           {/* ── Right — White action panel ── */}
-          <div className="bg-white flex flex-col justify-center p-10 lg:p-14">
+          <div className="bg-white flex flex-col justify-center p-7 sm:p-10 lg:p-14">
             <p
               className="text-[clamp(28px,3vw,44px)] font-black text-slate-900 leading-tight mb-3"
             >

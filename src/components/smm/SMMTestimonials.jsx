@@ -80,7 +80,7 @@ export default function SMMTestimonials() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {testimonials.map(({ text, name, role, stars }, i) => (
             <div
               key={name}

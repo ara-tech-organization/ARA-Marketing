@@ -35,7 +35,7 @@ export default function WebDevTestimonials() {
             <span className="text-gradient-blue">Web Development Services</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {testimonials.map(({ text, name, role, stars }, i) => (
             <div key={name}
               className={`reveal delay-${i + 1} relative bg-white border border-slate-100

@@ -27,7 +27,7 @@ export default function SMMIntro() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-[1200px] mx-auto px-7">
-        <div className="grid lg:grid-cols-[45%_55%] gap-16 items-center">
+        <div className="grid lg:grid-cols-[45%_55%] gap-8 lg:gap-16 items-center">
 
           {/* Left — 4 highlight cards + section image */}
           <div className="flex flex-col gap-5">

@@ -53,7 +53,7 @@ export default function GDStats() {
       />
 
       <div className="relative max-w-[1200px] mx-auto px-7">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-blue-200/60">
+        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x-0 lg:divide-x divide-blue-200/60">
           {stats.map(({ value, suffix, label, sub }) => (
             <div
               key={label}

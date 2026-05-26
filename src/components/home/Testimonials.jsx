@@ -118,11 +118,11 @@ export default function Testimonials() {
         </div>
 
         {/* 3 cards grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="reveal lg:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="reveal md:col-span-1">
             <TestiCard t={testimonials[0]} featured={true} />
           </div>
-          <div className="reveal delay-1 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="reveal delay-1 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
             <TestiCard t={testimonials[1]} featured={false} />
             <TestiCard t={testimonials[2]} featured={false} />
           </div>

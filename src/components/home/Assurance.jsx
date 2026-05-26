@@ -40,7 +40,7 @@ export default function Assurance() {
                 className={`reveal delay-${(i % 3) + 1} flex items-start gap-5 py-7
                   border-b border-slate-100 last:border-b-0 group cursor-default
                   transition-all duration-300 hover:pl-3
-                  ${i % 2 === 1 ? 'sm:border-l sm:border-l-slate-100 sm:pl-10 hover:sm:pl-12' : ''}`}
+                  ${i % 2 === 1 ? 'sm:border-l sm:border-l-slate-100 sm:pl-10 sm:hover:pl-12' : ''}`}
               >
                 {/* Icon */}
                 <div

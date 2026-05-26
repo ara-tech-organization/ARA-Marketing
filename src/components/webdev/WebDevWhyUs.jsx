@@ -14,7 +14,7 @@ export default function WebDevWhyUs() {
     <section className="py-24" style={{ background: 'linear-gradient(180deg, #f0f9ff 0%, #f8faff 100%)' }}>
       <div className="max-w-[1200px] mx-auto px-7">
 
-        <div className="reveal grid lg:grid-cols-[42%_58%] gap-14 items-center">
+        <div className="reveal grid lg:grid-cols-[42%_58%] gap-8 lg:gap-14 items-center">
 
           {/* Left — sticky intro panel */}
           <div>

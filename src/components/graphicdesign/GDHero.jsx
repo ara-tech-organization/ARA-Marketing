@@ -95,14 +95,14 @@ export default function GDHero() {
             </div>
 
             {/* Stats */}
-            <div className="animate-hero-d5 flex gap-0 border-t pt-8" style={{ borderColor: 'rgba(148,163,184,0.1)' }}>
+            <div className="animate-hero-d5 flex flex-wrap gap-6 border-t pt-8" style={{ borderColor: 'rgba(148,163,184,0.1)' }}>
               {[
                 ['500+', 'Designs Delivered'],
                 ['100+', 'Brands Created'],
                 ['98%',  'Client Satisfaction'],
               ].map(([num, label], i) => (
                 <div key={label}
-                  className={`flex flex-col pr-8 ${i < 2 ? 'border-r mr-8' : ''}`}
+                  className={`flex flex-col ${i < 2 ? 'pr-6 border-r' : ''}`}
                   style={{ borderColor: 'rgba(148,163,184,0.1)' }}>
                   <span
                     className="text-[24px] font-black leading-tight"

@@ -82,7 +82,7 @@ export default function Navbar() {
             </div>
 
             {/* Actions */}
-            <div className="hidden sm:flex items-center gap-2.5">
+            <div className="hidden lg:flex items-center gap-2.5">
               <a
                 href="#faq"
                 className="px-4 py-2 text-sm font-medium text-white/65 hover:text-white

@@ -114,8 +114,37 @@ export default function GDTestimonials() {
           </h2>
         </div>
 
-        {/* Slider */}
-        <div className="reveal relative">
+        {/* Mobile: stacked cards (xs/sm/md) */}
+        <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-5 reveal">
+          {testimonials.map((t, i) => (
+            <div
+              key={i}
+              className="bg-white rounded-2xl px-5 py-6 border border-blue-100 flex flex-col"
+              style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.08)' }}
+            >
+              <div className="flex gap-0.5 mb-3">
+                {Array.from({ length: t.stars }).map((_, j) => (
+                  <Star key={j} size={13} className="text-amber-400" fill="#fbbf24" />
+                ))}
+              </div>
+              <Quote size={22} className="text-blue-100 mb-2.5 flex-shrink-0" fill="currentColor" />
+              <p className="text-[13.5px] text-slate-600 leading-[1.8] italic flex-1">&ldquo;{t.text}&rdquo;</p>
+              <div className="flex items-center gap-2.5 mt-5 pt-4 border-t border-slate-100">
+                <div
+                  className="w-8 h-8 rounded-full flex items-center justify-center text-white text-[11px] font-black flex-shrink-0"
+                  style={{ background: 'linear-gradient(135deg,#2563eb,#38bdf8)' }}
+                >{t.name[0]}</div>
+                <div className="min-w-0">
+                  <p className="text-[12px] font-bold text-slate-800 truncate">{t.name}</p>
+                  <p className="text-[10px] text-slate-400 truncate">{t.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop: Slider (lg+) */}
+        <div className="hidden lg:block reveal relative">
 
           {/* Track */}
           <div className="overflow-hidden">
@@ -243,8 +272,8 @@ export default function GDTestimonials() {
           </button>
         </div>
 
-        {/* Dots */}
-        <div className="flex items-center justify-center gap-2 mt-8">
+        {/* Dots — desktop only */}
+        <div className="hidden lg:flex items-center justify-center gap-2 mt-8">
           {testimonials.map((_, i) => (
             <button
               key={i}
