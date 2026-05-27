@@ -21,9 +21,9 @@ const webDesignItems = [
   { href: '/services/dynamic-website-development', label: 'Dynamic Website', icon: Zap, desc: 'Interactive web experiences', isRoute: true },
   { href: '/services/cms-website-development', label: 'WordPress Website', icon: Globe, desc: 'Flexible CMS solutions', isRoute: true },
   { href: '/services/ecommerce-website-development', label: 'Ecommerce Website', icon: ShoppingCart, desc: 'Online store solutions', isRoute: true },
-  { href: '/services/website-development', label: 'Enterprise Website', icon: Building2,    desc: 'Large-scale web platforms'    },
-  { href: '/services/website-development', label: 'Web App',            icon: Code2,        desc: 'Custom web applications'      },
-  { href: '/services/website-development', label: 'Mobile App',         icon: Smartphone,   desc: 'iOS & Android apps'           },
+  { href: '/services/enterprise-website-development', label: 'Enterprise Website', icon: Building2, desc: 'Large-scale web platforms', isRoute: true },
+  { href: '/services/web-application-development', label: 'Web App', icon: Code2, desc: 'Custom web applications', isRoute: true },
+  { href: '/services/mobile-application-development', label: 'Mobile App', icon: Smartphone, desc: 'iOS & Android apps', isRoute: true },
 ]
 
 function DropdownPanel({ items, title, onClose, pathname }) {
@@ -121,7 +121,7 @@ export default function Navbar() {
     '/services/video-editing',
     '/services/other-digital-marketing-services-thanjavur',
   ])
-  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development', '/services/cms-website-development', '/services/ecommerce-website-development'])
+  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development', '/services/cms-website-development', '/services/ecommerce-website-development', '/services/enterprise-website-development'])
 
   const closeAll = () => setActiveDropdown(null)
 

@@ -11,7 +11,10 @@ import OtherServicesPage       from './pages/OtherServicesPage'
 import StaticWebsitePage      from './pages/StaticWebsitePage'
 import DynamicWebsitePage    from './pages/DynamicWebsitePage'
 import CMSWebsitePage           from './pages/CMSWebsitePage'
-import EcommerceWebsitePage    from './pages/EcommerceWebsitePage'
+import EcommerceWebsitePage      from './pages/EcommerceWebsitePage'
+import EnterpriseWebsitePage     from './pages/EnterpriseWebsitePage'
+import WebAppPage                from './pages/WebAppPage'
+import MobileAppPage            from './pages/MobileAppPage'
 import './index.css'
 
 function ScrollToTop() {
@@ -38,7 +41,10 @@ export default function App() {
         <Route path="/services/static-website-development"               element={<StaticWebsitePage />} />
         <Route path="/services/dynamic-website-development"             element={<DynamicWebsitePage />} />
         <Route path="/services/cms-website-development"               element={<CMSWebsitePage />} />
-        <Route path="/services/ecommerce-website-development"         element={<EcommerceWebsitePage />} />
+        <Route path="/services/ecommerce-website-development"           element={<EcommerceWebsitePage />} />
+        <Route path="/services/enterprise-website-development"         element={<EnterpriseWebsitePage />} />
+        <Route path="/services/web-application-development"             element={<WebAppPage />} />
+        <Route path="/services/mobile-application-development"        element={<MobileAppPage />} />
       </Routes>
     </BrowserRouter>
   )
