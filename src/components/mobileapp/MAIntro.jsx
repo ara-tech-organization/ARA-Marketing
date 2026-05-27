@@ -71,8 +71,7 @@ export default function MAIntro() {
             <img
               src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=420&fit=crop&auto=format&q=80"
               alt="Mobile App Development Services Thanjavur"
-              className="w-full object-cover"
-              style={{ height: '320px' }}
+              className="w-full object-cover h-[200px] sm:h-[260px] md:h-[320px]"
               loading="lazy"
             />
             <div className="absolute inset-0"
@@ -113,8 +112,8 @@ export default function MAIntro() {
           </div>
         </div>
 
-        {/* Feature cards — flex row, not grid */}
-        <div className="flex flex-col sm:flex-row gap-5 reveal">
+        {/* Feature cards — 2-col on sm, 4-col on xl */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 reveal">
           {features.map(({ icon: Icon, title, desc, color, bg }) => (
             <div key={title}
               className="flex-1 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1"

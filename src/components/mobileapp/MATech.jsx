@@ -71,16 +71,16 @@ export default function MATech() {
               }}
             >
               {/* Category label */}
-              <div className="flex items-center gap-3 sm:w-[180px] flex-shrink-0">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center"
+              <div className="flex items-center gap-3 w-full sm:w-[160px] flex-shrink-0">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ background: `${color}20`, border: `1px solid ${color}35` }}>
                   <Icon size={17} style={{ color }} />
                 </div>
                 <span className="text-[14px] font-bold text-white">{label}</span>
               </div>
 
-              {/* Vertical divider */}
-              <div className="hidden sm:block w-px h-10 flex-shrink-0" style={{ background: 'rgba(255,255,255,0.1)' }} />
+              {/* Vertical divider — desktop only */}
+              <div className="hidden sm:block w-px h-8 flex-shrink-0" style={{ background: 'rgba(255,255,255,0.1)' }} />
 
               {/* Tech pills */}
               <div className="flex flex-wrap gap-2.5">

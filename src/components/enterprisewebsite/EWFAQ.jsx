@@ -32,64 +32,63 @@ export default function EWFAQ() {
   const [open, setOpen] = useState(null)
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden bg-white">
 
-      {/* Subtle dot grid */}
+      {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
 
-      <div className="relative max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ── Header ── */}
-        <div className="text-center mb-12 sm:mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+        <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">
+          <span className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-blue-50"
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
-            <HelpCircle size={10} /> Frequently Asked Questions
+            <HelpCircle size={9} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(22px,4vw,44px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-4">
+          <h2 className="text-[clamp(20px,4vw,42px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Common Questions{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Answered
             </span>
           </h2>
-          <p className="text-[13.5px] sm:text-[15px] text-slate-500 leading-[1.85]">
+          <p className="text-[12.5px] sm:text-[14px] lg:text-[15px] text-slate-500 leading-[1.85] px-2 sm:px-0">
             Everything you need to know about enterprise website development with Ara Discover Marketing.
           </p>
         </div>
 
         {/* ── Accordion ── */}
-        <div className="reveal space-y-3">
+        <div className="reveal space-y-2.5 sm:space-y-3">
           {faqs.map(({ q, a }, i) => {
             const isOpen = open === i
             return (
               <div key={i}
-                className="rounded-2xl overflow-hidden transition-all duration-300"
+                className="rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-300"
                 style={{
                   border: isOpen ? '1.5px solid rgba(37,99,235,0.30)' : '1.5px solid #e2e8f0',
-                  boxShadow: isOpen ? '0 8px 28px rgba(37,99,235,0.10)' : '0 2px 10px rgba(0,0,0,0.04)',
+                  boxShadow: isOpen ? '0 6px 24px rgba(37,99,235,0.10)' : '0 2px 8px rgba(0,0,0,0.04)',
                 }}>
 
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 px-5 sm:px-6 py-4 sm:py-5 text-left transition-colors duration-200"
+                  className="w-full flex items-center justify-between gap-3 sm:gap-4 px-4 sm:px-5 lg:px-6 py-3.5 sm:py-4 sm:py-5 text-left transition-colors duration-200"
                   style={{ background: isOpen ? '#f0f7ff' : '#ffffff' }}>
-                  <span className="text-[13.5px] sm:text-[14.5px] font-semibold text-slate-800 leading-snug">{q}</span>
-                  <span className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-300"
+                  <span className="text-[12.5px] sm:text-[13.5px] lg:text-[14.5px] font-semibold text-slate-800 leading-snug text-left">{q}</span>
+                  <span className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center transition-all duration-300"
                     style={{
                       background: isOpen ? 'linear-gradient(135deg,#2563eb,#7c3aed)' : '#f1f5f9',
                       transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
                     }}>
-                    <ChevronDown size={14} style={{ color: isOpen ? '#ffffff' : '#94a3b8' }} />
+                    <ChevronDown size={13} style={{ color: isOpen ? '#ffffff' : '#94a3b8' }} />
                   </span>
                 </button>
 
-                <div
-                  style={{
-                    maxHeight: isOpen ? '400px' : '0px',
-                    overflow: 'hidden',
-                    transition: 'max-height 0.40s cubic-bezier(0.4,0,0.2,1)',
-                  }}>
-                  <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-[13px] sm:text-[14px] text-slate-500 leading-[1.85]">
+                <div style={{
+                  maxHeight: isOpen ? '400px' : '0px',
+                  overflow: 'hidden',
+                  transition: 'max-height 0.38s cubic-bezier(0.4,0,0.2,1)',
+                }}>
+                  <p className="px-4 sm:px-5 lg:px-6 pb-4 sm:pb-5 lg:pb-6 text-[12px] sm:text-[13px] lg:text-[14px] text-slate-500 leading-[1.85]">
                     {a}
                   </p>
                 </div>

@@ -65,8 +65,7 @@ export default function MAAndroid() {
                 <img
                   src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=600&h=400&fit=crop&auto=format&q=80"
                   alt="Android App Development Company Thanjavur"
-                  className="w-full object-cover"
-                  style={{ height: '340px' }}
+                  className="w-full object-cover h-[220px] sm:h-[280px] md:h-[340px]"
                   loading="lazy"
                 />
                 <div className="absolute inset-0"

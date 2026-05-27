@@ -19,8 +19,8 @@ export default function MABenefits() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-start">
 
-          {/* Left: sticky intro */}
-          <div className="lg:w-[360px] flex-shrink-0 reveal-left lg:sticky lg:top-24">
+          {/* Left: intro */}
+          <div className="lg:w-[360px] flex-shrink-0 reveal-left">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
               style={{ background: 'rgba(124,58,237,0.08)', color: '#7c3aed', border: '1px solid rgba(124,58,237,0.2)' }}>
               <Smartphone size={11} /> Benefits

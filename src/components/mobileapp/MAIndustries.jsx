@@ -1,15 +1,18 @@
 import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
 
 const industries = [
-  { icon: ShoppingCart, title: 'eCommerce & Retail',       desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and payment integrations.',         color: '#7c3aed', size: 'large'  },
-  { icon: Heart,        title: 'Healthcare & Fitness',      desc: 'HIPAA-compliant health apps, telemedicine platforms, and fitness trackers with AI wellness insights.',      color: '#dc2626', size: 'large'  },
-  { icon: BookOpen,     title: 'Education & E-learning',    desc: 'Interactive learning apps with video, quizzes, and progress tracking for students and educators.',         color: '#2563eb', size: 'medium' },
-  { icon: DollarSign,   title: 'Finance & Banking',         desc: 'Secure fintech apps with real-time transactions, budgeting tools, and robust data encryption.',          color: '#059669', size: 'medium' },
-  { icon: Truck,        title: 'Logistics & Transportation', desc: 'Fleet management, live tracking, and delivery optimisation apps for modern supply chains.',               color: '#0891b2', size: 'medium' },
-  { icon: Building2,    title: 'Startups & Enterprises',    desc: 'Scalable mobile solutions for startups launching fast and enterprises modernising at scale.',              color: '#d97706', size: 'large'  },
+  { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#7c3aed' },
+  { icon: Heart,        title: 'Healthcare & Fitness',       desc: 'HIPAA-compliant health apps, telemedicine platforms, and fitness trackers with AI wellness insights.',     color: '#dc2626' },
+  { icon: BookOpen,     title: 'Education & E-learning',     desc: 'Interactive learning apps with video, quizzes, and progress tracking for students and educators.',        color: '#2563eb' },
+  { icon: DollarSign,   title: 'Finance & Banking',          desc: 'Secure fintech apps with real-time transactions, budgeting tools, and robust data encryption.',         color: '#059669' },
+  { icon: Truck,        title: 'Logistics & Transportation', desc: 'Fleet management, live tracking, and delivery optimisation apps for modern supply chains.',              color: '#0891b2' },
+  { icon: Building2,    title: 'Startups & Enterprises',     desc: 'Scalable mobile solutions for startups launching fast and enterprises modernising at scale.',             color: '#d97706' },
 ]
 
 export default function MAIndustries() {
+  const topTwo   = industries.slice(0, 2)
+  const bottomFour = industries.slice(2)
+
   return (
     <section className="py-16 sm:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#040d1a 100%)' }}>
@@ -37,12 +40,11 @@ export default function MAIndustries() {
           </p>
         </div>
 
-        {/* Non-grid layout: top row 2 large, bottom row 4 */}
         <div className="flex flex-col gap-5 reveal">
 
-          {/* Top row: 2 large cards */}
+          {/* Top row: 2 large cards side-by-side from sm */}
           <div className="flex flex-col sm:flex-row gap-5">
-            {industries.filter(i => i.size === 'large').slice(0, 2).map(({ icon: Icon, title, desc, color }) => (
+            {topTwo.map(({ icon: Icon, title, desc, color }) => (
               <div key={title}
                 className="flex-1 p-7 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-default"
                 style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}
@@ -67,11 +69,11 @@ export default function MAIndustries() {
             ))}
           </div>
 
-          {/* Bottom row: 4 cards in a flex wrap */}
-          <div className="flex flex-col sm:flex-row flex-wrap gap-5">
-            {industries.filter(i => i.size !== 'large' || industries.indexOf(i) >= 2).slice(0, 4).map(({ icon: Icon, title, desc, color }) => (
+          {/* Bottom row: 4 cards — 1 col on mobile, 2 col on sm, 4 col on lg */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {bottomFour.map(({ icon: Icon, title, desc, color }) => (
               <div key={title}
-                className="flex-1 min-w-[200px] p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-default"
+                className="p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-default"
                 style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}
                 onMouseEnter={e => {
                   e.currentTarget.style.border = `1px solid ${color}40`

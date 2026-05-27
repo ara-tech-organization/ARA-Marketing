@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Which types of industries do you serve?',
-    a: 'We serve various sectors, including eCommerce, healthcare, education, finance, logistics, and more. Our team has experience building web applications across diverse domains and business sizes.',
+    a: 'We serve various sectors including eCommerce, healthcare, education, finance, logistics, and more. Our team has experience building web applications across diverse domains and business sizes throughout Thanjavur.',
   },
   {
     q: 'Do you provide post-launch support?',
@@ -32,26 +32,31 @@ export default function WAFAQ() {
   const [open, setOpen] = useState(null)
 
   return (
-    <section className="py-20 sm:py-28 bg-white">
-      <div className="max-w-[820px] mx-auto px-4 sm:px-6 lg:px-7">
+    <section
+      className="py-16 sm:py-20 lg:py-28"
+      style={{ background: 'linear-gradient(180deg, #f0f7ff 0%, white 100%)' }}
+    >
+      <div className="max-w-[820px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-7">
 
-        <div className="text-center mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(79,70,229,0.08)', color: '#4f46e5', border: '1px solid rgba(79,70,229,0.18)' }}>
+        <div className="text-center mb-10 sm:mb-14 reveal">
+          <span
+            className="inline-flex items-center gap-2 px-3 xs:px-4 py-1.5 rounded-full text-[10px] xs:text-[11px] font-black uppercase tracking-widest mb-4"
+            style={{ background: 'rgba(37,99,235,0.08)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.18)' }}
+          >
             <HelpCircle size={10} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold tracking-tight text-slate-900 mb-4">
+          <h2 className="text-[clamp(22px,3vw,40px)] font-bold tracking-tight text-slate-900 mb-3">
             Common{' '}
-            <span style={{ background: 'linear-gradient(135deg,#4f46e5,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Questions
             </span>
           </h2>
-          <p className="text-[14px] text-slate-500 max-w-[420px] mx-auto leading-relaxed">
+          <p className="text-[13px] xs:text-[14px] text-slate-500 max-w-[420px] mx-auto leading-relaxed px-2">
             Everything you need to know about our web application development services in Thanjavur.
           </p>
         </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5 xs:gap-3">
           {faqs.map(({ q, a }, i) => {
             const isOpen = open === i
             return (
@@ -59,31 +64,33 @@ export default function WAFAQ() {
                 key={i}
                 className="rounded-2xl overflow-hidden transition-all duration-300 reveal"
                 style={{
-                  border: isOpen ? '1.5px solid rgba(79,70,229,0.4)' : '1.5px solid #e0e7ff',
-                  boxShadow: isOpen ? '0 8px 30px rgba(79,70,229,0.10)' : 'none',
+                  border: isOpen ? '1.5px solid rgba(37,99,235,0.35)' : '1.5px solid #e2e8f0',
+                  boxShadow: isOpen ? '0 8px 28px rgba(37,99,235,0.10)' : 'none',
                   transitionDelay: `${i * 40}ms`,
                 }}
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center gap-4 px-5 sm:px-6 py-4 sm:py-5 text-left transition-colors duration-200"
-                  style={{ background: isOpen ? '#f0f0ff' : '#f8fafc' }}
+                  className="w-full flex items-center gap-3 xs:gap-4 px-4 xs:px-5 sm:px-6 py-3.5 xs:py-4 sm:py-5 text-left transition-colors duration-200"
+                  style={{ background: isOpen ? '#eff6ff' : '#f8fafc' }}
                 >
                   <span
-                    className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-[11px] font-black transition-all duration-300"
+                    className="flex-shrink-0 w-6 xs:w-7 h-6 xs:h-7 rounded-lg flex items-center justify-center text-[10px] xs:text-[11px] font-black transition-all duration-300"
                     style={{
-                      background: isOpen ? 'linear-gradient(135deg,#4f46e5,#7c3aed)' : 'rgba(79,70,229,0.10)',
-                      color: isOpen ? 'white' : '#4f46e5',
+                      background: isOpen ? 'linear-gradient(135deg,#2563eb,#0891b2)' : 'rgba(37,99,235,0.10)',
+                      color: isOpen ? 'white' : '#2563eb',
                     }}
                   >
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <span className="flex-1 text-[14px] font-semibold text-slate-800 leading-snug">{q}</span>
+                  <span className="flex-1 text-[13px] xs:text-[14px] font-semibold text-slate-800 leading-snug text-left">
+                    {q}
+                  </span>
                   <ChevronDown
-                    size={17}
+                    size={15}
                     className="flex-shrink-0 transition-transform duration-300"
                     style={{
-                      color: '#4f46e5',
+                      color: '#2563eb',
                       transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
                     }}
                   />
@@ -93,8 +100,11 @@ export default function WAFAQ() {
                   className="overflow-hidden transition-all duration-400"
                   style={{ maxHeight: isOpen ? '400px' : '0px' }}
                 >
-                  <div className="px-5 sm:px-6 py-4 sm:py-5" style={{ borderTop: '1px solid #e0e7ff' }}>
-                    <p className="text-[13.5px] text-slate-600 leading-relaxed pl-11">{a}</p>
+                  <div
+                    className="px-4 xs:px-5 sm:px-6 py-4 xs:py-5"
+                    style={{ borderTop: '1px solid #dbeafe' }}
+                  >
+                    <p className="text-[12.5px] xs:text-[13.5px] text-slate-600 leading-relaxed pl-9 xs:pl-11">{a}</p>
                   </div>
                 </div>
               </div>

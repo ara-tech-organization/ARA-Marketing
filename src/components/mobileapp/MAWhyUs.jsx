@@ -66,7 +66,7 @@ export default function MAWhyUs() {
 
           {/* Left: large visual gradient panel */}
           <div className="lg:w-[420px] flex-shrink-0 reveal-left">
-            <div className="relative h-full rounded-3xl overflow-hidden min-h-[420px]"
+            <div className="relative h-full rounded-3xl overflow-hidden min-h-[320px] lg:min-h-[420px]"
               style={{ background: 'linear-gradient(135deg,#4c1d95 0%,#2563eb 100%)' }}>
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop&auto=format&q=80"

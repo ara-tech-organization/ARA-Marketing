@@ -28,8 +28,7 @@ export default function MAiOS() {
                 <img
                   src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=400&fit=crop&auto=format&q=80"
                   alt="iOS App Development Thanjavur"
-                  className="w-full object-cover"
-                  style={{ height: '340px' }}
+                  className="w-full object-cover h-[220px] sm:h-[280px] md:h-[340px]"
                   loading="lazy"
                 />
                 <div className="absolute inset-0"

@@ -68,7 +68,7 @@ export default function MAProcess() {
         {/* Desktop: horizontal timeline */}
         <div className="hidden lg:block reveal">
           <div className="relative flex items-start gap-0">
-            <div className="absolute top-[28px] left-[10%] right-[10%] h-[2px] pointer-events-none"
+            <div className="absolute top-[28px] left-[8%] right-[8%] h-[2px] pointer-events-none"
               style={{ background: 'linear-gradient(90deg,#7c3aed,#2563eb,#0891b2,#059669,#dc2626)' }} />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (
