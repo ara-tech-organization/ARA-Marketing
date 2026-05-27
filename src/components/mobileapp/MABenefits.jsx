@@ -45,7 +45,7 @@ export default function MABenefits() {
           <div className="flex-1 flex flex-col gap-4">
             {benefits.map(({ icon: Icon, title, desc, metric, metricLabel, color }, i) => (
               <div key={title}
-                className={`reveal delay-${i + 1} flex items-center gap-5 p-5 sm:p-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5`}
+                className={`reveal delay-${Math.min(i + 1, 6)} flex items-center gap-5 p-5 sm:p-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5`}
                 style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}
                 onMouseEnter={e => {
                   e.currentTarget.style.border = `1px solid ${color}25`

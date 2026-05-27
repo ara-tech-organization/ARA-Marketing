@@ -15,8 +15,8 @@ const faqs = [
     a: 'Definitely. We offer custom web app development services in Thanjavur according to your unique business requirements. Every application is built from scratch with your specific goals, branding, and technical needs in mind.',
   },
   {
-    q: 'Do you build eCommerce web applications?',
-    a: 'Yes, we are a trustworthy eCommerce application development company in Thanjavur. We offer e-commerce solutions that are AI-driven, secure, scalable, and feature-rich — from inventory management to payment gateway integration.',
+    q: 'Do you build eCommerce websites?',
+    a: 'Yes, we are a trustworthy e-commerce application development company in Thanjavur, and we offer e-commerce solutions that are AI-driven, secure, scalable and feature-rich.',
   },
   {
     q: 'Which types of industries do you serve?',

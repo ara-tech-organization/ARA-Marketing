@@ -75,7 +75,7 @@ export default function MATestimonials() {
 
           {/* Featured testimonial — larger card */}
           <div className="reveal-left lg:flex-[2]">
-            <div className="h-full p-8 sm:p-10 rounded-3xl relative overflow-hidden"
+            <div className="p-8 sm:p-10 rounded-3xl relative overflow-hidden"
               style={{ background: 'linear-gradient(135deg,#4c1d95 0%,#2563eb 100%)', boxShadow: '0 32px 64px rgba(124,58,237,0.25)' }}>
               {/* Background pattern */}
               <div className="absolute inset-0 opacity-10"

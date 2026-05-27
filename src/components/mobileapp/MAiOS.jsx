@@ -19,7 +19,7 @@ export default function MAiOS() {
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left: Image */}
-          <div className="lg:w-[480px] flex-shrink-0 reveal-left order-2 lg:order-1">
+          <div className="w-full lg:w-[480px] flex-shrink-0 reveal-left order-2 lg:order-1">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />
@@ -84,7 +84,7 @@ export default function MAiOS() {
             <div className="flex flex-col gap-4">
               {iosServices.map(({ icon: Icon, title, desc }, i) => (
                 <div key={title}
-                  className={`reveal delay-${i + 1} flex items-start gap-4 p-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 bg-white`}
+                  className={`reveal delay-${Math.min(i + 1, 4)} flex items-start gap-4 p-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 bg-white`}
                   style={{ border: '1px solid #e2e8f0', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
                   onMouseEnter={e => {
                     e.currentTarget.style.border = '1px solid rgba(124,58,237,0.25)'

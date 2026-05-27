@@ -77,10 +77,10 @@ const waSchema = {
         },
         {
           '@type': 'Question',
-          name: 'Do you build eCommerce web applications?',
+          name: 'Do you build eCommerce websites?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, we are a trustworthy eCommerce application development company in Thanjavur offering AI-driven, secure, scalable and feature-rich solutions.',
+            text: 'Yes, we are a trustworthy e-commerce application development company in Thanjavur, and we offer e-commerce solutions that are AI-driven, secure, scalable and feature-rich.',
           },
         },
         {

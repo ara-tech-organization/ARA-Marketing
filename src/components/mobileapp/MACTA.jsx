@@ -1,10 +1,10 @@
 import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
 
 const highlights = [
-  { icon: Zap,          text: 'AI-powered mobile apps for smarter engagement'     },
-  { icon: Shield,       text: 'Enterprise-grade security & scalable architecture' },
-  { icon: TrendingUp,   text: 'Full-cycle development from strategy to launch'    },
-  { icon: CheckCircle2, text: 'Free consultation with no commitment required'     },
+  { icon: Zap,          text: 'On-time delivery with zero compromise on quality'     },
+  { icon: Shield,       text: 'AI-driven, innovative mobile solutions'               },
+  { icon: TrendingUp,   text: 'Full-cycle support from strategy to deployment'       },
+  { icon: CheckCircle2, text: 'Transparent communication and reporting'              },
 ]
 
 export default function MACTA() {
@@ -80,7 +80,7 @@ export default function MACTA() {
           </div>
 
           {/* Right: Contact Form */}
-          <div className="lg:w-[440px] flex-shrink-0 reveal-right">
+          <div className="w-full lg:w-[440px] flex-shrink-0 reveal-right">
             <div className="rounded-3xl p-5 sm:p-8"
               style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.10)', boxShadow: '0 32px 80px rgba(0,0,0,0.4)', backdropFilter: 'blur(12px)' }}>
 

@@ -95,8 +95,14 @@ export default function WAHero() {
           </p>
 
           {/* Description */}
-          <p className="text-[13px] xs:text-[14px] sm:text-[15px] text-slate-400 leading-[1.85] mb-7 sm:mb-8 max-w-[580px] px-1">
-            Ara Discover Marketing is the best custom web application development company in Thanjavur, offering reliable AI-powered solutions customised as per your requirements — from eCommerce apps to enterprise-level platforms.
+          <p className="text-[13px] xs:text-[14px] sm:text-[15px] text-slate-400 leading-[1.85] mb-3 max-w-[600px] px-1">
+            In the modern digital era, businesses need a strong online presence. Ara Discover Marketing is the best custom web application development company in Thanjavur, offering reliable AI-powered solutions customised as per your requirements.
+          </p>
+          <p className="hidden sm:block text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7 sm:mb-8 max-w-[600px] px-1">
+            We are one of the best <strong className="text-slate-300 font-semibold">web and mobile app development companies in Thanjavur</strong>, incorporating innovation with AI-driven technology to develop powerful, secure, and result-driven web applications. Whether you require an e-commerce app or an enterprise-level solution, Ara is here to help your business succeed.
+          </p>
+          <p className="sm:hidden text-[13px] text-slate-500 leading-[1.85] mb-7 max-w-[580px] px-1">
+            We are one of the best web and mobile app development companies in Thanjavur, delivering powerful, secure, and result-driven web applications.
           </p>
 
           {/* Quick wins pills */}

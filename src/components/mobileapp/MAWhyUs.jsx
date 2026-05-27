@@ -1,37 +1,44 @@
-import { Trophy, Cpu, Users, Clock, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
+import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
 
 const reasons = [
   {
     icon: Trophy,
     title: 'Best App Development Agency in Thanjavur',
-    desc: 'Recognised for delivering exceptional mobile app solutions with proven results and client satisfaction.',
+    desc: 'Recognised among the best App Development Companies in Thanjavur with proven results across industries.',
     color: '#7c3aed',
   },
   {
-    icon: Cpu,
-    title: 'AI-Powered Mobile App Development',
-    desc: 'AI features for smarter user engagement, business automation, and intelligent insights built right in.',
+    icon: Briefcase,
+    title: 'Professional Services to Meet Business Goals',
+    desc: 'Professional mobile app development services in Thanjavur tailored to achieve your specific business objectives.',
     color: '#2563eb',
   },
   {
-    icon: Users,
-    title: 'Full-Cycle Development Partnership',
-    desc: 'From strategy to post-launch support — we handle every phase of your app lifecycle with care.',
+    icon: Cpu,
+    title: 'AI-Powered Solutions & Insights',
+    desc: 'AI-powered solutions for smarter user engagement, intelligent insights, and AI mobile app development.',
     color: '#0891b2',
+  },
+  {
+    icon: Users,
+    title: 'Full-Cycle Development from Strategy to Deployment',
+    desc: 'We handle every phase — strategy, design, development, QA, deployment, and post-launch support.',
+    color: '#059669',
   },
   {
     icon: Clock,
     title: 'Transparent Process & Timely Delivery',
-    desc: 'Zero surprises. We communicate clearly and deliver on schedule, every time, no exceptions.',
-    color: '#059669',
+    desc: 'Zero surprises. Clear communication, milestone tracking, and on-schedule delivery every time.',
+    color: '#d97706',
   },
 ]
 
 const checklist = [
-  'Custom app development solutions',
+  'Professional mobile app development services in Thanjavur',
   'AI mobile app development in Thanjavur',
   'iOS and Android development',
-  'Enterprise-grade security',
+  'Full-cycle from strategy to deployment',
+  'Transparent process & timely delivery',
 ]
 
 export default function MAWhyUs() {
@@ -112,7 +119,7 @@ export default function MAWhyUs() {
           <div className="flex-1 flex flex-col gap-5 reveal-right">
             {reasons.map(({ icon: Icon, title, desc, color }, i) => (
               <div key={title}
-                className={`reveal delay-${i + 1} flex items-start gap-5 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 cursor-default`}
+                className={`reveal delay-${Math.min(i + 1, 4)} flex items-start gap-5 p-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 cursor-default`}
                 style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}
                 onMouseEnter={e => {
                   e.currentTarget.style.border = `1px solid ${color}30`

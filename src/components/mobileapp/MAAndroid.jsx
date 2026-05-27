@@ -56,7 +56,7 @@ export default function MAAndroid() {
           </div>
 
           {/* Right: Visual */}
-          <div className="lg:w-[480px] flex-shrink-0 reveal-right">
+          <div className="w-full lg:w-[480px] flex-shrink-0 reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse,rgba(124,58,237,0.18) 0%,transparent 70%)' }} />

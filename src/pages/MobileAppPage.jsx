@@ -12,6 +12,7 @@ import MABenefits      from '../components/mobileapp/MABenefits'
 import MAProcess       from '../components/mobileapp/MAProcess'
 import MAIndustries    from '../components/mobileapp/MAIndustries'
 import MATestimonials  from '../components/mobileapp/MATestimonials'
+import MAAssurance     from '../components/mobileapp/MAAssurance'
 import MACTA           from '../components/mobileapp/MACTA'
 import MAFAQ           from '../components/mobileapp/MAFAQ'
 
@@ -115,6 +116,7 @@ export default function MobileAppPage() {
         <MAProcess />
         <MAIndustries />
         <MATestimonials />
+        <MAAssurance />
         <MACTA />
         <MAFAQ />
       </main>
