@@ -83,7 +83,7 @@ export default function EWIntro() {
               style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
 
             <p className="text-[12.5px] sm:text-[13.5px] lg:text-[14.5px] text-slate-500 leading-[1.90] mb-6 sm:mb-7">
-              In today's competitive market, enterprises need websites that are visually attractive, secure, scalable, and capable of managing complex business operations. Our team applies the latest technology, personalised designs, and data-driven insights to help enterprises realise measurable growth.
+              In today's competitive market, enterprises need websites that are visually attractive, secure, scalable, and capable of managing complex business operations. Our enterprise web development services in Thanjavur apply the latest technology, personalised designs, and data-driven insights to help enterprises realise measurable growth.
             </p>
 
             {/* Feature points — 1 col on xs, 2 col on sm+ */}

@@ -14,7 +14,7 @@ const segments = [
     icon: ShoppingCart,
     title: 'Enterprise eCommerce',
     desc: 'Corporations seeking enterprise eCommerce development in Thanjavur for powerful, feature-rich online sales channels.',
-    points: ['High-volume product catalogues', 'Secure payment gateways', 'Inventory & ERP integration'],
+    points: ['Enterprise eCommerce development in Thanjavur', 'Secure payment gateways', 'Inventory & ERP integration'],
     color: '#7c3aed',
     lightBg: '#f5f3ff',
     borderColor: '#ddd6fe',

@@ -12,7 +12,7 @@ const benefits = [
   {
     icon: TrendingUp,
     title: 'Traffic Growth Engine',
-    body: 'SEO-optimised, high-performance architecture focused on increasing enterprise traffic and conversion rates.',
+    body: 'Our enterprise web development services in Thanjavur deliver SEO-optimised, high-performance architecture focused on increasing enterprise traffic and conversion rates.',
     color: '#2563eb',
   },
   {
@@ -31,13 +31,13 @@ const benefits = [
   {
     icon: ShoppingBag,
     title: 'Enterprise eCommerce',
-    body: 'Robust eCommerce development in Thanjavur — multi-currency, multi-language, ERP-integrated global stores.',
+    body: 'Robust enterprise eCommerce development in Thanjavur — multi-currency, multi-language, ERP-integrated global stores for high-volume sales.',
     color: '#0891b2',
   },
   {
     icon: Settings2,
     title: 'WordPress CMS Management',
-    body: 'Enterprise WordPress development services in Thanjavur for effortless website management without technical dependency.',
+    body: 'Enterprise WordPress development services in Thanjavur for effortless, scalable content management without any technical dependency — ideal for large editorial teams.',
     color: '#2563eb',
   },
 ]
