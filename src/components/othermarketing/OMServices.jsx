@@ -14,7 +14,7 @@ const services = [
     bg: '#eff6ff',
     badge: 'Best Email Marketing in Thanjavur',
     heading: 'Strategic Email Marketing Campaigns',
-    desc: 'Email marketing remains one of the most powerful means of reaching your targeted customers and improving conversions. Our team develops strategic email campaigns to engage, nurture leads, and retain customers. As one of the best email marketing agencies in Thanjavur, we design customised campaigns to improve open rates and drive measurable engagement.',
+    desc: 'Email marketing remains one of the most powerful ways to reach targeted customers and improve conversions. As one of the best email marketing agencies in Thanjavur, we craft campaigns that improve open rates and drive measurable results. We are the best email marketing service in Thanjavur for businesses seeking customer-focused strategies. We provide bulk email advertising services in Thanjavur — including bulk sending emails in Thanjavur for businesses across sectors. As a trusted email marketing service provider in Thanjavur, our email marketing advertising in Thanjavur delivers consistent, measurable ROI.',
     items: [
       { icon: Megaphone,  text: 'Promotional Email Campaigns' },
       { icon: Send,       text: 'Newsletter Marketing' },
@@ -37,7 +37,7 @@ const services = [
     bg: '#f5f3ff',
     badge: 'Influencer Marketing in Thanjavur',
     heading: 'Influencer Marketing & Brand Collaborations',
-    desc: 'Influencer marketing connects your brand with people via content creators they trust. Our influencer marketing services in Thanjavur help brands improve visibility, customer engagement, and online credibility. We are a trusted influencer advertising agency in Thanjavur that specialises in connecting businesses with the right creators for authentic campaigns.',
+    desc: 'Influencer marketing connects your brand with people through content creators they trust. Our influencers marketing in Thanjavur services help brands improve visibility, engagement, and online credibility. We are experts at connecting influencers to brands in Thanjavur, building successful brands collaborating with influencers in Thanjavur for authentic reach. From advertising with influencers in Thanjavur to managing influencers and brands in Thanjavur partnerships, we are a trusted influencer advertising agency in Thanjavur delivering creative, performance-driven campaigns.',
     items: [
       { icon: Sparkles,  text: 'Influencer Campaign Planning' },
       { icon: Share2,    text: 'Brand Collaboration Strategies' },
@@ -60,7 +60,7 @@ const services = [
     bg: '#ecfeff',
     badge: 'Bulk SMS Promotion in Thanjavur',
     heading: 'SMS Marketing & Bulk Promotional Campaigns',
-    desc: 'SMS marketing allows businesses to instantly send updates, offers, and promotional messages to customers. Our SMS marketing strategies are tailored for engagement, promotions, and retention. We are a trusted SMS agency in Thanjavur, providing reliable bulk SMS campaign management and audience targeting solutions for businesses across all sectors.',
+    desc: 'SMS marketing allows businesses to instantly send updates, offers, and promotional messages to customers. Our strategies are tailored for engagement, promotions, and retention. We are a trusted SMS agency in Thanjavur providing reliable bulk SMS promotion in Thanjavur for businesses across all sectors. As a trusted SMS marketing service provider in Thanjavur, we also offer text advertising services in Thanjavur to help brands boost engagement with targeted messaging campaigns.',
     items: [
       { icon: Megaphone,    text: 'Promotional SMS Campaigns' },
       { icon: Send,         text: 'Transactional SMS Services' },
@@ -128,7 +128,7 @@ export default function OMServices() {
           style={{ borderColor: s.color + '20', boxShadow: `0 12px 40px ${s.color}08` }}>
 
           {/* Left: description */}
-          <div className="flex-1 bg-white p-6 sm:p-8 border-b lg:border-b-0 lg:border-r border-slate-100">
+          <div className="flex-1 bg-white p-5 sm:p-8 border-b lg:border-b-0 lg:border-r border-slate-100">
             <div className="h-0.5 w-12 rounded-full mb-6" style={{ background: `linear-gradient(90deg,${s.color},${s.color}44)` }} />
 
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5"
@@ -160,7 +160,7 @@ export default function OMServices() {
           </div>
 
           {/* Right: service list */}
-          <div className="lg:w-[320px] flex-shrink-0 p-6 sm:p-8" style={{ background: s.bg + '70' }}>
+          <div className="w-full lg:w-[320px] flex-shrink-0 p-5 sm:p-8" style={{ background: s.bg + '70' }}>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-5">What We Offer</p>
             <div className="flex flex-col gap-2.5">
               {s.items.map(({ icon: Icon, text }) => (

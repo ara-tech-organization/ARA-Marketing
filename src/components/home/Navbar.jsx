@@ -17,8 +17,8 @@ const digitalMarketingItems = [
 ]
 
 const webDesignItems = [
-  { href: '/services/website-development', label: 'Static Website',     icon: Layout,       desc: 'Fast & lightweight sites'     },
-  { href: '/services/website-development', label: 'Dynamic Website',    icon: Zap,          desc: 'Interactive web experiences'  },
+  { href: '/services/static-website-development', label: 'Static Website', icon: Layout, desc: 'Fast & lightweight sites', isRoute: true },
+  { href: '/services/dynamic-website-development', label: 'Dynamic Website', icon: Zap, desc: 'Interactive web experiences', isRoute: true },
   { href: '/services/website-development', label: 'WordPress Website',  icon: Globe,        desc: 'Flexible CMS solutions'       },
   { href: '/services/website-development', label: 'Ecommerce Website',  icon: ShoppingCart, desc: 'Online store solutions'       },
   { href: '/services/website-development', label: 'Enterprise Website', icon: Building2,    desc: 'Large-scale web platforms'    },
@@ -30,7 +30,7 @@ function DropdownPanel({ items, title, onClose, pathname }) {
   return (
     <div
       className="absolute top-full left-1/2 -translate-x-1/2 mt-3 z-50
-        rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,.7)] overflow-hidden pointer-events-auto"
+        rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,.7)] overflow-hidden"
       style={{ minWidth: 460, background: '#0d1f40', border: '1px solid #1e3a6e' }}
     >
       <div className="h-[2px] w-full" style={{ background: 'linear-gradient(90deg,transparent,#3b82f6,#818cf8,#3b82f6,transparent)' }} />
@@ -117,12 +117,11 @@ export default function Navbar() {
     '/services/best-seo-company-thanjavur',
     '/services/social-media-marketing',
     '/services/graphic-design',
-    '/services/website-development',
     '/services/best-sem-company-thanjavur',
     '/services/video-editing',
     '/services/other-digital-marketing-services-thanjavur',
   ])
-  const webActive = false
+  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development'])
 
   const closeAll = () => setActiveDropdown(null)
 

@@ -9,14 +9,14 @@ const services = [
     id: 'branding', icon: Sparkles, label: 'Branding Videos', color: '#2563eb', tag: 'Branding',
     imgSrc: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Branding video editing services in Thanjavur',
-    desc: 'Brand videos are critical to how customers see and trust your brand. We edit creative and impactful branding videos in Thanjavur that tell your brand story effectively across the internet with cinematic storytelling techniques that forge emotional connections with your audience.',
+    desc: 'Brand videos are critical to how customers see and trust your brand. We specialise in Branding Videos editing in Thanjavur, crafting creative and impactful content that tells your brand story effectively. Our cinematic storytelling in Thanjavur techniques forge emotional connections with your audience across every platform.',
     items: ['Brand Introduction Videos', 'Company Profile Videos', 'Promotional Brand Videos', 'Marketing Campaign Videos', 'Cinematic Storytelling', 'Colour Grading & Mood Design'],
   },
   {
     id: 'product', icon: Package, label: 'Product Videos', color: '#0891b2', tag: 'Product',
     imgSrc: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Product video editing services in Thanjavur',
-    desc: 'Product and service videos allow a company to convey what they offer in a clear and engaging way. Our business video editing services in Thanjavur produce effective and engaging visuals that convert viewers into customers and drive measurable sales performance.',
+    desc: 'Product and service videos allow a company to convey what they offer in a clear and engaging way. As a trusted video editing service provider in Thanjavur, our business video editing services produce effective and engaging visuals that convert viewers into customers and drive measurable sales performance.',
     items: ['Product Demo Videos', 'Service Explainer Videos', 'Promotional Ads', 'Marketing Video Content', 'Feature Highlight Reels', 'Before & After Showcases'],
   },
   {
@@ -37,7 +37,7 @@ const services = [
     id: 'social', icon: Share2, label: 'Social Media', color: '#db2777', tag: 'Social',
     imgSrc: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Social media video editing services in Thanjavur',
-    desc: 'Social media videos are a must for digital marketing success. We provide digital marketing video editing in Thanjavur tailored for platforms like Instagram, Facebook, and YouTube, helping brands grow their audience with engaging, platform-optimised content.',
+    desc: 'Social media videos are a must for digital marketing success. We provide digital marketing video editing in Thanjavur tailored for Instagram, Facebook, and YouTube. As a leading YouTube video editing agency in Thanjavur and trusted YouTube video editing company in Thanjavur, we deliver video editing services for YouTube in Thanjavur that grow your channel audience.',
     items: ['Instagram Reels Editing', 'Facebook Video Ads', 'Short Promotional Videos', 'Viral Content Editing', 'YouTube Channel Videos', 'Story & Short-form Content'],
   },
   {
@@ -59,7 +59,7 @@ export default function VEServices() {
   const svc = services[active]
 
   return (
-    <section id="ve-services" className="relative py-24 overflow-hidden"
+    <section id="ve-services" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}>
 
       {/* Dot grid */}
@@ -78,26 +78,26 @@ export default function VEServices() {
       <div className="absolute bottom-0 right-1/4 w-[450px] h-[450px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.18) 0%, transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
 
         {/* ── Header ── */}
-        <div className="text-center mb-10 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px]
-            font-bold uppercase tracking-widest mb-5 text-blue-600 bg-white/80 shadow-sm"
+        <div className="text-center mb-8 sm:mb-10 reveal">
+          <span className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px]
+            font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-white/80 shadow-sm"
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
-            <Layers size={11} /> Video Editing Services
+            <Layers size={10} /> Video Editing Services
           </span>
-          <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
+          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
             Complete Video Production &amp;{' '}
             <span style={gradBlue}>Editing Solutions</span>
           </h2>
-          <p className="text-[14.5px] text-slate-500 max-w-[520px] mx-auto leading-[1.85]">
+          <p className="text-[13.5px] sm:text-[14.5px] text-slate-500 max-w-[520px] mx-auto leading-[1.85] px-2 sm:px-0">
             Full-service video editing across every format and platform — from raw footage to polished final cut.
           </p>
         </div>
 
         {/* ── Horizontal tab pills ── */}
-        <div className="reveal flex flex-wrap justify-center gap-2.5 mb-8">
+        <div className="reveal flex flex-wrap justify-center gap-2 sm:gap-2.5 mb-6 sm:mb-8">
           {services.map(({ id, icon: Icon, label, color }, i) => {
             const isActive = active === i
             return (
@@ -105,7 +105,7 @@ export default function VEServices() {
                 key={id}
                 type="button"
                 onClick={() => setActive(i)}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-[12.5px] font-semibold
+                className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full text-[11.5px] sm:text-[12.5px] font-semibold
                   transition-all duration-300 hover:-translate-y-0.5"
                 style={isActive
                   ? { background: `linear-gradient(135deg,${color},${color}cc)`, color: 'white', boxShadow: `0 6px 20px ${color}35` }
@@ -133,7 +133,7 @@ export default function VEServices() {
           <div className="flex flex-col lg:flex-row">
 
             {/* ── Left: text content ── */}
-            <div className="flex-1 min-w-0 p-8 lg:p-10">
+            <div className="flex-1 min-w-0 p-5 sm:p-8 lg:p-10">
 
               {/* Service label */}
               <div className="flex items-center gap-3 mb-6">
@@ -143,7 +143,7 @@ export default function VEServices() {
                 </div>
                 <div>
                   <span className="block text-[10px] font-black uppercase tracking-widest mb-0.5" style={{ color: svc.color }}>{svc.tag}</span>
-                  <h3 className="text-[20px] font-bold text-slate-900 leading-tight">{svc.label}</h3>
+                  <h3 className="text-[16px] sm:text-[20px] font-bold text-slate-900 leading-tight">{svc.label}</h3>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@ export default function VEServices() {
             </div>
 
             {/* ── Right: reduced image ── */}
-            <div className="lg:w-[300px] flex-shrink-0 p-6 flex flex-col gap-4">
+            <div className="lg:w-[300px] flex-shrink-0 p-4 sm:p-6 flex flex-col gap-4">
 
               {/* Thumbnail image */}
               <div className="relative rounded-2xl overflow-hidden flex-shrink-0"

@@ -1,0 +1,121 @@
+import { Database, RefreshCw, TrendingUp, Users, GitBranch, Globe2, CheckCircle2, Zap } from 'lucide-react'
+
+const benefits = [
+  { icon: Database,   label: 'Easy content management through CMS platforms',   color: '#818cf8' },
+  { icon: RefreshCw,  label: 'Real-time updates without developer dependency',   color: '#a5b4fc' },
+  { icon: TrendingUp, label: 'Scalable architecture for business growth',         color: '#818cf8' },
+  { icon: Users,      label: 'Personalised user experience',                     color: '#a5b4fc' },
+  { icon: GitBranch,  label: 'Integration with databases and APIs',              color: '#818cf8' },
+]
+
+export default function DWBenefits() {
+  return (
+    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(rgba(79,70,229,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+      <div className="hidden sm:block absolute -top-20 -right-20 w-[340px] h-[340px] rounded-full border border-indigo-100/50 pointer-events-none animate-[spin_34s_linear_infinite]" />
+      <div className="hidden sm:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full border border-violet-100/40 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+
+        {/* ── Header ── */}
+        <div className="text-center mb-10 sm:mb-14 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-indigo-600 bg-indigo-50"
+            style={{ border: '1px solid rgba(79,70,229,0.15)' }}>
+            <Zap size={10} /> Key Benefits
+          </span>
+          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+            Benefits of{' '}
+            <span style={{ background: 'linear-gradient(135deg,#4f46e5,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              Dynamic Websites
+            </span>
+          </h2>
+          <p className="text-[13.5px] sm:text-[15px] text-slate-500 leading-[1.85] max-w-2xl mx-auto">
+            Static websites provide less flexibility and performance than dynamic websites. Our dynamic web design services in Thanjavur are crafted for maximum efficiency & user engagement.
+          </p>
+        </div>
+
+        {/* ── Split panel ── */}
+        <div className="reveal flex flex-col lg:flex-row gap-0 rounded-3xl overflow-hidden"
+          style={{ boxShadow: '0 24px 80px rgba(79,70,229,0.15)', border: '1.5px solid #e0e7ff' }}>
+
+          {/* Left dark panel */}
+          <div className="lg:w-[48%] flex-shrink-0 relative px-6 sm:px-10 py-10 sm:py-14"
+            style={{ background: 'linear-gradient(145deg, #312e81 0%, #3730a3 40%, #4338ca 70%, #4f46e5 100%)' }}>
+            <div className="absolute inset-0 pointer-events-none"
+              style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+            <div className="absolute -top-20 -right-20 w-[260px] h-[260px] rounded-full pointer-events-none"
+              style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 65%)' }} />
+            <div className="relative">
+              <p className="text-[10px] font-black uppercase tracking-widest mb-6" style={{ color: 'rgba(255,255,255,0.45)' }}>
+                Key benefits include
+              </p>
+              <div className="space-y-4">
+                {benefits.map(({ icon: Icon, label, color }) => (
+                  <div
+                    key={label}
+                    className="group flex items-start gap-4 p-4 rounded-2xl transition-all duration-300 hover:translate-x-1 cursor-default"
+                    style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)' }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.background = 'rgba(255,255,255,0.10)'
+                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.22)'
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.background = 'rgba(255,255,255,0.06)'
+                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.10)'
+                    }}
+                  >
+                    <div className="flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center"
+                      style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.20)' }}>
+                      <Icon size={15} style={{ color }} />
+                    </div>
+                    <p className="text-[13px] sm:text-[14px] font-semibold leading-snug" style={{ color: 'rgba(255,255,255,0.88)' }}>
+                      {label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right light panel */}
+          <div className="flex-1 flex flex-col">
+            <div className="relative flex-1 overflow-hidden" style={{ minHeight: 240 }}>
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=420&fit=crop&auto=format&q=80"
+                alt="Dynamic web design services in Thanjavur — Ara Discover Marketing"
+                loading="lazy"
+                className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
+                style={{ minHeight: 240 }}
+              />
+              <div className="absolute inset-0"
+                style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(79,70,229,0.22) 100%)' }} />
+            </div>
+            <div className="px-6 sm:px-10 py-8 sm:py-10" style={{ background: '#fafafe' }}>
+              <div className="flex items-start gap-3 mb-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: 'linear-gradient(135deg,#eef2ff,#ede9fe)', border: '1px solid #c7d2fe' }}>
+                  <Globe2 size={16} className="text-indigo-600" />
+                </div>
+                <div>
+                  <p className="text-[13px] font-bold text-slate-900 mb-1.5">Top Dynamic Website Designing & Development Company in Thanjavur</p>
+                  <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.80]">
+                    Our expertise in dynamic web page design & development in Thanjavur helps businesses achieve high-speed, seamless performance under heavy traffic conditions. We create modern digital experiences that drive conversions.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-3 rounded-xl"
+                style={{ background: '#eef2ff', border: '1px solid #c7d2fe' }}>
+                <CheckCircle2 size={13} className="text-indigo-600 flex-shrink-0" />
+                <span className="text-[12px] font-semibold text-indigo-700">High-speed, seamless performance under heavy traffic conditions</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  )
+}

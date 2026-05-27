@@ -1,152 +1,151 @@
 import {
-  Mail, Smartphone, Users, ChevronRight, ArrowRight, ArrowUpRight,
-  TrendingUp, CheckCircle2, Zap, Send, Star,
+  Mail, Smartphone, Users, ChevronRight, ArrowRight,
+  TrendingUp, CheckCircle2, Send, Star, BarChart2,
 } from 'lucide-react'
 
 const channels = [
-  { icon: Mail,       label: 'Email Marketing',      metric: '68%',  sub: 'Average open rate',   pct: 68, color: '#2563eb', bg: 'rgba(37,99,235,0.12)',  border: 'rgba(37,99,235,0.25)' },
-  { icon: Users,      label: 'Influencer Marketing', metric: '2.4M', sub: 'Monthly reach',        pct: 82, color: '#a78bfa', bg: 'rgba(167,139,250,0.12)', border: 'rgba(167,139,250,0.28)' },
-  { icon: Smartphone, label: 'SMS Marketing',        metric: '99%',  sub: 'Delivery rate',        pct: 99, color: '#38bdf8', bg: 'rgba(56,189,248,0.12)', border: 'rgba(56,189,248,0.25)' },
+  { icon: Mail,       label: 'Email Marketing',      metric: '68%',  sub: 'Avg open rate',  pct: 68, color: '#2563eb', light: '#eff6ff' },
+  { icon: Users,      label: 'Influencer Marketing', metric: '2.4M', sub: 'Monthly reach',  pct: 82, color: '#7c3aed', light: '#f5f3ff' },
+  { icon: Smartphone, label: 'SMS Marketing',         metric: '99%',  sub: 'Delivery rate', pct: 99, color: '#0891b2', light: '#f0f9ff' },
 ]
-
-const gradMain = {
-  background: 'linear-gradient(135deg,#60a5fa 0%,#a78bfa 100%)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
 
 export default function OMHero() {
   return (
-    <section className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(135deg,#020b18 0%,#071428 50%,#040e1f 100%)' }}>
+    <section className="relative overflow-hidden pt-[72px]"
+      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#f5f3ff 100%)' }}>
 
+      {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.12) 1px,transparent 1px)', backgroundSize: '36px 36px' }} />
-      <div className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.20) 0%,transparent 65%)' }} />
-      <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.14) 0%,transparent 65%)' }} />
-      <div className="absolute top-20 right-[8%] w-52 h-52 rounded-full border border-white/[0.05] pointer-events-none animate-[spin_40s_linear_infinite]" />
-      <div className="absolute bottom-20 left-[5%] w-36 h-36 rounded-full border border-blue-400/[0.06] pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
-      <div className="absolute top-1/2 left-0 right-0 h-px pointer-events-none"
-        style={{ background: 'linear-gradient(90deg,transparent,rgba(37,99,235,0.18) 30%,rgba(124,58,237,0.22) 50%,rgba(37,99,235,0.14) 70%,transparent)' }} />
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '36px 36px' }} />
+      {/* Orbs */}
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.09) 0%,transparent 65%)' }} />
+      <div className="absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.07) 0%,transparent 65%)' }} />
+      <div className="absolute top-16 left-[12%] w-10 h-10 rounded-full border border-blue-300/25 pointer-events-none" />
+      <div className="absolute top-28 right-[14%] w-6 h-6 rounded-full border border-violet-300/20 pointer-events-none" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7 py-20 w-full">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
 
-          {/* Left */}
-          <div className="flex-1 min-w-0 animate-hero-enter">
-            <nav className="flex items-center gap-1.5 text-[12px] mb-8" style={{ color: 'rgba(255,255,255,0.32)' }}>
-              <a href="/ARA-Marketing/" className="hover:text-sky-300 transition-colors">Home</a>
-              <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              <span>Services</span>
-              <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              <span style={{ color: '#a78bfa' }} className="font-semibold">Other Marketing</span>
-            </nav>
+        {/* ── Row 1: breadcrumb left  ·  channel tags right ── */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-10 pb-8 gap-3">
+          <nav className="flex items-center gap-1.5 text-[11.5px]" style={{ color: 'rgba(15,23,42,0.38)' }}>
+            <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
+            <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
+            <span>Services</span>
+            <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
+            <span style={{ color: '#7c3aed' }} className="font-semibold">Other Marketing</span>
+          </nav>
+          <div className="flex flex-wrap items-center gap-2">
+            {channels.map(({ icon: Icon, label, color, light }) => (
+              <span key={label} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10.5px] font-bold border"
+                style={{ background: light, color, borderColor: color + '25' }}>
+                <Icon size={10} /> {label}
+              </span>
+            ))}
+          </div>
+        </div>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold uppercase tracking-widest mb-7"
-              style={{ background: 'rgba(167,139,250,0.14)', border: '1px solid rgba(167,139,250,0.25)', color: '#c4b5fd' }}>
-              <Send size={11} /> Advanced Digital Marketing Services
-            </div>
+        {/* ── Row 2: giant heading full-width ── */}
+        <div className="mb-2">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10.5px] font-bold uppercase tracking-widest mb-5 bg-white border border-violet-200 text-violet-600 shadow-sm">
+            <Send size={10} /> Advanced Digital Marketing Services
+          </div>
+          <h1 className="text-[clamp(28px,3.8vw,48px)] font-bold leading-[1.12] tracking-tight text-slate-900">
+            Advanced Digital{' '}
+            <span style={{ background: 'linear-gradient(135deg,#2563eb 0%,#7c3aed 60%,#0891b2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              Marketing
+            </span>
+            <span className="block">Services in Thanjavur</span>
+            <span className="block text-[clamp(18px,2.4vw,32px)] font-semibold text-slate-500 mt-1">for Business Growth</span>
+          </h1>
+        </div>
 
-            <h1 className="text-[clamp(32px,4.2vw,60px)] font-bold leading-[1.06] tracking-tight mb-5" style={{ color: '#fff' }}>
-              Advanced Digital Marketing{' '}
-              <span style={gradMain}>Services in Thanjavur</span>
-            </h1>
+        {/* ── Row 3: full-width divider ── */}
+        <div className="w-full h-px my-7"
+          style={{ background: 'linear-gradient(90deg,rgba(37,99,235,0.18),rgba(124,58,237,0.14) 50%,transparent)' }} />
 
-            <p className="text-[14.5px] leading-[1.85] mb-4 max-w-[520px]" style={{ color: 'rgba(255,255,255,0.48)' }}>
-              Email Marketing &bull; Influencer Marketing &bull; SMS Marketing
-            </p>
-            <p className="text-[13.5px] leading-[1.85] mb-10 max-w-[520px]" style={{ color: 'rgba(255,255,255,0.40)' }}>
-              Ara Discover Marketing offers results-oriented digital marketing solutions aimed at driving customer engagement, brand awareness, and measurable leads for startups and growing businesses.
-            </p>
-
-            <div className="flex flex-wrap gap-3 mb-12">
+        {/* ── Row 4: description left  ·  CTAs + stats right ── */}
+        <div className="flex flex-col lg:flex-row gap-8 items-start pb-12">
+          <p className="flex-1 text-[15px] text-slate-500 leading-[1.85] max-w-[500px]">
+            Ara Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencers marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
+          </p>
+          <div className="flex-shrink-0 flex flex-col gap-4">
+            <div className="flex flex-wrap gap-3">
               <a href="#contact"
-                className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 32px rgba(124,58,237,0.38)' }}>
-                Start Your Campaign <ArrowRight size={15} />
+                className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
+                style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.26)' }}>
+                Start Your Campaign <ArrowRight size={14} />
               </a>
               <a href="#om-services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5"
-                style={{ color: 'rgba(255,255,255,0.75)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
-                Explore Services <ArrowUpRight size={15} />
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold bg-white border border-slate-200 text-slate-600 hover:border-violet-200 hover:text-violet-700 transition-all duration-300"
+                style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
+                Explore Services
               </a>
             </div>
-
-            <div className="flex flex-wrap gap-8 pt-7" style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}>
-              {[['500+','Campaigns'],['98%','Satisfaction'],['3','Channels']].map(([num, label]) => (
-                <div key={label}>
-                  <span className="text-[28px] font-black leading-tight block" style={gradMain}>{num}</span>
-                  <span className="text-[11px]" style={{ color: 'rgba(255,255,255,0.30)' }}>{label}</span>
+            {/* Inline stats */}
+            <div className="flex flex-wrap items-center gap-3 sm:gap-5 px-4 py-3 rounded-2xl bg-white border border-slate-100"
+              style={{ boxShadow: '0 2px 12px rgba(37,99,235,0.06)' }}>
+              {[['500+','Campaigns','#2563eb'],['98%','Satisfied','#7c3aed'],['4x','Avg ROI','#0891b2']].map(([v, l, c]) => (
+                <div key={l} className="flex items-center gap-2">
+                  <span className="text-[20px] font-bold leading-none"
+                    style={{ background: `linear-gradient(135deg,${c},${c}99)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                    {v}
+                  </span>
+                  <span className="text-[10.5px] text-slate-400 font-medium leading-tight max-w-[48px]">{l}</span>
                 </div>
               ))}
             </div>
           </div>
+        </div>
 
-          {/* Right: 3 channel cards stacked */}
-          <div className="lg:w-[420px] flex-shrink-0 reveal-right">
-            <div className="relative">
-              <div className="absolute -inset-6 rounded-[3rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse,rgba(124,58,237,0.18) 0%,transparent 70%)' }} />
+        {/* ── Row 5: 3 full-width channel panels ── */}
+        <div className="reveal grid grid-cols-1 sm:grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-slate-200 mb-10 sm:mb-16"
+          style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.09)' }}>
+          {channels.map(({ icon: Icon, label, metric, sub, pct, color, light }, i) => (
+            <div key={label}
+              className="group relative bg-white px-7 py-6 transition-all duration-300 hover:z-10"
+              style={{
+                borderRight: i < channels.length - 1 ? '1px solid #f1f5f9' : 'none',
+                borderBottom: i < channels.length - 1 ? '1px solid #f1f5f9' : 'none',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = light }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'white' }}>
 
-              <div className="relative flex flex-col gap-3">
-                {channels.map(({ icon: Icon, label, metric, sub, pct, color, bg, border }) => (
-                  <div key={label} className="group relative rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-x-1"
-                    style={{ background: 'rgba(255,255,255,0.04)', border: `1px solid ${border}`, backdropFilter: 'blur(20px)' }}>
-                    <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
-                    <div className="flex items-center gap-5 px-5 py-4">
-                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0"
-                        style={{ background: bg, border: `1px solid ${border}` }}>
-                        <Icon size={20} style={{ color }} />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between mb-2">
-                          <p className="text-[12px] font-bold" style={{ color: 'rgba(255,255,255,0.70)' }}>{label}</p>
-                          <span className="text-[18px] font-black" style={{ color }}>{metric}</span>
-                        </div>
-                        <div className="h-1.5 rounded-full mb-1.5" style={{ background: 'rgba(255,255,255,0.08)' }}>
-                          <div style={{ height: '100%', width: `${pct}%`, borderRadius: 4, background: `linear-gradient(90deg,${color}80,${color})` }} />
-                        </div>
-                        <p className="text-[10.5px]" style={{ color: 'rgba(255,255,255,0.32)' }}>{sub}</p>
-                      </div>
-                    </div>
+              {/* Top accent line */}
+              <div className="h-[3px] w-full absolute top-0 left-0 right-0"
+                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+
+              <div className="flex items-center justify-between mb-4 mt-1">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center"
+                    style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}25` }}>
+                    <Icon size={17} style={{ color }} />
                   </div>
-                ))}
-
-                {/* Summary card */}
-                <div className="rounded-2xl overflow-hidden"
-                  style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(20px)' }}>
-                  <div className="flex items-center gap-4 px-5 py-4">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                      style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)' }}>
-                      <TrendingUp size={16} className="text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-[11px] font-bold text-white/60 mb-0.5">Total Campaign Reach</p>
-                      <p className="text-[22px] font-black" style={{ background: 'linear-gradient(135deg,#60a5fa,#a78bfa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>2.4M+ Audiences</p>
-                    </div>
-                    <span className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse-dot" /> LIVE
-                    </span>
+                  <div>
+                    <p className="text-[12px] font-bold text-slate-800">{label}</p>
+                    <p className="text-[10px] text-slate-400">{sub}</p>
                   </div>
                 </div>
+                <span className="text-[28px] font-bold" style={{ color }}>{metric}</span>
               </div>
 
-              {/* Floating badges */}
-              <div className="absolute -top-5 -right-5 flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white border border-violet-200 animate-float"
-                style={{ boxShadow: '0 12px 36px rgba(0,0,0,0.35)' }}>
-                <Star size={12} className="text-violet-600" />
-                <span className="text-[11px] font-bold text-slate-700">Premium Agency</span>
+              {/* Progress bar */}
+              <div className="h-1.5 rounded-full bg-slate-100 mb-3">
+                <div className="h-full rounded-full" style={{ width: `${pct}%`, background: `linear-gradient(90deg,${color}70,${color})` }} />
               </div>
-              <div className="absolute -bottom-5 -left-5 flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-white border border-sky-100 animate-float-delay"
-                style={{ boxShadow: '0 12px 36px rgba(0,0,0,0.30)' }}>
-                <CheckCircle2 size={12} className="text-emerald-500" />
-                <span className="text-[11px] font-bold text-slate-700">500+ Campaigns</span>
+
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 size={10} style={{ color }} />
+                <span className="text-[10.5px] font-semibold" style={{ color }}>Proven results</span>
+                <span className="ml-auto flex gap-0.5">
+                  {[1,2,3,4,5].map(s => <Star key={s} size={8} style={{ color: '#f59e0b', fill: '#f59e0b' }} />)}
+                </span>
               </div>
             </div>
-          </div>
-
+          ))}
         </div>
+
       </div>
     </section>
   )

@@ -7,7 +7,9 @@ import GraphicDesignPage from './pages/GraphicDesignPage'
 import SEOPage           from './pages/SEOPage'
 import SEMPage           from './pages/SEMPage'
 import VideoEditingPage    from './pages/VideoEditingPage'
-import OtherServicesPage  from './pages/OtherServicesPage'
+import OtherServicesPage       from './pages/OtherServicesPage'
+import StaticWebsitePage      from './pages/StaticWebsitePage'
+import DynamicWebsitePage    from './pages/DynamicWebsitePage'
 import './index.css'
 
 function ScrollToTop() {
@@ -31,6 +33,8 @@ export default function App() {
         <Route path="/services/best-sem-company-thanjavur" element={<SEMPage />} />
         <Route path="/services/video-editing"              element={<VideoEditingPage />} />
         <Route path="/services/other-digital-marketing-services-thanjavur" element={<OtherServicesPage />} />
+        <Route path="/services/static-website-development"               element={<StaticWebsitePage />} />
+        <Route path="/services/dynamic-website-development"             element={<DynamicWebsitePage />} />
       </Routes>
     </BrowserRouter>
   )
