@@ -13,7 +13,7 @@ const digitalMarketingItems = [
   { href: '/services/best-sem-company-thanjavur', label: 'SEM',            icon: TrendingUp, desc: 'Search Engine Marketing',       isRoute: true  },
   { href: '/services/graphic-design',             label: 'Graphic Design', icon: Palette,    desc: 'Creative Visual Design',        isRoute: true  },
   { href: '/services/video-editing',              label: 'Video Editing',  icon: Video,      desc: 'Professional Video Production', isRoute: true  },
-  { href: '#other-services',                      label: 'Other Services', icon: Sparkles,   desc: 'Explore All Services',          isRoute: false },
+  { href: '/services/other-digital-marketing-services-thanjavur', label: 'Other Services', icon: Sparkles, desc: 'Email, Influencer & SMS', isRoute: true },
 ]
 
 const webDesignItems = [
@@ -120,6 +120,7 @@ export default function Navbar() {
     '/services/website-development',
     '/services/best-sem-company-thanjavur',
     '/services/video-editing',
+    '/services/other-digital-marketing-services-thanjavur',
   ])
   const webActive = false
 

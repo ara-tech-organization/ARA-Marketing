@@ -1,4 +1,4 @@
-import { Search, BarChart2, Target, Megaphone, Activity, DollarSign, LineChart, ArrowRight } from 'lucide-react'
+import { Search, BarChart2, Target, Megaphone, Activity, DollarSign, LineChart } from 'lucide-react'
 
 const steps = [
   { num: '01', icon: Search,     title: 'Business & Competitor Analysis',               desc: 'Deep-dive analysis of your business goals, target audience, and competitor ad strategies to identify the best campaign opportunities and keywords.',                                       color: '#2563eb' },
@@ -10,13 +10,41 @@ const steps = [
   { num: '07', icon: LineChart,  title: 'Monthly Reporting & Performance Optimization', desc: 'Transparent monthly reports covering impressions, clicks, conversions, ROAS, and actionable optimization recommendations to keep your campaigns performing at their best.',              color: '#0f766e' },
 ]
 
+function StepCard({ num, icon: Icon, title, desc, color }) {
+  return (
+    <div
+      className="group flex overflow-hidden rounded-2xl border border-slate-100
+        hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 bg-white"
+      style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+      onMouseEnter={e => { e.currentTarget.style.borderColor = color + '30' }}
+      onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}
+    >
+      <div className="w-1 flex-shrink-0 transition-all duration-300 group-hover:w-1.5"
+        style={{ background: `linear-gradient(180deg,${color},${color}66)` }} />
+      <div className="flex-1 flex items-start gap-3 px-4 py-3">
+        <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
+          transition-all duration-300 group-hover:scale-110"
+          style={{ background: `linear-gradient(135deg,${color}16,${color}08)`, border: `1.5px solid ${color}28` }}>
+          <Icon size={16} style={{ color }} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-1">{title}</h3>
+          <p className="text-[12.5px] text-slate-500 leading-[1.72]">{desc}</p>
+        </div>
+        <span className="flex-shrink-0 text-[10px] font-black px-2 py-1 rounded-lg self-start mt-0.5"
+          style={{ background: color + '10', color }}>{num}</span>
+      </div>
+    </div>
+  )
+}
+
 export default function SEMProcess() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section className="py-14 bg-white overflow-hidden">
+      <div className="max-w-[1100px] mx-auto px-7">
 
         {/* ── Header ── */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16 reveal">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 reveal">
           <div>
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
@@ -27,66 +55,28 @@ export default function SEMProcess() {
               <span className="text-gradient-blue">&amp; PPC Workflow</span>
             </h2>
           </div>
-          <p className="text-[14px] text-slate-500 lg:max-w-[360px] leading-[1.85]">
+          <p className="text-[14px] text-slate-500 sm:max-w-[320px] leading-[1.85]">
             As a trusted search engine marketing ppc agency in Thanjavur, we focus on improving campaign performance and lowering cost-per-conversion.
           </p>
         </div>
 
-        {/* ── Vertical timeline ── */}
-        <div className="reveal relative">
+        {/* ── Step cards — two columns ── */}
+        <div className="reveal flex flex-col lg:flex-row gap-6">
 
-          {/* Vertical connecting line */}
-          <div className="absolute left-[27px] top-6 bottom-6 w-px hidden sm:block"
-            style={{ background: 'linear-gradient(180deg, #2563eb22 0%, #7c3aed22 50%, #0f766e22 100%)' }} />
-
-          <div className="flex flex-col gap-0">
-            {steps.map(({ num, icon: Icon, title, desc, color }, i) => (
-              <div key={num} className="relative flex gap-6 group">
-
-                {/* Step circle */}
-                <div className="flex-shrink-0 relative z-10">
-                  <div className="w-14 h-14 rounded-2xl flex flex-col items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl"
-                    style={{
-                      background: `linear-gradient(135deg, ${color}16, ${color}08)`,
-                      border: `2px solid ${color}30`,
-                    }}>
-                    <Icon size={18} style={{ color }} />
-                    <span className="text-[9px] font-black mt-0.5" style={{ color: color + '80' }}>{num}</span>
-                  </div>
-                </div>
-
-                {/* Content + connector */}
-                <div className="flex-1 min-w-0 pb-0">
-                  <div className="flex flex-col sm:flex-row gap-4 pb-5">
-
-                    {/* Text content */}
-                    <div className="flex-1 pt-1">
-                      <div className="flex items-center gap-3 mb-1.5">
-                        <h3 className="text-[15px] font-bold text-slate-900 leading-snug">{title}</h3>
-                      </div>
-                      <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
-                    </div>
-
-                    {/* Arrow to next (hidden on last) */}
-                    {i < steps.length - 1 && (
-                      <div className="hidden sm:flex items-start pt-3 flex-shrink-0">
-                        <div className="w-7 h-7 rounded-full flex items-center justify-center"
-                          style={{ background: color + '10', border: `1px solid ${color}20` }}>
-                          <ArrowRight size={12} style={{ color: color + '70' }} className="rotate-90" />
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Divider between steps */}
-                  {i < steps.length - 1 && (
-                    <div className="h-px mb-5 ml-0"
-                      style={{ background: 'linear-gradient(90deg, #e2e8f0, transparent)' }} />
-                  )}
-                </div>
-              </div>
+          {/* Column 1: steps 1–4 */}
+          <div className="flex-1 flex flex-col gap-2.5">
+            {steps.slice(0, 4).map(({ num, icon: Icon, title, desc, color }) => (
+              <StepCard key={num} num={num} icon={Icon} title={title} desc={desc} color={color} />
             ))}
           </div>
+
+          {/* Column 2: steps 5–7 */}
+          <div className="flex-1 flex flex-col gap-2.5">
+            {steps.slice(4).map(({ num, icon: Icon, title, desc, color }) => (
+              <StepCard key={num} num={num} icon={Icon} title={title} desc={desc} color={color} />
+            ))}
+          </div>
+
         </div>
 
       </div>

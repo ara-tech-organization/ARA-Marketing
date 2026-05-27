@@ -53,22 +53,22 @@ export default function VEIntro() {
           </p>
         </div>
 
-        {/* ── Full-width image banner with float entry ── */}
-        <div className="reveal relative rounded-3xl overflow-hidden mb-14"
-          style={{ height: 420, boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
+        {/* ── Image banner ── */}
+        <div className="reveal relative rounded-3xl overflow-hidden mb-14 mx-auto"
+          style={{ height: 260, maxWidth: 850, boxShadow: '0 24px 60px rgba(37,99,235,0.16)' }}>
           <img
-            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1400&h=600&fit=crop&auto=format&q=80"
+            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=900&h=400&fit=crop&auto=format&q=80"
             alt="Professional video editing studio in Thanjavur — Ara Discover Marketing"
             loading="lazy"
             className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
           />
           <div className="absolute inset-0"
-            style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.60) 0%, rgba(124,58,237,0.40) 55%, rgba(8,145,178,0.35) 100%)' }} />
+            style={{ background: 'linear-gradient(135deg, rgba(219,234,254,0.50) 0%, rgba(224,242,254,0.45) 55%, rgba(186,230,253,0.48) 100%)' }} />
 
           {/* Overlay text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-            <p className="text-[12px] font-bold uppercase tracking-[0.15em] text-blue-200 mb-4">As a corporate video editing company in Thanjavur</p>
-            <p className="text-[clamp(18px,2.5vw,32px)] font-bold text-white leading-snug max-w-2xl drop-shadow-lg">
+            <p className="text-[12px] font-bold uppercase tracking-[0.15em] mb-4" style={{ color: '#1e293b' }}>As a corporate video editing company in Thanjavur</p>
+            <p className="text-[clamp(18px,2.5vw,32px)] font-bold leading-snug max-w-2xl text-slate-900">
               We deliver quality solutions for branding, advertising, and promotional campaigns — every video is emotionally and strategically impactful.
             </p>
           </div>

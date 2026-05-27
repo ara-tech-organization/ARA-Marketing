@@ -5,20 +5,20 @@ import {
 } from 'lucide-react'
 
 const platformRows = [
-  { label: 'YouTube Channel',   views: '2.8M', growth: '+34%', pct: 88, color: '#f87171' },
-  { label: 'Instagram Reels',   views: '1.9M', growth: '+47%', pct: 74, color: '#a78bfa' },
-  { label: 'Corporate Films',   views: '980K', growth: '+28%', pct: 62, color: '#60a5fa' },
+  { label: 'YouTube Channel',   views: '2.8M', growth: '+34%', pct: 88, color: '#38bdf8' },
+  { label: 'Instagram Reels',   views: '1.9M', growth: '+47%', pct: 74, color: '#60a5fa' },
+  { label: 'Corporate Films',   views: '980K', growth: '+28%', pct: 62, color: '#93c5fd' },
 ]
 
 const types = [
-  { label: 'Branding',  color: '#a78bfa', icon: Sparkles },
-  { label: 'Corporate', color: '#60a5fa', icon: Video },
-  { label: 'YouTube',   color: '#f87171', icon: PlayCircle },
+  { label: 'Branding',  color: '#60a5fa', icon: Sparkles },
+  { label: 'Corporate', color: '#38bdf8', icon: Video },
+  { label: 'YouTube',   color: '#93c5fd', icon: PlayCircle },
   { label: 'Drone',     color: '#34d399', icon: Film },
 ]
 
-const gradViolet = {
-  background: 'linear-gradient(135deg,#c4b5fd,#93c5fd)',
+const gradBlue = {
+  background: 'linear-gradient(135deg,#93c5fd,#38bdf8)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   backgroundClip: 'text',
@@ -28,36 +28,36 @@ export default function VEHero() {
   return (
     <section
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(135deg, #0a0518 0%, #1a0a3d 50%, #07111f 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}
     >
       {/* Cinematic dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(167,139,250,0.12) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.14) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
 
       {/* Noise texture overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
 
-      {/* Large violet glow – top left */}
+      {/* Large blue glow – top left */}
       <div className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.35) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.30) 0%, transparent 65%)' }} />
 
-      {/* Blue glow – bottom right */}
+      {/* Cyan glow – bottom right */}
       <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,116,144,0.22) 0%, transparent 65%)' }} />
 
       {/* Centre halo */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(109,40,217,0.10) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(ellipse, rgba(29,78,216,0.10) 0%, transparent 65%)' }} />
 
       {/* Decorative rings */}
-      <div className="absolute top-20 right-[8%] w-48 h-48 rounded-full border border-violet-500/15 pointer-events-none" />
-      <div className="absolute top-28 right-[10%] w-24 h-24 rounded-full border border-violet-400/10 pointer-events-none" />
-      <div className="absolute bottom-20 left-[5%] w-32 h-32 rounded-full border border-blue-500/10 pointer-events-none" />
+      <div className="absolute top-20 right-[8%] w-48 h-48 rounded-full border border-blue-500/12 pointer-events-none animate-[spin_40s_linear_infinite]" />
+      <div className="absolute top-28 right-[10%] w-24 h-24 rounded-full border border-blue-400/08 pointer-events-none" />
+      <div className="absolute bottom-20 left-[5%] w-32 h-32 rounded-full border border-sky-500/10 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
 
       {/* Horizontal light beam */}
       <div className="absolute top-[38%] left-0 right-0 h-px pointer-events-none"
-        style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(124,58,237,0.25) 30%, rgba(167,139,250,0.35) 50%, rgba(37,99,235,0.20) 70%, transparent 100%)' }} />
+        style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.22) 30%, rgba(56,189,248,0.30) 50%, rgba(37,99,235,0.18) 70%, transparent 100%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-7 py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
@@ -67,19 +67,19 @@ export default function VEHero() {
 
             {/* Breadcrumb */}
             <nav className="flex items-center gap-1.5 text-[12px] mb-7" style={{ color: 'rgba(255,255,255,0.35)' }}>
-              <a href="/ARA-Marketing/" className="transition-colors hover:text-violet-300">Home</a>
+              <a href="/ARA-Marketing/" className="transition-colors hover:text-sky-300">Home</a>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
               <span>Services</span>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <span style={{ color: '#a78bfa' }} className="font-semibold">Video Editing</span>
+              <span style={{ color: '#60a5fa' }} className="font-semibold">Video Editing</span>
             </nav>
 
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold uppercase tracking-widest mb-8"
               style={{
-                background: 'rgba(124,58,237,0.18)',
-                border: '1px solid rgba(167,139,250,0.30)',
-                color: '#c4b5fd',
+                background: 'rgba(37,99,235,0.18)',
+                border: '1px solid rgba(96,165,250,0.30)',
+                color: '#93c5fd',
                 backdropFilter: 'blur(8px)',
               }}>
               <Scissors size={11} /> Professional Video Editing Services
@@ -88,7 +88,7 @@ export default function VEHero() {
             {/* H1 */}
             <h1 className="text-[clamp(32px,4.2vw,60px)] font-bold leading-[1.06] tracking-tight mb-6" style={{ color: '#ffffff' }}>
               Best Video Editing Services{' '}
-              <span style={gradViolet}>in Thanjavur for Brand Growth</span>
+              <span style={gradBlue}>in Thanjavur for Brand Growth</span>
             </h1>
 
             {/* Tagline */}
@@ -107,7 +107,7 @@ export default function VEHero() {
             <div className="flex flex-wrap gap-3 mb-12">
               <a href="#contact"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 8px 32px rgba(124,58,237,0.40)' }}>
+                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0369a1)', boxShadow: '0 8px 32px rgba(29,78,216,0.45)' }}>
                 Start Your Project <ArrowRight size={15} />
               </a>
               <a href="#ve-services"
@@ -130,20 +130,20 @@ export default function VEHero() {
                 ['5M+',  'Total Views Generated'],
               ].map(([num, label]) => (
                 <div key={label} className="flex flex-col">
-                  <span className="text-[30px] font-black leading-tight" style={gradViolet}>{num}</span>
+                  <span className="text-[30px] font-black leading-tight" style={gradBlue}>{num}</span>
                   <span className="text-[12px] mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>{label}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* ── Right: video studio card (stays white for contrast) ── */}
+          {/* ── Right: video studio card ── */}
           <div className="lg:w-[460px] flex-shrink-0 reveal-right">
             <div className="relative">
 
               {/* Glow ring behind card */}
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse, rgba(124,58,237,0.30) 0%, transparent 70%)' }} />
+                style={{ background: 'radial-gradient(ellipse, rgba(29,78,216,0.28) 0%, transparent 70%)' }} />
 
               {/* Main dashboard card */}
               <div className="relative rounded-3xl overflow-hidden border border-white/10"
@@ -151,13 +151,13 @@ export default function VEHero() {
 
                 {/* Top gradient bar */}
                 <div className="h-1.5 w-full"
-                  style={{ background: 'linear-gradient(90deg,#7c3aed,#4f46e5,#0891b2)' }} />
+                  style={{ background: 'linear-gradient(90deg,#1d4ed8,#0284c7,#38bdf8)' }} />
 
                 {/* Card header */}
                 <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: '#f5f3ff' }}>
-                      <Film size={15} className="text-violet-600" />
+                    <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: '#eff6ff' }}>
+                      <Film size={15} className="text-blue-600" />
                     </div>
                     <div>
                       <p className="text-[12px] font-bold text-slate-800">Video Studio Analytics</p>
@@ -177,7 +177,7 @@ export default function VEHero() {
                     <TrendingUp size={12} className="text-emerald-500" />
                   </div>
                   <p className="text-[42px] font-black leading-none tracking-tight mb-1"
-                    style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0284c7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     5M+
                   </p>
                   <p className="text-[11px] text-emerald-600 font-semibold">+38% engagement growth this quarter</p>
@@ -205,8 +205,8 @@ export default function VEHero() {
                   ))}
                 </div>
 
-                {/* Service chips – horizontal flex, no grid */}
-                <div className="px-6 py-5 border-t border-slate-100" style={{ background: '#fafafa' }}>
+                {/* Service chips */}
+                <div className="px-6 py-5 border-t border-slate-100" style={{ background: '#fafafe' }}>
                   <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Active Video Services</p>
                   <div className="flex flex-wrap gap-2">
                     {types.map(({ label, color, icon: Icon }) => (
@@ -226,17 +226,17 @@ export default function VEHero() {
 
               {/* Floating badge – top right */}
               <div className="absolute -top-4 -right-4 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white
-                border border-violet-200 shadow-2xl animate-float"
+                border border-blue-200 shadow-2xl animate-float"
                 style={{ boxShadow: '0 12px 36px rgba(0,0,0,0.40)' }}>
-                <Star size={13} className="text-violet-600" />
+                <Star size={13} className="text-blue-600" />
                 <span className="text-[11px] font-bold text-slate-700">Premium Video Studio</span>
               </div>
 
               {/* Floating badge – bottom left */}
               <div className="absolute -bottom-4 -left-4 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white
-                border border-blue-100 shadow-2xl animate-float-delay"
+                border border-sky-100 shadow-2xl animate-float-delay"
                 style={{ boxShadow: '0 12px 36px rgba(0,0,0,0.35)' }}>
-                <Eye size={13} className="text-violet-600" />
+                <Eye size={13} className="text-blue-600" />
                 <span className="text-[11px] font-bold text-slate-700">5M+ Views Generated</span>
               </div>
             </div>
