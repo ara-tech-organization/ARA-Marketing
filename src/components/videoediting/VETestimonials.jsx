@@ -1,0 +1,134 @@
+import { Star, Quote, MessageSquare } from 'lucide-react'
+
+const testimonials = [
+  {
+    text: 'Ara Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.',
+    name: 'Ramesh Kumar',
+    role: 'CEO, Thanjavur Textile Exports',
+    rating: 5, color: '#2563eb', avatar: 'R',
+  },
+  {
+    text: 'One of the most popular videography and editing services in Thanjavur for professional branding videos. The quality and attention to detail exceeded our expectations completely.',
+    name: 'Priya Sundaram',
+    role: 'Marketing Head, Delta Agro Products',
+    rating: 5, color: '#7c3aed', avatar: 'P',
+  },
+  {
+    text: 'Ara helped us improve engagement on social media significantly. Their Instagram Reels and YouTube editing made our content go viral. Highly recommend for any business.',
+    name: 'Karthik Rajan',
+    role: 'Founder, TechBridge Solutions',
+    rating: 5, color: '#0891b2', avatar: 'K',
+  },
+]
+
+const gradBlue = {
+  background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
+  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
+}
+
+export default function VETestimonials() {
+  return (
+    <section className="relative py-24 overflow-hidden bg-white">
+
+      {/* Dot grid */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+
+      {/* ── Double circle – centre top ── */}
+      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full border border-blue-100/45 pointer-events-none" />
+      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-[260px] h-[260px] rounded-full border border-violet-100/35 pointer-events-none animate-[spin_30s_linear_infinite]" />
+
+      {/* ── Double circle – bottom right ── */}
+      <div className="absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-100/40 pointer-events-none" />
+      <div className="absolute -bottom-8 -right-8 w-[180px] h-[180px] rounded-full border border-blue-200/28 pointer-events-none animate-[spin_22s_linear_infinite_reverse]" />
+
+      {/* Ambient orb */}
+      <div className="absolute top-0 left-0 w-[450px] h-[450px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.14) 0%, transparent 65%)' }} />
+
+      <div className="relative max-w-[1200px] mx-auto px-7">
+
+        {/* ── Header ── */}
+        <div className="text-center mb-14 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
+            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
+            <MessageSquare size={11} /> Client Testimonials
+          </span>
+          <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+            What Clients Say About Our{' '}
+            <span style={gradBlue}>Video Editing Services</span>
+          </h2>
+          <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
+            Trusted by businesses across Thanjavur for creative, cinematic, and high-converting video editing solutions.
+          </p>
+        </div>
+
+        {/* ── Testimonials: horizontal flex, no grid ── */}
+        <div className="reveal flex flex-col md:flex-row gap-5">
+          {testimonials.map(({ text, name, role, rating, color, avatar }, idx) => (
+            <div
+              key={name}
+              className={`group relative flex flex-col gap-5 p-7 rounded-3xl flex-1 min-w-0
+                transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl delay-${idx + 1}`}
+              style={{
+                background: 'white',
+                border: '1.5px solid #f0f4ff',
+                boxShadow: '0 4px 20px rgba(37,99,235,0.05)',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.borderColor = color + '28'
+                e.currentTarget.style.boxShadow = `0 24px 60px ${color}12`
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.borderColor = '#f0f4ff'
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.05)'
+              }}
+            >
+              {/* Top accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1 rounded-t-3xl"
+                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+
+              {/* Inner glow */}
+              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
+                style={{ background: `radial-gradient(ellipse at top left, ${color}06 0%, transparent 60%)` }} />
+
+              {/* Double circle watermark */}
+              <div className="absolute bottom-4 right-4 w-20 h-20 rounded-full border border-slate-100/70 pointer-events-none" />
+              <div className="absolute bottom-7 right-7 w-10 h-10 rounded-full border border-slate-100/50 pointer-events-none" />
+
+              {/* Quote icon */}
+              <div className="relative w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
+                style={{ background: `linear-gradient(135deg,${color}16,${color}06)`, border: `1.5px solid ${color}22` }}>
+                <Quote size={18} style={{ color }} />
+              </div>
+
+              {/* Stars */}
+              <div className="flex items-center gap-1">
+                {Array.from({ length: rating }).map((_, i) => (
+                  <Star key={i} size={14} style={{ color: '#facc15', fill: '#facc15' }} />
+                ))}
+              </div>
+
+              {/* Text */}
+              <p className="relative text-[13.5px] text-slate-600 leading-[1.88] flex-1">"{text}"</p>
+
+              {/* Author */}
+              <div className="relative flex items-center gap-3 pt-4"
+                style={{ borderTop: '1px solid #f0f4ff' }}>
+                <div className="w-11 h-11 rounded-full flex items-center justify-center text-white text-[15px] font-bold flex-shrink-0 transition-all duration-300 group-hover:scale-105"
+                  style={{ background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 4px 12px ${color}30` }}>
+                  {avatar}
+                </div>
+                <div>
+                  <p className="text-[13px] font-bold text-slate-900">{name}</p>
+                  <p className="text-[11px] text-slate-400 mt-0.5">{role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}

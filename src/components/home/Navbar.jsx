@@ -10,9 +10,9 @@ import {
 const digitalMarketingItems = [
   { href: '/services/best-seo-company-thanjavur', label: 'SEO',            icon: Search,     desc: 'Search Engine Optimization',    isRoute: true  },
   { href: '/services/social-media-marketing',     label: 'SMM',            icon: Share2,     desc: 'Social Media Marketing',        isRoute: true  },
-  { href: '#sem',                                 label: 'SEM',            icon: TrendingUp, desc: 'Search Engine Marketing',       isRoute: false },
+  { href: '/services/best-sem-company-thanjavur', label: 'SEM',            icon: TrendingUp, desc: 'Search Engine Marketing',       isRoute: true  },
   { href: '/services/graphic-design',             label: 'Graphic Design', icon: Palette,    desc: 'Creative Visual Design',        isRoute: true  },
-  { href: '#video-editing',                       label: 'Video Editing',  icon: Video,      desc: 'Professional Video Production', isRoute: false },
+  { href: '/services/video-editing',              label: 'Video Editing',  icon: Video,      desc: 'Professional Video Production', isRoute: true  },
   { href: '#other-services',                      label: 'Other Services', icon: Sparkles,   desc: 'Explore All Services',          isRoute: false },
 ]
 
@@ -26,7 +26,7 @@ const webDesignItems = [
   { href: '/services/website-development', label: 'Mobile App',         icon: Smartphone,   desc: 'iOS & Android apps'           },
 ]
 
-function DropdownPanel({ items, title, onClose }) {
+function DropdownPanel({ items, title, onClose, pathname }) {
   return (
     <div
       className="absolute top-full left-1/2 -translate-x-1/2 mt-3 z-50
@@ -42,35 +42,41 @@ function DropdownPanel({ items, title, onClose }) {
 
       <div className="grid grid-cols-2 gap-2 p-3">
         {items.map(({ href, label, icon: Icon, desc, isRoute: itemIsRoute }) => {
-          const card = (
-            <span
-              onClick={onClose}
-              className="group flex items-center gap-3.5 p-3.5 rounded-xl transition-all duration-200 cursor-pointer"
-              style={{ background: '#112347', border: '1px solid #1e3a6e' }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#1a3a7a'; e.currentTarget.style.borderColor = '#3b82f6' }}
-              onMouseLeave={e => { e.currentTarget.style.background = '#112347'; e.currentTarget.style.borderColor = '#1e3a6e' }}
-            >
-              <span className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-200"
-                style={{ background: '#1d4a8a', color: '#93c5fd' }}>
+          const isItemActive = itemIsRoute !== false && pathname === href
+          const cardContent = (
+            <>
+              <span
+                className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-200"
+                style={{ background: isItemActive ? '#2563eb' : '#1d4a8a', color: isItemActive ? '#ffffff' : '#93c5fd' }}
+              >
                 <Icon size={17} />
               </span>
               <span className="min-w-0">
                 <span className="flex items-center gap-1.5">
-                  <span className="block text-[13px] font-semibold leading-tight truncate" style={{ color: '#f1f5f9' }}>
+                  <span className="block text-[13px] font-semibold leading-tight truncate"
+                    style={{ color: isItemActive ? '#93c5fd' : '#f1f5f9' }}>
                     {label}
                   </span>
-                  <ArrowRight size={11} className="opacity-0 group-hover:opacity-70 -translate-x-1
-                    group-hover:translate-x-0 transition-all duration-200 flex-shrink-0" style={{ color: '#60a5fa' }} />
+                  {isItemActive
+                    ? <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
+                    : <ArrowRight size={11} className="opacity-0 group-hover:opacity-70 -translate-x-1
+                        group-hover:translate-x-0 transition-all duration-200 flex-shrink-0" style={{ color: '#60a5fa' }} />
+                  }
                 </span>
                 <span className="block text-[11px] mt-0.5 leading-tight truncate" style={{ color: '#94a3b8' }}>
                   {desc}
                 </span>
               </span>
-            </span>
+            </>
           )
+          const sharedClass = "group flex items-center gap-3.5 p-3.5 rounded-xl transition-all duration-200 cursor-pointer"
+          const activeStyle  = { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 12px rgba(59,130,246,0.18)' }
+          const defaultStyle = { background: '#112347', border: '1px solid #1e3a6e' }
+          const hoverIn  = e => { if (!isItemActive) { e.currentTarget.style.background = '#1a3a7a'; e.currentTarget.style.borderColor = '#3b82f6' } }
+          const hoverOut = e => { if (!isItemActive) { e.currentTarget.style.background = '#112347'; e.currentTarget.style.borderColor = '#1e3a6e' } }
           return itemIsRoute !== false
-            ? <Link key={label} to={href}>{card}</Link>
-            : <a key={label} href={href}>{card}</a>
+            ? <Link key={label} to={href} onClick={onClose} className={sharedClass} style={isItemActive ? activeStyle : defaultStyle} onMouseEnter={hoverIn} onMouseLeave={hoverOut}>{cardContent}</Link>
+            : <a key={label} href={href} onClick={onClose} className={sharedClass} style={defaultStyle} onMouseEnter={hoverIn} onMouseLeave={hoverOut}>{cardContent}</a>
         })}
       </div>
 
@@ -111,8 +117,11 @@ export default function Navbar() {
     '/services/best-seo-company-thanjavur',
     '/services/social-media-marketing',
     '/services/graphic-design',
+    '/services/website-development',
+    '/services/best-sem-company-thanjavur',
+    '/services/video-editing',
   ])
-  const webActive = isActive('/services/website-development')
+  const webActive = false
 
   const closeAll = () => setActiveDropdown(null)
 
@@ -171,54 +180,66 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
 
               {/* Digital Marketing */}
-              <div className="relative">
-                <button
-                  onClick={() => setActiveDropdown(p => p === 'dm' ? null : 'dm')}
-                  className={navBtnClass(digitalActive, activeDropdown === 'dm')}
-                >
-                  Digital Marketing
-                  <ChevronDown
-                    size={14}
-                    className={`transition-transform duration-200 opacity-60
-                      ${activeDropdown === 'dm' ? 'rotate-180 opacity-100' : ''}`}
-                  />
-                  {digitalActive && (
-                    <span className="absolute -bottom-px left-3 right-3 h-[2px] rounded-full"
-                      style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
-                  )}
-                </button>
+              <div className="relative flex items-center" style={{ zIndex: activeDropdown === 'dm' ? 60 : 'auto' }}>
+                <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]' : activeDropdown === 'dm' ? 'bg-white/8 border border-white/12' : 'border border-transparent hover:bg-white/6'}`}>
+                  <Link
+                    to="/"
+                    onClick={closeAll}
+                    className={`px-4 py-2.5 text-[13.5px] font-semibold transition-colors duration-200 select-none
+                      ${digitalActive ? 'text-blue-400' : 'text-white/70 hover:text-white'}`}
+                  >
+                    Digital Marketing
+                    {digitalActive && (
+                      <span className="absolute -bottom-px left-3 right-8 h-[2px] rounded-full"
+                        style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
+                    )}
+                  </Link>
+                  <button
+                    onClick={() => setActiveDropdown(p => p === 'dm' ? null : 'dm')}
+                    className={`pr-3 py-2.5 transition-colors duration-200 ${digitalActive ? 'text-blue-400' : 'text-white/50 hover:text-white'}`}
+                  >
+                    <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'dm' ? 'rotate-180' : ''}`} />
+                  </button>
+                </div>
 
-                <div className={`transition-all duration-200 origin-top
+                <div className={`transition-all duration-200
                   ${activeDropdown === 'dm'
-                    ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
-                    : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
                 >
                   <DropdownPanel
                     items={digitalMarketingItems}
                     title="Digital Marketing"
                     onClose={closeAll}
+                    pathname={pathname}
                   />
                 </div>
               </div>
 
               {/* Web Design */}
-              <div className="relative">
-                <button
-                  onClick={() => setActiveDropdown(p => p === 'web' ? null : 'web')}
-                  className={navBtnClass(webActive, activeDropdown === 'web')}
-                >
-                  Web Design
-                  <ChevronDown
-                    size={14}
-                    className={`transition-transform duration-200 opacity-60
-                      ${activeDropdown === 'web' ? 'rotate-180 opacity-100' : ''}`}
-                  />
-                  {webActive && (
-                    <span className="absolute -bottom-px left-3 right-3 h-[2px] rounded-full"
-                      style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
-                  )}
-                </button>
+              <div className="relative flex items-center"
+                style={{ zIndex: activeDropdown === 'web' ? 60 : 'auto', pointerEvents: activeDropdown === 'dm' ? 'none' : 'auto' }}>
+                <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]' : activeDropdown === 'web' ? 'bg-white/8 border border-white/12' : 'border border-transparent hover:bg-white/6'}`}>
+                  <Link
+                    to="/services/website-development"
+                    onClick={closeAll}
+                    className={`px-4 py-2.5 text-[13.5px] font-semibold transition-colors duration-200 select-none
+                      ${webActive ? 'text-blue-400' : 'text-white/70 hover:text-white'}`}
+                  >
+                    Web Design
+                    {webActive && (
+                      <span className="absolute -bottom-px left-3 right-8 h-[2px] rounded-full"
+                        style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
+                    )}
+                  </Link>
+                  <button
+                    onClick={() => setActiveDropdown(p => p === 'web' ? null : 'web')}
+                    className={`pr-3 py-2.5 transition-colors duration-200 ${webActive ? 'text-blue-400' : 'text-white/50 hover:text-white'}`}
+                  >
+                    <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'web' ? 'rotate-180' : ''}`} />
+                  </button>
+                </div>
 
                 <div className={`transition-all duration-200 origin-top
                   ${activeDropdown === 'web'
@@ -230,6 +251,7 @@ export default function Navbar() {
                     items={webDesignItems}
                     title="Web Design"
                     onClose={closeAll}
+                    pathname={pathname}
                   />
                 </div>
               </div>
@@ -312,18 +334,30 @@ export default function Navbar() {
               ${mobileExpanded === 'dm' ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-white/[0.02]">
                 {digitalMarketingItems.map(({ href, label, icon: Icon, desc, isRoute: ir }) => {
+                  const isItemActive = ir !== false && pathname === href
                   const card = (
                     <span
                       onClick={() => setOpen(false)}
-                      className="flex flex-col gap-2 p-3 rounded-xl border border-[#1e3a5f]
-                        bg-[#0a1628] hover:border-blue-500/50 hover:bg-[#112044]
-                        transition-all duration-200 cursor-pointer"
+                      className="flex flex-col gap-2 p-3 rounded-xl transition-all duration-200 cursor-pointer"
+                      style={isItemActive
+                        ? { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
+                        : { background: '#0a1628', border: '1px solid #1e3a5f' }
+                      }
                     >
-                      <span className="w-8 h-8 rounded-lg flex items-center justify-center bg-[#1a3a6e] text-blue-400">
-                        <Icon size={14} />
+                      <span className="flex items-center justify-between">
+                        <span
+                          className="w-8 h-8 rounded-lg flex items-center justify-center"
+                          style={{ background: isItemActive ? '#2563eb' : '#1a3a6e', color: isItemActive ? '#fff' : '#60a5fa' }}
+                        >
+                          <Icon size={14} />
+                        </span>
+                        {isItemActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />}
                       </span>
                       <span>
-                        <span className="block text-[12px] font-semibold text-white/85 leading-tight">{label}</span>
+                        <span className="block text-[12px] font-semibold leading-tight"
+                          style={{ color: isItemActive ? '#93c5fd' : 'rgba(255,255,255,0.85)' }}>
+                          {label}
+                        </span>
                         <span className="block text-[10px] text-white/35 mt-0.5 leading-tight">{desc}</span>
                       </span>
                     </span>
@@ -363,24 +397,38 @@ export default function Navbar() {
             <div className={`overflow-hidden transition-all duration-300
               ${mobileExpanded === 'web' ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-white/[0.02]">
-                {webDesignItems.map(({ href, label, icon: Icon, desc }) => (
-                  <Link
-                    key={label}
-                    to={href}
-                    onClick={() => setOpen(false)}
-                    className="flex flex-col gap-2 p-3 rounded-xl border border-[#1e3a5f]
-                      bg-[#0a1628] hover:border-blue-500/50 hover:bg-[#112044]
-                      transition-all duration-200"
-                  >
-                    <span className="w-8 h-8 rounded-lg flex items-center justify-center bg-blue-600/15 text-blue-400">
-                      <Icon size={14} />
-                    </span>
-                    <span>
-                      <span className="block text-[12px] font-semibold text-white/85 leading-tight">{label}</span>
-                      <span className="block text-[10px] text-white/35 mt-0.5 leading-tight">{desc}</span>
-                    </span>
-                  </Link>
-                ))}
+                {webDesignItems.map(({ href, label, icon: Icon, desc }) => {
+                  const isItemActive = pathname === href
+                  return (
+                    <Link
+                      key={label}
+                      to={href}
+                      onClick={() => setOpen(false)}
+                      className="flex flex-col gap-2 p-3 rounded-xl transition-all duration-200"
+                      style={isItemActive
+                        ? { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
+                        : { background: '#0a1628', border: '1px solid #1e3a5f' }
+                      }
+                    >
+                      <span className="flex items-center justify-between">
+                        <span
+                          className="w-8 h-8 rounded-lg flex items-center justify-center"
+                          style={{ background: isItemActive ? '#2563eb' : 'rgba(37,99,235,0.15)', color: isItemActive ? '#fff' : '#60a5fa' }}
+                        >
+                          <Icon size={14} />
+                        </span>
+                        {isItemActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />}
+                      </span>
+                      <span>
+                        <span className="block text-[12px] font-semibold leading-tight"
+                          style={{ color: isItemActive ? '#93c5fd' : 'rgba(255,255,255,0.85)' }}>
+                          {label}
+                        </span>
+                        <span className="block text-[10px] text-white/35 mt-0.5 leading-tight">{desc}</span>
+                      </span>
+                    </Link>
+                  )
+                })}
               </div>
             </div>
           </div>

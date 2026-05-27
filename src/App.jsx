@@ -5,6 +5,8 @@ import SMMPage           from './pages/SMMPage'
 import WebDevPage        from './pages/WebDevPage'
 import GraphicDesignPage from './pages/GraphicDesignPage'
 import SEOPage           from './pages/SEOPage'
+import SEMPage           from './pages/SEMPage'
+import VideoEditingPage  from './pages/VideoEditingPage'
 import './index.css'
 
 function ScrollToTop() {
@@ -25,6 +27,8 @@ export default function App() {
         <Route path="/services/website-development"    element={<WebDevPage />}        />
         <Route path="/services/graphic-design"         element={<GraphicDesignPage />} />
         <Route path="/services/best-seo-company-thanjavur" element={<SEOPage />} />
+        <Route path="/services/best-sem-company-thanjavur" element={<SEMPage />} />
+        <Route path="/services/video-editing"              element={<VideoEditingPage />} />
       </Routes>
     </BrowserRouter>
   )
