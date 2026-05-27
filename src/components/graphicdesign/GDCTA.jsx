@@ -46,7 +46,7 @@ export default function GDCTA() {
                 <Palette size={11} /> Build Your Brand
               </span>
 
-              <h2 className="text-[clamp(24px,3.5vw,46px)] font-black leading-[1.1] tracking-tight mb-5"
+              <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold leading-[1.1] tracking-tight mb-5"
                 style={{ color: '#0f172a' }}>
                 Let's Build{' '}
                 <span style={{

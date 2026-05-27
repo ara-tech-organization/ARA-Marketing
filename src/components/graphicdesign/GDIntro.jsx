@@ -54,7 +54,7 @@ export default function GDIntro() {
 
             <div className="relative p-9 h-full flex flex-col justify-between" style={{ minHeight: '260px' }}>
               <div>
-                <h2 className="text-[clamp(22px,2.8vw,40px)] font-black text-slate-900 leading-[1.1] tracking-tight mb-5">
+                <h2 className="text-[clamp(22px,2.8vw,40px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
                   Creative Branding Solutions<br />
                   That Define Your Business Identity
                 </h2>

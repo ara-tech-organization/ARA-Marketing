@@ -1,15 +1,15 @@
 import { ShoppingCart, BookOpen, Newspaper, Home, Briefcase, ArrowRight, Users, CheckCircle2 } from 'lucide-react'
 
 const industries = [
-  { icon: ShoppingCart, label: 'E-Commerce Businesses',     desc: 'Online stores that need product catalogue updates, cart systems, and real-time inventory management for seamless shopping.',             color: '#4f46e5' },
-  { icon: BookOpen,     label: 'Educational Platforms',     desc: 'Schools, colleges, and e-learning portals needing dynamic course listings, student portals, and admission management systems.',          color: '#7c3aed' },
-  { icon: Newspaper,    label: 'News & Media Websites',     desc: 'Publishers and media houses that publish daily content, breaking news, articles, and multimedia with instant live updates.',             color: '#4f46e5' },
-  { icon: Home,         label: 'Real Estate Companies',     desc: 'Property businesses that regularly update listings, pricing, availability, virtual tours, and project status pages.',                   color: '#7c3aed' },
-  { icon: Briefcase,    label: 'Service-Based Enterprises', desc: 'Businesses offering professional services that need dynamic booking, portfolio showcase, testimonials, and client management tools.',    color: '#4f46e5' },
+  { icon: ShoppingCart, label: 'E-Commerce Businesses',     desc: 'Online stores that need product catalogue updates, cart systems, and real-time inventory management for seamless shopping.',             color: '#2563eb' },
+  { icon: BookOpen,     label: 'Educational Platforms',     desc: 'Schools, colleges, and e-learning portals needing dynamic course listings, student portals, and admission management systems.',          color: '#0891b2' },
+  { icon: Newspaper,    label: 'News & Media Websites',     desc: 'Publishers and media houses that publish daily content, breaking news, articles, and multimedia with instant live updates.',             color: '#2563eb' },
+  { icon: Home,         label: 'Real Estate Companies',     desc: 'Property businesses that regularly update listings, pricing, availability, virtual tours, and project status pages.',                   color: '#0891b2' },
+  { icon: Briefcase,    label: 'Service-Based Enterprises', desc: 'Businesses offering professional services that need dynamic booking, portfolio showcase, testimonials, and client management tools.',    color: '#2563eb' },
 ]
 
 const gradInd = {
-  background: 'linear-gradient(135deg,#4f46e5,#7c3aed)',
+  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -118,13 +118,13 @@ export default function DWWhoShould() {
           <p className="text-[12.5px] sm:text-[13.5px] text-slate-500 mb-6 max-w-xl mx-auto">
             Choosing a dynamic website development company in Thanjavur helps your business get a flexible and future-ready digital platform.
           </p>
-          <div className="inline-flex flex-col items-center gap-3 px-8 py-7 rounded-3xl"
+          <div className="inline-flex flex-col items-center gap-3 px-5 sm:px-8 py-6 sm:py-7 rounded-3xl w-full sm:w-auto"
             style={{ background: 'white', border: '1.5px solid rgba(79,70,229,0.18)', boxShadow: '0 12px 40px rgba(79,70,229,0.12)' }}>
             <p className="text-[11px] font-black uppercase tracking-widest text-indigo-600">Get Your Custom Website Plan Today</p>
             <p className="text-[13.5px] font-medium text-slate-600">Start building a powerful digital presence with our expert team.</p>
             <a href="#dw-cta"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg,#4338ca,#4f46e5)', boxShadow: '0 8px 24px rgba(79,70,229,0.35)' }}>
+              style={{ background: 'linear-gradient(135deg,#4338ca,#2563eb)', boxShadow: '0 8px 24px rgba(79,70,229,0.35)' }}>
               Get Started Today <ArrowRight size={13} />
             </a>
           </div>

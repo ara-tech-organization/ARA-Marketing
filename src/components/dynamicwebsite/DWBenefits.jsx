@@ -1,11 +1,11 @@
 import { Database, RefreshCw, TrendingUp, Users, GitBranch, Globe2, CheckCircle2, Zap } from 'lucide-react'
 
 const benefits = [
-  { icon: Database,   label: 'Easy content management through CMS platforms',   color: '#818cf8' },
-  { icon: RefreshCw,  label: 'Real-time updates without developer dependency',   color: '#a5b4fc' },
-  { icon: TrendingUp, label: 'Scalable architecture for business growth',         color: '#818cf8' },
-  { icon: Users,      label: 'Personalised user experience',                     color: '#a5b4fc' },
-  { icon: GitBranch,  label: 'Integration with databases and APIs',              color: '#818cf8' },
+  { icon: Database,   label: 'Easy content management through CMS platforms',   color: '#93c5fd' },
+  { icon: RefreshCw,  label: 'Real-time updates without developer dependency',   color: '#7dd3fc' },
+  { icon: TrendingUp, label: 'Scalable architecture for business growth',         color: '#93c5fd' },
+  { icon: Users,      label: 'Personalised user experience',                     color: '#7dd3fc' },
+  { icon: GitBranch,  label: 'Integration with databases and APIs',              color: '#93c5fd' },
 ]
 
 export default function DWBenefits() {
@@ -13,21 +13,21 @@ export default function DWBenefits() {
     <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(79,70,229,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
-      <div className="hidden sm:block absolute -top-20 -right-20 w-[340px] h-[340px] rounded-full border border-indigo-100/50 pointer-events-none animate-[spin_34s_linear_infinite]" />
-      <div className="hidden sm:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full border border-violet-100/40 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+      <div className="hidden sm:block absolute -top-20 -right-20 w-[340px] h-[340px] rounded-full border border-blue-100/50 pointer-events-none animate-[spin_34s_linear_infinite]" />
+      <div className="hidden sm:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full border border-sky-100/40 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
 
         {/* ── Header ── */}
         <div className="text-center mb-10 sm:mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-indigo-600 bg-indigo-50"
-            style={{ border: '1px solid rgba(79,70,229,0.15)' }}>
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+            style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
             <Zap size={10} /> Key Benefits
           </span>
           <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Benefits of{' '}
-            <span style={{ background: 'linear-gradient(135deg,#4f46e5,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Dynamic Websites
             </span>
           </h2>
@@ -38,11 +38,11 @@ export default function DWBenefits() {
 
         {/* ── Split panel ── */}
         <div className="reveal flex flex-col lg:flex-row gap-0 rounded-3xl overflow-hidden"
-          style={{ boxShadow: '0 24px 80px rgba(79,70,229,0.15)', border: '1.5px solid #e0e7ff' }}>
+          style={{ boxShadow: '0 24px 80px rgba(37,99,235,0.15)', border: '1.5px solid #dbeafe' }}>
 
           {/* Left dark panel */}
-          <div className="lg:w-[48%] flex-shrink-0 relative px-6 sm:px-10 py-10 sm:py-14"
-            style={{ background: 'linear-gradient(145deg, #312e81 0%, #3730a3 40%, #4338ca 70%, #4f46e5 100%)' }}>
+          <div className="lg:w-[48%] flex-shrink-0 relative px-5 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-14"
+            style={{ background: 'linear-gradient(145deg, #0c1e4a 0%, #0f2d6b 40%, #1e3a8a 70%, #1d4ed8 100%)' }}>
             <div className="absolute inset-0 pointer-events-none"
               style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
             <div className="absolute -top-20 -right-20 w-[260px] h-[260px] rounded-full pointer-events-none"
@@ -81,22 +81,22 @@ export default function DWBenefits() {
 
           {/* Right light panel */}
           <div className="flex-1 flex flex-col">
-            <div className="relative flex-1 overflow-hidden" style={{ minHeight: 240 }}>
+            <div className="relative flex-1 overflow-hidden" style={{ minHeight: 200 }}>
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=420&fit=crop&auto=format&q=80"
                 alt="Dynamic web design services in Thanjavur — Ara Discover Marketing"
                 loading="lazy"
                 className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
-                style={{ minHeight: 240 }}
+                style={{ minHeight: 200 }}
               />
               <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(79,70,229,0.22) 100%)' }} />
+                style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(37,99,235,0.22) 100%)' }} />
             </div>
-            <div className="px-6 sm:px-10 py-8 sm:py-10" style={{ background: '#fafafe' }}>
+            <div className="px-5 sm:px-8 lg:px-10 py-6 sm:py-8 lg:py-10" style={{ background: '#f8fbff' }}>
               <div className="flex items-start gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#eef2ff,#ede9fe)', border: '1px solid #c7d2fe' }}>
-                  <Globe2 size={16} className="text-indigo-600" />
+                  style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
+                  <Globe2 size={16} className="text-blue-600" />
                 </div>
                 <div>
                   <p className="text-[13px] font-bold text-slate-900 mb-1.5">Top Dynamic Website Designing & Development Company in Thanjavur</p>
@@ -106,9 +106,9 @@ export default function DWBenefits() {
                 </div>
               </div>
               <div className="flex items-center gap-2 px-4 py-3 rounded-xl"
-                style={{ background: '#eef2ff', border: '1px solid #c7d2fe' }}>
-                <CheckCircle2 size={13} className="text-indigo-600 flex-shrink-0" />
-                <span className="text-[12px] font-semibold text-indigo-700">High-speed, seamless performance under heavy traffic conditions</span>
+                style={{ background: '#eff6ff', border: '1px solid #bfdbfe' }}>
+                <CheckCircle2 size={13} className="text-blue-600 flex-shrink-0" />
+                <span className="text-[12px] font-semibold text-blue-700">High-speed, seamless performance under heavy traffic conditions</span>
               </div>
             </div>
           </div>

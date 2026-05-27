@@ -1,260 +1,237 @@
-import { useState, useEffect, useRef } from 'react'
-import { HelpCircle, MessageSquare, ArrowRight, Globe, Zap } from 'lucide-react'
+import { useState } from 'react'
+import { HelpCircle, Plus, Minus, MessageSquare, ArrowRight, Zap, ChevronRight } from 'lucide-react'
 
 const faqs = [
   {
     q: 'What does a dynamic website mean?',
     a: 'A dynamic website is a web platform that generates content dynamically with the help of databases and backend programming. It allows easy updates, user interaction, and personalised content delivery without modifying the source code each time.',
-    color: '#4f46e5', tag: 'General',
+    tag: 'General',
+    color: '#2563eb',
   },
   {
     q: 'Why Should I Choose a Dynamic Website for My Business?',
     a: 'Dynamic websites are the perfect choice for growing businesses and interactive platforms as they are flexible, scalable and can be updated in real time. They support user accounts, e-commerce, personalisation, and seamless CMS-based content management.',
-    color: '#7c3aed', tag: 'Business',
+    tag: 'Business',
+    color: '#0891b2',
   },
   {
     q: 'How does a dynamic website differ from a static website?',
     a: 'Unlike static sites, dynamic websites can customise content without any coding, integrate with databases, and generate pages dynamically for each user. They support real-time updates, user interaction, and advanced features that static sites simply cannot deliver.',
-    color: '#4f46e5', tag: 'Comparison',
+    tag: 'Comparison',
+    color: '#2563eb',
   },
   {
     q: 'How long does it take to create a dynamic website?',
     a: 'Development of a dynamic website can take between 2 and 6 weeks, depending on complexity, the number of features required, and the CMS platform chosen. We provide a clear timeline after the initial business analysis and requirement gathering phase.',
-    color: '#7c3aed', tag: 'Timeline',
+    tag: 'Timeline',
+    color: '#0891b2',
   },
   {
     q: 'Can I manage my website content easily?',
     a: 'Yes, dynamic websites integrate with CMS platforms like WordPress, allowing you to update content, add pages, manage media, and publish blogs without any technical knowledge. Complete control of your website is placed firmly in your hands.',
-    color: '#4f46e5', tag: 'CMS',
+    tag: 'CMS',
+    color: '#2563eb',
   },
   {
     q: 'Is SEO possible on dynamic websites?',
     a: 'Yes, dynamic websites are fully SEO-optimised when properly developed with clean coding, fast performance, structured data, and schema markup. We build every dynamic website with an SEO-first approach to maximise your organic visibility and rankings.',
-    color: '#7c3aed', tag: 'SEO',
+    tag: 'SEO',
+    color: '#0891b2',
   },
 ]
 
-const gradInd = {
-  background: 'linear-gradient(135deg,#4f46e5,#7c3aed)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
-
 export default function DWFAQ() {
-  const [active, setActive] = useState(0)
-  const faq = faqs[active]
-  const timerRef = useRef(null)
+  const [open, setOpen] = useState(null)
 
-  const startTimer = () => {
-    clearInterval(timerRef.current)
-    timerRef.current = setInterval(() => {
-      setActive(prev => (prev + 1) % faqs.length)
-    }, 3500)
-  }
-
-  useEffect(() => {
-    startTimer()
-    return () => clearInterval(timerRef.current)
-  }, [])
-
-  const handleSelect = (i) => {
-    setActive(i)
-    startTimer()
-  }
+  const toggle = (i) => setOpen(prev => prev === i ? null : i)
 
   return (
-    <section className="relative py-24 overflow-hidden"
+    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 50%,#e0f2fe 100%)' }}>
 
+      {/* Background */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(79,70,229,0.06) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />
-      <div className="absolute -top-20 -left-20 w-[360px] h-[360px] rounded-full border border-indigo-200/30 pointer-events-none animate-[spin_36s_linear_infinite]" />
-      <div className="absolute -top-10 -left-10 w-[230px] h-[230px] rounded-full border border-violet-200/22 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
-      <div className="absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-indigo-200/25 pointer-events-none" />
-      <div className="absolute -bottom-8 -right-8 w-[180px] h-[180px] rounded-full border border-violet-200/18 pointer-events-none animate-[spin_28s_linear_infinite]" />
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />
+      <div className="hidden sm:block absolute -top-20 -left-20 w-[360px] h-[360px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_36s_linear_infinite]" />
+      <div className="hidden sm:block absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-200/25 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(167,139,250,0.14) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.18) 0%,transparent 65%)' }} />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-7">
 
         {/* ── Header ── */}
-        <div className="text-center mb-12 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6 text-indigo-600 bg-white/80 shadow-sm"
-            style={{ border: '1px solid rgba(79,70,229,0.16)' }}>
+        <div className="text-center mb-10 sm:mb-14 reveal">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 sm:mb-6 text-blue-600 bg-white/80 shadow-sm"
+            style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <HelpCircle size={11} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
-            Frequently Asked{' '}
-            <span style={gradInd}>Questions (FAQs)</span>
+          <h2 className="text-[clamp(22px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+            Got Questions?{' '}
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              We Have Answers
+            </span>
           </h2>
-          <p className="text-[15px] text-slate-500 leading-[1.85] max-w-[500px] mx-auto">
-            Answers to the most common questions about our dynamic website development services in Thanjavur.
+          <p className="text-[13.5px] sm:text-[15px] text-slate-500 leading-[1.85] max-w-[520px] mx-auto px-2 sm:px-0">
+            Everything you need to know about our dynamic website development services in Thanjavur.
           </p>
         </div>
 
-        {/* ── Horizontal tab strip ── */}
-        <div className="reveal flex flex-nowrap overflow-x-auto gap-0 rounded-t-3xl overflow-hidden mb-0"
-          style={{ background: 'white', border: '1.5px solid #e8edf5', borderBottom: 'none', scrollbarWidth: 'none' }}>
-          {faqs.map(({ tag, color }, i) => {
-            const isActive = active === i
-            return (
-              <button
-                key={i}
-                type="button"
-                onClick={() => handleSelect(i)}
-                className="flex-1 min-w-[110px] flex flex-col items-center gap-1.5 px-3 py-5 transition-all duration-300 relative"
-                style={{
-                  background: isActive ? 'white' : 'transparent',
-                  borderBottom: isActive ? `3px solid ${color}` : '3px solid transparent',
-                }}
-              >
-                <span className="w-9 h-9 rounded-xl flex items-center justify-center text-[12px] font-black transition-all duration-300"
-                  style={isActive
-                    ? { background: `linear-gradient(135deg,${color},${color}cc)`, color: 'white', boxShadow: `0 4px 14px ${color}35` }
-                    : { background: color + '0f', color: color + 'aa' }}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <span className="text-[10px] font-bold uppercase tracking-widest whitespace-nowrap transition-colors duration-200"
-                  style={{ color: isActive ? color : '#94a3b8' }}>
-                  {tag}
-                </span>
-                {isActive && (
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full -mb-[3px]"
-                    style={{ background: color }} />
-                )}
-              </button>
-            )
-          })}
-        </div>
+        {/* ── Two-column layout ── */}
+        <div className="reveal flex flex-col lg:flex-row gap-8 items-start">
 
-        {/* ── Answer panel ── */}
-        <div className="reveal rounded-b-3xl overflow-hidden mb-10"
-          style={{
-            background: 'white',
-            border: `1.5px solid ${faq.color}18`,
-            borderTop: 'none',
-            boxShadow: `0 20px 60px ${faq.color}10`,
-            transition: 'border-color 0.4s, box-shadow 0.4s',
-          }}>
-          <div key={active} className="flex flex-col md:flex-row">
+          {/* Left: sticky dark panel */}
+          <div className="lg:w-[300px] flex-shrink-0 lg:sticky lg:top-28">
+            <div className="rounded-3xl overflow-hidden"
+              style={{ background: 'white', border: '1.5px solid #dbeafe', boxShadow: '0 16px 48px rgba(37,99,235,0.10)' }}>
+              <div className="h-1.5 w-full" style={{ background: 'linear-gradient(90deg,#2563eb,#0891b2)' }} />
+              <div className="p-5 sm:p-7">
+                <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-5"
+                  style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
+                  <HelpCircle size={18} className="text-blue-600" />
+                </div>
+                <h3 className="text-[18px] font-bold text-slate-900 leading-snug mb-2">Dynamic Website FAQs</h3>
+                <p className="text-[12.5px] text-slate-500 leading-[1.80] mb-7">
+                  Common questions our clients ask before starting their dynamic website project.
+                </p>
 
-            {/* Left: question */}
-            <div className="md:w-[42%] flex-shrink-0 p-8 md:p-10 flex flex-col justify-between"
-              style={{ borderRight: `1px solid ${faq.color}12` }}>
-              <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                    style={{ background: `linear-gradient(135deg,${faq.color},${faq.color}bb)`, boxShadow: `0 8px 22px ${faq.color}30` }}>
-                    <Globe size={20} className="text-white" />
-                  </div>
-                  <div>
-                    <span className="block text-[10px] font-black uppercase tracking-widest" style={{ color: faq.color }}>{faq.tag}</span>
-                    <span className="block text-[11px] text-slate-400 font-medium mt-0.5">
-                      Question {String(active + 1).padStart(2, '0')} of {faqs.length}
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-6">{faq.q}</h3>
-                <div className="h-1 rounded-full bg-slate-100 overflow-hidden">
-                  <div className="h-full rounded-full transition-all duration-500"
-                    style={{
-                      width: `${((active + 1) / faqs.length) * 100}%`,
-                      background: `linear-gradient(90deg,${faq.color},${faq.color}cc)`,
-                    }} />
-                </div>
-                <div className="flex justify-between mt-1.5">
-                  <span className="text-[10px] text-slate-400">Progress</span>
-                  <span className="text-[10px] font-bold" style={{ color: faq.color }}>{active + 1}/{faqs.length}</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 mt-8">
-                <button type="button"
-                  onClick={() => handleSelect(Math.max(0, active - 1))}
-                  disabled={active === 0}
-                  className="flex-1 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200"
-                  style={{
-                    background: active === 0 ? '#f8fafc' : faq.color + '10',
-                    color: active === 0 ? '#cbd5e1' : faq.color,
-                    border: `1px solid ${active === 0 ? '#f1f5f9' : faq.color + '22'}`,
-                  }}>
-                  Previous
-                </button>
-                <button type="button"
-                  onClick={() => handleSelect(Math.min(faqs.length - 1, active + 1))}
-                  disabled={active === faqs.length - 1}
-                  className="flex-1 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200"
-                  style={{
-                    background: active === faqs.length - 1 ? '#f8fafc' : `linear-gradient(135deg,${faq.color},${faq.color}cc)`,
-                    color: active === faqs.length - 1 ? '#cbd5e1' : 'white',
-                    boxShadow: active === faqs.length - 1 ? 'none' : `0 4px 14px ${faq.color}30`,
-                  }}>
-                  Next
-                </button>
-              </div>
-            </div>
-
-            {/* Right: answer */}
-            <div className="flex-1 p-8 md:p-10 flex flex-col justify-center relative overflow-hidden">
-              <span className="absolute -bottom-4 -right-2 text-[110px] font-black leading-none select-none pointer-events-none"
-                style={{ color: faq.color + '07' }}>
-                {String(active + 1).padStart(2, '0')}
-              </span>
-              <div className="absolute top-4 right-4 w-20 h-20 rounded-full border pointer-events-none"
-                style={{ borderColor: faq.color + '12' }} />
-              <div className="absolute top-8 right-8 w-10 h-10 rounded-full border pointer-events-none"
-                style={{ borderColor: faq.color + '10' }} />
-              <div className="relative">
-                <div className="w-8 h-8 rounded-xl flex items-center justify-center mb-5"
-                  style={{ background: faq.color + '10', border: `1px solid ${faq.color}20` }}>
-                  <span className="text-[11px] font-black" style={{ color: faq.color }}>A</span>
-                </div>
-                <p className="text-[15px] text-slate-700 leading-[1.95] font-medium">{faq.a}</p>
-                <div className="flex items-center gap-2 mt-8">
-                  {faqs.map((_, i) => (
-                    <button key={i} type="button" onClick={() => handleSelect(i)}
-                      className="rounded-full transition-all duration-300"
-                      style={{
-                        width: active === i ? 28 : 8,
-                        height: 8,
-                        background: active === i
-                          ? `linear-gradient(90deg,${faq.color},${faq.color}cc)`
-                          : faq.color + '22',
-                      }}
-                    />
+                {/* Index list */}
+                <div className="space-y-1 mb-7">
+                  {faqs.map((faq, i) => (
+                    <button key={i} type="button" onClick={() => toggle(i)}
+                      className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left transition-all duration-200"
+                      style={open === i
+                        ? { background: 'rgba(37,99,235,0.07)', border: '1px solid rgba(37,99,235,0.18)' }
+                        : { background: 'transparent', border: '1px solid transparent' }}>
+                      <span className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0 text-[9px] font-black transition-all duration-200"
+                        style={open === i
+                          ? { background: 'linear-gradient(135deg,#2563eb,#0891b2)', color: 'white' }
+                          : { background: '#f1f5f9', color: '#94a3b8' }}>
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <span className="text-[12px] font-semibold flex-1 truncate transition-colors duration-200"
+                        style={{ color: open === i ? '#2563eb' : '#94a3b8' }}>
+                        {faq.tag}
+                      </span>
+                      <ChevronRight size={11}
+                        style={{ color: open === i ? '#2563eb' : '#cbd5e1', flexShrink: 0 }} />
+                    </button>
                   ))}
                 </div>
+
+                <div className="pt-5" style={{ borderTop: '1px solid #e2e8f0' }}>
+                  <p className="text-[11px] text-slate-400 mb-3">Still have questions?</p>
+                  <a href="#dw-cta"
+                    className="inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
+                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', color: 'white', boxShadow: '0 4px 14px rgba(37,99,235,0.25)' }}>
+                    Contact Us <ArrowRight size={11} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: accordion */}
+          <div className="flex-1 min-w-0">
+
+            {/* Accordion card wrapping all items */}
+            <div className="rounded-3xl overflow-hidden"
+              style={{ background: 'white', border: '1.5px solid #e2e8f0', boxShadow: '0 8px 40px rgba(37,99,235,0.08)' }}>
+              {faqs.map((faq, i) => {
+                const isOpen = open === i
+                const isLast = i === faqs.length - 1
+                return (
+                  <div key={i}
+                    style={!isLast ? { borderBottom: '1px solid #f1f5f9' } : {}}>
+
+                    {/* Question row */}
+                    <button type="button" onClick={() => toggle(i)}
+                      className="w-full flex items-center gap-2 sm:gap-4 px-4 sm:px-6 py-4 sm:py-5 text-left group transition-all duration-200"
+                      style={{ background: isOpen ? `${faq.color}04` : 'white' }}>
+
+                      {/* Left accent bar */}
+                      <div className="w-1 self-stretch rounded-full flex-shrink-0 transition-all duration-300"
+                        style={{ background: isOpen ? `linear-gradient(180deg,${faq.color},${faq.color}88)` : '#f1f5f9' }} />
+
+                      {/* Number badge */}
+                      <span className="flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-[10px] font-black transition-all duration-300"
+                        style={isOpen
+                          ? { background: `linear-gradient(135deg,${faq.color},${faq.color}cc)`, color: 'white', boxShadow: `0 4px 12px ${faq.color}35` }
+                          : { background: '#f8fafc', color: '#94a3b8' }}>
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+
+                      {/* Tag + question */}
+                      <div className="flex-1 min-w-0">
+                        <span className="inline-block text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full mb-1.5"
+                          style={{ background: `${faq.color}10`, color: faq.color }}>
+                          {faq.tag}
+                        </span>
+                        <p className="text-[14px] sm:text-[14.5px] font-bold leading-snug transition-colors duration-200"
+                          style={{ color: isOpen ? '#0f172a' : '#334155' }}>
+                          {faq.q}
+                        </p>
+                      </div>
+
+                      {/* Toggle icon */}
+                      <div className="flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center transition-all duration-300"
+                        style={isOpen
+                          ? { background: `${faq.color}12`, color: faq.color }
+                          : { background: '#f1f5f9', color: '#94a3b8' }}>
+                        {isOpen ? <Minus size={13} /> : <Plus size={13} />}
+                      </div>
+                    </button>
+
+                    {/* Answer panel */}
+                    {isOpen && (
+                      <div className="px-4 sm:px-6 pb-5 sm:pb-6"
+                        style={{ background: `${faq.color}03` }}>
+                        <div className="ml-0 sm:ml-[52px] flex gap-3 sm:gap-4 pt-1">
+                          <div className="w-px flex-shrink-0 self-stretch rounded-full"
+                            style={{ background: `${faq.color}25`, minHeight: 40 }} />
+                          <div className="pb-2">
+                            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg mb-3"
+                              style={{ background: `${faq.color}08`, border: `1px solid ${faq.color}15` }}>
+                              <span className="text-[10px] font-black" style={{ color: faq.color }}>Answer</span>
+                            </div>
+                            <p className="text-[13.5px] text-slate-600 leading-[1.95] font-medium">{faq.a}</p>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+
+            {/* Bottom CTA */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-5 px-4 sm:px-6 py-4 sm:py-5 rounded-2xl mt-4 text-center sm:text-left"
+              style={{ background: 'white', border: '1.5px solid #dbeafe', boxShadow: '0 8px 32px rgba(37,99,235,0.07)' }}>
+              <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
+                  <MessageSquare size={15} className="text-blue-600" />
+                </div>
+                <div>
+                  <p className="text-[13px] font-bold text-slate-800">Still have questions?</p>
+                  <p className="text-[11.5px] text-slate-500 mt-0.5">Our team is ready to help with any query about our services.</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 flex-shrink-0">
+                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg"
+                  style={{ background: '#eff6ff', border: '1px solid #bfdbfe' }}>
+                  <Zap size={10} className="text-blue-600" />
+                  <span className="text-[11px] font-bold text-blue-700">200+ Websites</span>
+                </div>
+                <a href="#dw-cta"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12px] font-bold transition-all duration-300 hover:-translate-y-0.5"
+                  style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
+                  Contact Us <ArrowRight size={12} />
+                </a>
               </div>
             </div>
 
           </div>
         </div>
-
-        {/* ── Bottom CTA ── */}
-        <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-5 rounded-2xl"
-          style={{ background: 'white', border: '1.5px solid #e0e7ff', boxShadow: '0 8px 32px rgba(79,70,229,0.08)' }}>
-          <div className="flex items-center gap-4">
-            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg,#eef2ff,#ede9fe)', border: '1px solid #c7d2fe' }}>
-              <MessageSquare size={16} className="text-indigo-600" />
-            </div>
-            <div>
-              <p className="text-[13.5px] font-bold text-slate-800">Still have questions?</p>
-              <p className="text-[12px] text-slate-500 mt-0.5">Our team is ready to help with any query about our dynamic website services.</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg"
-              style={{ background: '#eef2ff', border: '1px solid #c7d2fe' }}>
-              <Zap size={11} className="text-indigo-600" />
-              <span className="text-[11px] font-bold text-indigo-700">200+ Websites</span>
-            </div>
-            <a href="#dw-cta"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ background: 'linear-gradient(135deg,#4338ca,#4f46e5)', boxShadow: '0 6px 18px rgba(79,70,229,0.25)' }}>
-              Contact Us <ArrowRight size={13} />
-            </a>
-          </div>
-        </div>
-
       </div>
     </section>
   )

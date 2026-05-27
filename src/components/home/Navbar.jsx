@@ -19,8 +19,8 @@ const digitalMarketingItems = [
 const webDesignItems = [
   { href: '/services/static-website-development', label: 'Static Website', icon: Layout, desc: 'Fast & lightweight sites', isRoute: true },
   { href: '/services/dynamic-website-development', label: 'Dynamic Website', icon: Zap, desc: 'Interactive web experiences', isRoute: true },
-  { href: '/services/website-development', label: 'WordPress Website',  icon: Globe,        desc: 'Flexible CMS solutions'       },
-  { href: '/services/website-development', label: 'Ecommerce Website',  icon: ShoppingCart, desc: 'Online store solutions'       },
+  { href: '/services/cms-website-development', label: 'WordPress Website', icon: Globe, desc: 'Flexible CMS solutions', isRoute: true },
+  { href: '/services/ecommerce-website-development', label: 'Ecommerce Website', icon: ShoppingCart, desc: 'Online store solutions', isRoute: true },
   { href: '/services/website-development', label: 'Enterprise Website', icon: Building2,    desc: 'Large-scale web platforms'    },
   { href: '/services/website-development', label: 'Web App',            icon: Code2,        desc: 'Custom web applications'      },
   { href: '/services/website-development', label: 'Mobile App',         icon: Smartphone,   desc: 'iOS & Android apps'           },
@@ -121,7 +121,7 @@ export default function Navbar() {
     '/services/video-editing',
     '/services/other-digital-marketing-services-thanjavur',
   ])
-  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development'])
+  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development', '/services/cms-website-development', '/services/ecommerce-website-development'])
 
   const closeAll = () => setActiveDropdown(null)
 
@@ -397,7 +397,7 @@ export default function Navbar() {
             <div className={`overflow-hidden transition-all duration-300
               ${mobileExpanded === 'web' ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
               <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-white/[0.02]">
-                {webDesignItems.map(({ href, label, icon: Icon, desc }) => {
+                {webDesignItems.map(({ href, label, icon: Icon, desc, isRoute: ir }) => {
                   const isItemActive = pathname === href
                   return (
                     <Link

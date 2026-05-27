@@ -83,9 +83,9 @@ export default function DWProcess() {
         </div>
 
         {/* ── Mobile vertical steps ── */}
-        <div className="flex flex-col gap-4 lg:hidden reveal">
+        <div className="flex flex-col gap-3 sm:gap-4 lg:hidden reveal">
           {steps.map(({ icon: Icon, num, title, desc, color }) => (
-            <div key={num} className="flex items-start gap-4 p-5 rounded-2xl bg-white"
+            <div key={num} className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white"
               style={{ border: `1.5px solid ${color}18`, boxShadow: '0 4px 16px rgba(37,99,235,0.07)' }}>
               <div className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
                 style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)`, boxShadow: `0 6px 18px ${color}30` }}>

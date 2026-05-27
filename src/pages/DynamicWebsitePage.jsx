@@ -5,6 +5,7 @@ import Footer    from '../components/home/Footer'
 
 import DWHero         from '../components/dynamicwebsite/DWHero'
 import DWIntro        from '../components/dynamicwebsite/DWIntro'
+import DWServices     from '../components/dynamicwebsite/DWServices'
 import DWWhyUs        from '../components/dynamicwebsite/DWWhyUs'
 import DWWhoShould    from '../components/dynamicwebsite/DWWhoShould'
 import DWBenefits     from '../components/dynamicwebsite/DWBenefits'
@@ -66,6 +67,7 @@ export default function DynamicWebsitePage() {
       <main>
         <DWHero />
         <DWIntro />
+        <DWServices />
         <DWWhyUs />
         <DWWhoShould />
         <DWBenefits />

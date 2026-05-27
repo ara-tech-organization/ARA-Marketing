@@ -10,6 +10,8 @@ import VideoEditingPage    from './pages/VideoEditingPage'
 import OtherServicesPage       from './pages/OtherServicesPage'
 import StaticWebsitePage      from './pages/StaticWebsitePage'
 import DynamicWebsitePage    from './pages/DynamicWebsitePage'
+import CMSWebsitePage           from './pages/CMSWebsitePage'
+import EcommerceWebsitePage    from './pages/EcommerceWebsitePage'
 import './index.css'
 
 function ScrollToTop() {
@@ -35,6 +37,8 @@ export default function App() {
         <Route path="/services/other-digital-marketing-services-thanjavur" element={<OtherServicesPage />} />
         <Route path="/services/static-website-development"               element={<StaticWebsitePage />} />
         <Route path="/services/dynamic-website-development"             element={<DynamicWebsitePage />} />
+        <Route path="/services/cms-website-development"               element={<CMSWebsitePage />} />
+        <Route path="/services/ecommerce-website-development"         element={<EcommerceWebsitePage />} />
       </Routes>
     </BrowserRouter>
   )

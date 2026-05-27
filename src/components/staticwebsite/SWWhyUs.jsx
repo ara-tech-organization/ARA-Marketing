@@ -60,7 +60,7 @@ export default function SWWhyUs() {
             </span>
 
             <h2 className="text-[clamp(24px,2.8vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
-              Why Clients{' '}
+              Why{' '}
               <span
                 style={{
                   background: 'linear-gradient(135deg, #0891b2, #2563eb)',
@@ -69,7 +69,7 @@ export default function SWWhyUs() {
                   backgroundClip: 'text',
                 }}
               >
-                Prefer Us
+                Choose Us?
               </span>
             </h2>
 
@@ -135,6 +135,7 @@ export default function SWWhyUs() {
 
           {/* ── Right: Stacked reason rows ── */}
           <div className="flex-1 flex flex-col gap-4 reveal-right">
+            <p className="text-[13px] font-semibold text-slate-500 uppercase tracking-widest mb-1">Here's why clients prefer us:</p>
             {reasons.map(({ num, icon: Icon, title, desc, color }, i) => (
               <div
                 key={num}

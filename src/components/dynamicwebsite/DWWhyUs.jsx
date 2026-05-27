@@ -91,7 +91,7 @@ export default function DWWhyUs() {
             style={{ background: 'radial-gradient(ellipse at 25% 50%, rgba(255,255,255,0.12) 0%, transparent 60%)' }} />
           <div className="hidden sm:block absolute right-8 top-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-white/10 pointer-events-none" />
           <div className="hidden sm:block absolute right-12 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full border border-white/08 pointer-events-none" />
-          <div className="relative flex items-center gap-3 sm:gap-4 text-center sm:text-left">
+          <div className="relative flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left w-full sm:w-auto">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>
               <Zap size={18} className="text-white" />

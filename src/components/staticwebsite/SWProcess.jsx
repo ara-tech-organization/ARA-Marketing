@@ -168,8 +168,11 @@ export default function SWProcess() {
 
         {/* Bottom note */}
         <div className="text-center mt-12 reveal">
+          <p className="text-[14px] text-slate-500 leading-[1.8] max-w-2xl mx-auto mb-3">
+            We also specialize as a <strong className="text-slate-700">static website design &amp; development company in Thanjavur</strong>, with workflows that ensure speed, accuracy, and scalability.
+          </p>
           <p className="text-[14px] text-slate-500 leading-[1.8] max-w-2xl mx-auto mb-6">
-            Our developers are experts in <strong className="text-slate-700">static web page development in Thanjavur</strong> with clean code architecture and responsive layouts that ensure speed, accuracy, and scalability.
+            Our developers are experts in <strong className="text-slate-700">static web page development in Thanjavur</strong> with clean code architecture and responsive layouts.
           </p>
           <a
             href="#contact"

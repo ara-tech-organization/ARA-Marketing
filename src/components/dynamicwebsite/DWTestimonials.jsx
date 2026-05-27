@@ -142,7 +142,7 @@ export default function DWTestimonials() {
         </div>
 
         {/* ── Trust strip ── */}
-        <div className="reveal mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10 py-5 px-6 rounded-2xl"
+        <div className="reveal mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-8 lg:gap-10 py-4 sm:py-5 px-4 sm:px-6 rounded-2xl"
           style={{ background: 'white', border: '1.5px solid rgba(37,99,235,0.10)', boxShadow: '0 6px 24px rgba(37,99,235,0.06)' }}>
           {[
             ['200+', 'Websites Delivered'],

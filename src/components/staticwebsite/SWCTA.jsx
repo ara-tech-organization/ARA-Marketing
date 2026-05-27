@@ -66,7 +66,7 @@ export default function SWCTA() {
             </h2>
 
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#94a3b8' }}>
-              Ready to take your business online with a powerful static website? Join hands with a trusted <strong style={{ color: '#7dd3fc' }}>static web design services</strong> firm in Thanjavur and transform your digital presence with speed and simplicity.
+              Ready to take your business online with a powerful static website? Join hands with a trusted <strong style={{ color: '#7dd3fc' }}>static web design services</strong> firm in Thanjavur and change your digital presence with speed and simplicity.
             </p>
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#94a3b8' }}>
               As a leading <strong style={{ color: '#7dd3fc' }}>static web design company in Thanjavur</strong>, we bring expertise in speed, security, and SEO to every project we deliver.
