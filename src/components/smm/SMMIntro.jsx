@@ -84,7 +84,7 @@ export default function SMMIntro() {
                 We are one of the best social media companies in Thanjavur that focuses on audience targeting, content creation, ad optimisation, and engagement strategies that increase visibility and customer interaction. Our expertise in marketing through social media in Thanjavur helps businesses to build trust, increase followers, and generate conversions across multiple platforms.
               </p>
               <p className="text-[15px] text-slate-500 leading-[1.85]">
-                We are also a trusted social advertising agency in Thanjavur that helps businesses across industries run high-performing paid advertising campaigns.
+                We are also a trusted social advertising agency in Thanjavur that helps businesses across industries run high-performing paid social media advertising campaigns.
               </p>
             </div>
           </div>

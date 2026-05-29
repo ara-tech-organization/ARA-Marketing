@@ -50,8 +50,7 @@ export default function SEOTestimonials() {
             <MessageSquare size={11} /> Testimonials
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            What Our{' '}
-            <span className="text-gradient-blue">Clients Say</span>
+            Testimonials
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
             Real results, real voices — businesses that trusted Ara Discover Marketing for their SEO growth.

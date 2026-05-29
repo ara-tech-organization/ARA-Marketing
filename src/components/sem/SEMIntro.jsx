@@ -17,7 +17,7 @@ const paragraphs = [
   { text: 'Google Ads is one of the fastest ways to reach your potential customers and get conversions online. Ara Discover Marketing is the best Google paid advertising in Thanjavur to help businesses appear in front of the right audience at the right time.', color: '#2563eb', num: '01' },
   { text: 'We are the most trusted search engine marketing service provider in Thanjavur. We specialize in PPC campaigns, search advertising, display advertising, YouTube promotions, and shopping campaigns to improve visibility and lead generation.', color: '#7c3aed', num: '02' },
   { text: 'With our knowledge in Google Adwords paid search campaigns in Thanjavur, your business can get the best ad performance and minimize unnecessary advertising costs. We also offer strategic search engine marketing consulting services in Thanjavur to improve campaign efficiency and ROI.', color: '#0891b2', num: '03' },
-  { text: 'Ara Discover Marketing is the best search engine marketing sem agencies in Thanjavur for performance-focused Google Ads management and transparent reporting.', color: '#059669', num: '04' },
+  { text: 'Ara Discover Marketing is the best search engine marketing SEM agencies in Thanjavur for performance-focused Google Ads management and transparent reporting.', color: '#059669', num: '04' },
 ]
 
 export default function SEMIntro() {

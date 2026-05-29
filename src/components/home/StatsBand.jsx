@@ -23,7 +23,7 @@ export default function StatsBand() {
           <StatItem target={150} suffix="+" label="Successful Projects Completed" />
           <StatItem target={95}  suffix="%" label="Client Satisfaction Rate" />
           <StatItem target={120} suffix="+" label="SEO Campaigns Managed" />
-          <StatItem target={200} suffix="%" label="Avg. Visibility Increase" />
+          <StatItem target={200} suffix="%" label="Average Increase in Online Visibility" />
           <StatItem target={100} suffix="+" label="Brands Successfully Promoted" />
         </div>
         <p className="text-center text-[13.5px] text-slate-500 leading-relaxed max-w-2xl mx-auto">

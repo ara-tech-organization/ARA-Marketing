@@ -8,7 +8,7 @@ const tools = [
   { icon: BarChart2,     name: 'Meta Ads Manager',  desc: 'Social Advertising' },
   { icon: Target,        name: 'Google Ads',        desc: 'Paid Campaigns' },
   { icon: MessageSquare, name: 'HubSpot',           desc: 'CRM & Marketing' },
-  { icon: Palette,       name: 'Canva & Adobe',     desc: 'Design Suite' },
+  { icon: Palette,       name: 'Canva & Adobe Creative Suite', desc: 'Design Suite' },
 ]
 
 export default function Tools() {

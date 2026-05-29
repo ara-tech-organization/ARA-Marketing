@@ -221,7 +221,7 @@ export default function Hero() {
         <p className="text-[14px] leading-[1.75] mb-8 max-w-[520px]"
           style={{ color: 'rgba(255,255,255,0.32)' }}
         >
-          We are one of the best digital marketing companies in Thanjavur, delivering complete
+          We are one of the best digital marketing companies in Thanjavur, delivering the best digital marketing services in Thanjavur including complete
           search engine optimization (SEO), social media marketing management, all types of paid
           advertising, branding, video editing services and performance marketing solutions
           tailored for digital businesses.

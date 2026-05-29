@@ -34,8 +34,7 @@ export default function SEMAssurance() {
               <Award size={11} /> Our Assurance
             </span>
             <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
-              Our Assurance to{' '}
-              <span className="text-gradient-blue">Every Client</span>
+              Our Assurance
             </h2>
           </div>
           <div className="lg:max-w-[400px]">

@@ -24,8 +24,8 @@ export default function SEMFAQ() {
             <HelpCircle size={11} /> FAQs
           </span>
           <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
-            Frequently Asked{' '}
-            <span className="text-gradient-blue">Questions</span>
+            Frequently Asked Questions{' '}
+            <span className="text-gradient-blue">(FAQs)</span>
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
             Everything you need to know about our Google Ads and PPC services in Thanjavur.

@@ -3,7 +3,7 @@ import { ChevronDown, Layers } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Who is the best provider of social media branding services in Thanjavur?',
+    q: 'Who is the best social media branding services provider in Thanjavur?',
     a: 'Ara Discover Marketing is one of the best social media companies in Thanjavur, providing Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies.',
   },
   {
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Why choose Ara Discover Marketing for social media marketing services?',
-    a: 'We are one of the best social media service provider in Thanjavur because of our creative campaigns, AI-driven targeting strategies, transparent reporting, and audience-focused marketing approach.',
+    a: 'We are one of the best social media service providers in Thanjavur because of our creative campaigns, AI-driven targeting strategies, transparent reporting, and audience-focused marketing approach.',
   },
 ]
 

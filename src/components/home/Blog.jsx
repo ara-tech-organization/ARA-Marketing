@@ -40,8 +40,11 @@ export default function Blog() {
               <Newspaper size={11} /> Recent Blogs
             </span>
             <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
-              Latest Digital Marketing Trends<br />&amp; Growth Strategies
+              Recent Blogs
             </h2>
+            <p className="text-[16px] text-slate-500 leading-tight mt-1">
+              Latest Digital Marketing Trends &amp; Growth Strategies
+            </p>
           </div>
           <a
             href="#all-blogs"

@@ -8,15 +8,15 @@ const testimonials = [
     stars: 5,
   },
   {
-    text: 'Their expertise in social media ads marketing and advertising in Thanjavur significantly improved our online brand visibility.',
-    name: 'Marketing Manager',
-    role: 'E-Commerce Brand, Tamil Nadu',
-    stars: 5,
-  },
-  {
     text: 'One of the best social media companies in Thanjavur known for creative campaign result-oriented strategies and outstanding support.',
     name: 'Startup Founder',
     role: 'Tech Startup, Thanjavur',
+    stars: 5,
+  },
+  {
+    text: 'Their expertise in social media ads, marketing, and advertising in Thanjavur significantly improved our online brand visibility.',
+    name: 'Marketing Manager',
+    role: 'E-Commerce Brand, Tamil Nadu',
     stars: 5,
   },
 ]

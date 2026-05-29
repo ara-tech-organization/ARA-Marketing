@@ -6,7 +6,7 @@ const allStats = [
   { target: 95,  suffix: '%', label: 'Client Satisfaction Rate',             sub: 'Consistent & measurable',   icon: Users,      color: '#7c3aed' },
   { target: 300, suffix: '%', label: 'Average Lead Growth',                  sub: 'Across partner businesses',  icon: TrendingUp, color: '#0891b2' },
   { target: 150, suffix: '+', label: 'Google Ads Campaign Optimizations',    sub: 'Ongoing improvements',       icon: Star,       color: '#059669' },
-  { target: 10,  suffix: '+', label: 'Multi-Industry Advertising Expertise', sub: 'Diverse sector experience',  icon: Globe2,     color: '#d97706' },
+  { target: null, suffix: '', label: 'Multi-Industry Advertising Expertise', sub: 'Diverse sector experience',  icon: Globe2,     color: '#d97706' },
 ]
 
 function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
@@ -30,7 +30,7 @@ function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
       {/* Number */}
       <p className="text-[clamp(34px,3.5vw,52px)] font-bold leading-none tracking-tight mb-2"
         style={{ background: `linear-gradient(135deg, ${color}, ${color}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-        {count}{suffix}
+        {target !== null ? `${count}${suffix}` : '—'}
       </p>
 
       {/* Label */}

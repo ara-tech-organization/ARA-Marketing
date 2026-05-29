@@ -23,7 +23,7 @@ const services = [
     tag: 'Video', tagBg: '#cffafe',
     imgSrc: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=900&h=600&fit=crop&auto=format&q=80',
     imgAlt: 'YouTube Ads service in Thanjavur',
-    desc: 'Online video advertising is one of the most effective tools to get to an audience. Our video ads in Thanjavur and YouTube advertising services help businesses boost brand awareness, customer engagement, and conversions via strategic video campaigns. We specialize in YouTube display advertising in Thanjavur and YouTube search advertising in Thanjavur, to help brands improve video reach and audience engagement. Choose our team for creative, ROI-focused video advertising campaigns.',
+    desc: 'Online video advertising is one of the most effective tools to get to an audience. Our YouTube ads in Thanjavur and video ads in Thanjavur help businesses boost brand awareness, customer engagement, and conversions via strategic video campaigns. We specialize in YouTube display advertising in Thanjavur and YouTube search advertising in Thanjavur, to help brands improve video reach and audience engagement. Choose our team for creative, ROI-focused video advertising campaigns.',
     items: ['Skippable Video Ads', 'Non-Skippable Video Ads', 'YouTube Discovery Ads', 'Video Remarketing Campaigns', 'Audience Targeting Strategies'],
   },
   {

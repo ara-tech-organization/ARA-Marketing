@@ -4,7 +4,7 @@ const services = [
   {
     icon: Search,
     title: 'Search Engine Optimization (SEO)',
-    desc: 'Ara offers AI-powered SEO services like On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and Mobile SEO to improve search engine rankings and organic traffic. Our SEO experts deliver the best digital marketing services in Thanjavur by optimizing websites for users and search engines.',
+    desc: 'Ara offers AI-powered SEO services like On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and Mobile SEO to improve search engine rankings and organic traffic. Our SEO experts deliver the best digital marketing services in Thanjavur and are among the best digital marketing companies in Thanjavur, optimizing websites for users and search engines.',
     link: '/services/seo',
     tag: 'Most Popular',
   },
@@ -61,7 +61,7 @@ export default function Services() {
             </h2>
             <div className="space-y-4">
               <p className="text-base text-slate-500 leading-relaxed">
-                If you are seeking for Best Digital Marketing Agency in Thanjavur or a Trusted Partner for Branding and Advertising, Ara Discover Marketing is here. We have an Expert Team that Offers AI powered Measurable Growth with Innovative Digital Campaigns.
+                If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, Ara Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.
               </p>
               <p className="text-base text-slate-500 leading-relaxed">
                 In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. Ara Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.

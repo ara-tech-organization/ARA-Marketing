@@ -94,8 +94,8 @@ export default function SEOFAQ() {
             <HelpCircle size={11} /> FAQs
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            Frequently Asked{' '}
-            <span className="text-gradient-blue">Questions</span>
+            Frequently Asked Questions{' '}
+            <span className="text-gradient-blue">(FAQs)</span>
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
             Everything you need to know about our SEO services in Thanjavur.
