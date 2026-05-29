@@ -10,19 +10,7 @@ const highlights = [
 export default function MACTA() {
   return (
     <section id="contact"
-      className="relative overflow-hidden py-16 sm:py-24"
-      style={{ background: 'linear-gradient(135deg,#03111f 0%,#04131c 100%)' }}>
-      {/* Orbs */}
-      <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.18) 0%,transparent 65%)', animation: 'float-y 9s ease-in-out infinite' }} />
-      <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.15) 0%,transparent 65%)' }} />
-      {/* Dot grid */}
-      <div className="absolute inset-0 pointer-events-none opacity-15"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(124,58,237,0.5) 1px,transparent 1px)', backgroundSize: '44px 44px' }} />
-      {/* Top line */}
-      <div className="absolute top-0 left-0 right-0 h-[2px]"
-        style={{ background: 'linear-gradient(90deg,transparent,#7c3aed,#2563eb,#0891b2,transparent)' }} />
+      className="relative overflow-hidden py-16 sm:py-24">
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
