@@ -88,7 +88,7 @@ export default function MAHero() {
 
             {/* CTAs */}
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
-              <a href="#contact"
+              <a href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 6px 20px rgba(124,58,237,0.28)' }}>
                 Get a Free Consultation <ArrowRight size={14} />

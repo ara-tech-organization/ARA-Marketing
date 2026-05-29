@@ -31,7 +31,7 @@ function DropdownPanel({ items, title, onClose, pathname }) {
     <div
       className="absolute top-full left-1/2 -translate-x-1/2 mt-3 z-50
         rounded-2xl shadow-[0_24px_64px_rgba(0,0,0,.7)] overflow-hidden"
-      style={{ minWidth: 460, background: '#0d1f40', border: '1px solid #1e3a6e' }}
+      style={{ minWidth: 460, background: '#0f2448', border: '1px solid #1e3a6e' }}
     >
       <div className="h-[2px] w-full" style={{ background: 'linear-gradient(90deg,transparent,#3b82f6,#818cf8,#3b82f6,transparent)' }} />
 
@@ -87,7 +87,7 @@ function DropdownPanel({ items, title, onClose, pathname }) {
           <p className="text-[11px] mt-0.5" style={{ color: '#64748b' }}>Free consultation · No commitment</p>
         </div>
         <a
-          href="#contact"
+          href="/ARA-Marketing/contact"
           onClick={onClose}
           className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg
             bg-blue-600 hover:bg-blue-500 text-white text-[12px] font-semibold
@@ -272,7 +272,7 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden lg:flex items-center">
               <a
-                href="#contact"
+                href="/ARA-Marketing/contact"
                 className="inline-flex items-center gap-2 px-5 py-2.5
                   bg-gradient-to-r from-blue-600 to-indigo-600 text-white
                   rounded-full text-[13px] font-semibold transition-all duration-300
@@ -300,7 +300,7 @@ export default function Navbar() {
       {/* ─── Mobile menu ─── */}
       <div
         className={`lg:hidden fixed top-[72px] left-0 right-0 z-40
-          bg-[#080f1f]/98 backdrop-blur-2xl border-b border-white/8
+          bg-[#0a1e3a]/98 backdrop-blur-2xl border-b border-white/8
           transition-all duration-300 overflow-y-auto max-h-[calc(100vh-72px)]
           ${open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
       >
@@ -471,7 +471,7 @@ export default function Navbar() {
 
           <div className="pt-2">
             <a
-              href="#contact"
+              href="/ARA-Marketing/contact"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-4
                 bg-gradient-to-r from-blue-600 to-indigo-600 text-white

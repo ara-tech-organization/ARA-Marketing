@@ -139,7 +139,7 @@ export default function SEMServices() {
               ))}
             </div>
 
-            <a href="#contact"
+            <a href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white text-[13px]
                 font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
               style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}35` }}>
@@ -153,7 +153,7 @@ export default function SEMServices() {
             <img src={svc.imgSrc} alt={svc.imgAlt} loading="lazy"
               className="w-full h-full object-cover absolute inset-0" />
             <div className="absolute inset-0"
-              style={{ background: `linear-gradient(180deg, ${svc.color}30 0%, rgba(10,22,40,0.55) 100%)` }} />
+              style={{ background: `linear-gradient(180deg, ${svc.color}30 0%, rgba(10,26,52,0.55) 100%)` }} />
 
             {/* Service count badge */}
             <div className="absolute top-5 right-5 flex flex-col items-center px-4 py-3 rounded-2xl"

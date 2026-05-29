@@ -93,7 +93,7 @@ export default function CMSIntro() {
             </div>
 
             <a
-              href="#contact"
+              href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 text-[13.5px] font-semibold mt-2 transition-all duration-200 hover:gap-3 w-fit"
               style={{ color: '#1d4ed8' }}
             >

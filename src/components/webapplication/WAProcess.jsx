@@ -174,7 +174,7 @@ export default function WAProcess() {
         {/* CTA */}
         <div className="text-center mt-10 sm:mt-14 reveal">
           <a
-            href="#contact"
+            href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-6 xs:px-7 py-3 xs:py-3.5 rounded-full text-[13px] xs:text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5"
             style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 24px rgba(37,99,235,0.28)' }}
           >

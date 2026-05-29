@@ -188,7 +188,7 @@ export default function ContactMain() {
               style={{ border: '1px solid rgba(37,99,235,0.2)', boxShadow: '0 24px 64px rgba(0,0,0,0.4)' }}>
               {/* Map header */}
               <div className="flex items-center gap-3 px-6 py-4"
-                style={{ background: 'rgba(10,22,40,0.9)', borderBottom: '1px solid rgba(37,99,235,0.15)' }}>
+                style={{ background: 'rgba(10,26,52,0.9)', borderBottom: '1px solid rgba(37,99,235,0.15)' }}>
                 <div className="w-8 h-8 rounded-[9px] flex items-center justify-center"
                   style={{ background: 'rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.25)' }}>
                   <MapPin size={15} style={{ color: '#60a5fa' }} />
@@ -222,7 +222,7 @@ export default function ContactMain() {
           <div className="reveal reveal-right h-full">
           <div className="relative rounded-[28px] overflow-hidden h-full"
             style={{
-              background: 'rgba(8,16,32,0.97)',
+              background: 'rgba(7,22,50,0.97)',
               border: '1px solid rgba(37,99,235,0.2)',
               boxShadow: '0 32px 80px rgba(0,0,0,0.55)',
             }}>

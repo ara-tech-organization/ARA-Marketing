@@ -77,7 +77,7 @@ export default function WebDevIndustries() {
             <span className="text-blue-700 font-semibold">professional web development services in Thanjavur</span>
             {' '}trusted by businesses across every sector.
           </p>
-          <a href="#contact"
+          <a href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white
               rounded-full text-[13px] font-bold hover:bg-blue-500 transition-all duration-300
               shadow-md hover:-translate-y-0.5 flex-shrink-0">

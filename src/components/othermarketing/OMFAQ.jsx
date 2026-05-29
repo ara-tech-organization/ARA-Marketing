@@ -167,7 +167,7 @@ export default function OMFAQ() {
                 <p className="text-[11.5px] leading-[1.65] mb-4" style={{ color: 'rgba(255,255,255,0.65)' }}>
                   Our team is ready to help with any query about our digital marketing services.
                 </p>
-                <a href="#contact"
+                <a href="/ARA-Marketing/contact"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-[12px] font-bold transition-all duration-300 hover:-translate-y-0.5"
                   style={{ background: 'white', color: '#7c3aed' }}>
                   Contact Us <ArrowRight size={12} />

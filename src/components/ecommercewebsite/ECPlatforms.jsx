@@ -141,7 +141,7 @@ export default function ECPlatforms() {
               ))}
             </div>
 
-            <a href="#contact"
+            <a href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: '#2563eb', boxShadow: `0 8px 24px ${accent}35` }}>
               Build with {plat.name} <ArrowRight size={13} />

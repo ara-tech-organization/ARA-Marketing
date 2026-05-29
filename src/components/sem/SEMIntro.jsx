@@ -52,7 +52,7 @@ export default function SEMIntro() {
               className="w-full h-full object-cover absolute inset-0"
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(160deg, rgba(37,99,235,0.55) 0%, rgba(10,22,40,0.72) 100%)' }} />
+              style={{ background: 'linear-gradient(160deg, rgba(37,99,235,0.55) 0%, rgba(10,26,52,0.72) 100%)' }} />
 
             {/* AI badge */}
             <div className="absolute top-4 left-4 sm:top-5 sm:left-5 flex items-center gap-2 px-3 py-1.5 sm:py-2 rounded-xl"

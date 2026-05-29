@@ -92,7 +92,7 @@ export default function ECHero() {
 
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-row flex-wrap gap-3 mb-10">
-              <a href="#contact"
+              <a href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
                 style={{ background: '#2563eb', boxShadow: '0 4px 16px rgba(37,99,235,0.22)' }}>
                 Start Your E-commerce Journey Today <ArrowRight size={15} />

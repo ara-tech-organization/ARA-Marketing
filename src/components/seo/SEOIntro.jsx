@@ -28,7 +28,7 @@ export default function SEOIntro() {
               />
               {/* Overlay */}
               <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(10,22,40,0.85) 100%)' }} />
+                style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(10,26,52,0.85) 100%)' }} />
 
               {/* Overlay stats */}
               <div className="absolute bottom-0 left-0 right-0 p-6">

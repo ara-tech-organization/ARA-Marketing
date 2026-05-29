@@ -89,7 +89,7 @@ export default function SWHero() {
 
             {/* CTAs */}
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
-              <a href="#contact"
+              <a href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Get a Free Consultation Today <ArrowRight size={14} />

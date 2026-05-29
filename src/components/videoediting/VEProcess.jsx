@@ -1,158 +1,108 @@
 import { ClipboardList, FolderOpen, Scissors, Layers, Volume2, RotateCcw, CheckCircle2, LineChart } from 'lucide-react'
 
 const steps = [
-  { num: '01', icon: ClipboardList, title: 'Requirement & Concept Analysis',  desc: 'Deep understanding of your brand goals, target audience, platform requirements, and the message you want to convey.', color: '#2563eb' },
-  { num: '02', icon: FolderOpen,    title: 'Footage Collection & Planning',    desc: 'Raw footage, assets, scripts, and reference materials are collected and organised into a structured edit plan.',       color: '#7c3aed' },
-  { num: '03', icon: Scissors,      title: 'Editing & Storyboarding',          desc: 'Cut, sequence, and structure your footage into a compelling story using timing, pacing, and narrative techniques.',      color: '#0891b2' },
-  { num: '04', icon: Layers,        title: 'Motion Graphics & Effects',        desc: 'Titles, lower thirds, animated elements, transitions, and visual effects added to elevate production value.',             color: '#059669' },
-  { num: '05', icon: Volume2,       title: 'Audio Sync & Colour Correction',   desc: 'Professional audio mixing, sound design, music integration, and cinematic colour grading for every sensory element.',     color: '#d97706' },
-  { num: '06', icon: RotateCcw,     title: 'Client Review & Revisions',        desc: 'Preview shared for your feedback. Revisions applied to ensure perfect alignment with your vision and brand guidelines.', color: '#dc2626' },
-  { num: '07', icon: CheckCircle2,  title: 'Final Video Delivery',             desc: 'Finished videos exported in platform-optimised formats, delivered in full resolution for YouTube, Instagram, or broadcast.', color: '#0f766e' },
+  { num: '01', icon: ClipboardList, title: 'Requirement & Concept Analysis',  desc: 'Deep understanding of your brand goals, target audience, platform requirements, and the message you want to convey.', color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)'  },
+  { num: '02', icon: FolderOpen,    title: 'Footage Collection & Planning',    desc: 'Raw footage, assets, scripts, and reference materials are collected and organised into a structured edit plan.',       color: '#7c3aed', accent: 'rgba(124,58,237,0.07)', border: 'rgba(124,58,237,0.18)' },
+  { num: '03', icon: Scissors,      title: 'Editing & Storyboarding',          desc: 'Cut, sequence, and structure your footage into a compelling story using timing, pacing, and narrative techniques.',      color: '#0891b2', accent: 'rgba(8,145,178,0.07)',  border: 'rgba(8,145,178,0.18)'  },
+  { num: '04', icon: Layers,        title: 'Motion Graphics & Effects',        desc: 'Titles, lower thirds, animated elements, transitions, and visual effects added to elevate production value.',             color: '#059669', accent: 'rgba(5,150,105,0.07)',  border: 'rgba(5,150,105,0.18)'  },
+  { num: '05', icon: Volume2,       title: 'Audio Sync & Colour Correction',   desc: 'Professional audio mixing, sound design, music integration, and cinematic colour grading for every sensory element.',     color: '#d97706', accent: 'rgba(217,119,6,0.07)',  border: 'rgba(217,119,6,0.18)'  },
+  { num: '06', icon: RotateCcw,     title: 'Client Review & Revisions',        desc: 'Preview shared for your feedback. Revisions applied to ensure perfect alignment with your vision and brand guidelines.', color: '#db2777', accent: 'rgba(219,39,119,0.07)', border: 'rgba(219,39,119,0.18)' },
+  { num: '07', icon: CheckCircle2,  title: 'Final Video Delivery',             desc: 'Finished videos exported in platform-optimised formats, delivered in full resolution for YouTube, Instagram, or broadcast.', color: '#059669', accent: 'rgba(5,150,105,0.07)', border: 'rgba(5,150,105,0.18)' },
 ]
-
-const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
 
 export default function VEProcess() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: '#0d2244' }}>
 
+      {/* BG decoration */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
-      <div className="hidden sm:block absolute -top-20 -left-20 w-[340px] h-[340px] rounded-full border border-blue-100/50 pointer-events-none animate-[spin_38s_linear_infinite]" />
-      <div className="hidden sm:block absolute -top-10 -left-10 w-[220px] h-[220px] rounded-full border border-blue-200/35 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
-      <div className="hidden sm:block absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-violet-100/40 pointer-events-none" />
-      <div className="hidden sm:block absolute -bottom-8 -right-8 w-[180px] h-[180px] rounded-full border border-violet-200/28 pointer-events-none" />
-      <div className="absolute top-1/2 right-0 w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.15) 0%, transparent 65%)' }} />
+        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.05) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+      <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 65%)' }} />
+      <div className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-5 sm:px-7">
 
-        {/* ── Header ── */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-14 reveal">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-12 reveal">
           <div>
-            <span className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 bg-blue-50 text-blue-600
-              border border-blue-100 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5">
-              <LineChart size={10} /> Our Workflow
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+              style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.2)', color: '#2563eb' }}>
+              <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(24px,4vw,46px)] font-bold text-white leading-[1.1] tracking-tight" style={{ fontWeight: 700 }}>
               Our Strategic Video{' '}
-              <span style={gradBlue}>Editing Workflow</span>
+              <span style={{
+                background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+              }}>
+                Editing Workflow
+              </span>
             </h2>
           </div>
-          <p className="text-[13px] sm:text-[14px] text-slate-500 sm:max-w-[360px] leading-[1.85]">
+          <p className="text-[14px] leading-[1.85] lg:max-w-[360px]" style={{ color: 'rgba(255,255,255,0.45)' }}>
             Our strategic process assures high-quality video output from a professional video editing studio in Thanjavur.
           </p>
         </div>
 
-        {/* ── Steps ── */}
-        <div className="relative">
+        {/* Steps 01–04: 4-column grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4 reveal">
+          {steps.slice(0, 4).map(({ num, icon: Icon, title, desc, color, accent, border }) => (
+            <StepCard key={num} num={num} Icon={Icon} title={title} desc={desc} color={color} accent={accent} border={border} />
+          ))}
+        </div>
 
-          {/* Rows 01–04 */}
-          <div className="reveal flex flex-wrap gap-3 sm:gap-4 mb-3 sm:mb-4">
-            {steps.slice(0, 4).map(({ num, icon: Icon, title, desc, color }, i) => (
-              <div
-                key={num}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden
-                  transition-all duration-400 hover:-translate-y-2 hover:shadow-2xl delay-${i + 1}`}
+        {/* Connector */}
+        <div className="flex justify-center py-3">
+          <div className="flex items-center gap-1.5">
+            {Array.from({ length: 7 }).map((_, i) => (
+              <div key={i} className="rounded-full transition-all"
                 style={{
-                  flex: '1 1 calc(50% - 6px)',
-                  minWidth: 'calc(50% - 6px)',
-                  background: 'white',
-                  border: '1.5px solid #f0f4ff',
-                  boxShadow: '0 4px 20px rgba(37,99,235,0.05)',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = color + '30'
-                  e.currentTarget.style.boxShadow = `0 20px 50px ${color}14`
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = '#f0f4ff'
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.05)'
-                }}
-              >
-                <div className="h-1 w-full" style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
-                <span className="absolute -bottom-4 -right-2 text-[60px] sm:text-[88px] font-black leading-none select-none pointer-events-none"
-                  style={{ color: color + '08' }}>{num}</span>
-                <div className="p-4 sm:p-6">
-                  <div className="flex items-center justify-between mb-3 sm:mb-5">
-                    <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center text-white font-black text-[12px] sm:text-[13px] transition-all duration-300 group-hover:scale-105"
-                      style={{ background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 4px 14px ${color}30` }}>
-                      {num}
-                    </div>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
-                      style={{ background: color + '10', border: `1.5px solid ${color}20` }}>
-                      <Icon size={14} style={{ color }} />
-                    </div>
-                  </div>
-                  <h3 className="text-[12px] sm:text-[13.5px] font-bold text-slate-900 leading-snug mb-1.5 sm:mb-2.5">{title}</h3>
-                  <p className="text-[11px] sm:text-[12px] text-slate-500 leading-[1.75]">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Connector dots */}
-          <div className="flex justify-center py-2">
-            <div className="flex items-center gap-1.5">
-              {Array.from({ length: 7 }).map((_, i) => (
-                <div key={i} className="rounded-full"
-                  style={{
-                    width: i === 3 ? 8 : 6, height: i === 3 ? 8 : 6,
-                    background: i === 3 ? 'linear-gradient(135deg,#2563eb,#7c3aed)' : 'rgba(37,99,235,0.20)',
-                  }} />
-              ))}
-            </div>
-          </div>
-
-          {/* Rows 05–07 */}
-          <div className="reveal flex flex-wrap gap-3 sm:gap-4 lg:mx-[8.33%]">
-            {steps.slice(4).map(({ num, icon: Icon, title, desc, color }, i) => (
-              <div
-                key={num}
-                className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden
-                  transition-all duration-400 hover:-translate-y-2 hover:shadow-2xl delay-${i + 1}`}
-                style={{
-                  flex: '1 1 calc(33% - 6px)',
-                  minWidth: 'calc(50% - 6px)',
-                  background: 'white',
-                  border: '1.5px solid #f0f4ff',
-                  boxShadow: '0 4px 20px rgba(37,99,235,0.05)',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.borderColor = color + '30'
-                  e.currentTarget.style.boxShadow = `0 20px 50px ${color}14`
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.borderColor = '#f0f4ff'
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.05)'
-                }}
-              >
-                <div className="h-1 w-full" style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
-                <span className="absolute -bottom-4 -right-2 text-[60px] sm:text-[88px] font-black leading-none select-none pointer-events-none"
-                  style={{ color: color + '08' }}>{num}</span>
-                <div className="p-4 sm:p-6">
-                  <div className="flex items-center justify-between mb-3 sm:mb-5">
-                    <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center text-white font-black text-[12px] sm:text-[13px] transition-all duration-300 group-hover:scale-105"
-                      style={{ background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 4px 14px ${color}30` }}>
-                      {num}
-                    </div>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
-                      style={{ background: color + '10', border: `1.5px solid ${color}20` }}>
-                      <Icon size={14} style={{ color }} />
-                    </div>
-                  </div>
-                  <h3 className="text-[12px] sm:text-[13.5px] font-bold text-slate-900 leading-snug mb-1.5 sm:mb-2.5">{title}</h3>
-                  <p className="text-[11px] sm:text-[12px] text-slate-500 leading-[1.75]">{desc}</p>
-                </div>
-              </div>
+                  width: i === 3 ? 8 : 5, height: i === 3 ? 8 : 5,
+                  background: i === 3 ? 'linear-gradient(135deg,#2563eb,#7c3aed)' : 'rgba(255,255,255,0.18)',
+                }} />
             ))}
           </div>
         </div>
 
+        {/* Steps 05–07: 3-column grid (full width) */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 reveal">
+          {steps.slice(4).map(({ num, icon: Icon, title, desc, color, accent, border }) => (
+            <StepCard key={num} num={num} Icon={Icon} title={title} desc={desc} color={color} accent={accent} border={border} />
+          ))}
+        </div>
+
       </div>
     </section>
+  )
+}
+
+function StepCard({ num, Icon, title, desc, color, accent, border }) {
+  return (
+    <div
+      className="group relative rounded-2xl overflow-hidden transition-all duration-350 hover:-translate-y-2"
+      style={{ background: accent, border: `1px solid ${border}`, boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}
+      onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 20px 48px rgba(0,0,0,0.12)`; e.currentTarget.style.borderColor = color + '55' }}
+      onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)'; e.currentTarget.style.borderColor = border }}
+    >
+      <div className="h-[3px] w-full" style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+      <span className="absolute -bottom-3 -right-1 text-[72px] font-black leading-none select-none pointer-events-none"
+        style={{ color: color + '0e' }}>{num}</span>
+      <div className="p-5">
+        <div className="flex items-center justify-between mb-4">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-[12px] transition-transform duration-300 group-hover:scale-105"
+            style={{ background: `linear-gradient(135deg,${color},${color}99)`, boxShadow: `0 4px 12px ${color}30` }}>
+            {num}
+          </div>
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
+            style={{ background: accent, border: `1px solid ${border}` }}>
+            <Icon size={14} style={{ color }} />
+          </div>
+        </div>
+        <h3 className="text-[13.5px] font-bold text-white leading-snug mb-2" style={{ fontWeight: 700 }}>{title}</h3>
+        <p className="text-[12px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.5)' }}>{desc}</p>
+      </div>
+    </div>
   )
 }

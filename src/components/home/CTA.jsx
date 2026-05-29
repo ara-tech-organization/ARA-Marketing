@@ -33,7 +33,7 @@ export default function CTA() {
         <div className="max-w-[720px] mx-auto reveal">
           <div
             className="cta-border-anim rounded-[20px] sm:rounded-[32px] p-6 sm:p-12"
-            style={{ background: 'rgba(10,22,40,0.9)', backdropFilter: 'blur(20px)' }}
+            style={{ background: 'rgba(10,26,52,0.9)', backdropFilter: 'blur(20px)' }}
           >
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5
               bg-blue-600/15 text-blue-400 border border-blue-600/25 rounded-full

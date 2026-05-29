@@ -122,7 +122,7 @@ export default function WAHero() {
           {/* CTAs */}
           <div className="flex flex-col xs:flex-row flex-wrap gap-3 justify-center mb-10 sm:mb-14 px-3 xs:px-0">
             <a
-              href="#contact"
+              href="/ARA-Marketing/contact"
               className="btn-glow inline-flex items-center justify-center gap-2 px-5 xs:px-7 py-3 xs:py-3.5 rounded-full text-[13px] xs:text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 24px rgba(37,99,235,0.35)' }}
             >

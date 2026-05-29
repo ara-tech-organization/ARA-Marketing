@@ -99,7 +99,7 @@ export default function Footer() {
               <span>aradicovertech02@gmail.com</span>
             </div>
             <a
-              href="#contact"
+              href="/ARA-Marketing/contact"
               className="btn-glow inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white
                 rounded-full text-[13px] font-semibold transition-all duration-300
                 hover:bg-blue-500 shadow-lg shadow-blue-600/25"

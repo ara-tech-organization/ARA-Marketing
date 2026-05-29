@@ -212,7 +212,7 @@ export default function AboutMV() {
               Let's build a strategy that delivers real, measurable results.
             </p>
           </div>
-          <a href="#contact"
+          <a href="/ARA-Marketing/contact"
             className="flex-shrink-0 btn-glow inline-flex items-center gap-2 px-7 py-3.5
               rounded-full font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
             style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',

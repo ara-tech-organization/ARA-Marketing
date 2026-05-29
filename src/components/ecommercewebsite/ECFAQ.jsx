@@ -254,7 +254,7 @@ export default function ECFAQ() {
               <ShoppingCart size={11} className="text-blue-600" />
               <span className="text-[11px] font-bold text-blue-700">50+ Stores Built</span>
             </div>
-            <a href="#ec-cta"
+            <a href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
               style={{ background: '#2563eb', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
               Contact Us <ArrowRight size={13} />

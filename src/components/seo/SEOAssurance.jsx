@@ -73,9 +73,9 @@ export default function SEOAssurance() {
                 Every client gets a dedicated commitment from our team — from transparent reporting to AI-powered strategy. We don't just rank you, we grow your business.
               </p>
               <a
-                href="#contact"
+                href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
-                  rounded-full text-[13px] font-semibold shadow-lg shadow-blue-600/25
+                  rounded-xl text-[13px] font-semibold shadow-lg shadow-blue-600/25
                   hover:bg-blue-500 transition-all duration-300 hover:-translate-y-0.5"
               >
                 Call our team today for customized Search Engine Optimization Service in Thanjavur <ArrowRight size={14} />

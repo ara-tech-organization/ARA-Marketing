@@ -48,7 +48,7 @@ export default function VECTA() {
 
         {/* CTA buttons */}
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-14">
-          <a href="#contact"
+          <a href="/ARA-Marketing/contact"
             className="btn-glow inline-flex items-center gap-2 sm:gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-[13px] sm:text-[14px]
               font-bold transition-all duration-300 hover:-translate-y-1"
             style={{ color: '#1e3a8a', background: 'white', boxShadow: '0 12px 36px rgba(0,0,0,0.20)' }}>

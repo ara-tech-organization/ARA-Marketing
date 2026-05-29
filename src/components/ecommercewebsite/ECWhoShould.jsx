@@ -96,7 +96,7 @@ export default function ECWhoShould() {
             <p className="text-[13px] max-w-md" style={{ color: 'rgba(255,255,255,0.55)' }}>
               We are also one of the top <strong style={{ color: '#93c5fd' }}>e-commerce development agencies in Thanjavur</strong>, offering scalable e-commerce platforms.
             </p>
-            <a href="#contact"
+            <a href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: '#2563eb', boxShadow: '0 8px 24px rgba(37,99,235,0.40)' }}>
               Get Started Today <ArrowRight size={13} />

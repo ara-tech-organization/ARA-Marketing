@@ -160,7 +160,7 @@ export default function OMWhyUs() {
               </p>
             </div>
           </div>
-          <a href="#contact"
+          <a href="/ARA-Marketing/contact"
             className="relative flex-shrink-0 inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
             style={{ background: 'white', color: '#7c3aed' }}>
             Work With Us <ArrowRight size={13} />

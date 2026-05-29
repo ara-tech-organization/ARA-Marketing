@@ -111,7 +111,7 @@ export default function ECCTA() {
                 </select>
               </div>
 
-              <a href="#contact"
+              <a href="/ARA-Marketing/contact"
                 className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-white text-[13.5px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                 style={{ background: '#2563eb', boxShadow: '0 8px 24px rgba(37,99,235,0.40)' }}>
                 Call us now! <ArrowRight size={14} />

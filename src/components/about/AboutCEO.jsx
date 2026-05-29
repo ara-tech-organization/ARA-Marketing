@@ -198,7 +198,7 @@ export default function AboutCEO() {
 
             {/* CTA row */}
             <div className="flex flex-wrap items-center gap-4">
-              <a href="#contact"
+              <a href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full
                   font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',

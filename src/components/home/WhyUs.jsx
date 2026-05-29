@@ -153,7 +153,7 @@ export default function WhyUs() {
                 offers a complete digital solution that drives visibility, engagement and conversions.
               </p>
               <a
-                href="#contact"
+                href="/ARA-Marketing/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
                   rounded-full text-[13px] font-bold transition-all duration-300
                   hover:bg-blue-700 hover:-translate-y-0.5 shadow-lg shadow-blue-600/25"

@@ -76,7 +76,7 @@ export default function GDHero() {
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-wrap gap-3 mb-10">
               <a
-                href="#contact"
+                href="/ARA-Marketing/contact"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
                 style={{
                   background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',

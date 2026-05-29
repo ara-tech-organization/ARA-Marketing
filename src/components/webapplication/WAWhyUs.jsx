@@ -116,7 +116,7 @@ export default function WAWhyUs() {
                 </div>
 
                 <a
-                  href="#contact"
+                  href="/ARA-Marketing/contact"
                   className="mt-6 xs:mt-7 inline-flex items-center gap-2 px-4 xs:px-5 py-2.5 xs:py-3 rounded-xl text-[12.5px] xs:text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 w-full justify-center"
                   style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 24px rgba(37,99,235,0.3)' }}
                 >

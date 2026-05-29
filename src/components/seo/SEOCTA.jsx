@@ -51,7 +51,7 @@ export default function SEOCTA() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="#contact"
+                href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 text-white
                   rounded-full text-[14px] font-bold hover:bg-blue-500
                   shadow-xl shadow-blue-600/25 transition-all duration-300 hover:-translate-y-0.5"

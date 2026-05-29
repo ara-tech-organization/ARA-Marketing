@@ -139,7 +139,7 @@ export default function CMSFAQ() {
                 </div>
               </div>
               <a
-                href="#contact"
+                href="/ARA-Marketing/contact"
                 className="relative flex items-center justify-between w-full px-4 py-2.5 rounded-xl text-[13px] font-bold transition-all duration-300 hover:scale-[1.02]"
                 style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.25)', color: 'white', backdropFilter: 'blur(8px)' }}
               >

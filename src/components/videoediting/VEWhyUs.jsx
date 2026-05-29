@@ -1,124 +1,136 @@
-import { Clapperboard, Zap, BookOpen, MonitorPlay, Settings, DollarSign, Award, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Clapperboard, Zap, BookOpen, MonitorPlay, Settings, DollarSign, Award, ArrowRight, CheckCircle2, Play } from 'lucide-react'
 
 const reasons = [
-  { icon: Clapperboard, title: 'High-Quality Cinematic Editing',      desc: 'Professional cinematic techniques — colour grading, motion design, and seamless cuts applied to every project.',      color: '#2563eb', num: '01' },
-  { icon: Zap,          title: 'Fast Turnaround Time',                  desc: 'Deadline-driven workflow ensures your video is delivered on time without compromising on quality or creative depth.',   color: '#0891b2', num: '02' },
-  { icon: BookOpen,     title: 'Creative Storytelling Approach',        desc: 'Every edit is built around a narrative. We craft emotional arcs that connect your brand with your audience.',           color: '#059669', num: '03' },
-  { icon: MonitorPlay,  title: 'Platform-Optimised Video Formats',      desc: 'Videos formatted and optimised for YouTube, Instagram Reels, Facebook, LinkedIn, and broadcast channels.',              color: '#2563eb', num: '04' },
-  { icon: Settings,     title: 'Professional Tools & Software',         desc: 'Industry-standard editing suites for colour science, audio mastering, motion graphics, and VFX compositing.',           color: '#0891b2', num: '05' },
-  { icon: DollarSign,   title: 'Affordable Pricing for All Businesses', desc: 'Flexible packages for startups, SMEs, and large enterprises — premium quality without the premium price tag.',         color: '#059669', num: '06' },
+  { icon: Clapperboard, title: 'High-Quality Cinematic Editing',      desc: 'Professional cinematic techniques — colour grading, motion design, and seamless cuts applied to every project.',      color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)', num: '01' },
+  { icon: Zap,          title: 'Fast Turnaround Time',                  desc: 'Deadline-driven workflow ensures your video is delivered on time without compromising on quality or creative depth.',   color: '#059669', accent: 'rgba(5,150,105,0.07)',  border: 'rgba(5,150,105,0.18)', num: '02' },
+  { icon: BookOpen,     title: 'Creative Storytelling Approach',        desc: 'Every edit is built around a narrative. We craft emotional arcs that connect your brand with your audience.',           color: '#7c3aed', accent: 'rgba(124,58,237,0.07)', border: 'rgba(124,58,237,0.18)', num: '03' },
+  { icon: MonitorPlay,  title: 'Platform-Optimised Video Formats',      desc: 'Videos formatted and optimised for YouTube, Instagram Reels, Facebook, LinkedIn, and broadcast channels.',              color: '#db2777', accent: 'rgba(219,39,119,0.07)', border: 'rgba(219,39,119,0.18)', num: '04' },
+  { icon: Settings,     title: 'Professional Tools & Software',         desc: 'Industry-standard editing suites for colour science, audio mastering, motion graphics, and VFX compositing.',           color: '#0891b2', accent: 'rgba(8,145,178,0.07)',  border: 'rgba(8,145,178,0.18)', num: '05' },
+  { icon: DollarSign,   title: 'Affordable Pricing for All Businesses', desc: 'Flexible packages for startups, SMEs, and large enterprises — premium quality without the premium price tag.',         color: '#d97706', accent: 'rgba(217,119,6,0.07)',  border: 'rgba(217,119,6,0.18)', num: '06' },
 ]
-
-const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
 
 export default function VEWhyUs() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: '#f0f6ff' }}>
 
+      {/* BG decorations */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
-      <div className="hidden sm:block absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full border border-blue-100/60 pointer-events-none animate-[spin_38s_linear_infinite]" />
-      <div className="hidden sm:block absolute -top-14 -left-14 w-[280px] h-[280px] rounded-full border border-sky-100/50 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
-      <div className="hidden sm:block absolute -bottom-20 -right-20 w-[360px] h-[360px] rounded-full border border-blue-100/50 pointer-events-none animate-[spin_40s_linear_infinite]" />
-      <div className="hidden sm:block absolute -bottom-10 -right-10 w-[240px] h-[240px] rounded-full border border-blue-200/35 pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[300px] sm:w-[480px] h-[300px] sm:h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.16) 0%, transparent 65%)' }} />
+        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.055) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+      <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
+      <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.09) 0%, transparent 65%)' }} />
+      <div className="absolute top-0 left-0 w-80 h-80 pointer-events-none"
+        style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.07) 0%, transparent 60%)' }} />
+      <div className="absolute bottom-0 right-0 w-80 h-80 pointer-events-none"
+        style={{ background: 'linear-gradient(315deg, rgba(124,58,237,0.07) 0%, transparent 60%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-5 sm:px-7">
 
-        {/* ── Centered header ── */}
-        <div className="text-center mb-10 sm:mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px]
-            font-bold uppercase tracking-widest mb-5 sm:mb-6 text-blue-600 bg-blue-50"
-            style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
-            <Award size={10} /> Why Choose Us
+        {/* Header */}
+        <div className="text-center mb-14 reveal">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+            style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.2)', color: '#2563eb' }}>
+            <Award size={11} /> Why Choose Us
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(24px,4vw,46px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
             Why Businesses Trust Our{' '}
-            <span style={gradBlue}>Video Editing Expertise</span>
+            <span style={{
+              background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
+              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+            }}>
+              Video Editing Expertise
+            </span>
           </h2>
-          <p className="text-[13.5px] sm:text-[15px] text-slate-500 leading-[1.85] max-w-[620px] mx-auto px-2 sm:px-0">
+          <p className="text-[15px] leading-[1.85] max-w-[580px] mx-auto" style={{ color: '#64748b' }}>
             Ara Discover Marketing blends creativity, technical expertise, and marketing strategy to create impactful video content.
           </p>
         </div>
 
-        {/* ── Cards ── */}
-        <div className="reveal flex flex-wrap gap-3 sm:gap-4 sm:gap-5 mb-10 sm:mb-14">
-          {reasons.map(({ icon: Icon, title, desc, color, num }, i) => (
+        {/* Cards grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 reveal">
+          {reasons.map(({ icon: Icon, title, desc, color, accent, border, num }) => (
             <div
               key={title}
-              className={`group relative rounded-2xl sm:rounded-3xl overflow-hidden cursor-default
-                transition-all duration-400 hover:-translate-y-2 hover:shadow-2xl delay-${i + 1}`}
+              className="group relative rounded-2xl overflow-hidden transition-all duration-350 hover:-translate-y-2 bg-white"
               style={{
-                flex: '1 1 calc(50% - 6px)',
-                minWidth: 'calc(50% - 6px)',
-                background: 'white',
-                border: '1.5px solid #eef2ff',
-                boxShadow: '0 4px 20px rgba(37,99,235,0.05)',
+                border: `1px solid ${border}`,
+                boxShadow: '0 4px 24px rgba(0,0,0,0.06)',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.borderColor = color + '30'
-                e.currentTarget.style.boxShadow = `0 24px 56px ${color}14`
+                e.currentTarget.style.boxShadow = `0 20px 50px rgba(0,0,0,0.12), 0 0 0 1px ${color}40`
+                e.currentTarget.style.borderColor = color + '55'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.borderColor = '#eef2ff'
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.05)'
+                e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.06)'
+                e.currentTarget.style.borderColor = border
               }}
             >
-              <div className="h-1 w-full" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
-              <span className="absolute -bottom-3 -right-1 text-[56px] sm:text-[80px] font-black leading-none select-none pointer-events-none"
-                style={{ color: color + '09' }}>{num}</span>
-              <div className="p-4 sm:p-7">
-                <div className="flex items-center justify-between mb-4 sm:mb-6">
-                  <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                    style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}22` }}>
-                    <Icon size={18} style={{ color }} />
+              {/* Top accent bar */}
+              <div className="h-[3px] w-full"
+                style={{ background: `linear-gradient(90deg, ${color}, ${color}55)` }} />
+
+              {/* Ghost number */}
+              <span className="absolute -bottom-2 -right-1 text-[80px] font-black leading-none select-none pointer-events-none"
+                style={{ color: color + '0e' }}>{num}</span>
+
+              <div className="p-6">
+                {/* Icon + number row */}
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                    style={{ background: accent, border: `1px solid ${border}` }}>
+                    <Icon size={20} style={{ color }} />
                   </div>
-                  <span className="text-[10px] sm:text-[11px] font-black px-2 sm:px-2.5 py-1 rounded-xl transition-all duration-300"
-                    style={{ background: color + '10', color, border: `1px solid ${color}20` }}>
+                  <span className="text-[11px] font-black px-2.5 py-1 rounded-lg"
+                    style={{ background: accent, color, border: `1px solid ${border}` }}>
                     {num}
                   </span>
                 </div>
-                <h3 className="text-[13px] sm:text-[15px] font-bold text-slate-900 leading-snug mb-2 sm:mb-3">{title}</h3>
-                <p className="text-[11.5px] sm:text-[13px] text-slate-500 leading-[1.78]">{desc}</p>
-                <div className="flex items-center gap-2 mt-3 sm:mt-5 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-1 group-hover:translate-y-0">
+
+                <h3 className="text-[15px] font-bold leading-snug mb-2.5" style={{ fontWeight: 700, color: '#0f172a' }}>
+                  {title}
+                </h3>
+                <p className="text-[13px] leading-[1.78]" style={{ color: '#64748b' }}>
+                  {desc}
+                </p>
+
+                {/* Hover reveal */}
+                <div className="flex items-center gap-2 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
                   <CheckCircle2 size={12} style={{ color }} />
-                  <span className="text-[10.5px] sm:text-[11.5px] font-semibold" style={{ color }}>Delivered with precision</span>
+                  <span className="text-[11.5px] font-semibold" style={{ color }}>Delivered with precision</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* ── Bottom banner ── */}
-        <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 rounded-2xl sm:rounded-3xl overflow-hidden relative"
-          style={{ background: 'linear-gradient(135deg, #1d4ed8 0%, #0284c7 50%, #0891b2 100%)', boxShadow: '0 20px 60px rgba(29,78,216,0.28)' }}>
+        {/* Bottom banner */}
+        <div className="reveal relative rounded-2xl overflow-hidden px-7 py-6 flex flex-col sm:flex-row items-center justify-between gap-5"
+          style={{
+            background: 'linear-gradient(135deg, #1e3a8a 0%, #4338ca 100%)',
+            boxShadow: '0 16px 48px rgba(37,99,235,0.25)',
+          }}>
           <div className="absolute inset-0 pointer-events-none"
-            style={{ background: 'radial-gradient(ellipse at 25% 50%, rgba(255,255,255,0.12) 0%, transparent 60%)' }} />
-          <div className="hidden sm:block absolute right-8 top-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-white/10 pointer-events-none" />
-          <div className="hidden sm:block absolute right-12 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full border border-white/08 pointer-events-none" />
-          <div className="relative flex items-center gap-3 sm:gap-4 text-center sm:text-left">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0"
+            style={{ background: 'radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 60%)' }} />
+          <div className="relative flex items-center gap-4">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>
-              <Award size={18} className="text-white" />
+              <Play size={18} className="text-white" />
             </div>
             <div>
-              <p className="text-[13px] sm:text-[14px] font-bold text-white mb-0.5">Professional Video Editing Studio in Thanjavur</p>
-              <p className="text-[11.5px] sm:text-[12.5px] leading-snug max-w-[480px]" style={{ color: 'rgba(255,255,255,0.70)' }}>
-                We are also known as one of the best videography and editing services in Thanjavur — delivering visually compelling, business-centric video content.
+              <p className="text-[14px] font-bold text-white mb-0.5" style={{ fontWeight: 700 }}>
+                Professional Video Editing Studio in Thanjavur
+              </p>
+              <p className="text-[12.5px] leading-snug max-w-[480px]" style={{ color: 'rgba(255,255,255,0.72)' }}>
+                Delivering visually compelling, business-centric video content for brands across industries.
               </p>
             </div>
           </div>
-          <div className="relative flex-shrink-0">
-            <a href="#contact"
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-[12px] sm:text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ background: 'white', color: '#1d4ed8' }}>
-              Work With Us <ArrowRight size={13} />
-            </a>
-          </div>
+          <a href="/ARA-Marketing/contact"
+            className="relative flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+            style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.28)', backdropFilter: 'blur(10px)' }}>
+            Work With Us <ArrowRight size={14} />
+          </a>
         </div>
 
       </div>

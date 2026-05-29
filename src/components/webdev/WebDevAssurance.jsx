@@ -96,7 +96,7 @@ export default function WebDevAssurance() {
                     hover:-translate-y-0.5 transition-all duration-300">
                   <Phone size={16} /> Call Us Now
                 </a>
-                <a href="#contact"
+                <a href="/ARA-Marketing/contact"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30
                     text-white rounded-full text-sm font-semibold
                     hover:bg-white/10 hover:border-white/50 transition-all duration-300">

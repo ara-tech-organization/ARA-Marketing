@@ -96,7 +96,7 @@ export default function DWHero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-3 mb-10 sm:mb-12">
-            <a href="#dw-cta"
+            <a href="/ARA-Marketing/contact"
               className="btn-glow inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
               Request a Free Consultation <ArrowRight size={14} />

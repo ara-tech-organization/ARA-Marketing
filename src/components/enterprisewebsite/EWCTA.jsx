@@ -71,7 +71,7 @@ export default function EWCTA() {
             </div>
 
             {/* Phone CTA */}
-            <a href="tel:+91XXXXXXXXXX"
+            <a href="tel:+919876543210"
               className="inline-flex items-center gap-2.5 sm:gap-3 px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl sm:rounded-2xl transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto"
               style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(8px)' }}>
               <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0"

@@ -171,7 +171,7 @@ export default function SWWhoShouldInvest() {
             Choose our <strong className="text-slate-800">static web page development in Thanjavur</strong> and get a cost-effective solution that delivers long-term value for your business.
           </p>
           <a
-            href="#contact"
+            href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
             style={{ background: 'linear-gradient(135deg, #2563eb, #1d4ed8)' }}
           >

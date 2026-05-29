@@ -229,7 +229,7 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 justify-center mb-8">
-          <a href="#contact"
+          <a href="/ARA-Marketing/contact"
             className="btn-glow inline-flex items-center gap-2.5 px-9 py-3.5 bg-blue-600 text-white
               rounded-full font-bold text-[15px] transition-all duration-300
               hover:bg-blue-500 shadow-2xl shadow-blue-600/35">

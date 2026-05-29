@@ -175,7 +175,7 @@ export default function SWProcess() {
             Our developers are experts in <strong className="text-slate-700">static web page development in Thanjavur</strong> with clean code architecture and responsive layouts.
           </p>
           <a
-            href="#contact"
+            href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
             style={{ background: 'linear-gradient(135deg, #2563eb, #1d4ed8)' }}
           >
