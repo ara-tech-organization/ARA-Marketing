@@ -25,7 +25,7 @@ export default function OMIntro() {
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.08) 0%,transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — content */}

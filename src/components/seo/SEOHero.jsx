@@ -27,7 +27,7 @@ export default function SEOHero() {
       <div className="absolute top-0 left-2/3 w-px h-full opacity-10 pointer-events-none"
         style={{ background: 'linear-gradient(180deg, transparent, #60a5fa, transparent)' }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-7 py-10">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 py-10">
         <div className="flex flex-col lg:flex-row gap-6 items-stretch">
 
           {/* ── COLUMN 1: Keywords card + badges + stats ── */}

@@ -30,7 +30,7 @@ export default function SEOTestimonials() {
 
   return (
     <section
-      className="py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}
     >
       {/* Orbs */}
@@ -41,10 +41,10 @@ export default function SEOTestimonials() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.08) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="text-center mb-14 reveal">
+        <div className="text-center mb-8 md:mb-10 lg:mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <MessageSquare size={11} /> Testimonials
@@ -59,7 +59,7 @@ export default function SEOTestimonials() {
         </div>
 
         {/* Three-card horizontal layout */}
-        <div className="reveal flex flex-col sm:flex-row gap-5">
+        <div className="reveal flex flex-col sm:flex-row gap-4 sm:gap-5">
           {testimonials.map(({ text, name, role, initials, color }, i) => {
             const isActive = active === i
             return (
@@ -67,7 +67,7 @@ export default function SEOTestimonials() {
                 key={name}
                 type="button"
                 onClick={() => setActive(i)}
-                className={`flex-1 text-left rounded-3xl p-7 border transition-all duration-300
+                className={`flex-1 text-left rounded-3xl p-4 sm:p-5 md:p-6 lg:p-7 border transition-all duration-300
                   hover:-translate-y-1 ${isActive ? 'shadow-2xl' : 'bg-white/70 border-slate-100 hover:bg-white hover:shadow-lg'}`}
                 style={isActive
                   ? {

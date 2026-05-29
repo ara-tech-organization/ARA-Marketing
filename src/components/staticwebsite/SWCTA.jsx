@@ -39,7 +39,7 @@ export default function SWCTA() {
         style={{ background: 'linear-gradient(90deg, transparent, #0891b2, #2563eb, #7c3aed, transparent)' }}
       />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* ── Left: CTA Content ── */}

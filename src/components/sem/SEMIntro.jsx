@@ -23,7 +23,7 @@ const paragraphs = [
 export default function SEMIntro() {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Section heading ── */}
         <div className="text-center max-w-[700px] mx-auto mb-8 sm:mb-10 reveal">

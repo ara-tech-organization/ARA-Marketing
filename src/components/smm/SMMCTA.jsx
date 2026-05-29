@@ -16,7 +16,7 @@ export default function SMMCTA() {
         style={{ background: 'radial-gradient(circle, rgba(96,165,250,0.1) 0%, transparent 70%)' }}
       />
 
-      <div className="relative max-w-[1200px] mx-auto px-7 text-center">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 text-center">
 
         {/* Icon */}
         <div className="reveal inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl

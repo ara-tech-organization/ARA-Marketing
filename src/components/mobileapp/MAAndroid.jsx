@@ -16,7 +16,7 @@ export default function MAAndroid() {
       <div className="absolute inset-0 pointer-events-none opacity-15"
         style={{ backgroundImage: 'radial-gradient(circle,rgba(124,58,237,0.5) 1px,transparent 1px)', backgroundSize: '44px 44px' }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left: Content */}

@@ -74,7 +74,7 @@ export default function WebDevStats() {
       <div className="absolute top-0 left-0 right-0 h-px"
         style={{ background: 'linear-gradient(90deg, transparent, #93c5fd, transparent)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
@@ -93,7 +93,7 @@ export default function WebDevStats() {
         </div>
 
         {/* Stats row — no panel, stats sit directly on dark bg */}
-        <div className="reveal grid grid-cols-2 lg:grid-cols-5 gap-0">
+        <div className="reveal grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0">
           {stats.map((s, i) => (
             <StatItem key={s.label} {...s} index={i} />
           ))}

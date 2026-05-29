@@ -16,7 +16,7 @@ const steps = [
 export default function WebDevProcess() {
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600

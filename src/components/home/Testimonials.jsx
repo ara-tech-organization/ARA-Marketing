@@ -104,7 +104,7 @@ export default function Testimonials() {
       <div className="absolute bottom-4 left-4 w-20 h-20 pointer-events-none"
         style={{ border: '1px dashed rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '8px' }} />
 
-      <div className="max-w-[1200px] mx-auto px-7 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

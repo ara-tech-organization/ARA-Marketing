@@ -25,7 +25,7 @@ export default function VEWhyUs() {
       <div className="absolute bottom-0 right-0 w-80 h-80 pointer-events-none"
         style={{ background: 'linear-gradient(315deg, rgba(124,58,237,0.07) 0%, transparent 60%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-5 sm:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

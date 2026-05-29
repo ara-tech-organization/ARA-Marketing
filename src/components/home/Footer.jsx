@@ -10,7 +10,7 @@ export default function Footer() {
       className="text-white/65 pt-20 pb-9 border-t border-blue-600/20"
       style={{ background: '#071a36' }}
     >
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr] gap-12 mb-16">

@@ -48,7 +48,7 @@ export default function GDWhyUs() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] pointer-events-none"
         style={{ background: 'radial-gradient(ellipse, rgba(219,234,254,0.35) 0%, transparent 70%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-10 reveal">

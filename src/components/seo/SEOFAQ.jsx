@@ -73,7 +73,7 @@ function AccordionItem({ faq, index, active, setActive }) {
         <div className="px-5 pb-5 bg-white">
           <div className="h-px mb-3.5"
             style={{ background: 'linear-gradient(90deg, #2563eb50, transparent)' }} />
-          <p className="text-[13px] text-slate-600 leading-[1.85] pl-10">{faq.a}</p>
+          <p className="text-[13px] text-slate-600 leading-[1.85] pl-0 sm:pl-10">{faq.a}</p>
         </div>
       )}
     </div>
@@ -84,11 +84,11 @@ export default function SEOFAQ() {
   const [active, setActive] = useState(-1)
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section className="py-12 md:py-16 lg:py-24 bg-white">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="text-center mb-12 reveal">
+        <div className="text-center mb-8 md:mb-10 lg:mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <HelpCircle size={11} /> FAQs

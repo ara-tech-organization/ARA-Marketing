@@ -22,7 +22,7 @@ export default function VEProcess() {
       <div className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-5 sm:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-12 reveal">

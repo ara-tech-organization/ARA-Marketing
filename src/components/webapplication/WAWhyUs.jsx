@@ -22,7 +22,7 @@ export default function WAWhyUs() {
       className="py-16 sm:py-20 lg:py-28 overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #f8fafc 0%, white 100%)' }}
     >
-      <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-7">
+      <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span

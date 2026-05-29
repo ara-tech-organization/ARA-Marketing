@@ -89,7 +89,7 @@ export default function SMMStats() {
       <div className="absolute top-0 left-0 right-0 h-px"
         style={{ background: 'linear-gradient(90deg, transparent, #93c5fd, transparent)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
@@ -107,7 +107,7 @@ export default function SMMStats() {
         </div>
 
         {/* Stat cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
           {stats.map(s => <StatCard key={s.label} {...s} />)}
         </div>
 

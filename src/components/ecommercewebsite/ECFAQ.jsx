@@ -70,7 +70,7 @@ export default function ECFAQ() {
       <div className="absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.16) 0%,transparent 65%)' }} />
 
-      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

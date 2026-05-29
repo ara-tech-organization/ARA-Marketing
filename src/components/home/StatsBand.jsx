@@ -15,7 +15,7 @@ function StatItem({ target, suffix, label }) {
 export default function StatsBand() {
   return (
     <section className="relative py-16 bg-white border-y border-slate-100 overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <h2 className="text-center text-[clamp(20px,2.8vw,32px)] font-bold text-slate-900 leading-tight tracking-tight mb-10">
           Delivering Measurable Growth Through Strategic Marketing
         </h2>

@@ -117,7 +117,7 @@ export default function EWProcess() {
       <div className="hidden lg:block absolute -bottom-20 -left-20 w-[280px] h-[280px] rounded-full pointer-events-none"
         style={{ border: '1.5px solid rgba(37,99,235,0.07)', animation: 'spin 45s linear infinite reverse' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* ── Header ── */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">

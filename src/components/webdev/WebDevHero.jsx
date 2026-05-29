@@ -23,7 +23,7 @@ export default function WebDevHero() {
         style={{ background: 'radial-gradient(ellipse, rgba(219,234,254,0.7) 0%, transparent 65%)' }}
       />
 
-      <div className="relative max-w-[1100px] mx-auto px-7 pt-16 pb-6">
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7 pt-16 pb-6">
         <div className="text-center max-w-[1000px] mx-auto animate-hero-enter">
           <nav className="flex items-center justify-center gap-1.5 text-[13px] text-slate-400 mb-6">
             <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
@@ -101,7 +101,7 @@ export default function WebDevHero() {
         />
       </div>
 
-      <div className="relative max-w-[1000px] mx-auto px-7 pb-20">
+      <div className="relative max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7 pb-20">
         <div
           className="reveal relative bg-white rounded-3xl overflow-hidden"
           style={{

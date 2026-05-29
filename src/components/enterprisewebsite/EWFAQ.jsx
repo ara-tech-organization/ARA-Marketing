@@ -38,7 +38,7 @@ export default function EWFAQ() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
 
-      <div className="relative max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[760px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* ── Header ── */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">

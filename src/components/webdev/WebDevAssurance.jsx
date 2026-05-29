@@ -19,7 +19,7 @@ export default function WebDevAssurance() {
         <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,0 L0,0 Z" fill="rgba(191,219,254,0.35)" />
       </svg>
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">

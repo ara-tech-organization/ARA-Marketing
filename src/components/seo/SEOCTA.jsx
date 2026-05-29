@@ -3,7 +3,7 @@ import { ArrowRight, Search, TrendingUp, Zap } from 'lucide-react'
 export default function SEOCTA() {
   return (
     <section
-      className="py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}
     >
       {/* Orbs */}
@@ -25,8 +25,8 @@ export default function SEOCTA() {
         }}
       />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 lg:gap-12">
 
           {/* Left content */}
           <div className="flex-1 reveal">
@@ -70,9 +70,9 @@ export default function SEOCTA() {
           </div>
 
           {/* Right: feature package panel */}
-          <div className="reveal lg:w-[340px] flex-shrink-0">
+          <div className="reveal w-full md:w-[300px] lg:w-[340px] flex-shrink-0">
             <div
-              className="bg-white/80 border border-blue-100 rounded-3xl p-7 backdrop-blur-sm"
+              className="bg-white/80 border border-blue-100 rounded-3xl p-4 sm:p-5 md:p-6 lg:p-7 backdrop-blur-sm"
               style={{ boxShadow: '0 16px 60px rgba(37,99,235,0.10)' }}
             >
               <div className="flex items-center gap-3 mb-6">

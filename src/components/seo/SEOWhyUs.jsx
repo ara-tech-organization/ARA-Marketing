@@ -36,7 +36,7 @@ function ReasonCard({ icon: Icon, num, title, desc, color }) {
 export default function SEOWhyUs() {
   return (
     <section
-      className="py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #dbeafe 40%, #e0f2fe 100%)' }}
     >
       {/* Orbs */}
@@ -47,10 +47,10 @@ export default function SEOWhyUs() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.1) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="flex flex-col lg:flex-row gap-10 items-end mb-14 reveal">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 items-end mb-10 md:mb-12 lg:mb-14 reveal">
           <div className="flex-1">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
@@ -61,7 +61,7 @@ export default function SEOWhyUs() {
               <span className="text-gradient-blue">SEO Expertise?</span>
             </h2>
           </div>
-          <div className="lg:max-w-[440px]">
+          <div className="md:max-w-[440px] lg:max-w-[440px]">
             <p className="text-[15px] text-slate-600 leading-[1.85]">
               Businesses trust Ara Discover Marketing because we do ethical SEO, measurable growth, and transparent reporting. As one of the top SEO agencies in Thanjavur, we help businesses achieve sustainable rankings through data-driven optimization techniques.
             </p>
@@ -69,7 +69,7 @@ export default function SEOWhyUs() {
         </div>
 
         {/* Two-column card list */}
-        <div className="flex flex-col lg:flex-row gap-5 reveal">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-5 reveal">
           {/* Left column: items 0, 2, 4 */}
           <div className="flex-1 flex flex-col gap-4">
             {reasons.filter((_, i) => i % 2 === 0).map(r => (
@@ -77,7 +77,7 @@ export default function SEOWhyUs() {
             ))}
           </div>
           {/* Right column: items 1, 3, 5 */}
-          <div className="flex-1 flex flex-col gap-4 lg:mt-8">
+          <div className="flex-1 flex flex-col gap-4 md:mt-6 lg:mt-8">
             {reasons.filter((_, i) => i % 2 === 1).map(r => (
               <ReasonCard key={r.title} {...r} />
             ))}
@@ -86,8 +86,8 @@ export default function SEOWhyUs() {
 
         {/* Professional SEO Company bar */}
         <div
-          className="reveal mt-8 bg-white/90 border border-blue-100 rounded-2xl px-7 py-5
-            flex flex-col sm:flex-row items-center gap-6 backdrop-blur-sm"
+          className="reveal mt-8 bg-white/90 border border-blue-100 rounded-2xl px-4 py-4 sm:px-6 sm:py-5 md:px-7
+            flex flex-col sm:flex-row items-center gap-4 sm:gap-6 backdrop-blur-sm"
           style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.08)' }}
         >
           <div className="flex-1">

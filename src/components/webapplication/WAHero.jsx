@@ -57,7 +57,7 @@ export default function WAHero() {
       <div className="hidden lg:block absolute top-28 left-[4%] w-28 h-28 rounded-full border border-blue-800/30 pointer-events-none animate-[spin_50s_linear_infinite]" />
       <div className="hidden lg:block absolute top-40 right-[5%] w-20 h-20 rounded-full border border-sky-800/25 pointer-events-none animate-[spin_35s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1200px] mx-auto px-3 sm:px-6 lg:px-8 pt-10 sm:pt-14 lg:pt-18 pb-0 w-full">
+      <div className="relative max-w-[1200px] mx-auto px-3 sm:px-6 md:px-8 pt-10 sm:pt-14 lg:pt-18 pb-0 w-full">
 
         {/* ── Centered text block ── */}
         <div className="flex flex-col items-center text-center animate-hero-enter">

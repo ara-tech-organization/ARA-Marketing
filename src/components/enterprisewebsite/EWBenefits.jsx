@@ -93,7 +93,7 @@ export default function EWBenefits() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.045) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* ── Header ── */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">

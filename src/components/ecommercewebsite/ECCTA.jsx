@@ -25,7 +25,7 @@ export default function ECCTA() {
       <div className="hidden sm:block absolute bottom-10 left-10 w-[140px] h-[140px] rounded-full border pointer-events-none animate-[spin_28s_linear_infinite_reverse]"
         style={{ borderColor: 'rgba(5,150,105,0.20)' }} />
 
-      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center">
 
           {/* Left: Headline */}

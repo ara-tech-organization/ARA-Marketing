@@ -25,7 +25,7 @@ export default function CMSWhyUs() {
       <div className="absolute inset-0 pointer-events-none opacity-12"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.5) 1px, transparent 1px)', backgroundSize: '44px 44px' }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20 items-start">
 

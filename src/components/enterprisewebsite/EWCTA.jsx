@@ -32,7 +32,7 @@ export default function EWCTA() {
       <div className="hidden md:block absolute -bottom-20 -right-20 w-[380px] h-[380px] rounded-full pointer-events-none animate-orb-rev"
         style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
         {/* 1col xs/sm/md → 2col lg */}
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-16 items-start lg:items-center reveal">
 

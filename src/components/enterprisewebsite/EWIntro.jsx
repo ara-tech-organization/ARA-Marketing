@@ -37,7 +37,7 @@ export default function EWIntro() {
 
       {/* ── Stats strip ── */}
       <div className="relative" style={{ background: 'linear-gradient(90deg,#1e3a8a,#1d4ed8 40%,#0891b2 80%,#0e7490)' }}>
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           {/* 2 cols on xs, 4 cols on md+ */}
           <div className="grid grid-cols-2 md:grid-cols-4">
             {stats.map(({ val, label }, i) => (
@@ -56,7 +56,7 @@ export default function EWIntro() {
       </div>
 
       {/* ── Main content ── */}
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-14 lg:py-20">
         {/* Stack on xs/sm/md, side-by-side on lg */}
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-14 items-start">
 

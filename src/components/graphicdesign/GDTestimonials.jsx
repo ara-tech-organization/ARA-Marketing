@@ -100,7 +100,7 @@ export default function GDTestimonials() {
         style={{ background: 'radial-gradient(ellipse, rgba(219,234,254,0.45) 0%, transparent 70%)' }}
       />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

@@ -173,7 +173,7 @@ export default function SWBenefits() {
         }}
       />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 reveal">

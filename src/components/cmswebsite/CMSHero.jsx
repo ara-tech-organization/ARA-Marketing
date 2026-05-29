@@ -33,7 +33,7 @@ export default function CMSHero() {
           backgroundSize: '40px 40px',
         }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7 py-10 sm:py-16">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16">
         <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
 
           {/* ── Left: Text ── */}

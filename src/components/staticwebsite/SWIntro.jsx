@@ -56,7 +56,7 @@ export default function SWIntro() {
         }}
       />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Section Header */}
         <div className="text-center mb-14 reveal">

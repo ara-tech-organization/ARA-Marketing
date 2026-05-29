@@ -32,11 +32,11 @@ function PromiseRow({ icon: Icon, title, desc, color, index }) {
 
 export default function SEOAssurance() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section className="py-12 md:py-16 lg:py-24 bg-white">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="text-center mb-14 reveal">
+        <div className="text-center mb-8 md:mb-10 lg:mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Award size={11} /> Our Assurance
@@ -51,12 +51,12 @@ export default function SEOAssurance() {
         </div>
 
         {/* Split layout: sticky header left + promise list right */}
-        <div className="reveal flex flex-col lg:flex-row gap-10 items-start">
+        <div className="reveal flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-10 items-start">
 
           {/* Left: sticky header panel */}
-          <div className="lg:w-[320px] flex-shrink-0 lg:sticky lg:top-28">
+          <div className="md:w-[280px] lg:w-[320px] flex-shrink-0 lg:sticky lg:top-28">
             <div
-              className="rounded-3xl p-7 border border-blue-100"
+              className="rounded-3xl p-4 sm:p-5 md:p-6 lg:p-7 border border-blue-100"
               style={{
                 background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
                 boxShadow: '0 12px 40px rgba(37,99,235,0.10)',
@@ -85,7 +85,7 @@ export default function SEOAssurance() {
 
           {/* Right: promises list */}
           <div
-            className="flex-1 bg-white rounded-3xl border border-slate-100 px-7 py-2"
+            className="flex-1 bg-white rounded-3xl border border-slate-100 px-4 py-2 sm:px-5 md:px-6 lg:px-7"
             style={{ boxShadow: '0 8px 32px rgba(0,0,0,0.05)' }}
           >
             {promises.map((p, i) => (

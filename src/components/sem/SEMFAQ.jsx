@@ -15,7 +15,7 @@ export default function SEMFAQ() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[860px] mx-auto px-7">
+      <div className="max-w-[860px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="text-center mb-12 reveal">

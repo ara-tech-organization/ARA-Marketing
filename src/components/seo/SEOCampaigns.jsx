@@ -16,13 +16,13 @@ const achievements = [
 export default function SEOCampaigns() {
   return (
     <section
-      className="py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #f8faff 0%, #eff6ff 50%, #ffffff 100%)' }}
     >
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="text-center mb-14 reveal">
+        <div className="text-center mb-8 md:mb-10 lg:mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Trophy size={11} /> Portfolio
@@ -37,11 +37,11 @@ export default function SEOCampaigns() {
         </div>
 
         {/* Two-column layout: industries + achievements */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-6 lg:gap-8 items-start">
 
           {/* Left: Industries served */}
           <div
-            className="reveal lg:w-[320px] flex-shrink-0 bg-white rounded-3xl p-8 border border-blue-100"
+            className="reveal md:w-[280px] lg:w-[320px] flex-shrink-0 bg-white rounded-3xl p-5 md:p-6 lg:p-8 border border-blue-100"
             style={{ boxShadow: '0 8px 40px rgba(37,99,235,0.08)' }}
           >
             <h3 className="text-[14px] font-bold text-slate-800 uppercase tracking-wider mb-6">

@@ -57,7 +57,7 @@ export default function ContactHero() {
       />
 
       {/* Central content */}
-      <div className="relative z-10 max-w-[680px] mx-auto px-7 flex flex-col items-center text-center py-20">
+      <div className="relative z-10 max-w-[680px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center py-12 sm:py-16 md:py-20">
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full

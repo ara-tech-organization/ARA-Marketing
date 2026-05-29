@@ -27,7 +27,7 @@ export default function ECIntro() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="text-center mb-12 reveal">

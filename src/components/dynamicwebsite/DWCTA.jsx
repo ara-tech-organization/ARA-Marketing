@@ -31,7 +31,7 @@ export default function DWCTA() {
       <div className="hidden sm:block absolute -top-16 -left-16 w-[320px] h-[320px] rounded-full border border-blue-300/25 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[280px] h-[280px] rounded-full border border-sky-300/20 pointer-events-none animate-[spin_35s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
 
           {/* ── Left: text ── */}

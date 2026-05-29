@@ -57,12 +57,12 @@ export default function SEOServices() {
   const tab = tabs[active]
 
   return (
-    <section id="seo-services" className="py-24 bg-white relative">
+    <section id="seo-services" className="py-12 md:py-16 lg:py-24 bg-white relative">
 
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="text-center mb-14 reveal">
+        <div className="text-center mb-8 md:mb-10 lg:mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> SEO Services
@@ -77,17 +77,17 @@ export default function SEOServices() {
         </div>
 
         {/* ── Layout: vertical sidebar + content ── */}
-        <div className="reveal flex flex-col lg:flex-row gap-6 items-start">
+        <div className="reveal flex flex-col md:flex-row gap-4 md:gap-6 items-start">
 
-          {/* Left: vertical tab nav */}
-          <div className="lg:w-[220px] flex-shrink-0 flex flex-row lg:flex-col gap-2 overflow-x-auto pb-2 lg:pb-0">
+          {/* Left: vertical tab nav (horizontal scrollable chips on mobile) */}
+          <div className="w-full md:w-[200px] lg:w-[220px] flex-shrink-0 flex flex-row md:flex-col gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
             {tabs.map(({ id, icon: Icon, label, color }, i) => (
               <button
                 key={id}
                 type="button"
                 onClick={() => setActive(i)}
-                className={`flex-shrink-0 flex items-center gap-3 px-4 py-3.5 rounded-2xl text-left
-                  transition-all duration-300 w-full
+                className={`flex-shrink-0 flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2.5 md:py-3.5 rounded-2xl text-left
+                  transition-all duration-300 md:w-full whitespace-nowrap
                   ${active === i
                     ? 'text-white shadow-lg'
                     : 'bg-white border border-slate-100 text-slate-600 hover:border-blue-100 hover:bg-blue-50/50'
@@ -98,13 +98,13 @@ export default function SEOServices() {
                 }
               >
                 <div
-                  className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300
-                    ${active === i ? 'bg-white/20' : 'bg-blue-50 text-blue-600'}`}
+                  className={`w-7 h-7 md:w-8 md:h-8 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300
+                    ${active === i ? 'bg-white/20' : 'bg-blue-50'}`}
                 >
-                  <Icon size={15} style={active === i ? { color: 'white' } : { color }} />
+                  <Icon size={13} style={active === i ? { color: 'white' } : { color }} />
                 </div>
-                <span className="text-[13px] font-semibold leading-tight">{label}</span>
-                {active === i && <ChevronRight size={14} className="ml-auto opacity-70 flex-shrink-0" />}
+                <span className="text-[12px] md:text-[13px] font-semibold leading-tight">{label}</span>
+                {active === i && <ChevronRight size={13} className="ml-auto opacity-70 flex-shrink-0 hidden md:block" />}
               </button>
             ))}
           </div>
@@ -114,13 +114,13 @@ export default function SEOServices() {
             style={{ boxShadow: '0 16px 60px rgba(0,0,0,0.07)' }}>
 
             {/* Image with overlay */}
-            <div className="relative overflow-hidden" style={{ height: 220 }}>
+            <div className="relative overflow-hidden" style={{ height: 'clamp(160px, 30vw, 220px)' }}>
               <img src={tab.imgSrc} alt={tab.imgAlt} loading="lazy"
                 className="w-full h-full object-cover" />
               <div className="absolute inset-0"
                 style={{ background: `linear-gradient(90deg, ${tab.color}70 0%, transparent 60%)` }} />
               {/* Tag + H3 */}
-              <div className="absolute inset-0 flex flex-col justify-end p-7">
+              <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5 md:p-7">
                 <span className="inline-flex self-start px-3 py-1 text-white text-[10px] font-bold
                   uppercase tracking-wider rounded-xl mb-3"
                   style={{ background: tab.color }}>
@@ -133,7 +133,7 @@ export default function SEOServices() {
             </div>
 
             {/* Body */}
-            <div className="p-7 lg:p-8" style={{ background: `${tab.bgLight}30` }}>
+            <div className="p-4 md:p-6 lg:p-8" style={{ background: `${tab.bgLight}30` }}>
               <p className="text-[14px] text-slate-600 leading-[1.85] mb-7">{tab.desc}</p>
 
               <ul className="space-y-2.5 mb-8">

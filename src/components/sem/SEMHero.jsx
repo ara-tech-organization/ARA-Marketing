@@ -60,7 +60,7 @@ export default function SEMHero() {
       <div className="absolute bottom-20 right-[6%] w-20 h-20 rounded-full border-[1.5px] border-blue-300/40 pointer-events-none" />
       <div className="absolute top-1/3 right-[3%] w-14 h-14 rounded-full border border-indigo-200/40 pointer-events-none" />
 
-      <div className="relative max-w-[1100px] mx-auto px-7 py-10 w-full">
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7 py-10 w-full">
         <div className="text-center animate-hero-enter">
 
           {/* Breadcrumb */}
@@ -148,7 +148,7 @@ export default function SEMHero() {
             </div>
 
             {/* 4 campaign cards */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
               {campaignTypes.map(({ icon: Icon, label, roas, sub, color, grad }) => (
                 <div key={label}
                   className="group rounded-2xl overflow-hidden bg-white border border-slate-100

@@ -48,7 +48,7 @@ export default function SEMServices() {
       <div className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="text-center mb-12 reveal">
@@ -66,7 +66,7 @@ export default function SEMServices() {
         </div>
 
         {/* ── 4 service selector cards ── */}
-        <div className="reveal grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
+        <div className="reveal grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
           {services.map(({ id, icon: Icon, label, color, tag, tagBg }, i) => (
             <button
               key={id}

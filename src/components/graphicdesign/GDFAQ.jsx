@@ -47,7 +47,7 @@ export default function GDFAQ() {
         }}
       />
 
-      <div className="max-w-[860px] mx-auto px-7 relative">
+      <div className="max-w-[860px] mx-auto px-4 sm:px-6 md:px-7 relative">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

@@ -74,7 +74,7 @@ export default function MAFAQ() {
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.05) 0%,transparent 65%)' }} />
 
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-7">
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

@@ -184,7 +184,7 @@ export default function Hero() {
       </div>
 
       {/* ── Central content (no parallax) ── */}
-      <div className="relative z-10 max-w-[700px] mx-auto px-7 flex flex-col items-center text-center">
+      <div className="relative z-10 max-w-[700px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center">
 
         {/* Chip */}
         <div className="inline-flex items-center gap-2 px-5 py-2 mb-5 rounded-full

@@ -97,7 +97,7 @@ export default function SMMWhyUs() {
         style={{ border: '1.5px solid rgba(96,165,250,0.18)' }}
       />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-10 reveal">

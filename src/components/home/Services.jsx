@@ -45,7 +45,7 @@ const otherTags = [
 export default function Services() {
   return (
     <section id="services" className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Result-Driven intro section */}
         <div className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">

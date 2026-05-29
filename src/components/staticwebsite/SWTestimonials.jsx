@@ -28,7 +28,7 @@ const stats = [
 export default function SWTestimonials() {
   return (
     <section className="py-14 sm:py-20 bg-white relative overflow-hidden">
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-10 reveal">

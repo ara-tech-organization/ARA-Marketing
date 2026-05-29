@@ -16,7 +16,7 @@ export default function SMMHero() {
         style={{ background: 'radial-gradient(circle, rgba(224,242,254,0.55) 0%, transparent 70%)' }}
       />
 
-      <div className="relative max-w-[1200px] mx-auto px-7 w-full py-20">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 w-full py-20">
         <div className="grid lg:grid-cols-[55%_45%] gap-16 items-center">
 
           {/* Left Content */}

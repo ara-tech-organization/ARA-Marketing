@@ -47,7 +47,7 @@ export default function DWHero() {
       <div className="hidden md:block absolute top-16 left-[4%] w-48 h-48 rounded-full border border-blue-500/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute top-16 right-[4%] w-32 h-32 rounded-full border border-sky-400/08 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7 py-14 sm:py-18 lg:py-20 w-full">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-14 sm:py-18 lg:py-20 w-full">
 
         {/* ── Center: Text block ── */}
         <div className="text-center animate-hero-enter max-w-[800px] mx-auto mb-12 sm:mb-16">

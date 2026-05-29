@@ -12,7 +12,7 @@ export default function MACTA() {
     <section id="contact"
       className="relative overflow-hidden py-16 sm:py-24">
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left: CTA Content */}

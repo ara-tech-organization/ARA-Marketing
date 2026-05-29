@@ -23,7 +23,7 @@ export default function ECWhoShould() {
       <div className="hidden sm:block absolute top-20 left-20 w-[200px] h-[200px] rounded-full border pointer-events-none animate-[spin_40s_linear_infinite]"
         style={{ borderColor: 'rgba(37,99,235,0.18)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-10 sm:mb-14 reveal">

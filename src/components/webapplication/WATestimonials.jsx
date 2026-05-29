@@ -62,7 +62,7 @@ export default function WATestimonials() {
         "
       </div>
 
-      <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-8">
 
         {/* Header */}
         <div className="text-center mb-10 sm:mb-14 reveal">

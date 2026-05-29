@@ -60,7 +60,7 @@ export default function Industries() {
           borderRadius: '8px',
         }} />
 
-      <div className="max-w-[1200px] mx-auto px-7 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

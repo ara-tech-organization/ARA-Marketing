@@ -109,7 +109,7 @@ export default function ContactMain() {
   const inputBlur = { borderColor: 'rgba(255,255,255,0.22)', boxShadow: 'none' }
 
   return (
-    <section className="relative py-20" style={{ background: '#071a36' }}>
+    <section className="relative py-12 md:py-16 lg:py-20" style={{ background: '#071a36' }}>
 
       {/* Subtle mid-page orb */}
       <div className="absolute pointer-events-none rounded-full"
@@ -121,7 +121,7 @@ export default function ContactMain() {
           background: 'radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 65%)' }}
       />
 
-      <div className="max-w-[1200px] mx-auto px-5 sm:px-7 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
 
         {/* ── Info cards row ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 reveal">
@@ -265,18 +265,18 @@ export default function ContactMain() {
             </div>
 
             {/* ── Tab content ── */}
-            <div className="relative z-10 p-7 sm:p-10">
+            <div className="relative z-10 p-4 sm:p-6 md:p-7 lg:p-10">
 
               {/* INFO TAB — Bento grid */}
               {tab === 'info' && (
                 <div className="flex flex-col gap-3">
 
                   {/* Bento: Brand (row-span 2) + 4 contact cells */}
-                  <div className="grid gap-3" style={{ gridTemplateColumns: '1fr 1fr 1fr', gridTemplateRows: 'auto auto' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 
-                    {/* Brand cell — spans 2 rows */}
-                    <div className="rounded-2xl p-5 flex flex-col"
-                      style={{ background: 'linear-gradient(145deg, rgba(37,99,235,0.22) 0%, rgba(99,102,241,0.15) 100%)', border: '1px solid rgba(37,99,235,0.3)', gridRow: '1 / 3', gridColumn: '1 / 2' }}>
+                    {/* Brand cell — spans 2 rows on sm+ */}
+                    <div className="rounded-2xl p-5 flex flex-col sm:row-span-2"
+                      style={{ background: 'linear-gradient(145deg, rgba(37,99,235,0.22) 0%, rgba(99,102,241,0.15) 100%)', border: '1px solid rgba(37,99,235,0.3)' }}>
                       <div className="w-10 h-10 rounded-[12px] flex items-center justify-center mb-4"
                         style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.18)' }}>
                         <Zap size={18} className="text-white" />

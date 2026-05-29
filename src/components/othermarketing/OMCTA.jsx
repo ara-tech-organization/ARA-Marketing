@@ -21,7 +21,7 @@ export default function OMCTA() {
       style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#f5f3ff 100%)' }}>
 
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Split layout */}
         <div className="flex flex-col lg:flex-row gap-12 items-center reveal">

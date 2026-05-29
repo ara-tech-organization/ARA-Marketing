@@ -32,7 +32,7 @@ export default function SWHero() {
       <div className="hidden md:block absolute top-20 right-[6%] w-52 h-52 rounded-full border border-blue-200/40 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-24 left-[4%] w-36 h-36 rounded-full border border-sky-200/35 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7 py-12 sm:py-16 lg:py-20 w-full">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch">
 
           {/* ── Left: Text ── */}

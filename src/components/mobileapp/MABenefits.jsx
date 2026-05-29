@@ -16,7 +16,7 @@ export default function MABenefits() {
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.03) 0%,transparent 65%)' }} />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-start">
 
           {/* Left: intro */}

@@ -13,7 +13,7 @@ export default function GDIntro() {
         }}
       />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Section label */}
         <div className="reveal mb-10">

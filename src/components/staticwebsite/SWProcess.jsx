@@ -51,7 +51,7 @@ export default function SWProcess() {
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 65%)' }}
       />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

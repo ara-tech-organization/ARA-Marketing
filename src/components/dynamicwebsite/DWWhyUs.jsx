@@ -28,7 +28,7 @@ export default function DWWhyUs() {
       <div className="absolute bottom-0 left-0 w-[260px] sm:w-[400px] h-[260px] sm:h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.20) 0%, transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header row ── */}
         <div className="flex flex-col lg:flex-row lg:items-end gap-6 mb-12 sm:mb-16 reveal">

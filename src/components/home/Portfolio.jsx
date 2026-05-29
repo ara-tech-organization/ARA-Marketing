@@ -32,7 +32,7 @@ const industries = ['Healthcare', 'Education', 'Retail', 'Real Estate', 'Restaur
 export default function Portfolio() {
   return (
     <section id="portfolio" className="py-24 bg-white">
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="flex flex-wrap justify-between items-center gap-6 mb-14 reveal">

@@ -51,7 +51,7 @@ export default function ECWhyUs() {
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.035) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
       <div className="hidden sm:block absolute -bottom-20 -right-20 w-[360px] h-[360px] rounded-full border border-blue-100/40 pointer-events-none animate-[spin_40s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 reveal">

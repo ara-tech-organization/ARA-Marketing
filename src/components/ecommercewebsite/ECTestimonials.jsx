@@ -43,7 +43,7 @@ export default function ECTestimonials() {
       <div className="hidden sm:block absolute top-10 left-10 w-[160px] h-[160px] rounded-full border pointer-events-none animate-[spin_38s_linear_infinite]"
         style={{ borderColor: 'rgba(37,99,235,0.12)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

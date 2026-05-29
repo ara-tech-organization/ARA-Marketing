@@ -47,8 +47,8 @@ export default function AboutHero() {
           transform: 'rotate(20deg)' }} />
 
       {/* ── Content ── */}
-      <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-7 py-16 sm:py-24">
-        <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-center">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16 md:py-20 lg:py-24">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-12 xl:gap-16 items-center">
 
           {/* ── Left: text ── */}
           <div className="flex-1 reveal-left">
@@ -97,7 +97,7 @@ export default function AboutHero() {
             </div>
 
             {/* Stats grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-9">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 md:mb-9">
               {stats.map(({ icon: Icon, val, label }) => (
                 <div key={label}
                   className="flex flex-col gap-1.5 p-4 rounded-2xl transition-all duration-300
@@ -132,8 +132,8 @@ export default function AboutHero() {
           <div className="w-full lg:w-[460px] xl:w-[500px] flex-shrink-0 reveal-right">
             <div className="relative">
 
-              {/* Outer decorative dashed border */}
-              <div className="absolute pointer-events-none rounded-[32px]"
+              {/* Outer decorative dashed border — hidden on mobile to prevent overflow */}
+              <div className="absolute hidden sm:block pointer-events-none rounded-[32px]"
                 style={{ inset: '-14px', border: '1.5px dashed rgba(37,99,235,0.2)' }} />
 
               {/* Blue accent square behind image */}
@@ -156,9 +156,9 @@ export default function AboutHero() {
               </div>
 
               {/* Floating badge — trusted agency */}
-              <div className="absolute -bottom-6 -left-6 z-20 rounded-2xl p-4"
+              <div className="absolute bottom-3 left-3 sm:-bottom-6 sm:-left-6 z-20 rounded-2xl p-3 sm:p-4"
                 style={{ background: 'white', border: '1.5px solid #e2e8f0',
-                  boxShadow: '0 12px 40px rgba(0,0,0,0.12)', minWidth: '168px' }}>
+                  boxShadow: '0 12px 40px rgba(0,0,0,0.12)', minWidth: '148px' }}>
                 <div className="flex items-center gap-1 mb-1.5">
                   {[1,2,3,4,5].map(i => <Star key={i} size={10} fill="#f59e0b" color="#f59e0b" />)}
                   <span className="text-[10px] font-bold text-slate-500 ml-1">5.0</span>
@@ -168,7 +168,7 @@ export default function AboutHero() {
               </div>
 
               {/* Floating badge — projects count */}
-              <div className="absolute -top-5 -right-5 z-20 rounded-2xl px-5 py-3.5"
+              <div className="absolute top-3 right-3 sm:-top-5 sm:-right-5 z-20 rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5"
                 style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
                   boxShadow: '0 12px 36px rgba(37,99,235,0.4)' }}>
                 <p className="text-[26px] font-black text-white leading-none">150+</p>

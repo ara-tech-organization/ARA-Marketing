@@ -41,7 +41,7 @@ function StepCard({ num, icon: Icon, title, desc, color }) {
 export default function SEMProcess() {
   return (
     <section className="py-14 bg-white overflow-hidden">
-      <div className="max-w-[1100px] mx-auto px-7">
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 reveal">

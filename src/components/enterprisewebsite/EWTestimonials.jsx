@@ -41,7 +41,7 @@ export default function EWTestimonials() {
       <div className="hidden lg:block absolute -bottom-16 -right-16 w-[260px] h-[260px] rounded-full pointer-events-none"
         style={{ border: '1.5px solid rgba(124,58,237,0.07)', animation: 'spin 40s linear infinite reverse' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* ── Header ── */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">

@@ -36,7 +36,7 @@ export default function WAFAQ() {
       className="py-16 sm:py-20 lg:py-28"
       style={{ background: 'linear-gradient(180deg, #f0f7ff 0%, white 100%)' }}
     >
-      <div className="max-w-[820px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-7">
+      <div className="max-w-[820px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span

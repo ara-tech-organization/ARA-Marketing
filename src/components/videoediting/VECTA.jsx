@@ -20,7 +20,7 @@ export default function VECTA() {
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[320px] h-[320px] rounded-full border border-white/08 pointer-events-none animate-[spin_35s_linear_infinite_reverse]" />
       <div className="hidden sm:block absolute -bottom-8 -right-8 w-[200px] h-[200px] rounded-full border border-white/06 pointer-events-none" />
 
-      <div className="relative max-w-[860px] mx-auto px-4 sm:px-6 lg:px-7 text-center reveal">
+      <div className="relative max-w-[860px] mx-auto px-4 sm:px-6 md:px-7 text-center reveal">
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full text-[10px] sm:text-[11px]

@@ -65,7 +65,7 @@ export default function WAServices() {
 
   return (
     <section id="wa-services" className="py-16 sm:py-20 lg:py-28 bg-white">
-      <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-7">
+      <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span

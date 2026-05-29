@@ -25,7 +25,7 @@ export default function GDHero() {
       <div className="absolute top-[72px] left-0 right-0 h-px"
         style={{ background: 'linear-gradient(90deg, transparent, rgba(37,99,235,0.35), transparent)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7 w-full py-16">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 w-full py-16">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
           {/* ── Left ── */}

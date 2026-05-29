@@ -17,7 +17,7 @@ export default function DWBenefits() {
       <div className="hidden sm:block absolute -top-20 -right-20 w-[340px] h-[340px] rounded-full border border-blue-100/50 pointer-events-none animate-[spin_34s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full border border-sky-100/40 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="text-center mb-10 sm:mb-14 reveal">

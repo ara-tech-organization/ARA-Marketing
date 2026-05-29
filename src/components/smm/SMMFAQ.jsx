@@ -38,7 +38,7 @@ export default function SMMFAQ() {
       className="py-24"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}
     >
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

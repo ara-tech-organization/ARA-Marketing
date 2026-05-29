@@ -13,7 +13,7 @@ const techs = [
 export default function WebDevTech() {
   return (
     <section className="py-24" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #f0f6ff 100%)' }}>
-      <div className="max-w-[1200px] mx-auto px-7">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600

@@ -46,7 +46,7 @@ export default function VEHero() {
       <div className="absolute top-[38%] left-0 right-0 h-px pointer-events-none"
         style={{ background: 'linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.22) 30%, rgba(56,189,248,0.30) 50%, rgba(37,99,235,0.18) 70%, transparent 100%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7 py-12 sm:py-16 lg:py-20 w-full">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
 
           {/* ── Left: content ── */}

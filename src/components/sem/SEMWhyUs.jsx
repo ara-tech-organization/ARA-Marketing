@@ -13,7 +13,7 @@ export default function SEMWhyUs() {
   return (
     <section className="relative py-24 overflow-hidden bg-white">
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="flex flex-col lg:flex-row gap-8 items-end mb-14 reveal">

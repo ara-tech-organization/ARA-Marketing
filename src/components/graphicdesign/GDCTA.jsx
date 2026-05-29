@@ -10,7 +10,7 @@ const highlights = [
 export default function GDCTA() {
   return (
     <section className="relative overflow-hidden py-24 bg-white">
-      <div className="relative max-w-[1200px] mx-auto px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div
           className="reveal grid lg:grid-cols-[1.1fr_0.9fr] rounded-3xl overflow-hidden"
           style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}

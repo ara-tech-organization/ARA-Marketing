@@ -34,7 +34,7 @@ export default function AboutMV() {
         style={{ top: '15%', right: '8%', width: '40px', height: '40px',
           border: '1.5px solid rgba(37,99,235,0.2)', borderRadius: '8px', transform: 'rotate(25deg)' }} />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-7">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Section header */}
         <div className="text-center mb-16 reveal">

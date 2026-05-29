@@ -25,7 +25,7 @@ export default function OMHero() {
       <div className="absolute top-16 left-[12%] w-10 h-10 rounded-full border border-blue-300/25 pointer-events-none" />
       <div className="absolute top-28 right-[14%] w-6 h-6 rounded-full border border-violet-300/20 pointer-events-none" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Row 1: breadcrumb left  ·  channel tags right ── */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-10 pb-8 gap-3">

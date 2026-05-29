@@ -32,7 +32,7 @@ export default function CMSWhoShould() {
         <span className="text-[160px] sm:text-[220px] font-black text-slate-50 leading-none tracking-tighter">WP</span>
       </div>
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20">
 

@@ -10,16 +10,16 @@ const services = [
 
 export default function SEOIntro() {
   return (
-    <section className="py-24 overflow-hidden" style={{ background: '#ffffff' }}>
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section className="py-12 md:py-16 lg:py-24 overflow-hidden" style={{ background: '#ffffff' }}>
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Split layout: image left, content right ── */}
-        <div className="flex flex-col lg:flex-row gap-14 items-stretch mb-16">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-14 items-stretch mb-10 md:mb-12 lg:mb-16">
 
           {/* Left: visual card */}
-          <div className="reveal lg:w-[460px] flex-shrink-0">
+          <div className="reveal md:w-[380px] lg:w-[460px] flex-shrink-0">
             <div className="relative rounded-3xl overflow-hidden h-full"
-              style={{ minHeight: 520, boxShadow: '0 24px 80px rgba(37,99,235,0.14)' }}>
+              style={{ minHeight: 280, boxShadow: '0 24px 80px rgba(37,99,235,0.14)' }}>
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=700&fit=crop&auto=format&q=80"
                 alt="AI-Driven SEO Strategies in Thanjavur - Ara Discover Marketing"

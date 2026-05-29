@@ -44,7 +44,7 @@ export default function EWHero() {
       <div className="hidden md:block absolute top-20 left-[3%] w-40 h-40 rounded-full border border-blue-500/10 pointer-events-none animate-[spin_50s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-24 left-[8%] w-24 h-24 rounded-full border border-purple-500/08 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-20 w-full">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 py-14 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
 
           {/* ── LEFT: Text ── */}

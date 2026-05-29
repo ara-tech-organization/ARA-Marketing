@@ -55,7 +55,7 @@ export default function AboutCEO() {
           border: '1.5px dashed rgba(14,165,233,0.3)', borderRadius: '10px',
           transform: 'rotate(15deg)' }} />
 
-      <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-7">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Section header */}
         <div className="text-center mb-16 reveal">

@@ -53,7 +53,7 @@ export default function GDProcess() {
         }}
       />
 
-      <div className="relative max-w-[1100px] mx-auto px-7">
+      <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

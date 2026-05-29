@@ -47,7 +47,7 @@ const stats = [
 export default function SEOStats() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-12 md:py-16 lg:py-24"
       style={{ background: 'linear-gradient(135deg, #dbeafe 0%, #e0f2fe 50%, #ede9fe 100%)' }}
     >
       <div className="absolute -top-20 -left-20 w-[460px] h-[460px] rounded-full pointer-events-none"
@@ -57,11 +57,11 @@ export default function SEOStats() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.15) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-7">
-        <div className="flex flex-col lg:flex-row gap-14 items-start">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-14 items-start">
 
           {/* Left: Header */}
-          <div className="lg:w-[380px] flex-shrink-0 reveal">
+          <div className="md:w-[320px] lg:w-[380px] flex-shrink-0 reveal">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6 shadow-sm">
               <TrendingUp size={11} /> Our Results
@@ -86,7 +86,7 @@ export default function SEOStats() {
 
           {/* Right: Stats rows */}
           <div
-            className="flex-1 bg-white/80 backdrop-blur-sm rounded-3xl border border-white/90 px-7 py-2"
+            className="flex-1 bg-white/80 backdrop-blur-sm rounded-3xl border border-white/90 px-4 py-2 sm:px-6 md:px-7"
             style={{ boxShadow: '0 16px 60px rgba(37,99,235,0.10)' }}
           >
             {stats.map(s => <StatRow key={s.label} {...s} />)}

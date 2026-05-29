@@ -47,7 +47,7 @@ export default function SWWhyUs() {
         style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.05) 0%, transparent 65%)' }}
       />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
 
           {/* ── Left: Intro block ── */}

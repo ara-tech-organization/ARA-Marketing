@@ -47,7 +47,7 @@ export default function WACTA() {
       <div className="absolute bottom-0 left-0 w-[260px] h-[260px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.08) 0%, transparent 65%)' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-8">
 
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-stretch">
 

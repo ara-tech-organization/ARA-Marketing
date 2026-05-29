@@ -29,7 +29,7 @@ export default function CTA() {
         style={{ background: 'rgba(96,165,250,0.07)', bottom: '-160px', left: '-100px' }}
       />
 
-      <div className="max-w-[1200px] mx-auto px-7 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
         <div className="max-w-[720px] mx-auto reveal">
           <div
             className="cta-border-anim rounded-[20px] sm:rounded-[32px] p-6 sm:p-12"

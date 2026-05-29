@@ -86,7 +86,7 @@ export default function CMSFAQ() {
       <div className="absolute inset-0 pointer-events-none opacity-20"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.1) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20 items-start">
 
           {/* ── Left: sticky panel ── */}
