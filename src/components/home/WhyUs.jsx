@@ -57,7 +57,7 @@ export default function WhyUs() {
           {/* Left: Dark credential panel */}
           <div
             className="hidden lg:flex reveal-left flex-col rounded-[28px] overflow-hidden"
-            style={{ background: '#050d1a' }}
+            style={{ background: '#071a36' }}
           >
             {/* Image */}
             <div className="relative h-52 flex-shrink-0 overflow-hidden">
@@ -67,7 +67,7 @@ export default function WhyUs() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(to top, #050d1a 0%, transparent 60%)' }}
+                style={{ background: 'linear-gradient(to top, #071a36 0%, transparent 60%)' }}
               />
             </div>
 

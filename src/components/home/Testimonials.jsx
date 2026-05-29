@@ -36,7 +36,7 @@ function TestiCard({ t, featured }) {
           ? 'border hover:shadow-blue-900/40'
           : 'bg-white border border-blue-100 hover:border-blue-300 hover:shadow-blue-100/80'
         }`}
-        style={featured ? { background: '#0a1628', borderColor: 'rgba(37,99,235,0.3)' } : {}}
+        style={featured ? { background: '#0d2244', borderColor: 'rgba(37,99,235,0.3)' } : {}}
     >
       {/* Stars */}
       <div className="flex gap-1 mb-4">

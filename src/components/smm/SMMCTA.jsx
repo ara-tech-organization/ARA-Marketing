@@ -4,7 +4,7 @@ export default function SMMCTA() {
   return (
     <section
       className="relative overflow-hidden py-24"
-      style={{ background: 'linear-gradient(135deg, #0a1628 0%, #0f2245 50%, #0a1628 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #0d2244 0%, #0f2245 50%, #0d2244 100%)' }}
     >
       {/* Decorative orbs */}
       <div

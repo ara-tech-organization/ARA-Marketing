@@ -18,7 +18,7 @@ export default function CMSHero() {
   return (
     <section
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(145deg, #040c1a 0%, #050d1a 55%, #040c1a 100%)' }}
+      style={{ background: 'linear-gradient(145deg, #040c1a 0%, #071a36 55%, #040c1a 100%)' }}
     >
       {/* Background orbs */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] rounded-full pointer-events-none"

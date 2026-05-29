@@ -27,7 +27,7 @@ export default function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[72px]"
-      style={{ background: '#050d1a' }}
+      style={{ background: '#071a36' }}
     >
       {/* ── Layer 0: Deep BG orbs (slowest) ── */}
       <div className="absolute pointer-events-none rounded-full"

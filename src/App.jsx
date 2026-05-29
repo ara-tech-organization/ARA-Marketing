@@ -15,6 +15,8 @@ import EcommerceWebsitePage      from './pages/EcommerceWebsitePage'
 import EnterpriseWebsitePage     from './pages/EnterpriseWebsitePage'
 import WebAppPage                from './pages/WebAppPage'
 import MobileAppPage            from './pages/MobileAppPage'
+import AboutUsPage               from './pages/AboutUsPage'
+import ContactPage               from './pages/ContactPage'
 import './index.css'
 
 function ScrollToTop() {
@@ -45,6 +47,8 @@ export default function App() {
         <Route path="/services/enterprise-website-development"         element={<EnterpriseWebsitePage />} />
         <Route path="/services/web-application-development"             element={<WebAppPage />} />
         <Route path="/services/mobile-application-development"        element={<MobileAppPage />} />
+        <Route path="/about"                                           element={<AboutUsPage />}   />
+        <Route path="/contact"                                         element={<ContactPage />}   />
       </Routes>
     </BrowserRouter>
   )

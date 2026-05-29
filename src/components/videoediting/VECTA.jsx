@@ -3,7 +3,7 @@ import { Film, ArrowRight, ArrowUpRight, Rocket } from 'lucide-react'
 export default function VECTA() {
   return (
     <section className="relative py-20 sm:py-24 lg:py-28 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #050d1a 0%, #0f1f4a 35%, #1a0a3d 70%, #0a0a0f 100%)' }}>
+      style={{ background: 'linear-gradient(135deg, #071a36 0%, #0f1f4a 35%, #1a0a3d 70%, #0a0a0f 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.08) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />

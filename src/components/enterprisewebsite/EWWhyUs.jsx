@@ -112,7 +112,7 @@ function WhyCard({ num, Icon, title, body, color, grad, border, tag }) {
 export default function EWWhyUs() {
   return (
     <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(145deg,#040e1f 0%,#0a1628 55%,#060f22 100%)' }}>
+      style={{ background: 'linear-gradient(145deg,#040e1f 0%,#0d2244 55%,#060f22 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

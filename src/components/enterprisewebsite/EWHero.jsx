@@ -150,7 +150,7 @@ export default function EWHero() {
                 style={{ background: 'radial-gradient(ellipse, rgba(124,58,237,0.20) 0%, rgba(37,99,235,0.12) 40%, transparent 70%)' }} />
 
               <div className="relative rounded-3xl overflow-hidden border"
-                style={{ border: '1px solid rgba(255,255,255,0.10)', boxShadow: '0 40px 90px rgba(0,0,0,0.60)', background: '#0a1628' }}>
+                style={{ border: '1px solid rgba(255,255,255,0.10)', boxShadow: '0 40px 90px rgba(0,0,0,0.60)', background: '#0d2244' }}>
 
                 {/* Card header */}
                 <div className="flex items-center justify-between px-4 sm:px-5 py-3.5"
@@ -179,7 +179,7 @@ export default function EWHero() {
                     { icon: Users,     label: 'Active Users',  val: '12.4K', color: '#a78bfa' },
                     { icon: TrendingUp,label: 'Uptime',        val: '99.9%', color: '#34d399' },
                   ].map(({ icon: Icon, label, val, color }) => (
-                    <div key={label} className="px-2 sm:px-4 py-3 sm:py-4" style={{ background: '#0a1628' }}>
+                    <div key={label} className="px-2 sm:px-4 py-3 sm:py-4" style={{ background: '#0d2244' }}>
                       <div className="flex items-center gap-1 sm:gap-1.5 mb-1 sm:mb-1.5">
                         <Icon size={10} style={{ color }} />
                         <span className="text-[9px] sm:text-[10px] font-semibold hidden xs:inline sm:inline" style={{ color: 'rgba(255,255,255,0.38)' }}>{label}</span>

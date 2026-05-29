@@ -203,7 +203,7 @@ a { text-decoration: none; }
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0a1628; }
+::-webkit-scrollbar-track { background: #0d2244; }
 ::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 3px; }
 
 /* ── Dark section cursor glow ── */
@@ -285,7 +285,7 @@ a { text-decoration: none; }
 .mobile-menu-panel-dark {
   position: fixed;
   top: 72px; left: 0; right: 0;
-  background: #0a1628;
+  background: #0d2244;
   border-bottom: 1px solid rgba(37,99,235,0.2);
   box-shadow: 0 16px 48px rgba(0,0,0,.4);
   z-index: 999;

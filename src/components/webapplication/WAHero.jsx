@@ -40,7 +40,7 @@ export default function WAHero() {
   return (
     <section
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(160deg, #050d1a 0%, #0a1628 60%, #050d1a 100%)' }}
+      style={{ background: 'linear-gradient(160deg, #071a36 0%, #0d2244 60%, #071a36 100%)' }}
     >
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-25"
@@ -176,7 +176,7 @@ export default function WAHero() {
 
             {/* Browser chrome */}
             <div className="flex items-center gap-2 px-3 xs:px-4 py-2.5"
-              style={{ background: '#0d1117', borderBottom: '1px solid rgba(37,99,235,0.15)' }}>
+              style={{ background: '#081a36', borderBottom: '1px solid rgba(37,99,235,0.15)' }}>
               <div className="flex gap-1.5 flex-shrink-0">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
                 <div className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
@@ -194,7 +194,7 @@ export default function WAHero() {
             </div>
 
             {/* Dashboard UI */}
-            <div className="flex" style={{ background: '#0d1117', minHeight: '280px' }}>
+            <div className="flex" style={{ background: '#081a36', minHeight: '280px' }}>
 
               {/* Sidebar - hidden on xs, shown sm+ */}
               <div className="hidden sm:flex flex-col gap-1 w-44 flex-shrink-0 p-3"
@@ -333,7 +333,7 @@ export default function WAHero() {
           {/* Bottom gradient fade */}
           <div
             className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
-            style={{ background: 'linear-gradient(180deg, transparent, #050d1a)' }}
+            style={{ background: 'linear-gradient(180deg, transparent, #071a36)' }}
           />
         </div>
 

@@ -74,7 +74,7 @@ export default function WAWhyUs() {
           <div className="lg:w-[400px] flex-shrink-0 w-full reveal-right">
             <div
               className="rounded-3xl overflow-hidden"
-              style={{ background: '#050d1a', border: '1px solid rgba(37,99,235,0.3)', boxShadow: '0 24px 60px rgba(37,99,235,0.18)' }}
+              style={{ background: '#071a36', border: '1px solid rgba(37,99,235,0.3)', boxShadow: '0 24px 60px rgba(37,99,235,0.18)' }}
             >
               <div className="h-1" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#38bdf8)' }} />
 

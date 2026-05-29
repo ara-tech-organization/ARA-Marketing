@@ -157,7 +157,7 @@ export default function Navbar() {
       <nav
         ref={navRef}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-          bg-[#0a1628]/90 backdrop-blur-xl
+          bg-[#0d2244]/90 backdrop-blur-xl
           ${scrolled
             ? 'border-b border-blue-600/20 shadow-[0_4px_32px_rgba(0,0,0,.5)]'
             : 'border-b border-transparent'
@@ -257,16 +257,16 @@ export default function Navbar() {
               </div>
 
               {/* About Us */}
-              <a href="#about" className={navBtnClass(false, false)}>
+              <Link to="/about" onClick={closeAll} className={navBtnClass(isActive('/about'), false)}>
                 <Info size={14} className="opacity-50" />
                 About Us
-              </a>
+              </Link>
 
               {/* Contact Us */}
-              <a href="#contact" className={navBtnClass(false, false)}>
+              <Link to="/contact" onClick={closeAll} className={navBtnClass(isActive('/contact'), false)}>
                 <Phone size={14} className="opacity-50" />
                 Contact Us
-              </a>
+              </Link>
             </div>
 
             {/* CTA */}
@@ -341,7 +341,7 @@ export default function Navbar() {
                       className="flex flex-col gap-2 p-3 rounded-xl transition-all duration-200 cursor-pointer"
                       style={isItemActive
                         ? { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
-                        : { background: '#0a1628', border: '1px solid #1e3a5f' }
+                        : { background: '#0d2244', border: '1px solid #1e3a5f' }
                       }
                     >
                       <span className="flex items-center justify-between">
@@ -407,7 +407,7 @@ export default function Navbar() {
                       className="flex flex-col gap-2 p-3 rounded-xl transition-all duration-200"
                       style={isItemActive
                         ? { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
-                        : { background: '#0a1628', border: '1px solid #1e3a5f' }
+                        : { background: '#0d2244', border: '1px solid #1e3a5f' }
                       }
                     >
                       <span className="flex items-center justify-between">
@@ -434,32 +434,40 @@ export default function Navbar() {
           </div>
 
           {/* About Us */}
-          <a
-            href="#about"
+          <Link
+            to="/about"
             onClick={() => setOpen(false)}
-            className="flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
-              text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06]
-              border border-white/[0.06] transition-all duration-200"
+            className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
+              border transition-all duration-200
+              ${isActive('/about')
+                ? 'text-blue-400 bg-blue-600/10 border-blue-500/25'
+                : 'text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06] border-white/[0.06]'
+              }`}
           >
-            <span className="w-7 h-7 rounded-lg bg-indigo-600/20 flex items-center justify-center">
-              <Info size={13} className="text-indigo-400" />
+            <span className={`w-7 h-7 rounded-lg flex items-center justify-center
+              ${isActive('/about') ? 'bg-blue-600/25' : 'bg-indigo-600/20'}`}>
+              <Info size={13} className={isActive('/about') ? 'text-blue-400' : 'text-indigo-400'} />
             </span>
             About Us
-          </a>
+          </Link>
 
           {/* Contact Us */}
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             onClick={() => setOpen(false)}
-            className="flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
-              text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06]
-              border border-white/[0.06] transition-all duration-200"
+            className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
+              border transition-all duration-200
+              ${isActive('/contact')
+                ? 'text-blue-400 bg-blue-600/10 border-blue-500/25'
+                : 'text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06] border-white/[0.06]'
+              }`}
           >
-            <span className="w-7 h-7 rounded-lg bg-teal-600/20 flex items-center justify-center">
-              <Phone size={13} className="text-teal-400" />
+            <span className={`w-7 h-7 rounded-lg flex items-center justify-center
+              ${isActive('/contact') ? 'bg-blue-600/25' : 'bg-teal-600/20'}`}>
+              <Phone size={13} className={isActive('/contact') ? 'text-blue-400' : 'text-teal-400'} />
             </span>
             Contact Us
-          </a>
+          </Link>
 
           <div className="pt-2">
             <a

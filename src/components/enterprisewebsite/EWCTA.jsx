@@ -20,7 +20,7 @@ export default function EWCTA() {
 
   return (
     <section id="ew-cta" className="relative py-12 sm:py-16 lg:py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(150deg,#040e1f 0%,#0a1628 50%,#060f22 100%)' }}>
+      style={{ background: 'linear-gradient(150deg,#040e1f 0%,#0d2244 50%,#060f22 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

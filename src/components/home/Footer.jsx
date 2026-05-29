@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       className="text-white/65 pt-20 pb-9 border-t border-blue-600/20"
-      style={{ background: '#050d1a' }}
+      style={{ background: '#071a36' }}
     >
       <div className="max-w-[1200px] mx-auto px-7">
 
