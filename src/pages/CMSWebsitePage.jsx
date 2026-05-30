@@ -26,8 +26,8 @@ const cmsSchema = {
         '@type': 'LocalBusiness',
         name: 'Ara Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
-        email: 'aradicovertech02@gmail.com',
+        telephone: '+91 81100 25254',
+        email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Thanjavur',

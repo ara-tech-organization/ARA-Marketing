@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import {
-  Phone, Mail, MapPin, Clock, Send, User, MessageSquare,
-  ChevronDown, CheckCircle2, ArrowRight, Globe2, Link2,
-  Camera, MessageCircle, Loader2, Play, Zap
+  Phone, Mail, MapPin, Clock, Send, User,
+  ChevronDown, CheckCircle2, ArrowRight, Loader2
 } from 'lucide-react'
 
 const services = [
@@ -20,27 +19,27 @@ const infoCards = [
   {
     icon: Phone,
     label: 'Call Us',
-    value: '+91 98765 43210',
+    value: '(+91) 81100 25254',
     sub: 'Mon – Sat, 9 AM – 7 PM',
-    href: 'tel:+919876543210',
+    href: 'tel:+918110025254',
     color: '#2563eb',
     glow: 'rgba(37,99,235,0.35)',
   },
   {
     icon: Mail,
     label: 'Email Us',
-    value: 'aradicovertech02@gmail.com',
+    value: 'aradiscovermarketing@gmail.com',
     sub: 'We reply within 24 hours',
-    href: 'mailto:aradicovertech02@gmail.com',
+    href: 'mailto:aradiscovermarketing@gmail.com',
     color: '#7c3aed',
     glow: 'rgba(124,58,237,0.35)',
   },
   {
     icon: MapPin,
     label: 'Visit Us',
-    value: 'Thanjavur, Tamil Nadu',
-    sub: 'India — 613 001',
-    href: 'https://maps.google.com/?q=Thanjavur,Tamil+Nadu,India',
+    value: '67A, Giri Rd, Srinivasapuram',
+    sub: 'Thanjavur, Tamil Nadu 613009',
+    href: 'https://maps.google.com/?q=67A,+Giri+Rd,+Srinivasapuram,+Thanjavur,+Tamil+Nadu+613009',
     color: '#0891b2',
     glow: 'rgba(8,145,178,0.35)',
   },
@@ -55,15 +54,8 @@ const infoCards = [
   },
 ]
 
-const socials = [
-  { icon: Globe2,       label: 'Website',   href: '#' },
-  { icon: Camera,       label: 'Instagram',  href: '#' },
-  { icon: Link2,        label: 'LinkedIn',   href: '#' },
-  { icon: MessageCircle,label: 'WhatsApp',   href: '#' },
-]
 
 export default function ContactMain() {
-  const [tab, setTab] = useState('info')
   const [form, setForm] = useState({
     name: '', email: '', phone: '', service: '', message: ''
   })
@@ -180,7 +172,7 @@ export default function ContactMain() {
         </div>
 
         {/* ── Map left + Tabbed card right ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-6 mb-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-0">
 
           {/* LEFT: Google Map */}
           <div className="reveal reveal-left h-full">
@@ -193,11 +185,11 @@ export default function ContactMain() {
                   style={{ background: 'rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.25)' }}>
                   <MapPin size={15} style={{ color: '#60a5fa' }} />
                 </div>
-                <div>
-                  <p className="text-[13px] font-bold text-white" style={{ fontWeight: 700 }}>ARA Discover Marketing</p>
-                  <p className="text-[11px]" style={{ color: 'rgba(255,255,255,0.35)' }}>Thanjavur, Tamil Nadu, India</p>
+                <div className="min-w-0">
+                  <p className="text-[13px] font-bold text-white whitespace-nowrap" style={{ fontWeight: 700 }}>ARA Discover Marketing</p>
+                  <p className="text-[11px] truncate" style={{ color: 'rgba(255,255,255,0.35)' }}>67A, Giri Rd, Srinivasapuram, Thanjavur</p>
                 </div>
-                <a href="https://maps.google.com/?q=Thanjavur,Tamil+Nadu,India"
+                <a href="https://maps.google.com/?q=67A,+Giri+Rd,+Srinivasapuram,+Thanjavur,+Tamil+Nadu+613009"
                   target="_blank" rel="noopener noreferrer"
                   className="ml-auto inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-[12px] font-semibold transition-all duration-300 hover:bg-blue-500"
                   style={{ background: '#2563eb', color: '#fff', boxShadow: '0 4px 16px rgba(37,99,235,0.3)' }}>
@@ -208,7 +200,7 @@ export default function ContactMain() {
               <div className="relative flex-1" style={{ minHeight: '320px' }}>
                 <iframe
                   title="ARA Discover Marketing - Thanjavur Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62703.20254697282!2d79.10764249999999!3d10.78523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89cea453039%3A0xe113da9b1f632be4!2sThanjavur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0!2d79.1504!3d10.7730!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89cea453039%3A0xe113da9b1f632be4!2s67A%2C%20Giri%20Rd%2C%20Srinivasapuram%2C%20Thanjavur%2C%20Tamil%20Nadu%20613009!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin"
                   width="100%" height="100%"
                   style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) contrast(0.85) brightness(0.9)' }}
                   allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -236,186 +228,9 @@ export default function ContactMain() {
             <div className="absolute inset-0 pointer-events-none"
               style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
-            {/* ── Tab bar ── */}
-            <div className="relative z-10 flex items-center gap-2 p-5 pb-0">
-              {[
-                { id: 'info', label: 'Contact Info', icon: Phone },
-                { id: 'form', label: 'Send Message', icon: Send },
-              ].map(({ id, label, icon: Icon }) => {
-                const active = tab === id
-                return (
-                  <button
-                    key={id}
-                    onClick={() => setTab(id)}
-                    className="flex items-center gap-2 px-5 py-2.5 rounded-t-[14px] text-[13px] font-semibold transition-all duration-250"
-                    style={{
-                      background: active ? 'rgba(37,99,235,0.18)' : 'transparent',
-                      color: active ? '#93c5fd' : 'rgba(255,255,255,0.35)',
-                      borderBottom: active ? '2px solid #3b82f6' : '2px solid transparent',
-                    }}
-                  >
-                    <Icon size={14} />
-                    {label}
-                  </button>
-                )
-              })}
-              {/* divider line */}
-              <div className="flex-1 h-px mt-1 self-end mb-[2px]"
-                style={{ background: 'rgba(255,255,255,0.07)' }} />
-            </div>
-
-            {/* ── Tab content ── */}
+            {/* ── Form ── */}
             <div className="relative z-10 p-4 sm:p-6 md:p-7 lg:p-10">
-
-              {/* INFO TAB — Bento grid */}
-              {tab === 'info' && (
-                <div className="flex flex-col gap-3">
-
-                  {/* Bento: Brand (row-span 2) + 4 contact cells */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-
-                    {/* Brand cell — spans 2 rows on sm+ */}
-                    <div className="rounded-2xl p-5 flex flex-col sm:row-span-2"
-                      style={{ background: 'linear-gradient(145deg, rgba(37,99,235,0.22) 0%, rgba(99,102,241,0.15) 100%)', border: '1px solid rgba(37,99,235,0.3)' }}>
-                      <div className="w-10 h-10 rounded-[12px] flex items-center justify-center mb-4"
-                        style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.18)' }}>
-                        <Zap size={18} className="text-white" />
-                      </div>
-                      <h3 className="text-[16px] font-bold text-white leading-snug mb-1.5" style={{ fontWeight: 700 }}>
-                        ARA Discover<br />
-                        <span style={{ color: '#93c5fd' }}>Marketing</span>
-                      </h3>
-                      <p className="text-[12px] leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.45)' }}>
-                        AI-driven digital marketing, web development and branding solutions.
-                      </p>
-                      <div className="mt-auto">
-                        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full mb-4"
-                          style={{ background: 'rgba(16,185,129,0.12)', border: '1px solid rgba(16,185,129,0.25)' }}>
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse-dot" />
-                          <span className="text-[10px] font-bold" style={{ color: '#34d399' }}>Available Mon–Sat</span>
-                        </div>
-                        <div className="flex gap-2">
-                          {[
-                            { icon: Globe2,        label: 'Website',   color: '#60a5fa' },
-                            { icon: Camera,        label: 'Instagram', color: '#f472b6' },
-                            { icon: Link2,         label: 'LinkedIn',  color: '#38bdf8' },
-                            { icon: MessageCircle, label: 'WhatsApp',  color: '#34d399' },
-                          ].map(({ icon: Icon, label, color }) => (
-                            <a key={label} href="#" aria-label={label}
-                              className="w-8 h-8 rounded-[9px] flex items-center justify-center transition-all duration-200"
-                              style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.12)', color: 'rgba(255,255,255,0.35)' }}
-                              onMouseEnter={e => { e.currentTarget.style.background = color + '25'; e.currentTarget.style.borderColor = color + '55'; e.currentTarget.style.color = color; e.currentTarget.style.transform = 'translateY(-2px)' }}
-                              onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'; e.currentTarget.style.color = 'rgba(255,255,255,0.35)'; e.currentTarget.style.transform = 'translateY(0)' }}
-                            >
-                              <Icon size={13} />
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Phone */}
-                    <a href="tel:+919876543210"
-                      className="group rounded-2xl p-4 flex flex-col gap-2 transition-all duration-250"
-                      style={{ background: 'rgba(96,165,250,0.07)', border: '1px solid rgba(96,165,250,0.18)' }}
-                      onMouseEnter={e => { e.currentTarget.style.background = 'rgba(96,165,250,0.14)'; e.currentTarget.style.borderColor = 'rgba(96,165,250,0.4)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
-                      onMouseLeave={e => { e.currentTarget.style.background = 'rgba(96,165,250,0.07)'; e.currentTarget.style.borderColor = 'rgba(96,165,250,0.18)'; e.currentTarget.style.transform = 'translateY(0)' }}
-                    >
-                      <div className="w-8 h-8 rounded-[10px] flex items-center justify-center"
-                        style={{ background: 'rgba(96,165,250,0.15)', border: '1px solid rgba(96,165,250,0.3)' }}>
-                        <Phone size={14} style={{ color: '#60a5fa' }} />
-                      </div>
-                      <div>
-                        <p className="text-[9px] font-bold uppercase tracking-[0.12em] mb-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Phone</p>
-                        <p className="text-[13px] font-bold text-white leading-tight">+91 98765 43210</p>
-                        <p className="text-[10px] mt-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Mon–Sat, 9:30–6:30</p>
-                      </div>
-                      <ArrowRight size={12} className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#60a5fa' }} />
-                    </a>
-
-                    {/* Email */}
-                    <a href="mailto:aradicovertech02@gmail.com"
-                      className="group rounded-2xl p-4 flex flex-col gap-2 transition-all duration-250"
-                      style={{ background: 'rgba(167,139,250,0.07)', border: '1px solid rgba(167,139,250,0.18)' }}
-                      onMouseEnter={e => { e.currentTarget.style.background = 'rgba(167,139,250,0.14)'; e.currentTarget.style.borderColor = 'rgba(167,139,250,0.4)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
-                      onMouseLeave={e => { e.currentTarget.style.background = 'rgba(167,139,250,0.07)'; e.currentTarget.style.borderColor = 'rgba(167,139,250,0.18)'; e.currentTarget.style.transform = 'translateY(0)' }}
-                    >
-                      <div className="w-8 h-8 rounded-[10px] flex items-center justify-center"
-                        style={{ background: 'rgba(167,139,250,0.15)', border: '1px solid rgba(167,139,250,0.3)' }}>
-                        <Mail size={14} style={{ color: '#a78bfa' }} />
-                      </div>
-                      <div className="min-w-0">
-                        <p className="text-[9px] font-bold uppercase tracking-[0.12em] mb-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Email</p>
-                        <p className="text-[11px] font-bold text-white truncate">aradicovertech02</p>
-                        <p className="text-[11px] font-bold text-white truncate">@gmail.com</p>
-                      </div>
-                      <ArrowRight size={12} className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: '#a78bfa' }} />
-                    </a>
-
-                    {/* Address */}
-                    <div className="rounded-2xl p-4 flex flex-col gap-2"
-                      style={{ background: 'rgba(56,189,248,0.07)', border: '1px solid rgba(56,189,248,0.18)' }}>
-                      <div className="w-8 h-8 rounded-[10px] flex items-center justify-center"
-                        style={{ background: 'rgba(56,189,248,0.15)', border: '1px solid rgba(56,189,248,0.3)' }}>
-                        <MapPin size={14} style={{ color: '#38bdf8' }} />
-                      </div>
-                      <div>
-                        <p className="text-[9px] font-bold uppercase tracking-[0.12em] mb-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Address</p>
-                        <p className="text-[13px] font-bold text-white">Thanjavur</p>
-                        <p className="text-[10px] mt-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Tamil Nadu — 613 001</p>
-                      </div>
-                    </div>
-
-                    {/* Hours */}
-                    <div className="rounded-2xl p-4 flex flex-col gap-2"
-                      style={{ background: 'rgba(52,211,153,0.07)', border: '1px solid rgba(52,211,153,0.18)' }}>
-                      <div className="w-8 h-8 rounded-[10px] flex items-center justify-center"
-                        style={{ background: 'rgba(52,211,153,0.15)', border: '1px solid rgba(52,211,153,0.3)' }}>
-                        <Clock size={14} style={{ color: '#34d399' }} />
-                      </div>
-                      <div>
-                        <p className="text-[9px] font-bold uppercase tracking-[0.12em] mb-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Hours</p>
-                        <p className="text-[12px] font-bold text-white">Mon–Sat 9:30–6:30</p>
-                        <p className="text-[10px] mt-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>Sunday Closed</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Row 2: Why Choose Us full width */}
-                  <div className="rounded-2xl p-5"
-                    style={{ background: 'rgba(37,99,235,0.07)', border: '1px solid rgba(37,99,235,0.18)' }}>
-                    <p className="text-[10px] font-bold uppercase tracking-[0.12em] mb-3"
-                      style={{ color: 'rgba(255,255,255,0.3)' }}>Why Choose Us</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
-                      {[
-                        'Free initial consultation',
-                        'No long-term contract lock-in',
-                        'Dedicated account manager',
-                        'AI-powered marketing strategies',
-                        'Transparent monthly reporting',
-                      ].map(item => (
-                        <div key={item} className="flex items-center gap-2">
-                          <CheckCircle2 size={12} style={{ color: '#60a5fa', flexShrink: 0 }} />
-                          <span className="text-[12px]" style={{ color: 'rgba(255,255,255,0.6)' }}>{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* CTA */}
-                  <button
-                    onClick={() => setTab('form')}
-                    className="btn-glow w-full flex items-center justify-center gap-2 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                    style={{ background: 'linear-gradient(135deg, #2563eb, #4f46e5)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}
-                  >
-                    <MessageSquare size={15} /> Send Us a Message
-                  </button>
-                </div>
-              )}
-
-              {/* FORM TAB */}
-              {tab === 'form' && (
-                <>
+              <>
                   {submitted ? (
                     <div className="flex flex-col items-center justify-center py-12 text-center">
                       <div className="w-16 h-16 rounded-full flex items-center justify-center mb-5"
@@ -499,7 +314,7 @@ export default function ContactMain() {
                             <div className="relative">
                               <Phone size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
                                 style={{ color: 'rgba(255,255,255,0.25)' }} />
-                              <input type="tel" placeholder="+91 98765 43210" value={form.phone}
+                              <input type="tel" placeholder="(+91) 81100 25254" value={form.phone}
                                 onChange={handleChange('phone')}
                                 className="w-full pl-10 pr-4 py-3 text-[13.5px] placeholder:text-white/20"
                                 style={inputBase}
@@ -554,9 +369,7 @@ export default function ContactMain() {
                       </form>
                     </>
                   )}
-                </>
-              )}
-
+              </>
             </div>
           </div>
           </div>{/* end right column */}

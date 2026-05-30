@@ -25,7 +25,7 @@ const waSchema = {
         name: 'Ara Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
-        email: 'aradicovertech02@gmail.com',
+        email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Thanjavur',
@@ -53,50 +53,50 @@ const waSchema = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'Why is Ara Discover Marketing the trusted web application development company in Thanjavur?',
+          name: 'Which company provides the best web design and development services in Thanjavur?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We are a professional web application development agency in Thanjavur offering secure, scalable and AI-powered web solutions for your business.',
+            text: 'Ara Discover Marketing is the best web design and development company in thanjavur, providing custom websites, corporate websites and e-commerce solutions.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can you create web and mobile applications together?',
+          name: 'What are included services in website development?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, we are a web and mobile applications development company in Thanjavur, which builds coordinated and cross-platform solutions for a consistent user experience.',
+            text: 'Website development includes UI/UX design, Frontend & backend development, SEO optimisation, Mobile responsiveness and website maintenance.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Do you provide custom web app development services in Thanjavur?',
+          name: 'Do you develop custom websites for business?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Definitely. We offer custom web app development services in Thanjavur according to your unique business requirements.',
+            text: 'Yes, we are providing custom website development company in thanjavur solutions according to business needs and functionality requirements.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Do you build eCommerce websites?',
+          name: 'Why is a professional website necessary for business?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, we are a trustworthy e-commerce application development company in Thanjavur, and we offer e-commerce solutions that are AI-driven, secure, scalable and feature-rich.',
+            text: 'A professional website increases brand credibility, enhances online visibility, generates leads and improves customer trust.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Which types of industries do you serve?',
+          name: 'Do you provide SEO friendly website development?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We serve various kinds of niches and sectors, including eCommerce, healthcare, education, finance, logistics, and more.',
+            text: 'Yes, all websites are built with SEO optimised structure for better google rankings.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Do you provide post-launch support?',
+          name: 'Why choose Ara Discover Marketing for web development services?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, our dedicated web app team ensures continuous maintenance and updates for all website application development services in Thanjavur.',
+            text: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as a best website design and development company in thanjavur assures long-term and high-quality digital solutions.',
           },
         },
       ],

@@ -63,7 +63,7 @@ export default function CTA() {
                 <Phone size={16} /> Call Us Now
               </a>
               <a
-                href="mailto:aradicovertech02@gmail.com"
+                href="mailto:aradiscovermarketing@gmail.com"
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 text-white
                   glass border border-white/20 rounded-full font-semibold text-sm
                   transition-all duration-300 hover:border-white/40 hover:bg-white/10 hover:-translate-y-0.5"

@@ -17,6 +17,8 @@ import WebAppPage                from './pages/WebAppPage'
 import MobileAppPage            from './pages/MobileAppPage'
 import AboutUsPage               from './pages/AboutUsPage'
 import ContactPage               from './pages/ContactPage'
+import PrivacyPolicyPage         from './pages/PrivacyPolicyPage'
+import TermsConditionsPage       from './pages/TermsConditionsPage'
 import './index.css'
 
 function ScrollToTop() {
@@ -49,6 +51,8 @@ export default function App() {
         <Route path="/services/mobile-application-development"        element={<MobileAppPage />} />
         <Route path="/about"                                           element={<AboutUsPage />}   />
         <Route path="/contact"                                         element={<ContactPage />}   />
+        <Route path="/privacy-policy"                                  element={<PrivacyPolicyPage />}   />
+        <Route path="/terms-and-conditions"                            element={<TermsConditionsPage />} />
       </Routes>
     </BrowserRouter>
   )

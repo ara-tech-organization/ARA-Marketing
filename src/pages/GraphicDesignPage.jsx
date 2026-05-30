@@ -27,7 +27,7 @@ const gdSchema = {
         name: 'Ara Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
-        email: 'aradicovertech02@gmail.com',
+        email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Thanjavur',
