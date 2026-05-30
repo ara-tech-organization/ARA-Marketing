@@ -7,6 +7,7 @@ const testimonials = [
     name: 'Arjun Kumar',
     role: 'Business Owner',
     initials: 'AK',
+    image: 'https://randomuser.me/api/portraits/men/32.jpg',
     stars: 5,
   },
   {
@@ -14,6 +15,7 @@ const testimonials = [
     name: 'Pooja Menon',
     role: 'Marketing Director',
     initials: 'PM',
+    image: 'https://randomuser.me/api/portraits/women/44.jpg',
     stars: 5,
   },
   {
@@ -21,6 +23,7 @@ const testimonials = [
     name: 'Suresh Babu',
     role: 'eCommerce Entrepreneur',
     initials: 'SB',
+    image: 'https://randomuser.me/api/portraits/men/51.jpg',
     stars: 5,
   },
 ]
@@ -57,13 +60,7 @@ function TestiCard({ t, featured }) {
 
       {/* Author */}
       <div className="flex items-center gap-3 mt-auto">
-        <div className={`rounded-full flex items-center justify-center font-black flex-shrink-0
-          ${featured
-            ? 'w-14 h-14 text-lg bg-white/20 border-2 border-white/30 text-white'
-            : 'w-10 h-10 text-sm bg-blue-100 border-2 border-blue-200 text-blue-700'
-          }`}>
-          {t.initials}
-        </div>
+        <img src={t.image} alt={t.name} className={`${featured ? 'w-14 h-14' : 'w-10 h-10'} rounded-full object-cover flex-shrink-0`} />
         <div>
           <div className={`font-bold ${featured ? 'text-[15px] text-white' : 'text-[14px] text-slate-900'}`}>
             {t.name}

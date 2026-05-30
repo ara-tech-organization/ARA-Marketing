@@ -1,7 +1,7 @@
-import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
+﻿import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
 
 const benefits = [
-  { icon: Cpu,        title: 'Enhanced AI Engagement',      desc: 'AI-powered features drive meaningful customer interaction, personalization, and retention.', metric: '3x',  metricLabel: 'Higher Engagement', color: '#7c3aed' },
+  { icon: Cpu,        title: 'Enhanced AI Engagement',      desc: 'AI-powered features drive meaningful customer interaction, personalization, and retention.', metric: '3x',  metricLabel: 'Higher Engagement', color: '#1e40af' },
   { icon: Settings,   title: 'Streamlined Operations',      desc: 'Mobile apps automate workflows, reduce bottlenecks, and improve team efficiency.', metric: '60%', metricLabel: 'Efficiency Gain',   color: '#2563eb' },
   { icon: Zap,        title: 'Optimised Performance',       desc: 'High-performance apps for Android and iOS with sub-second load times and flawless UX.', metric: '<1s', metricLabel: 'Load Time',         color: '#0891b2' },
   { icon: TrendingUp, title: 'Higher ROI',                  desc: 'Intuitive UI/UX combined with AI insights drives measurable revenue and business growth.', metric: '40%', metricLabel: 'ROI Increase',      color: '#059669' },
@@ -12,7 +12,7 @@ export default function MABenefits() {
   return (
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.04) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.03) 0%,transparent 65%)' }} />
 
@@ -22,12 +22,12 @@ export default function MABenefits() {
           {/* Left: intro */}
           <div className="lg:w-[360px] flex-shrink-0 reveal-left">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(124,58,237,0.08)', color: '#7c3aed', border: '1px solid rgba(124,58,237,0.2)' }}>
+              style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
               <Smartphone size={11} /> Benefits
             </span>
             <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               Benefits of Our{' '}
-              <span style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Mobile App Services
               </span>
             </h2>
@@ -36,7 +36,7 @@ export default function MABenefits() {
             </p>
             <a href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 6px 20px rgba(124,58,237,0.25)' }}>
+              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.25)' }}>
               Start Your App Project <ArrowRight size={15} />
             </a>
           </div>

@@ -5,18 +5,21 @@ const testimonials = [
     text: 'Ara Discover Marketing helped us improve engagement and generate quality leads through social media campaigns.',
     name: 'Business Owner',
     role: 'Local Retail Brand, Thanjavur',
+    image: 'https://randomuser.me/api/portraits/men/61.jpg',
     stars: 5,
   },
   {
     text: 'One of the best social media companies in Thanjavur known for creative campaign result-oriented strategies and outstanding support.',
     name: 'Startup Founder',
     role: 'Tech Startup, Thanjavur',
+    image: 'https://randomuser.me/api/portraits/men/73.jpg',
     stars: 5,
   },
   {
     text: 'Their expertise in social media ads, marketing, and advertising in Thanjavur significantly improved our online brand visibility.',
     name: 'Marketing Manager',
     role: 'E-Commerce Brand, Tamil Nadu',
+    image: 'https://randomuser.me/api/portraits/women/55.jpg',
     stars: 5,
   },
 ]
@@ -81,7 +84,7 @@ export default function SMMTestimonials() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {testimonials.map(({ text, name, role, stars }, i) => (
+          {testimonials.map(({ text, name, role, image, stars }, i) => (
             <div
               key={name}
               className={`reveal delay-${i + 1} relative bg-white/70 border border-blue-100
@@ -108,10 +111,7 @@ export default function SMMTestimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-4 border-t border-blue-100">
-                <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center
-                  text-blue-600 text-[13px] font-bold flex-shrink-0">
-                  {name.charAt(0)}
-                </div>
+                <img src={image} alt={name} className="w-9 h-9 rounded-full object-cover flex-shrink-0" />
                 <div>
                   <p className="text-[13px] font-bold text-slate-800">{name}</p>
                   <p className="text-[11px] text-slate-400">{role}</p>

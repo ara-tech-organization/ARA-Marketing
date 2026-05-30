@@ -9,6 +9,7 @@ const testimonials = [
     color: '#2563eb',
     initial: 'R',
     initBg: 'linear-gradient(135deg, #2563eb, #1d4ed8)',
+    image: 'https://randomuser.me/api/portraits/men/17.jpg',
   },
   {
     quote: 'Our online store is fast, secure, and incredibly easy to manage thanks to their expert team. The Shopify setup they delivered is exactly what we needed to grow our electronics business online.',
@@ -18,6 +19,7 @@ const testimonials = [
     color: '#0891b2',
     initial: 'G',
     initBg: 'linear-gradient(135deg, #0891b2, #0e7490)',
+    image: 'https://randomuser.me/api/portraits/men/48.jpg',
   },
   {
     quote: 'With their expert support, our online store runs smoothly, securely, and is incredibly easy to manage. The payment integration and inventory system they built saved us hours of work every week.',
@@ -27,6 +29,7 @@ const testimonials = [
     color: '#0891b2',
     initial: 'A',
     initBg: 'linear-gradient(135deg, #0891b2, #0e7490)',
+    image: 'https://randomuser.me/api/portraits/men/59.jpg',
   },
 ]
 
@@ -64,7 +67,7 @@ export default function ECTestimonials() {
 
         {/* Testimonial cards */}
         <div className="reveal grid grid-cols-1 md:grid-cols-3 gap-5">
-          {testimonials.map(({ quote, name, role, rating, color, initial, initBg }, i) => (
+          {testimonials.map(({ quote, name, role, rating, color, initial, initBg, image }, i) => (
             <div key={name}
               className={`group p-6 sm:p-7 rounded-2xl sm:rounded-3xl flex flex-col gap-5 transition-all duration-400 hover:-translate-y-2 delay-${i + 1}`}
               style={{ background: '#f8fbff', border: `1.5px solid #e2e8f0`, boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
@@ -100,10 +103,7 @@ export default function ECTestimonials() {
               {/* Author */}
               <div className="flex items-center gap-3 pt-4"
                 style={{ borderTop: `1px solid ${color}20` }}>
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-[15px] font-black text-white flex-shrink-0"
-                  style={{ background: initBg, boxShadow: `0 4px 12px ${color}40` }}>
-                  {initial}
-                </div>
+                <img src={image} alt={name} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
                 <div>
                   <p className="text-[13px] font-bold text-slate-900">{name}</p>
                   <p className="text-[11px] mt-0.5 text-slate-400">{role}</p>

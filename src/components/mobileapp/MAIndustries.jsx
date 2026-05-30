@@ -1,7 +1,7 @@
-import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
+﻿import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
 
 const industries = [
-  { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#7c3aed' },
+  { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#1e40af' },
   { icon: Heart,        title: 'Healthcare & Fitness',       desc: 'HIPAA-compliant health apps, telemedicine platforms, and fitness trackers with AI wellness insights.',     color: '#dc2626' },
   { icon: BookOpen,     title: 'Education & E-learning',     desc: 'Interactive learning apps with video, quizzes, and progress tracking for students and educators.',        color: '#2563eb' },
   { icon: DollarSign,   title: 'Finance & Banking',          desc: 'Secure fintech apps with real-time transactions, budgeting tools, and robust data encryption.',         color: '#059669' },
@@ -17,21 +17,21 @@ export default function MAIndustries() {
     <section className="py-16 sm:py-24 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#040d1a 100%)' }}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(124,58,237,0.12) 0%,transparent 70%)' }} />
+        style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-15"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(124,58,237,0.5) 1px,transparent 1px)', backgroundSize: '44px 44px' }} />
+        style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.5) 1px,transparent 1px)', backgroundSize: '44px 44px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.3)' }}>
+            style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
             <Sparkles size={11} /> Industries We Serve
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-white leading-tight tracking-tight mb-4">
             Mobile Apps for Every{' '}
-            <span style={{ background: 'linear-gradient(135deg,#a78bfa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Industry
             </span>
           </h2>

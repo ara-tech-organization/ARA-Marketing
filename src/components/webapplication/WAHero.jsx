@@ -80,10 +80,10 @@ export default function WAHero() {
           </span>
 
           {/* H1 */}
-          <h1 className="text-[clamp(26px,5.5vw,64px)] font-black leading-[1.06] tracking-tight mb-4 sm:mb-5 text-white max-w-[820px] px-1">
+          <h1 className="text-[clamp(22px,4vw,48px)] font-bold leading-[1.06] tracking-tight mb-4 sm:mb-5 text-white max-w-[820px] px-1">
             Power Your Business with{' '}
             <span
-              className="block sm:inline"
+              className="block"
               style={{ background: 'linear-gradient(135deg,#60a5fa 0%,#3b82f6 50%,#38bdf8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Advanced Web App Solutions
             </span>

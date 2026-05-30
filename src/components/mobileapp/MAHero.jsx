@@ -1,4 +1,4 @@
-import { Smartphone, Cpu, Zap, Shield, Star, ArrowRight, ArrowUpRight, ChevronRight, CheckCircle2 } from 'lucide-react'
+﻿import { Smartphone, Cpu, Zap, Shield, Star, ArrowRight, ArrowUpRight, ChevronRight, CheckCircle2 } from 'lucide-react'
 
 const stats = [
   { value: '200+', label: 'Apps Delivered' },
@@ -22,14 +22,14 @@ export default function MAHero() {
     >
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-40"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(124,58,237,0.12) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.12) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.09) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.09) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 -left-24 w-[480px] h-[480px] rounded-full pointer-events-none animate-orb-rev"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
       {/* Rings */}
-      <div className="hidden md:block absolute top-20 right-[6%] w-52 h-52 rounded-full border border-purple-200/40 pointer-events-none animate-[spin_40s_linear_infinite]" />
+      <div className="hidden md:block absolute top-20 right-[6%] w-52 h-52 rounded-full border border-blue-200/40 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-24 left-[4%] w-36 h-36 rounded-full border border-blue-200/35 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
@@ -40,25 +40,25 @@ export default function MAHero() {
 
             {/* Breadcrumb */}
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
-              <a href="/ARA-Marketing/" className="hover:text-purple-600 transition-colors">Home</a>
+              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
               <ChevronRight size={12} className="text-slate-300" />
               <span>Services</span>
               <ChevronRight size={12} className="text-slate-300" />
               <span>Web Design</span>
               <ChevronRight size={12} className="text-slate-300" />
-              <span className="text-purple-600 font-semibold">Mobile App Development</span>
+              <span className="text-blue-600 font-semibold">Mobile App Development</span>
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8 text-purple-700"
-              style={{ background: 'rgba(124,58,237,0.10)', border: '1px solid rgba(124,58,237,0.22)' }}>
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8 text-blue-700"
+              style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.22)' }}>
               <Smartphone size={10} /> Mobile App Development Company in Thanjavur
             </span>
 
             {/* H1 */}
             <h1 className="text-[clamp(26px,4.5vw,54px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
               Elevate Your Business with{' '}
-              <span style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Mobile Apps
               </span>
             </h1>
@@ -80,7 +80,7 @@ export default function MAHero() {
             <div className="flex flex-col gap-2.5 mb-8 sm:mb-10 items-center lg:items-start">
               {quickWins.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-2.5">
-                  <Icon size={14} className="text-purple-600 flex-shrink-0" />
+                  <Icon size={14} className="text-blue-600 flex-shrink-0" />
                   <span className="text-[13.5px] text-slate-600 font-medium">{text}</span>
                 </div>
               ))}
@@ -90,23 +90,23 @@ export default function MAHero() {
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a href="/ARA-Marketing/contact"
                 className="btn-glow inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 6px 20px rgba(124,58,237,0.28)' }}>
+                style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Get a Free Consultation <ArrowRight size={14} />
               </a>
               <a href="#ma-intro"
-                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-semibold border-2 border-purple-400 text-purple-600 transition-all duration-300 hover:bg-purple-50 hover:-translate-y-0.5">
+                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-semibold border-2 border-blue-400 text-blue-600 transition-all duration-300 hover:bg-blue-50 hover:-translate-y-0.5">
                 Explore Services <ArrowUpRight size={14} />
               </a>
             </div>
 
             {/* Stats strip */}
             <div className="flex flex-row justify-center lg:justify-start pt-6 sm:pt-8"
-              style={{ borderTop: '1px solid rgba(124,58,237,0.12)' }}>
+              style={{ borderTop: '1px solid rgba(37,99,235,0.12)' }}>
               {stats.map(({ value, label }, i) => (
                 <div key={label} className="flex flex-col items-center lg:items-start px-4 sm:px-6 first:pl-0"
                   style={{ borderLeft: i > 0 ? '1px solid #ddd6fe' : 'none' }}>
                   <span className="text-[22px] sm:text-[28px] font-black leading-tight"
-                    style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                    style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     {value}
                   </span>
                   <span className="text-[11px] text-slate-400 font-medium mt-0.5">{label}</span>
@@ -119,13 +119,13 @@ export default function MAHero() {
           <div className="hidden md:flex flex-col justify-center lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative mt-10">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse,rgba(124,58,237,0.14) 0%,transparent 70%)' }} />
+                style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.14) 0%,transparent 70%)' }} />
 
               {/* Card */}
               <div className="relative rounded-3xl overflow-hidden"
-                style={{ background: 'white', border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(124,58,237,0.16)' }}>
+                style={{ background: 'white', border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(37,99,235,0.16)' }}>
 
-                <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#7c3aed,#2563eb,#0891b2)' }} />
+                <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1e40af,#2563eb,#0891b2)' }} />
 
                 {/* Browser chrome */}
                 <div className="flex items-center gap-2 px-4 py-2.5" style={{ background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
@@ -137,8 +137,8 @@ export default function MAHero() {
                   <div className="flex-1 flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-md border border-slate-200 mx-2">
                     <Smartphone size={9} className="text-slate-400 flex-shrink-0" />
                     <span className="text-[10px] text-slate-500 font-medium">yourbusiness.app</span>
-                    <span className="ml-auto flex items-center gap-1 text-[9px] font-bold text-purple-600">
-                      <span className="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse" />Live
+                    <span className="ml-auto flex items-center gap-1 text-[9px] font-bold text-blue-600">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />Live
                     </span>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default function MAHero() {
                   <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg,transparent 45%,rgba(255,255,255,0.50) 100%)' }} />
                   <div className="absolute top-3 left-3 flex gap-2">
                     {[
-                      { lbl: 'Android', val: '4.9★', bg: 'rgba(124,58,237,0.92)' },
+                      { lbl: 'Android', val: '4.9★', bg: 'rgba(37,99,235,0.92)' },
                       { lbl: 'iOS',     val: '4.8★', bg: 'rgba(37,99,235,0.92)'  },
                     ].map(({ lbl, val, bg }) => (
                       <div key={lbl} className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
@@ -168,7 +168,7 @@ export default function MAHero() {
 
                 {/* Purple header bar */}
                 <div className="flex items-center justify-between px-5 py-3.5"
-                  style={{ background: 'linear-gradient(135deg,#4c1d95 0%,#7c3aed 100%)' }}>
+                  style={{ background: 'linear-gradient(135deg,#1e3a8a 0%,#1e40af 100%)' }}>
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-lg flex items-center justify-center"
                       style={{ background: 'rgba(255,255,255,0.18)' }}>
@@ -184,10 +184,10 @@ export default function MAHero() {
                 {/* Metrics */}
                 <div className="flex">
                   {[
-                    { val: '200+', lbl: 'Apps Built',  color: '#7c3aed' },
+                    { val: '200+', lbl: 'Apps Built',  color: '#1e40af' },
                     { val: '4.9★', lbl: 'App Rating',  color: '#2563eb' },
                     { val: '100%', lbl: 'On-Time',     color: '#0891b2' },
-                    { val: '24/7', lbl: 'Support',     color: '#7c3aed' },
+                    { val: '24/7', lbl: 'Support',     color: '#1e40af' },
                   ].map(({ val, lbl, color }, i) => (
                     <div key={lbl} className="flex-1 text-center py-4"
                       style={{ borderRight: i < 3 ? '1px solid #f1f5f9' : 'none' }}>
@@ -200,9 +200,9 @@ export default function MAHero() {
 
               {/* Floating: AI badge */}
               <div className="hidden lg:flex absolute -top-4 -right-4 items-center gap-3 px-4 py-3 rounded-2xl bg-white animate-float"
-                style={{ border: '1px solid #ddd6fe', boxShadow: '0 10px 32px rgba(124,58,237,0.18)' }}>
+                style={{ border: '1px solid #ddd6fe', boxShadow: '0 10px 32px rgba(37,99,235,0.18)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 4px 12px rgba(124,58,237,0.35)' }}>
+                  style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 4px 12px rgba(37,99,235,0.35)' }}>
                   <Cpu size={16} className="text-white" />
                 </div>
                 <div>
@@ -227,13 +227,13 @@ export default function MAHero() {
 
             {/* Tech tags strip */}
             <div className="mt-10 px-4 py-4 rounded-2xl flex items-center gap-2.5 flex-wrap"
-              style={{ background: 'rgba(255,255,255,0.70)', border: '1px solid rgba(124,58,237,0.12)', backdropFilter: 'blur(8px)' }}>
+              style={{ background: 'rgba(255,255,255,0.70)', border: '1px solid rgba(37,99,235,0.12)', backdropFilter: 'blur(8px)' }}>
               <span className="text-[9px] font-black uppercase tracking-widest flex-shrink-0 px-2.5 py-1 rounded-lg"
-                style={{ color: '#64748b', background: 'rgba(124,58,237,0.07)' }}>Built with</span>
+                style={{ color: '#64748b', background: 'rgba(37,99,235,0.07)' }}>Built with</span>
               {techTags.map(tag => (
                 <span key={tag}
                   className="px-3 py-1 rounded-lg text-[11px] font-bold transition-all duration-200 hover:-translate-y-0.5 cursor-default"
-                  style={{ background: 'white', color: '#7c3aed', border: '1.5px solid rgba(124,58,237,0.15)', boxShadow: '0 2px 6px rgba(124,58,237,0.08)' }}>
+                  style={{ background: 'white', color: '#1e40af', border: '1.5px solid rgba(37,99,235,0.15)', boxShadow: '0 2px 6px rgba(37,99,235,0.08)' }}>
                   {tag}
                 </span>
               ))}

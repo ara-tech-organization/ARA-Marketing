@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
@@ -34,8 +34,8 @@ function FAQItem({ faq, index, active, setActive }) {
   return (
     <div className="rounded-2xl overflow-hidden transition-all duration-300"
       style={{
-        border: isOpen ? '1.5px solid rgba(124,58,237,0.5)' : '1.5px solid #e2e8f0',
-        boxShadow: isOpen ? '0 8px 32px rgba(124,58,237,0.1)' : '0 2px 8px rgba(0,0,0,0.04)',
+        border: isOpen ? '1.5px solid rgba(37,99,235,0.5)' : '1.5px solid #e2e8f0',
+        boxShadow: isOpen ? '0 8px 32px rgba(37,99,235,0.1)' : '0 2px 8px rgba(0,0,0,0.04)',
       }}
     >
       <button type="button"
@@ -43,22 +43,22 @@ function FAQItem({ faq, index, active, setActive }) {
         className="w-full flex items-start gap-4 px-6 py-5 text-left bg-white transition-colors duration-200 hover:bg-slate-50/60">
         <span className="flex-shrink-0 text-[11px] font-black w-7 h-7 rounded-lg flex items-center justify-center transition-all duration-300 mt-0.5"
           style={isOpen
-            ? { background: 'linear-gradient(135deg,#7c3aed,#2563eb)', color: 'white' }
-            : { background: '#ede9fe', color: '#7c3aed' }}>
+            ? { background: 'linear-gradient(135deg,#1e40af,#2563eb)', color: 'white' }
+            : { background: '#ede9fe', color: '#1e40af' }}>
           {String(index + 1).padStart(2, '0')}
         </span>
         <span className="flex-1 text-[14px] font-semibold leading-snug pt-0.5 transition-colors duration-200"
-          style={{ color: isOpen ? '#6d28d9' : '#334155' }}>
+          style={{ color: isOpen ? '#1e3a8a' : '#334155' }}>
           {faq.q}
         </span>
         <ChevronDown size={17} className="flex-shrink-0 mt-0.5 transition-transform duration-300"
-          style={{ color: isOpen ? '#7c3aed' : '#94a3b8', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+          style={{ color: isOpen ? '#1e40af' : '#94a3b8', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
       </button>
 
       {isOpen && (
         <div className="px-6 pb-6 bg-white">
           <div className="h-px mb-4"
-            style={{ background: 'linear-gradient(90deg,rgba(124,58,237,0.5),transparent)' }} />
+            style={{ background: 'linear-gradient(90deg,rgba(37,99,235,0.5),transparent)' }} />
           <p className="text-[13.5px] text-slate-600 leading-[1.85] pl-11">{faq.a}</p>
         </div>
       )}
@@ -72,19 +72,19 @@ export default function MAFAQ() {
   return (
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.05) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.05) 0%,transparent 65%)' }} />
 
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(124,58,237,0.08)', color: '#7c3aed', border: '1px solid rgba(124,58,237,0.2)' }}>
+            style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
             <HelpCircle size={11} /> FAQs
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Frequently Asked{' '}
-            <span style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Questions
             </span>
           </h2>

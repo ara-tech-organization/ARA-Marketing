@@ -7,6 +7,7 @@ const testimonials = [
     role: 'CEO, RetailMart',
     company: 'Retail Business',
     initials: 'RK',
+    image: 'https://randomuser.me/api/portraits/men/23.jpg',
     color: '#2563eb',
     metric: '3x',
     metricLabel: 'Engagement Boost',
@@ -18,6 +19,7 @@ const testimonials = [
     role: 'Brand Manager, FashionHub',
     company: 'Fashion & Lifestyle',
     initials: 'PS',
+    image: 'https://randomuser.me/api/portraits/women/85.jpg',
     color: '#7c3aed',
     metric: '41%',
     metricLabel: 'Audience Growth',
@@ -29,6 +31,7 @@ const testimonials = [
     role: 'Director, MedPlus Clinics',
     company: 'Healthcare Services',
     initials: 'VA',
+    image: 'https://randomuser.me/api/portraits/men/46.jpg',
     color: '#0891b2',
     metric: '40%',
     metricLabel: 'Cost Reduction',
@@ -80,7 +83,7 @@ export default function OMTestimonials() {
 
         {/* 3-column card grid */}
         <div className="reveal grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
-          {testimonials.map(({ text, name, role, company, initials, color, metric, metricLabel, channel }) => (
+          {testimonials.map(({ text, name, role, company, initials, image, color, metric, metricLabel, channel }) => (
             <div key={name}
               className="group relative flex flex-col rounded-3xl bg-white border border-slate-100 overflow-hidden transition-all duration-300 hover:-translate-y-1.5"
               style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.06)' }}
@@ -117,10 +120,7 @@ export default function OMTestimonials() {
                 {/* Author row */}
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
-                    <div className="w-9 h-9 rounded-xl flex items-center justify-center text-[11px] font-bold flex-shrink-0 text-white"
-                      style={{ background: `linear-gradient(135deg,${color},${color}bb)` }}>
-                      {initials}
-                    </div>
+                    <img src={image} alt={name} className="w-9 h-9 rounded-xl object-cover flex-shrink-0" />
                     <div>
                       <p className="text-[12.5px] font-bold text-slate-900 leading-none">{name}</p>
                       <p className="text-[10.5px] text-slate-400 mt-0.5">{role}</p>

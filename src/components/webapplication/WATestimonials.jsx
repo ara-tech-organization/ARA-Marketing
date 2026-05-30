@@ -7,6 +7,7 @@ const testimonials = [
     company: 'Tech Startup, Thanjavur',
     quote: 'Ara Discover Marketing is a top web app development agency in Thanjavur. They delivered a robust and AI-powered solution for our business that completely transformed how we operate.',
     avatar: 'V',
+    image: 'https://randomuser.me/api/portraits/men/56.jpg',
     metric: 'AI-Powered App',
     featured: false,
     color: '#2563eb',
@@ -17,6 +18,7 @@ const testimonials = [
     company: 'E-Commerce Brand',
     quote: "The Ara team is a professional web and mobile app development company in Thanjavur. They delivered flawless integration of our website and mobile apps — incredible results that exceeded expectations.",
     avatar: 'K',
+    image: 'https://randomuser.me/api/portraits/women/19.jpg',
     metric: 'Web + Mobile',
     featured: true,
     color: '#0891b2',
@@ -27,6 +29,7 @@ const testimonials = [
     company: 'Digital Ventures',
     quote: 'We chose Ara Discover Marketing as our web app development company in Thanjavur and received a fast-loaded AI-powered solution perfectly customised to our business needs.',
     avatar: 'B',
+    image: 'https://randomuser.me/api/portraits/men/67.jpg',
     metric: 'Custom Solution',
     featured: false,
     color: '#1d4ed8',
@@ -85,7 +88,7 @@ export default function WATestimonials() {
 
         {/* Three testimonial cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 items-start">
-          {testimonials.map(({ name, role, company, quote, avatar, metric, featured, color }, i) => (
+          {testimonials.map(({ name, role, company, quote, avatar, image, metric, featured, color }, i) => (
             <div
               key={name}
               className={`relative rounded-3xl overflow-hidden transition-all duration-300 reveal delay-${i + 1} ${featured ? 'lg:-mt-5 lg:mb-5' : ''}`}
@@ -139,16 +142,7 @@ export default function WATestimonials() {
                   style={{ borderTop: featured ? '1px solid rgba(255,255,255,0.15)' : '1px solid #e2e8f0' }}
                 >
                   <div className="flex items-center gap-2.5">
-                    <div
-                      className="w-9 xs:w-10 h-9 xs:h-10 rounded-xl flex items-center justify-center text-[13px] font-black text-white flex-shrink-0"
-                      style={{
-                        background: featured
-                          ? 'rgba(255,255,255,0.2)'
-                          : `linear-gradient(135deg,${color},${color}bb)`,
-                      }}
-                    >
-                      {avatar}
-                    </div>
+                    <img src={image} alt={name} className="w-9 xs:w-10 h-9 xs:h-10 rounded-xl object-cover flex-shrink-0" />
                     <div>
                       <p className="text-[12px] xs:text-[13px] font-bold leading-tight"
                         style={{ color: featured ? 'white' : '#1e293b' }}>

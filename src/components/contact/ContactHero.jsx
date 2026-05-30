@@ -21,7 +21,7 @@ export default function ContactHero() {
   return (
     <section
       className="relative flex items-center justify-center overflow-hidden pt-[72px]"
-      style={{ background: '#071a36', minHeight: '60vh' }}
+      style={{ background: '#071a36', minHeight: '40vh' }}
     >
       {/* Deep BG orbs */}
       <div className="absolute pointer-events-none rounded-full"
@@ -57,7 +57,7 @@ export default function ContactHero() {
       />
 
       {/* Central content */}
-      <div className="relative z-10 max-w-[680px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center py-12 sm:py-16 md:py-20">
+      <div className="relative z-10 max-w-[680px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center py-8 sm:py-10 md:py-12">
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full
@@ -99,12 +99,16 @@ export default function ContactHero() {
         </p>
 
         {/* Scroll cue */}
-        <div className="flex flex-col items-center gap-2 opacity-40">
+        <a
+          href="#contact-form"
+          onClick={e => { e.preventDefault(); document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' }) }}
+          className="flex flex-col items-center gap-2 opacity-40 hover:opacity-70 transition-opacity duration-200 cursor-pointer"
+        >
           <span className="text-[11px] font-semibold text-white uppercase tracking-widest">
             Scroll to contact
           </span>
           <ArrowDown size={14} className="text-blue-400 animate-bounce" />
-        </div>
+        </a>
 
       </div>
 

@@ -1,12 +1,12 @@
-import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
+﻿import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
 
 const features = [
   {
     icon: TrendingUp,
     title: 'Skyrocket Customer Engagement',
     desc: 'Mobile apps create a direct channel to your customers, driving higher engagement and retention through push notifications, AI personalization, and seamless UX.',
-    color: '#7c3aed',
-    bg: 'rgba(124,58,237,0.08)',
+    color: '#1e40af',
+    bg: 'rgba(37,99,235,0.08)',
   },
   {
     icon: Cpu,
@@ -39,23 +39,23 @@ export default function MAIntro() {
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#04131c 50%,#030e18 100%)' }}
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(124,58,237,0.12) 0%,transparent 70%)' }} />
+        style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-20"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(124,58,237,0.4) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.4) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(124,58,237,0.15)', color: '#a78bfa', border: '1px solid rgba(124,58,237,0.3)' }}>
+            style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
             <Sparkles size={11} /> Why Mobile Apps Matter
           </span>
           <h2 className="text-[clamp(24px,3vw,42px)] font-bold leading-tight tracking-tight text-white mb-5">
             Mobile Apps — The{' '}
-            <span style={{ background: 'linear-gradient(135deg,#a78bfa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Backbone of Growth
             </span>
           </h2>
@@ -67,7 +67,7 @@ export default function MAIntro() {
         {/* Central image */}
         <div className="relative reveal mb-14">
           <div className="rounded-3xl overflow-hidden"
-            style={{ boxShadow: '0 32px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(124,58,237,0.2)' }}>
+            style={{ boxShadow: '0 32px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(37,99,235,0.2)' }}>
             <img
               src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=420&fit=crop&auto=format&q=80"
               alt="Mobile App Development Services Thanjavur"
@@ -75,7 +75,7 @@ export default function MAIntro() {
               loading="lazy"
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(135deg,rgba(3,17,31,0.75) 0%,rgba(124,58,237,0.15) 100%)' }} />
+              style={{ background: 'linear-gradient(135deg,rgba(3,17,31,0.75) 0%,rgba(37,99,235,0.15) 100%)' }} />
             <div className="absolute inset-0 flex flex-col justify-end p-8 sm:p-10">
               <p className="text-white text-[17px] font-semibold leading-snug max-w-2xl mb-2">
                 We are one of the best app development agencies in Thanjavur offering innovative solutions that seamlessly integrate with your digital strategy.
@@ -88,9 +88,9 @@ export default function MAIntro() {
 
           {/* Floating badges */}
           <div className="absolute -top-5 left-8 bg-white rounded-2xl px-5 py-3 hidden md:flex items-center gap-3"
-            style={{ boxShadow: '0 8px 32px rgba(124,58,237,0.25)', border: '1px solid rgba(124,58,237,0.18)' }}>
+            style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.25)', border: '1px solid rgba(37,99,235,0.18)' }}>
             <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)' }}>
+              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
               <Cpu size={16} className="text-white" />
             </div>
             <div>
@@ -102,7 +102,7 @@ export default function MAIntro() {
           <div className="absolute -bottom-5 right-8 bg-white rounded-2xl px-5 py-3 hidden md:flex items-center gap-3"
             style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.22)', border: '1px solid rgba(37,99,235,0.15)' }}>
             <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)' }}>
+              style={{ background: 'linear-gradient(135deg,#2563eb,#1e40af)' }}>
               <TrendingUp size={16} className="text-white" />
             </div>
             <div>
@@ -143,11 +143,11 @@ export default function MAIntro() {
         {/* Bottom CTA */}
         <div className="text-center mt-10 reveal">
           <p className="text-[14px] mb-3" style={{ color: '#94a3b8' }}>
-            As a leading <strong style={{ color: '#a78bfa' }}>mobile app development company in Thanjavur</strong>, we make your brand shine in the competitive market.
+            As a leading <strong style={{ color: '#60a5fa' }}>mobile app development company in Thanjavur</strong>, we make your brand shine in the competitive market.
           </p>
           <a href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-all duration-200 hover:gap-3"
-            style={{ color: '#a78bfa' }}>
+            style={{ color: '#60a5fa' }}>
             Start Your App Project Today <ArrowRight size={14} />
           </a>
         </div>

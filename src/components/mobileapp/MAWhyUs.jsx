@@ -1,11 +1,11 @@
-import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
+﻿import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
 
 const reasons = [
   {
     icon: Trophy,
     title: 'Best App Development Agency in Thanjavur',
     desc: 'Recognised among the best App Development Companies in Thanjavur with proven results across industries.',
-    color: '#7c3aed',
+    color: '#1e40af',
   },
   {
     icon: Briefcase,
@@ -45,7 +45,7 @@ export default function MAWhyUs() {
   return (
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.04) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.03) 0%,transparent 65%)' }} />
 
@@ -54,12 +54,12 @@ export default function MAWhyUs() {
         {/* Header */}
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(124,58,237,0.08)', color: '#7c3aed', border: '1px solid rgba(124,58,237,0.2)' }}>
+            style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
             <Sparkles size={11} /> What Makes Us Different
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Why Choose Ara Discover as Your{' '}
-            <span style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               App Partner?
             </span>
           </h2>
@@ -74,7 +74,7 @@ export default function MAWhyUs() {
           {/* Left: large visual gradient panel */}
           <div className="lg:w-[420px] flex-shrink-0 reveal-left">
             <div className="relative h-full rounded-3xl overflow-hidden min-h-[320px] lg:min-h-[420px]"
-              style={{ background: 'linear-gradient(135deg,#4c1d95 0%,#2563eb 100%)' }}>
+              style={{ background: 'linear-gradient(135deg,#1e3a8a 0%,#2563eb 100%)' }}>
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop&auto=format&q=80"
                 alt="Mobile App Development Agency Thanjavur"
@@ -93,7 +93,7 @@ export default function MAWhyUs() {
                   <h3 className="text-[24px] font-bold text-white leading-tight mb-3">
                     Professional Mobile App Development Services
                   </h3>
-                  <p className="text-[14px] text-purple-100 leading-[1.8]">
+                  <p className="text-[14px] text-blue-100 leading-[1.8]">
                     Meeting business goals with innovative solutions that seamlessly integrate with your digital strategy and make your brand stand out.
                   </p>
                 </div>
@@ -101,8 +101,8 @@ export default function MAWhyUs() {
                 <div className="flex flex-col gap-2.5 mt-8">
                   {checklist.map(item => (
                     <div key={item} className="flex items-center gap-2.5">
-                      <CheckCircle2 size={14} className="text-purple-200 flex-shrink-0" />
-                      <span className="text-[12.5px] text-purple-100 font-medium">{item}</span>
+                      <CheckCircle2 size={14} className="text-blue-200 flex-shrink-0" />
+                      <span className="text-[12.5px] text-blue-100 font-medium">{item}</span>
                     </div>
                   ))}
                 </div>

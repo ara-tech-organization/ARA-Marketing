@@ -1,4 +1,4 @@
-import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
+﻿import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
 
 const iosServices = [
   { icon: Code2,   title: 'iOS App Design & Development',    desc: 'Beautiful, intuitive iPhone and iPad applications built natively with Swift.' },
@@ -13,7 +13,7 @@ export default function MAiOS() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.05) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.04) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -38,7 +38,7 @@ export default function MAiOS() {
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="flex gap-3">
                     {[
-                      { val: '4.8★',  lbl: 'App Store',    color: '#7c3aed' },
+                      { val: '4.8★',  lbl: 'App Store',    color: '#1e40af' },
                       { val: 'Swift', lbl: 'Native iOS',   color: '#2563eb' },
                       { val: '100%',  lbl: 'App Approval', color: '#0891b2' },
                     ].map(({ val, lbl, color }) => (
@@ -54,8 +54,8 @@ export default function MAiOS() {
 
               {/* Floating badge */}
               <div className="hidden lg:flex absolute -bottom-4 -right-4 items-center gap-3 px-4 py-3 rounded-2xl bg-white animate-float"
-                style={{ border: '1px solid #ddd6fe', boxShadow: '0 10px 32px rgba(124,58,237,0.18)' }}>
-                <Smartphone size={18} style={{ color: '#7c3aed' }} />
+                style={{ border: '1px solid #ddd6fe', boxShadow: '0 10px 32px rgba(37,99,235,0.18)' }}>
+                <Smartphone size={18} style={{ color: '#1e40af' }} />
                 <div>
                   <p className="text-[9px] text-slate-400 font-semibold">Mobile App for</p>
                   <p className="text-[13px] font-black text-slate-800">iOS &amp; Android</p>
@@ -72,7 +72,7 @@ export default function MAiOS() {
             </span>
             <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               iOS App Development{' '}
-              <span style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Services
               </span>
             </h2>
@@ -87,8 +87,8 @@ export default function MAiOS() {
                   className={`reveal delay-${Math.min(i + 1, 4)} flex items-start gap-4 p-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5 bg-white`}
                   style={{ border: '1px solid #e2e8f0', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.border = '1px solid rgba(124,58,237,0.25)'
-                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(124,58,237,0.08)'
+                    e.currentTarget.style.border = '1px solid rgba(37,99,235,0.25)'
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(37,99,235,0.08)'
                   }}
                   onMouseLeave={e => {
                     e.currentTarget.style.border = '1px solid #e2e8f0'
@@ -96,8 +96,8 @@ export default function MAiOS() {
                   }}
                 >
                   <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(124,58,237,0.08)', border: '1px solid rgba(124,58,237,0.15)' }}>
-                    <Icon size={16} style={{ color: '#7c3aed' }} />
+                    style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.15)' }}>
+                    <Icon size={16} style={{ color: '#1e40af' }} />
                   </div>
                   <div>
                     <h3 className="text-[13.5px] font-bold text-slate-800 mb-1">{title}</h3>
@@ -109,7 +109,7 @@ export default function MAiOS() {
 
             <a href="/ARA-Marketing/contact"
               className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 6px 20px rgba(124,58,237,0.25)' }}>
+              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.25)' }}>
               Get iOS App Consultation <ArrowRight size={15} />
             </a>
           </div>

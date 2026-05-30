@@ -109,7 +109,7 @@ export default function ContactMain() {
   const inputBlur = { borderColor: 'rgba(255,255,255,0.22)', boxShadow: 'none' }
 
   return (
-    <section className="relative py-12 md:py-16 lg:py-20" style={{ background: '#071a36' }}>
+    <section id="contact-form" className="relative py-12 md:py-16 lg:py-20" style={{ background: '#071a36' }}>
 
       {/* Subtle mid-page orb */}
       <div className="absolute pointer-events-none rounded-full"

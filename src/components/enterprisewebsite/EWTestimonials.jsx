@@ -6,6 +6,7 @@ const testimonials = [
     name: 'Ramesh',
     role: 'CEO',
     initials: 'R',
+    image: 'https://randomuser.me/api/portraits/men/52.jpg',
     color: '#2563eb',
     stars: 5,
   },
@@ -14,6 +15,7 @@ const testimonials = [
     name: 'Priya',
     role: 'Head of Digital Strategy',
     initials: 'P',
+    image: 'https://randomuser.me/api/portraits/women/27.jpg',
     color: '#7c3aed',
     stars: 5,
   },
@@ -22,6 +24,7 @@ const testimonials = [
     name: 'Praveen',
     role: 'Head of Digital Strategy',
     initials: 'Pr',
+    image: 'https://randomuser.me/api/portraits/men/88.jpg',
     color: '#0891b2',
     stars: 5,
   },
@@ -62,7 +65,7 @@ export default function EWTestimonials() {
 
         {/* ── Cards: 1col xs → 2col md → 3col lg ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 reveal">
-          {testimonials.map(({ quote, name, role, initials, color, stars }, i) => (
+          {testimonials.map(({ quote, name, role, initials, image, color, stars }, i) => (
             <div key={name + i}
               className="group relative rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-7 transition-all duration-300 cursor-default flex flex-col"
               style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}
@@ -95,10 +98,7 @@ export default function EWTestimonials() {
               {/* Author */}
               <div className="flex items-center gap-3 pt-4 sm:pt-5"
                 style={{ borderTop: `1px solid ${color}18` }}>
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-white text-[12px] sm:text-[13px] flex-shrink-0"
-                  style={{ background: `linear-gradient(135deg,${color},${color}aa)` }}>
-                  {initials}
-                </div>
+                <img src={image} alt={name} className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover flex-shrink-0" />
                 <div>
                   <p className="text-[12.5px] sm:text-[13px] font-bold text-slate-800">{name}</p>
                   <p className="text-[10.5px] sm:text-[11px] text-slate-400 font-medium">{role}</p>

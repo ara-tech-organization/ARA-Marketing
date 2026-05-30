@@ -1,4 +1,4 @@
-import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
+﻿import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
 
 const steps = [
   {
@@ -6,7 +6,7 @@ const steps = [
     icon: ClipboardList,
     title: 'Requirement Analysis',
     desc: 'We start with an in-depth discovery session to understand your business goals, target audience, and the features your app needs to succeed.',
-    color: '#7c3aed',
+    color: '#1e40af',
   },
   {
     num: '02',
@@ -42,7 +42,7 @@ export default function MAProcess() {
   return (
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.05) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.05) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
 
@@ -51,12 +51,12 @@ export default function MAProcess() {
         {/* Header */}
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(124,58,237,0.08)', color: '#7c3aed', border: '1px solid rgba(124,58,237,0.2)' }}>
+            style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
             <GitBranch size={11} /> Our Process
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             How We Build Your{' '}
-            <span style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Mobile App?
             </span>
           </h2>
@@ -69,7 +69,7 @@ export default function MAProcess() {
         <div className="hidden lg:block reveal">
           <div className="relative flex items-start gap-0">
             <div className="absolute top-[28px] left-[8%] right-[8%] h-[2px] pointer-events-none"
-              style={{ background: 'linear-gradient(90deg,#7c3aed,#2563eb,#0891b2,#059669,#dc2626)' }} />
+              style={{ background: 'linear-gradient(90deg,#1e40af,#2563eb,#0891b2,#059669,#dc2626)' }} />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (
               <div key={num} className="flex-1 flex flex-col items-center text-center px-3 group">
@@ -131,7 +131,7 @@ export default function MAProcess() {
           </p>
           <a href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
-            style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)' }}>
+            style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
             Start Your App Project <ArrowRight size={15} />
           </a>
         </div>

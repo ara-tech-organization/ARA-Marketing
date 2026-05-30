@@ -187,13 +187,14 @@ export default function Hero() {
       <div className="relative z-10 max-w-[700px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center">
 
         {/* Chip */}
-        <div className="inline-flex items-center gap-2 px-5 py-2 mb-5 rounded-full
-          text-[12px] font-bold text-blue-400 uppercase tracking-[0.15em]"
+        <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 mt-5 mb-5 rounded-full
+          text-[9px] sm:text-[10px] font-bold text-blue-400 uppercase tracking-[0.08em] sm:tracking-[0.15em]
+          max-w-full whitespace-nowrap"
           style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.3)' }}
         >
-          <Zap size={12} />
+          <Zap size={12} className="shrink-0" />
           Best Digital Marketing Agency · Thanjavur
-          <Zap size={12} />
+          <Zap size={12} className="shrink-0" />
         </div>
 
         {/* H1 */}
