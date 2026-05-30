@@ -1,8 +1,18 @@
 import { useState, useEffect } from 'react'
 import { ArrowRight, Phone, Star, CheckCheck, Users, TrendingUp, Search, BarChart2, Target, Zap, Activity } from 'lucide-react'
 
+/* First-load flag — true on fresh page load, false on SPA navigation */
+let _firstHeroLoad = true
+
 export default function Hero() {
   const [mouse, setMouse] = useState({ x: 0, y: 0 })
+
+  /* Compute timing once before first render */
+  const isFirst = _firstHeroLoad
+  useEffect(() => { _firstHeroLoad = false }, [])
+
+  /* Loader exits at ~1820ms (first) or ~320ms (nav), hero reveals shortly after */
+  const BASE = isFirst ? 1900 : 380
 
   useEffect(() => {
     const move = e => setMouse({
@@ -24,91 +34,81 @@ export default function Hero() {
     border: '1px solid rgba(255,255,255,0.1)',
   }
 
+  /* Helper to build reveal animation strings */
+  const rev  = (ms, dur = 800) => `heroReveal ${dur}ms ${BASE + ms}ms cubic-bezier(0.4,0,0.2,1) both`
+  const revS = (ms, dur = 750) => `heroRevealSpring ${dur}ms ${BASE + ms}ms cubic-bezier(0.34,1.56,0.64,1) both`
+  const fade = (ms, dur = 900) => `heroFade ${dur}ms ${BASE + ms}ms ease both`
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[72px]"
       style={{ background: '#071a36' }}
     >
-      {/* ── Layer 0: Deep BG orbs (slowest) ── */}
+
+      {/* ── BG orbs ── */}
       <div className="absolute pointer-events-none rounded-full"
-        style={{ ...parallax(22), top: '-20%', right: '-12%', width: '750px', height: '750px',
-          background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 65%)' }}
+        style={{
+          ...parallax(22), top: '-20%', right: '-12%', width: '750px', height: '750px',
+          background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 65%)',
+          animation: fade(-200, 1600),
+        }}
       />
       <div className="absolute pointer-events-none rounded-full"
-        style={{ ...parallax(-18), bottom: '-15%', left: '-10%', width: '550px', height: '550px',
-          background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 65%)' }}
+        style={{
+          ...parallax(-18), bottom: '-15%', left: '-10%', width: '550px', height: '550px',
+          background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 65%)',
+          animation: fade(-200, 1600),
+        }}
       />
 
-      {/* ── Layer 1: Dot grid (slow) ── */}
+      {/* ── Dot grid ── */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ ...parallax(12),
+        style={{
+          ...parallax(12),
           backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px)',
-          backgroundSize: '30px 30px' }}
+          backgroundSize: '30px 30px',
+          animation: fade(-100, 1400),
+        }}
       />
 
-      {/* ── Layer 2: Decorative rings (medium) ── */}
+      {/* ── Decorative rings ── */}
       <div className="absolute pointer-events-none rounded-full"
-        style={{ ...parallax(-30),
-          top: '15%', left: '8%', width: '180px', height: '180px',
-          border: '1.5px solid rgba(37,99,235,0.2)' }}
-      />
+        style={{ ...parallax(-30), top: '15%', left: '8%', width: '180px', height: '180px', border: '1.5px solid rgba(37,99,235,0.2)', animation: fade(0) }} />
       <div className="absolute pointer-events-none rounded-full"
-        style={{ ...parallax(28),
-          bottom: '18%', right: '6%', width: '120px', height: '120px',
-          border: '1px dashed rgba(99,102,241,0.25)' }}
-      />
+        style={{ ...parallax(28), bottom: '18%', right: '6%', width: '120px', height: '120px', border: '1px dashed rgba(99,102,241,0.25)', animation: fade(0) }} />
       <div className="absolute pointer-events-none"
-        style={{ ...parallax(-22),
-          top: '30%', right: '10%', width: '60px', height: '60px',
-          border: '1px solid rgba(37,99,235,0.3)',
-          transform: `rotate(45deg) translate(${mouse.x * -22}px, ${mouse.y * -22}px)`,
-          borderRadius: '10px' }}
-      />
+        style={{ ...parallax(-22), top: '30%', right: '10%', width: '60px', height: '60px', border: '1px solid rgba(37,99,235,0.3)', transform: `rotate(45deg) translate(${mouse.x * -22}px, ${mouse.y * -22}px)`, borderRadius: '10px', animation: fade(80) }} />
       <div className="absolute pointer-events-none"
-        style={{ ...parallax(18),
-          bottom: '30%', left: '9%', width: '44px', height: '44px',
-          border: '1px dashed rgba(255,255,255,0.12)',
-          transform: `rotate(45deg) translate(${mouse.x * 18}px, ${mouse.y * 18}px)`,
-          borderRadius: '8px' }}
-      />
+        style={{ ...parallax(18), bottom: '30%', left: '9%', width: '44px', height: '44px', border: '1px dashed rgba(255,255,255,0.12)', transform: `rotate(45deg) translate(${mouse.x * 18}px, ${mouse.y * 18}px)`, borderRadius: '8px', animation: fade(80) }} />
 
-      {/* ── Layer 3: Floating cards (fastest) ── */}
+      {/* ── Floating stat cards ── */}
 
-      {/* Top-left: Traffic card */}
+      {/* Traffic */}
       <div className="absolute hidden lg:block pointer-events-none"
         style={{ ...parallax(55), top: '14%', left: '4%',
-          animation: 'float-y 6s ease-in-out 0s infinite', ...glassCard,
+          animation: `float-y 6s ease-in-out 0s infinite, ${fade(100)}`, ...glassCard,
           borderRadius: '18px', padding: '16px 20px', minWidth: '190px' }}
       >
         <div className="flex items-center gap-2 mb-3">
-          <div style={{ background: 'rgba(37,99,235,0.9)', borderRadius: '10px', padding: '6px' }}>
-            <TrendingUp size={14} color="#fff" />
-          </div>
-          <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em' }}>
-            TRAFFIC GROWTH
-          </span>
+          <div style={{ background: 'rgba(37,99,235,0.9)', borderRadius: '10px', padding: '6px' }}><TrendingUp size={14} color="#fff" /></div>
+          <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em' }}>TRAFFIC GROWTH</span>
         </div>
         <div style={{ fontSize: '28px', fontWeight: 800, color: '#fff', lineHeight: 1, letterSpacing: '-1px' }}>+200%</div>
         <div style={{ display: 'flex', gap: '4px', marginTop: '10px', alignItems: 'flex-end', height: '28px' }}>
-          {[40, 55, 48, 70, 62, 80, 95].map((h, i) => (
-            <div key={i} style={{
-              flex: 1, height: `${h}%`, borderRadius: '3px',
-              background: i === 6 ? '#3b82f6' : 'rgba(37,99,235,0.3)'
-            }} />
+          {[40,55,48,70,62,80,95].map((h,i) => (
+            <div key={i} style={{ flex: 1, height: `${h}%`, borderRadius: '3px', background: i === 6 ? '#3b82f6' : 'rgba(37,99,235,0.3)' }} />
           ))}
         </div>
       </div>
 
-      {/* Top-right: SEO card */}
+      {/* SEO */}
       <div className="absolute hidden lg:block pointer-events-none"
         style={{ ...parallax(-50), top: '12%', right: '4%',
-          animation: 'float-y 5.5s ease-in-out 1.2s infinite', ...glassCard,
+          animation: `float-y 5.5s ease-in-out 1.2s infinite, ${fade(150)}`, ...glassCard,
           borderRadius: '18px', padding: '16px 20px', minWidth: '175px' }}
       >
         <div className="flex items-center gap-2 mb-2">
-          <div style={{ background: 'rgba(139,92,246,0.9)', borderRadius: '10px', padding: '6px' }}>
-            <Search size={14} color="#fff" />
-          </div>
+          <div style={{ background: 'rgba(139,92,246,0.9)', borderRadius: '10px', padding: '6px' }}><Search size={14} color="#fff" /></div>
           <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '11px', fontWeight: 600 }}>GOOGLE RANK</span>
         </div>
         <div style={{ fontSize: '26px', fontWeight: 800, color: '#fff', lineHeight: 1.1 }}>#1 Position</div>
@@ -117,48 +117,42 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Mid-left: Campaigns card */}
+      {/* Campaigns */}
       <div className="absolute hidden lg:block pointer-events-none"
         style={{ ...parallax(45), top: '50%', left: '3%',
-          animation: 'float-y 7s ease-in-out 0.5s infinite', ...glassCard,
+          animation: `float-y 7s ease-in-out 0.5s infinite, ${fade(200)}`, ...glassCard,
           borderRadius: '16px', padding: '14px 18px', minWidth: '160px' }}
       >
         <div className="flex items-center gap-2 mb-2">
-          <div style={{ background: 'rgba(16,185,129,0.9)', borderRadius: '9px', padding: '6px' }}>
-            <Activity size={13} color="#fff" />
-          </div>
+          <div style={{ background: 'rgba(16,185,129,0.9)', borderRadius: '9px', padding: '6px' }}><Activity size={13} color="#fff" /></div>
           <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '10px', fontWeight: 600 }}>LIVE CAMPAIGNS</span>
         </div>
         <div style={{ fontSize: '24px', fontWeight: 800, color: '#fff', lineHeight: 1 }}>120+</div>
         <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.35)', marginTop: '4px' }}>SEO Campaigns Active</div>
       </div>
 
-      {/* Mid-right: Satisfaction card */}
+      {/* Satisfaction */}
       <div className="absolute hidden lg:block pointer-events-none"
         style={{ ...parallax(-42), top: '48%', right: '3%',
-          animation: 'float-y 6.5s ease-in-out 1.8s infinite', ...glassCard,
+          animation: `float-y 6.5s ease-in-out 1.8s infinite, ${fade(200)}`, ...glassCard,
           borderRadius: '16px', padding: '14px 18px', minWidth: '150px' }}
       >
         <div className="flex items-center gap-2 mb-2">
-          <div style={{ background: 'rgba(245,158,11,0.9)', borderRadius: '9px', padding: '6px' }}>
-            <Target size={13} color="#fff" />
-          </div>
+          <div style={{ background: 'rgba(245,158,11,0.9)', borderRadius: '9px', padding: '6px' }}><Target size={13} color="#fff" /></div>
           <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '10px', fontWeight: 600 }}>SATISFACTION</span>
         </div>
         <div style={{ fontSize: '24px', fontWeight: 800, color: '#fff', lineHeight: 1 }}>95%</div>
         <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.35)', marginTop: '4px' }}>Client Retention Rate</div>
       </div>
 
-      {/* Bottom-left: Brands card */}
+      {/* Brands */}
       <div className="absolute hidden lg:block pointer-events-none"
         style={{ ...parallax(38), bottom: '14%', left: '5%',
-          animation: 'float-y 5s ease-in-out 2.2s infinite', ...glassCard,
+          animation: `float-y 5s ease-in-out 2.2s infinite, ${fade(250)}`, ...glassCard,
           borderRadius: '16px', padding: '14px 18px' }}
       >
         <div className="flex items-center gap-3">
-          <div style={{ background: 'rgba(37,99,235,0.9)', borderRadius: '10px', padding: '8px' }}>
-            <Users size={16} color="#fff" />
-          </div>
+          <div style={{ background: 'rgba(37,99,235,0.9)', borderRadius: '10px', padding: '8px' }}><Users size={16} color="#fff" /></div>
           <div>
             <div style={{ fontSize: '20px', fontWeight: 800, color: '#fff', lineHeight: 1 }}>100+</div>
             <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)', marginTop: '2px' }}>Brands Promoted</div>
@@ -166,16 +160,14 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom-right: ROI card */}
+      {/* ROI */}
       <div className="absolute hidden lg:block pointer-events-none"
         style={{ ...parallax(-35), bottom: '14%', right: '4%',
-          animation: 'float-y 6s ease-in-out 1s infinite', ...glassCard,
+          animation: `float-y 6s ease-in-out 1s infinite, ${fade(250)}`, ...glassCard,
           borderRadius: '16px', padding: '14px 18px' }}
       >
         <div className="flex items-center gap-3">
-          <div style={{ background: 'rgba(139,92,246,0.9)', borderRadius: '10px', padding: '8px' }}>
-            <BarChart2 size={16} color="#fff" />
-          </div>
+          <div style={{ background: 'rgba(139,92,246,0.9)', borderRadius: '10px', padding: '8px' }}><BarChart2 size={16} color="#fff" /></div>
           <div>
             <div style={{ fontSize: '20px', fontWeight: 800, color: '#fff', lineHeight: 1 }}>4x ROI</div>
             <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.4)', marginTop: '2px' }}>Avg. Return</div>
@@ -183,14 +175,15 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── Central content (no parallax) ── */}
+      {/* ── Central content ── */}
       <div className="relative z-10 max-w-[700px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center">
 
         {/* Chip */}
-        <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 mt-5 mb-5 rounded-full
-          text-[9px] sm:text-[10px] font-bold text-blue-400 uppercase tracking-[0.08em] sm:tracking-[0.15em]
-          max-w-full whitespace-nowrap"
-          style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.3)' }}
+        <div
+          className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 mt-5 mb-5 rounded-full
+            text-[9px] sm:text-[10px] font-bold text-blue-400 uppercase tracking-[0.08em] sm:tracking-[0.15em]
+            max-w-full whitespace-nowrap"
+          style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.3)', animation: revS(0) }}
         >
           <Zap size={12} className="shrink-0" />
           Best Digital Marketing Agency · Thanjavur
@@ -198,38 +191,39 @@ export default function Hero() {
         </div>
 
         {/* H1 */}
-        <h1 className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-6"
-          style={{ fontSize: 'clamp(30px, 4vw, 54px)' }}
+        <h1
+          className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-6"
+          style={{ fontSize: 'clamp(30px, 4vw, 54px)', animation: rev(120) }}
         >
           Best Digital Marketing Company in Thanjavur<br />
           <span style={{
             background: 'linear-gradient(135deg, #93c5fd 0%, #60a5fa 25%, #3b82f6 55%, #818cf8 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
+            WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           }}>
             for Business Growth &amp; Brand Visibility
           </span>
         </h1>
 
         {/* Description */}
-        <p className="text-[16px] leading-[1.75] mb-4 max-w-[600px]"
-          style={{ color: 'rgba(255,255,255,0.45)' }}
+        <p
+          className="text-[16px] leading-[1.75] mb-4 max-w-[600px]"
+          style={{ color: 'rgba(255,255,255,0.45)', animation: rev(260) }}
         >
           Ara Discover Marketing is the best digital marketing company in Thanjavur, helping
           startups, local businesses and enterprises generate leads, improve online visibility
           and increase revenue through data-driven strategies.
         </p>
-        <p className="text-[14px] leading-[1.75] mb-8 max-w-[520px]"
-          style={{ color: 'rgba(255,255,255,0.32)' }}
+        <p
+          className="text-[14px] leading-[1.75] mb-8 max-w-[600px]"
+          style={{ color: 'rgba(255,255,255,0.32)', animation: rev(340) }}
         >
-          We are one of the best digital marketing companies in Thanjavur, delivering the best digital marketing services in Thanjavur including complete
-          search engine optimization (SEO), social media marketing management, all types of paid
-          advertising, branding, video editing services and performance marketing solutions
-          tailored for digital businesses.
+          We are one of the best digital marketing companies in Thanjavur, delivering complete
+          SEO, social media marketing, paid advertising, branding, video editing and performance
+          marketing solutions tailored for digital businesses.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-wrap gap-4 justify-center mb-8">
+        <div className="flex flex-wrap gap-4 justify-center mb-8" style={{ animation: revS(460) }}>
           <a href="/ARA-Marketing/contact"
             className="btn-glow inline-flex items-center gap-2.5 px-9 py-3.5 bg-blue-600 text-white
               rounded-full font-bold text-[15px] transition-all duration-300
@@ -245,7 +239,7 @@ export default function Hero() {
         </div>
 
         {/* Trust row */}
-        <div className="flex flex-wrap items-center justify-center gap-7">
+        <div className="flex flex-wrap items-center justify-center gap-7" style={{ animation: fade(620) }}>
           {[
             { icon: CheckCheck, text: '150+ Projects Delivered' },
             { icon: Star,       text: '5-Star Rated Agency'     },
@@ -259,6 +253,21 @@ export default function Hero() {
         </div>
 
       </div>
+
+      <style>{`
+        @keyframes heroReveal {
+          from { opacity: 0; transform: translateY(22px); }
+          to   { opacity: 1; transform: none; }
+        }
+        @keyframes heroRevealSpring {
+          from { opacity: 0; transform: translateY(16px) scale(0.94); }
+          to   { opacity: 1; transform: none; }
+        }
+        @keyframes heroFade {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
+      `}</style>
     </section>
   )
 }
