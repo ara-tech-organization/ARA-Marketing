@@ -45,8 +45,8 @@ const benefits = [
 function BentoCard({ icon: Icon, title, body, color, img, large = false }) {
   return (
     <div
-      className="group relative rounded-2xl sm:rounded-3xl overflow-hidden transition-all duration-300 cursor-default bg-white"
-      style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 4px 18px rgba(0,0,0,0.05)', minHeight: large ? 220 : 'auto' }}
+      className="group relative rounded-2xl sm:rounded-3xl overflow-hidden transition-all duration-300 cursor-default bg-white h-full"
+      style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 4px 18px rgba(0,0,0,0.05)' }}
       onMouseEnter={e => {
         e.currentTarget.style.boxShadow = `0 18px 44px ${color}1a`
         e.currentTarget.style.borderColor = `${color}45`
@@ -116,15 +116,21 @@ export default function EWBenefits() {
         {/* ── Bento layout ── */}
         <div className="reveal flex flex-col gap-3 sm:gap-4">
 
-          {/* Row 1: large card + 2 small (stack on xs/sm, side-by-side on lg) */}
+          {/* Row 1: large card + 2 small */}
           <div className="flex flex-col lg:flex-row gap-3 sm:gap-4">
             {/* Large hero card */}
-            <div className="w-full lg:w-[40%]">
-              <BentoCard {...large} large />
+            <div className="w-full lg:w-[40%] flex">
+              <div className="w-full">
+                <BentoCard {...large} large />
+              </div>
             </div>
-            {/* 2 small cards — 1col on xs, 2col on sm+, col on lg */}
-            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
-              {rest.slice(0, 2).map(b => <BentoCard key={b.title} {...b} />)}
+            {/* 2 small cards — equal height flex column on lg */}
+            <div className="flex-1 flex flex-col gap-3 sm:gap-4">
+              {rest.slice(0, 2).map(b => (
+                <div key={b.title} className="flex-1">
+                  <BentoCard {...b} />
+                </div>
+              ))}
             </div>
           </div>
 

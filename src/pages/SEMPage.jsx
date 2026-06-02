@@ -6,6 +6,7 @@ import SEMHero         from '../components/sem/SEMHero'
 import SEMIntro        from '../components/sem/SEMIntro'
 import SEMWhyUs        from '../components/sem/SEMWhyUs'
 import SEMServices     from '../components/sem/SEMServices'
+import SEMAdTypes      from '../components/sem/SEMAdTypes'
 import SEMStats        from '../components/sem/SEMStats'
 import SEMProcess      from '../components/sem/SEMProcess'
 import SEMAssurance    from '../components/sem/SEMAssurance'
@@ -107,6 +108,7 @@ export default function SEMPage() {
         <SEMIntro />
         <SEMWhyUs />
         <SEMServices />
+        <SEMAdTypes />
         <SEMStats />
         <SEMProcess />
         <SEMAssurance />

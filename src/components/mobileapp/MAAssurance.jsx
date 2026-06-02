@@ -86,21 +86,6 @@ export default function MAAssurance() {
           ))}
         </div>
 
-        {/* Bottom checklist strip */}
-        <div className="mt-10 p-5 sm:p-6 rounded-2xl flex flex-wrap items-center gap-4 sm:gap-6 reveal"
-          style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(37,99,235,0.2)' }}>
-          {[
-            'On-time delivery with zero compromise on quality',
-            'AI-driven, innovative mobile solutions',
-            'Full-cycle support from strategy to deployment',
-            'Transparent communication and reporting',
-          ].map(item => (
-            <div key={item} className="flex items-center gap-2.5">
-              <CheckCircle2 size={14} style={{ color: '#60a5fa' }} className="flex-shrink-0" />
-              <span className="text-[13px] font-medium" style={{ color: '#cbd5e1' }}>{item}</span>
-            </div>
-          ))}
-        </div>
 
       </div>
     </section>

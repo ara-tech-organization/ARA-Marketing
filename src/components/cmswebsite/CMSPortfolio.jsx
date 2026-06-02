@@ -1,173 +1,169 @@
-﻿import { ShoppingCart, GraduationCap, Building2, User, Wrench, ArrowUpRight, Trophy } from 'lucide-react'
+import { ShoppingCart, GraduationCap, Building2, User, Wrench, Trophy, TrendingUp, Star, Award, CheckCircle2 } from 'lucide-react'
 
 const industries = [
   {
-    icon: ShoppingCart,
+    num: '01', icon: ShoppingCart,
     title: 'E-Commerce Stores',
     desc: 'WooCommerce-powered stores with secure checkout, product management, and seamless payment gateways.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=340&fit=crop&auto=format&q=80',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format&q=80',
     stat: '80+', statLabel: 'Stores Launched',
-    color: '#2563eb',
+    color: '#2563eb', bg: '#dbeafe',
+    points: ['Secure WooCommerce Setup', 'Payment Gateway Integration', 'Inventory Management'],
   },
   {
-    icon: GraduationCap,
+    num: '02', icon: GraduationCap,
     title: 'Educational Platforms',
     desc: 'LMS-integrated WordPress platforms for online learning, course management, and student portals.',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=340&fit=crop&auto=format&q=80',
+    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format&q=80',
     stat: '30+', statLabel: 'Ed-Tech Sites',
-    color: '#2563eb',
+    color: '#7c3aed', bg: '#ede9fe',
+    points: ['LMS Integration', 'Student Portal Setup', 'Course Management'],
   },
   {
-    icon: Building2,
+    num: '03', icon: Building2,
     title: 'Corporate Websites',
     desc: 'Professional corporate WordPress sites with custom page builders, multilingual support, and CRM integration.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=340&fit=crop&auto=format&q=80',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop&auto=format&q=80',
     stat: '50+', statLabel: 'Corporates Served',
-    color: '#1d4ed8',
+    color: '#0891b2', bg: '#cffafe',
+    points: ['Custom Page Builder', 'CRM Integration', 'Multilingual Support'],
   },
   {
-    icon: User,
+    num: '04', icon: User,
     title: 'Portfolio Websites',
     desc: 'Stunning portfolio showcases for creatives, photographers, designers, and freelancers to win more clients.',
-    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=500&h=340&fit=crop&auto=format&q=80',
+    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=600&h=400&fit=crop&auto=format&q=80',
     stat: '40+', statLabel: 'Portfolios Built',
-    color: '#3b82f6',
+    color: '#059669', bg: '#d1fae5',
+    points: ['Gallery & Showcase Setup', 'Mobile Optimised', 'SEO-Ready Design'],
   },
   {
-    icon: Wrench,
+    num: '05', icon: Wrench,
     title: 'Service Businesses',
     desc: 'Lead-generating service websites with appointment booking, testimonials, and inquiry management.',
-    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=340&fit=crop&auto=format&q=80',
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop&auto=format&q=80',
     stat: '60+', statLabel: 'Business Sites',
-    color: '#1d4ed8',
+    color: '#d97706', bg: '#fef3c7',
+    points: ['Booking System', 'Lead Generation Forms', 'Google Maps Integration'],
   },
 ]
 
 export default function CMSPortfolio() {
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden bg-white">
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 65%)' }} />
+    <section className="relative py-16 sm:py-24 overflow-hidden"
+      style={{ background: 'linear-gradient(160deg,#f8faff 0%,#eff6ff 50%,#f0f9ff 100%)' }}>
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '32px 32px' }} />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
 
-        {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 reveal">
-          <div>
-            <span
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.2)' }}
-            >
-              <Trophy size={11} /> Our Success Stories
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+
+        {/* ── Header ── */}
+        <div className="text-center mb-14 reveal">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+            style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.18)' }}>
+            <Trophy size={11} /> Our Success Stories
+          </span>
+          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+            WordPress Websites{' '}
+            <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              Across Industries
             </span>
-            <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
-              WordPress Websites{' '}
-              <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Across Industries
-              </span>
-            </h2>
-          </div>
-          <p className="text-[14px] text-slate-500 leading-[1.75] max-w-sm lg:text-right">
+          </h2>
+          <p className="text-[14.5px] text-slate-500 leading-relaxed max-w-xl mx-auto">
             We have delivered high-quality WordPress websites for businesses across diverse sectors in Thanjavur and beyond.
           </p>
         </div>
 
-        {/* Asymmetric layout: large first card + 4 smaller cards */}
-        <div className="reveal flex flex-col gap-5">
+        {/* ── Story cards — alternating layout ── */}
+        <div className="flex flex-col gap-6 mb-14">
+          {industries.map(({ num, icon: Icon, title, desc, image, stat, statLabel, color, bg, points }, i) => (
+            <div key={title}
+              className={`reveal group flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-0 rounded-3xl overflow-hidden`}
+              style={{ boxShadow: `0 8px 40px ${color}12`, border: `1px solid ${color}18` }}>
 
-          {/* Row 1: large featured card */}
-          <div className="relative rounded-3xl overflow-hidden group cursor-pointer"
-            style={{ height: 320, boxShadow: '0 16px 48px rgba(37,99,235,0.12)', border: '1px solid rgba(37,99,235,0.1)' }}>
-            <img
-              src={industries[0].image}
-              alt={`${industries[0].title} — WordPress Development Thanjavur`}
-              className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1.2s]"
-            />
-            <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(135deg, rgba(3,12,9,0.75) 0%, rgba(37,99,235,0.2) 100%)' }} />
-
-            <div className="absolute inset-0 flex flex-col justify-end p-8">
-              <div className="flex items-end justify-between">
-                <div>
-                  <div className="flex items-center gap-2.5 mb-3">
-                    <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                      style={{ background: 'rgba(37,99,235,0.25)', backdropFilter: 'blur(8px)', border: '1px solid rgba(37,99,235,0.4)' }}>
-                      <ShoppingCart size={16} style={{ color: '#60a5fa' }} />
-                    </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-blue-300">Featured Industry</span>
-                  </div>
-                  <h3 className="text-[22px] font-bold text-white mb-2">{industries[0].title}</h3>
-                  <p className="text-[13px] leading-[1.65] max-w-xl" style={{ color: 'rgba(255,255,255,0.7)' }}>{industries[0].desc}</p>
-                </div>
-                <div className="hidden sm:flex flex-col items-end flex-shrink-0 ml-6">
-                  <span className="text-[36px] font-black leading-tight" style={{ color: '#60a5fa' }}>{industries[0].stat}</span>
-                  <span className="text-[11px] text-white/50">{industries[0].statLabel}</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="absolute top-5 right-5 w-10 h-10 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300"
-              style={{ background: 'rgba(37,99,235,0.3)', backdropFilter: 'blur(8px)' }}>
-              <ArrowUpRight size={17} style={{ color: '#60a5fa' }} />
-            </div>
-          </div>
-
-          {/* Row 2: 4 smaller cards — 1-col xs, 2-col sm/md, 4-col lg */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {industries.slice(1).map(({ icon: Icon, title, desc, image, stat, statLabel, color }) => (
-              <div key={title} className="relative rounded-2xl overflow-hidden group cursor-pointer"
-                style={{ minHeight: 220, boxShadow: '0 8px 32px rgba(0,0,0,0.08)', border: '1px solid #f1f5f9' }}>
-                <img
-                  src={image}
-                  alt={`${title} — WordPress Website Thanjavur`}
-                  className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-[1.2s]"
-                  loading="lazy"
-                />
+              {/* Image side */}
+              <div className="w-full lg:w-[42%] flex-shrink-0 relative overflow-hidden" style={{ minHeight: 220 }}>
+                <img src={image} alt={`${title} — WordPress Website Thanjavur`} loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ minHeight: 220 }} />
                 <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.72) 100%)' }} />
+                  style={{ background: `linear-gradient(135deg,${color}44 0%,rgba(10,26,52,0.55) 100%)` }} />
 
-                <div className="absolute inset-0 flex flex-col justify-end p-5">
-                  <div className="w-8 h-8 rounded-xl flex items-center justify-center mb-2.5 flex-shrink-0"
-                    style={{ background: `${color}25`, backdropFilter: 'blur(8px)', border: `1px solid ${color}50` }}>
-                    <Icon size={14} style={{ color: '#fff' }} />
-                  </div>
-                  <h3 className="text-[14px] font-bold text-white mb-1 leading-snug">{title}</h3>
-                  <p className="text-[11px] leading-[1.6] mb-2" style={{ color: 'rgba(255,255,255,0.65)' }}>{desc}</p>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-[16px] font-black" style={{ color }}>{stat}</span>
-                    <span className="text-[10px]" style={{ color: 'rgba(255,255,255,0.5)' }}>{statLabel}</span>
-                  </div>
+                {/* Number badge */}
+                <div className="absolute top-5 left-5 flex items-center justify-center w-12 h-12 rounded-2xl"
+                  style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)' }}>
+                  <span className="text-[18px] font-black text-white">{num}</span>
                 </div>
 
-                <div className="absolute top-3 right-3 w-8 h-8 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300"
-                  style={{ background: `${color}30`, backdropFilter: 'blur(8px)' }}>
-                  <ArrowUpRight size={13} className="text-white" />
+                {/* Stat */}
+                <div className="absolute bottom-5 left-5 px-4 py-2.5 rounded-xl"
+                  style={{ background: 'rgba(255,255,255,0.13)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                  <p className="text-[22px] font-black text-white leading-none">{stat}</p>
+                  <p className="text-[10px] text-white/60 font-semibold mt-0.5">{statLabel}</p>
                 </div>
               </div>
-            ))}
-          </div>
 
-        </div>
+              {/* Content side */}
+              <div className="flex-1 bg-white px-7 py-7 flex flex-col justify-center">
+                {/* Icon + title */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: bg, border: `1.5px solid ${color}22` }}>
+                    <Icon size={20} style={{ color }} />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color }}>Industry {num}</span>
+                    <h3 className="text-[17px] font-bold text-slate-900 leading-tight">{title}</h3>
+                  </div>
+                </div>
 
-        {/* Bottom trust strip */}
-        <div className="reveal mt-10 flex flex-wrap items-center justify-center gap-6 pt-8"
-          style={{ borderTop: '1px solid #f1f5f9' }}>
-          {[
-            { val: '200+', lbl: 'WordPress Sites Delivered' },
-            { val: '98%', lbl: 'Client Satisfaction Rate' },
-            { val: '5★', lbl: 'Average Client Rating' },
-          ].map(({ val, lbl }) => (
-            <div key={lbl} className="text-center px-6">
-              <p className="text-[26px] font-black text-slate-800 leading-tight">{val}</p>
-              <p className="text-[11.5px] text-slate-400 font-medium mt-0.5">{lbl}</p>
+                <p className="text-[13.5px] text-slate-500 leading-[1.8] mb-5">{desc}</p>
+
+                {/* Feature points */}
+                <div className="flex flex-col gap-2">
+                  {points.map(p => (
+                    <div key={p} className="flex items-center gap-2.5">
+                      <CheckCircle2 size={14} style={{ color, flexShrink: 0 }} />
+                      <span className="text-[12.5px] font-medium text-slate-600">{p}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Accent bottom bar */}
+                <div className="mt-6 h-1 w-0 rounded-full group-hover:w-16 transition-all duration-500"
+                  style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
+              </div>
+
             </div>
           ))}
         </div>
 
-        {/* SEO keyword paragraph */}
-        <div className="reveal mt-8 text-center max-w-3xl mx-auto">
+        {/* ── Bottom metrics ── */}
+        <div className="reveal grid grid-cols-3 gap-4 mb-10">
+          {[
+            { icon: TrendingUp, val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
+            { icon: Star,       val: '98%',  lbl: 'Client Satisfaction Rate',  color: '#7c3aed' },
+            { icon: Award,      val: '5★',   lbl: 'Average Client Rating',     color: '#059669' },
+          ].map(({ icon: Icon, val, lbl, color }) => (
+            <div key={lbl} className="flex items-center gap-4 px-5 py-4 rounded-2xl bg-white"
+              style={{ border: `1px solid ${color}18`, boxShadow: `0 4px 16px ${color}0a` }}>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                style={{ background: color + '12', border: `1.5px solid ${color}20` }}>
+                <Icon size={17} style={{ color }} />
+              </div>
+              <div>
+                <p className="text-[22px] font-black text-slate-900 leading-none">{val}</p>
+                <p className="text-[11px] text-slate-500 font-medium mt-0.5">{lbl}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── SEO paragraph ── */}
+        <div className="reveal text-center max-w-3xl mx-auto">
           <p className="text-[13px] text-slate-400 leading-[1.85]">
             We are one of the <strong className="text-slate-500 font-semibold">best WordPress development companies in Thanjavur</strong> for our consistent delivery and client satisfaction. Our <strong className="text-slate-500 font-semibold">cms website development services in Thanjavur</strong> have helped businesses improve their online visibility and customer engagement across industries.
           </p>
@@ -177,4 +173,3 @@ export default function CMSPortfolio() {
     </section>
   )
 }
-

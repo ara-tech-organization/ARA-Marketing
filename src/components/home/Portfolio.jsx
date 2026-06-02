@@ -1,4 +1,4 @@
-import { ArrowUpRight, Briefcase, TrendingUp, Users, Star } from 'lucide-react'
+import { ArrowUpRight, Briefcase } from 'lucide-react'
 
 const caseStudies = [
   {
@@ -27,7 +27,6 @@ const caseStudies = [
   },
 ]
 
-const industries = ['Healthcare', 'Education', 'Retail', 'Real Estate', 'Restaurants', 'Manufacturing', 'eCommerce', 'Fashion & Lifestyle']
 
 export default function Portfolio() {
   return (
@@ -108,51 +107,6 @@ export default function Portfolio() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Industry strip */}
-        <div className="reveal rounded-[24px] border border-slate-200 overflow-hidden">
-          {/* Top bar */}
-          <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-5 bg-slate-50 border-b border-slate-200">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
-                <Users size={15} />
-              </div>
-              <div>
-                <p className="text-[13px] font-bold text-slate-900 leading-none">Industries We Serve</p>
-                <p className="text-[11px] text-slate-400 mt-0.5 font-medium">Customized strategies for every sector</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-1.5">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} size={13} fill="#f59e0b" color="#f59e0b" />
-              ))}
-              <span className="text-[12px] text-slate-500 ml-1 font-semibold">5.0 · 100+ Happy Clients</span>
-            </div>
-          </div>
-
-          {/* Pills row */}
-          <div className="px-8 py-6 bg-white flex flex-wrap gap-3">
-            {industries.map(ind => (
-              <span
-                key={ind}
-                className="industry-pill inline-flex items-center px-5 py-2.5 bg-slate-50
-                  border border-slate-200 rounded-full text-[13px] font-semibold text-slate-700
-                  transition-all duration-300 hover:bg-blue-100 hover:text-slate-900
-                  hover:border-blue-400 cursor-default"
-              >
-                {ind}
-              </span>
-            ))}
-          </div>
-
-          {/* Bottom note */}
-          <div className="px-8 py-4 bg-blue-50 border-t border-blue-100 flex items-center gap-2">
-            <TrendingUp size={14} className="text-blue-600 flex-shrink-0" />
-            <p className="text-[13px] font-semibold text-blue-700">
-              We are the best digital marketing company in Thanjavur for businesses across all sectors.
-            </p>
-          </div>
         </div>
 
       </div>

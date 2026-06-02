@@ -22,7 +22,11 @@ const platforms = [
     h3: 'Facebook Marketing',
     imgSrc: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'Facebook Marketing and Advertising Services in Thanjavur',
-    desc: 'Facebook is still one of the most effective platforms for marketing businesses and customer targeting. Our social media team specializes in facebook marketing for business in Thanjavur, helping brands generate leads, increase page engagement, and improve conversions with strategic campaigns. We are one of the trusted facebook advertising companies in Thanjavur, who create result-oriented campaigns to improve brand visibility and customer interaction. If you are looking for reliable Facebook social media marketing companies in Thanjavur for creative and ROI-focused Facebook strategies, your search ends at Ara Discover Marketing.',
+    desc: [
+      'Facebook is still one of the most effective platforms for marketing businesses and customer targeting. Our social media team specializes in facebook marketing for business in Thanjavur, helping brands generate leads, increase page engagement, and improve conversions with strategic campaigns.',
+      'We are one of the trusted facebook advertising companies in Thanjavur, who create result-oriented campaigns to improve brand visibility and customer interaction.',
+      'If you are looking for reliable Facebook social media marketing companies in Thanjavur for creative and ROI-focused Facebook strategies, your search ends at Ara Discover Marketing.',
+    ],
     keywords: ['Facebook Ads', 'Facebook Lead Gen'],
     services: [
       'Facebook Ads Campaign Management',
@@ -41,7 +45,11 @@ const platforms = [
     h3: 'LinkedIn Marketing',
     imgSrc: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'LinkedIn Professional Networking and Branding in Thanjavur',
-    desc: 'LinkedIn marketing helps businesses to reach out to professionals, decision makers, and industry leaders. Our LinkedIn social media marketing services in Thanjavur are all about creating professional brand authority and increasing B2B engagement. We also offer a LinkedIn engagement strategy in Thanjavur to help organisations enhance audience interaction and professional visibility.',
+    desc: [
+      'LinkedIn marketing helps businesses to reach out to professionals, decision makers, and industry leaders.',
+      'Our LinkedIn social media marketing services in Thanjavur are all about creating professional brand authority and increasing B2B engagement.',
+      'We also offer a LinkedIn engagement strategy in Thanjavur to help organisations enhance audience interaction and professional visibility.',
+    ],
     keywords: ['B2B Marketing', 'LinkedIn Content'],
     services: [
       'LinkedIn Profile Optimization',
@@ -60,7 +68,11 @@ const platforms = [
     h3: 'Pinterest Marketing',
     imgSrc: 'https://images.unsplash.com/photo-1636044594149-6e2f289c3868?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'Pinterest Branding and Visual Marketing in Thanjavur',
-    desc: 'Pinterest is a giant in visual discovery and product promotion. Our Pinterest social media marketing in Thanjavur services help in drawing highly engaged audiences with creative visual campaigns for brands. Looking for Pinterest digital marketing in Thanjavur, you can trust us to create visually appealing campaigns that generate traffic and increase brand awareness. We also offer strategic solutions for advertising on Pinterest in Thanjavur for better reach and conversions.',
+    desc: [
+      'Pinterest is a giant in visual discovery and product promotion. Our Pinterest social media marketing in Thanjavur services help in drawing highly engaged audiences with creative visual campaigns for brands.',
+      'Looking for Pinterest digital marketing in Thanjavur, you can trust us to create visually appealing campaigns that generate traffic and increase brand awareness.',
+      'We also offer strategic solutions for advertising on Pinterest in Thanjavur for better reach and conversions.',
+    ],
     keywords: ['Pinterest Ads', 'Pinterest SEO'],
     services: [
       'Pinterest Business Account Setup',
@@ -79,7 +91,11 @@ const platforms = [
     h3: 'Social Media Optimization (SMO)',
     imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format&q=80',
     imgAlt: 'Social Media Optimization SMO Services in Thanjavur',
-    desc: 'Our SMO services help in improving the social media visibility, audience engagement & profile performance on platforms. We are offering advanced social media optimisation services in Thanjavur, helping businesses to create strong online branding. We are one of the best social media optimisation SMO companies in Thanjavur, and we help businesses to improve their social reach and engagement using strategic optimisation techniques. Our knowledge in SMO for Instagram in Thanjavur helps brands to boost follower engagement and profile exposure. Looking for the best social media optimisation SMO services in Thanjavur, trust our SMO team to provide you with result-driven social optimisation strategies. We are also a trusted SMO services provider in Thanjavur, providing constant social media growth.',
+    desc: [
+      'Our SMO services help in improving the social media visibility, audience engagement & profile performance on platforms. We are offering advanced social media optimisation services in Thanjavur, helping businesses to create strong online branding.',
+      'We are one of the best social media optimisation SMO companies in Thanjavur, helping businesses to improve their social reach and engagement using strategic optimisation techniques. Our knowledge in SMO for Instagram in Thanjavur helps brands to boost follower engagement and profile exposure.',
+      'Looking for the best social media optimisation SMO services in Thanjavur, trust our SMO team to provide you with result-driven social optimisation strategies.',
+    ],
     keywords: ['SMO Services', 'Instagram SMO'],
     services: [
       'Social Profile Optimization',
@@ -207,7 +223,11 @@ export default function SMMServices() {
               <PlatformImage src={imgSrc} alt={imgAlt} color={color} bgLight={bgLight} />
 
               {/* Description with natural keyword integration */}
-              <p className="text-[13px] text-slate-500 leading-[1.8] mb-5">{desc}</p>
+              <div className="flex flex-col gap-2.5 mb-5">
+                {desc.map((p, i) => (
+                  <p key={i} className="text-[13px] text-slate-500 leading-[1.8]">{p}</p>
+                ))}
+              </div>
 
               {/* Hidden keyword spans for SEO (screen-reader accessible) */}
               <div className="sr-only">

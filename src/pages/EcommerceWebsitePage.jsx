@@ -11,8 +11,9 @@ import ECWhyUs        from '../components/ecommercewebsite/ECWhyUs'
 import ECWhoShould    from '../components/ecommercewebsite/ECWhoShould'
 import ECBenefits     from '../components/ecommercewebsite/ECBenefits'
 import ECProcess      from '../components/ecommercewebsite/ECProcess'
-import ECTestimonials from '../components/ecommercewebsite/ECTestimonials'
-import ECCTA          from '../components/ecommercewebsite/ECCTA'
+import ECTestimonials    from '../components/ecommercewebsite/ECTestimonials'
+import ECDeliveryPromise from '../components/ecommercewebsite/ECDeliveryPromise'
+import ECCTA            from '../components/ecommercewebsite/ECCTA'
 import ECFAQ          from '../components/ecommercewebsite/ECFAQ'
 
 const schema = {
@@ -75,6 +76,7 @@ export default function EcommerceWebsitePage() {
         <ECBenefits />
         <ECProcess />
         <ECTestimonials />
+        <ECDeliveryPromise />
         <ECCTA />
         <ECFAQ />
       </main>

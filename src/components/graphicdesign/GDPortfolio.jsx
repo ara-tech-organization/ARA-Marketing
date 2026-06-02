@@ -13,13 +13,13 @@ const projects = [
   {
     label: 'Restaurant Brand Identity',
     tag: 'Logo Design',
-    img: 'https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=600&h=400&fit=crop&auto=format&q=80',
+    img: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&auto=format&q=80',
     alt: 'Professional Brand Logo Design in Thanjavur for Restaurant Brand',
   },
   {
     label: 'Corporate Brochure Design',
     tag: 'Brochure',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&auto=format&q=80',
+    img: 'https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=600&h=400&fit=crop&auto=format&q=80',
     alt: 'Corporate Brochure Designs in Thanjavur - Corporate Identity',
   },
   {
@@ -31,13 +31,13 @@ const projects = [
   {
     label: 'Retail Flyer Design',
     tag: 'Flyer Design',
-    img: 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=600&h=400&fit=crop&auto=format&q=80',
+    img: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=400&fit=crop&auto=format&q=80',
     alt: 'Business Flyer Layouts in Thanjavur - Retail Marketing',
   },
   {
     label: 'Educational Institution Branding',
     tag: 'Brand Identity',
-    img: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&h=400&fit=crop&auto=format&q=80',
+    img: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format&q=80',
     alt: 'Best Graphic Design Companies in Thanjavur - Educational Branding',
   },
   {

@@ -14,7 +14,11 @@ const services = [
     bg: '#eff6ff',
     badge: 'Best Email Marketing in Thanjavur',
     heading: 'Strategic Email Marketing Campaigns',
-    desc: 'Email marketing remains one of the most powerful ways to reach targeted customers and improve conversions. As one of the best email marketing agencies in Thanjavur, we craft campaigns that improve open rates and drive measurable results. We are the best email marketing service in Thanjavur for businesses seeking customer-focused strategies. We provide bulk email advertising services in Thanjavur — including bulk sending emails in Thanjavur for businesses across sectors. As a trusted email marketing service provider in Thanjavur, our email marketing advertising in Thanjavur delivers consistent, measurable ROI.',
+    desc: [
+      'Email marketing remains one of the most powerful ways to reach targeted customers and improve conversions. As one of the best email marketing agencies in Thanjavur, we craft campaigns that improve open rates and drive measurable results.',
+      'We are the best email marketing service in Thanjavur for businesses seeking customer-focused strategies. We provide bulk email advertising services in Thanjavur — including bulk sending emails in Thanjavur for businesses across sectors.',
+      'As a trusted email marketing service provider in Thanjavur, our email marketing advertising in Thanjavur delivers consistent, measurable ROI.',
+    ],
     items: [
       { icon: Megaphone,  text: 'Promotional Email Campaigns' },
       { icon: Send,       text: 'Newsletter Marketing' },
@@ -37,7 +41,11 @@ const services = [
     bg: '#f5f3ff',
     badge: 'Influencer Marketing in Thanjavur',
     heading: 'Influencer Marketing & Brand Collaborations',
-    desc: 'Influencer marketing connects your brand with people through content creators they trust. Our influencers marketing in Thanjavur services help brands improve visibility, engagement, and online credibility. We are experts at connecting influencers to brands in Thanjavur, building successful brands collaborating with influencers in Thanjavur for authentic reach. From advertising with influencers in Thanjavur to managing influencers and brands in Thanjavur partnerships, we are a trusted influencer advertising agency in Thanjavur delivering creative, performance-driven campaigns.',
+    desc: [
+      'Influencer marketing connects your brand with people through content creators they trust. Our influencers marketing in Thanjavur services help brands improve visibility, engagement, and online credibility.',
+      'We are experts at connecting influencers to brands in Thanjavur, building successful brands collaborating with influencers in Thanjavur for authentic reach.',
+      'From advertising with influencers in Thanjavur to managing influencers and brands in Thanjavur partnerships, we are a trusted influencer advertising agency in Thanjavur delivering creative, performance-driven campaigns.',
+    ],
     items: [
       { icon: Sparkles,  text: 'Influencer Campaign Planning' },
       { icon: Share2,    text: 'Brand Collaboration Strategies' },
@@ -60,7 +68,11 @@ const services = [
     bg: '#ecfeff',
     badge: 'Bulk SMS Promotion in Thanjavur',
     heading: 'SMS Marketing & Bulk Promotional Campaigns',
-    desc: 'SMS marketing allows businesses to instantly send updates, offers, and promotional messages to customers. Our strategies are tailored for engagement, promotions, and retention. We are a trusted SMS agency in Thanjavur providing reliable bulk SMS promotion in Thanjavur for businesses across all sectors. As a trusted SMS marketing service provider in Thanjavur, we also offer text advertising services in Thanjavur to help brands boost engagement with targeted messaging campaigns.',
+    desc: [
+      'SMS marketing allows businesses to instantly send updates, offers, and promotional messages to customers. Our strategies are tailored for engagement, promotions, and retention.',
+      'We are a trusted SMS agency in Thanjavur providing reliable bulk SMS promotion in Thanjavur for businesses across all sectors.',
+      'As a trusted SMS marketing service provider in Thanjavur, we also offer text advertising services in Thanjavur to help brands boost engagement with targeted messaging campaigns.',
+    ],
     items: [
       { icon: Megaphone,    text: 'Promotional SMS Campaigns' },
       { icon: Send,         text: 'Transactional SMS Services' },
@@ -137,7 +149,11 @@ export default function OMServices() {
             </span>
 
             <h3 className="text-[20px] sm:text-[22px] font-bold text-slate-900 leading-snug mb-4">{s.heading}</h3>
-            <p className="text-[13.5px] text-slate-500 leading-[1.85] mb-7">{s.desc}</p>
+            <div className="flex flex-col gap-2.5 mb-7">
+              {s.desc.map((p, i) => (
+                <p key={i} className="text-[13.5px] text-slate-500 leading-[1.85]">{p}</p>
+              ))}
+            </div>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-5 pt-5 mb-7" style={{ borderTop: `1px solid ${s.color}10` }}>

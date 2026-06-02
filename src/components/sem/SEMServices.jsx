@@ -74,10 +74,10 @@ export default function SEMServices() {
               onClick={() => setActive(i)}
               className={`group relative flex flex-col items-start gap-3 p-5 rounded-2xl border
                 text-left transition-all duration-300 overflow-hidden
-                ${active === i ? 'shadow-xl -translate-y-1' : 'bg-white border-slate-100 hover:shadow-md hover:-translate-y-0.5'}`}
+                ${active === i ? '-translate-y-1' : 'bg-white border-slate-100 hover:-translate-y-0.5'}`}
               style={active === i
-                ? { background: `linear-gradient(135deg, ${color}12, white)`, borderColor: `${color}35`, boxShadow: `0 12px 36px ${color}22` }
-                : {}}
+                ? { background: `linear-gradient(135deg, ${color}12, white)`, borderColor: `${color}35`, boxShadow: 'none' }
+                : { boxShadow: 'none' }}
             >
               {/* Active indicator */}
               {active === i && (
@@ -109,7 +109,7 @@ export default function SEMServices() {
 
         {/* ── Content panel: image right, content left ── */}
         <div key={svc.id}
-          className="reveal flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-slate-100/80"
+          className="flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-slate-100/80"
           style={{ boxShadow: '0 24px 70px rgba(37,99,235,0.09)', background: 'white' }}>
 
           {/* Left: content */}

@@ -81,26 +81,26 @@ export default function WebDevAssurance() {
               style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.10) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
             <div className="absolute -right-16 -top-16 w-48 h-48 rounded-full pointer-events-none"
               style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)' }} />
-            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 px-10 py-10">
+            <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 px-10 py-8">
               <div>
                 <p className="text-[11px] font-bold text-blue-200 uppercase tracking-widest mb-2">Call Us Today</p>
-                <h3 className="text-[clamp(18px,2.5vw,28px)] font-bold text-white leading-tight max-w-lg">
+                <h3 className="text-[15px] font-bold text-white leading-tight max-w-lg">
                   Call us today to work with a trusted web development and designing company in
                   thanjavur for your next digital project.
                 </h3>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-3 flex-shrink-0">
                 <a href="tel:+919876543210"
-                  className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-white text-blue-600
-                    rounded-full text-sm font-bold shadow-lg hover:bg-blue-50
-                    hover:-translate-y-0.5 transition-all duration-300">
-                  <Phone size={16} /> Call Us Now
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-blue-600
+                    rounded-full text-[13px] font-bold shadow-md hover:bg-blue-50
+                    hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+                  <Phone size={14} /> Call Us Now
                 </a>
                 <a href="/ARA-Marketing/contact"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/30
-                    text-white rounded-full text-sm font-semibold
-                    hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-                  Get Free Quote <ArrowRight size={15} />
+                  className="inline-flex items-center gap-2 px-5 py-2.5 border border-white/30
+                    text-white rounded-full text-[13px] font-semibold
+                    hover:bg-white/10 hover:border-white/50 transition-all duration-300 whitespace-nowrap">
+                  Get Free Quote <ArrowRight size={14} />
                 </a>
               </div>
             </div>

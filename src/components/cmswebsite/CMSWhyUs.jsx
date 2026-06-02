@@ -1,144 +1,146 @@
-﻿import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award } from 'lucide-react'
+import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award, Star, CheckCircle2 } from 'lucide-react'
 
 const reasons = [
-  { icon: Palette,          title: 'Fully Customised WordPress Development',    desc: 'Every website we build is crafted from scratch — no templates. Unique designs aligned to your brand identity.',          color: '#2563eb' },
-  { icon: Search,           title: 'SEO-Optimised Website Structure',           desc: 'Built with Google in mind from day one — proper heading hierarchy, schema markup, fast loading, and clean URLs.',         color: '#2563eb' },
-  { icon: Zap,              title: 'Fast Loading & Secure Architecture',        desc: 'Performance-first builds with CDN, image optimisation, security hardening, and caching for lightning-fast pages.',        color: '#1d4ed8' },
-  { icon: Smartphone,       title: 'Mobile-First Responsive Design',            desc: 'Every page looks and works flawlessly on phones, tablets, and desktops — tested across all major devices.',              color: '#3b82f6' },
-  { icon: Shield,           title: 'Easy-to-Manage CMS Dashboard',             desc: 'We configure your WordPress admin panel so you can update content, add pages, and manage media without any coding.',      color: '#1d4ed8' },
-  { icon: HeadphonesIcon,   title: 'Dedicated Support & Maintenance',          desc: 'Post-launch support to keep your website secure, updated, and performing at its peak — we are always here for you.',       color: '#1e40af' },
+  { icon: Palette,        title: 'Fully Customised WordPress Development', desc: 'Every website we build is crafted from scratch — no templates. Unique designs aligned to your brand identity.',   color: '#2563eb', light: '#dbeafe' },
+  { icon: Search,         title: 'SEO-Optimised Website Structure',        desc: 'Built with Google in mind from day one — proper heading hierarchy, schema markup, fast loading, and clean URLs.',  color: '#7c3aed', light: '#ede9fe' },
+  { icon: Zap,            title: 'Fast Loading & Secure Architecture',     desc: 'Performance-first builds with CDN, image optimisation, security hardening, and caching for lightning-fast pages.', color: '#0891b2', light: '#cffafe' },
+  { icon: Smartphone,     title: 'Mobile-First Responsive Design',         desc: 'Every page looks and works flawlessly on phones, tablets, and desktops — tested across all major devices.',         color: '#059669', light: '#d1fae5' },
+  { icon: Shield,         title: 'Easy-to-Manage CMS Dashboard',          desc: 'We configure your WordPress admin panel so you can update content, add pages, and manage media without any coding.', color: '#d97706', light: '#fef3c7' },
+  { icon: HeadphonesIcon, title: 'Dedicated Support & Maintenance',       desc: 'Post-launch support to keep your website secure, updated, and performing at its peak — we are always here.',         color: '#db2777', light: '#fce7f3' },
+]
+
+const stats = [
+  { val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb', light: '#dbeafe' },
+  { val: '5★',   lbl: 'Average Client Rating',     color: '#d97706', light: '#fef3c7' },
+  { val: '100%', lbl: 'Custom-Built Websites',     color: '#7c3aed', light: '#ede9fe' },
 ]
 
 export default function CMSWhyUs() {
   return (
-    <section
-      className="relative py-16 sm:py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%)' }}
-    >
-      {/* Background glows */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 65%)' }} />
-      <div className="absolute right-0 bottom-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
+    <section className="relative py-20 sm:py-28 overflow-hidden bg-white">
 
-      {/* Dot grid */}
-      <div className="absolute inset-0 pointer-events-none opacity-12"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.5) 1px, transparent 1px)', backgroundSize: '44px 44px' }} />
+      {/* Subtle dot grid */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '30px 30px' }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      {/* Light ambient orbs */}
+      <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
+      <div className="absolute -bottom-24 -left-24 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.06) 0%,transparent 65%)' }} />
 
-        <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20 items-start">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-          {/* Left: Large stat panel */}
-          <div className="md:w-[320px] lg:w-[380px] flex-shrink-0 reveal">
-            <span
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.2)' }}
-            >
+        {/* ── Header ── */}
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16 reveal">
+          <div>
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+              style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.18)' }}>
               <Award size={11} /> Why Choose Us
             </span>
-
-            <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
+            <h2 className="text-[clamp(26px,3.5vw,48px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               We Build{' '}
-              <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Digital
               </span>{' '}
-              <br />Success
+              Success
             </h2>
+          </div>
+          <p className="text-[14.5px] text-slate-500 leading-[1.8] max-w-sm lg:text-right">
+            We are a professional custom CMS WordPress development company in Thanjavur focused on delivering result-oriented digital solutions.
+          </p>
+        </div>
 
-            <p className="text-[14px] leading-[1.85] mb-8" style={{ color: '#64748b' }}>
-              We are a professional custom CMS WordPress development company in Thanjavur focused on delivering result-oriented digital solutions. Every website we build is a growth engine for your business.
+        {/* ── Top: image left + stats right ── */}
+        <div className="reveal flex flex-col lg:flex-row gap-6 mb-10 items-stretch">
+
+          {/* Image */}
+          <div className="w-full lg:w-[400px] flex-shrink-0 relative rounded-3xl overflow-hidden"
+            style={{ minHeight: 280, boxShadow: '0 24px 64px rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.1)' }}>
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=560&fit=crop&auto=format&q=80"
+              alt="WordPress Development Team Thanjavur"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-0"
+              style={{ background: 'linear-gradient(160deg,rgba(29,78,216,0.5) 0%,rgba(10,26,52,0.6) 100%)' }} />
+
+            <div className="absolute top-5 left-5 flex items-center gap-2 px-3.5 py-2 rounded-xl"
+              style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)' }}>
+              <CheckCircle2 size={12} className="text-white" />
+              <span className="text-[10px] font-bold text-white uppercase tracking-wider">Trusted Agency</span>
+            </div>
+
+            <div className="absolute bottom-5 left-5 right-5 flex items-center gap-2">
+              {[1,2,3,4,5].map(s => <Star key={s} size={14} fill="#fbbf24" color="#fbbf24" />)}
+              <span className="text-white font-bold text-[12px] ml-1">5.0 · 100+ Clients</span>
+            </div>
+          </div>
+
+          {/* Stats + description */}
+          <div className="flex-1 flex flex-col gap-4">
+            <p className="text-[14px] text-slate-600 leading-[1.85] p-5 rounded-2xl"
+              style={{ background: 'rgba(37,99,235,0.04)', border: '1px solid rgba(37,99,235,0.1)' }}>
+              Every website we build is a growth engine for your business. Our team combines creativity, technical expertise, and digital marketing insight to deliver WordPress solutions that perform, rank, and convert.
             </p>
-
-            {/* Big achievement numbers */}
-            <div className="flex flex-col gap-5">
-              {[
-                { val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
-                { val: '5★',   lbl: 'Average Client Rating',    color: '#f59e0b' },
-                { val: '100%', lbl: 'Custom-Built Websites',    color: '#2563eb' },
-              ].map(({ val, lbl, color }) => (
-                <div key={lbl} className="flex items-center gap-4 p-4 rounded-2xl"
-                  style={{ background: '#ffffff', border: '1px solid #e2e8f0', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
-                  <span className="text-[32px] font-black leading-none flex-shrink-0" style={{ color }}>{val}</span>
-                  <span className="text-[13px] font-medium text-slate-500">{lbl}</span>
+            <div className="grid grid-cols-3 gap-4 flex-1">
+              {stats.map(({ val, lbl, color, light }) => (
+                <div key={lbl} className="flex flex-col items-center justify-center text-center py-6 rounded-2xl"
+                  style={{ background: light, border: `1.5px solid ${color}22` }}>
+                  <span className="text-[32px] font-black leading-none mb-1.5" style={{ color }}>{val}</span>
+                  <span className="text-[11px] font-semibold text-slate-600 leading-snug">{lbl}</span>
                 </div>
               ))}
             </div>
+          </div>
+        </div>
 
-            {/* Image */}
-            <div className="mt-8 rounded-2xl overflow-hidden relative"
-              style={{ height: 180, border: '1px solid rgba(37,99,235,0.15)' }}>
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=280&fit=crop&auto=format&q=80"
-                alt="WordPress Development Team in Thanjavur — Ara Discover Marketing"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(135deg, rgba(29,78,216,0.35) 0%, rgba(3,12,9,0.35) 100%)' }} />
-              <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white text-[12px] font-bold leading-snug">
-                  Expert WordPress developers in Thanjavur — delivering since day one.
-                </p>
+        {/* ── 6 reason cards ── */}
+        <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          {reasons.map(({ icon: Icon, title, desc, color, light }, i) => (
+            <div key={title}
+              className="group relative flex flex-col gap-4 p-6 rounded-3xl bg-white transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl"
+              style={{ border: `1.5px solid ${color}18`, boxShadow: `0 4px 20px ${color}0a` }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = color + '35'; e.currentTarget.style.boxShadow = `0 20px 56px ${color}18` }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = color + '18'; e.currentTarget.style.boxShadow = `0 4px 20px ${color}0a` }}
+            >
+              {/* Top accent line */}
+              <div className="absolute top-0 left-6 right-6 h-[3px] rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300"
+                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+
+              <div className="flex items-start justify-between">
+                <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                  style={{ background: light, border: `1.5px solid ${color}25` }}>
+                  <Icon size={22} style={{ color }} />
+                </div>
+                <span className="text-[40px] font-black leading-none"
+                  style={{ color: color + '12' }}>
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+              </div>
+
+              <div>
+                <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
+                <p className="text-[12.5px] text-slate-500 leading-[1.78]">{desc}</p>
+              </div>
+
+              <div className="mt-auto pt-3 flex items-center gap-2" style={{ borderTop: `1px solid ${color}12` }}>
+                <CheckCircle2 size={13} style={{ color }} />
+                <span className="text-[11px] font-semibold" style={{ color }}>Included in our service</span>
               </div>
             </div>
-          </div>
+          ))}
+        </div>
 
-          {/* Right: Reasons list with vertical accent line */}
-          <div className="flex-1 reveal">
-            <div className="relative pl-6">
-              {/* Vertical connector line */}
-              <div className="absolute left-0 top-3 bottom-3 w-px"
-                style={{ background: 'linear-gradient(180deg, #2563eb, rgba(37,99,235,0.1))' }} />
-
-              <div className="flex flex-col gap-0">
-                {reasons.map(({ icon: Icon, title, desc, color }, i) => (
-                  <div
-                    key={title}
-                    className="group relative pb-8 last:pb-0 transition-all duration-300"
-                  >
-                    {/* Dot on line */}
-                    <div
-                      className="absolute -left-[25px] top-1 w-3 h-3 rounded-full border-2 transition-all duration-300 group-hover:scale-150"
-                      style={{ background: '#eff6ff', borderColor: color }}
-                    />
-
-                    <div
-                      className="rounded-2xl p-5 transition-all duration-300 group-hover:-translate-y-0.5"
-                      style={{ background: '#ffffff', border: '1px solid #e2e8f0', boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}
-                      onMouseEnter={e => { e.currentTarget.style.background = `${color}05`; e.currentTarget.style.borderColor = `${color}35` }}
-                      onMouseLeave={e => { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.borderColor = '#e2e8f0' }}
-                    >
-                      <div className="flex items-start gap-4">
-                        <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-                          style={{ background: `${color}15`, border: `1px solid ${color}25` }}>
-                          <Icon size={17} style={{ color }} />
-                        </div>
-                        <div>
-                          <h3 className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
-                          <p className="text-[12.5px] leading-[1.75]" style={{ color: '#64748b' }}>{desc}</p>
-                        </div>
-                        <span className="flex-shrink-0 text-[11px] font-black ml-auto pl-3" style={{ color: `${color}40` }}>
-                          {String(i + 1).padStart(2, '0')}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-        {/* SEO keyword closing paragraph */}
-        <div className="reveal mt-10 text-center max-w-3xl mx-auto">
-          <p className="text-[13px] leading-[1.85]" style={{ color: '#64748b' }}>
+        {/* ── SEO paragraph ── */}
+        <div className="reveal text-center max-w-3xl mx-auto">
+          <p className="text-[13px] text-slate-400 leading-[1.85]">
             As one of the <strong className="text-slate-600 font-semibold">best WordPress development companies in Thanjavur</strong>, we ensure that every website is developed with an eye for its long-term success. We also offer <strong className="text-slate-600 font-semibold">cms in website design &amp; development in Thanjavur</strong> solutions that improve user experience and engagement.
           </p>
         </div>
 
-        </div>
       </div>
     </section>
   )
 }
-

@@ -9,14 +9,20 @@ const services = [
     id: 'branding', icon: Sparkles, label: 'Branding Videos', color: '#2563eb', tag: 'Branding',
     imgSrc: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Branding video editing services in Thanjavur',
-    desc: 'Brand videos are critical to how customers see and trust your brand. We specialise in Branding Videos editing in Thanjavur, crafting creative and impactful content that tells your brand story effectively. Our cinematic storytelling in Thanjavur techniques forge emotional connections with your audience across every platform.',
+    desc: [
+      'Brand videos are critical to how customers see and trust your brand. We specialise in Branding Videos editing in Thanjavur, crafting creative and impactful content that tells your brand story effectively.',
+      'Our cinematic storytelling in Thanjavur techniques forge emotional connections with your audience across every platform.',
+    ],
     items: ['Brand Introduction Videos', 'Company Profile Videos', 'Promotional Brand Videos', 'Marketing Campaign Videos', 'Cinematic Storytelling', 'Colour Grading & Mood Design'],
   },
   {
     id: 'product', icon: Package, label: 'Product Videos', color: '#0891b2', tag: 'Product',
     imgSrc: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Product video editing services in Thanjavur',
-    desc: 'Product and service videos allow a company to convey what they offer in a clear and engaging way. As a trusted video editing service provider in Thanjavur, our business video editing services produce effective and engaging visuals that convert viewers into customers and drive measurable sales performance.',
+    desc: [
+      'Product and service videos allow a company to convey what they offer in a clear and engaging way.',
+      'As a trusted video editing service provider in Thanjavur, our business video editing services produce effective and engaging visuals that convert viewers into customers and drive measurable sales performance.',
+    ],
     items: ['Product Demo Videos', 'Service Explainer Videos', 'Promotional Ads', 'Marketing Video Content', 'Feature Highlight Reels', 'Before & After Showcases'],
   },
   {
@@ -37,14 +43,20 @@ const services = [
     id: 'social', icon: Share2, label: 'Social Media', color: '#db2777', tag: 'Social',
     imgSrc: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Social media video editing services in Thanjavur',
-    desc: 'Social media videos are a must for digital marketing success. We provide digital marketing video editing in Thanjavur tailored for Instagram, Facebook, and YouTube. As a leading YouTube video editing agency in Thanjavur and trusted YouTube video editing company in Thanjavur, we deliver video editing services for YouTube in Thanjavur that grow your channel audience.',
+    desc: [
+      'Social media videos are a must for digital marketing success. We provide digital marketing video editing in Thanjavur tailored for Instagram, Facebook, and YouTube.',
+      'As a leading YouTube video editing agency in Thanjavur and trusted YouTube video editing company in Thanjavur, we deliver video editing services for YouTube in Thanjavur that grow your channel audience.',
+    ],
     items: ['Instagram Reels Editing', 'Facebook Video Ads', 'Short Promotional Videos', 'Viral Content Editing', 'YouTube Channel Videos', 'Story & Short-form Content'],
   },
   {
     id: 'drone', icon: Wind, label: 'Drone Aerial', color: '#7c3aed', tag: 'Aerial',
     imgSrc: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Drone video editing in Thanjavur',
-    desc: 'Drone footage gives videos a movie-like feel. Our drone video editing services in Thanjavur transform raw aerial footage into visually stunning promotional content with professional colour grading, cinematic transitions, and motion effects that elevate your brand.',
+    desc: [
+      'Drone footage gives videos a movie-like feel.',
+      'Our drone video editing services in Thanjavur transform raw aerial footage into visually stunning promotional content with professional colour grading, cinematic transitions, and motion effects that elevate your brand.',
+    ],
     items: ['Cinematic Colour Grading', 'Motion Effects & Stabilisation', 'Aerial Transition Editing', 'Visual Enhancement & VFX', 'Real Estate Aerial Videos', 'Event Aerial Coverage'],
   },
 ]
@@ -147,7 +159,11 @@ export default function VEServices() {
                 </div>
               </div>
 
-              <p className="text-[14px] text-slate-600 leading-[1.88] mb-8">{svc.desc}</p>
+              <div className="flex flex-col gap-2.5 mb-8">
+                {svc.desc.map((p, i) => (
+                  <p key={i} className="text-[14px] text-slate-600 leading-[1.88]">{p}</p>
+                ))}
+              </div>
 
               {/* Feature items — two columns flex */}
               <div className="flex flex-wrap gap-2.5 mb-8">

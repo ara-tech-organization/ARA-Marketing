@@ -14,10 +14,10 @@ const adTypes = [
 ]
 
 const paragraphs = [
-  { text: 'Google Ads is one of the fastest ways to reach your potential customers and get conversions online. Ara Discover Marketing is the best Google paid advertising in Thanjavur to help businesses appear in front of the right audience at the right time.', color: '#2563eb', num: '01' },
-  { text: 'We are the most trusted search engine marketing service provider in Thanjavur. We specialize in PPC campaigns, search advertising, display advertising, YouTube promotions, and shopping campaigns to improve visibility and lead generation.', color: '#7c3aed', num: '02' },
-  { text: 'With our knowledge in Google Adwords paid search campaigns in Thanjavur, your business can get the best ad performance and minimize unnecessary advertising costs. We also offer strategic search engine marketing consulting services in Thanjavur to improve campaign efficiency and ROI.', color: '#0891b2', num: '03' },
-  { text: 'Ara Discover Marketing is the best search engine marketing SEM agencies in Thanjavur for performance-focused Google Ads management and transparent reporting.', color: '#059669', num: '04' },
+  { text: 'Google Ads is one of the fastest ways to reach your potential customers and get conversions online. Ara Discover Marketing is the best Google paid advertising in Thanjavur to help businesses appear in front of the right audience at the right time.', color: '#2563eb' },
+  { text: 'We are the most trusted search engine marketing service provider in Thanjavur. We specialize in PPC campaigns, search advertising, display advertising, YouTube promotions, and shopping campaigns to improve visibility and lead generation.', color: '#7c3aed' },
+  { text: 'With our knowledge in Google Adwords paid search campaigns in Thanjavur, your business can get the best ad performance and minimize unnecessary advertising costs. We also offer strategic search engine marketing consulting services in Thanjavur to improve campaign efficiency and ROI.', color: '#0891b2' },
+  { text: 'Ara Discover Marketing is the best search engine marketing SEM agencies in Thanjavur for performance-focused Google Ads management and transparent reporting.', color: '#059669' },
 ]
 
 export default function SEMIntro() {
@@ -26,14 +26,14 @@ export default function SEMIntro() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Section heading ── */}
-        <div className="text-center max-w-[700px] mx-auto mb-8 sm:mb-10 reveal">
+        <div className="text-center max-w-[900px] mx-auto mb-8 sm:mb-10 reveal">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5">
             <Cpu size={11} /> AI-Driven Google Advertising
           </span>
           <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
-            AI-Driven Google Advertising Solutions That{' '}
-            <span className="text-gradient-blue">Deliver Real Results</span>
+            AI-Driven Google Advertising<br />
+            Solutions That <span className="text-gradient-blue">Deliver Real Results</span>
           </h2>
         </div>
 
@@ -75,8 +75,8 @@ export default function SEMIntro() {
 
           {/* Paragraphs */}
           <div className="flex-1 flex flex-col gap-3 sm:gap-4">
-            {paragraphs.map(({ text, color, num }) => (
-              <div key={num}
+            {paragraphs.map(({ text, color }, i) => (
+              <div key={i}
                 className="group relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-slate-100
                   hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
                 style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
@@ -85,14 +85,7 @@ export default function SEMIntro() {
               >
                 <div className="h-0.5 w-0 rounded-full group-hover:w-8 transition-all duration-400 mb-3"
                   style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
-                <div className="flex items-start gap-3">
-                  <span className="flex-shrink-0 text-[10px] font-black w-6 h-6 rounded-lg flex items-center
-                    justify-center mt-0.5 transition-transform duration-300 group-hover:scale-110"
-                    style={{ background: color + '12', color, border: `1.5px solid ${color}22` }}>
-                    {num}
-                  </span>
-                  <p className="text-[13px] sm:text-[13.5px] text-slate-600 leading-[1.78]">{text}</p>
-                </div>
+                <p className="text-[13px] sm:text-[13.5px] text-slate-600 leading-[1.78]">{text}</p>
               </div>
             ))}
           </div>

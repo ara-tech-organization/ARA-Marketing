@@ -70,22 +70,14 @@ export default function ECBenefits() {
         <div className="reveal space-y-3 mb-10">
           {benefits.map(({ icon: Icon, title, desc, metric, metricLabel, color }, i) => (
             <div key={title}
-              className="group flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 sm:p-6 rounded-2xl transition-all duration-400 hover:-translate-x-1"
+              className="group flex flex-row items-center gap-5 px-6 py-5 rounded-2xl transition-all duration-300 hover:-translate-x-1"
               style={{ background: '#f8fbff', border: `1.5px solid ${color}12` }}
-              onMouseEnter={e => {
-                e.currentTarget.style.background = color + '06'
-                e.currentTarget.style.borderColor = color + '30'
-                e.currentTarget.style.boxShadow = `0 8px 28px ${color}12`
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.background = '#f8fbff'
-                e.currentTarget.style.borderColor = color + '12'
-                e.currentTarget.style.boxShadow = 'none'
-              }}>
+              onMouseEnter={e => { e.currentTarget.style.background = color + '06'; e.currentTarget.style.borderColor = color + '30'; e.currentTarget.style.boxShadow = `0 8px 28px ${color}12` }}
+              onMouseLeave={e => { e.currentTarget.style.background = '#f8fbff'; e.currentTarget.style.borderColor = color + '12'; e.currentTarget.style.boxShadow = 'none' }}>
 
               {/* Icon */}
               <div className="flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                style={{ background: `linear-gradient(135deg, ${color}16, ${color}08)`, border: `1.5px solid ${color}28` }}>
+                style={{ background: `linear-gradient(135deg,${color}16,${color}08)`, border: `1.5px solid ${color}28` }}>
                 <Icon size={18} style={{ color }} />
               </div>
 
@@ -95,13 +87,13 @@ export default function ECBenefits() {
                 <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
               </div>
 
-              {/* Metric */}
-              <div className="flex-shrink-0 text-right sm:text-center sm:min-w-[90px]">
+              {/* Metric — fixed width, always right */}
+              <div className="flex-shrink-0 w-[100px] text-center">
                 <p className="text-[22px] font-black leading-tight" style={{ color }}>{metric}</p>
                 <p className="text-[10px] text-slate-400 font-semibold mt-0.5">{metricLabel}</p>
               </div>
 
-              {/* Check on hover */}
+              {/* Check */}
               <CheckCircle2 size={16} className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-all duration-300" style={{ color }} />
             </div>
           ))}

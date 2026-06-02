@@ -13,7 +13,10 @@ const services = [
     tag: 'CMS',
     imgSrc: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'CMS website development in Thanjavur',
-    desc: 'We build fully functional CMS-powered websites that give you complete control over your content. As a leading dynamic website development company in Thanjavur, we integrate platforms like WordPress and custom CMS solutions so you can manage pages, blogs, and media effortlessly without any coding knowledge.',
+    desc: [
+      'We build fully functional CMS-powered websites that give you complete control over your content.',
+      'As a leading dynamic website development company in Thanjavur, we integrate platforms like WordPress and custom CMS solutions so you can manage pages, blogs, and media effortlessly without any coding knowledge.',
+    ],
     items: ['WordPress CMS Development', 'Custom CMS Integration', 'Blog & Content Management', 'Admin Panel Setup', 'Role-Based Access Control', 'Content Scheduling System'],
   },
   {
@@ -24,7 +27,10 @@ const services = [
     tag: 'E-Commerce',
     imgSrc: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'E-Commerce dynamic website development in Thanjavur',
-    desc: 'Our dynamic e-commerce website development service in Thanjavur delivers powerful online stores with real-time product catalogue management, cart systems, secure payment gateway integration, and inventory management — everything your business needs to sell online at scale.',
+    desc: [
+      'Our dynamic e-commerce website development service in Thanjavur delivers powerful online stores with real-time product catalogue management, cart systems, and secure payment gateway integration.',
+      'From inventory management to order dashboards, we build everything your business needs to sell online at scale.',
+    ],
     items: ['Product Catalogue Management', 'Shopping Cart & Checkout', 'Payment Gateway Integration', 'Real-Time Inventory System', 'Order Management Dashboard', 'Customer Account Portal'],
   },
   {
@@ -35,7 +41,10 @@ const services = [
     tag: 'Portals',
     imgSrc: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Portal website development company in Thanjavur',
-    desc: 'We develop feature-rich portal websites for education, healthcare, and service-based industries. From student portals and patient management systems to business dashboards, our dynamic web page development in Thanjavur creates interactive platforms that simplify complex operations.',
+    desc: [
+      'We develop feature-rich portal websites for education, healthcare, and service-based industries.',
+      'From student portals and patient management systems to business dashboards, our dynamic web page development in Thanjavur creates interactive platforms that simplify complex operations.',
+    ],
     items: ['Student & Learning Portals', 'Healthcare Management Systems', 'Business Client Portals', 'Admission & Enquiry Systems', 'Member Login & Profiles', 'Dynamic Dashboard Views'],
   },
   {
@@ -57,7 +66,10 @@ const services = [
     tag: 'API',
     imgSrc: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'API integrated dynamic website development in Thanjavur',
-    desc: 'We design and develop API-integrated dynamic websites that connect seamlessly with third-party services, payment systems, CRMs, maps, social media platforms, and data sources. Our dynamic web design services in Thanjavur ensure your website works as a unified, data-driven ecosystem.',
+    desc: [
+      'We design and develop API-integrated dynamic websites that connect seamlessly with third-party services, payment systems, CRMs, maps, social media platforms, and data sources.',
+      'Our dynamic web design services in Thanjavur ensure your website works as a unified, data-driven ecosystem.',
+    ],
     items: ['Third-Party API Connections', 'CRM & ERP Integration', 'Maps & Location Services', 'Social Media API Feeds', 'Payment & Fintech APIs', 'Live Data & Analytics Integration'],
   },
   {
@@ -68,7 +80,10 @@ const services = [
     tag: 'Web App',
     imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format&q=80',
     imgAlt: 'Custom web application development in Thanjavur',
-    desc: 'Beyond websites, we build scalable custom web applications tailored to your unique business logic. As a trusted dynamic website development service in Thanjavur, we create interactive web apps with real-time features, secure authentication, and complex business workflows.',
+    desc: [
+      'Beyond websites, we build scalable custom web applications tailored to your unique business logic.',
+      'As a trusted dynamic website development service in Thanjavur, we create interactive web apps with real-time features, secure authentication, and complex business workflows.',
+    ],
     items: ['SaaS Web Application Development', 'Business Process Automation', 'Real-Time Data Dashboards', 'User Authentication & Roles', 'Booking & Scheduling Systems', 'Interactive Form & Workflow Builders'],
   },
 ]
@@ -164,7 +179,11 @@ export default function DWServices() {
                 <h3 className="text-[18px] sm:text-[20px] font-bold text-slate-900 leading-snug">{svc.label}</h3>
               </div>
 
-              <p className="text-[13.5px] sm:text-[14.5px] text-slate-600 leading-[1.85] mb-7">{svc.desc}</p>
+              <div className="flex flex-col gap-2.5 mb-7">
+                {svc.desc.map((p, i) => (
+                  <p key={i} className="text-[13.5px] sm:text-[14.5px] text-slate-600 leading-[1.85]">{p}</p>
+                ))}
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-7">
                 {svc.items.map(item => (
