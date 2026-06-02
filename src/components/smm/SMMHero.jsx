@@ -27,7 +27,7 @@ export default function SMMHero() {
               <ChevronRight size={13} className="text-slate-300" />
               <span>Services</span>
               <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">Social Media Marketing</span>
+              Social Media Marketing
             </nav>
 
             {/* Badge */}
@@ -39,7 +39,7 @@ export default function SMMHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(28px,3.8vw,52px)] font-bold text-slate-900
+            <h1 className="animate-hero-d2 text-[clamp(22px,3vw,42px)] font-bold text-slate-900
               leading-[1.12] tracking-tight mb-5">
               Best Social Media Marketing{' '}
               <span className="text-gradient-blue">Services in Thanjavur</span>{' '}

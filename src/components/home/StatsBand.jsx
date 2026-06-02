@@ -5,7 +5,7 @@ function StatItem({ target, suffix, label }) {
   return (
     <div ref={ref} className="reveal flex flex-col items-center justify-center text-center px-5 py-5">
       <div className="text-[clamp(30px,3.5vw,46px)] font-semibold leading-none tracking-[-1px] text-slate-900 mb-1">
-        {count}<span className="text-blue-600">{suffix}</span>
+        {count}{suffix}
       </div>
       <div className="text-[11px] text-slate-400 font-semibold mt-1 uppercase tracking-widest">{label}</div>
     </div>

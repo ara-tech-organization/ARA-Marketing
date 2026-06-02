@@ -74,13 +74,13 @@ export default function SWWhyUs() {
             </h2>
 
             <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-4">
-              We are a trusted <strong className="text-slate-800 font-semibold">static website development company in Thanjavur</strong> for all sizes of business, offering modern, conversion-focused websites built to perform.
+              We are a trusted static website development company in Thanjavur for all sizes of business, offering modern, conversion-focused websites built to perform.
             </p>
             <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-4">
-              As a leading <strong className="text-slate-800 font-semibold">static website development company in Thanjavur</strong>, we make sure that every website we develop is performance-driven and future-ready.
+              As a leading static website development company in Thanjavur, we make sure that every website we develop is performance-driven and future-ready.
             </p>
             <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-8">
-              We're also a trusted <strong className="text-slate-800 font-semibold">static web design company in Thanjavur</strong>, creating conversion-oriented, visually-appealing layouts that match your brand identity.
+              We're also a trusted static web design company in Thanjavur, creating conversion-oriented, visually-appealing layouts that match your brand identity.
             </p>
 
             {/* Highlights box */}

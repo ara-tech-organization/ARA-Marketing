@@ -102,10 +102,10 @@ export default function ECBenefits() {
         {/* ── Additional content ── */}
         <div className="reveal mb-6 text-center space-y-2">
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            We offer <strong className="text-blue-600">e-commerce platform development in Thanjavur</strong>, which helps you to grow your business in the long run.
+            We offer e-commerce platform development in Thanjavur, which helps you to grow your business in the long run.
           </p>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            We are the best <strong className="text-slate-800">e-commerce web design and development company in Thanjavur</strong>, providing secure, scalable, and fast e-commerce systems.
+            We are the best e-commerce web design and development company in Thanjavur, providing secure, scalable, and fast e-commerce systems.
           </p>
         </div>
 

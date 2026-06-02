@@ -131,13 +131,13 @@ export default function ECWhyUs() {
         <div className="reveal mt-10 text-center px-5 sm:px-8 py-6 rounded-2xl bg-blue-50 space-y-2"
           style={{ border: '1.5px solid rgba(37,99,235,0.12)' }}>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            We are the best <strong className="text-blue-600">custom e-commerce website development services in Thanjavur</strong>, and make sure every store is optimised for conversions.
+            We are the best custom e-commerce website development services in Thanjavur, and make sure every store is optimised for conversions.
           </p>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            We offer <strong className="text-slate-800">e-commerce web app development services in Thanjavur</strong> to improve user experience and increase sales.
+            We offer e-commerce web app development services in Thanjavur to improve user experience and increase sales.
           </p>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            We are one of the best <strong className="text-blue-600">e-commerce web design &amp; development services in Thanjavur</strong> and are known for delivering high-quality e-commerce platforms.
+            We are one of the best e-commerce web design &amp; development services in Thanjavur and are known for delivering high-quality e-commerce platforms.
           </p>
         </div>
 

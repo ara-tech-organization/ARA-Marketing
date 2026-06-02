@@ -143,7 +143,7 @@ export default function MAIntro() {
         {/* Bottom CTA */}
         <div className="text-center mt-10 reveal">
           <p className="text-[14px] mb-3" style={{ color: '#94a3b8' }}>
-            As a leading <strong style={{ color: '#60a5fa' }}>mobile app development company in Thanjavur</strong>, we make your brand shine in the competitive market.
+            As a leading mobile app development company in Thanjavur, we make your brand shine in the competitive market.
           </p>
           <a href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-all duration-200 hover:gap-3"

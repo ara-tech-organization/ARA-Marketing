@@ -45,7 +45,7 @@ export default function SWTestimonials() {
             <span className="text-gradient-blue">Clients Say</span>
           </h2>
           <p className="text-[14px] text-slate-500 max-w-xl mx-auto">
-            We are proud to be a trusted <strong className="text-slate-700">static website development company in Thanjavur</strong>, delivering measurable results for clients across industries.
+            We are proud to be a trusted static website development company in Thanjavur, delivering measurable results for clients across industries.
           </p>
         </div>
 

@@ -96,7 +96,7 @@ export default function WebDevWhyUs() {
         <div className="reveal text-center mt-12">
           <p className="text-[13.5px] text-slate-500">
             We are also recognised as one of the{' '}
-            <span className="text-blue-600 font-semibold">top website design and development companies in Thanjavur</span>
+            top website design and development companies in Thanjavur
             {' '}creating contemporary websites for efficient online business expansion.
           </p>
         </div>

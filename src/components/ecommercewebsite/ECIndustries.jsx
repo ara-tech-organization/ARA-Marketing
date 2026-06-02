@@ -155,13 +155,13 @@ export default function ECIndustries() {
         {/* Bottom tag */}
         <div className="reveal text-center space-y-2">
           <p className="text-[13px] text-slate-500 leading-[1.85]">
-            We are one of the best <strong className="text-blue-600">e-commerce development agencies in Thanjavur</strong>, focused on building online stores that translate to real sales and business growth.
+            We are one of the best e-commerce development agencies in Thanjavur, focused on building online stores that translate to real sales and business growth.
           </p>
           <p className="text-[13px] text-slate-500 leading-[1.85]">
-            We are also known as the best <strong className="text-blue-600">e-commerce web design &amp; development services in Thanjavur</strong> that provide visually appealing and high-performing e-commerce websites.
+            We are also known as the best e-commerce web design &amp; development services in Thanjavur that provide visually appealing and high-performing e-commerce websites.
           </p>
           <p className="text-[13px] text-slate-500 leading-[1.85]">
-            We help businesses scale their operations efficiently with <strong className="text-slate-700">e-commerce platform development in Thanjavur</strong>.
+            We help businesses scale their operations efficiently with e-commerce platform development in Thanjavur.
           </p>
         </div>
 

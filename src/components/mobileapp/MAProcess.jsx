@@ -127,7 +127,7 @@ export default function MAProcess() {
         {/* Bottom CTA */}
         <div className="text-center mt-12 reveal">
           <p className="text-[14px] text-slate-500 leading-[1.8] max-w-2xl mx-auto mb-6">
-            Our <strong className="text-slate-700">mobile application development service in Thanjavur</strong> ensures speed, accuracy, and scalability at every step of your project.
+            Our mobile application development service in Thanjavur ensures speed, accuracy, and scalability at every step of your project.
           </p>
           <a href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"

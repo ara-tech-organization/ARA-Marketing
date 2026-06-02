@@ -170,10 +170,10 @@ export default function ECPlatforms() {
         <div className="reveal mt-6 text-center px-6 py-4 rounded-2xl"
           style={{ background: '#f8fbff', border: '1.5px solid #dbeafe' }}>
           <p className="text-[13px] text-slate-600 leading-[1.8] mb-2">
-            We are a professional <strong className="text-blue-600">custom e-commerce website development company in Thanjavur</strong>, building custom solutions that fit your brand identity and business goals.
+            We are a professional custom e-commerce website development company in Thanjavur, building custom solutions that fit your brand identity and business goals.
           </p>
           <p className="text-[13px] text-slate-600 leading-[1.8]">
-            We also provide <strong className="text-slate-800">e-commerce web application development in Thanjavur</strong> with advanced features — inventory management, payment gateways, and customer dashboards.
+            We also provide e-commerce web application development in Thanjavur with advanced features — inventory management, payment gateways, and customer dashboards.
           </p>
         </div>
 

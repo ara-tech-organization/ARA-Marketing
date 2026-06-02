@@ -71,13 +71,13 @@ export default function DWIntro() {
           {/* Text */}
           <div className="flex-1 flex flex-col justify-center gap-5">
             <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.85]">
-              As one of the best <strong className="text-slate-800 font-bold">dynamic website development companies in Thanjavur</strong>, we build websites using the latest backend engines, CMS platforms, and interactive features that will make content management simple.
+              As one of the best dynamic website development companies in Thanjavur, we build websites using the latest backend engines, CMS platforms, and interactive features that will make content management simple.
             </p>
             <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.85]">
-              We are experts in developing <strong className="text-slate-800 font-bold">dynamic web pages in Thanjavur</strong>, which not only look good but also work well with the functionality of updating the content in real time, user interaction and scalability.
+              We are experts in developing dynamic web pages in Thanjavur, which not only look good but also work well with the functionality of updating the content in real time, user interaction and scalability.
             </p>
             <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.85]">
-              We are also a trusted <strong className="text-slate-800 font-bold">dynamic website designing company in Thanjavur</strong> that provides modern UI/UX designs along with strong backend architecture.
+              We are also a trusted dynamic website designing company in Thanjavur that provides modern UI/UX designs along with strong backend architecture.
             </p>
           </div>
         </div>

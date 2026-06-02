@@ -61,7 +61,7 @@ export default function DWHero() {
             <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
             <span>Web Design</span>
             <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-            <span style={{ color: '#60a5fa' }} className="font-semibold">Dynamic Website</span>
+            Dynamic Website
           </nav>
 
           {/* Badge */}
@@ -76,7 +76,7 @@ export default function DWHero() {
           </span>
 
           {/* H1 */}
-          <h1 className="text-[clamp(28px,5.5vw,64px)] font-bold leading-[1.06] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
+          <h1 className="text-[clamp(24px,4vw,50px)] font-bold leading-[1.06] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
             Build Powerful Dynamic Websites{' '}
             <span style={{ background: 'linear-gradient(135deg,#93c5fd,#38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               That Grow With Your Business

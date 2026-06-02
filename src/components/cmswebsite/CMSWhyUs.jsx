@@ -136,7 +136,7 @@ export default function CMSWhyUs() {
         {/* ── SEO paragraph ── */}
         <div className="reveal text-center max-w-3xl mx-auto">
           <p className="text-[13px] text-slate-400 leading-[1.85]">
-            As one of the <strong className="text-slate-600 font-semibold">best WordPress development companies in Thanjavur</strong>, we ensure that every website is developed with an eye for its long-term success. We also offer <strong className="text-slate-600 font-semibold">cms in website design &amp; development in Thanjavur</strong> solutions that improve user experience and engagement.
+            As one of the <span className="text-slate-600">best WordPress development companies in Thanjavur</span>, we ensure that every website is developed with an eye for its long-term success. We also offer <span className="text-slate-600">cms in website design &amp; development in Thanjavur</span> solutions that improve user experience and engagement.
           </p>
         </div>
 

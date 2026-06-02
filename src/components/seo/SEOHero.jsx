@@ -147,7 +147,7 @@ export default function SEOHero() {
               <ChevronRight size={13} className="text-slate-300" />
               <span>Services</span>
               <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">SEO Services</span>
+              SEO Services
             </nav>
 
             <div className="animate-hero-d1 mb-5">
@@ -157,7 +157,7 @@ export default function SEOHero() {
               </span>
             </div>
 
-            <h1 className="animate-hero-d2 text-[clamp(24px,2.8vw,44px)] font-bold text-slate-900
+            <h1 className="animate-hero-d2 text-[clamp(20px,2.2vw,36px)] font-bold text-slate-900
               leading-[1.14] tracking-tight mb-5">
               Best SEO Services in Thanjavur to{' '}
               <span className="text-gradient-blue">Improve Rankings, Traffic</span>{' '}

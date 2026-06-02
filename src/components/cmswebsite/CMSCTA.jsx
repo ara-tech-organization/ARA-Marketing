@@ -49,7 +49,7 @@ export default function CMSCTA() {
 
             {/* Sub */}
             <p className="text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-lg">
-              Are you ready to grow your business online with a powerful WordPress website? Collaborate with one of the <strong className="text-slate-600 font-semibold">best WordPress development firms in Thanjavur</strong> and elevate your online presence to the next level.
+              Are you ready to grow your business online with a powerful WordPress website? Collaborate with one of the <span className="text-slate-600">best WordPress development firms in Thanjavur</span> and elevate your online presence to the next level.
             </p>
 
             {/* Perks checklist */}

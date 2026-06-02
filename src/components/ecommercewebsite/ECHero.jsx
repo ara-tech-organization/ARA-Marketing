@@ -52,7 +52,7 @@ export default function ECHero() {
               <ChevronRight size={13} className="text-slate-300" />
               <span>Web Design</span>
               <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-semibold">Ecommerce Website</span>
+              Ecommerce Website
             </nav>
 
             {/* Badge */}
@@ -65,7 +65,7 @@ export default function ECHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(26px,3vw,50px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
+            <h1 className="animate-hero-d2 text-[clamp(22px,2.5vw,40px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
               Build High-Performance{' '}
               <span style={{ color: '#2563eb' }}>
                 Ecommerce Websites
@@ -77,7 +77,7 @@ export default function ECHero() {
               Are you looking for the best e-commerce development agencies in Thanjavur to develop a fast-loading, SEO-friendly, and robust online store that boosts sales and growth? We are professionals at developing and designing highly converting e-commerce websites that allow businesses to sell products online with ease.
             </p>
             <p className="animate-hero-d3 text-[15px] text-slate-600 leading-[1.9] mb-8">
-              Our solutions are built for <strong className="text-slate-800 font-semibold">speed, scalability, security</strong>, and maximum conversions.
+              Our solutions are built for speed, scalability, security, and maximum conversions.
             </p>
 
             {/* Quick wins */}

@@ -97,7 +97,7 @@ export default function ECDeliveryPromise() {
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 p-7 rounded-3xl"
           style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.05),rgba(124,58,237,0.05))', border: '1px solid rgba(37,99,235,0.1)' }}>
           <p className="text-[13.5px] text-slate-500 leading-[1.8] max-w-2xl">
-            We are the <strong className="text-slate-700 font-semibold">best e-commerce web design and development company in Thanjavur</strong>, offering business-focused solutions with high performance. We provide <strong className="text-slate-700 font-semibold">custom e-commerce website development services in Thanjavur</strong> and advanced <strong className="text-slate-700 font-semibold">e-commerce web application development in Thanjavur</strong>.
+            We are the best e-commerce web design and development company in Thanjavur, offering business-focused solutions with high performance. We provide custom e-commerce website development services in Thanjavur and advanced e-commerce web application development in Thanjavur.
           </p>
           <a href="/ARA-Marketing/contact"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 flex-shrink-0"

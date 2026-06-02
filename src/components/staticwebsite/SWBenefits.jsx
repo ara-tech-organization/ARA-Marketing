@@ -192,7 +192,7 @@ export default function SWBenefits() {
             </h2>
           </div>
           <p className="text-[14.5px] leading-[1.8] lg:max-w-md" style={{ color: '#94a3b8' }}>
-            Static websites can be a huge boon for businesses that value speed and performance. Our <strong style={{ color: '#93c5fd' }}>static website development services in Thanjavur</strong> ensure your website makes maximum impact with minimum maintenance.
+            Static websites can be a huge boon for businesses that value speed and performance. Our static website development services in Thanjavur ensure your website makes maximum impact with minimum maintenance.
           </p>
         </div>
 
@@ -212,13 +212,13 @@ export default function SWBenefits() {
         {/* Bottom note */}
         <div className="mt-14 text-center reveal">
           <p className="text-[14px] leading-[1.8] mb-1.5" style={{ color: '#94a3b8' }}>
-            We are experts in <strong style={{ color: '#7dd3fc' }}>developing static web pages in Thanjavur</strong> — your website will be lightweight yet powerful enough to handle consistent traffic.
+            We are experts in developing static web pages in Thanjavur — your website will be lightweight yet powerful enough to handle consistent traffic.
           </p>
           <p className="text-[14px] leading-[1.8] mb-1.5" style={{ color: '#94a3b8' }}>
-            We also offer <strong style={{ color: '#7dd3fc' }}>static web design services in Thanjavur</strong> according to modern UI/UX principles to keep visitors engaged.
+            We also offer static web design services in Thanjavur according to modern UI/UX principles to keep visitors engaged.
           </p>
           <p className="text-[14px] leading-[1.8]" style={{ color: '#94a3b8' }}>
-            Our approach of <strong style={{ color: '#7dd3fc' }}>developing static web pages in Thanjavur</strong> guarantees that all pages are designed for user experience and SEO.
+            Our approach of developing static web pages in Thanjavur guarantees that all pages are designed for user experience and SEO.
           </p>
         </div>
 

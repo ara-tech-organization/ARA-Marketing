@@ -52,7 +52,7 @@ export default function CMSWhoShould() {
               </span>
             </h2>
             <p className="text-[15px] text-slate-500 leading-[1.85] mb-3 max-w-lg">
-              WordPress is ideal for businesses that want flexibility, control, and scalability. If you are looking for <strong className="text-slate-600 font-semibold">cms website development services in Thanjavur</strong>, WordPress is perfect for:
+              WordPress is ideal for businesses that want flexibility, control, and scalability. If you are looking for <span className="text-slate-600">cms website development services in Thanjavur</span>, WordPress is perfect for:
             </p>
 
             {/* Audience cards — stacked with left number accent */}
@@ -82,7 +82,7 @@ export default function CMSWhoShould() {
 
             {/* Closing keyword sentences */}
             <p className="text-[13px] text-slate-400 leading-[1.85] mt-5 max-w-lg">
-              Our <strong className="text-slate-500 font-semibold">custom cms wordpress development services in Thanjavur</strong> make sure your website is customised as per your business needs. We are also one of the <strong className="text-slate-500 font-semibold">best WordPress development companies in Thanjavur</strong>, providing end-to-end WordPress solutions.
+              Our <span className="text-slate-500">custom cms wordpress development services in Thanjavur</span> make sure your website is customised as per your business needs. We are also one of the <span className="text-slate-500">best WordPress development companies in Thanjavur</span>, providing end-to-end WordPress solutions.
             </p>
           </div>
 

@@ -193,7 +193,7 @@ export default function Hero() {
         {/* H1 */}
         <h1
           className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-6"
-          style={{ fontSize: 'clamp(30px, 4vw, 54px)', animation: rev(120) }}
+          style={{ fontSize: 'clamp(24px, 3vw, 44px)', animation: rev(120) }}
         >
           Best Digital Marketing Company in Thanjavur<br />
           <span style={{

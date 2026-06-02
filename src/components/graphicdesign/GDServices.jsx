@@ -197,7 +197,7 @@ export default function GDServices() {
         {/* Bottom note */}
         <p className="text-center text-[13px] text-slate-400 mt-10 reveal">
           Our skilled branding team is the{' '}
-          <span className="font-semibold text-blue-600">best graphic design service in Thanjavur</span>{' '}
+          best graphic design service in Thanjavur{' '}
           that businesses turn to when they want creative, professional, and high-impact design solutions.
         </p>
 

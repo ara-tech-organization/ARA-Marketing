@@ -30,7 +30,7 @@ export default function WebDevHero() {
             <ChevronRight size={13} className="text-slate-300" />
             <span>Services</span>
             <ChevronRight size={13} className="text-slate-300" />
-            <span className="text-blue-600 font-medium">Website Design &amp; Development</span>
+            Website Design &amp; Development
           </nav>
 
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
@@ -38,7 +38,7 @@ export default function WebDevHero() {
             <Globe2 size={11} /> Website Design &amp; Development
           </span>
 
-          <h1 className="text-[clamp(28px,4vw,54px)] font-bold text-slate-900 leading-[1.1]
+          <h1 className="text-[clamp(22px,3vw,44px)] font-bold text-slate-900 leading-[1.1]
             tracking-tight mb-3">
             Best Website Design and Development{' '}
             <span className="text-gradient-blue">Company in Thanjavur</span>
@@ -162,7 +162,7 @@ export default function WebDevHero() {
                 <div key={label}>
                   <div className="flex justify-between text-[12px] mb-2">
                     <span className="text-slate-500 font-medium">{label}</span>
-                    <span className="text-blue-600 font-bold">{value}</span>
+                    {value}
                   </div>
                   <div className="h-2 bg-blue-50 rounded-full overflow-hidden">
                     <div style={{

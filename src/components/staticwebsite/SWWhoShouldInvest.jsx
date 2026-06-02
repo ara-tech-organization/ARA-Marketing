@@ -168,7 +168,7 @@ export default function SWWhoShouldInvest() {
         {/* Bottom note */}
         <div className="text-center mt-12 reveal">
           <p className="text-[14.5px] text-slate-600 max-w-2xl mx-auto leading-[1.85] mb-6">
-            Choose our <strong className="text-slate-800">static web page development in Thanjavur</strong> and get a cost-effective solution that delivers long-term value for your business.
+            Choose our static web page development in Thanjavur and get a cost-effective solution that delivers long-term value for your business.
           </p>
           <a
             href="/ARA-Marketing/contact"

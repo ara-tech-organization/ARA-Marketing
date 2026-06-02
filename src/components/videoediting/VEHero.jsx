@@ -58,7 +58,7 @@ export default function VEHero() {
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
               <span>Services</span>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <span style={{ color: '#60a5fa' }} className="font-semibold">Video Editing</span>
+              Video Editing
             </nav>
 
             {/* Badge */}
@@ -73,7 +73,7 @@ export default function VEHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(28px,5vw,60px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
+            <h1 className="text-[clamp(24px,3.5vw,48px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
               Best Video Editing Services{' '}
               <span style={gradBlue}>in Thanjavur for Brand Growth</span>
             </h1>

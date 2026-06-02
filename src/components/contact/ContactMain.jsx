@@ -271,7 +271,7 @@ export default function ContactMain() {
                           <div>
                             <label className="block text-[11px] font-bold mb-1.5 uppercase tracking-[0.12em]"
                               style={{ color: 'rgba(255,255,255,0.55)' }}>
-                              Full Name <span style={{ color: '#f87171' }}>*</span>
+                              Full Name *
                             </label>
                             <div className="relative">
                               <User size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
@@ -290,7 +290,7 @@ export default function ContactMain() {
                           <div>
                             <label className="block text-[11px] font-bold mb-1.5 uppercase tracking-[0.12em]"
                               style={{ color: 'rgba(255,255,255,0.55)' }}>
-                              Email Address <span style={{ color: '#f87171' }}>*</span>
+                              Email Address *
                             </label>
                             <div className="relative">
                               <Mail size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
@@ -349,7 +349,7 @@ export default function ContactMain() {
                         <div className="mb-6">
                           <label className="block text-[11px] font-bold mb-1.5 uppercase tracking-[0.12em]"
                             style={{ color: 'rgba(255,255,255,0.55)' }}>
-                            Your Message <span style={{ color: '#f87171' }}>*</span>
+                            Your Message *
                           </label>
                           <textarea rows={4} placeholder="Tell us about your project, goals or questions..."
                             value={form.message} onChange={handleChange('message')}

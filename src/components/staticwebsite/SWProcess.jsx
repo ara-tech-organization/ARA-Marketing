@@ -75,7 +75,7 @@ export default function SWProcess() {
             </span>
           </h2>
           <p className="text-[15px] text-slate-500 max-w-2xl mx-auto leading-[1.8]">
-            We follow a streamlined and strategic process to deliver high-quality websites. Our <strong className="text-slate-700">static web design services in Thanjavur</strong> ensure that each step is aligned to your objectives.
+            We follow a streamlined and strategic process to deliver high-quality websites. Our static web design services in Thanjavur ensure that each step is aligned to your objectives.
           </p>
         </div>
 
@@ -169,10 +169,10 @@ export default function SWProcess() {
         {/* Bottom note */}
         <div className="text-center mt-12 reveal">
           <p className="text-[14px] text-slate-500 leading-[1.8] max-w-2xl mx-auto mb-3">
-            We also specialize as a <strong className="text-slate-700">static website design &amp; development company in Thanjavur</strong>, with workflows that ensure speed, accuracy, and scalability.
+            We also specialize as a static website design &amp; development company in Thanjavur, with workflows that ensure speed, accuracy, and scalability.
           </p>
           <p className="text-[14px] text-slate-500 leading-[1.8] max-w-2xl mx-auto mb-6">
-            Our developers are experts in <strong className="text-slate-700">static web page development in Thanjavur</strong> with clean code architecture and responsive layouts.
+            Our developers are experts in static web page development in Thanjavur with clean code architecture and responsive layouts.
           </p>
           <a
             href="/ARA-Marketing/contact"

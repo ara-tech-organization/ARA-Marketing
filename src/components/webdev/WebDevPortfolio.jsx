@@ -161,12 +161,12 @@ export default function WebDevPortfolio() {
         <div className="reveal text-center space-y-2">
           <p className="text-[14px] text-slate-500">
             We are recognised among the{' '}
-            <span className="text-blue-600 font-semibold">best web design and development companies in Thanjavur</span>
+            best web design and development companies in Thanjavur
             {' '}for delivering visually appealing and high-performing websites.
           </p>
           <p className="text-[14px] text-slate-500">
             We are one of the{' '}
-            <span className="text-blue-600 font-semibold">top web development firms in Thanjavur</span>
+            top web development firms in Thanjavur
             {' '}with a strong focus on user experience and conversion optimization.
           </p>
         </div>

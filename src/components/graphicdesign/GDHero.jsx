@@ -67,7 +67,7 @@ export default function GDHero() {
               <ChevronRight size={11} className="text-slate-600" />
               <span className="text-slate-600">Services</span>
               <ChevronRight size={11} className="text-slate-600" />
-              <span className="text-blue-400 font-medium">Graphic Design</span>
+              Graphic Design
             </nav>
 
             {/* Badge */}
@@ -80,7 +80,7 @@ export default function GDHero() {
 
             {/* H1 */}
             <h1 className="animate-hero-d2 tracking-tight mb-7 text-white"
-              style={{ fontSize: 'clamp(24px,3vw,44px)', lineHeight: 1.12, fontWeight: 800 }}>
+              style={{ fontSize: 'clamp(20px,2.5vw,36px)', lineHeight: 1.12, fontWeight: 800 }}>
               Best Branding &amp; Graphic Design Services in Thanjavur{' '}
               <span style={{
                 background: 'linear-gradient(90deg, #60a5fa 0%, #38bdf8 50%, #a78bfa 100%)',

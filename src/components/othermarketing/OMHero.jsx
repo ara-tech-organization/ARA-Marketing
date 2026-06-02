@@ -34,7 +34,7 @@ export default function OMHero() {
             <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
             <span>Services</span>
             <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
-            <span style={{ color: '#7c3aed' }} className="font-semibold">Other Marketing</span>
+            Other Marketing
           </nav>
           <div className="flex flex-wrap items-center gap-2">
             {channels.map(({ icon: Icon, label, color, light }) => (
@@ -51,7 +51,7 @@ export default function OMHero() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10.5px] font-bold uppercase tracking-widest mb-5 bg-white border border-violet-200 text-violet-600 shadow-sm">
             <Send size={10} /> Advanced Digital Marketing Services
           </div>
-          <h1 className="text-[clamp(28px,3.8vw,48px)] font-bold leading-[1.12] tracking-tight text-slate-900">
+          <h1 className="text-[clamp(22px,3vw,40px)] font-bold leading-[1.12] tracking-tight text-slate-900">
             Advanced Digital{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb 0%,#7c3aed 60%,#0891b2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Marketing

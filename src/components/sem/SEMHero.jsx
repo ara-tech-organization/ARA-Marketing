@@ -69,7 +69,7 @@ export default function SEMHero() {
             <ChevronRight size={12} className="text-slate-300" />
             <span>Services</span>
             <ChevronRight size={12} className="text-slate-300" />
-            <span className="text-blue-600 font-semibold">SEM Services</span>
+            SEM Services
           </nav>
 
           {/* Badge */}
@@ -82,7 +82,7 @@ export default function SEMHero() {
 
           {/* H1 */}
           <h1 className="font-bold tracking-tight mb-4 max-w-[900px] mx-auto">
-            <span className="block text-[clamp(28px,4vw,58px)] text-slate-900 leading-[1.1]">
+            <span className="block text-[clamp(22px,3vw,44px)] text-slate-900 leading-[1.1]">
               Best Google Ads Services &amp; PPC Services in Thanjavur
             </span>
             <span className="block text-[clamp(15px,1.8vw,26px)] text-gradient-blue leading-snug mt-1.5">
@@ -124,7 +124,7 @@ export default function SEMHero() {
             {[['200+', 'PPC Campaigns'], ['95%', 'Client Satisfaction'], ['300%', 'Avg. Lead Growth']].map(([num, lbl], i) => (
               <span key={lbl} className="flex items-center gap-1.5">
                 {i > 0 && <span className="w-px h-3.5 bg-slate-200 mr-4" />}
-                <span className="font-bold text-blue-600">{num}</span>
+                {num}
                 <span>{lbl}</span>
               </span>
             ))}

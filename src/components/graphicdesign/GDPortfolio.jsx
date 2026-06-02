@@ -129,7 +129,7 @@ export default function GDPortfolio() {
         {/* Bottom note */}
         <p className="text-center text-[13px] text-slate-400 mt-10 reveal">
           We are proud to be named among the{' '}
-          <span className="font-semibold text-blue-600">top graphic design companies in thanjavur</span>{' '}
+          top graphic design companies in thanjavur{' '}
           for offering creative, impactful and business-oriented design solutions.
         </p>
 

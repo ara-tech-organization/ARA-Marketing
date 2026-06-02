@@ -70,7 +70,7 @@ export default function WAHero() {
             <ChevronRight size={11} className="text-slate-600" />
             <span>Web Design</span>
             <ChevronRight size={11} className="text-slate-600" />
-            <span className="text-blue-400 font-semibold">Web Application</span>
+            Web Application
           </nav>
 
           {/* Badge */}
@@ -80,7 +80,7 @@ export default function WAHero() {
           </span>
 
           {/* H1 */}
-          <h1 className="text-[clamp(22px,4vw,48px)] font-bold leading-[1.06] tracking-tight mb-4 sm:mb-5 text-white max-w-[820px] px-1">
+          <h1 className="text-[clamp(20px,3vw,40px)] font-bold leading-[1.06] tracking-tight mb-4 sm:mb-5 text-white max-w-[820px] px-1">
             Power Your Business with{' '}
             <span
               className="block"
@@ -99,7 +99,7 @@ export default function WAHero() {
             In the modern digital era, businesses need a strong online presence. Ara Discover Marketing is the best custom web application development company in Thanjavur, offering reliable AI-powered solutions customised as per your requirements.
           </p>
           <p className="hidden sm:block text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7 sm:mb-8 max-w-[600px] px-1">
-            We are one of the best <strong className="text-slate-300 font-semibold">web and mobile app development companies in Thanjavur</strong>, incorporating innovation with AI-driven technology to develop powerful, secure, and result-driven web applications. Whether you require an e-commerce app or an enterprise-level solution, Ara is here to help your business succeed.
+            We are one of the best <span className="text-slate-300">web and mobile app development companies in Thanjavur</span>, incorporating innovation with AI-driven technology to develop powerful, secure, and result-driven web applications. Whether you require an e-commerce app or an enterprise-level solution, Ara is here to help your business succeed.
           </p>
           <p className="sm:hidden text-[13px] text-slate-500 leading-[1.85] mb-7 max-w-[580px] px-1">
             We are one of the best web and mobile app development companies in Thanjavur, delivering powerful, secure, and result-driven web applications.

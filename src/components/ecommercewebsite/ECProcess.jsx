@@ -108,13 +108,13 @@ export default function ECProcess() {
         <div className="reveal mt-10 sm:mt-14 text-center px-5 sm:px-8 py-6 rounded-2xl bg-white"
           style={{ border: '1.5px solid rgba(37,99,235,0.12)', boxShadow: '0 6px 24px rgba(37,99,235,0.08)' }}>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85] mb-2">
-            We are the <strong className="text-blue-600">best e-commerce web design and development company in Thanjavur</strong>, offering seamless execution from strategy to launch — and beyond.
+            We are the best e-commerce web design and development company in Thanjavur, offering seamless execution from strategy to launch — and beyond.
           </p>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85] mb-2">
-            We offer performance and conversion-focused <strong className="text-slate-800">custom e-commerce website development services in Thanjavur</strong>.
+            We offer performance and conversion-focused custom e-commerce website development services in Thanjavur.
           </p>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            We also provide <strong className="text-blue-600">e-commerce web app development services in Thanjavur</strong> that improve user experience and functionality.
+            We also provide e-commerce web app development services in Thanjavur that improve user experience and functionality.
           </p>
         </div>
 

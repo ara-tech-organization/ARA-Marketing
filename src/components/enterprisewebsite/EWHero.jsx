@@ -59,7 +59,7 @@ export default function EWHero() {
               <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
               <span>Web Design</span>
               <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              <span style={{ color: '#93c5fd' }} className="font-semibold">Enterprise Website</span>
+              Enterprise Website
             </nav>
 
             {/* Badge */}
@@ -74,13 +74,13 @@ export default function EWHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(26px,5vw,58px)] font-bold leading-[1.06] tracking-tight mb-5">
-              <span style={{ color: '#ffffff' }}>Transform Your</span>{' '}
+            <h1 className="text-[clamp(22px,3.5vw,46px)] font-bold leading-[1.06] tracking-tight mb-5">
+              Transform Your{' '}
               <span style={{ background: 'linear-gradient(135deg,#a78bfa,#38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Enterprise
               </span>
               <br />
-              <span style={{ color: '#ffffff' }}>Digital Presence</span>
+              Digital Presence
             </h1>
 
             <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-8 max-w-[540px]"

@@ -170,10 +170,10 @@ export default function CMSPlatforms() {
         {/* Bottom note */}
         <div className="reveal text-center mt-10 max-w-3xl mx-auto">
           <p className="text-[14px] mb-2" style={{ color: '#64748b' }}>
-            Being one of the top <strong className="text-slate-700 font-semibold">cms web development companies in Thanjavur</strong>, we provide seamless integration, smooth performance, and user-friendly content management systems.
+            Being one of the top cms web development companies in Thanjavur, we provide seamless integration, smooth performance, and user-friendly content management systems.
           </p>
           <p className="text-[13.5px] mb-5" style={{ color: '#94a3b8' }}>
-            We offer complete <strong className="text-slate-600 font-semibold">custom cms wordpress development services in Thanjavur</strong>, enabling businesses to build fully customised websites without exception.
+            We offer complete <span className="text-slate-600">custom cms wordpress development services in Thanjavur</span>, enabling businesses to build fully customised websites without exception.
           </p>
           <a
             href="/ARA-Marketing/contact"

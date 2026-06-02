@@ -104,7 +104,7 @@ export default function DWProcess() {
         <div className="reveal mt-10 sm:mt-14 text-center px-5 sm:px-8 py-6 rounded-2xl bg-white"
           style={{ border: '1.5px solid rgba(37,99,235,0.12)', boxShadow: '0 6px 24px rgba(37,99,235,0.08)' }}>
           <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.85]">
-            Our <strong className="text-blue-600">dynamic web design services in Thanjavur</strong> ensure that each stage is in tune with the business objectives and user experience goals. We are a professional, dynamic website designing company in Thanjavur, and we build scalable systems that grow with your business.
+            Our dynamic web design services in Thanjavur ensure that each stage is in tune with the business objectives and user experience goals. We are a professional, dynamic website designing company in Thanjavur, and we build scalable systems that grow with your business.
           </p>
         </div>
 

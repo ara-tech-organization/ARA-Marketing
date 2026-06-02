@@ -48,7 +48,7 @@ export default function CMSHero() {
               <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
               <span>Web Design</span>
               <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
-              <span className="text-blue-400 font-semibold">CMS Website</span>
+              CMS Website
             </nav>
 
             {/* Badge */}
@@ -63,7 +63,7 @@ export default function CMSHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(26px,3vw,50px)] font-bold text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="animate-hero-d2 text-[clamp(22px,2.5vw,40px)] font-bold text-white leading-[1.1] tracking-tight mb-6">
               Build Powerful WordPress{' '}
               <span
                 style={{

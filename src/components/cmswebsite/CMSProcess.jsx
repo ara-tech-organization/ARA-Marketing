@@ -235,7 +235,7 @@ export default function CMSProcess() {
           <div>
             <p className="text-[14px] font-bold text-slate-800 mb-0.5">Ready to start your WordPress project?</p>
             <p className="text-[12.5px]" style={{ color: '#64748b' }}>
-              We provide <strong className="font-semibold">web development with WordPress in Thanjavur</strong> driven by performance and usability, on par with modern digital standards.
+              We provide web development with WordPress in Thanjavur driven by performance and usability, on par with modern digital standards.
             </p>
           </div>
           <a

@@ -46,7 +46,7 @@ export default function SWHero() {
               <ChevronRight size={12} className="text-slate-300" />
               <span>Web Design</span>
               <ChevronRight size={12} className="text-slate-300" />
-              <span className="text-blue-600 font-semibold">Static Website</span>
+              Static Website
             </nav>
 
             {/* Badge */}
@@ -56,7 +56,7 @@ export default function SWHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(26px,4.5vw,54px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
+            <h1 className="text-[clamp(22px,3.2vw,44px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
               Launch Your Online{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Presence
@@ -74,7 +74,7 @@ export default function SWHero() {
               Are you looking to build a static website in Thanjavur that loads fast, ranks better, and converts visitors into customers? We build light, secure, and SEO-friendly websites for businesses that want performance without the complexity.
             </p>
             <p className="hidden sm:block text-[13.5px] text-slate-500 leading-[1.85] mb-8 sm:mb-10 max-w-[540px] mx-auto lg:mx-0">
-              As a trusted <strong className="text-slate-700 font-semibold">static website development company in Thanjavur</strong>, we deliver mobile-first, conversion-focused websites tailored for every business size and goal.
+              As a trusted static website development company in Thanjavur, we deliver mobile-first, conversion-focused websites tailored for every business size and goal.
             </p>
 
             {/* Quick wins */}

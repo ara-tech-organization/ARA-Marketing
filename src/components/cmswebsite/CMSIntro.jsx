@@ -69,13 +69,13 @@ export default function CMSIntro() {
           {/* Text side */}
           <div className="flex-1 flex flex-col justify-center gap-5">
             <p className="text-[15px] text-slate-600 leading-[1.85]">
-              We are one of the <strong className="text-slate-800 font-bold">best WordPress development companies in Thanjavur</strong>, focused on providing custom-built solutions that align with your brand identity and business goals.
+              We are one of the best WordPress development companies in Thanjavur, focused on providing custom-built solutions that align with your brand identity and business goals.
             </p>
             <p className="text-[15px] text-slate-600 leading-[1.85]">
-              As a <strong className="text-slate-800 font-bold">custom CMS WordPress development company in Thanjavur</strong>, we deliver solutions that give you full control of your website content, design, and functionality.
+              As a custom CMS WordPress development company in Thanjavur, we deliver solutions that give you full control of your website content, design, and functionality.
             </p>
             <p className="text-[15px] text-slate-600 leading-[1.85]">
-              Our expertise in <strong className="text-slate-800 font-bold">CMS in website design &amp; development in Thanjavur</strong> ensures your website is not only visually stunning but also result-driven and performance-optimised.
+              Our expertise in CMS in website design &amp; development in Thanjavur ensures your website is not only visually stunning but also result-driven and performance-optimised.
             </p>
 
             {/* Inline stats */}

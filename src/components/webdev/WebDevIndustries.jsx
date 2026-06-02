@@ -74,7 +74,7 @@ export default function WebDevIndustries() {
           style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)', border: '1.5px solid #bfdbfe' }}>
           <p className="text-[14px] text-slate-600 leading-relaxed text-center sm:text-left">
             Our expertise makes us one of the{' '}
-            <span className="text-blue-700 font-semibold">professional web development services in Thanjavur</span>
+            professional web development services in Thanjavur
             {' '}trusted by businesses across every sector.
           </p>
           <a href="/ARA-Marketing/contact"

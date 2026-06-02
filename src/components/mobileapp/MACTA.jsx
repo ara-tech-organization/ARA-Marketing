@@ -30,10 +30,10 @@ export default function MACTA() {
             </h2>
 
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
-              Partner with a reliable <strong style={{ color: '#1e40af' }}>mobile app development company in Thanjavur</strong> to build your iOS and Android app from the ground up.
+              Partner with a reliable mobile app development company in Thanjavur to build your iOS and Android app from the ground up.
             </p>
             <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
-              Our <strong style={{ color: '#1e40af' }}>custom mobile app development services in Thanjavur</strong> are tailored to your unique business requirements — from ideation to launch.
+              Our custom mobile app development services in Thanjavur are tailored to your unique business requirements — from ideation to launch.
             </p>
             <p className="text-[15px] leading-[1.85] mb-10" style={{ color: '#475569' }}>
               Fill in the form and our specialists will help you plan your perfect app solution — secure, scalable, and built to perform.

@@ -165,7 +165,7 @@ export default function CMSPortfolio() {
         {/* ── SEO paragraph ── */}
         <div className="reveal text-center max-w-3xl mx-auto">
           <p className="text-[13px] text-slate-400 leading-[1.85]">
-            We are one of the <strong className="text-slate-500 font-semibold">best WordPress development companies in Thanjavur</strong> for our consistent delivery and client satisfaction. Our <strong className="text-slate-500 font-semibold">cms website development services in Thanjavur</strong> have helped businesses improve their online visibility and customer engagement across industries.
+            We are one of the <span className="text-slate-500">best WordPress development companies in Thanjavur</span> for our consistent delivery and client satisfaction. Our <span className="text-slate-500">cms website development services in Thanjavur</span> have helped businesses improve their online visibility and customer engagement across industries.
           </p>
         </div>
 

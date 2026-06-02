@@ -46,7 +46,7 @@ export default function MAHero() {
               <ChevronRight size={12} className="text-slate-300" />
               <span>Web Design</span>
               <ChevronRight size={12} className="text-slate-300" />
-              <span className="text-blue-600 font-semibold">Mobile App Development</span>
+              Mobile App Development
             </nav>
 
             {/* Badge */}
@@ -56,7 +56,7 @@ export default function MAHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(26px,4.5vw,54px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
+            <h1 className="text-[clamp(22px,3.2vw,44px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
               Elevate Your Business with{' '}
               <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Mobile Apps
@@ -70,7 +70,7 @@ export default function MAHero() {
 
             {/* Description */}
             <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.9] mb-3 max-w-[560px] mx-auto lg:mx-0">
-              Ara Discover Marketing is a leading <strong className="text-slate-700">custom mobile app development agency in Thanjavur</strong> delivering fast-loaded, secure, and AI-powered mobile apps for iOS and Android.
+              Ara Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and AI-powered mobile apps for iOS and Android.
             </p>
             <p className="hidden sm:block text-[13.5px] text-slate-500 leading-[1.85] mb-8 sm:mb-10 max-w-[540px] mx-auto lg:mx-0">
               As one of the best app development agencies in Thanjavur, we offer innovative solutions that seamlessly integrate with your digital strategy and make your brand shine.

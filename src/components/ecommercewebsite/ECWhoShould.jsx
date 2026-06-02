@@ -91,10 +91,10 @@ export default function ECWhoShould() {
               Choosing the best e-commerce web design and development company in Thanjavur keeps your business competitive in the online market.
             </p>
             <p className="text-[13px] max-w-md" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              Our <strong style={{ color: '#93c5fd' }}>e-commerce web application development in Thanjavur</strong> helps businesses to automate sales and enhance the customer experience.
+              Our e-commerce web application development in Thanjavur helps businesses to automate sales and enhance the customer experience.
             </p>
             <p className="text-[13px] max-w-md" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              We are also one of the top <strong style={{ color: '#93c5fd' }}>e-commerce development agencies in Thanjavur</strong>, offering scalable e-commerce platforms.
+              We are also one of the top e-commerce development agencies in Thanjavur, offering scalable e-commerce platforms.
             </p>
             <a href="/ARA-Marketing/contact"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
