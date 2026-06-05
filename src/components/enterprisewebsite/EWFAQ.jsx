@@ -3,7 +3,7 @@ import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Why is Ara Discover Marketing the Top Enterprise Web Development Agency in Thanjavur?',
+    q: 'Why is ARA Discover Marketing the Top Enterprise Web Development Agency in Thanjavur?',
     a: 'We incorporate AI integration, enterprise-level security, and a client-centric approach to build high-performing, scalable websites for large businesses. Our proven track record across finance, healthcare, retail, logistics, and education sectors makes us the most trusted enterprise web development agency in Thanjavur.',
   },
   {
@@ -53,7 +53,7 @@ export default function EWFAQ() {
             </span>
           </h2>
           <p className="text-[12.5px] sm:text-[14px] lg:text-[15px] text-slate-500 leading-[1.85] px-2 sm:px-0">
-            Everything you need to know about enterprise website development with Ara Discover Marketing.
+            Everything you need to know about enterprise website development with ARA Discover Marketing.
           </p>
         </div>
 

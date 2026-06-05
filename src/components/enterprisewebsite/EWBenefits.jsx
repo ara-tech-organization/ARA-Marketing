@@ -109,7 +109,7 @@ export default function EWBenefits() {
             Design &amp; Development
           </h2>
           <p className="text-[12.5px] sm:text-[14px] lg:text-[15px] text-slate-500 leading-[1.85] max-w-2xl mx-auto px-2 sm:px-0">
-            Partnering with Ara Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.
+            Partnering with ARA Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.
           </p>
         </div>
 

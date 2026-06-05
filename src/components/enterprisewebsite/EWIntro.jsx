@@ -120,7 +120,7 @@ export default function EWIntro() {
               style={{ boxShadow: '0 20px 56px rgba(37,99,235,0.16)', border: '1.5px solid #dbeafe' }}>
               <img
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=500&fit=crop&auto=format&q=80"
-                alt="Enterprise website development services in Thanjavur — Ara Discover Marketing"
+                alt="Enterprise website development services in Thanjavur — ARA Discover Marketing"
                 loading="lazy"
                 className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.8s]"
                 style={{ height: 'clamp(190px,38vw,340px)' }}

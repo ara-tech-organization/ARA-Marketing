@@ -21,7 +21,7 @@ export default function WebDevIntro() {
             <div className="reveal delay-1 space-y-4 mb-7">
               <p className="text-[15px] text-slate-500 leading-[1.85]">
                 A website is more than just an online presence, it's the cornerstone of your digital
-                identity. Ara Discover Marketing has been providing the best website design and
+                identity. ARA Discover Marketing has been providing the best website design and
                 development services in Thanjavur since its inception with a focus on performance,
                 usability and conversion optimisation.
               </p>

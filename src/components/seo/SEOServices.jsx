@@ -9,7 +9,7 @@ const tabs = [
     id: 'onpage', icon: FileText, label: 'On-Page SEO', color: '#2563eb', bgLight: '#dbeafe',
     h3: 'On-Page SEO',
     imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=380&fit=crop&auto=format&q=80',
-    imgAlt: 'On page optimization services in Thanjavur - Ara Discover Marketing',
+    imgAlt: 'On page optimization services in Thanjavur - ARA Discover Marketing',
     desc: [
       'On-page SEO techniques are focused on optimizing the web structure, metadata, headings, web content, images, and user experience of a website.',
       'Are you searching for the best on-page optimization services in Thanjavur? We help businesses to increase their keyword rankings and website engagement.',
@@ -22,7 +22,7 @@ const tabs = [
     id: 'offpage', icon: Globe2, label: 'Off-Page SEO', color: '#7c3aed', bgLight: '#ede9fe',
     h3: 'Off-Page SEO',
     imgSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=380&fit=crop&auto=format&q=80',
-    imgAlt: 'SEO link building services in Thanjavur - Ara Discover Marketing',
+    imgAlt: 'SEO link building services in Thanjavur - ARA Discover Marketing',
     desc: [
       'Off-page SEO is crucial for building website authority and boosting search rankings.',
       'We offer the best SEO link building services in Thanjavur through ethical backlink building strategies that increase domain credibility. We create quality backlinks in SEO in Thanjavur that increases website authority and trust in search engines.',
@@ -35,7 +35,7 @@ const tabs = [
     id: 'technical', icon: Cpu, label: 'Technical SEO', color: '#0891b2', bgLight: '#cffafe',
     h3: 'Technical SEO',
     imgSrc: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&h=380&fit=crop&auto=format&q=80',
-    imgAlt: 'Technical SEO optimization service in Thanjavur - Ara Discover Marketing',
+    imgAlt: 'Technical SEO optimization service in Thanjavur - ARA Discover Marketing',
     desc: [
       'Technical SEO makes sure your website is crawlable, indexable, loads quickly, is mobile-friendly, and is optimized for search engines.',
       "We are a trusted SEO service provider company in Thanjavur, and we ensure websites are up to date with Google's latest technical standards and ranking requirements.",
@@ -47,7 +47,7 @@ const tabs = [
     id: 'local', icon: MapPin, label: 'Local SEO', color: '#059669', bgLight: '#d1fae5',
     h3: 'Google Business Profile (Local SEO)',
     imgSrc: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=700&h=380&fit=crop&auto=format&q=80',
-    imgAlt: 'Local business SEO services in Thanjavur - Ara Discover Marketing',
+    imgAlt: 'Local business SEO services in Thanjavur - ARA Discover Marketing',
     desc: [
       'Local SEO helps businesses get seen in Google Maps and local search results. We offer local business SEO services in Thanjavur and help local businesses get more local customers.',
       'Our local SEO marketing services in Thanjavur can help your business to rank higher in location-based searches.',
@@ -60,7 +60,7 @@ const tabs = [
     id: 'mobile', icon: Smartphone, label: 'Mobile SEO', color: '#dc2626', bgLight: '#fee2e2',
     h3: 'Mobile SEO',
     imgSrc: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=380&fit=crop&auto=format&q=80',
-    imgAlt: 'Mobile SEO in Thanjavur - Ara Discover Marketing',
+    imgAlt: 'Mobile SEO in Thanjavur - ARA Discover Marketing',
     desc: [
       'With mobile-first indexing becoming essential, businesses need to make sure their websites are optimized for all types of smartphones and tablets.',
       'Our mobile SEO in Thanjavur services focus on enhancing mobile usability, loading speed, and mobile search rankings.',

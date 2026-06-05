@@ -22,7 +22,7 @@ export default function SEOIntro() {
               style={{ minHeight: 280, boxShadow: '0 24px 80px rgba(37,99,235,0.14)' }}>
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=700&fit=crop&auto=format&q=80"
-                alt="AI-Driven SEO Strategies in Thanjavur - Ara Discover Marketing"
+                alt="AI-Driven SEO Strategies in Thanjavur - ARA Discover Marketing"
                 loading="lazy"
                 className="w-full h-full object-cover absolute inset-0"
               />
@@ -69,7 +69,7 @@ export default function SEOIntro() {
                   Ranking on Search Engines in today's competitive world takes more than keywords. Businesses need a solid SEO foundation, optimized content, technical performance, and authority-building tactics.
                 </p>
                 <p className="text-[15px] text-slate-500 leading-[1.85]">
-                  Ara Discover Marketing offers digital marketing SEO services in Thanjavur to help businesses improve global rankings, increase engagement, and maximize online visibility.
+                  ARA Discover Marketing offers digital marketing SEO services in Thanjavur to help businesses improve global rankings, increase engagement, and maximize online visibility.
                 </p>
                 <p className="text-[15px] text-slate-500 leading-[1.85]">
                   We are a team of SEO &amp; digital marketing services in Thanjavur, including on-page optimization, technical SEO, local SEO, mobile SEO, and link building campaigns. We are one of the top SEO companies in Thanjavur, providing SEO services that are customized to suit your business goals and target audience.

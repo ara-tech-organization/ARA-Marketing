@@ -97,7 +97,7 @@ export default function SEMHero() {
 
           {/* Description */}
           <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-2 max-w-[860px] mx-auto">
-            Ara Discover Marketing provides result-driven Google Ads and ppc service in Thanjavur to help businesses generate high-quality leads, increase website traffic, and optimize ROI with targeted paid advertising campaigns. We are one of the best search engine advertising agencies in Thanjavur, and we develop strategic Google Ads campaigns for startups, local businesses, and growing businesses.
+            ARA Discover Marketing provides result-driven Google Ads and ppc service in Thanjavur to help businesses generate high-quality leads, increase website traffic, and optimize ROI with targeted paid advertising campaigns. We are one of the best search engine advertising agencies in Thanjavur, and we develop strategic Google Ads campaigns for startups, local businesses, and growing businesses.
           </p>
           <p className="text-[13.5px] text-slate-400 leading-[1.8] mb-6 max-w-[820px] mx-auto">
             Our paid advertising specialists offer full ppc ads service in Thanjavur, focusing on audience targeting, conversion optimization, and AI-enabled campaign strategies that allow businesses to achieve measurable growth with Google Search, Display, YouTube, and Shopping Ads.

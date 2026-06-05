@@ -4,7 +4,7 @@ import { HelpCircle, ChevronDown } from 'lucide-react'
 const faqs = [
   {
     q: 'Which company offers the best SEO services in Thanjavur?',
-    a: 'Ara Discover Marketing is regarded as one of the best SEO companies in Thanjavur, providing businesses with on-page SEO, off-page SEO, technical SEO, local SEO, and content-driven optimization strategies.',
+    a: 'ARA Discover Marketing is regarded as one of the best SEO companies in Thanjavur, providing businesses with on-page SEO, off-page SEO, technical SEO, local SEO, and content-driven optimization strategies.',
   },
   {
     q: 'What are the benefits of hiring an SEO company in Thanjavur?',
@@ -23,7 +23,7 @@ const faqs = [
     a: 'Yes, we offer international SEO services to help businesses target global markets through multilingual SEO, international SEO strategies, and location-based optimization (Generic Engine Optimization).',
   },
   {
-    q: 'Why is Ara Discover Marketing the best SEO agency in Thanjavur?',
+    q: 'Why is ARA Discover Marketing the best SEO agency in Thanjavur?',
     a: 'As one of the top SEO companies in Thanjavur, we offer our clients ethical optimization practices, clear reporting, and measurable ranking results, all powered by our AI-based SEO strategies.',
   },
 ]

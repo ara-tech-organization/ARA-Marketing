@@ -23,7 +23,7 @@ const services = [
   {
     icon: Palette,
     title: 'Branding & Advertising',
-    desc: 'Ara Discover Marketing is also known as the best digital branding and advertising in Thanjavur, helping businesses establish a strong online presence with creative branding strategies, ad creatives and digital campaigns.',
+    desc: 'ARA Discover Marketing is also known as the best digital branding and advertising in Thanjavur, helping businesses establish a strong online presence with creative branding strategies, ad creatives and digital campaigns.',
     link: '/services/graphic-design',
   },
   {
@@ -61,13 +61,13 @@ export default function Services() {
             </h2>
             <div className="space-y-4">
               <p className="text-base text-slate-500 leading-relaxed">
-                If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, Ara Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.
+                If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, ARA Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.
               </p>
               <p className="text-base text-slate-500 leading-relaxed">
-                In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. Ara Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.
+                In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. ARA Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.
               </p>
               <p className="text-base text-slate-500 leading-relaxed">
-                Ara Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.
+                ARA Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.
               </p>
             </div>
 
@@ -90,7 +90,7 @@ export default function Services() {
           <div className="reveal-right relative rounded-3xl overflow-hidden" style={{ minHeight: '420px', boxShadow: '0 24px 64px rgba(37,99,235,0.18)' }}>
             <img
               src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&h=480&fit=crop&auto=format&q=80"
-              alt="Digital Marketing Agency in Thanjavur - Ara Discover Marketing"
+              alt="Digital Marketing Agency in Thanjavur - ARA Discover Marketing"
               width="640" height="480" loading="lazy"
               className="w-full h-full object-cover"
               style={{ minHeight: '420px' }}
@@ -104,7 +104,7 @@ export default function Services() {
             <div className="absolute top-5 left-5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold text-white"
                 style={{ background: 'rgba(37,99,235,0.6)', border: '1px solid rgba(96,165,250,0.3)', backdropFilter: 'blur(8px)' }}>
-                <TrendingUp size={9} /> Ara Discover Marketing
+                <TrendingUp size={9} /> ARA Discover Marketing
               </span>
             </div>
 

@@ -177,7 +177,7 @@ export default function CMSHero() {
                 <div className="relative overflow-hidden" style={{ height: '240px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=300&fit=crop&auto=format&q=80"
-                    alt="CMS Website Development in Thanjavur — Ara Discover Marketing"
+                    alt="CMS Website Development in Thanjavur — ARA Discover Marketing"
                     className="w-full h-full object-cover"
                     loading="eager"
                   />

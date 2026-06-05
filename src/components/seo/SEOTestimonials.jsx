@@ -3,7 +3,7 @@ import { Quote, Star, MessageSquare } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing improved our Google rankings and increased website traffic significantly.',
+    text: 'ARA Discover Marketing improved our Google rankings and increased website traffic significantly.',
     name: 'Rajan Krishnamurthy',
     role: 'Business Owner, Thanjavur',
     initials: 'RK',
@@ -56,7 +56,7 @@ export default function SEOTestimonials() {
             Testimonials
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
-            Real results, real voices — businesses that trusted Ara Discover Marketing for their SEO growth.
+            Real results, real voices — businesses that trusted ARA Discover Marketing for their SEO growth.
           </p>
         </div>
 

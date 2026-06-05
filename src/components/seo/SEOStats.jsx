@@ -71,7 +71,7 @@ export default function SEOStats() {
               <span className="text-gradient-blue">&amp; Organic Success</span>
             </h2>
             <p className="text-[15px] text-slate-600 leading-[1.85] mb-8">
-              Ara Discover Marketing is a company focused on top SEO services in Thanjavur for sustainable growth and consistent SEO results.
+              ARA Discover Marketing is a company focused on top SEO services in Thanjavur for sustainable growth and consistent SEO results.
             </p>
             <div className="inline-flex items-center gap-3 px-5 py-4 bg-white/90 border border-blue-100 rounded-2xl shadow-sm">
               <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 flex-shrink-0">

@@ -114,7 +114,7 @@ export default function ECBenefits() {
           style={{ boxShadow: '0 24px 80px rgba(37,99,235,0.14)', border: '1.5px solid #dbeafe' }}>
           <img
             src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=320&fit=crop&auto=format&q=80"
-            alt="E-commerce web design and development company in Thanjavur — Ara Discover Marketing"
+            alt="E-commerce web design and development company in Thanjavur — ARA Discover Marketing"
             loading="lazy"
             className="w-full object-cover hover:scale-[1.02] transition-transform duration-[1.5s]"
             style={{ height: 220 }}
@@ -123,7 +123,7 @@ export default function ECBenefits() {
             style={{ background: 'linear-gradient(90deg, rgba(30,58,138,0.90) 0%, rgba(30,58,138,0.60) 45%, rgba(30,58,138,0.15) 100%)' }} />
           <div className="absolute inset-0 flex flex-col justify-center px-8 sm:px-14">
             <p className="text-[10px] font-black uppercase tracking-widest mb-3" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              Ara Discover Marketing
+              ARA Discover Marketing
             </p>
             <h3 className="text-[clamp(18px,3vw,32px)] font-bold text-white leading-[1.2] mb-4 max-w-lg">
               The Best E-Commerce Web Design &amp; Development Company in Thanjavur

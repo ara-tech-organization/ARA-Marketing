@@ -19,7 +19,7 @@ const schema = {
     {
       '@type': 'Question',
       name: 'Which company provides the best email marketing services in Thanjavur?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is popular as one of the best email marketing companies in Thanjavur, providing customized email campaigns, automation strategies, and customer engagement solutions.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'ARA Discover Marketing is popular as one of the best email marketing companies in Thanjavur, providing customized email campaigns, automation strategies, and customer engagement solutions.' },
     },
     {
       '@type': 'Question',
@@ -43,7 +43,7 @@ const schema = {
     },
     {
       '@type': 'Question',
-      name: 'Why Choose Ara Discover Marketing for Your Digital Marketing Services?',
+      name: 'Why Choose ARA Discover Marketing for Your Digital Marketing Services?',
       acceptedAnswer: { '@type': 'Answer', text: 'With AI-powered strategies, audience-centric campaigns, transparent reporting, and multi-channel marketing expertise, we are your trusted partner for business growth and customer engagement.' },
     },
   ],
@@ -52,8 +52,8 @@ const schema = {
 export default function OtherServicesPage() {
   useReveal()
   useSEO({
-    title:       'Email & SMS Marketing | Influencers Marketing | Ara Discover Marketing',
-    description: 'Ara Discover Marketing offers other digital marketing services in Thanjavur including Email, SMS, and Influencer marketing to grow your business.',
+    title:       'Email & SMS Marketing | Influencers Marketing | ARA Discover Marketing',
+    description: 'ARA Discover Marketing offers other digital marketing services in Thanjavur including Email, SMS, and Influencer marketing to grow your business.',
     keywords:    'best email marketing companies in thanjavur, best email marketing service in thanjavur, bulk email advertising services in thanjavur, influencer advertising agency in thanjavur, influencers marketing in thanjavur, bulk sms promotion in thanjavur, sms agency in thanjavur',
     canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/other-digital-marketing-services-thanjavur',
     schema,
@@ -62,7 +62,7 @@ export default function OtherServicesPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <OMHero />
         <OMIntro />
         <OMWhyUs />

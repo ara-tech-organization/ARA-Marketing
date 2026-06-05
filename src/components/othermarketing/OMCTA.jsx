@@ -42,7 +42,7 @@ export default function OMCTA() {
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
                 <img
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop&q=80"
-                  alt="Business growth through digital marketing campaigns — Ara Discover Marketing Thanjavur"
+                  alt="Business growth through digital marketing campaigns — ARA Discover Marketing Thanjavur"
                   className="w-full h-[620px] object-cover object-center"
                 />
 
@@ -93,7 +93,7 @@ export default function OMCTA() {
             </h2>
 
             <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-7 max-w-[480px]">
-              Partner with Ara Discover Marketing to build strategic email marketing, influencer collaborations, and SMS marketing tactics that boost audience engagement and drive measurable business results.
+              Partner with ARA Discover Marketing to build strategic email marketing, influencer collaborations, and SMS marketing tactics that boost audience engagement and drive measurable business results.
             </p>
 
             {/* CTA buttons */}

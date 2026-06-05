@@ -70,7 +70,7 @@ export default function MAHero() {
 
             {/* Description */}
             <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.9] mb-3 max-w-[560px] mx-auto lg:mx-0">
-              Ara Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and AI-powered mobile apps for iOS and Android.
+              ARA Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and AI-powered mobile apps for iOS and Android.
             </p>
             <p className="hidden sm:block text-[13.5px] text-slate-500 leading-[1.85] mb-8 sm:mb-10 max-w-[540px] mx-auto lg:mx-0">
               As one of the best app development agencies in Thanjavur, we offer innovative solutions that seamlessly integrate with your digital strategy and make your brand shine.
@@ -147,7 +147,7 @@ export default function MAHero() {
                 <div className="relative overflow-hidden" style={{ height: '230px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=320&fit=crop&auto=format&q=80"
-                    alt="Mobile App Development in Thanjavur — Ara Discover Marketing"
+                    alt="Mobile App Development in Thanjavur — ARA Discover Marketing"
                     className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
                     loading="eager"
                   />

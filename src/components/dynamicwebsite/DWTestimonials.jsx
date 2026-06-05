@@ -20,7 +20,7 @@ const testimonials = [
     image: 'https://randomuser.me/api/portraits/men/14.jpg',
   },
   {
-    quote: "The team at Ara Discover Marketing is highly skilled and they built us a responsive and visually appealing website that loads quickly and works smoothly.",
+    quote: "The team at ARA Discover Marketing is highly skilled and they built us a responsive and visually appealing website that loads quickly and works smoothly.",
     name: 'Vinod Kumar',
     role: 'Business Owner, Chennai',
     tag: 'Service Business',

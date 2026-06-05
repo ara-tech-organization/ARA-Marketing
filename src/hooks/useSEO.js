@@ -24,8 +24,8 @@ function setLink(rel, href) {
 }
 
 const HOME_DEFAULTS = {
-  title: 'Best Digital Marketing Company in Thanjavur | Ara Discover Marketing',
-  description: 'Ara Discover Marketing is one of the best digital marketing companies in Thanjavur and offers best digital marketing services in Thanjavur for business growth.',
+  title: 'Best Digital Marketing Company in Thanjavur | ARA Discover Marketing',
+  description: 'ARA Discover Marketing is one of the best digital marketing companies in Thanjavur and offers best digital marketing services in Thanjavur for business growth.',
   keywords: 'Best digital marketing company in thanjavur, Best digital marketing services in thanjavur',
   canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/',
 }
@@ -44,7 +44,7 @@ export default function useSEO({ title, description, keywords, canonical, ogImag
 
     // Open Graph
     setMeta('meta[property="og:type"]',        'content', 'website')
-    setMeta('meta[property="og:site_name"]',   'content', 'Ara Discover Marketing')
+    setMeta('meta[property="og:site_name"]',   'content', 'ARA Discover Marketing')
     setMeta('meta[property="og:title"]',       'content', title)
     setMeta('meta[property="og:description"]', 'content', description)
     setMeta('meta[property="og:url"]',         'content', canonical || HOME_DEFAULTS.canonical)

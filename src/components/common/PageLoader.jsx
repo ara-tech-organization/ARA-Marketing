@@ -179,23 +179,17 @@ export default function PageLoader({ duration = 2600 }) {
                 stroke="url(#plg2)" strokeWidth="2.2" strokeLinecap="round" />
             </g>
 
-            {/* Orbit dot — outermost */}
-            <circle r="3" fill="url(#plg3)" filter="url(#pglow)">
-              <animateMotion dur="4s" repeatCount="indefinite" calcMode="linear"
-                path="M70,4 A66,66 0 1,0 69.9999,4" />
-            </circle>
+            {/* Orbit dot — outermost (r=66, starts top) */}
+            <circle cx="70" cy="4" r="3" fill="url(#plg3)" filter="url(#pglow)"
+              style={{ animation: 'loaderSpinRev 4s linear infinite', transformOrigin: '70px 70px' }} />
 
-            {/* Orbit dot — outer */}
-            <circle r="5" fill="url(#plg1)" filter="url(#pglowStrong)">
-              <animateMotion dur="1.8s" repeatCount="indefinite" calcMode="linear"
-                path="M70,16 A54,54 0 1,1 69.9999,16" />
-            </circle>
+            {/* Orbit dot — outer (r=54, starts top) */}
+            <circle cx="70" cy="16" r="5" fill="url(#plg1)" filter="url(#pglowStrong)"
+              style={{ animation: 'loaderSpin 1.8s linear infinite', transformOrigin: '70px 70px' }} />
 
-            {/* Orbit dot — mid (counter) */}
-            <circle r="3.5" fill="url(#plg2)" filter="url(#pglow)">
-              <animateMotion dur="2.6s" repeatCount="indefinite" calcMode="linear"
-                path="M70,32 A38,38 0 1,0 69.9999,32" />
-            </circle>
+            {/* Orbit dot — mid (r=38, starts top, counter) */}
+            <circle cx="70" cy="32" r="3.5" fill="url(#plg2)" filter="url(#pglow)"
+              style={{ animation: 'loaderSpinRev 2.6s linear infinite', transformOrigin: '70px 70px' }} />
           </svg>
         </div>
 

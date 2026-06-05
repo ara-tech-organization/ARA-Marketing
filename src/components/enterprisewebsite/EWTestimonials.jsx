@@ -2,7 +2,7 @@ import { Quote, Star, Users } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: 'Ara Discover Marketing transformed our enterprise website into a high-performance, AI-driven platform. Their team is professional, innovative, and reliable. A trusted enterprise web development agency in Thanjavur.',
+    quote: 'ARA Discover Marketing transformed our enterprise website into a high-performance, AI-driven platform. Their team is professional, innovative, and reliable. A trusted enterprise web development agency in Thanjavur.',
     name: 'Ramesh',
     role: 'CEO',
     initials: 'R',
@@ -11,7 +11,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    quote: 'We partnered with Ara Discover Marketing for our enterprise website development company in Thanjavur projects. The result exceeded our expectations, with scalable design and seamless AI integration.',
+    quote: 'We partnered with ARA Discover Marketing for our enterprise website development company in Thanjavur projects. The result exceeded our expectations, with scalable design and seamless AI integration.',
     name: 'Priya',
     role: 'Head of Digital Strategy',
     initials: 'P',
@@ -20,7 +20,7 @@ const testimonials = [
     stars: 5,
   },
   {
-    quote: 'For our enterprise website development in Thanjavur, Ara Discover Marketing provided a solution beyond expectations with scalability and intelligent AI features that transformed our business operations.',
+    quote: 'For our enterprise website development in Thanjavur, ARA Discover Marketing provided a solution beyond expectations with scalability and intelligent AI features that transformed our business operations.',
     name: 'Praveen',
     role: 'Head of Digital Strategy',
     initials: 'Pr',

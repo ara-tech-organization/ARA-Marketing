@@ -84,7 +84,7 @@ export default function VEHero() {
             </p>
 
             <p className="text-[13.5px] sm:text-[14.5px] leading-[1.85] mb-3 max-w-[560px] mx-auto lg:mx-0" style={{ color: 'rgba(255,255,255,0.55)' }}>
-              Ara Discover Marketing is a professional corporate video editing service in Thanjavur that turns raw footage into powerful, engaging, and conversion-focused visual content.
+              ARA Discover Marketing is a professional corporate video editing service in Thanjavur that turns raw footage into powerful, engaging, and conversion-focused visual content.
             </p>
             <p className="hidden sm:block text-[13px] sm:text-[13.5px] leading-[1.8] mb-8 sm:mb-10 max-w-[560px] mx-auto lg:mx-0" style={{ color: 'rgba(255,255,255,0.35)' }}>
               We offer professional video editing in Thanjavur for businesses, brands, and creators seeking engaging visuals and compelling stories for their digital presence.

@@ -75,7 +75,7 @@ export default function OMWhyUs() {
           <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Why Businesses Choose{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-              Ara Discover Marketing
+              ARA Discover Marketing
             </span>
           </h2>
           <p className="text-[14.5px] text-slate-500 leading-[1.85] max-w-[580px] mx-auto">
@@ -107,7 +107,7 @@ export default function OMWhyUs() {
               style={{ boxShadow: '0 24px 64px rgba(37,99,235,0.16)' }}>
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&auto=format&fit=crop&q=80"
-                alt="Ara Discover Marketing team planning digital marketing strategies in Thanjavur"
+                alt="ARA Discover Marketing team planning digital marketing strategies in Thanjavur"
                 className="w-full h-full object-cover object-center"
               />
             </div>

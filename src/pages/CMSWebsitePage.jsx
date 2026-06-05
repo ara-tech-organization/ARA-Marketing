@@ -20,11 +20,11 @@ const cmsSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/cms-website-development',
-      name: 'CMS Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-      description: 'Ara Discover Marketing is a trusted CMS Website Design and Development Company in Thanjavur delivering easy-to-manage WordPress websites.',
+      name: 'CMS Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+      description: 'ARA Discover Marketing is a trusted CMS Website Design and Development Company in Thanjavur delivering easy-to-manage WordPress websites.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
@@ -109,8 +109,8 @@ const cmsSchema = {
 export default function CMSWebsitePage() {
   useReveal()
   useSEO({
-    title:       'CMS Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a trusted CMS Website Design and Development Company in Thanjavur delivering easy-to-manage websites.',
+    title:       'CMS Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a trusted CMS Website Design and Development Company in Thanjavur delivering easy-to-manage websites.',
     keywords:    'best wordpress development companies in thanjavur, wordpress cms development services in thanjavur, custom cms wordpress development company in thanjavur, custom cms wordpress development services in thanjavur, cms website development services in thanjavur, cms web development company in thanjavur',
     canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/cms-website-development',
     ogImage:     'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop&auto=format&q=80',
@@ -120,7 +120,7 @@ export default function CMSWebsitePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <CMSHero />
         <CMSIntro />
         <CMSPlatforms />

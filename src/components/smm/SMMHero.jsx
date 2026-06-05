@@ -48,7 +48,7 @@ export default function SMMHero() {
 
             {/* Description */}
             <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-4 max-w-[620px]">
-              Ara Discover Marketing provides the best social media marketing services in Thanjavur, which help businesses to build brand awareness, improve customer engagement, and generate quality leads through result-driven social media strategies. As one of the best social media companies in Thanjavur, we create and optimize high-performance campaigns for startups, local businesses, and emerging brands.
+              ARA Discover Marketing provides the best social media marketing services in Thanjavur, which help businesses to build brand awareness, improve customer engagement, and generate quality leads through result-driven social media strategies. As one of the best social media companies in Thanjavur, we create and optimize high-performance campaigns for startups, local businesses, and emerging brands.
             </p>
             <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[620px]">
               From organic building to paid advertising campaigns, our dedicated social media team specializes in platform-specific strategies that keep businesses ahead in today's competitive digital landscape.
@@ -92,7 +92,7 @@ export default function SMMHero() {
           {/* Hidden SEO image — primary keyword */}
           <img
             src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1&h=1&fit=crop&auto=format&q=10"
-            alt="Best Social Media Marketing Services in Thanjavur - Ara Discover Marketing"
+            alt="Best Social Media Marketing Services in Thanjavur - ARA Discover Marketing"
             width="1" height="1"
             loading="lazy"
             className="absolute opacity-0 pointer-events-none"

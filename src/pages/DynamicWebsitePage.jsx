@@ -54,8 +54,8 @@ const schema = {
 export default function DynamicWebsitePage() {
   useReveal()
   useSEO({
-    title:       'Dynamic Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a leading Dynamic Website Design and Development Company in Thanjavur offering responsive and scalable web solutions.',
+    title:       'Dynamic Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a leading Dynamic Website Design and Development Company in Thanjavur offering responsive and scalable web solutions.',
     keywords:    'dynamic website development company in thanjavur, dynamic website development service in thanjavur, dynamic website designing company in thanjavur',
     canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/dynamic-website-development',
     schema,
@@ -64,7 +64,7 @@ export default function DynamicWebsitePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <DWHero />
         <DWIntro />
         <DWServices />

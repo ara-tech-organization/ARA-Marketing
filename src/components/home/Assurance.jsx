@@ -24,7 +24,7 @@ export default function Assurance() {
             Our Assurance
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">
-            At Ara Discover Marketing, we focus on search engine guidelines, ethical marketing strategies,
+            At ARA Discover Marketing, we focus on search engine guidelines, ethical marketing strategies,
             transparent communication and measurable performance. Being the top branding agency in Thanjavur,
             we want to help all kinds of niches build trust, visibility and long-term customer relationships.
           </p>

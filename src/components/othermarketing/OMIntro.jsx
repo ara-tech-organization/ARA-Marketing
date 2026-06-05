@@ -43,7 +43,7 @@ export default function OMIntro() {
             </h2>
 
             <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-4 max-w-[500px]">
-              Today's businesses need more than ad campaigns to stay competitive. Ara Discover Marketing offers strategic email marketing, influencer marketing, and SMS marketing solutions that help you engage and retain your audience effectively.
+              Today's businesses need more than ad campaigns to stay competitive. ARA Discover Marketing offers strategic email marketing, influencer marketing, and SMS marketing solutions that help you engage and retain your audience effectively.
             </p>
             <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-8 max-w-[500px]">
               We are one of the best email marketing companies in Thanjavur and a trusted influencers marketing agency in Thanjavur — building custom campaigns for startups, local businesses, and growing brands with transparent reporting and measurable results.

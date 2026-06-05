@@ -1,9 +1,11 @@
 import Navbar  from '../components/home/Navbar'
 import Footer  from '../components/home/Footer'
 import TermsConditionsContent from '../components/legal/TermsConditionsContent'
-import useSEO  from '../hooks/useSEO'
+import useSEO    from '../hooks/useSEO'
+import useReveal from '../hooks/useReveal'
 
 export default function TermsConditionsPage() {
+  useReveal()
   useSEO({
     title: 'Terms & Conditions | ARA Discover Marketing',
     description: 'Read the Terms and Conditions of ARA Discover Marketing. Understand the rules governing your use of our services and website.',
@@ -13,7 +15,7 @@ export default function TermsConditionsPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <TermsConditionsContent />
       </main>
       <Footer />

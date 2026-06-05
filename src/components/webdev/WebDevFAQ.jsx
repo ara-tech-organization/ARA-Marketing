@@ -4,7 +4,7 @@ import { Layers, ChevronRight } from 'lucide-react'
 const faqs = [
   {
     q: 'Which company provides the best web design and development services in Thanjavur?',
-    a: 'Ara Discover Marketing is the best web design and development company in Thanjavur, providing custom websites, corporate websites and e-commerce solutions.',
+    a: 'ARA Discover Marketing is the best web design and development company in Thanjavur, providing custom websites, corporate websites and e-commerce solutions.',
   },
   {
     q: 'What are included services in website development?',
@@ -23,7 +23,7 @@ const faqs = [
     a: 'Yes, all websites are built with SEO optimised structure for better Google rankings.',
   },
   {
-    q: 'Why choose Ara Discover Marketing for web development services?',
+    q: 'Why choose ARA Discover Marketing for web development services?',
     a: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as the best website design and development company in Thanjavur assures long-term and high-quality digital solutions.',
   },
 ]

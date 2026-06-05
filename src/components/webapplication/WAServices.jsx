@@ -51,7 +51,7 @@ const services = [
     icon: Building2,
     title: 'Enterprise Web Applications',
     subtitle: 'Scalable solutions for large organisations',
-    desc: 'Collaborate with Ara Discover Marketing, the top web application development company in Thanjavur, to develop scalable and secure enterprise solutions that perfectly align with your business objectives.',
+    desc: 'Collaborate with ARA Discover Marketing, the top web application development company in Thanjavur, to develop scalable and secure enterprise solutions that perfectly align with your business objectives.',
     highlights: ['Enterprise-grade security', 'Scalable architecture', 'Role-based access control', 'Legacy system integration'],
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&h=320&fit=crop&auto=format&q=80',
     color: '#0891b2',

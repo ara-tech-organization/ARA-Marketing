@@ -150,7 +150,7 @@ export default function SWHero() {
                 <div className="relative overflow-hidden" style={{ height: '230px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&h=320&fit=crop&auto=format&q=80"
-                    alt="Static Website Development in Thanjavur — Ara Discover Marketing"
+                    alt="Static Website Development in Thanjavur — ARA Discover Marketing"
                     className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
                     loading="eager"
                   />

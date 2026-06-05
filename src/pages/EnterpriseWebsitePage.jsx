@@ -19,7 +19,7 @@ const schema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Why is Ara Discover Marketing the Top Enterprise Web Development Agency in Thanjavur?',
+      name: 'Why is ARA Discover Marketing the Top Enterprise Web Development Agency in Thanjavur?',
       acceptedAnswer: { '@type': 'Answer', text: 'We incorporate AI integration, enterprise-level security, and a client-centric approach to build high-performing, scalable websites for large businesses. Our proven track record across finance, healthcare, retail, logistics, and education sectors makes us the most trusted enterprise web development agency in Thanjavur.' },
     },
     {
@@ -53,8 +53,8 @@ const schema = {
 export default function EnterpriseWebsitePage() {
   useReveal()
   useSEO({
-    title:       'Enterprise Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a reliable Enterprise Website Design and Development Company in Thanjavur offering business-driven solutions.',
+    title:       'Enterprise Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a reliable Enterprise Website Design and Development Company in Thanjavur offering business-driven solutions.',
     keywords:    'enterprise web development agency in thanjavur, enterprise website development company in thanjavur, enterprise web development services in thanjavur',
     canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/enterprise-website-development',
     schema,
@@ -63,7 +63,7 @@ export default function EnterpriseWebsitePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <EWHero />
         <EWIntro />
         <EWWhyUs />

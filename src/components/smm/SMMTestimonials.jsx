@@ -2,7 +2,7 @@ import { Star, Quote, Layers } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing helped us improve engagement and generate quality leads through social media campaigns.',
+    text: 'ARA Discover Marketing helped us improve engagement and generate quality leads through social media campaigns.',
     name: 'Business Owner',
     role: 'Local Retail Brand, Thanjavur',
     image: 'https://randomuser.me/api/portraits/men/61.jpg',

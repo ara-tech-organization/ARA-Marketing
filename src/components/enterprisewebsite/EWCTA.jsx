@@ -111,7 +111,7 @@ export default function EWCTA() {
                   </div>
                   <p className="text-[14px] sm:text-[15px] font-bold text-white">Message Sent!</p>
                   <p className="text-[12px] sm:text-[12.5px] text-center" style={{ color: 'rgba(255,255,255,0.45)' }}>
-                    We'll reach out within 24 hours. Thank you for choosing Ara Discover Marketing.
+                    We'll reach out within 24 hours. Thank you for choosing ARA Discover Marketing.
                   </p>
                 </div>
               ) : (

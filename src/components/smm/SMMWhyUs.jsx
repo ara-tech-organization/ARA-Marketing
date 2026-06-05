@@ -110,7 +110,7 @@ export default function SMMWhyUs() {
             <span className="text-gradient-blue">Social Media Marketing</span> Expertise?
           </h2>
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-3xl mx-auto mb-6">
-            We focus on Engagement, Creativity, and Measurable Growth. Businesses trust Ara Discover Marketing. We are one of the best social media service providers in Thanjavur, creating custom campaigns to match business goals and consumer behaviour.
+            We focus on Engagement, Creativity, and Measurable Growth. Businesses trust ARA Discover Marketing. We are one of the best social media service providers in Thanjavur, creating custom campaigns to match business goals and consumer behaviour.
           </p>
           <p className="text-[14px] font-bold text-slate-700 tracking-wide uppercase mb-2">
             Why choose our SMM services:
@@ -121,7 +121,7 @@ export default function SMMWhyUs() {
         <div className="reveal rounded-3xl overflow-hidden mb-14" style={{ height: 260 }}>
           <img
             src="https://images.unsplash.com/photo-1776248783518-400b6d0da64c?w=1200&h=260&fit=crop&auto=format&q=80"
-            alt="Best Social Media Marketing Agency in Thanjavur - Why Choose Ara Discover Marketing"
+            alt="Best Social Media Marketing Agency in Thanjavur - Why Choose ARA Discover Marketing"
             loading="lazy"
             width="1200"
             height="260"

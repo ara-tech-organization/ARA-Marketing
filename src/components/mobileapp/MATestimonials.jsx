@@ -5,7 +5,7 @@ const testimonials = [
     name: 'Anil Choudry',
     role: 'CEO',
     rating: 5,
-    text: 'Ara Discover Marketing is one of the best app development agencies in Thanjavur. Their AI-powered mobile apps have completely transformed our business operations. The team is professional, responsive, and truly understands what businesses need.',
+    text: 'ARA Discover Marketing is one of the best app development agencies in Thanjavur. Their AI-powered mobile apps have completely transformed our business operations. The team is professional, responsive, and truly understands what businesses need.',
     featured: true,
     image: 'https://randomuser.me/api/portraits/men/36.jpg',
   },

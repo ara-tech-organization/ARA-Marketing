@@ -53,7 +53,7 @@ export default function MAAssurance() {
             </span>
           </h2>
           <p className="text-[15px] max-w-2xl mx-auto" style={{ color: '#94a3b8' }}>
-            When you partner with Ara Discover Marketing, you get more than just an app — you get a long-term technology partner committed to your growth.
+            When you partner with ARA Discover Marketing, you get more than just an app — you get a long-term technology partner committed to your growth.
           </p>
         </div>
 

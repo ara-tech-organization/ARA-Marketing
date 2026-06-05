@@ -47,7 +47,7 @@ export default function AboutUsPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <AboutHero />
         <AboutMV />
         <AboutCEO />

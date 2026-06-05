@@ -3,7 +3,7 @@ import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Why is Ara Discover Marketing the best Mobile App Development Company in Thanjavur?',
+    q: 'Why is ARA Discover Marketing the best Mobile App Development Company in Thanjavur?',
     a: 'We combine expertise, AI integration, and customer-centricity to develop scalable, secure, and high-performance mobile apps. Our full-cycle development approach, transparent communication, and track record of 200+ delivered apps make us the most trusted mobile app development company in Thanjavur.',
   },
   {

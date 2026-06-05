@@ -22,11 +22,11 @@ const maSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/mobile-application-development',
-      name: 'Mobile Application Development Company in Thanjavur | Ara Discover Marketing',
-      description: 'Ara Discover Marketing is a top Mobile Application Development Company in Thanjavur developing innovative iOS and Android applications with AI-powered features.',
+      name: 'Mobile Application Development Company in Thanjavur | ARA Discover Marketing',
+      description: 'ARA Discover Marketing is a top Mobile Application Development Company in Thanjavur developing innovative iOS and Android applications with AI-powered features.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
         email: 'aradiscovermarketing@gmail.com',
@@ -58,7 +58,7 @@ const maSchema = {
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'Why is Ara Discover Marketing the best Mobile App Development Company in Thanjavur?',
+          name: 'Why is ARA Discover Marketing the best Mobile App Development Company in Thanjavur?',
           acceptedAnswer: { '@type': 'Answer', text: 'We combine expertise, AI integration, and customer-centricity to develop scalable, secure, and high-performance mobile apps with a track record of 200+ delivered apps.' },
         },
         {
@@ -94,8 +94,8 @@ const maSchema = {
 export default function MobileAppPage() {
   useReveal()
   useSEO({
-    title: 'Mobile Application Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a top Mobile Application Development Company in Thanjavur developing innovative iOS and Android applications with AI-powered features.',
+    title: 'Mobile Application Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a top Mobile Application Development Company in Thanjavur developing innovative iOS and Android applications with AI-powered features.',
     keywords: 'best app development agencies in thanjavur, custom mobile app development services in thanjavur, e commerce mobile app development services in thanjavur, mobile application development agency in thanjavur, mobile application development service in thanjavur, android app development company in thanjavur, ios and android development in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/mobile-application-development',
     ogImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop&auto=format&q=80',
@@ -105,7 +105,7 @@ export default function MobileAppPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <MAHero />
         <MAIntro />
         <MAWhyUs />

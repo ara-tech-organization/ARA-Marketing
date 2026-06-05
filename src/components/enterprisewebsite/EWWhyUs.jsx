@@ -133,7 +133,7 @@ export default function EWWhyUs() {
             <Award size={9} /> Why Choose Us
           </span>
           <h2 className="text-[clamp(20px,4.5vw,46px)] font-bold leading-[1.10] tracking-tight mb-3 sm:mb-4" style={{ color: '#ffffff' }}>
-            Why Ara Discover Marketing{' '}
+            Why ARA Discover Marketing{' '}
             <br className="hidden sm:block lg:hidden" />
             <span style={{ background: 'linear-gradient(135deg,#a78bfa,#38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Stands Apart

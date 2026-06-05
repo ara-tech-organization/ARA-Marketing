@@ -25,7 +25,7 @@ const platforms = [
     desc: [
       'Facebook is still one of the most effective platforms for marketing businesses and customer targeting. Our social media team specializes in facebook marketing for business in Thanjavur, helping brands generate leads, increase page engagement, and improve conversions with strategic campaigns.',
       'We are one of the trusted facebook advertising companies in Thanjavur, who create result-oriented campaigns to improve brand visibility and customer interaction.',
-      'If you are looking for reliable Facebook social media marketing companies in Thanjavur for creative and ROI-focused Facebook strategies, your search ends at Ara Discover Marketing.',
+      'If you are looking for reliable Facebook social media marketing companies in Thanjavur for creative and ROI-focused Facebook strategies, your search ends at ARA Discover Marketing.',
     ],
     keywords: ['Facebook Ads', 'Facebook Lead Gen'],
     services: [

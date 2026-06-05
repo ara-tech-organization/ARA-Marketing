@@ -2,7 +2,7 @@ import { Star, Quote, Layers } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing built our website with excellent design and performance. Truly the best website design and development company in Thanjavur.',
+    text: 'ARA Discover Marketing built our website with excellent design and performance. Truly the best website design and development company in Thanjavur.',
     name: 'Business Owner',
     role: 'Corporate Business, Thanjavur',
     image: 'https://randomuser.me/api/portraits/men/16.jpg',

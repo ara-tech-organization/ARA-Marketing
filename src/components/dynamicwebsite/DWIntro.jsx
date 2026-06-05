@@ -52,7 +52,7 @@ export default function DWIntro() {
             style={{ minHeight: 220, boxShadow: '0 24px 60px rgba(37,99,235,0.16)' }}>
             <img
               src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=700&h=600&fit=crop&auto=format&q=80"
-              alt="Dynamic website development company in Thanjavur — Ara Discover Marketing"
+              alt="Dynamic website development company in Thanjavur — ARA Discover Marketing"
               loading="lazy"
               className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
               style={{ minHeight: 220 }}

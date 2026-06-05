@@ -20,7 +20,7 @@ const schema = {
     {
       '@type': 'Question',
       name: 'Which company offers the best video editing services in Thanjavur?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is one of the best video editing services in Thanjavur, offering YouTube editing, social media videos, corporate videos, branding videos, and drone video editing.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'ARA Discover Marketing is one of the best video editing services in Thanjavur, offering YouTube editing, social media videos, corporate videos, branding videos, and drone video editing.' },
     },
     {
       '@type': 'Question',
@@ -48,8 +48,8 @@ const schema = {
 export default function VideoEditingPage() {
   useReveal()
   useSEO({
-    title:       'Best Video Editing Services in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a professional video editing company in Thanjavur offering drone, corporate, branding & YouTube video editing services.',
+    title:       'Best Video Editing Services in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a professional video editing company in Thanjavur offering drone, corporate, branding & YouTube video editing services.',
     keywords:    'best video editing services in thanjavur, business video editing services in thanjavur, corporate video editing companies in thanjavur, digital marketing video editing in thanjavur, drone video editing in thanjavur, online youtube video editing in thanjavur, videography and editing in thanjavur, Branding Videos editing in thanjavur',
     canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/video-editing',
     schema,
@@ -58,7 +58,7 @@ export default function VideoEditingPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <VEHero />
         <VEIntro />
         <VEWhyUs />

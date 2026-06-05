@@ -19,12 +19,12 @@ const gdSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/graphic-design',
-      name: 'Ara Discover Marketing Graphic Design Services',
+      name: 'ARA Discover Marketing Graphic Design Services',
       description:
-        'Ara Discover Marketing offers creative, high-quality design services including logo design, brochure design, flyer design, social media creatives, business card design and complete brand identity solutions in Thanjavur.',
+        'ARA Discover Marketing offers creative, high-quality design services including logo design, brochure design, flyer design, social media creatives, business card design and complete brand identity solutions in Thanjavur.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
         email: 'aradiscovermarketing@gmail.com',
@@ -58,9 +58,9 @@ const gdSchema = {
 export default function GraphicDesignPage() {
   useReveal()
   useSEO({
-    title: 'Best Graphic Design Company in Thanjavur | Ara Discover Marketing',
+    title: 'Best Graphic Design Company in Thanjavur | ARA Discover Marketing',
     description:
-      'Ara Discover Marketing is the Best Graphic Design Company in Thanjavur, offering creative, high-quality design services with expert solutions and fast delivery.',
+      'ARA Discover Marketing is the Best Graphic Design Company in Thanjavur, offering creative, high-quality design services with expert solutions and fast delivery.',
     keywords:
       'best graphic design service in thanjavur, top graphic design agencies in thanjavur, top graphic design companies in thanjavur, best graphic design company in thanjavur, best brochure design in thanjavur, best advertisement design in thanjavur, best graphic design studios in thanjavur, best professional logo design in thanjavur, best business flyer design in thanjavur, leading graphic design companies in thanjavur, best graphic design agencies in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/graphic-design',
@@ -72,7 +72,7 @@ export default function GraphicDesignPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <GDHero />
         <GDIntro />
         <GDWhyUs />

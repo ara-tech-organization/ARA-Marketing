@@ -68,7 +68,7 @@ export default function OMHero() {
         {/* ── Row 4: description left  ·  CTAs + stats right ── */}
         <div className="flex flex-col lg:flex-row gap-8 items-start pb-12">
           <p className="flex-1 text-[15px] text-slate-500 leading-[1.85] max-w-[500px]">
-            Ara Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencers marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
+            ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencers marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
           </p>
           <div className="flex-shrink-0 flex flex-col gap-4">
             <div className="flex flex-wrap gap-3">

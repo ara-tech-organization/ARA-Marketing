@@ -39,7 +39,7 @@ export default function VECTA() {
 
         <p className="text-[14px] sm:text-[16px] leading-[1.85] mb-3 sm:mb-4 max-w-[600px] mx-auto px-2 sm:px-0"
           style={{ color: 'rgba(255,255,255,0.75)' }}>
-          Join hands with Ara Discover Marketing, a trusted video editing service provider in Thanjavur that offers creative, cinematic, and high-converting video editing solutions.
+          Join hands with ARA Discover Marketing, a trusted video editing service provider in Thanjavur that offers creative, cinematic, and high-converting video editing solutions.
         </p>
         <p className="hidden sm:block text-[14px] leading-[1.8] mb-10 sm:mb-12 max-w-[480px] mx-auto"
           style={{ color: 'rgba(255,255,255,0.45)' }}>

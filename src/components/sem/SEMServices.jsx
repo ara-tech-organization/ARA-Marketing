@@ -15,7 +15,7 @@ const services = [
     tag: 'Display', tagBg: '#ede9fe',
     imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop&auto=format&q=80',
     imgAlt: 'Google Display Advertising in Thanjavur',
-    desc: 'Display Ads are visually appealing ads that help businesses reach their targeted audiences on websites, apps, and other digital platforms. We offer strategic display campaign services for brand awareness and remarketing. When it comes to Google display advertising companies in Thanjavur, Ara Discover Marketing is the number one choice of businesses to create impactful and performance-driven display advertising campaigns. We also provide Google promotion services in Thanjavur, which helps the brands to increase visibility and customer engagement through display marketing in a strategic manner.',
+    desc: 'Display Ads are visually appealing ads that help businesses reach their targeted audiences on websites, apps, and other digital platforms. We offer strategic display campaign services for brand awareness and remarketing. When it comes to Google display advertising companies in Thanjavur, ARA Discover Marketing is the number one choice of businesses to create impactful and performance-driven display advertising campaigns. We also provide Google promotion services in Thanjavur, which helps the brands to increase visibility and customer engagement through display marketing in a strategic manner.',
     items: ['Banner Ad Design', 'Audience Targeting', 'Remarketing Campaigns', 'Display Network Optimization', 'Responsive Display Ads'],
   },
   {

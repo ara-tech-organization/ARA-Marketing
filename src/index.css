@@ -297,3 +297,12 @@ a { text-decoration: none; }
   transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.4s cubic-bezier(0.4,0,0.2,1);
 }
 .mobile-menu-panel-dark.open { transform: translateY(0); opacity: 1; }
+
+/* ── Page transition ── */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+.page-transition {
+  animation: page-enter 0.65s 1.2s cubic-bezier(0.4, 0, 0.2, 1) both;
+}

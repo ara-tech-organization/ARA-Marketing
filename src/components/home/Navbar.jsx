@@ -100,16 +100,7 @@ function DropdownPanel({ items, title, onClose, pathname }) {
   )
 }
 
-/* First-load flag — true on fresh page load, false on SPA navigation */
-let _firstNavLoad = true
-
 export default function Navbar() {
-  const isFirst = _firstNavLoad
-  if (_firstNavLoad) _firstNavLoad = false
-
-  /* Slide in ~100ms before hero content for a natural layered reveal */
-  const BASE = isFirst ? 1780 : 260
-
   const [scrolled, setScrolled]           = useState(false)
   const [open, setOpen]                   = useState(false)
   const [activeDropdown, setActiveDropdown] = useState(null)
@@ -171,7 +162,6 @@ export default function Navbar() {
             ? 'border-b border-blue-600/20 shadow-[0_4px_32px_rgba(0,0,0,.5)]'
             : 'border-b border-transparent'
           }`}
-        style={{ animation: `navSlideDown 0.75s ${BASE}ms cubic-bezier(0.34,1.56,0.64,1) both` }}
       >
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex items-center justify-between h-[72px] gap-4">
@@ -502,12 +492,6 @@ export default function Navbar() {
         />
       )}
 
-      <style>{`
-        @keyframes navSlideDown {
-          from { transform: translateY(-100%); opacity: 0; }
-          to   { transform: translateY(0);     opacity: 1; }
-        }
-      `}</style>
     </>
   )
 }

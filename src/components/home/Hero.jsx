@@ -209,7 +209,7 @@ export default function Hero() {
           className="text-[16px] leading-[1.75] mb-4 max-w-[600px]"
           style={{ color: 'rgba(255,255,255,0.45)', animation: rev(260) }}
         >
-          Ara Discover Marketing is the best digital marketing company in Thanjavur, helping
+          ARA Discover Marketing is the best digital marketing company in Thanjavur, helping
           startups, local businesses and enterprises generate leads, improve online visibility
           and increase revenue through data-driven strategies.
         </p>

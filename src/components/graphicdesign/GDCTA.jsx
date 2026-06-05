@@ -59,7 +59,7 @@ export default function GDCTA() {
                 </span>
               </h2>
               <p className="text-[15px] text-slate-600 leading-[1.8] max-w-[400px]">
-                Team up with Ara Discover Marketing — the{' '}
+                Team up with ARA Discover Marketing — the{' '}
                 leading design agency in thanjavur{' '}
                 — for innovative branding, logo designing, brochure designing, and complete visual
                 identity solutions for business growth.

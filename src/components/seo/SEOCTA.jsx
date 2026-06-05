@@ -45,7 +45,7 @@ export default function SEOCTA() {
             </h2>
 
             <p className="text-[15px] text-slate-600 leading-[1.85] mb-8 max-w-lg">
-              Partner with Ara Discover Marketing, a trusted SEO digital marketing agency in Thanjavur, offering AI-based SEO solutions, technical optimization, and content-driven strategies for sustainable online growth.
+              Partner with ARA Discover Marketing, a trusted SEO digital marketing agency in Thanjavur, offering AI-based SEO solutions, technical optimization, and content-driven strategies for sustainable online growth.
             </p>
 
             {/* CTAs */}

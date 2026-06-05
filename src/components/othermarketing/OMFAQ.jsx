@@ -4,7 +4,7 @@ import { HelpCircle, MessageSquare, ArrowRight, ChevronDown, Mail, Users, Smartp
 const faqs = [
   {
     q: 'Which company provides the best email marketing services in Thanjavur?',
-    a: 'Ara Discover Marketing is popular as one of the best email marketing companies in Thanjavur, providing customized email campaigns, automation strategies, lead nurturing workflows, and customer engagement solutions for businesses of all sizes.',
+    a: 'ARA Discover Marketing is popular as one of the best email marketing companies in Thanjavur, providing customized email campaigns, automation strategies, lead nurturing workflows, and customer engagement solutions for businesses of all sizes.',
     color: '#2563eb', tag: 'Email Marketing', icon: Mail,
   },
   {
@@ -28,7 +28,7 @@ const faqs = [
     color: '#7c3aed', tag: 'Influencer Marketing', icon: Users,
   },
   {
-    q: 'Why Choose Ara Discover Marketing for Your Digital Marketing Services?',
+    q: 'Why Choose ARA Discover Marketing for Your Digital Marketing Services?',
     a: 'With AI-powered strategies, audience-centric campaigns, transparent reporting, and multi-channel expertise across email, influencer, and SMS channels, we are your trusted partner for business growth and customer engagement in Thanjavur.',
     color: '#0891b2', tag: 'General', icon: Smartphone,
   },

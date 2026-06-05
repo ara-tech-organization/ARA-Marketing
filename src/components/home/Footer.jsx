@@ -176,7 +176,7 @@ export default function Footer() {
             <Heart size={13} className="text-red-400 fill-red-400 flex-shrink-0" />
             <span>Crafted by </span>
             <a href="https://discovertechnologies.co/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors duration-300">
-              Ara Technology
+              ARA Discover Technology
             </a>
           </div>
         </div>

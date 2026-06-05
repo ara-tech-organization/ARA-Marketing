@@ -63,7 +63,7 @@ export default function SEOWhyUs() {
           </div>
           <div className="md:max-w-[440px] lg:max-w-[440px]">
             <p className="text-[15px] text-slate-600 leading-[1.85]">
-              Businesses trust Ara Discover Marketing because we do ethical SEO, measurable growth, and transparent reporting. As one of the top SEO agencies in Thanjavur, we help businesses achieve sustainable rankings through data-driven optimization techniques.
+              Businesses trust ARA Discover Marketing because we do ethical SEO, measurable growth, and transparent reporting. As one of the top SEO agencies in Thanjavur, we help businesses achieve sustainable rankings through data-driven optimization techniques.
             </p>
           </div>
         </div>

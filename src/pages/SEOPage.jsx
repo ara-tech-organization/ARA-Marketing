@@ -20,11 +20,11 @@ const seoSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-seo-company-thanjavur',
-      name: 'Best Search Engine Optimization Company (SEO) in Thanjavur | Ara Discover Marketing',
-      description: 'Ara Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
+      name: 'Best Search Engine Optimization Company (SEO) in Thanjavur | ARA Discover Marketing',
+      description: 'ARA Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
         email: 'aradiscovermarketing@gmail.com',
@@ -56,7 +56,7 @@ const seoSchema = {
         {
           '@type': 'Question',
           name: 'Which company offers the best SEO services in Thanjavur?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is regarded as one of the best SEO companies in Thanjavur, providing businesses with on-page SEO, off-page SEO, technical SEO, local SEO, and content-driven optimization strategies.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'ARA Discover Marketing is regarded as one of the best SEO companies in Thanjavur, providing businesses with on-page SEO, off-page SEO, technical SEO, local SEO, and content-driven optimization strategies.' },
         },
         {
           '@type': 'Question',
@@ -80,7 +80,7 @@ const seoSchema = {
         },
         {
           '@type': 'Question',
-          name: 'Why is Ara Discover Marketing the best SEO agency in Thanjavur?',
+          name: 'Why is ARA Discover Marketing the best SEO agency in Thanjavur?',
           acceptedAnswer: { '@type': 'Answer', text: 'As one of the top SEO companies in Thanjavur, we offer our clients ethical optimization practices, clear reporting, and measurable ranking results, all powered by our AI-based SEO strategies.' },
         },
       ],
@@ -91,8 +91,8 @@ const seoSchema = {
 export default function SEOPage() {
   useReveal()
   useSEO({
-    title: 'Best Search Engine Optimization Company (SEO) in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
+    title: 'Best Search Engine Optimization Company (SEO) in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
     keywords: 'best seo companies in thanjavur, digital marketing seo services in thanjavur, international seo services in thanjavur, seo and digital marketing services in thanjavur, top seo agencies in thanjavur, top seo companies in thanjavur, top seo services in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-seo-company-thanjavur',
     ogImage: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80',
@@ -102,7 +102,7 @@ export default function SEOPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <SEOHero />
         <SEOIntro />
         <SEOWhyUs />

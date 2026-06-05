@@ -28,7 +28,7 @@ export default function WhyUs() {
             <Zap size={11} /> Why Choose Us
           </span>
           <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
-            Why Do Businesses Choose<br />Ara Discover Marketing?
+            Why Do Businesses Choose<br />ARA Discover Marketing?
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">
             Businesses and startups trust Ara because we focus on measurable growth, transparency and
@@ -149,7 +149,7 @@ export default function WhyUs() {
             {/* Bottom CTA strip */}
             <div className="pt-7 pb-1 flex flex-wrap items-center justify-between gap-4">
               <p className="text-[13px] text-slate-500 leading-relaxed max-w-sm">
-                Are you looking for the best digital marketing agency in Thanjavur? Ara Discover Marketing
+                Are you looking for the best digital marketing agency in Thanjavur? ARA Discover Marketing
                 offers a complete digital solution that drives visibility, engagement and conversions.
               </p>
               <a

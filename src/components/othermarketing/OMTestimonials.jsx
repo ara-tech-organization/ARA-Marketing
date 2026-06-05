@@ -2,7 +2,7 @@ import { Star, MessageSquare, Quote, CheckCircle2, TrendingUp } from 'lucide-rea
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing helped us improve customer engagement through strategic email and SMS campaigns. Our open rates jumped significantly and we saw a measurable increase in repeat customers within the first month.',
+    text: 'ARA Discover Marketing helped us improve customer engagement through strategic email and SMS campaigns. Our open rates jumped significantly and we saw a measurable increase in repeat customers within the first month.',
     name: 'Ramesh Kumar',
     role: 'CEO, RetailMart',
     company: 'Retail Business',

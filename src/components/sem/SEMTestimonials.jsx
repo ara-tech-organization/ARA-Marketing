@@ -3,7 +3,7 @@ import { Star, MessageSquare, Quote, CheckCircle2 } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing significantly improved our lead generation through Google Ads campaigns.',
+    text: 'ARA Discover Marketing significantly improved our lead generation through Google Ads campaigns.',
     name: 'Rajan Krishnamurthy',
     role: 'Business Owner, Thanjavur',
     company: 'Retail Business',
@@ -60,7 +60,7 @@ export default function SEMTestimonials() {
             <span className="text-gradient-blue">Google Ads Services</span>
           </h2>
           <p className="text-[14px] text-slate-500 mt-3 max-w-lg mx-auto">
-            Real results, real voices — businesses that trusted Ara Discover Marketing for their paid advertising growth.
+            Real results, real voices — businesses that trusted ARA Discover Marketing for their paid advertising growth.
           </p>
         </div>
 

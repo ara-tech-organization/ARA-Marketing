@@ -127,7 +127,7 @@ export default function WACTA() {
                   style={{ height: '180px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format&q=80"
-                    alt="Web App Development Thanjavur — Ara Discover Marketing"
+                    alt="Web App Development Thanjavur — ARA Discover Marketing"
                     className="w-full h-full object-cover opacity-80"
                   />
                   <div className="absolute inset-0"

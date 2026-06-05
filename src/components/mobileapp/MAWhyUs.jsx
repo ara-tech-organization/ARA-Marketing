@@ -58,7 +58,7 @@ export default function MAWhyUs() {
             <Sparkles size={11} /> What Makes Us Different
           </span>
           <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-            Why Choose Ara Discover as Your{' '}
+            Why Choose ARA Discover as Your{' '}
             <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               App Partner?
             </span>

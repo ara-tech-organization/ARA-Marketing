@@ -54,7 +54,7 @@ export default function SMMIntro() {
             <div className="reveal rounded-2xl overflow-hidden" style={{ height: 210 }}>
               <img
                 src="https://images.unsplash.com/flagged/photo-1576485436509-a7d286952b65?w=600&h=210&fit=crop&auto=format&q=80"
-                alt="Social Media Marketing Strategy in Thanjavur - Ara Discover Marketing"
+                alt="Social Media Marketing Strategy in Thanjavur - ARA Discover Marketing"
                 loading="lazy"
                 width="600"
                 height="210"
@@ -78,7 +78,7 @@ export default function SMMIntro() {
 
             <div className="reveal delay-1 space-y-4">
               <p className="text-[15px] text-slate-500 leading-[1.85]">
-                Social media has become one of the finest methods to keep engaging customers and grow businesses. Ara Discover Marketing is a digital marketing and social media marketing agency in Thanjavur, offering cutting-edge AI-based solutions for brands aiming to engage their target audience with high-quality creative campaigns and performance-oriented marketing strategies.
+                Social media has become one of the finest methods to keep engaging customers and grow businesses. ARA Discover Marketing is a digital marketing and social media marketing agency in Thanjavur, offering cutting-edge AI-based solutions for brands aiming to engage their target audience with high-quality creative campaigns and performance-oriented marketing strategies.
               </p>
               <p className="text-[15px] text-slate-500 leading-[1.85]">
                 We are one of the best social media companies in Thanjavur that focuses on audience targeting, content creation, ad optimisation, and engagement strategies that increase visibility and customer interaction. Our expertise in marketing through social media in Thanjavur helps businesses to build trust, increase followers, and generate conversions across multiple platforms.

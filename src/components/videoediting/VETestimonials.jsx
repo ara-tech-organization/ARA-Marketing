@@ -1,7 +1,7 @@
 import { Star, Quote, MessageSquare } from 'lucide-react'
 
 const testimonials = [
-  { text: 'Ara Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.', name: 'Ramesh Kumar',   role: 'CEO, Thanjavur Textile Exports',  rating: 5, color: '#2563eb', avatar: 'R', image: 'https://randomuser.me/api/portraits/men/91.jpg' },
+  { text: 'ARA Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.', name: 'Ramesh Kumar',   role: 'CEO, Thanjavur Textile Exports',  rating: 5, color: '#2563eb', avatar: 'R', image: 'https://randomuser.me/api/portraits/men/91.jpg' },
   { text: 'One of the most popular videography and editing services in Thanjavur for professional branding videos. The quality and attention to detail exceeded our expectations completely.',        name: 'Priya Sundaram', role: 'Marketing Head, Delta Agro Products', rating: 5, color: '#7c3aed', avatar: 'P', image: 'https://randomuser.me/api/portraits/women/76.jpg' },
   { text: 'Ara helped us improve engagement on social media significantly. Their Instagram Reels and YouTube editing made our content go viral. Highly recommend for any business.',                 name: 'Karthik Rajan',  role: 'Founder, TechBridge Solutions',       rating: 5, color: '#0891b2', avatar: 'K', image: 'https://randomuser.me/api/portraits/men/37.jpg' },
 ]

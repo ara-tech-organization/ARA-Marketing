@@ -20,11 +20,11 @@ const semSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-sem-company-thanjavur',
-      name: 'Best Search Engine Marketing Company (SEM) in Thanjavur | Ara Discover Marketing',
-      description: 'Ara Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
+      name: 'Best Search Engine Marketing Company (SEM) in Thanjavur | ARA Discover Marketing',
+      description: 'ARA Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
         email: 'aradiscovermarketing@gmail.com',
@@ -57,7 +57,7 @@ const semSchema = {
         {
           '@type': 'Question',
           name: 'What is the best Google Ads company in Thanjavur?',
-          acceptedAnswer: { '@type': 'Answer', text: 'Ara Discover Marketing is one of the best search engine marketing (SEM) agencies in Thanjavur, offering PPC Management, Google Search Ads, Display Ads, YouTube Ads, and Shopping Ads services.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'ARA Discover Marketing is one of the best search engine marketing (SEM) agencies in Thanjavur, offering PPC Management, Google Search Ads, Display Ads, YouTube Ads, and Shopping Ads services.' },
         },
         {
           '@type': 'Question',
@@ -81,7 +81,7 @@ const semSchema = {
         },
         {
           '@type': 'Question',
-          name: 'Why choose Ara Discover Marketing for Google Ads?',
+          name: 'Why choose ARA Discover Marketing for Google Ads?',
           acceptedAnswer: { '@type': 'Answer', text: 'We are a trusted search engine marketing service provider in Thanjavur with AI-powered campaign tactics, transparent reporting, audience targeting prowess, and ROI-centric optimisation.' },
         },
       ],
@@ -92,8 +92,8 @@ const semSchema = {
 export default function SEMPage() {
   useReveal()
   useSEO({
-    title: 'Best Search Engine Marketing Company (SEM) in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
+    title: 'Best Search Engine Marketing Company (SEM) in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
     keywords: 'google ads and ppc service in thanjavur, google paid advertising in thanjavur, ppc ads service in thanjavur, youtube ads in thanjavur, ppc search ads in thanjavur, shopping ads in thanjavur, best search engine marketing sem agencies in thanjavur, search engine marketing consulting services in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-sem-company-thanjavur',
     ogImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format&q=80',
@@ -103,7 +103,7 @@ export default function SEMPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <SEMHero />
         <SEMIntro />
         <SEMWhyUs />

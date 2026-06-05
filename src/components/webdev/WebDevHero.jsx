@@ -48,7 +48,7 @@ export default function WebDevHero() {
           </p>
 
           <p className="text-[15px] text-slate-500 leading-[1.85] mb-3 max-w-[820px] mx-auto">
-            Ara Discover Marketing is one of the best web design and development companies in
+            ARA Discover Marketing is one of the best web design and development companies in
             Thanjavur that creates high-performance, mobile responsive and SEO optimised websites
             for businesses of all sizes. We build digital platforms that drive visitors, improve
             engagement and convert leads to customers.
@@ -93,7 +93,7 @@ export default function WebDevHero() {
 
         <img
           src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1&h=1&fit=crop&auto=format&q=10"
-          alt="Best Website Design and Development Company in Thanjavur - Ara Discover Marketing"
+          alt="Best Website Design and Development Company in Thanjavur - ARA Discover Marketing"
           width="1" height="1"
           loading="lazy"
           className="absolute opacity-0 pointer-events-none"

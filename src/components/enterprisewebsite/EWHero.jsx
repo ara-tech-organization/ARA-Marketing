@@ -85,7 +85,7 @@ export default function EWHero() {
 
             <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-8 max-w-[540px]"
               style={{ color: 'rgba(255,255,255,0.48)' }}>
-              Ara Discover Marketing is a trusted enterprise website development company in Thanjavur that creates AI-driven enterprise websites to boost your digital presence and simplify complex business operations.
+              ARA Discover Marketing is a trusted enterprise website development company in Thanjavur that creates AI-driven enterprise websites to boost your digital presence and simplify complex business operations.
             </p>
 
             {/* Feature chips */}

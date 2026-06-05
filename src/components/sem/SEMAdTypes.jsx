@@ -11,7 +11,7 @@ const adTypes = [
     imgAlt: 'Google Display Advertising in Thanjavur',
     reverse: false,
     paragraphs: [
-      'Display Advertising helps businesses reach their target audience visually across millions of websites, apps, and platforms within the Google Display Network. Ara Discover Marketing is one of the top Google display advertising companies in Thanjavur, creating visually compelling banner and responsive display ads that drive brand awareness and customer engagement.',
+      'Display Advertising helps businesses reach their target audience visually across millions of websites, apps, and platforms within the Google Display Network. ARA Discover Marketing is one of the top Google display advertising companies in Thanjavur, creating visually compelling banner and responsive display ads that drive brand awareness and customer engagement.',
       'We design and manage strategic display campaigns tailored to your audience interests, behaviors, and demographics. Our remarketing display campaigns re-engage visitors who have already shown interest in your business, improving the chances of conversion and increasing brand recall.',
       'As a trusted Google promotion service provider in Thanjavur, we ensure your display ads appear at the right place and time — across news sites, blogs, mobile apps, and YouTube — delivering maximum reach with minimal wasted spend.',
     ],
@@ -45,7 +45,7 @@ const adTypes = [
     paragraphs: [
       'Google Shopping Ads allow e-commerce businesses to showcase their products directly on Google search results with images, prices, and product details — right when customers are ready to buy. Our shopping ads in Thanjavur help online stores increase product visibility and drive high-intent traffic that converts.',
       'We handle everything from Google Merchant Center setup and product feed optimization to campaign management and bid strategy. Our data-driven approach ensures your products appear for the most relevant search queries, reducing wasted spend and maximizing your return on ad spend.',
-      'Whether you run a small online store or a large e-commerce platform, Ara Discover Marketing shopping ad campaigns are designed to boost product sales, improve ROAS, and grow your revenue. We continuously monitor and optimize campaigns to keep your products competitive in the market.',
+      'Whether you run a small online store or a large e-commerce platform, ARA Discover Marketing shopping ad campaigns are designed to boost product sales, improve ROAS, and grow your revenue. We continuously monitor and optimize campaigns to keep your products competitive in the market.',
     ],
     items: ['Google Merchant Center Setup', 'Product Feed Optimization', 'Shopping Campaign Management', 'Smart Shopping Campaigns', 'Product Remarketing Strategies', 'Conversion Tracking & ROAS Optimization'],
   },

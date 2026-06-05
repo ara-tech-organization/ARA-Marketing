@@ -22,7 +22,7 @@ export default function WebDevCTA() {
                 Ready to Build a Powerful Website for Your Business?
               </h2>
               <p className="text-[15px] text-blue-100 leading-[1.85] mb-8 max-w-lg">
-                Partner with Ara Discover Marketing, a trusted best website design and development
+                Partner with ARA Discover Marketing, a trusted best website design and development
                 agency in Thanjavur delivering modern, responsive and high-performance websites for
                 business growth.
               </p>

@@ -59,7 +59,7 @@ export default function GDIntro() {
                   That Define Your Business Identity
                 </h2>
                 <p className="text-[13.5px] text-slate-500 leading-[1.85] max-w-[500px]">
-                  Ara Discover Marketing is the best graphic design service in thanjavur for businesses to create visually appealing brand identities that attract, engage and convert customers.
+                  ARA Discover Marketing is the best graphic design service in thanjavur for businesses to create visually appealing brand identities that attract, engage and convert customers.
                 </p>
               </div>
               <div className="flex items-center gap-3 mt-6">
@@ -79,7 +79,7 @@ export default function GDIntro() {
             style={{ minHeight: '280px', boxShadow: '0 16px 56px rgba(37,99,235,0.18)' }}>
             <img
               src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=560&h=320&fit=crop&auto=format&q=80"
-              alt="Creative Branding and Graphic Design Solutions in Thanjavur - Ara Discover Marketing"
+              alt="Creative Branding and Graphic Design Solutions in Thanjavur - ARA Discover Marketing"
               width="560" height="320" loading="lazy"
               className="w-full h-full object-cover"
             />
@@ -92,7 +92,7 @@ export default function GDIntro() {
             <div className="absolute top-5 left-5">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold text-white"
                 style={{ background: 'rgba(37,99,235,0.6)', border: '1px solid rgba(96,165,250,0.3)', backdropFilter: 'blur(8px)' }}>
-                <Sparkles size={9} /> Ara Discover Marketing
+                <Sparkles size={9} /> ARA Discover Marketing
               </span>
             </div>
 

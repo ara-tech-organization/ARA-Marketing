@@ -47,7 +47,7 @@ export default function CTA() {
             </h2>
 
             <p className="text-[17px] text-white/55 leading-[1.75] mb-11 max-w-[620px] mx-auto">
-              Partner with Ara Discover Marketing — the best digital marketing agency in Thanjavur —
+              Partner with ARA Discover Marketing — the best digital marketing agency in Thanjavur —
               to achieve higher visibility, better engagement and increased revenue through
               result-driven digital marketing strategies.
             </p>

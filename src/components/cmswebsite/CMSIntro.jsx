@@ -106,7 +106,7 @@ export default function CMSIntro() {
             style={{ minHeight: 340, boxShadow: '0 24px 60px rgba(37,99,235,0.14)', border: '1px solid rgba(37,99,235,0.12)' }}>
             <img
               src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=700&h=600&fit=crop&auto=format&q=80"
-              alt="WordPress CMS Development Services in Thanjavur — Ara Discover Marketing"
+              alt="WordPress CMS Development Services in Thanjavur — ARA Discover Marketing"
               loading="lazy"
               className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
               style={{ minHeight: 340 }}

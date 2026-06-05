@@ -3,7 +3,7 @@ import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
-    q: 'Why is Ara Discover Marketing the trusted web application development company in Thanjavur?',
+    q: 'Why is ARA Discover Marketing the trusted web application development company in Thanjavur?',
     a: 'We are a professional web application development agency in Thanjavur offering secure, scalable and AI-powered web solutions. Our experienced team, transparent process, and focus on measurable results make us the preferred choice for businesses across industries.',
   },
   {

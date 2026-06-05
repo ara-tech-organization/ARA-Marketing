@@ -45,7 +45,7 @@ export default function SEOAssurance() {
             Our Assurance
           </h2>
           <p className="text-[15px] text-slate-600 max-w-2xl mx-auto leading-[1.85]">
-            Ara Discover Marketing is an ethical SEO agency that delivers sustainable rankings and measurable business growth. As one of the best top companies in Thanjavur, we promise complete transparency, consistency in optimization, and long-term SEO success for each project.
+            ARA Discover Marketing is an ethical SEO agency that delivers sustainable rankings and measurable business growth. As one of the best top companies in Thanjavur, we promise complete transparency, consistency in optimization, and long-term SEO success for each project.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import { ChevronDown, Layers } from 'lucide-react'
 const faqs = [
   {
     q: 'Who is the best social media branding services provider in Thanjavur?',
-    a: 'Ara Discover Marketing is one of the best social media companies in Thanjavur, providing Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies.',
+    a: 'ARA Discover Marketing is one of the best social media companies in Thanjavur, providing Facebook marketing, LinkedIn marketing, Pinterest marketing, SMO, and paid social media advertising strategies.',
   },
   {
     q: 'How does social media marketing benefit businesses?',
@@ -23,7 +23,7 @@ const faqs = [
     a: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brand’s online presence stronger.',
   },
   {
-    q: 'Why choose Ara Discover Marketing for social media marketing services?',
+    q: 'Why choose ARA Discover Marketing for social media marketing services?',
     a: 'We are one of the best social media service providers in Thanjavur because of our creative campaigns, AI-driven targeting strategies, transparent reporting, and audience-focused marketing approach.',
   },
 ]

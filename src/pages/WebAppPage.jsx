@@ -18,11 +18,11 @@ const waSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/web-application-development',
-      name: 'Web Application Development Company in Thanjavur | Ara Discover Marketing',
-      description: 'Ara Discover Marketing is a professional Web Application Development Company in Thanjavur specializing in ecommerce apps and custom web apps.',
+      name: 'Web Application Development Company in Thanjavur | ARA Discover Marketing',
+      description: 'ARA Discover Marketing is a professional Web Application Development Company in Thanjavur specializing in ecommerce apps and custom web apps.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
         email: 'aradiscovermarketing@gmail.com',
@@ -56,7 +56,7 @@ const waSchema = {
           name: 'Which company provides the best web design and development services in Thanjavur?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Ara Discover Marketing is the best web design and development company in thanjavur, providing custom websites, corporate websites and e-commerce solutions.',
+            text: 'ARA Discover Marketing is the best web design and development company in thanjavur, providing custom websites, corporate websites and e-commerce solutions.',
           },
         },
         {
@@ -93,7 +93,7 @@ const waSchema = {
         },
         {
           '@type': 'Question',
-          name: 'Why choose Ara Discover Marketing for web development services?',
+          name: 'Why choose ARA Discover Marketing for web development services?',
           acceptedAnswer: {
             '@type': 'Answer',
             text: 'Our expertise in UI/UX design, AI-enhanced technologies, and experience as a best website design and development company in thanjavur assures long-term and high-quality digital solutions.',
@@ -107,8 +107,8 @@ const waSchema = {
 export default function WebAppPage() {
   useReveal()
   useSEO({
-    title: 'Web Application Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a professional Web Application Development Company in Thanjavur specializing in ecommerce apps and custom web apps.',
+    title: 'Web Application Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a professional Web Application Development Company in Thanjavur specializing in ecommerce apps and custom web apps.',
     keywords: 'web application and development companies in thanjavur, website application development services in thanjavur, web application development agency in thanjavur, ecommerce application development company in thanjavur, custom web application development company in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/web-application-development',
     ogImage: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&h=630&fit=crop&auto=format&q=80',
@@ -118,7 +118,7 @@ export default function WebAppPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <WAHero />
         <WAServices />
         <WAWhyUs />

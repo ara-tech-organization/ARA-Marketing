@@ -56,8 +56,8 @@ const schema = {
 export default function EcommerceWebsitePage() {
   useReveal()
   useSEO({
-    title:       'E Commerce Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is an expert E Commerce Website Design and Development Company in Thanjavur creating secure online stores.',
+    title:       'E Commerce Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is an expert E Commerce Website Design and Development Company in Thanjavur creating secure online stores.',
     keywords:    'best ecommerce development agencies in thanjavur, best ecommerce web design and development company in thanjavur, custom e commerce website development company in thanjavur, custom ecommerce website development services in thanjavur',
     canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/ecommerce-website-development',
     schema,
@@ -66,7 +66,7 @@ export default function EcommerceWebsitePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <ECHero />
         <ECIntro />
         <ECPlatforms />

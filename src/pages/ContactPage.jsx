@@ -17,7 +17,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <ContactHero />
         <ContactMain />
       </main>

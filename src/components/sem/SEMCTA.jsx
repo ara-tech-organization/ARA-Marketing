@@ -43,7 +43,7 @@ export default function SEMCTA() {
           </h2>
 
           <p className="text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[600px] mx-auto">
-            Partner with Ara Discover Marketing, a leading provider of Google Ads and ppc service in Thanjavur, providing AI-powered PPC campaigns, search advertising, display marketing, and YouTube advertising solutions for business growth.
+            Partner with ARA Discover Marketing, a leading provider of Google Ads and ppc service in Thanjavur, providing AI-powered PPC campaigns, search advertising, display marketing, and YouTube advertising solutions for business growth.
           </p>
 
           {/* CTAs */}

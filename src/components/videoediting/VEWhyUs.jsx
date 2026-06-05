@@ -43,7 +43,7 @@ export default function VEWhyUs() {
             </span>
           </h2>
           <p className="text-[15px] leading-[1.85] max-w-[580px] mx-auto" style={{ color: '#64748b' }}>
-            Ara Discover Marketing blends creativity, technical expertise, and marketing strategy to create impactful video content.
+            ARA Discover Marketing blends creativity, technical expertise, and marketing strategy to create impactful video content.
           </p>
         </div>
 

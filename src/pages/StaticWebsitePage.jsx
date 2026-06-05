@@ -18,11 +18,11 @@ const swSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/static-website-development',
-      name: 'Static Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-      description: 'Ara Discover Marketing is a leading Static Website Design and Development Company in Thanjavur, delivering fast, responsive, and SEO-friendly websites.',
+      name: 'Static Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+      description: 'ARA Discover Marketing is a leading Static Website Design and Development Company in Thanjavur, delivering fast, responsive, and SEO-friendly websites.',
       provider: {
         '@type': 'LocalBusiness',
-        name: 'Ara Discover Marketing',
+        name: 'ARA Discover Marketing',
         url: 'https://ara-tech-organization.github.io/ARA-Marketing',
         telephone: '+91 98765 43210',
         email: 'aradiscovermarketing@gmail.com',
@@ -107,8 +107,8 @@ const swSchema = {
 export default function StaticWebsitePage() {
   useReveal()
   useSEO({
-    title: 'Static Website Design and Development Company in Thanjavur | Ara Discover Marketing',
-    description: 'Ara Discover Marketing is a leading Static Website Design and Development Company in Thanjavur, delivering fast, responsive, and SEO-friendly websites.',
+    title: 'Static Website Design and Development Company in Thanjavur | ARA Discover Marketing',
+    description: 'ARA Discover Marketing is a leading Static Website Design and Development Company in Thanjavur, delivering fast, responsive, and SEO-friendly websites.',
     keywords: 'static web page development in thanjavur, static website development services in thanjavur, static website development company in thanjavur, static website design & development company in thanjavur',
     canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/static-website-development',
     ogImage: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&h=630&fit=crop&auto=format&q=80',
@@ -118,7 +118,7 @@ export default function StaticWebsitePage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="page-transition">
         <SWHero />
         <SWIntro />
         <SWWhyUs />

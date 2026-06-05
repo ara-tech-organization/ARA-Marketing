@@ -3,7 +3,7 @@ import { Quote, Star, Layers, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing delivered the best graphic design service in thanjavur for our brand identity. Highly creative and professional team.',
+    text: 'ARA Discover Marketing delivered the best graphic design service in thanjavur for our brand identity. Highly creative and professional team.',
     name: 'Rajan Murugan',
     role: 'Founder, RetailHub Thanjavur',
     image: 'https://randomuser.me/api/portraits/men/42.jpg',

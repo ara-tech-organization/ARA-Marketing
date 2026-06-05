@@ -3,7 +3,7 @@ import useTilt from '../../hooks/useTilt'
 
 const testimonials = [
   {
-    text: 'Ara Discover Marketing improved our website rankings and generated quality leads consistently.',
+    text: 'ARA Discover Marketing improved our website rankings and generated quality leads consistently.',
     name: 'Arjun Kumar',
     role: 'Business Owner',
     initials: 'AK',
