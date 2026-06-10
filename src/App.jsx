@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect, useRef, useState } from 'react'
-import PageLoader from './components/common/PageLoader'
+import { useEffect } from 'react'
 import MouseEffect from './components/common/MouseEffect'
 import Home              from './pages/Home'
 import SMMPage           from './pages/SMMPage'
@@ -32,25 +31,10 @@ function ScrollToTop() {
 }
 
 
-function RouteLoader() {
-  const location = useLocation()
-  const [key, setKey] = useState(0)
-  const prevPath = useRef(location.pathname)
-
-  useEffect(() => {
-    if (location.pathname === prevPath.current) return
-    prevPath.current = location.pathname
-    setKey(k => k + 1)
-  }, [location.pathname])
-
-  return <PageLoader key={key} duration={key === 0 ? 2600 : 2000} />
-}
-
 export default function App() {
   return (
     <BrowserRouter basename="/ARA-Marketing">
       <MouseEffect />
-      <RouteLoader />
       <ScrollToTop />
       <Routes>
         <Route path="/"                                element={<Home />}              />

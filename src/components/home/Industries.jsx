@@ -22,7 +22,7 @@ const iconSizes = { large: 20, medium: 18, small: 16 }
 export default function Industries() {
   return (
     <section id="industries" className="relative py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
+      style={{ background: '#ffffff', borderTop: '1px solid rgba(0,0,0,0.07)', borderBottom: '1px solid rgba(0,0,0,0.07)' }}
     >
       {/* Blurred orb — top right */}
       <div className="absolute -top-28 -right-28 w-[420px] h-[420px] rounded-full pointer-events-none"

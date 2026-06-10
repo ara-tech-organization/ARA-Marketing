@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logoImg from '../../assets/Logo.png'
 import {
-  Rocket, ArrowRight, Menu, X, ChevronDown,
+  ArrowRight, Menu, X, ChevronDown,
   Search, Share2, TrendingUp, Palette, Video, Sparkles,
   Layout, Zap, Globe, ShoppingCart, Building2, Code2, Smartphone,
   Info, Phone
@@ -167,13 +168,8 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-[72px] gap-4">
 
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2.5 no-underline flex-shrink-0">
-              <div className="w-9 h-9 bg-blue-600 rounded-[10px] flex items-center justify-center
-                text-white shadow-lg shadow-blue-600/30">
-                <Rocket size={16} />
-              </div>
-              <span className="text-xl font-bold text-white tracking-tight">Ara</span>
-              <span className="text-xl font-bold text-blue-400 tracking-tight -ml-1.5">Marketing</span>
+            <a href="/" className="flex items-center no-underline flex-shrink-0">
+              <img src={logoImg} alt="ARA Discover Marketing" className="h-14 w-auto object-contain" />
             </a>
 
             {/* Desktop links */}

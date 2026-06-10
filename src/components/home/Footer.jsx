@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Rocket, MapPin, Phone, Mail, ArrowRight, Heart } from 'lucide-react'
+import { MapPin, Phone, Mail, ArrowRight, Heart } from 'lucide-react'
+import logoImg from '../../assets/Logo.png'
 
 const FacebookIcon = () => (
   <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
@@ -65,13 +66,8 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 bg-blue-600 rounded-[9px] flex items-center justify-center text-white shadow-lg shadow-blue-600/30">
-                <Rocket size={15} />
-              </div>
-              <span className="text-lg font-bold text-white">
-                ARA<span className="text-blue-400">Marketing</span>
-              </span>
+            <div className="mb-4">
+              <img src={logoImg} alt="ARA Discover Marketing" className="h-20 w-auto object-contain" />
             </div>
             <p className="text-sm leading-[1.85] text-white/40 mb-7">
               Thanjavur&apos;s leading digital marketing agency delivering AI-powered SEO,
