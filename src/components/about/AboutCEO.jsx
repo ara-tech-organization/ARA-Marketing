@@ -1,5 +1,6 @@
 import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
   Globe, Quote, Sparkles } from 'lucide-react'
+import mamImg from '../../assets/Mam.png'
 
 const expertise = [
   'Digital Marketing', 'Brand Strategy', 'SEO & SEM',
@@ -24,7 +25,7 @@ const focusAreas = [
 ]
 
 const bioParagraphs = [
-  `Mehala Kumar is a visionary entrepreneur and digital marketing strategist with a focus on helping businesses grow through innovative branding, technology and performance-driven marketing solutions. As the CEO & Founder of ARA Discover Marketing and is leading a passionate team to offer powerful digital experiences that help startups, businesses and enterprises to stand out in the competitive online world.`,
+  `Mehala Kumar is a visionary entrepreneur and digital marketing strategist with a focus on helping businesses grow through innovative branding, technology and performance-driven marketing solutions. As the CEO of ARA Discover Marketing and is leading a passionate team to offer powerful digital experiences that help startups, businesses and enterprises to stand out in the competitive online world.`,
   `Mrs. Mehala Kumar with her knowledge on digital marketing, branding, website development, SEO, social media marketing and business growth strategies has made ARA Discover Marketing a trusted name in the digital industry of Thanjavur. Her leadership is informed by creativity, innovation and a strong commitment to delivering tangible results to clients across multiple industries.`,
   `With her guidance, ARA Discover Marketing is helping brands build a strong online presence with strategic marketing campaigns, modern web solutions, and customer-centric digital transformation services. Her mission is to create meaningful brand experiences that connect businesses to the right audience and drive sustainable growth.`,
 ]
@@ -99,8 +100,8 @@ export default function AboutCEO() {
               <div className="relative z-10 rounded-[24px] overflow-hidden"
                 style={{ boxShadow: '0 24px 64px rgba(37,99,235,0.18)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=580&fit=crop&auto=format&q=80"
-                  alt="Mrs. Mehala Kumar — CEO and Founder of ARA Discover Marketing, Thanjavur"
+                  src={mamImg}
+                  alt="Mrs. Mehala Kumar — CEO of ARA Discover Marketing, Thanjavur"
                   className="w-full object-cover block"
                   style={{ aspectRatio: '5/6' }}
                 />
@@ -117,7 +118,7 @@ export default function AboutCEO() {
                 <div className="flex items-start justify-between">
                   <div>
                     <p className="text-[14px] font-bold text-slate-900">Mrs. Mehala Kumar</p>
-                    <p className="text-[12px] font-semibold" style={{ color: '#2563eb' }}>CEO & Founder</p>
+                    <p className="text-[12px] font-semibold" style={{ color: '#2563eb' }}>CEO</p>
                     <div className="flex items-center gap-1 mt-1.5">
                       <MapPin size={11} style={{ color: '#94a3b8' }} />
                       <span className="text-[11px] text-slate-400">Thanjavur, Tamil Nadu</span>
