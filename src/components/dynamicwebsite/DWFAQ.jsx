@@ -120,7 +120,7 @@ export default function DWFAQ() {
 
                 <div className="pt-5" style={{ borderTop: '1px solid #e2e8f0' }}>
                   <p className="text-[11px] text-slate-400 mb-3">Still have questions?</p>
-                  <a href="/ARA-Marketing/contact"
+                  <a href="/ARA-Marketing/contact-us"
                     className="inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
                     style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', color: 'white', boxShadow: '0 4px 14px rgba(37,99,235,0.25)' }}>
                     Contact Us <ArrowRight size={11} />
@@ -222,7 +222,7 @@ export default function DWFAQ() {
                   <Zap size={10} className="text-blue-600" />
                   <span className="text-[11px] font-bold text-blue-700">200+ Websites</span>
                 </div>
-                <a href="/ARA-Marketing/contact"
+                <a href="/ARA-Marketing/contact-us"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12px] font-bold transition-all duration-300 hover:-translate-y-0.5"
                   style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
                   Contact Us <ArrowRight size={12} />

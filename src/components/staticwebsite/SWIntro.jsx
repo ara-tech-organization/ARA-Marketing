@@ -189,7 +189,7 @@ export default function SWIntro() {
             We specialize in static web page development in Thanjavur — websites that load instantly and look great on all devices.
           </p>
           <a
-            href="/ARA-Marketing/contact"
+            href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-all duration-200 hover:gap-3"
             style={{ color: '#38bdf8' }}
           >

@@ -168,7 +168,7 @@ export default function OMServices() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: `linear-gradient(135deg,${s.color},${s.color}cc)`, boxShadow: `0 6px 20px ${s.color}28` }}>
               Get Started <ArrowRight size={13} />

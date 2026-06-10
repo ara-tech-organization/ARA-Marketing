@@ -93,7 +93,7 @@ export default function SEOWhyUs() {
           <div className="flex-1">
             <p className="text-[11px] font-bold text-blue-600 uppercase tracking-widest mb-1">Professional SEO Company</p>
             <p className="text-[14px] text-slate-700 leading-[1.7]">
-              Ara is a professional SEO services company offering scalable SEO services for local and international businesses.
+              ARA is a professional SEO services company offering scalable SEO services for local and international businesses.
             </p>
           </div>
           <div className="sm:w-[240px] flex-shrink-0">

@@ -32,7 +32,7 @@ export default function WebDevCTA() {
                     rounded-full text-sm font-bold shadow-lg hover:bg-blue-50 hover:-translate-y-0.5 transition-all duration-300">
                   <Phone size={15} /> Call Us Now
                 </a>
-                <a href="/ARA-Marketing/contact"
+                <a href="/ARA-Marketing/contact-us"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/35
                     text-white rounded-full text-sm font-semibold hover:bg-white/10 hover:border-white/55 transition-all duration-300">
                   Get Free Quote <ArrowRight size={15} />

@@ -40,7 +40,7 @@ export default function FAQ() {
                 Our team is ready to help you find the best digital marketing strategy for your business.
               </p>
               <a
-                href="/ARA-Marketing/contact"
+                href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
                   rounded-full font-semibold text-sm transition-all duration-300
                   hover:bg-blue-700 hover:-translate-y-0.5 shadow-lg shadow-blue-600/25"

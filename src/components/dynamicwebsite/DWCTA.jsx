@@ -87,7 +87,7 @@ export default function DWCTA() {
               style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
               <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#38bdf8)' }} />
               <div className="px-6 sm:px-8 py-7 sm:py-8">
-                <p className="text-[16px] font-bold text-slate-900 mb-1">Request a Free Consultation Today</p>
+                <p className="text-[16px] font-bold text-slate-900 mb-1">Get a Free Consultation</p>
                 <p className="text-[12.5px] text-slate-500 mb-6 leading-relaxed">
                   Fill in the form, and our website professionals will help you plan your custom dynamic website.
                 </p>
@@ -119,7 +119,7 @@ export default function DWCTA() {
                   <button type="submit"
                     className="btn-glow w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-white text-[14px] font-bold transition-all duration-300 hover:-translate-y-0.5 mt-1"
                     style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}>
-                    Get Free Consultation <ArrowRight size={14} />
+                    Talk to an Expert <ArrowRight size={14} />
                   </button>
                 </form>
                 <div className="flex items-center gap-2 mt-4">

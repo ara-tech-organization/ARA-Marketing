@@ -47,12 +47,12 @@ export default function SMMCTA() {
         {/* CTAs */}
         <div className="reveal delay-2 flex flex-wrap gap-4 justify-center mb-12">
           <a
-            href="/ARA-Marketing/contact"
+            href="/ARA-Marketing/contact-us"
             className="btn-glow inline-flex items-center gap-2.5 px-8 py-3.5 bg-blue-600 text-white
               rounded-full font-bold text-[15px] shadow-2xl shadow-blue-600/35
               hover:bg-blue-500 transition-all duration-300"
           >
-            Get Free Consultation <ArrowRight size={16} />
+            Talk to an Expert <ArrowRight size={16} />
           </a>
           <a
             href="#smm-services"

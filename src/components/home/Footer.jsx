@@ -41,8 +41,8 @@ const services = [
 const company = [
   { label: 'Home',        href: '/ARA-Marketing/' },
   { label: 'Web Design',  href: '/ARA-Marketing/services/website-development' },
-  { label: 'About Us',    href: '/ARA-Marketing/about' },
-  { label: 'Contact Us',  href: '/ARA-Marketing/contact' },
+  { label: 'About Us',    href: '/ARA-Marketing/about-us' },
+  { label: 'Contact Us',  href: '/ARA-Marketing/contact-us' },
 ]
 const socials  = [
   [FacebookIcon,  'Facebook',  'https://www.facebook.com/aradiscovermarketing'],
@@ -70,7 +70,7 @@ export default function Footer() {
                 <Rocket size={15} />
               </div>
               <span className="text-lg font-bold text-white">
-                Ara<span className="text-blue-400">Marketing</span>
+                ARA<span className="text-blue-400">Marketing</span>
               </span>
             </div>
             <p className="text-sm leading-[1.85] text-white/40 mb-7">
@@ -149,12 +149,12 @@ export default function Footer() {
               <span>aradiscovermarketing@gmail.com</span>
             </div>
             <a
-              href="/ARA-Marketing/contact"
+              href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white
                 rounded-full text-[13px] font-semibold transition-all duration-300
                 hover:bg-blue-500 shadow-lg shadow-blue-600/25"
             >
-              Free Consultation <ArrowRight size={13} />
+              Talk to an Expert <ArrowRight size={13} />
             </a>
           </div>
         </div>
@@ -162,13 +162,13 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white/8 pt-7 grid grid-cols-3 items-center gap-4">
           <p className="text-[13px] text-white/30">
-            &copy; 2025 Ara Marketing. All rights reserved.
+            &copy; 2025 ARA Marketing. All rights reserved.
           </p>
           <div className="flex justify-center gap-6">
-            <Link to="/ARA-Marketing/privacy-policy" className="text-[13px] text-white/30 hover:text-blue-400 transition-colors duration-300">
+            <Link to="/privacy-policy" className="text-[13px] text-white/30 hover:text-blue-400 transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link to="/ARA-Marketing/terms-and-conditions" className="text-[13px] text-white/30 hover:text-blue-400 transition-colors duration-300">
+            <Link to="/terms-and-conditions" className="text-[13px] text-white/30 hover:text-blue-400 transition-colors duration-300">
               Terms &amp; Conditions
             </Link>
           </div>

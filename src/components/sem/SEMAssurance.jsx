@@ -86,7 +86,7 @@ export default function SEMAssurance() {
                   ))}
                 </div>
 
-                <a href="/ARA-Marketing/contact"
+                <a href="/ARA-Marketing/contact-us"
                   className="btn-glow inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
                     font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
                   style={{ background: 'linear-gradient(135deg,#2563eb,#6366f1)', boxShadow: '0 6px 24px rgba(37,99,235,0.30)' }}>

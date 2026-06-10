@@ -182,7 +182,7 @@ export default function GDServices() {
                 </div>
 
                 <a
-                  href="/ARA-Marketing/contact"
+                  href="/ARA-Marketing/contact-us"
                   className="flex items-center gap-1.5 text-[11px] font-bold transition-all duration-200 group/link"
                   style={{ color: accent }}
                 >

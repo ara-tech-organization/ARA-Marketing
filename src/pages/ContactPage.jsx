@@ -8,10 +8,10 @@ import ContactMain from '../components/contact/ContactMain'
 export default function ContactPage() {
   useReveal()
   useSEO({
-    title: 'Contact Us | ARA Discover Marketing — Digital Marketing Agency in Thanjavur',
-    description: 'Get in touch with ARA Discover Marketing, the best digital marketing agency in Thanjavur. Contact us for SEO, SMM, web development, branding and more.',
-    keywords: 'contact ara discover marketing, digital marketing agency thanjavur contact, get in touch, free consultation, contact us thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/contact',
+    title: 'Contact Us | Ara Discover Marketing',
+    description: 'Contact ARA Discover Marketing in Thanjavur for expert SEO, social media marketing, branding, and digital marketing services to grow your business online.',
+    keywords: 'contact ARA Discover Marketing, digital marketing company Thanjavur, digital marketing services Thanjavur, SEO agency Thanjavur, social media marketing company, branding services Thanjavur, website development company Thanjavur, marketing consultation Thanjavur, online marketing experts, business marketing solutions',
+    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/contact-us',
   })
 
   return (

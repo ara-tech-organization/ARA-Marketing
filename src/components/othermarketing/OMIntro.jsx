@@ -69,7 +69,7 @@ export default function OMIntro() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.28)' }}>
               Start Your Campaign <ArrowRight size={15} />

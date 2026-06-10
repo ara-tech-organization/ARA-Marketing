@@ -107,7 +107,7 @@ export default function MAiOS() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
               style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.25)' }}>
               Get iOS App Consultation <ArrowRight size={15} />

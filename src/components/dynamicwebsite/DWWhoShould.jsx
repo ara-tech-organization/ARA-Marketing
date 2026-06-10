@@ -122,7 +122,7 @@ export default function DWWhoShould() {
             style={{ background: 'white', border: '1.5px solid rgba(79,70,229,0.18)', boxShadow: '0 12px 40px rgba(79,70,229,0.12)' }}>
             <p className="text-[11px] font-black uppercase tracking-widest text-indigo-600">Get Your Custom Website Plan Today</p>
             <p className="text-[13.5px] font-medium text-slate-600">Start building a powerful digital presence with our expert team.</p>
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#4338ca,#2563eb)', boxShadow: '0 8px 24px rgba(79,70,229,0.35)' }}>
               Get Started Today <ArrowRight size={13} />

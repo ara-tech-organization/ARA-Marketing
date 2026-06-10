@@ -48,7 +48,7 @@ export default function SEMCTA() {
 
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-4 mb-10">
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-8 py-4 rounded-full
                 text-[15px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#2563eb,#6366f1)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>

@@ -66,7 +66,7 @@ export default function Portfolio() {
               <div className="relative h-[200px] overflow-hidden">
                 <img
                   src={c.image}
-                  alt={`${c.title} — Best Digital Marketing Company in Thanjavur | Ara Marketing`}
+                  alt={`${c.title} — Best Digital Marketing Company in Thanjavur | ARA Marketing`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors duration-300" />

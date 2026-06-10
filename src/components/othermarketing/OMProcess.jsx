@@ -113,7 +113,7 @@ export default function OMProcess() {
               <p className="text-[12px] text-slate-500 mt-0.5">Consistently driving better engagement and measurable ROI across all marketing channels.</p>
             </div>
           </div>
-          <a href="/ARA-Marketing/contact"
+          <a href="/ARA-Marketing/contact-us"
             className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
             style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 5px 16px rgba(124,58,237,0.22)' }}>
             Start Your Campaign <ArrowRight size={13} />

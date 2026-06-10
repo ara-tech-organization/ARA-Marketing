@@ -72,7 +72,7 @@ export default function SEOAssurance() {
                 Every client gets a dedicated commitment from our team — from transparent reporting to AI-powered strategy. We don't just rank you, we grow your business.
               </p>
               <a
-                href="/ARA-Marketing/contact"
+                href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
                   rounded-xl text-[13px] font-semibold shadow-lg shadow-blue-600/25
                   hover:bg-blue-500 transition-all duration-300 hover:-translate-y-0.5"

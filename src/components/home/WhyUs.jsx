@@ -31,7 +31,7 @@ export default function WhyUs() {
             Why Do Businesses Choose<br />ARA Discover Marketing?
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">
-            Businesses and startups trust Ara because we focus on measurable growth, transparency and
+            Businesses and startups trust ARA because we focus on measurable growth, transparency and
             long-term success. Also one of the top digital marketing companies in Thanjavur, our approach
             is centered around understanding your business requirements and building AI-driven customized
             strategies that generate ROI.
@@ -63,7 +63,7 @@ export default function WhyUs() {
             <div className="relative h-52 flex-shrink-0 overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=350&fit=crop&q=80"
-                alt="Ara Marketing team — Best Digital Marketing Agency in Thanjavur | Top Digital Branding and Advertising Company in Thanjavur"
+                alt="ARA Marketing team — Best Digital Marketing Agency in Thanjavur | Top Digital Branding and Advertising Company in Thanjavur"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0"
@@ -153,7 +153,7 @@ export default function WhyUs() {
                 offers a complete digital solution that drives visibility, engagement and conversions.
               </p>
               <a
-                href="/ARA-Marketing/contact"
+                href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
                   rounded-full text-[13px] font-bold transition-all duration-300
                   hover:bg-blue-700 hover:-translate-y-0.5 shadow-lg shadow-blue-600/25"

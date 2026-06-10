@@ -104,11 +104,11 @@ export default function CMSHero() {
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-row flex-wrap gap-3 mb-10">
               <a
-                href="/ARA-Marketing/contact"
+                href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] w-fit"
                 style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 4px 20px rgba(37,99,235,0.28)' }}
               >
-                Get a Free Consultation Today <ArrowRight size={15} />
+                Take a First Step <ArrowRight size={15} />
               </a>
               <a
                 href="#cms-intro"

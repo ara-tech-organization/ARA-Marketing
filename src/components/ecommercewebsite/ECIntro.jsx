@@ -93,10 +93,10 @@ export default function ECIntro() {
               </span>
             ))}
           </div>
-          <a href="/ARA-Marketing/contact"
+          <a href="/ARA-Marketing/contact-us"
             className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
             style={{ background: '#2563eb', boxShadow: '0 6px 18px rgba(37,99,235,0.30)' }}>
-            Free Consultation <ArrowRight size={13} />
+            Talk to an Expert <ArrowRight size={13} />
           </a>
         </div>
 

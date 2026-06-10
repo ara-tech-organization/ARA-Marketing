@@ -99,7 +99,7 @@ export default function WAHero() {
             In the modern digital era, businesses need a strong online presence. ARA Discover Marketing is the best custom web application development company in Thanjavur, offering reliable AI-powered solutions customised as per your requirements.
           </p>
           <p className="hidden sm:block text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7 sm:mb-8 max-w-[600px] px-1">
-            We are one of the best <span className="text-slate-300">web and mobile app development companies in Thanjavur</span>, incorporating innovation with AI-driven technology to develop powerful, secure, and result-driven web applications. Whether you require an e-commerce app or an enterprise-level solution, Ara is here to help your business succeed.
+            We are one of the best <span className="text-slate-300">web and mobile app development companies in Thanjavur</span>, incorporating innovation with AI-driven technology to develop powerful, secure, and result-driven web applications. Whether you require an e-commerce app or an enterprise-level solution, ARA is here to help your business succeed.
           </p>
           <p className="sm:hidden text-[13px] text-slate-500 leading-[1.85] mb-7 max-w-[580px] px-1">
             We are one of the best web and mobile app development companies in Thanjavur, delivering powerful, secure, and result-driven web applications.
@@ -122,11 +122,11 @@ export default function WAHero() {
           {/* CTAs */}
           <div className="flex flex-col xs:flex-row flex-wrap gap-3 justify-center mb-10 sm:mb-14 px-3 xs:px-0">
             <a
-              href="/ARA-Marketing/contact"
+              href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center justify-center gap-2 px-5 xs:px-7 py-3 xs:py-3.5 rounded-full text-[13px] xs:text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 24px rgba(37,99,235,0.35)' }}
             >
-              Get a Free Consultation <ArrowRight size={14} />
+              Take a First Step <ArrowRight size={14} />
             </a>
             <a
               href="#wa-services"

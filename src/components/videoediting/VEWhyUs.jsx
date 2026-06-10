@@ -126,7 +126,7 @@ export default function VEWhyUs() {
               </p>
             </div>
           </div>
-          <a href="/ARA-Marketing/contact"
+          <a href="/ARA-Marketing/contact-us"
             className="relative flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
             style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.28)', backdropFilter: 'blur(10px)' }}>
             Work With Us <ArrowRight size={14} />

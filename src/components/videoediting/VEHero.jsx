@@ -92,7 +92,7 @@ export default function VEHero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-12">
-              <a href="/ARA-Marketing/contact"
+              <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#1d4ed8,#0369a1)', boxShadow: '0 8px 32px rgba(29,78,216,0.45)' }}>
                 Start Your Project <ArrowRight size={14} />

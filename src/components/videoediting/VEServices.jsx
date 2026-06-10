@@ -177,7 +177,7 @@ export default function VEServices() {
                 ))}
               </div>
 
-              <a href="/ARA-Marketing/contact"
+              <a href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white text-[13px] font-bold
                   transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                 style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}30` }}>

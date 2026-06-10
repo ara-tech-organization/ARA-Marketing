@@ -68,8 +68,8 @@ export default function App() {
         <Route path="/services/enterprise-website-development"         element={<EnterpriseWebsitePage />} />
         <Route path="/services/web-application-development"             element={<WebAppPage />} />
         <Route path="/services/mobile-application-development"        element={<MobileAppPage />} />
-        <Route path="/about"                                           element={<AboutUsPage />}   />
-        <Route path="/contact"                                         element={<ContactPage />}   />
+        <Route path="/about-us"                                        element={<AboutUsPage />}   />
+        <Route path="/contact-us"                                      element={<ContactPage />}   />
         <Route path="/privacy-policy"                                  element={<PrivacyPolicyPage />}   />
         <Route path="/terms-and-conditions"                            element={<TermsConditionsPage />} />
       </Routes>

@@ -139,7 +139,7 @@ export default function SEMServices() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white text-[13px]
                 font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
               style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}35` }}>

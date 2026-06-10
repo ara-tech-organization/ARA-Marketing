@@ -100,10 +100,10 @@ export default function GDHero() {
 
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-wrap justify-center gap-3 mb-10">
-              <a href="/ARA-Marketing/contact"
+              <a href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
                 style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.45)' }}>
-                Get Free Consultation <ArrowRight size={15} />
+                Take a First Step <ArrowRight size={15} />
               </a>
               <a href="#gd-services"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-slate-300 transition-all duration-300 hover:text-white"

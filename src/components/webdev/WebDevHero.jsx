@@ -60,12 +60,12 @@ export default function WebDevHero() {
 
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             <a
-              href="/ARA-Marketing/contact"
+              href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 text-white
                 rounded-full text-sm font-semibold shadow-lg shadow-blue-600/25
                 hover:bg-blue-500 transition-all duration-300"
             >
-              Get Free Consultation <ArrowRight size={15} />
+              Take a First Step <ArrowRight size={15} />
             </a>
             <a
               href="#webdev-services"

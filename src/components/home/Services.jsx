@@ -4,7 +4,7 @@ const services = [
   {
     icon: Search,
     title: 'Search Engine Optimization (SEO)',
-    desc: 'Ara offers AI-powered SEO services like On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and Mobile SEO to improve search engine rankings and organic traffic. Our SEO experts deliver the best digital marketing services in Thanjavur and are among the best digital marketing companies in Thanjavur, optimizing websites for users and search engines.',
+    desc: 'ARA offers AI-powered SEO services like On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and Mobile SEO to improve search engine rankings and organic traffic. Our SEO experts deliver the best digital marketing services in Thanjavur and are among the best digital marketing companies in Thanjavur, optimizing websites for users and search engines.',
     link: '/services/seo',
     tag: 'Most Popular',
   },

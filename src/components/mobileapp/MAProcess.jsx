@@ -129,7 +129,7 @@ export default function MAProcess() {
           <p className="text-[14px] text-slate-500 leading-[1.8] max-w-2xl mx-auto mb-6">
             Our mobile application development service in Thanjavur ensures speed, accuracy, and scalability at every step of your project.
           </p>
-          <a href="/ARA-Marketing/contact"
+          <a href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
             style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
             Start Your App Project <ArrowRight size={15} />

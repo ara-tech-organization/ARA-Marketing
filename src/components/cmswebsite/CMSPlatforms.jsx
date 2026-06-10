@@ -176,7 +176,7 @@ export default function CMSPlatforms() {
             We offer complete <span className="text-slate-600">custom cms wordpress development services in Thanjavur</span>, enabling businesses to build fully customised websites without exception.
           </p>
           <a
-            href="/ARA-Marketing/contact"
+            href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-all duration-200 hover:gap-3"
             style={{ color: '#2563eb' }}
           >

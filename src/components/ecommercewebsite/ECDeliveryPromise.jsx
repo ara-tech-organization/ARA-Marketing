@@ -99,7 +99,7 @@ export default function ECDeliveryPromise() {
           <p className="text-[13.5px] text-slate-500 leading-[1.8] max-w-2xl">
             We are the best e-commerce web design and development company in Thanjavur, offering business-focused solutions with high performance. We provide custom e-commerce website development services in Thanjavur and advanced e-commerce web application development in Thanjavur.
           </p>
-          <a href="/ARA-Marketing/contact"
+          <a href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 flex-shrink-0"
             style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
             Get Started <ArrowRight size={14} />

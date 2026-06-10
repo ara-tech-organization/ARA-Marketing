@@ -16,7 +16,7 @@ const testimonials = [
     name: 'Karthika',
     role: 'Founder',
     company: 'E-Commerce Brand',
-    quote: "The Ara team is a professional web and mobile app development company in Thanjavur. They delivered flawless integration of our website and mobile apps — incredible results that exceeded expectations.",
+    quote: "The ARA team is a professional web and mobile app development company in Thanjavur. They delivered flawless integration of our website and mobile apps — incredible results that exceeded expectations.",
     avatar: 'K',
     image: 'https://randomuser.me/api/portraits/women/19.jpg',
     metric: 'Web + Mobile',

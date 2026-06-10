@@ -175,7 +175,7 @@ export default function SEOHero() {
             </p>
 
             <div className="animate-hero-d4 flex flex-wrap justify-center gap-3">
-              <a href="/ARA-Marketing/contact"
+              <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
                   rounded-full text-sm font-semibold shadow-lg shadow-blue-600/25
                   hover:bg-blue-500 transition-all duration-300">

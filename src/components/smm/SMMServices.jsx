@@ -247,7 +247,7 @@ export default function SMMServices() {
               {/* Bottom link */}
               <div className="mt-6 pt-5 border-t border-slate-100">
                 <a
-                  href="/ARA-Marketing/contact"
+                  href="/ARA-Marketing/contact-us"
                   className="inline-flex items-center gap-1.5 text-[13px] font-semibold
                     hover:gap-2.5 transition-all duration-300"
                   style={{ color }}

@@ -97,7 +97,7 @@ export default function GDCTA() {
             {/* Contact actions */}
             <div className="flex flex-col gap-3">
               <a
-                href="/ARA-Marketing/contact"
+                href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center justify-between gap-3 px-6 py-4
                   bg-blue-600 text-white rounded-2xl font-bold text-[14px]
                   hover:bg-blue-500 transition-all duration-300 shadow-lg shadow-blue-600/25 group"
@@ -111,7 +111,7 @@ export default function GDCTA() {
                   border-2 border-blue-100 text-blue-700 rounded-2xl font-bold text-[14px]
                   hover:bg-blue-50 hover:border-blue-300 transition-all duration-300"
               >
-                <span>Call For a Free Consultation</span>
+                <span>Talk to an Expert</span>
                 <PhoneCall size={16} />
               </a>
             </div>

@@ -48,7 +48,7 @@ export default function MAAndroid() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
               style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
               Get Android App Consultation <ArrowRight size={15} />

@@ -87,7 +87,7 @@ function DropdownPanel({ items, title, onClose, pathname }) {
           <p className="text-[11px] mt-0.5" style={{ color: '#64748b' }}>Free consultation · No commitment</p>
         </div>
         <a
-          href="/ARA-Marketing/contact"
+          href="/ARA-Marketing/contact-us"
           onClick={onClose}
           className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg
             bg-blue-600 hover:bg-blue-500 text-white text-[12px] font-semibold
@@ -180,7 +180,12 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
 
               {/* Digital Marketing */}
-              <div className="relative flex items-center" style={{ zIndex: activeDropdown === 'dm' ? 60 : 'auto' }}>
+              <div
+                className="relative flex items-center"
+                style={{ zIndex: activeDropdown === 'dm' ? 60 : 'auto' }}
+                onMouseEnter={() => setActiveDropdown('dm')}
+                onMouseLeave={closeAll}
+              >
                 <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]' : activeDropdown === 'dm' ? 'bg-white/8 border border-white/12' : 'border border-transparent hover:bg-white/6'}`}>
                   <Link
                     to="/"
@@ -194,12 +199,9 @@ export default function Navbar() {
                         style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
                     )}
                   </Link>
-                  <button
-                    onClick={() => setActiveDropdown(p => p === 'dm' ? null : 'dm')}
-                    className={`pr-3 py-2.5 transition-colors duration-200 ${digitalActive ? 'text-blue-400' : 'text-white/50 hover:text-white'}`}
-                  >
+                  <span className={`pr-3 py-2.5 ${digitalActive ? 'text-blue-400' : 'text-white/50'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'dm' ? 'rotate-180' : ''}`} />
-                  </button>
+                  </span>
                 </div>
 
                 <div className={`transition-all duration-200
@@ -218,8 +220,12 @@ export default function Navbar() {
               </div>
 
               {/* Web Design */}
-              <div className="relative flex items-center"
-                style={{ zIndex: activeDropdown === 'web' ? 60 : 'auto', pointerEvents: activeDropdown === 'dm' ? 'none' : 'auto' }}>
+              <div
+                className="relative flex items-center"
+                style={{ zIndex: activeDropdown === 'web' ? 60 : 'auto' }}
+                onMouseEnter={() => setActiveDropdown('web')}
+                onMouseLeave={closeAll}
+              >
                 <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]' : activeDropdown === 'web' ? 'bg-white/8 border border-white/12' : 'border border-transparent hover:bg-white/6'}`}>
                   <Link
                     to="/services/website-development"
@@ -233,12 +239,9 @@ export default function Navbar() {
                         style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
                     )}
                   </Link>
-                  <button
-                    onClick={() => setActiveDropdown(p => p === 'web' ? null : 'web')}
-                    className={`pr-3 py-2.5 transition-colors duration-200 ${webActive ? 'text-blue-400' : 'text-white/50 hover:text-white'}`}
-                  >
+                  <span className={`pr-3 py-2.5 ${webActive ? 'text-blue-400' : 'text-white/50'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'web' ? 'rotate-180' : ''}`} />
-                  </button>
+                  </span>
                 </div>
 
                 <div className={`transition-all duration-200 origin-top
@@ -257,13 +260,13 @@ export default function Navbar() {
               </div>
 
               {/* About Us */}
-              <Link to="/about" onClick={closeAll} className={navBtnClass(isActive('/about'), false)}>
+              <Link to="/about-us" onClick={closeAll} className={navBtnClass(isActive('/about-us'), false)}>
                 <Info size={14} className="opacity-50" />
                 About Us
               </Link>
 
               {/* Contact Us */}
-              <Link to="/contact" onClick={closeAll} className={navBtnClass(isActive('/contact'), false)}>
+              <Link to="/contact-us" onClick={closeAll} className={navBtnClass(isActive('/contact-us'), false)}>
                 <Phone size={14} className="opacity-50" />
                 Contact Us
               </Link>
@@ -272,7 +275,7 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden lg:flex items-center">
               <a
-                href="/ARA-Marketing/contact"
+                href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-5 py-2.5
                   bg-gradient-to-r from-blue-600 to-indigo-600 text-white
                   rounded-full text-[13px] font-semibold transition-all duration-300
@@ -435,43 +438,43 @@ export default function Navbar() {
 
           {/* About Us */}
           <Link
-            to="/about"
+            to="/about-us"
             onClick={() => setOpen(false)}
             className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
               border transition-all duration-200
-              ${isActive('/about')
+              ${isActive('/about-us')
                 ? 'text-blue-400 bg-blue-600/10 border-blue-500/25'
                 : 'text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06] border-white/[0.06]'
               }`}
           >
             <span className={`w-7 h-7 rounded-lg flex items-center justify-center
-              ${isActive('/about') ? 'bg-blue-600/25' : 'bg-indigo-600/20'}`}>
-              <Info size={13} className={isActive('/about') ? 'text-blue-400' : 'text-indigo-400'} />
+              ${isActive('/about-us') ? 'bg-blue-600/25' : 'bg-indigo-600/20'}`}>
+              <Info size={13} className={isActive('/about-us') ? 'text-blue-400' : 'text-indigo-400'} />
             </span>
             About Us
           </Link>
 
           {/* Contact Us */}
           <Link
-            to="/contact"
+            to="/contact-us"
             onClick={() => setOpen(false)}
             className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
               border transition-all duration-200
-              ${isActive('/contact')
+              ${isActive('/contact-us')
                 ? 'text-blue-400 bg-blue-600/10 border-blue-500/25'
                 : 'text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06] border-white/[0.06]'
               }`}
           >
             <span className={`w-7 h-7 rounded-lg flex items-center justify-center
-              ${isActive('/contact') ? 'bg-blue-600/25' : 'bg-teal-600/20'}`}>
-              <Phone size={13} className={isActive('/contact') ? 'text-blue-400' : 'text-teal-400'} />
+              ${isActive('/contact-us') ? 'bg-blue-600/25' : 'bg-teal-600/20'}`}>
+              <Phone size={13} className={isActive('/contact-us') ? 'text-blue-400' : 'text-teal-400'} />
             </span>
             Contact Us
           </Link>
 
           <div className="pt-2">
             <a
-              href="/ARA-Marketing/contact"
+              href="/ARA-Marketing/contact-us"
               onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-4
                 bg-gradient-to-r from-blue-600 to-indigo-600 text-white

@@ -72,7 +72,7 @@ export default function OMHero() {
           </p>
           <div className="flex-shrink-0 flex flex-col gap-4">
             <div className="flex flex-wrap gap-3">
-              <a href="/ARA-Marketing/contact"
+              <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.26)' }}>
                 Start Your Campaign <ArrowRight size={14} />

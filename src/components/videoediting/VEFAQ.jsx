@@ -243,7 +243,7 @@ export default function VEFAQ() {
               <Sparkles size={11} className="text-emerald-600" />
               <span className="text-[11px] font-bold text-emerald-700">500+ Projects</span>
             </div>
-            <a href="/ARA-Marketing/contact"
+            <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold
                 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
               style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
