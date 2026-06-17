@@ -1,4 +1,7 @@
 import { Clock, ArrowRight, Newspaper } from 'lucide-react'
+import seoImg from '../../assets/H6.png'
+import socialImg from '../../assets/H7.png'
+import brandingImg from '../../assets/H8.png'
 
 const blogs = [
   {
@@ -7,7 +10,7 @@ const blogs = [
     desc: 'Discover the most effective on-page and off-page SEO techniques that help local businesses rank higher on Google and attract qualified organic traffic consistently.',
     date: 'May 2025',
     readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=300&fit=crop&q=80',
+    image: seoImg,
   },
   {
     tag: 'Social Media',
@@ -15,7 +18,7 @@ const blogs = [
     desc: 'Learn how consistent social media campaigns create lasting customer relationships and drive meaningful engagement for small businesses in competitive markets.',
     date: 'April 2025',
     readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=300&fit=crop&q=80',
+    image: socialImg,
   },
   {
     tag: 'Branding',
@@ -23,7 +26,7 @@ const blogs = [
     desc: 'A strong digital identity sets your business apart from competitors and builds long-term credibility with your target audience online.',
     date: 'March 2025',
     readTime: '6 min read',
-    image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=300&fit=crop&q=80',
+    image: brandingImg,
   },
 ]
 

@@ -60,7 +60,10 @@ function TestiCard({ t, featured }) {
 
       {/* Author */}
       <div className="flex items-center gap-3 mt-auto">
-        <img src={t.image} alt={t.name} className={`${featured ? 'w-14 h-14' : 'w-10 h-10'} rounded-full object-cover flex-shrink-0`} />
+        <div className={`${featured ? 'w-14 h-14 text-[22px]' : 'w-10 h-10 text-[16px]'} rounded-full flex-shrink-0 flex items-center justify-center font-bold`}
+          style={{ background: featured ? 'rgba(59,130,246,0.25)' : '#dbeafe', color: featured ? '#93c5fd' : '#2563eb' }}>
+          {t.name.charAt(0)}
+        </div>
         <div>
           <div className={`font-bold ${featured ? 'text-[15px] text-white' : 'text-[14px] text-slate-900'}`}>
             {t.name}

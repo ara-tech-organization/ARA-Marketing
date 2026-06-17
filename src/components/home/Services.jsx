@@ -1,4 +1,5 @@
 import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight, TrendingUp, Star, CheckCircle } from 'lucide-react'
+import serviceImg from '../../assets/H2.png'
 
 const services = [
   {
@@ -89,7 +90,7 @@ export default function Services() {
           {/* Right — image panel */}
           <div className="reveal-right relative rounded-3xl overflow-hidden" style={{ minHeight: '420px', boxShadow: '0 24px 64px rgba(37,99,235,0.18)' }}>
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=640&h=480&fit=crop&auto=format&q=80"
+              src={serviceImg}
               alt="Digital Marketing Agency in Thanjavur - ARA Discover Marketing"
               width="640" height="480" loading="lazy"
               className="w-full h-full object-cover"

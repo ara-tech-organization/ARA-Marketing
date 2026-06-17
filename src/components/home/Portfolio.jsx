@@ -1,4 +1,6 @@
 import { ArrowUpRight, Briefcase } from 'lucide-react'
+import ecommerceImg from '../../assets/H4.png'
+import realEstateImg from '../../assets/H5.png'
 
 const caseStudies = [
   {
@@ -14,7 +16,7 @@ const caseStudies = [
     title: 'Online Store — 500+ Qualified Leads Generated Monthly',
     desc: 'End-to-end performance marketing, Meta Ads and SEO strategy for an eCommerce brand that generated 500+ qualified leads every month with a consistent 4x return on ad spend.',
     metrics: [{ val: '500+', label: 'Monthly Leads' }, { val: '4x', label: 'ROAS' }, { val: '95%', label: 'Retention' }],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=380&fit=crop&q=80',
+    image: ecommerceImg,
     tag: 'eCommerce',
   },
   {
@@ -22,7 +24,7 @@ const caseStudies = [
     title: 'Real Estate Brand — 150% Increase in Website Traffic',
     desc: 'Complete digital branding, SEO and paid advertising for a real estate developer resulting in 150% organic traffic growth, strong social media presence and high-quality property inquiries.',
     metrics: [{ val: '150%', label: 'More Traffic' }, { val: '2x', label: 'Inquiries' }, { val: '90%', label: 'Satisfaction' }],
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=380&fit=crop&q=80',
+    image: realEstateImg,
     tag: 'Real Estate',
   },
 ]
