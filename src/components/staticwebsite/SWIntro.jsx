@@ -1,4 +1,5 @@
 import { Zap, Shield, Search, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
+import swIntroImg from '../../assets/static/s2.png'
 
 const features = [
   {
@@ -91,7 +92,7 @@ export default function SWIntro() {
             style={{ boxShadow: '0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(8,145,178,0.2)' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=1200&h=420&fit=crop&auto=format&q=80"
+              src={swIntroImg}
               alt="Static Website Development Services Thanjavur"
               className="w-full object-cover"
               style={{ height: '320px' }}
