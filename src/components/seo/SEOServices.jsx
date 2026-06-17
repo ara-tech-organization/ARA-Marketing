@@ -3,12 +3,17 @@ import {
   FileText, Globe2, Cpu, MapPin, Smartphone,
   CheckCircle, Layers, ArrowRight, ChevronRight
 } from 'lucide-react'
+import onPageImg    from '../../assets/SEO/On-page.png'
+import offPageImg   from '../../assets/SEO/Off-page.png'
+import technicalImg from '../../assets/SEO/Technical.png'
+import localImg     from '../../assets/SEO/Local.png'
+import mobileImg    from '../../assets/SEO/Mobile.png'
 
 const tabs = [
   {
     id: 'onpage', icon: FileText, label: 'On-Page SEO', color: '#2563eb', bgLight: '#dbeafe',
     h3: 'On-Page SEO',
-    imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=380&fit=crop&auto=format&q=80',
+    imgSrc: onPageImg,
     imgAlt: 'On page optimization services in Thanjavur - ARA Discover Marketing',
     desc: [
       'On-page SEO techniques are focused on optimizing the web structure, metadata, headings, web content, images, and user experience of a website.',
@@ -21,7 +26,7 @@ const tabs = [
   {
     id: 'offpage', icon: Globe2, label: 'Off-Page SEO', color: '#7c3aed', bgLight: '#ede9fe',
     h3: 'Off-Page SEO',
-    imgSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=380&fit=crop&auto=format&q=80',
+    imgSrc: offPageImg,
     imgAlt: 'SEO link building services in Thanjavur - ARA Discover Marketing',
     desc: [
       'Off-page SEO is crucial for building website authority and boosting search rankings.',
@@ -34,7 +39,7 @@ const tabs = [
   {
     id: 'technical', icon: Cpu, label: 'Technical SEO', color: '#0891b2', bgLight: '#cffafe',
     h3: 'Technical SEO',
-    imgSrc: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&h=380&fit=crop&auto=format&q=80',
+    imgSrc: technicalImg,
     imgAlt: 'Technical SEO optimization service in Thanjavur - ARA Discover Marketing',
     desc: [
       'Technical SEO makes sure your website is crawlable, indexable, loads quickly, is mobile-friendly, and is optimized for search engines.',
@@ -46,7 +51,7 @@ const tabs = [
   {
     id: 'local', icon: MapPin, label: 'Local SEO', color: '#059669', bgLight: '#d1fae5',
     h3: 'Google Business Profile (Local SEO)',
-    imgSrc: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=700&h=380&fit=crop&auto=format&q=80',
+    imgSrc: localImg,
     imgAlt: 'Local business SEO services in Thanjavur - ARA Discover Marketing',
     desc: [
       'Local SEO helps businesses get seen in Google Maps and local search results. We offer local business SEO services in Thanjavur and help local businesses get more local customers.',
@@ -59,7 +64,7 @@ const tabs = [
   {
     id: 'mobile', icon: Smartphone, label: 'Mobile SEO', color: '#dc2626', bgLight: '#fee2e2',
     h3: 'Mobile SEO',
-    imgSrc: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=380&fit=crop&auto=format&q=80',
+    imgSrc: mobileImg,
     imgAlt: 'Mobile SEO in Thanjavur - ARA Discover Marketing',
     desc: [
       'With mobile-first indexing becoming essential, businesses need to make sure their websites are optimized for all types of smartphones and tablets.',

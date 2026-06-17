@@ -3,11 +3,17 @@ import {
   Sparkles, Package, Briefcase, CalendarDays, Share2, Wind,
   CheckCircle2, ArrowRight, Layers,
 } from 'lucide-react'
+import brandingImg   from '../../assets/Video-editing/Branding.png'
+import productImg    from '../../assets/Video-editing/Product.png'
+import corporateImg  from '../../assets/Video-editing/CorporateFilms.png'
+import eventImg      from '../../assets/Video-editing/event.png'
+import socialImg     from '../../assets/Video-editing/Socialmedia.png'
+import droneImg      from '../../assets/Video-editing/Drone.png'
 
 const services = [
   {
     id: 'branding', icon: Sparkles, label: 'Branding Videos', color: '#2563eb', tag: 'Branding',
-    imgSrc: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: brandingImg,
     imgAlt: 'Branding video editing services in Thanjavur',
     desc: [
       'Brand videos are critical to how customers see and trust your brand. We specialise in Branding Videos editing in Thanjavur, crafting creative and impactful content that tells your brand story effectively.',
@@ -17,7 +23,7 @@ const services = [
   },
   {
     id: 'product', icon: Package, label: 'Product Videos', color: '#0891b2', tag: 'Product',
-    imgSrc: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: productImg,
     imgAlt: 'Product video editing services in Thanjavur',
     desc: [
       'Product and service videos allow a company to convey what they offer in a clear and engaging way.',
@@ -27,21 +33,21 @@ const services = [
   },
   {
     id: 'corporate', icon: Briefcase, label: 'Corporate Films', color: '#059669', tag: 'Corporate',
-    imgSrc: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: corporateImg,
     imgAlt: 'Corporate film editing companies in Thanjavur',
-    desc: 'As one of the professional corporate video editing companies in Thanjavur, we deliver polished and powerful corporate films that communicate your company values, culture, and capabilities to clients, investors, and stakeholders with professional precision.',
+    desc: ['As one of the professional corporate video editing companies in Thanjavur, we deliver polished and powerful corporate films that communicate your company values, culture, and capabilities to clients, investors, and stakeholders with professional precision.'],
     items: ['Company Profile Films', 'Training & HR Videos', 'Investor Pitch Videos', 'Annual Report Videos', 'Internal Communication Videos', 'CEO & Leadership Videos'],
   },
   {
     id: 'event', icon: CalendarDays, label: 'Event Coverage', color: '#d97706', tag: 'Events',
-    imgSrc: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: eventImg,
     imgAlt: 'Event video editing in Thanjavur',
-    desc: 'We edit high-quality event footage for corporate events, seminars, conferences, and business functions. We ensure storytelling is smooth and visuals are engaging, preserving the energy and highlights of every occasion for lasting brand memory.',
+    desc: ['We edit high-quality event footage for corporate events, seminars, conferences, and business functions. We ensure storytelling is smooth and visuals are engaging, preserving the energy and highlights of every occasion for lasting brand memory.'],
     items: ['Event Highlight Videos', 'Corporate Event Coverage', 'Seminar & Conference Editing', 'Live Event Editing', 'Award Ceremony Videos', 'Product Launch Coverage'],
   },
   {
     id: 'social', icon: Share2, label: 'Social Media', color: '#db2777', tag: 'Social',
-    imgSrc: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: socialImg,
     imgAlt: 'Social media video editing services in Thanjavur',
     desc: [
       'Social media videos are a must for digital marketing success. We provide digital marketing video editing in Thanjavur tailored for Instagram, Facebook, and YouTube.',
@@ -51,7 +57,7 @@ const services = [
   },
   {
     id: 'drone', icon: Wind, label: 'Drone Aerial', color: '#7c3aed', tag: 'Aerial',
-    imgSrc: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: droneImg,
     imgAlt: 'Drone video editing in Thanjavur',
     desc: [
       'Drone footage gives videos a movie-like feel.',

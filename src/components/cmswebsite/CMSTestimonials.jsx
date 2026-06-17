@@ -7,7 +7,6 @@ const testimonials = [
     quote: 'We experienced flawless online business growth through their high-quality WordPress development services. Our site loads fast, ranks well, and is incredibly easy to manage.',
     rating: 5,
     initials: 'MI',
-    image: 'https://randomuser.me/api/portraits/men/77.jpg',
     color: '#2563eb',
     industry: 'Retail Business',
   },
@@ -17,7 +16,6 @@ const testimonials = [
     quote: 'Highly professional team. Our website is now fast, SEO-friendly, and easy to manage. The CMS dashboard they set up is so intuitive — even our non-technical team uses it with confidence.',
     rating: 5,
     initials: 'KP',
-    image: 'https://randomuser.me/api/portraits/men/29.jpg',
     color: '#2563eb',
     industry: 'Tech Startup',
     featured: true,
@@ -28,7 +26,6 @@ const testimonials = [
     quote: 'We are very satisfied with their work. Our website is now optimised for speed, SEO, and easy updates. The WordPress training they provided was an added bonus — truly comprehensive service.',
     rating: 5,
     initials: 'MJ',
-    image: 'https://randomuser.me/api/portraits/men/35.jpg',
     color: '#1d4ed8',
     industry: 'Digital Services',
   },
@@ -83,7 +80,7 @@ export default function CMSTestimonials() {
 
         {/* Testimonials — 3 cards, middle one elevated */}
         <div className="reveal flex flex-col md:flex-row gap-5 items-stretch md:items-start">
-          {testimonials.map(({ name, role, quote, rating, initials, image, color, industry, featured }) => (
+          {testimonials.map(({ name, role, quote, rating, initials, color, industry, featured }) => (
             <div
               key={name}
               className="flex-1 flex flex-col rounded-3xl p-6 transition-all duration-400"
@@ -121,7 +118,10 @@ export default function CMSTestimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-3">
-                <img src={image} alt={name} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+                <div className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[16px]"
+                  style={{ background: '#dbeafe', color: '#2563eb' }}>
+                  {name.charAt(0)}
+                </div>
                 <div>
                   <p className="text-[13.5px] font-bold text-slate-800 leading-tight">{name}</p>
                   <p className="text-[11px] font-medium text-slate-400">{role} · {industry}</p>

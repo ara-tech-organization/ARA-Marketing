@@ -62,7 +62,7 @@ export default function OMHero() {
         </div>
 
         {/* ── Row 3: full-width divider ── */}
-        <div className="w-full h-px my-7"
+        <div className="w-full h-px my-3"
           style={{ background: 'linear-gradient(90deg,rgba(37,99,235,0.18),rgba(124,58,237,0.14) 50%,transparent)' }} />
 
         {/* ── Row 4: description left  ·  CTAs + stats right ── */}

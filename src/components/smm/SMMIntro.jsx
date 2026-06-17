@@ -1,4 +1,5 @@
 import { Target, Zap, TrendingUp, Globe2, Layers } from 'lucide-react'
+import smmIntroImg from '../../assets/SMM/m1.png'
 
 const highlights = [
   {
@@ -53,7 +54,7 @@ export default function SMMIntro() {
             {/* Approach image */}
             <div className="reveal rounded-2xl overflow-hidden" style={{ height: 210 }}>
               <img
-                src="https://images.unsplash.com/flagged/photo-1576485436509-a7d286952b65?w=600&h=210&fit=crop&auto=format&q=80"
+                src={smmIntroImg}
                 alt="Social Media Marketing Strategy in Thanjavur - ARA Discover Marketing"
                 loading="lazy"
                 width="600"

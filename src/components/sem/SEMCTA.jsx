@@ -37,7 +37,7 @@ export default function SEMCTA() {
             <Zap size={11} /> Ready to Generate More Leads
           </span>
 
-          <h2 className="text-[clamp(26px,3.8vw,52px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
+          <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
             Are You Ready to Generate More Leads{' '}
             <span className="text-gradient-blue">Through Google Ads?</span>
           </h2>
@@ -49,13 +49,13 @@ export default function SEMCTA() {
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-4 mb-10">
             <a href="/ARA-Marketing/contact-us"
-              className="btn-glow inline-flex items-center gap-2 px-8 py-4 rounded-full
-                text-[15px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
+              className="btn-glow inline-flex items-center gap-2 px-6 py-2.5 rounded-full
+                text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg,#2563eb,#6366f1)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>
               Get Free PPC Consultation <ArrowRight size={16} />
             </a>
             <a href="#sem-services"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-[15px]
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px]
                 font-semibold text-blue-700 bg-white border border-blue-200
                 hover:bg-blue-50 hover:border-blue-300 transition-all duration-300 shadow-sm">
               Explore Services
@@ -79,12 +79,12 @@ export default function SEMCTA() {
             </div>
           </div>
 
-          {/* Items as horizontal wrapping chips */}
-          <div className="flex flex-wrap gap-3 px-6 py-5 bg-white">
-            {packageItems.map(({ icon: Icon, label, color }) => (
+          {/* Items as even 2-col grid */}
+          <div className="grid grid-cols-2 gap-3 px-6 py-5 bg-white">
+            {packageItems.map(({ icon: Icon, label, color }, i) => (
               <div key={label}
-                className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl border
-                  hover:shadow-md transition-all duration-200"
+                className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl border
+                  hover:shadow-md transition-all duration-200${i === packageItems.length - 1 && packageItems.length % 2 !== 0 ? ' col-span-2' : ''}`}
                 style={{
                   background: `${color}07`,
                   borderColor: `${color}20`,

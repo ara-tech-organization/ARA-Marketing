@@ -7,7 +7,6 @@ const testimonials = [
     name: 'Rajan Krishnamurthy',
     role: 'Business Owner, Thanjavur',
     initials: 'RK',
-    image: 'https://randomuser.me/api/portraits/men/63.jpg',
     color: '#2563eb',
   },
   {
@@ -15,7 +14,6 @@ const testimonials = [
     name: 'Priya Subramanian',
     role: 'Marketing Head',
     initials: 'PS',
-    image: 'https://randomuser.me/api/portraits/women/26.jpg',
     color: '#7c3aed',
   },
   {
@@ -23,7 +21,6 @@ const testimonials = [
     name: 'Selvam Arumugam',
     role: 'eCommerce Entrepreneur',
     initials: 'SA',
-    image: 'https://randomuser.me/api/portraits/men/71.jpg',
     color: '#059669',
   },
 ]
@@ -62,7 +59,7 @@ export default function SEOTestimonials() {
 
         {/* Three-card horizontal layout */}
         <div className="reveal flex flex-col sm:flex-row gap-4 sm:gap-5">
-          {testimonials.map(({ text, name, role, initials, image, color }, i) => {
+          {testimonials.map(({ text, name, role, initials, color }, i) => {
             const isActive = active === i
             return (
               <button
@@ -120,7 +117,10 @@ export default function SEOTestimonials() {
 
                 {/* Author */}
                 <div className="flex items-center gap-3">
-                  <img src={image} alt={name} className="w-10 h-10 rounded-xl object-cover flex-shrink-0" />
+                  <div className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[16px]"
+                    style={{ background: '#dbeafe', color: '#2563eb' }}>
+                    {name.charAt(0)}
+                  </div>
                   <div>
                     <p
                       className="text-[13px] font-bold transition-colors duration-300"

@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import { Search, Monitor, Play, ShoppingBag, CheckCircle2, Layers, ArrowRight } from 'lucide-react'
+import googleImg   from '../../assets/SEM/google.png'
+import displayImg  from '../../assets/SEM/DisplayAdvertising.png'
+import youtubeImg  from '../../assets/SEM/youtube.png'
+import shoppingImg from '../../assets/SEM/Shopping.png'
 
 const services = [
   {
     id: 'search', icon: Search, label: 'Google Search Ads (PPC)', color: '#2563eb',
     tag: 'Search', tagBg: '#dbeafe',
-    imgSrc: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: googleImg,
     imgAlt: 'Google Search Ads PPC service in Thanjavur',
     desc: 'Google Search Ads allow businesses to show up at the top of search results when customers search for products or services online. Our ppc text ads in Thanjavur focus on driving targeted traffic and maximizing conversions with strategic keyword bidding and ad optimization. We provide effective Google search advertising in Thanjavur to help businesses increase website traffic and customer inquiries. Our expertise in paid search ads on Google in Thanjavur promises businesses to achieve better ad visibility and high ROI. As specialists in ppc search ads in Thanjavur, we create highly optimized search campaigns tailored to business goals and customer intent.',
     items: ['Keyword Research & Bid Strategy', 'Search Campaign Setup', 'Ad Copy Optimization', 'Conversion Tracking', 'PPC Remarketing Campaigns', 'Landing Page Recommendations'],
@@ -13,7 +17,7 @@ const services = [
   {
     id: 'display', icon: Monitor, label: 'Display Advertising', color: '#7c3aed',
     tag: 'Display', tagBg: '#ede9fe',
-    imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: displayImg,
     imgAlt: 'Google Display Advertising in Thanjavur',
     desc: 'Display Ads are visually appealing ads that help businesses reach their targeted audiences on websites, apps, and other digital platforms. We offer strategic display campaign services for brand awareness and remarketing. When it comes to Google display advertising companies in Thanjavur, ARA Discover Marketing is the number one choice of businesses to create impactful and performance-driven display advertising campaigns. We also provide Google promotion services in Thanjavur, which helps the brands to increase visibility and customer engagement through display marketing in a strategic manner.',
     items: ['Banner Ad Design', 'Audience Targeting', 'Remarketing Campaigns', 'Display Network Optimization', 'Responsive Display Ads'],
@@ -21,7 +25,7 @@ const services = [
   {
     id: 'youtube', icon: Play, label: 'YouTube Ads', color: '#0891b2',
     tag: 'Video', tagBg: '#cffafe',
-    imgSrc: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: youtubeImg,
     imgAlt: 'YouTube Ads service in Thanjavur',
     desc: 'Online video advertising is one of the most effective tools to get to an audience. Our YouTube ads in Thanjavur and video ads in Thanjavur help businesses boost brand awareness, customer engagement, and conversions via strategic video campaigns. We specialize in YouTube display advertising in Thanjavur and YouTube search advertising in Thanjavur, to help brands improve video reach and audience engagement. Choose our team for creative, ROI-focused video advertising campaigns.',
     items: ['Skippable Video Ads', 'Non-Skippable Video Ads', 'YouTube Discovery Ads', 'Video Remarketing Campaigns', 'Audience Targeting Strategies'],
@@ -29,7 +33,7 @@ const services = [
   {
     id: 'shopping', icon: ShoppingBag, label: 'Shopping Ads', color: '#059669',
     tag: 'E-Commerce', tagBg: '#d1fae5',
-    imgSrc: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: shoppingImg,
     imgAlt: 'Google Shopping Ads in Thanjavur',
     desc: 'Shopping ads let businesses advertise products right on Google search results pages, featuring images, pricing, and product information. With our expertise in shopping ads in Thanjavur, we assist e-commerce companies to enhance product visibility and boost online sales successfully. From Merchant Center setup to product feed optimization, we manage every aspect of your shopping campaigns for maximum return on ad spend.',
     items: ['Google Merchant Center Setup', 'Product Feed Optimization', 'Shopping Campaign Management', 'Product Remarketing Strategies', 'Conversion Tracking & Optimization'],

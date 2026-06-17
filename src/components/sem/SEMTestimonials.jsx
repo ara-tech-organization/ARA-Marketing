@@ -8,7 +8,6 @@ const testimonials = [
     role: 'Business Owner, Thanjavur',
     company: 'Retail Business',
     initials: 'RK',
-    image: 'https://randomuser.me/api/portraits/men/93.jpg',
     color: '#2563eb',
     metric: '3x',
     metricLabel: 'Lead Increase',
@@ -19,7 +18,6 @@ const testimonials = [
     role: 'Marketing Head',
     company: 'Manufacturing Firm',
     initials: 'PS',
-    image: 'https://randomuser.me/api/portraits/women/49.jpg',
     color: '#7c3aed',
     metric: '95%',
     metricLabel: 'Satisfaction',
@@ -30,7 +28,6 @@ const testimonials = [
     role: 'eCommerce Entrepreneur',
     company: 'Online Store',
     initials: 'SA',
-    image: 'https://randomuser.me/api/portraits/men/15.jpg',
     color: '#059669',
     metric: '40%',
     metricLabel: 'Cost Reduction',
@@ -99,7 +96,10 @@ export default function SEMTestimonials() {
 
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
-                    <img src={t.image} alt={t.name} className="w-9 h-9 rounded-xl object-cover flex-shrink-0" />
+                    <div className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[15px]"
+                      style={{ background: '#dbeafe', color: '#2563eb' }}>
+                      {t.name.charAt(0)}
+                    </div>
                     <div>
                       <p className="text-[13px] font-bold text-slate-900">{t.name}</p>
                       <p className="text-[11px] text-slate-400">{t.role}</p>
@@ -126,7 +126,7 @@ export default function SEMTestimonials() {
 
           {/* Right: selector cards */}
           <div className="lg:w-[320px] flex-shrink-0 flex flex-col gap-4">
-            {testimonials.map(({ name, role, initials, image, color, metric, metricLabel, text }, i) => {
+            {testimonials.map(({ name, role, initials, color, metric, metricLabel, text }, i) => {
               const isActive = active === i
               return (
                 <button
@@ -142,7 +142,10 @@ export default function SEMTestimonials() {
                     style={{ background: isActive ? `linear-gradient(180deg,${color},${color}44)` : 'transparent' }} />
 
                   <div className="flex items-center gap-2 mb-1.5 pl-1">
-                    <img src={image} alt={name} className="w-7 h-7 rounded-lg object-cover flex-shrink-0" />
+                    <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[12px]"
+                      style={{ background: '#dbeafe', color: '#2563eb' }}>
+                      {name.charAt(0)}
+                    </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-[11.5px] font-bold truncate"
                         style={{ color: isActive ? '#0f172a' : '#64748b' }}>{name}</p>

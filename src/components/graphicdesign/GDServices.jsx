@@ -1,4 +1,12 @@
 import { Frame, Image, BookOpen, CreditCard, FileText, Share2, Megaphone, Layers, Check, ArrowRight } from 'lucide-react'
+import logoImg        from '../../assets/GD/LogoDesign.png'
+import bannerImg      from '../../assets/GD/Banner .png'
+import pamphletImg    from '../../assets/GD/Pamphlet.png'
+import visitingImg    from '../../assets/GD/Visitingcard.png'
+import stationeryImg  from '../../assets/GD/CorporateStationery.png'
+import socialImg      from '../../assets/GD/SocialMediaPost.png'
+import flyerImg       from '../../assets/GD/Flyer&Poster Design.png'
+import visualsImg     from '../../assets/GD/Visuals.png'
 
 const services = [
   {
@@ -7,7 +15,7 @@ const services = [
     keyword: 'Logo Design Services',
     desc: 'We are experts in creating unique corporate logo layouts in Thanjavur which help businesses to build a strong brand identity and trust.',
     features: ['Custom logo concepts', 'Brand colour palette', 'Typography selection', 'Brand style guide', 'Multiple file formats'],
-    img: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=560&h=380&fit=crop&auto=format&q=80',
+    img: logoImg,
     imgAlt: 'Logo Design and Brand Identity in Thanjavur',
     accent: '#2563eb',
   },
@@ -17,7 +25,7 @@ const services = [
     keyword: 'Creative Ad Design',
     desc: 'We design high-impact banners and advertisement creatives that capture attention and drive action. Every design is visually appealing and marketing focused.',
     features: ['Digital banners (all sizes)', 'Print-ready formats', 'Campaign creatives', 'Outdoor hoardings', 'Brand-aligned layouts'],
-    img: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=560&h=380&fit=crop&auto=format&q=80',
+    img: bannerImg,
     imgAlt: 'Creative Ad Design in Thanjavur',
     accent: '#7c3aed',
   },
@@ -27,7 +35,7 @@ const services = [
     keyword: 'Brochure Design Services',
     desc: 'We create premium brochure layouts in thanjavur that capture attention and deliver your message clearly. We tailor every layout for impact.',
     features: ['Bi-fold & tri-fold layouts', 'A4 / A5 / DL formats', 'Print-ready PDF output', 'Full-colour illustrations', 'Catalogue design'],
-    img: 'https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=560&h=380&fit=crop&auto=format&q=80',
+    img: pamphletImg,
     imgAlt: 'premium brochure layout in thanjavur',
     accent: '#7c3aed',
   },
@@ -37,7 +45,7 @@ const services = [
     keyword: 'Business Card Design',
     desc: 'Your stationery materials are a reflection of your business identity. We design professional business cards, visiting cards and letterheads that enhance your brand image and gain the trust of clients.',
     features: ['Standard & premium finishes', 'Single & double-sided', 'Spot UV & foil options', 'Print-ready artwork', 'Digital card variants'],
-    img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=560&h=380&fit=crop&auto=format&q=80',
+    img: visitingImg,
     imgAlt: 'Business Card Design in Thanjavur',
     accent: '#059669',
   },
@@ -47,7 +55,7 @@ const services = [
     keyword: 'Letterhead Design',
     desc: 'A consistent corporate stationery package reinforces professionalism and builds client trust. We design letterheads, envelopes, invoice templates and office stationery aligned with your brand.',
     features: ['Letterhead design', 'Envelope & stamp design', 'Invoice template', 'Corporate folder', 'Email signature'],
-    img: 'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=560&h=380&fit=crop&auto=format&q=80',
+    img: stationeryImg,
     imgAlt: 'Letterhead Design in Thanjavur',
     accent: '#d97706',
   },
@@ -57,7 +65,7 @@ const services = [
     keyword: 'Social Media Posts',
     desc: 'Visuals are key to successful online marketing. We develop engaging social media creatives that enhance brand visibility and audience interaction across Instagram, Facebook, LinkedIn and more.',
     features: ['Instagram post & story', 'Facebook cover & ad', 'LinkedIn banner', 'WhatsApp promotional', 'Campaign template sets'],
-    img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=560&h=380&fit=crop&auto=format&q=80',
+    img: socialImg,
     imgAlt: 'Social Media Post Design in Thanjavur',
     accent: '#db2777',
   },
@@ -67,7 +75,7 @@ const services = [
     keyword: 'Flyer Design Services',
     desc: 'We also possess a team of professionals in flyer creation and designing in thanjavur designed to improve marketing reach and customer engagement.',
     features: ['Event & promotional flyers', 'A3 / A4 / A5 posters', 'Product launch designs', 'Retail POS designs', 'Offset-ready artwork'],
-    img: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=560&h=380&fit=crop&auto=format&q=80',
+    img: flyerImg,
     imgAlt: 'Business Flyer Layout in Thanjavur',
     accent: '#0891b2',
   },
@@ -77,7 +85,7 @@ const services = [
     keyword: 'Graphic Design Services',
     desc: 'We are a top-rated creative agency in thanjavur with a wide range of creative services to enhance your brand presence.',
     features: ['Social media creatives', 'Advertisement designs', 'Promotional graphics', 'Marketing visuals', 'Branding templates'],
-    img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=560&h=380&fit=crop&auto=format&q=80',
+    img: visualsImg,
     imgAlt: 'Creative Design Agency in Thanjavur',
     accent: '#2563eb',
   },

@@ -1,3 +1,4 @@
+import omCtaImg from '../../assets/Other-services/o3.png'
 import {
   ArrowRight, Zap, CheckCircle2, TrendingUp,
   Mail, Users, Smartphone, BarChart2, Bot, FileText,
@@ -41,7 +42,7 @@ export default function OMCTA() {
               <div className="relative rounded-3xl overflow-hidden"
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&auto=format&fit=crop&q=80"
+                  src={omCtaImg}
                   alt="Business growth through digital marketing campaigns — ARA Discover Marketing Thanjavur"
                   className="w-full h-[620px] object-cover object-center"
                 />

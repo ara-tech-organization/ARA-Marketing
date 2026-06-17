@@ -1,5 +1,5 @@
 import { Bot, BarChart, Target, Users, Shield, Clock, Zap, Star, CheckCheck } from 'lucide-react'
-import whyUsImg from '../../assets/H3.png'
+import whyUsImg from '../../assets/Home/H3.png'
 
 const reasons = [
   { icon: Target,   title: 'Customized Digital Marketing Strategies', desc: 'Strategies built around your goals, target audience and competitive landscape — never generic.' },
@@ -61,11 +61,11 @@ export default function WhyUs() {
             style={{ background: '#071a36' }}
           >
             {/* Image */}
-            <div className="relative h-52 flex-shrink-0 overflow-hidden">
+            <div className="relative flex-shrink-0 overflow-hidden">
               <img
                 src={whyUsImg}
                 alt="ARA Marketing team — Best Digital Marketing Agency in Thanjavur | Top Digital Branding and Advertising Company in Thanjavur"
-                className="w-full h-full object-cover"
+                className="w-full object-contain"
               />
               <div className="absolute inset-0"
                 style={{ background: 'linear-gradient(to top, #071a36 0%, transparent 60%)' }}

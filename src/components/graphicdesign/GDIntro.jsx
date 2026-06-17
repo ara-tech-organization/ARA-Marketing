@@ -1,4 +1,5 @@
 import { Sparkles, TrendingUp, Users, Award, Zap, CheckCircle, Star } from 'lucide-react'
+import gdIntroImg from '../../assets/GD/G2.png'
 
 export default function GDIntro() {
   return (
@@ -78,7 +79,7 @@ export default function GDIntro() {
           <div className="reveal lg:col-span-5 rounded-3xl overflow-hidden relative"
             style={{ minHeight: '280px', boxShadow: '0 16px 56px rgba(37,99,235,0.18)' }}>
             <img
-              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=560&h=320&fit=crop&auto=format&q=80"
+              src={gdIntroImg}
               alt="Creative Branding and Graphic Design Solutions in Thanjavur - ARA Discover Marketing"
               width="560" height="320" loading="lazy"
               className="w-full h-full object-cover"

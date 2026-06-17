@@ -1,4 +1,5 @@
 import { Mail, Users, Smartphone, BarChart2, CheckCircle2, TrendingUp, Award, ArrowRight, Sparkles } from 'lucide-react'
+import omIntroImg from '../../assets/Other-services/o1.png'
 
 const features = [
   { icon: Mail,       color: '#2563eb', label: 'Email Marketing',      desc: 'Targeted campaigns with high open rates and automated workflows that convert subscribers into loyal customers.' },
@@ -85,7 +86,7 @@ export default function OMIntro() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl"
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&auto=format&fit=crop&q=80"
+                  src={omIntroImg}
                   alt="Digital marketing team working on multi-channel campaign strategy in Thanjavur"
                   className="w-full h-[560px] object-cover"
                 />

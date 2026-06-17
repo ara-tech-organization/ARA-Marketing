@@ -1,4 +1,5 @@
 import { Cpu, Search, Monitor, Play, ShoppingBag, ArrowRight, TrendingUp, BarChart2, Star } from 'lucide-react'
+import semIntroImg from '../../assets/SEM/e1.png'
 
 const highlights = [
   { value: '300%', label: 'Lead Growth',   color: '#2563eb', icon: TrendingUp },
@@ -46,7 +47,7 @@ export default function SEMIntro() {
             style={{ minHeight: 260, height: 'clamp(260px, 40vw, 420px)', boxShadow: '0 20px 60px rgba(37,99,235,0.13)' }}
           >
             <img
-              src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=900&h=700&fit=crop&auto=format&q=80"
+              src={semIntroImg}
               alt="AI-Driven Google Ads Solutions in Thanjavur"
               loading="lazy"
               className="w-full h-full object-cover absolute inset-0"
@@ -106,9 +107,9 @@ export default function SEMIntro() {
           {/* Ad type cards: 2 col on xs/sm, 4 col on md+ */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             {adTypes.map(({ icon: Icon, label, desc, color }) => (
-              <div key={label}
+              <a key={label} href="#sem-services"
                 className="group flex flex-col gap-2.5 sm:gap-3 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-slate-100 bg-white
-                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300 cursor-pointer no-underline"
                 onMouseEnter={e => { e.currentTarget.style.borderColor = color + '40' }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}>
                 <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center text-white
@@ -120,7 +121,7 @@ export default function SEMIntro() {
                   <p className="text-[12px] sm:text-[13px] font-bold text-slate-900 mb-0.5 sm:mb-1">{label}</p>
                   <p className="text-[11px] sm:text-[12px] text-slate-500 leading-snug">{desc}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 

@@ -3,6 +3,7 @@ import {
   Sparkles, TrendingUp, PlayCircle, Eye, CheckCircle2,
   Video, Scissors, Star,
 } from 'lucide-react'
+import veHeroImg from '../../assets/Video-editing/v1.png'
 
 const platformRows = [
   { label: 'YouTube Channel',   views: '2.8M', growth: '+34%', pct: 88, color: '#38bdf8' },
@@ -74,8 +75,7 @@ export default function VEHero() {
 
             {/* H1 */}
             <h1 className="text-[clamp(24px,3.5vw,48px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
-              Best Video Editing Services{' '}
-              <span style={gradBlue}>in Thanjavur for Brand Growth</span>
+              Best Video Editing Services
             </h1>
 
             {/* Tagline */}
@@ -124,84 +124,17 @@ export default function VEHero() {
             </div>
           </div>
 
-          {/* ── Right: analytics card – hidden on xs, shown md+ ── */}
+          {/* ── Right: hero image ── */}
           <div className="hidden md:block lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse, rgba(29,78,216,0.28) 0%, transparent 70%)' }} />
-              <div className="relative rounded-3xl overflow-hidden border border-white/10"
-                style={{ background: 'white', boxShadow: '0 40px 100px rgba(0,0,0,0.60), 0 0 0 1px rgba(255,255,255,0.05)' }}>
-                <div className="h-1.5 w-full"
-                  style={{ background: 'linear-gradient(90deg,#1d4ed8,#0284c7,#38bdf8)' }} />
-                <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-slate-100">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: '#eff6ff' }}>
-                      <Film size={15} className="text-blue-600" />
-                    </div>
-                    <div>
-                      <p className="text-[12px] font-bold text-slate-800">Video Studio Analytics</p>
-                      <p className="text-[10px] text-slate-400">Real-Time Project Tracker</p>
-                    </div>
-                  </div>
-                  <span className="flex items-center gap-1.5 text-[10px] font-bold text-emerald-600">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse-dot" />
-                    LIVE
-                  </span>
-                </div>
-                <div className="px-4 sm:px-6 py-5 border-b border-slate-100">
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Total Views Generated</span>
-                    <TrendingUp size={12} className="text-emerald-500" />
-                  </div>
-                  <p className="text-[36px] sm:text-[42px] font-black leading-none tracking-tight mb-1"
-                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0284c7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                    5M+
-                  </p>
-                  <p className="text-[11px] text-emerald-600 font-semibold">+38% engagement growth this quarter</p>
-                </div>
-                <div className="px-4 sm:px-6 py-5 space-y-4">
-                  {platformRows.map(({ label, views, growth, pct, color }) => (
-                    <div key={label}>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-[12px] text-slate-500 font-medium">{label}</span>
-                        <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-semibold text-emerald-600">{growth}</span>
-                          <span className="text-[12px] font-bold" style={{ color }}>{views}</span>
-                        </div>
-                      </div>
-                      <div className="h-2 rounded-full bg-slate-100">
-                        <div style={{ height: '100%', width: `${pct}%`, borderRadius: 4, background: `linear-gradient(90deg,${color}70,${color})`, animation: 'bar-in 1s cubic-bezier(0,0,0.2,1) both' }} />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="px-4 sm:px-6 py-5 border-t border-slate-100" style={{ background: '#fafafe' }}>
-                  <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Active Video Services</p>
-                  <div className="flex flex-wrap gap-2">
-                    {types.map(({ label, color, icon: Icon }) => (
-                      <div key={label} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-100">
-                        <Icon size={11} style={{ color }} />
-                        <span className="text-[11px] font-semibold text-slate-600">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="flex items-center gap-2 mt-3 px-3 py-2 rounded-xl"
-                    style={{ background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
-                    <CheckCircle2 size={11} className="text-emerald-500" />
-                    <span className="text-[11px] font-bold text-emerald-700">500+ Projects Delivered</span>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden lg:flex absolute -top-4 -right-4 items-center gap-2 px-4 py-2.5 rounded-2xl bg-white border border-blue-200 shadow-2xl animate-float"
-                style={{ boxShadow: '0 12px 36px rgba(0,0,0,0.40)' }}>
-                <Star size={13} className="text-blue-600" />
-                <span className="text-[11px] font-bold text-slate-700">Premium Video Studio</span>
-              </div>
-              <div className="hidden lg:flex absolute -bottom-4 -left-4 items-center gap-2 px-4 py-2.5 rounded-2xl bg-white border border-sky-100 shadow-2xl animate-float-delay"
-                style={{ boxShadow: '0 12px 36px rgba(0,0,0,0.35)' }}>
-                <Eye size={13} className="text-blue-600" />
-                <span className="text-[11px] font-bold text-slate-700">5M+ Views Generated</span>
-              </div>
+              <img
+                src={veHeroImg}
+                alt="Video Editing Services in Thanjavur - ARA Discover Marketing"
+                className="relative w-full rounded-3xl object-contain"
+                style={{ boxShadow: '0 40px 100px rgba(0,0,0,0.40)' }}
+              />
             </div>
           </div>
 

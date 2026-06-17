@@ -6,21 +6,18 @@ const testimonials = [
     text: 'ARA Discover Marketing delivered the best graphic design service in thanjavur for our brand identity. Highly creative and professional team.',
     name: 'Rajan Murugan',
     role: 'Founder, RetailHub Thanjavur',
-    image: 'https://randomuser.me/api/portraits/men/42.jpg',
     stars: 5,
   },
   {
     text: 'One of the top graphic design agencies in thanjavur with excellent logo and brochure design services.',
     name: 'Priya Suresh',
     role: 'Director, EduFirst Academy',
-    image: 'https://randomuser.me/api/portraits/women/33.jpg',
     stars: 5,
   },
   {
     text: 'Their branding solutions helped us improve our business visibility and customer engagement.',
     name: 'Karthik Arumugam',
     role: 'Owner, Restaurant Group',
-    image: 'https://randomuser.me/api/portraits/men/28.jpg',
     stars: 5,
   },
 ]
@@ -133,7 +130,10 @@ export default function GDTestimonials() {
               <Quote size={22} className="text-blue-100 mb-2.5 flex-shrink-0" fill="currentColor" />
               <p className="text-[13.5px] text-slate-600 leading-[1.8] italic flex-1">&ldquo;{t.text}&rdquo;</p>
               <div className="flex items-center gap-2.5 mt-5 pt-4 border-t border-slate-100">
-                <img src={t.image} alt={t.name} className="w-8 h-8 rounded-full object-cover flex-shrink-0" />
+                <div className="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[13px]"
+                style={{ background: '#dbeafe', color: '#2563eb' }}>
+                {t.name.charAt(0)}
+              </div>
                 <div className="min-w-0">
                   <p className="text-[12px] font-bold text-slate-800 truncate">{t.name}</p>
                   <p className="text-[10px] text-slate-400 truncate">{t.role}</p>
@@ -167,7 +167,7 @@ export default function GDTestimonials() {
                           background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 45%, #bfdbfe 100%)',
                           boxShadow: '0 24px 64px rgba(37,99,235,0.18)',
                           border: '1.5px solid #bfdbfe',
-                          minHeight: '360px',
+                          minHeight: '290px',
                         }}
                       >
                         {/* Dot pattern */}
@@ -176,9 +176,9 @@ export default function GDTestimonials() {
                         <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full pointer-events-none"
                           style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.4) 0%,transparent 70%)' }} />
 
-                        <div className="relative p-7 flex flex-col justify-between h-full" style={{ minHeight: '360px' }}>
+                        <div className="relative p-7 flex flex-col justify-between h-full" style={{ minHeight: '290px' }}>
                           <div>
-                            <div className="flex gap-1 mb-5">
+                            <div className="flex gap-1 mb-4">
                               {Array.from({ length: t.stars }).map((_, j) => (
                                 <Star key={j} size={15} className="text-amber-400" fill="#fbbf24" />
                               ))}
@@ -190,8 +190,11 @@ export default function GDTestimonials() {
                               </p>
                             </div>
                           </div>
-                          <div className="flex items-center gap-3 mt-6 pt-5 border-t border-blue-200/60">
-                            <img src={t.image} alt={t.name} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+                          <div className="flex items-center gap-3 mt-4 pt-4 border-t border-blue-200/60">
+                            <div className="w-10 h-10 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[16px]"
+                              style={{ background: '#dbeafe', color: '#2563eb' }}>
+                              {t.name.charAt(0)}
+                            </div>
                             <div className="flex-1 min-w-0">
                               <p className="text-[13px] font-bold text-slate-800 truncate">{t.name}</p>
                               <p className="text-[11px] text-blue-500 truncate">{t.role}</p>
@@ -210,7 +213,7 @@ export default function GDTestimonials() {
                         className="bg-white rounded-2xl px-5 py-6 border border-blue-50 flex flex-col transition-all duration-300"
                         style={{
                           boxShadow: '0 2px 12px rgba(37,99,235,0.06)',
-                          minHeight: '360px',
+                          minHeight: '290px',
                           opacity: Math.abs(i - pos) === 1 ? 0.85 : 0.4,
                           transform: Math.abs(i - pos) === 1 ? 'scale(0.97)' : 'scale(0.92)',
                         }}
@@ -224,8 +227,11 @@ export default function GDTestimonials() {
                         <p className="text-[12.5px] text-slate-500 leading-[1.75] italic flex-1">
                           &ldquo;{t.text}&rdquo;
                         </p>
-                        <div className="flex items-center gap-2.5 mt-5 pt-4 border-t border-slate-100">
-                          <img src={t.image} alt={t.name} className="w-8 h-8 rounded-full object-cover flex-shrink-0" />
+                        <div className="flex items-center gap-2.5 mt-3 pt-3 border-t border-slate-100">
+                          <div className="w-8 h-8 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[13px]"
+                          style={{ background: '#dbeafe', color: '#2563eb' }}>
+                          {t.name.charAt(0)}
+                        </div>
                           <div className="min-w-0">
                             <p className="text-[12px] font-bold text-slate-800 truncate">{t.name}</p>
                             <p className="text-[10px] text-slate-400 truncate">{t.role}</p>

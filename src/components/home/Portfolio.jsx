@@ -1,6 +1,7 @@
 import { ArrowUpRight, Briefcase } from 'lucide-react'
-import ecommerceImg from '../../assets/H4.png'
-import realEstateImg from '../../assets/H5.png'
+import healthcareImg from '../../assets/Home/H9.png'
+import ecommerceImg from '../../assets/Home/H4.png'
+import realEstateImg from '../../assets/Home/H5.png'
 
 const caseStudies = [
   {
@@ -8,7 +9,7 @@ const caseStudies = [
     title: 'Medical Clinic — 180% Growth in Online Appointments',
     desc: 'Implemented local SEO, Google Ads and social media campaigns for a Thanjavur healthcare provider, resulting in 180% increase in online appointment bookings and top 3 Google rankings.',
     metrics: [{ val: '180%', label: 'Traffic Growth' }, { val: '3x', label: 'Lead Increase' }, { val: '#1', label: 'Google Rank' }],
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=380&fit=crop&q=80',
+    image: healthcareImg,
     tag: 'Healthcare',
   },
   {

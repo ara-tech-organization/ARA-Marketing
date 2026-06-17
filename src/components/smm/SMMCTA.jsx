@@ -25,7 +25,7 @@ export default function SMMCTA() {
         </div>
 
         {/* Heading */}
-        <h2 className="reveal text-[clamp(26px,4vw,46px)] font-bold text-white leading-tight tracking-tight mb-5 max-w-3xl mx-auto">
+        <h2 className="reveal text-[clamp(22px,3vw,38px)] font-bold text-white leading-tight tracking-tight mb-5 max-w-4xl mx-auto">
           Are You Ready to Grow Your Brand Through{' '}
           <span style={{
             background: 'linear-gradient(135deg, #93c5fd, #60a5fa, #3b82f6)',
@@ -38,7 +38,7 @@ export default function SMMCTA() {
         </h2>
 
         {/* Subtext */}
-        <p className="reveal delay-1 text-[15px] text-white/45 leading-[1.85] max-w-xl mx-auto mb-10">
+        <p className="reveal delay-1 text-[15px] text-white/45 leading-[1.85] max-w-2xl mx-auto mb-10">
           Partner with ARA Discover Marketing, a trusted provider of social media agency services in
           Thanjavur, delivering creative campaigns, audience engagement strategies, and high-performing
           paid social advertising solutions.

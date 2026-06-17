@@ -1,4 +1,5 @@
 import { Trophy, TrendingUp, Users, BarChart2, Globe2, CheckCircle, Briefcase } from 'lucide-react'
+import seoCampaignImg from '../../assets/SEO/s3.png'
 
 const industries = [
   'Healthcare', 'Education', 'Real Estate',
@@ -71,7 +72,7 @@ export default function SEOCampaigns() {
             {/* SEO image */}
             <div className="mt-6 rounded-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=600&h=200&fit=crop&auto=format&q=80"
+                src={seoCampaignImg}
                 alt="Successful SEO Campaigns and Ranking Achievements in Thanjavur"
                 loading="lazy"
                 className="w-full h-[120px] object-cover"

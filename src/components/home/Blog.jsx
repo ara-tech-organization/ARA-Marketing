@@ -1,7 +1,7 @@
 import { Clock, ArrowRight, Newspaper } from 'lucide-react'
-import seoImg from '../../assets/H6.png'
-import socialImg from '../../assets/H7.png'
-import brandingImg from '../../assets/H8.png'
+import seoImg from '../../assets/Home/H6.png'
+import socialImg from '../../assets/Home/H7.png'
+import brandingImg from '../../assets/Home/H8.png'
 
 const blogs = [
   {

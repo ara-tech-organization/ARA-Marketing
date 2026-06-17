@@ -1,4 +1,5 @@
 import { Palette, ChevronRight, ArrowRight, ArrowUpRight, CheckCircle, Frame, Type, Layers } from 'lucide-react'
+import gdHeroImg from '../../assets/GD/G1.png'
 
 export default function GDHero() {
   return (
@@ -30,7 +31,7 @@ export default function GDHero() {
             <div className="relative rounded-3xl overflow-hidden"
               style={{ height: 'clamp(340px,45vw,480px)', boxShadow: '0 24px 64px rgba(37,99,235,0.18)' }}>
               <img
-                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=800&fit=crop&auto=format&q=80"
+                src={gdHeroImg}
                 alt="Graphic Design Services in Thanjavur"
                 loading="eager"
                 className="w-full h-full object-cover"

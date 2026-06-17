@@ -8,7 +8,6 @@ const testimonials = [
     rating: 5,
     metric: '2× More Leads',
     color: '#2563eb',
-    image: 'https://randomuser.me/api/portraits/men/41.jpg',
   },
   {
     quote: 'Their design quality and SEO knowledge helped us grow our online visibility quickly. Within two months of launching our static website, we started appearing on the first page of Google for our key services.',
@@ -17,7 +16,6 @@ const testimonials = [
     rating: 5,
     metric: 'Page 1 Rankings',
     color: '#1d4ed8',
-    image: 'https://randomuser.me/api/portraits/men/68.jpg',
   },
 ]
 
@@ -51,7 +49,7 @@ export default function SWTestimonials() {
 
         {/* Testimonial cards — compact */}
         <div className="flex flex-col lg:flex-row gap-5 mb-8">
-          {testimonials.map(({ quote, author, role, rating, metric, color, image }) => (
+          {testimonials.map(({ quote, author, role, rating, metric, color }) => (
             <div
               key={author}
               className="flex-1 reveal rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
@@ -97,7 +95,10 @@ export default function SWTestimonials() {
               {/* Footer */}
               <div className="flex items-center justify-between pt-4" style={{ borderTop: '1px solid #e2e8f0' }}>
                 <div className="flex items-center gap-2.5">
-                  <img src={image} alt={author} className="w-8 h-8 rounded-full object-cover flex-shrink-0" />
+                  <div className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[15px]"
+                    style={{ background: '#dbeafe', color: '#2563eb' }}>
+                    {author.charAt(0)}
+                  </div>
                   <div>
                     <p className="text-[12px] font-bold text-slate-800 leading-tight">{author}</p>
                     <p className="text-[10.5px] text-slate-400">{role}</p>

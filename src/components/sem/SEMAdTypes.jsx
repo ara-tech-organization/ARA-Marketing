@@ -1,4 +1,7 @@
 import { Monitor, Play, ShoppingBag, CheckCircle2, ArrowRight } from 'lucide-react'
+import displayImg  from '../../assets/SEM/DisplayAdvertising.png'
+import videoImg    from '../../assets/SEM/Video-editing.png'
+import ecommerceImg from '../../assets/SEM/E-commerce.png'
 
 const adTypes = [
   {
@@ -7,7 +10,7 @@ const adTypes = [
     label: 'Display Advertising',
     tag: 'Display Ads',
     color: '#7c3aed',
-    imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: displayImg,
     imgAlt: 'Google Display Advertising in Thanjavur',
     reverse: false,
     paragraphs: [
@@ -23,7 +26,7 @@ const adTypes = [
     label: 'YouTube Ads',
     tag: 'Video Advertising',
     color: '#0891b2',
-    imgSrc: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: videoImg,
     imgAlt: 'YouTube Ads service in Thanjavur',
     reverse: true,
     paragraphs: [
@@ -39,7 +42,7 @@ const adTypes = [
     label: 'Shopping Ads',
     tag: 'E-Commerce Ads',
     color: '#059669',
-    imgSrc: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=600&fit=crop&auto=format&q=80',
+    imgSrc: ecommerceImg,
     imgAlt: 'Google Shopping Ads in Thanjavur',
     reverse: false,
     paragraphs: [
@@ -55,16 +58,14 @@ export default function SEMAdTypes() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col gap-20 sm:gap-24 lg:gap-28">
-        {adTypes.map(({ id, icon: Icon, label, tag, color, imgSrc, imgAlt, reverse, paragraphs, items }) => (
-          <div key={id} className={`reveal flex flex-col gap-10 lg:gap-14 items-center ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
+        {adTypes.map(({ id, icon: Icon, label, tag, color, imgSrc, imgAlt, paragraphs, items }) => (
+          <div key={id} className="reveal flex flex-col gap-8">
 
-            {/* Image */}
-            <div className="w-full lg:w-[480px] flex-shrink-0 relative rounded-2xl sm:rounded-3xl overflow-hidden"
-              style={{ minHeight: 280, height: 'clamp(280px,38vw,400px)', boxShadow: `0 24px 64px ${color}22` }}>
+            {/* Full-width image */}
+            <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden"
+              style={{ boxShadow: `0 24px 64px ${color}22` }}>
               <img src={imgSrc} alt={imgAlt} loading="lazy"
-                className="w-full h-full object-cover absolute inset-0" />
-              <div className="absolute inset-0"
-                style={{ background: `linear-gradient(160deg, ${color}55 0%, rgba(10,26,52,0.70) 100%)` }} />
+                className="w-full object-contain" />
 
               {/* Tag badge */}
               <div className="absolute top-5 left-5 flex items-center gap-2 px-3.5 py-2 rounded-xl"
@@ -72,17 +73,10 @@ export default function SEMAdTypes() {
                 <Icon size={13} className="text-white" />
                 <span className="text-[10px] font-bold text-white uppercase tracking-wider">{tag}</span>
               </div>
-
-              {/* Feature count */}
-              <div className="absolute bottom-5 right-5 flex flex-col items-center px-4 py-3 rounded-2xl"
-                style={{ background: 'rgba(255,255,255,0.12)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.20)' }}>
-                <span className="text-[22px] font-black text-white leading-none">{items.length}</span>
-                <span className="text-[9px] font-bold text-white/60 uppercase tracking-wider">Services</span>
-              </div>
             </div>
 
             {/* Content */}
-            <div className="flex-1 min-w-0">
+            <div className="w-full">
               <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4"
                 style={{ background: color + '12', color, border: `1px solid ${color}25` }}>
                 <Icon size={11} /> {tag}

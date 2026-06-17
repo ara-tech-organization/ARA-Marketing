@@ -1,4 +1,5 @@
 import { Bot, Target, Users, BarChart2, Sparkles, DollarSign, Award, ArrowRight, CheckCircle2, TrendingUp } from 'lucide-react'
+import omWhyUsImg from '../../assets/Other-services/o2.png'
 
 const reasons = [
   {
@@ -106,7 +107,7 @@ export default function OMWhyUs() {
             <div className="relative h-full min-h-[240px] sm:min-h-[320px] lg:min-h-[420px] rounded-3xl overflow-hidden"
               style={{ boxShadow: '0 24px 64px rgba(37,99,235,0.16)' }}>
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&auto=format&fit=crop&q=80"
+                src={omWhyUsImg}
                 alt="ARA Discover Marketing team planning digital marketing strategies in Thanjavur"
                 className="w-full h-full object-cover object-center"
               />

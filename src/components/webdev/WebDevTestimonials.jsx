@@ -5,21 +5,18 @@ const testimonials = [
     text: 'ARA Discover Marketing built our website with excellent design and performance. Truly the best website design and development company in Thanjavur.',
     name: 'Business Owner',
     role: 'Corporate Business, Thanjavur',
-    image: 'https://randomuser.me/api/portraits/men/16.jpg',
     stars: 5,
   },
   {
     text: 'One of the most reliable best website design and development firms in Thanjavur with great technical expertise.',
     name: 'Marketing Manager',
     role: 'E-Commerce Brand, Tamil Nadu',
-    image: 'https://randomuser.me/api/portraits/women/38.jpg',
     stars: 5,
   },
   {
     text: 'They delivered a fast, responsive, and SEO-friendly website that improved our business visibility.',
     name: 'Startup Founder',
     role: 'Tech Startup, Thanjavur',
-    image: 'https://randomuser.me/api/portraits/men/47.jpg',
     stars: 5,
   },
 ]
@@ -39,7 +36,7 @@ export default function WebDevTestimonials() {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {testimonials.map(({ text, name, role, image, stars }, i) => (
+          {testimonials.map(({ text, name, role, stars }, i) => (
             <div key={name}
               className={`reveal delay-${i + 1} relative bg-white border border-slate-100
                 rounded-3xl p-7 flex flex-col gap-5 transition-all duration-300
@@ -56,7 +53,10 @@ export default function WebDevTestimonials() {
                 &ldquo;{text}&rdquo;
               </p>
               <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
-                <img src={image} alt={name} className="w-9 h-9 rounded-full object-cover flex-shrink-0" />
+                <div className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[15px]"
+                  style={{ background: '#dbeafe', color: '#2563eb' }}>
+                  {name.charAt(0)}
+                </div>
                 <div>
                   <p className="text-[13px] font-bold text-slate-800">{name}</p>
                   <p className="text-[11px] text-slate-400">{role}</p>

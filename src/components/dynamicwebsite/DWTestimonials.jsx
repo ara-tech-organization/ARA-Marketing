@@ -8,7 +8,6 @@ const testimonials = [
     tag: 'E-Commerce',
     color: '#2563eb',
     barColor: '#3b82f6',
-    image: 'https://randomuser.me/api/portraits/men/74.jpg',
   },
   {
     quote: "Ara's Web development team is highly professional and our website is now highly visualing, faster, scalable, and easy to update.",
@@ -17,7 +16,6 @@ const testimonials = [
     tag: 'Startup',
     color: '#0891b2',
     barColor: '#38bdf8',
-    image: 'https://randomuser.me/api/portraits/men/14.jpg',
   },
   {
     quote: "The team at ARA Discover Marketing is highly skilled and they built us a responsive and visually appealing website that loads quickly and works smoothly.",
@@ -26,7 +24,6 @@ const testimonials = [
     tag: 'Service Business',
     color: '#2563eb',
     barColor: '#60a5fa',
-    image: 'https://randomuser.me/api/portraits/men/83.jpg',
   },
 ]
 
@@ -122,7 +119,10 @@ export default function DWTestimonials() {
 
                 {/* Author row */}
                 <div className="flex items-center gap-3">
-                  <img src={t.image} alt={t.name} className="w-11 h-11 rounded-full object-cover flex-shrink-0" />
+                  <div className="w-11 h-11 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[18px]"
+                    style={{ background: '#dbeafe', color: '#2563eb' }}>
+                    {t.name.charAt(0)}
+                  </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-[13px] font-bold text-slate-900 leading-tight">{t.name}</p>
                     <p className="text-[11.5px] text-slate-400 mt-0.5">{t.role}</p>

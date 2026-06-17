@@ -3,10 +3,15 @@ import {
   Search, MousePointer2, Play, ShoppingBag,
   Megaphone, Sparkles, Target, TrendingUp, CheckCircle2,
 } from 'lucide-react'
+import semImg1 from '../../assets/SEM/google.png'
+import semImg2 from '../../assets/SEM/DisplayAdvertising.png'
+import semImg3 from '../../assets/SEM/youtube.png'
+import semImg4 from '../../assets/SEM/Shopping.png'
 
 const campaignTypes = [
   {
     icon: Search,
+    img: semImg1,
     label: 'Search Ads',
     roas: '4.2x',
     sub: 'High-intent keyword targeting',
@@ -15,6 +20,7 @@ const campaignTypes = [
   },
   {
     icon: MousePointer2,
+    img: semImg2,
     label: 'Display Ads',
     roas: 'Wide Reach',
     sub: 'Brand awareness across the web',
@@ -23,6 +29,7 @@ const campaignTypes = [
   },
   {
     icon: Play,
+    img: semImg3,
     label: 'YouTube Ads',
     roas: '5.1x',
     sub: 'Video-led brand campaigns',
@@ -31,6 +38,7 @@ const campaignTypes = [
   },
   {
     icon: ShoppingBag,
+    img: semImg4,
     label: 'Shopping Ads',
     roas: '6.3x',
     sub: 'E-commerce product visibility',
@@ -149,7 +157,7 @@ export default function SEMHero() {
 
             {/* 4 campaign cards */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
-              {campaignTypes.map(({ icon: Icon, label, roas, sub, color, grad }) => (
+              {campaignTypes.map(({ icon: Icon, img, label, roas, sub, color, grad }) => (
                 <div key={label}
                   className="group rounded-2xl overflow-hidden bg-white border border-slate-100
                     hover:-translate-y-2 transition-all duration-300"
@@ -157,14 +165,16 @@ export default function SEMHero() {
                   onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 16px 44px ${color}20` }}
                   onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.07)' }}
                 >
-                  {/* Colored top band */}
-                  <div className="px-5 pt-6 pb-5 flex flex-col items-center gap-3"
+                  {/* Colored top band with bg image */}
+                  <div className="relative px-5 pt-6 pb-5 flex flex-col items-center gap-3 overflow-hidden"
                     style={{ background: grad }}>
-                    <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
+                    <img src={img} alt={label}
+                      className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
+                    <div className="relative z-10 w-12 h-12 rounded-2xl flex items-center justify-center"
                       style={{ background: 'rgba(255,255,255,0.18)', border: '1.5px solid rgba(255,255,255,0.30)' }}>
                       <Icon size={20} className="text-white" />
                     </div>
-                    <p className="text-[13px] font-bold text-white text-center leading-snug">{label}</p>
+                    <p className="relative z-10 text-[13px] font-bold text-white text-center leading-snug">{label}</p>
                   </div>
 
                   {/* White bottom */}

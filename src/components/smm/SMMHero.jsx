@@ -1,4 +1,5 @@
 import { Share2, TrendingUp, Users, ChevronRight, ArrowRight, ArrowUpRight, Activity } from 'lucide-react'
+import smmHeroImg from '../../assets/SMM/m1.png'
 
 export default function SMMHero() {
   return (
@@ -91,7 +92,7 @@ export default function SMMHero() {
 
           {/* Hidden SEO image — primary keyword */}
           <img
-            src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1&h=1&fit=crop&auto=format&q=10"
+            src={smmHeroImg}
             alt="Best Social Media Marketing Services in Thanjavur - ARA Discover Marketing"
             width="1" height="1"
             loading="lazy"

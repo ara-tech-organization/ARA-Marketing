@@ -1,4 +1,10 @@
 import { Frame, BookOpen, Megaphone, CreditCard, Share2, Image, Layers } from 'lucide-react'
+import logoImg       from '../../assets/GD/LogoDesign.png'
+import pamphletImg   from '../../assets/GD/Pamphlet.png'
+import socialImg     from '../../assets/GD/SocialMediaPost.png'
+import flyerImg      from '../../assets/GD/Flyer&Poster Design.png'
+import visualsImg    from '../../assets/GD/Visuals.png'
+import visitingImg   from '../../assets/GD/Visitingcard.png'
 
 const categories = [
   { label: 'Logo Designs',           icon: Frame,     color: '#2563eb', bg: '#dbeafe' },
@@ -13,37 +19,37 @@ const projects = [
   {
     label: 'Restaurant Brand Identity',
     tag: 'Logo Design',
-    img: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&h=400&fit=crop&auto=format&q=80',
+    img: logoImg,
     alt: 'Professional Brand Logo Design in Thanjavur for Restaurant Brand',
   },
   {
     label: 'Corporate Brochure Design',
     tag: 'Brochure',
-    img: 'https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=600&h=400&fit=crop&auto=format&q=80',
+    img: pamphletImg,
     alt: 'Corporate Brochure Designs in Thanjavur - Corporate Identity',
   },
   {
     label: 'Social Media Campaign',
     tag: 'Social Media',
-    img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&h=400&fit=crop&auto=format&q=80',
+    img: socialImg,
     alt: 'Social Media Post Design in Thanjavur - Brand Campaign',
   },
   {
     label: 'Retail Flyer Design',
     tag: 'Flyer Design',
-    img: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=400&fit=crop&auto=format&q=80',
+    img: flyerImg,
     alt: 'Business Flyer Layouts in Thanjavur - Retail Marketing',
   },
   {
     label: 'Educational Institution Branding',
     tag: 'Brand Identity',
-    img: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format&q=80',
+    img: visualsImg,
     alt: 'Best Graphic Design Companies in Thanjavur - Educational Branding',
   },
   {
     label: 'Business Card Collection',
     tag: 'Business Cards',
-    img: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop&auto=format&q=80',
+    img: visitingImg,
     alt: 'Best Business Card Design in Thanjavur - Corporate Stationery',
   },
 ]

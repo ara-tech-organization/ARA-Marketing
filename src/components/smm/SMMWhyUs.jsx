@@ -1,4 +1,5 @@
 import { Target, Palette, Zap, TrendingUp, Activity, BarChart2, Layers } from 'lucide-react'
+import whyUsImg from '../../assets/SMM/m2.png'
 
 const reasons = [
   {
@@ -118,14 +119,13 @@ export default function SMMWhyUs() {
         </div>
 
         {/* Banner image */}
-        <div className="reveal rounded-3xl overflow-hidden mb-14" style={{ height: 260 }}>
+        <div className="reveal rounded-3xl overflow-hidden mb-14">
           <img
-            src="https://images.unsplash.com/photo-1776248783518-400b6d0da64c?w=1200&h=260&fit=crop&auto=format&q=80"
+            src={whyUsImg}
             alt="Best Social Media Marketing Agency in Thanjavur - Why Choose ARA Discover Marketing"
             loading="lazy"
-            width="1200"
-            height="260"
-            className="w-full h-full object-cover"
+            className="w-full object-contain"
+            style={{ maxHeight: 360 }}
           />
         </div>
 

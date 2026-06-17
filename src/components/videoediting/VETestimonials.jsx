@@ -1,9 +1,9 @@
 import { Star, Quote, MessageSquare } from 'lucide-react'
 
 const testimonials = [
-  { text: 'ARA Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.', name: 'Ramesh Kumar',   role: 'CEO, Thanjavur Textile Exports',  rating: 5, color: '#2563eb', avatar: 'R', image: 'https://randomuser.me/api/portraits/men/91.jpg' },
-  { text: 'One of the most popular videography and editing services in Thanjavur for professional branding videos. The quality and attention to detail exceeded our expectations completely.',        name: 'Priya Sundaram', role: 'Marketing Head, Delta Agro Products', rating: 5, color: '#7c3aed', avatar: 'P', image: 'https://randomuser.me/api/portraits/women/76.jpg' },
-  { text: 'ARA helped us improve engagement on social media significantly. Their Instagram Reels and YouTube editing made our content go viral. Highly recommend for any business.',                 name: 'Karthik Rajan',  role: 'Founder, TechBridge Solutions',       rating: 5, color: '#0891b2', avatar: 'K', image: 'https://randomuser.me/api/portraits/men/37.jpg' },
+  { text: 'ARA Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.', name: 'Ramesh Kumar',   role: 'CEO, Thanjavur Textile Exports',  rating: 5, color: '#2563eb', avatar: 'R' },
+  { text: 'One of the most popular videography and editing services in Thanjavur for professional branding videos. The quality and attention to detail exceeded our expectations completely.',        name: 'Priya Sundaram', role: 'Marketing Head, Delta Agro Products', rating: 5, color: '#7c3aed', avatar: 'P' },
+  { text: 'ARA helped us improve engagement on social media significantly. Their Instagram Reels and YouTube editing made our content go viral. Highly recommend for any business.',                 name: 'Karthik Rajan',  role: 'Founder, TechBridge Solutions',       rating: 5, color: '#0891b2', avatar: 'K' },
 ]
 
 const gradBlue = {
@@ -43,7 +43,7 @@ export default function VETestimonials() {
 
         {/* ── Testimonials ── */}
         <div className="reveal flex flex-col sm:flex-row gap-4 sm:gap-5">
-          {testimonials.map(({ text, name, role, rating, color, avatar, image }, idx) => (
+          {testimonials.map(({ text, name, role, rating, color, avatar }, idx) => (
             <div
               key={name}
               className={`group relative flex flex-col gap-4 sm:gap-5 p-5 sm:p-7 rounded-2xl sm:rounded-3xl flex-1 min-w-0
@@ -80,7 +80,10 @@ export default function VETestimonials() {
 
               <div className="relative flex items-center gap-3 pt-3 sm:pt-4"
                 style={{ borderTop: '1px solid #f0f4ff' }}>
-                <img src={image} alt={name} className="w-9 h-9 sm:w-11 sm:h-11 rounded-full object-cover flex-shrink-0 transition-all duration-300 group-hover:scale-105" />
+                <div className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[15px]"
+                  style={{ background: '#dbeafe', color: '#2563eb' }}>
+                  {name.charAt(0)}
+                </div>
                 <div>
                   <p className="text-[12px] sm:text-[13px] font-bold text-slate-900">{name}</p>
                   <p className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5">{role}</p>

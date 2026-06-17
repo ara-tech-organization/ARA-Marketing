@@ -1,4 +1,5 @@
 import { Cpu, Globe2, FileText, MapPin, Smartphone, ArrowRight } from 'lucide-react'
+import seoIntroImg from '../../assets/SEO/S2.png'
 
 const services = [
   { icon: FileText,   label: 'On-Page SEO',   color: '#2563eb', href: '#seo-services' },
@@ -21,7 +22,7 @@ export default function SEOIntro() {
             <div className="relative rounded-3xl overflow-hidden h-full"
               style={{ minHeight: 280, boxShadow: '0 24px 80px rgba(37,99,235,0.14)' }}>
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=700&fit=crop&auto=format&q=80"
+                src={seoIntroImg}
                 alt="AI-Driven SEO Strategies in Thanjavur - ARA Discover Marketing"
                 loading="lazy"
                 className="w-full h-full object-cover absolute inset-0"

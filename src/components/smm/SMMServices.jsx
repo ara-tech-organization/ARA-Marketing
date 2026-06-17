@@ -2,6 +2,10 @@ import {
   Share2, Target, Palette, Megaphone, MessageSquare, Eye, Users, BarChart2,
   CheckCircle, Briefcase, Image, TrendingUp, Layers, ArrowRight
 } from 'lucide-react'
+import facebookImg    from '../../assets/SMM/Facebook.png'
+import linkedinImg    from '../../assets/SMM/Linkedin.png'
+import pinterestImg   from '../../assets/SMM/Pintrest.png'
+import socialMediaImg from '../../assets/SMM/Socialmedia.png'
 
 const overviewItems = [
   { icon: Target,        label: 'Social Media Strategy & Planning' },
@@ -20,7 +24,7 @@ const platforms = [
     color: '#2563eb',
     bgLight: '#dbeafe',
     h3: 'Facebook Marketing',
-    imgSrc: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&h=300&fit=crop&auto=format&q=80',
+    imgSrc: facebookImg,
     imgAlt: 'Facebook Marketing and Advertising Services in Thanjavur',
     desc: [
       'Facebook is still one of the most effective platforms for marketing businesses and customer targeting. Our social media team specializes in facebook marketing for business in Thanjavur, helping brands generate leads, increase page engagement, and improve conversions with strategic campaigns.',
@@ -43,7 +47,7 @@ const platforms = [
     color: '#0891b2',
     bgLight: '#cffafe',
     h3: 'LinkedIn Marketing',
-    imgSrc: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=600&h=300&fit=crop&auto=format&q=80',
+    imgSrc: linkedinImg,
     imgAlt: 'LinkedIn Professional Networking and Branding in Thanjavur',
     desc: [
       'LinkedIn marketing helps businesses to reach out to professionals, decision makers, and industry leaders.',
@@ -66,7 +70,7 @@ const platforms = [
     color: '#db2777',
     bgLight: '#fce7f3',
     h3: 'Pinterest Marketing',
-    imgSrc: 'https://images.unsplash.com/photo-1636044594149-6e2f289c3868?w=600&h=300&fit=crop&auto=format&q=80',
+    imgSrc: pinterestImg,
     imgAlt: 'Pinterest Branding and Visual Marketing in Thanjavur',
     desc: [
       'Pinterest is a giant in visual discovery and product promotion. Our Pinterest social media marketing in Thanjavur services help in drawing highly engaged audiences with creative visual campaigns for brands.',
@@ -89,7 +93,7 @@ const platforms = [
     color: '#059669',
     bgLight: '#d1fae5',
     h3: 'Social Media Optimization (SMO)',
-    imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format&q=80',
+    imgSrc: socialMediaImg,
     imgAlt: 'Social Media Optimization SMO Services in Thanjavur',
     desc: [
       'Our SMO services help in improving the social media visibility, audience engagement & profile performance on platforms. We are offering advanced social media optimisation services in Thanjavur, helping businesses to create strong online branding.',

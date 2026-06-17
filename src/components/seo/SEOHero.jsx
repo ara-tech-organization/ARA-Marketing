@@ -1,4 +1,5 @@
 import { Search, TrendingUp, BarChart2, ChevronRight, ArrowRight, ArrowUpRight, ArrowUp } from 'lucide-react'
+import seoHeroImg from '../../assets/SEO/Seo.png'
 
 const keywords = [
   { kw: 'best seo companies in thanjavur', pos: 1, prev: 4, color: '#2563eb' },
@@ -199,13 +200,13 @@ export default function SEOHero() {
                 style={{ boxShadow: '0 24px 60px rgba(37,99,235,0.14)' }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=600&fit=crop&auto=format&q=80"
+                  src={seoHeroImg}
                   alt="SEO Services Thanjavur - ARA Discover Marketing"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(15,40,100,0.35) 100%)' }} />
+                  style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(37,99,235,0.75) 100%)' }} />
 
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5
                   bg-white/90 backdrop-blur-sm rounded-full border border-blue-100 shadow-sm whitespace-nowrap">

@@ -7,7 +7,6 @@ const testimonials = [
     rating: 5,
     text: 'ARA Discover Marketing is one of the best app development agencies in Thanjavur. Their AI-powered mobile apps have completely transformed our business operations. The team is professional, responsive, and truly understands what businesses need.',
     featured: true,
-    image: 'https://randomuser.me/api/portraits/men/36.jpg',
   },
   {
     name: 'Vijay Kumar',
@@ -15,7 +14,6 @@ const testimonials = [
     rating: 5,
     text: 'The team delivered a robust Android and iOS app on time. A trusted mobile application development agency in Thanjavur with deep technical expertise.',
     featured: false,
-    image: 'https://randomuser.me/api/portraits/men/25.jpg',
   },
   {
     name: 'Priya',
@@ -23,7 +21,6 @@ const testimonials = [
     rating: 5,
     text: 'Their expertise resulted in a robust Android app, making them a trusted choice for mobile application development in Thanjavur. Highly recommend!',
     featured: false,
-    image: 'https://randomuser.me/api/portraits/women/62.jpg',
   },
 ]
 
@@ -57,8 +54,11 @@ function TestiCard({ t, featured }) {
 
       {/* Author */}
       <div className="flex items-center gap-3 mt-auto">
-        <img src={t.image} alt={t.name}
-          className={`${featured ? 'w-14 h-14' : 'w-10 h-10'} rounded-full object-cover flex-shrink-0`} />
+        <div
+          className={`${featured ? 'w-14 h-14 text-[20px]' : 'w-10 h-10 text-[16px]'} rounded-full flex-shrink-0 flex items-center justify-center font-bold`}
+          style={{ background: '#dbeafe', color: '#2563eb' }}>
+          {t.name.charAt(0)}
+        </div>
         <div>
           <div className={`font-bold ${featured ? 'text-[15px] text-white' : 'text-[14px] text-slate-900'}`}>
             {t.name}

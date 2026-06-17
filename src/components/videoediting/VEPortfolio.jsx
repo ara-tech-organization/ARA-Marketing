@@ -1,15 +1,21 @@
 import { Sparkles, Package, Briefcase, Share2, Wind, CalendarDays, PlayCircle, Image } from 'lucide-react'
+import brandingImg  from '../../assets/Video-editing/Branding-videos.png'
+import socialImg    from '../../assets/Video-editing/social-media.png'
+import corporateImg from '../../assets/Video-editing/corporate-films.png'
+import productImg   from '../../assets/Video-editing/product-add.png'
+import droneImg     from '../../assets/Video-editing/Drone-add.png'
+import eventImg     from '../../assets/Video-editing/Event-coverage.png'
 
 // Row 1: Branding(2) + Social(1)   = 3 cols
 // Row 2: Corporate(1) + Product(1) + Drone(1) = 3 cols
 // Row 3: Event Coverage full width  = 3 cols
 const categories = [
-  { label: 'Branding Videos',        icon: Sparkles,    color: '#7c3aed', count: '80+',  img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=500&fit=crop&auto=format&q=80',  alt: 'Branding video portfolio Thanjavur',     span: 'lg:col-span-2' },
-  { label: 'Social Media Reels',     icon: Share2,       color: '#db2777', count: '120+', img: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&h=500&fit=crop&auto=format&q=80',  alt: 'Social media reels portfolio Thanjavur', span: 'lg:col-span-1' },
-  { label: 'Corporate Films',        icon: Briefcase,    color: '#0891b2', count: '60+',  img: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=420&fit=crop&auto=format&q=80',   alt: 'Corporate film portfolio Thanjavur',     span: 'lg:col-span-1' },
-  { label: 'Product Advertisements', icon: Package,      color: '#2563eb', count: '90+',  img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=420&fit=crop&auto=format&q=80',  alt: 'Product video portfolio Thanjavur',      span: 'lg:col-span-1' },
-  { label: 'Drone Aerial Videos',    icon: Wind,         color: '#d97706', count: '40+',  img: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=500&h=420&fit=crop&auto=format&q=80',  alt: 'Drone aerial portfolio Thanjavur',       span: 'lg:col-span-1' },
-  { label: 'Event Coverage Videos',  icon: CalendarDays, color: '#059669', count: '70+',  img: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=300&fit=crop&auto=format&q=80',  alt: 'Event coverage portfolio Thanjavur',     span: 'lg:col-span-3' },
+  { label: 'Branding Videos',        icon: Sparkles,    color: '#7c3aed', count: '80+',  img: brandingImg,  alt: 'Branding video portfolio Thanjavur',     span: 'lg:col-span-2' },
+  { label: 'Social Media Reels',     icon: Share2,      color: '#db2777', count: '120+', img: socialImg,    alt: 'Social media reels portfolio Thanjavur', span: 'lg:col-span-1' },
+  { label: 'Corporate Films',        icon: Briefcase,   color: '#0891b2', count: '60+',  img: corporateImg, alt: 'Corporate film portfolio Thanjavur',     span: 'lg:col-span-1' },
+  { label: 'Product Advertisements', icon: Package,     color: '#2563eb', count: '90+',  img: productImg,   alt: 'Product video portfolio Thanjavur',      span: 'lg:col-span-1' },
+  { label: 'Drone Aerial Videos',    icon: Wind,        color: '#d97706', count: '40+',  img: droneImg,     alt: 'Drone aerial portfolio Thanjavur',       span: 'lg:col-span-1' },
+  { label: 'Event Coverage Videos',  icon: CalendarDays,color: '#059669', count: '70+',  img: eventImg,     alt: 'Event coverage portfolio Thanjavur',     span: 'lg:col-span-3' },
 ]
 
 export default function VEPortfolio() {
