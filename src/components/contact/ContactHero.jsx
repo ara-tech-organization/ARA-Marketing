@@ -57,7 +57,7 @@ export default function ContactHero() {
       />
 
       {/* Central content */}
-      <div className="relative z-10 max-w-[680px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center py-8 sm:py-10 md:py-12">
+      <div className="relative z-10 max-w-[900px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col items-center text-center py-8 sm:py-10 md:py-12">
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full
@@ -84,14 +84,14 @@ export default function ContactHero() {
         </h1>
 
         {/* Sub */}
-        <p className="text-[16px] leading-[1.8] max-w-[560px] mb-4"
+        <p className="text-[16px] leading-[1.8] max-w-[780px] mb-4"
           style={{ color: 'rgba(255,255,255,0.42)' }}
         >
           We help your business grow with AI-driven innovative digital marketing, website
           development and branding solutions. If you have a project idea, need expert advice
           or want to discuss your business goals, our team is ready to help.
         </p>
-        <p className="text-[14px] leading-[1.75] max-w-[480px] mb-10"
+        <p className="text-[14px] leading-[1.75] max-w-[680px] mb-10"
           style={{ color: 'rgba(255,255,255,0.28)' }}
         >
           Have questions or need a quote? Contact us today and let&apos;s talk about how we

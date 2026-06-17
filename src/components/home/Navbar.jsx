@@ -168,9 +168,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-[72px] gap-4">
 
             {/* Logo */}
-            <a href="/" className="flex items-center no-underline flex-shrink-0">
+            <Link to="/" className="flex items-center no-underline flex-shrink-0">
               <img src={logoImg} alt="ARA Discover Marketing" className="h-14 w-auto object-contain" />
-            </a>
+            </Link>
 
             {/* Desktop links */}
             <div className="hidden lg:flex items-center gap-1 flex-1 justify-center">
