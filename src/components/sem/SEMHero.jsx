@@ -90,7 +90,7 @@ export default function SEMHero() {
 
           {/* H1 */}
           <h1 className="font-bold tracking-tight mb-4 max-w-[900px] mx-auto">
-            <span className="block text-[clamp(22px,3vw,44px)] text-slate-900 leading-[1.1]">
+            <span className="block text-[clamp(18px,2.2vw,34px)] text-slate-900 leading-[1.1]">
               Best Google Ads Services &amp; PPC Services in Thanjavur
             </span>
             <span className="block text-[clamp(15px,1.8vw,26px)] text-gradient-blue leading-snug mt-1.5">

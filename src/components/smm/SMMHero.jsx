@@ -40,7 +40,7 @@ export default function SMMHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(21px,2.7vw,41px)] font-bold text-slate-900
+            <h1 className="animate-hero-d2 text-[clamp(18px,2.1vw,33px)] font-bold text-slate-900
               leading-[1.12] tracking-tight mb-5">
               Best Social Media Marketing{' '}
               <span className="text-gradient-blue">Services in Thanjavur</span>{' '}

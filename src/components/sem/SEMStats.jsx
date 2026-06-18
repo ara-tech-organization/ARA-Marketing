@@ -28,7 +28,7 @@ function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
       </div>
 
       {/* Number */}
-      <p className="text-[clamp(34px,3.5vw,52px)] font-bold leading-none tracking-tight mb-2"
+      <p className="text-[clamp(26px,2.7vw,40px)] font-bold leading-none tracking-tight mb-2"
         style={{ background: `linear-gradient(135deg, ${color}, ${color}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
         {target !== null ? `${count}${suffix}` : '—'}
       </p>
