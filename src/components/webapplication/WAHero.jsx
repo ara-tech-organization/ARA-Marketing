@@ -89,7 +89,7 @@ export default function WAHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(24px,3.5vw,48px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
+            <h1 className="text-[clamp(23px,3.1vw,47px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
               Power Your Business with{' '}
               <span style={gradBlue}>Advanced Web App Solutions</span>
             </h1>

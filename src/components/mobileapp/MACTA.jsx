@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
+import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
 
 const highlights = [
   { icon: Zap,          text: 'On-time delivery with zero compromise on quality'     },
@@ -22,7 +22,7 @@ export default function MACTA() {
               <Rocket size={11} /> Let's Build Your App
             </span>
 
-            <h2 className="text-[clamp(26px,3vw,44px)] font-bold text-gray-900 leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-gray-900 leading-tight tracking-tight mb-5">
               Let's Build Your{' '}
               <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Mobile App Together
@@ -73,7 +73,7 @@ export default function MACTA() {
               style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.15)', boxShadow: '0 32px 80px rgba(0,0,0,0.10)' }}>
 
               <div className="mb-7">
-                <h3 className="text-[18px] font-bold mb-1" style={{ color: '#1e293b' }}>Get a Free Consultation</h3>
+                <h3 className="text-[17px] font-bold mb-1" style={{ color: '#1e293b' }}>Get a Free Consultation</h3>
                 <p className="text-[12.5px]" style={{ color: '#64748b' }}>Tell us about your app idea and our specialists will help you plan the perfect mobile solution.</p>
               </div>
 

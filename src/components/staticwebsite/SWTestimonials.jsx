@@ -38,7 +38,7 @@ export default function SWTestimonials() {
           >
             <MessageSquare size={11} /> Testimonials
           </span>
-          <h2 className="text-[clamp(22px,2.8vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-3">
+          <h2 className="text-[clamp(21px,2.5vw,35px)] font-bold text-slate-900 leading-tight tracking-tight mb-3">
             What Our{' '}
             <span className="text-gradient-blue">Clients Say</span>
           </h2>

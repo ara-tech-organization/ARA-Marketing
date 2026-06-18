@@ -43,7 +43,7 @@ export default function EWCTA() {
               <Building2 size={9} /> Let's Build Together
             </span>
 
-            <h2 className="text-[clamp(20px,4.5vw,48px)] font-bold leading-[1.10] tracking-tight mb-3 sm:mb-5" style={{ color: '#ffffff' }}>
+            <h2 className="text-[clamp(19px,4vw,47px)] font-bold leading-[1.10] tracking-tight mb-3 sm:mb-5" style={{ color: '#ffffff' }}>
               Let's Build Your{' '}
               <span style={{ background: 'linear-gradient(135deg,#a78bfa,#38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Enterprise Website
@@ -96,7 +96,7 @@ export default function EWCTA() {
                 boxShadow: '0 24px 60px rgba(0,0,0,0.28)',
               }}>
 
-              <h3 className="text-[15px] sm:text-[17px] lg:text-[19px] font-bold mb-1 sm:mb-1.5" style={{ color: '#ffffff' }}>
+              <h3 className="text-[14px] sm:text-[16px] lg:text-[18px] font-bold mb-1 sm:mb-1.5" style={{ color: '#ffffff' }}>
                 Start Your Enterprise Project
               </h3>
               <p className="text-[11.5px] sm:text-[12.5px] mb-4 sm:mb-6" style={{ color: 'rgba(255,255,255,0.40)' }}>

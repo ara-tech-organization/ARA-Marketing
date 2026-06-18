@@ -97,7 +97,7 @@ export default function SMMStats() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <TrendingUp size={11} /> Our Results
           </span>
-          <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Delivering Measurable Social Media{' '}
             <span className="text-gradient-blue">Growth &amp; Engagement</span>
           </h2>

@@ -79,7 +79,7 @@ export default function WAServices() {
           >
             <Settings2 size={10} /> What We Offer
           </span>
-          <h2 className="text-[clamp(22px,3vw,42px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
             Our Web App Development{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Services
@@ -150,7 +150,7 @@ export default function WAServices() {
                     style={{ background: s.color, boxShadow: `0 4px 14px ${s.color}40` }}>
                     <s.icon size={18} className="text-white" />
                   </div>
-                  <h3 className="text-[16px] xs:text-[18px] sm:text-[20px] font-bold text-slate-900">{s.title}</h3>
+                  <h3 className="text-[15px] xs:text-[17px] sm:text-[19px] font-bold text-slate-900">{s.title}</h3>
                 </div>
                 <p className="text-[13px] xs:text-[14px] text-slate-600 leading-relaxed mb-4 sm:mb-5">{s.desc}</p>
                 <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 xs:gap-2.5">

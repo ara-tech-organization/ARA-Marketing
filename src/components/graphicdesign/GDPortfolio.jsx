@@ -73,7 +73,7 @@ export default function GDPortfolio() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> Portfolio
           </span>
-          <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.5vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Creative Branding Projects &amp;{' '}
             <span className="text-gradient-blue">Design Success Stories</span>
           </h2>

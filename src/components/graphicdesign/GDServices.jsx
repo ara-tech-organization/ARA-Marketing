@@ -114,7 +114,7 @@ export default function GDServices() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Our Branding Services
           </span>
-          <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.5vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Complete Visual Identity &amp;{' '}
             <span className="text-gradient-blue">Creative Design Solutions</span>
           </h2>
@@ -163,7 +163,7 @@ export default function GDServices() {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-[13px] font-bold text-slate-800 leading-snug mb-1.5 group-hover:text-blue-700 transition-colors duration-200">
+                <h3 className="text-[12px] font-bold text-slate-800 leading-snug mb-1.5 group-hover:text-blue-700 transition-colors duration-200">
                   {title}
                 </h3>
                 <span

@@ -35,7 +35,7 @@ export default function ECIntro() {
             style={{ background: 'rgba(37,99,235,0.18)', color: '#93c5fd', border: '1px solid rgba(37,99,235,0.30)' }}>
             <Zap size={10} /> Powerful E-Commerce Solutions
           </span>
-          <h2 className="text-[clamp(24px,4vw,48px)] font-bold leading-[1.1] tracking-tight mb-5 text-white">
+          <h2 className="text-[clamp(23px,3.6vw,47px)] font-bold leading-[1.1] tracking-tight mb-5 text-white">
             Transform Your Business with{' '}
             <span style={{ color: '#60a5fa' }}>
               Powerful E-Commerce
@@ -58,7 +58,7 @@ export default function ECIntro() {
                 style={{ background: 'rgba(37,99,235,0.25)', border: '1px solid rgba(37,99,235,0.40)' }}>
                 <Icon size={17} className="text-blue-300" />
               </div>
-              <h3 className="text-[14px] font-bold mb-2 text-white">{label}</h3>
+              <h3 className="text-[13px] font-bold mb-2 text-white">{label}</h3>
               <p className="text-[12px] leading-[1.7]" style={{ color: 'rgba(255,255,255,0.50)' }}>{desc}</p>
             </div>
           ))}

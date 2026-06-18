@@ -60,7 +60,7 @@ export default function SEMServices() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> SEM Services
           </span>
-          <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             SEM &amp; Paid Advertising{' '}
             <span className="text-gradient-blue">Services</span>
           </h2>
@@ -128,7 +128,7 @@ export default function SEMServices() {
                   style={{ color: svc.color }}>
                   {svc.tag}
                 </span>
-                <h3 className="text-[20px] font-bold text-slate-900 leading-tight">{svc.label}</h3>
+                <h3 className="text-[19px] font-bold text-slate-900 leading-tight">{svc.label}</h3>
               </div>
             </div>
 

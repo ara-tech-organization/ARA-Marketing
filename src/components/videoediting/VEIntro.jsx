@@ -45,7 +45,7 @@ export default function VEIntro() {
               <Layers size={10} /> Professional Video Editing
             </span>
 
-            <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Professional Video Editing That Turns Ideas Into{' '}
               <span style={gradBlue}>Powerful Visual Stories</span>
             </h2>

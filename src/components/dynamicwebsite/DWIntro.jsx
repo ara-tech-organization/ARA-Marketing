@@ -35,7 +35,7 @@ export default function DWIntro() {
             style={{ border: '1px solid rgba(79,70,229,0.18)' }}>
             <Globe2 size={10} /> Next-Gen Dynamic Web Solutions
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Next-Gen Dynamic Websites for{' '}
             <span style={gradInd}>Modern Businesses</span>
           </h2>

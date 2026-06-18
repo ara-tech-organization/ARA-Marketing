@@ -52,7 +52,7 @@ export default function LegalLayout({ title, subtitle, lastUpdated, children }) 
             </span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4 tracking-tight">
             {title}
           </h1>
           {subtitle && (

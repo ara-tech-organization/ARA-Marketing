@@ -18,7 +18,7 @@ export default function StatsBand() {
     <section className="relative py-16 overflow-hidden" style={{ background: '#ffffff', borderTop: '1px solid rgba(0,0,0,0.07)', borderBottom: '1px solid rgba(0,0,0,0.07)', color: '#0f172a' }}>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <h2
-          className="text-center text-[clamp(18px,2.4vw,28px)] font-bold leading-tight tracking-tight mb-10"
+          className="text-center text-[clamp(17px,2.2vw,27px)] font-bold leading-tight tracking-tight mb-10"
           style={{ color: '#0f172a', fontWeight: 700 }}
         >
           Delivering Measurable Growth Through Strategic Marketing

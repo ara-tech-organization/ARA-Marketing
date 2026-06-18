@@ -51,7 +51,7 @@ export default function SWCTA() {
               <Rocket size={11} /> Let's Build Together
             </span>
 
-            <h2 className="text-[clamp(26px,3vw,44px)] font-bold text-white leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-white leading-tight tracking-tight mb-5">
               Let's Build Your{' '}
               <span
                 style={{
@@ -122,7 +122,7 @@ export default function SWCTA() {
             >
               {/* Form header */}
               <div className="mb-7">
-                <h3 className="text-[18px] font-bold text-white mb-1">Get a Free Consultation</h3>
+                <h3 className="text-[17px] font-bold text-white mb-1">Get a Free Consultation</h3>
                 <p className="text-[12.5px]" style={{ color: '#64748b' }}>Fill in the form and our specialists will help you plan your perfect static website solution.</p>
               </div>
 

@@ -33,7 +33,7 @@ export default function WebDevServices() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Our Services
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Complete Website Design &amp;{' '}
             <span className="text-gradient-blue">Development Solutions</span>
           </h2>
@@ -109,7 +109,7 @@ export default function WebDevServices() {
                 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5">
                 <Code2 size={10} /> Custom Web Development
               </span>
-              <h3 className="text-[clamp(20px,2.5vw,28px)] font-bold text-white leading-tight mb-4">
+              <h3 className="text-[clamp(19px,2.2vw,27px)] font-bold text-white leading-tight mb-4">
                 Tailor-Made Websites Built for Your Business Needs
               </h3>
               <p className="text-[14px] text-blue-100 leading-[1.85] mb-3">

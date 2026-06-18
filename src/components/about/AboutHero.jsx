@@ -64,7 +64,7 @@ export default function AboutHero() {
 
             {/* Heading */}
             <h1 className="font-bold text-slate-900 leading-[1.06] tracking-tight mb-5"
-              style={{ fontSize: 'clamp(22px,3vw,44px)' }}>
+              style={{ fontSize: 'clamp(21px,2.7vw,43px)' }}>
               We Are{' '}
               <span className="relative inline-block">
                 <span style={{

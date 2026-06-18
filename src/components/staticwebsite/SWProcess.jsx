@@ -61,7 +61,7 @@ export default function SWProcess() {
           >
             <GitBranch size={11} /> Our Process
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             How We Build Your{' '}
             <span
               style={{
@@ -129,7 +129,7 @@ export default function SWProcess() {
                   }}
                 >
                   <h3
-                    className="text-[13px] font-bold mb-2 leading-snug"
+                    className="text-[12px] font-bold mb-2 leading-snug"
                     style={{ color: '#1e293b' }}
                   >
                     {title}
@@ -159,7 +159,7 @@ export default function SWProcess() {
                 <span className="text-[10px] font-black" style={{ color: `${color}80` }}>{num}</span>
               </div>
               <div>
-                <h3 className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
                 <p className="text-[12.5px] text-slate-500 leading-[1.7]">{desc}</p>
               </div>
             </div>

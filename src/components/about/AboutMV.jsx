@@ -48,7 +48,7 @@ export default function AboutMV() {
             <Zap size={11} /> Our Core Beliefs
           </span>
           <h2 className="font-bold text-slate-900 leading-tight tracking-tight"
-            style={{ fontSize: 'clamp(26px,3.5vw,44px)' }}>
+            style={{ fontSize: 'clamp(25px,3.1vw,43px)' }}>
             The Purpose That{' '}
             <span style={{
               background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
@@ -93,7 +93,7 @@ export default function AboutMV() {
             </div>
 
             <h3 className="font-bold text-slate-900 mb-4 leading-tight"
-              style={{ fontSize: 'clamp(20px,2.2vw,30px)' }}>
+              style={{ fontSize: 'clamp(19px,2vw,29px)' }}>
               Helping Businesses Become{' '}
               <span style={{
                 background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
@@ -168,7 +168,7 @@ export default function AboutMV() {
             </div>
 
             <h3 className="font-bold text-slate-900 mb-4 leading-tight"
-              style={{ fontSize: 'clamp(20px,2.2vw,30px)' }}>
+              style={{ fontSize: 'clamp(19px,2vw,29px)' }}>
               Empowering Every Business to{' '}
               <span style={{
                 background: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
@@ -208,7 +208,7 @@ export default function AboutMV() {
           style={{ background: 'white', border: '1.5px solid #dbeafe',
             boxShadow: '0 16px 48px rgba(37,99,235,0.08)' }}>
           <div>
-            <h4 className="text-[18px] font-bold text-slate-900 mb-1">
+            <h4 className="text-[17px] font-bold text-slate-900 mb-1">
               Ready to grow your business digitally?
             </h4>
             <p className="text-[14px] text-slate-500">

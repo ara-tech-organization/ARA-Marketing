@@ -21,7 +21,7 @@ export default function Assurance() {
             <Shield size={11} /> Our Commitment
           </span>
           <h2
-            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             Our Assurance
@@ -57,7 +57,7 @@ export default function Assurance() {
 
                 {/* Text */}
                 <div className="flex-1">
-                  <h4 className="text-base font-bold text-slate-900 mb-1.5 transition-colors
+                  <h4 className="text-sm font-bold text-slate-900 mb-1.5 transition-colors
                     duration-300 group-hover:text-blue-700">
                     {a.title}
                   </h4>

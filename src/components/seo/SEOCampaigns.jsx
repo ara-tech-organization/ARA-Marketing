@@ -28,7 +28,7 @@ export default function SEOCampaigns() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Trophy size={11} /> Portfolio
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Successful SEO Campaigns{' '}
             <span className="text-gradient-blue">&amp; Ranking Achievements</span>
           </h2>
@@ -45,7 +45,7 @@ export default function SEOCampaigns() {
             className="reveal md:w-[280px] lg:w-[320px] flex-shrink-0 bg-white rounded-3xl p-5 md:p-6 lg:p-8 border border-blue-100"
             style={{ boxShadow: '0 8px 40px rgba(37,99,235,0.08)' }}
           >
-            <h3 className="text-[14px] font-bold text-slate-800 uppercase tracking-wider mb-6">
+            <h3 className="text-[13px] font-bold text-slate-800 uppercase tracking-wider mb-6">
               Industries We Serve
             </h3>
             <p className="text-[13px] text-slate-500 leading-[1.8] mb-6">
@@ -101,7 +101,7 @@ export default function SEOCampaigns() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
                     <CheckCircle size={14} className="text-emerald-500 flex-shrink-0" />
-                    <h3 className="text-[15px] font-bold text-slate-800">{label}</h3>
+                    <h3 className="text-[14px] font-bold text-slate-800">{label}</h3>
                   </div>
                   <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
                 </div>

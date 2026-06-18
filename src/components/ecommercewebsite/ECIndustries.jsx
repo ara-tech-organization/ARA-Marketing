@@ -67,7 +67,7 @@ export default function ECIndustries() {
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <Award size={10} /> Success Stories
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             E-Commerce Success Stories{' '}
             <span style={{ color: '#2563eb' }}>
               That Drive Results

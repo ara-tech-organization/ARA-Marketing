@@ -91,7 +91,7 @@ export default function SEOServices() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> SEO Services
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Complete SEO{' '}
             <span className="text-gradient-blue">Optimization Services</span>
           </h2>
@@ -150,7 +150,7 @@ export default function SEOServices() {
                   style={{ background: tab.color }}>
                   {tab.tag}
                 </span>
-                <h3 className="text-[22px] font-bold text-white leading-tight drop-shadow-lg">
+                <h3 className="text-[21px] font-bold text-white leading-tight drop-shadow-lg">
                   {tab.h3}
                 </h3>
               </div>

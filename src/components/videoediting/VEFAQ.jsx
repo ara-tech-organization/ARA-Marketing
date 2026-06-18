@@ -57,7 +57,7 @@ export default function VEFAQ() {
             style={{ border: '1px solid rgba(37,99,235,0.16)' }}>
             <HelpCircle size={11} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Everything You Want to{' '}
             <span style={gradBlue}>Know About Us</span>
           </h2>
@@ -134,7 +134,7 @@ export default function VEFAQ() {
                   </div>
                 </div>
 
-                <h3 className="text-[14px] sm:text-[17px] font-bold text-slate-900 leading-snug mb-4 sm:mb-6">{faq.q}</h3>
+                <h3 className="text-[13px] sm:text-[16px] font-bold text-slate-900 leading-snug mb-4 sm:mb-6">{faq.q}</h3>
 
                 {/* Progress bar */}
                 <div className="h-1 rounded-full bg-slate-100 overflow-hidden">

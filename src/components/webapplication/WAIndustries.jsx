@@ -72,7 +72,7 @@ export default function WAIndustries() {
           >
             <Rocket size={10} /> Industries We Serve
           </span>
-          <h2 className="text-[clamp(22px,3vw,42px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
             Built for Every{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Industry
@@ -120,7 +120,7 @@ export default function WAIndustries() {
                 style={{ background: 'white', borderTop: `3px solid ${color}` }}
               >
                 <h3
-                  className="text-[13.5px] xs:text-[15px] font-bold text-slate-800 mb-1.5 group-hover:text-blue-700 transition-colors duration-300"
+                  className="text-[12px] xs:text-[14px] font-bold text-slate-800 mb-1.5 group-hover:text-blue-700 transition-colors duration-300"
                 >
                   {label}
                 </h3>

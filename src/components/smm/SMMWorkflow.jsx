@@ -61,7 +61,7 @@ export default function SMMWorkflow() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Our Process
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Our Strategic{' '}
             <span className="text-gradient-blue">Social Media Marketing</span> Workflow
           </h2>
@@ -134,7 +134,7 @@ export default function SMMWorkflow() {
                         <Icon size={20} style={{ color: step.color }} />
                       </div>
                       <div>
-                        <h3 className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug">
+                        <h3 className="text-[13px] font-bold text-slate-800 mb-1.5 leading-snug">
                           {step.title}
                         </h3>
                         <p className="text-[12.5px] text-slate-500 leading-[1.75]">{step.desc}</p>
@@ -207,7 +207,7 @@ export default function SMMWorkflow() {
                         <Icon size={20} style={{ color: step.color }} />
                       </div>
                       <div>
-                        <h3 className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug">
+                        <h3 className="text-[13px] font-bold text-slate-800 mb-1.5 leading-snug">
                           {step.title}
                         </h3>
                         <p className="text-[12.5px] text-slate-500 leading-[1.75]">{step.desc}</p>

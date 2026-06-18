@@ -41,7 +41,7 @@ export default function DWCTA() {
               <Rocket size={10} /> Let's Build With Us
             </div>
 
-            <h2 className="text-[clamp(24px,4vw,52px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,3.6vw,51px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
               Let's Build Your{' '}
               <span style={gradBlue}>Dynamic Website Together</span>
             </h2>

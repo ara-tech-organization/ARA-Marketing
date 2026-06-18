@@ -50,7 +50,7 @@ export default function WATech() {
           >
             <Cloud size={10} /> Our Tech Stack
           </span>
-          <h2 className="text-[clamp(22px,3vw,42px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
             Technologies{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               We Use

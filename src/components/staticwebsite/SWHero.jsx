@@ -57,7 +57,7 @@ export default function SWHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="text-[clamp(22px,3.2vw,44px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
+            <h1 className="text-[clamp(21px,2.9vw,43px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
               Launch Your Online{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Presence

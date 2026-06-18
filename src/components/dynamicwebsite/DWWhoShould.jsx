@@ -34,7 +34,7 @@ export default function DWWhoShould() {
             style={{ border: '1px solid rgba(79,70,229,0.18)' }}>
             <Users size={10} /> Ideal For
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Who Should Invest in a{' '}
             <span style={gradInd}>Dynamic Website?</span>
           </h2>
@@ -68,7 +68,7 @@ export default function DWWhoShould() {
                 style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}28` }}>
                 <Icon size={18} style={{ color }} />
               </div>
-              <h3 className="text-[14px] sm:text-[15px] font-bold text-slate-900 mb-2">{label}</h3>
+              <h3 className="text-[13px] sm:text-[14px] font-bold text-slate-900 mb-2">{label}</h3>
               <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
               <div className="flex items-center gap-1.5 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <CheckCircle2 size={12} style={{ color }} />

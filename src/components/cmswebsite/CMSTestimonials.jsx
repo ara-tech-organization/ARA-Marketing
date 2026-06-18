@@ -1,4 +1,4 @@
-﻿import { Quote, Star, MessageSquare } from 'lucide-react'
+import { Quote, Star, MessageSquare } from 'lucide-react'
 
 const testimonials = [
   {
@@ -67,7 +67,7 @@ export default function CMSTestimonials() {
           >
             <MessageSquare size={11} /> Client Testimonials
           </span>
-          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Hear From{' '}
             <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Our Clients

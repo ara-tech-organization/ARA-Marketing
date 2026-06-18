@@ -82,7 +82,7 @@ export default function SEMAdTypes() {
                 <Icon size={11} /> {tag}
               </span>
 
-              <h2 className="text-[clamp(22px,3vw,36px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-5">
+              <h2 className="text-[clamp(21px,2.7vw,35px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-5">
                 {label} <span style={{ color }}>Services in Thanjavur</span>
               </h2>
 

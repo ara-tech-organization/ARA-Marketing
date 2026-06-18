@@ -23,7 +23,7 @@ export default function Tools() {
             <Bot size={11} /> Technology Stack
           </span>
           <h2
-            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             Advanced AI Enhanced Marketing Tools<br />&amp; Technologies We Use
@@ -54,7 +54,7 @@ export default function Tools() {
                   <Icon size={20} />
                 </div>
                 <div>
-                  <h4 className="text-[14px] font-bold text-slate-800 leading-tight">{t.name}</h4>
+                  <h4 className="text-[13px] font-bold text-slate-800 leading-tight">{t.name}</h4>
                   <p className="text-[12px] text-slate-400 mt-0.5">{t.desc}</p>
                 </div>
               </div>

@@ -71,7 +71,7 @@ export default function EWIntro() {
             </span>
 
             {/* Heading */}
-            <h2 className="text-[clamp(20px,4.5vw,44px)] font-bold leading-[1.12] tracking-tight mb-4 text-slate-900">
+            <h2 className="text-[clamp(19px,4vw,43px)] font-bold leading-[1.12] tracking-tight mb-4 text-slate-900">
               Trusted{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Enterprise Web Development

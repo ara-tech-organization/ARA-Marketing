@@ -55,7 +55,7 @@ export default function EWWhoShould() {
             style={{ background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
             <BrainCircuit size={9} /> Who Should Invest
           </span>
-          <h2 className="text-[clamp(20px,4vw,44px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Who Should Invest in an{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Enterprise Website?
@@ -90,7 +90,7 @@ export default function EWWhoShould() {
                   style={{ background: `${color}18`, border: `1px solid ${color}30` }}>
                   <Icon size={17} style={{ color }} />
                 </div>
-                <h3 className="text-[14px] sm:text-[15px] lg:text-[16px] font-bold text-slate-800 leading-snug">{title}</h3>
+                <h3 className="text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-slate-800 leading-snug">{title}</h3>
               </div>
 
               <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.78] mb-3 sm:mb-4 lg:mb-5">{desc}</p>

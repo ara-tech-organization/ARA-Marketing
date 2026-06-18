@@ -65,7 +65,7 @@ export default function WAProcess() {
           >
             <GitBranch size={10} /> Our Proven Process
           </span>
-          <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-3 sm:mb-4">
             How We Build Your{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Web Application
@@ -124,7 +124,7 @@ export default function WAProcess() {
                   onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 12px 32px ${color}18` }}
                   onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 16px rgba(37,99,235,0.05)' }}
                 >
-                  <h3 className="text-[12.5px] xl:text-[13px] font-bold text-slate-800 mb-2 leading-snug">{title}</h3>
+                  <h3 className="text-[11px] xl:text-[12px] font-bold text-slate-800 mb-2 leading-snug">{title}</h3>
                   <p className="text-[11px] xl:text-[11.5px] text-slate-500 leading-[1.7]">{desc}</p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function WAProcess() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                  <h3 className="text-[13px] xs:text-[14px] font-bold text-slate-800 leading-snug">{title}</h3>
+                  <h3 className="text-[12px] xs:text-[13px] font-bold text-slate-800 leading-snug">{title}</h3>
                   <span
                     className="px-2 py-0.5 rounded-full text-[8px] xs:text-[9px] font-bold flex-shrink-0"
                     style={{ background: `${color}10`, color }}

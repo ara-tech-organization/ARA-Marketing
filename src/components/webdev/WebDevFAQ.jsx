@@ -40,7 +40,7 @@ export default function WebDevFAQ() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> FAQs
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
@@ -106,7 +106,7 @@ export default function WebDevFAQ() {
                   style={{ color: '#eff6ff', fontFamily: 'var(--font-poppins)', lineHeight: 0.85 }}>
                   {String(active + 1).padStart(2, '0')}
                 </span>
-                <h3 className="text-[15px] font-bold text-slate-800 leading-snug pt-1">
+                <h3 className="text-[14px] font-bold text-slate-800 leading-snug pt-1">
                   {faqs[active].q}
                 </h3>
               </div>

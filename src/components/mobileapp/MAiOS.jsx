@@ -1,4 +1,4 @@
-﻿import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
+import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
 
 import iosImage from '../../assets/MobileApp/IOS.png'
 
@@ -72,7 +72,7 @@ export default function MAiOS() {
               style={{ background: 'rgba(37,99,235,0.08)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.2)' }}>
               <Smartphone size={11} /> iOS App Development
             </span>
-            <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               iOS App Development{' '}
               <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Services
@@ -102,7 +102,7 @@ export default function MAiOS() {
                     <Icon size={16} style={{ color: '#1e40af' }} />
                   </div>
                   <div>
-                    <h3 className="text-[13.5px] font-bold text-slate-800 mb-1">{title}</h3>
+                    <h3 className="text-[12px] font-bold text-slate-800 mb-1">{title}</h3>
                     <p className="text-[12.5px] text-slate-500 leading-[1.65]">{desc}</p>
                   </div>
                 </div>

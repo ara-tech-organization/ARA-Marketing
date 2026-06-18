@@ -54,7 +54,7 @@ function StepCard({ s, isLast }) {
         </div>
 
         {/* Title */}
-        <h3 className="text-[14px] font-bold text-slate-900 mb-2 leading-snug
+        <h3 className="text-[13px] font-bold text-slate-900 mb-2 leading-snug
           transition-colors duration-300 group-hover:text-blue-700">
           {s.title}
         </h3>
@@ -92,7 +92,7 @@ export default function Process() {
             <Rocket size={11} /> How We Work
           </span>
           <h2
-            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             Our Proven Digital Marketing Workflow
@@ -132,7 +132,7 @@ export default function Process() {
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-[10px] font-black" style={{ color: s.color }}>Step {s.n}</span>
                   </div>
-                  <h3 className="text-[14px] font-bold text-slate-900 mb-1">{s.title}</h3>
+                  <h3 className="text-[13px] font-bold text-slate-900 mb-1">{s.title}</h3>
                   <p className="text-[12px] text-slate-500 leading-relaxed">{s.desc}</p>
                 </div>
               </div>

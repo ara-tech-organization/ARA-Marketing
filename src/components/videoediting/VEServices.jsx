@@ -105,7 +105,7 @@ export default function VEServices() {
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <Layers size={10} /> Video Editing Services
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
             Complete Video Production &amp;{' '}
             <span style={gradBlue}>Editing Solutions</span>
           </h2>
@@ -161,7 +161,7 @@ export default function VEServices() {
                 </div>
                 <div>
                   <span className="block text-[10px] font-black uppercase tracking-widest mb-0.5" style={{ color: svc.color }}>{svc.tag}</span>
-                  <h3 className="text-[16px] sm:text-[20px] font-bold text-slate-900 leading-tight">{svc.label}</h3>
+                  <h3 className="text-[15px] sm:text-[19px] font-bold text-slate-900 leading-tight">{svc.label}</h3>
                 </div>
               </div>
 

@@ -29,7 +29,7 @@ export default function WhyUs() {
             <Zap size={11} /> Why Choose Us
           </span>
           <h2
-            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             Why Do Businesses Choose<br />ARA Discover Marketing?
@@ -86,7 +86,7 @@ export default function WhyUs() {
                 <span className="text-[13px] font-bold text-white/80">5.0 — Excellent</span>
               </div>
 
-              <h3 className="text-[18px] font-bold text-white leading-snug mb-7">
+              <h3 className="text-[17px] font-bold text-white leading-snug mb-7">
                 #1 Rated Digital Marketing<br />Agency in Thanjavur
               </h3>
 
@@ -140,7 +140,7 @@ export default function WhyUs() {
 
                   {/* Text */}
                   <div className="flex-1">
-                    <h4 className="text-[15px] font-bold text-slate-900 mb-1.5
+                    <h4 className="text-[14px] font-bold text-slate-900 mb-1.5
                       transition-colors duration-300 group-hover:text-blue-700">
                       {r.title}
                     </h4>

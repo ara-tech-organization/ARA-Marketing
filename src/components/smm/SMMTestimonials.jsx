@@ -70,7 +70,7 @@ export default function SMMTestimonials() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> Client Reviews
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             What Clients Say About Our{' '}
             <span className="text-gradient-blue">Social Media Marketing</span> Services
           </h2>

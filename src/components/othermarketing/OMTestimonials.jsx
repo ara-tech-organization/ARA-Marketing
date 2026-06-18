@@ -57,7 +57,7 @@ export default function OMTestimonials() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4 shadow-sm">
               <MessageSquare size={11} /> Client Testimonials
             </span>
-            <h2 className="text-[clamp(24px,3.5vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               What Clients Say About{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Our Services

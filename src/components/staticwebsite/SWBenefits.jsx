@@ -108,7 +108,7 @@ function BenefitCard({ benefit, large }) {
 
         {/* Title */}
         <h3
-          className={`${large ? 'text-[18px]' : 'text-[15px]'} font-bold text-white leading-snug mb-3`}
+          className={`${large ? 'text-[17px]' : 'text-[14px]'} font-bold text-white leading-snug mb-3`}
         >
           {title}
         </h3>
@@ -184,7 +184,7 @@ export default function SWBenefits() {
             >
               <Star size={11} /> Key Benefits
             </span>
-            <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-white leading-tight tracking-tight">
+            <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold text-white leading-tight tracking-tight">
               Benefits of{' '}
               <span className="text-gradient-blue">
                 Static Websites

@@ -25,7 +25,7 @@ export default function ECDeliveryPromise() {
               style={{ background: 'rgba(37,99,235,0.07)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.18)' }}>
               <Award size={11} /> Our Delivery Promise
             </span>
-            <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Committed to{' '}
               <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Delivering Excellence
@@ -83,7 +83,7 @@ export default function ECDeliveryPromise() {
                   <Icon size={18} style={{ color }} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-[13.5px] font-bold text-slate-900 leading-snug mb-1">
+                  <h3 className="text-[12px] font-bold text-slate-900 leading-snug mb-1">
                     {title.replace('\n', ' ')}
                   </h3>
                   <p className="text-[12px] text-slate-600 leading-[1.7]">{desc}</p>

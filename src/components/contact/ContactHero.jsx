@@ -71,7 +71,7 @@ export default function ContactHero() {
 
         {/* Heading */}
         <h1 className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-5"
-          style={{ fontSize: 'clamp(24px, 3.5vw, 44px)', fontWeight: 700 }}
+          style={{ fontSize: 'clamp(23px,3.1vw,43px)', fontWeight: 700 }}
         >
           Let&apos;s Build Something{' '}
           <span style={{

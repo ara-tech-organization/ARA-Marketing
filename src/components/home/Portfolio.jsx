@@ -44,7 +44,7 @@ export default function Portfolio() {
               <Briefcase size={11} /> Our Portfolio
             </span>
             <h2
-              className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+              className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
               style={{ fontWeight: 700 }}
             >
               Successful Projects &amp;<br />Brand Growth Stories
@@ -94,7 +94,7 @@ export default function Portfolio() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-[15px] font-bold text-slate-900 leading-snug mb-3
+                <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-3
                   transition-colors duration-300 group-hover:text-blue-600 line-clamp-2">
                   {c.title}
                 </h3>

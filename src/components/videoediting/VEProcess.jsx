@@ -31,7 +31,7 @@ export default function VEProcess() {
               style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.2)', color: '#2563eb' }}>
               <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(24px,4vw,46px)] font-bold text-white leading-[1.1] tracking-tight" style={{ fontWeight: 700 }}>
+            <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold text-white leading-[1.1] tracking-tight" style={{ fontWeight: 700 }}>
               Our Strategic Video{' '}
               <span style={{
                 background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
@@ -100,7 +100,7 @@ function StepCard({ num, Icon, title, desc, color, accent, border }) {
             <Icon size={14} style={{ color }} />
           </div>
         </div>
-        <h3 className="text-[13.5px] font-bold text-white leading-snug mb-2" style={{ fontWeight: 700 }}>{title}</h3>
+        <h3 className="text-[12px] font-bold text-white leading-snug mb-2" style={{ fontWeight: 700 }}>{title}</h3>
         <p className="text-[12px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.5)' }}>{desc}</p>
       </div>
     </div>

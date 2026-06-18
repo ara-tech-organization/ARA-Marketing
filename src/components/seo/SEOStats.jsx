@@ -66,7 +66,7 @@ export default function SEOStats() {
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6 shadow-sm">
               <TrendingUp size={11} /> Our Results
             </span>
-            <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               Delivering Measurable SEO Growth{' '}
               <span className="text-gradient-blue">&amp; Organic Success</span>
             </h2>

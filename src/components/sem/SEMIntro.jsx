@@ -32,7 +32,7 @@ export default function SEMIntro() {
             border border-blue-100 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5">
             <Cpu size={11} /> AI-Driven Google Advertising
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
             AI-Driven Google Advertising<br />
             Solutions That <span className="text-gradient-blue">Deliver Real Results</span>
           </h2>

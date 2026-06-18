@@ -37,7 +37,7 @@ export default function SEMCTA() {
             <Zap size={11} /> Ready to Generate More Leads
           </span>
 
-          <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
+          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
             Are You Ready to Generate More Leads{' '}
             <span className="text-gradient-blue">Through Google Ads?</span>
           </h2>

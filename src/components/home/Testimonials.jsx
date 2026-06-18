@@ -1,4 +1,4 @@
-﻿import { Star, Quote, CheckCheck } from 'lucide-react'
+import { Star, Quote, CheckCheck } from 'lucide-react'
 import useTilt from '../../hooks/useTilt'
 
 const testimonials = [
@@ -113,7 +113,7 @@ export default function Testimonials() {
             <Star size={11} /> Client Reviews
           </span>
           <h2
-            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             What Our Clients Say<br />About Our Services

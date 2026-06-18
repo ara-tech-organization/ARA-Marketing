@@ -49,7 +49,7 @@ export default function SEOTestimonials() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <MessageSquare size={11} /> Testimonials
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Testimonials
           </h2>
           <p className="text-[15px] text-slate-500 max-w-xl mx-auto">

@@ -1,4 +1,4 @@
-﻿import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
+import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
 
 const industries = [
   { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#1e40af' },
@@ -29,7 +29,7 @@ export default function MAIndustries() {
             style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
             <Sparkles size={11} /> Industries We Serve
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-white leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-white leading-tight tracking-tight mb-4">
             Mobile Apps for Every{' '}
             <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Industry
@@ -63,7 +63,7 @@ export default function MAIndustries() {
                   style={{ background: `${color}20`, border: `1px solid ${color}35` }}>
                   <Icon size={24} style={{ color }} />
                 </div>
-                <h3 className="text-[16px] font-bold text-white mb-2">{title}</h3>
+                <h3 className="text-[15px] font-bold text-white mb-2">{title}</h3>
                 <p className="text-[13px] leading-[1.75]" style={{ color: '#94a3b8' }}>{desc}</p>
               </div>
             ))}
@@ -88,7 +88,7 @@ export default function MAIndustries() {
                   style={{ background: `${color}20`, border: `1px solid ${color}30` }}>
                   <Icon size={19} style={{ color }} />
                 </div>
-                <h3 className="text-[14px] font-bold text-white mb-2">{title}</h3>
+                <h3 className="text-[13px] font-bold text-white mb-2">{title}</h3>
                 <p className="text-[12.5px] leading-[1.7]" style={{ color: '#94a3b8' }}>{desc}</p>
               </div>
             ))}

@@ -33,7 +33,7 @@ export default function SEMAssurance() {
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
               <Award size={11} /> Our Assurance
             </span>
-            <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Our Assurance
             </h2>
           </div>
@@ -69,7 +69,7 @@ export default function SEMAssurance() {
                   <Award size={24} />
                 </div>
 
-                <h3 className="text-[18px] font-bold text-slate-900 leading-snug mb-4">
+                <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-4">
                   6 Core Commitments to Your Google Ads Success
                 </h3>
                 <p className="text-[13px] text-slate-600 leading-[1.8] mb-6">
@@ -116,7 +116,7 @@ export default function SEMAssurance() {
                   <Icon size={18} style={{ color }} />
                 </div>
                 <div>
-                  <h3 className="text-[13.5px] font-bold text-slate-900 mb-1.5 leading-snug">{title}</h3>
+                  <h3 className="text-[12px] font-bold text-slate-900 mb-1.5 leading-snug">{title}</h3>
                   <p className="text-[12.5px] text-slate-500 leading-[1.75]">{desc}</p>
                 </div>
               </div>

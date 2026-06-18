@@ -67,7 +67,7 @@ export default function AboutCEO() {
             <Briefcase size={11} /> Our Leadership
           </span>
           <h2 className="font-bold text-slate-900 leading-tight tracking-tight"
-            style={{ fontSize: 'clamp(26px,3.5vw,44px)' }}>
+            style={{ fontSize: 'clamp(25px,3.1vw,43px)' }}>
             Meet The Visionary Behind{' '}
             <span style={{
               background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
@@ -183,7 +183,7 @@ export default function AboutCEO() {
               style={{ background: '#f8fafc', border: '1.5px solid #e2e8f0' }}>
               <div className="flex items-center gap-2 mb-5">
                 <Sparkles size={15} style={{ color: '#2563eb' }} />
-                <h4 className="text-[12px] font-bold uppercase tracking-widest text-slate-700">
+                <h4 className="text-[11px] font-bold uppercase tracking-widest text-slate-700">
                   Areas of Focus
                 </h4>
               </div>

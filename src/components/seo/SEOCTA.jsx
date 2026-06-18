@@ -37,7 +37,7 @@ export default function SEOCTA() {
               <Zap size={11} /> Ready to Rank Higher
             </span>
 
-            <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               Are You Ready to Boost Your{' '}
               <span className="text-gradient-blue">
                 Rankings &amp; Organic Traffic?

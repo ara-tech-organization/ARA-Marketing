@@ -1,4 +1,4 @@
-﻿import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
+import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
 
 import androidImage from '../../assets/MobileApp/Android.png'
 
@@ -27,7 +27,7 @@ export default function MAAndroid() {
               style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
               <Smartphone size={11} /> Android App Development
             </span>
-            <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-white leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-white leading-tight tracking-tight mb-5">
               Android App Development{' '}
               <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Services

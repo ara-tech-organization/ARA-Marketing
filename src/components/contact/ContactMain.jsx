@@ -237,7 +237,7 @@ export default function ContactMain() {
                         style={{ background: 'rgba(5,150,105,0.15)', border: '1px solid rgba(5,150,105,0.3)' }}>
                         <CheckCircle2 size={32} style={{ color: '#10b981' }} />
                       </div>
-                      <h3 className="text-[22px] font-bold text-white mb-3" style={{ fontWeight: 700 }}>
+                      <h3 className="text-[21px] font-bold text-white mb-3" style={{ fontWeight: 700 }}>
                         Message Sent Successfully
                       </h3>
                       <p className="text-[14px] leading-[1.75] max-w-[400px]"
@@ -255,7 +255,7 @@ export default function ContactMain() {
                   ) : (
                     <>
                       <div className="mb-6">
-                        <h2 className="text-[clamp(18px,2.5vw,24px)] font-bold text-white leading-tight tracking-[-0.5px]"
+                        <h2 className="text-[clamp(17px,2.2vw,23px)] font-bold text-white leading-tight tracking-[-0.5px]"
                           style={{ fontWeight: 700 }}>
                           Start a Conversation
                         </h2>

@@ -1,4 +1,4 @@
-﻿import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
+import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
 
 import introImage from '../../assets/MobileApp/m1.png'
 
@@ -55,7 +55,7 @@ export default function MAIntro() {
             style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
             <Sparkles size={11} /> Why Mobile Apps Matter
           </span>
-          <h2 className="text-[clamp(24px,3vw,42px)] font-bold leading-tight tracking-tight text-white mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold leading-tight tracking-tight text-white mb-5">
             Mobile Apps — The{' '}
             <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Backbone of Growth
@@ -136,7 +136,7 @@ export default function MAIntro() {
                 style={{ background: `${color}18`, border: `1px solid ${color}30` }}>
                 <Icon size={19} style={{ color }} />
               </div>
-              <h3 className="text-[14px] font-bold text-white mb-2 leading-snug">{title}</h3>
+              <h3 className="text-[13px] font-bold text-white mb-2 leading-snug">{title}</h3>
               <p className="text-[12.5px] leading-[1.75]" style={{ color: '#94a3b8' }}>{desc}</p>
             </div>
           ))}

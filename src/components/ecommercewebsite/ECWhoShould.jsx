@@ -31,7 +31,7 @@ export default function ECWhoShould() {
             style={{ background: 'rgba(37,99,235,0.18)', color: '#93c5fd', border: '1px solid rgba(37,99,235,0.30)' }}>
             <Users size={10} /> Ideal For
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold leading-[1.1] tracking-tight mb-4 text-white">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4 text-white">
             Who Should Invest in{' '}
             <span style={{ color: '#60a5fa' }}>
               E-Commerce Websites?
@@ -65,7 +65,7 @@ export default function ECWhoShould() {
                   <Icon size={18} style={{ color }} />
                 </div>
                 <div>
-                  <h3 className="text-[14.5px] font-bold text-white leading-tight">{label}</h3>
+                  <h3 className="text-[13px] font-bold text-white leading-tight">{label}</h3>
                   <div className="w-8 h-0.5 mt-2 rounded-full transition-all duration-300 group-hover:w-14" style={{ background: color }} />
                 </div>
               </div>

@@ -25,7 +25,7 @@ export default function SMMCTA() {
         </div>
 
         {/* Heading */}
-        <h2 className="reveal text-[clamp(22px,3vw,38px)] font-bold text-white leading-tight tracking-tight mb-5 max-w-4xl mx-auto">
+        <h2 className="reveal text-[clamp(21px,2.7vw,37px)] font-bold text-white leading-tight tracking-tight mb-5 max-w-4xl mx-auto">
           Are You Ready to Grow Your Brand Through{' '}
           <span style={{
             background: 'linear-gradient(135deg, #93c5fd, #60a5fa, #3b82f6)',

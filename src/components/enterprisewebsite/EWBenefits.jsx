@@ -71,7 +71,7 @@ function BentoCard({ icon: Icon, title, body, color, img, large = false }) {
           style={{ background: `${color}14`, border: `1px solid ${color}28` }}>
           <Icon size={17} style={{ color }} />
         </div>
-        <h3 className="text-[13px] sm:text-[14px] lg:text-[15px] font-bold text-slate-800 mb-2 sm:mb-2.5 leading-snug">{title}</h3>
+        <h3 className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold text-slate-800 mb-2 sm:mb-2.5 leading-snug">{title}</h3>
         <p className="text-[11.5px] sm:text-[12.5px] lg:text-[13px] text-slate-500 leading-[1.78] flex-1">{body}</p>
 
         {/* Bottom bar */}
@@ -101,7 +101,7 @@ export default function EWBenefits() {
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
             <Zap size={9} /> Core Benefits
           </span>
-          <h2 className="text-[clamp(20px,4vw,44px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Benefits of{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Enterprise Website

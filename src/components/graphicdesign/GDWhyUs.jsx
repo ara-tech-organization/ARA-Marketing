@@ -56,7 +56,7 @@ export default function GDWhyUs() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> Why Choose Us
           </span>
-          <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.5vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Why Do Businesses Trust Our{' '}
             <span className="text-gradient-blue">Creative Branding Expertise?</span>
           </h2>
@@ -84,7 +84,7 @@ export default function GDWhyUs() {
               >
                 <Icon size={22} />
               </div>
-              <h3 className="text-[15px] font-bold text-slate-800 mb-2">{title}</h3>
+              <h3 className="text-[14px] font-bold text-slate-800 mb-2">{title}</h3>
               <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
             </div>
           ))}

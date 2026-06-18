@@ -23,7 +23,7 @@ export default function WebDevProcess() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Our Process
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Our Strategic Website{' '}
             <span className="text-gradient-blue">Development Workflow</span>
           </h2>
@@ -76,7 +76,7 @@ export default function WebDevProcess() {
                         style={{ background: step.light || step.color + '12' }}>
                         <Icon size={16} style={{ color: step.color }} />
                       </div>
-                      <h3 className="text-[11px] font-bold text-slate-700 leading-tight">{step.title}</h3>
+                      <h3 className="text-[10px] font-bold text-slate-700 leading-tight">{step.title}</h3>
                     </div>
                   </div>
                 )
@@ -107,7 +107,7 @@ export default function WebDevProcess() {
                         style={{ background: step.light || step.color + '12' }}>
                         <Icon size={16} style={{ color: step.color }} />
                       </div>
-                      <h3 className="text-[13.5px] font-bold text-slate-700 leading-snug">{step.title}</h3>
+                      <h3 className="text-[12px] font-bold text-slate-700 leading-snug">{step.title}</h3>
                     </div>
                   </div>
                 </div>

@@ -104,7 +104,7 @@ export default function OMServices() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
               <Sparkles size={11} /> Our Services
             </span>
-            <h2 className="text-[clamp(24px,3.5vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Strategic Marketing Services That{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Drive Real Results
@@ -148,7 +148,7 @@ export default function OMServices() {
               <s.icon size={10} /> {s.badge}
             </span>
 
-            <h3 className="text-[20px] sm:text-[22px] font-bold text-slate-900 leading-snug mb-4">{s.heading}</h3>
+            <h3 className="text-[19px] sm:text-[21px] font-bold text-slate-900 leading-snug mb-4">{s.heading}</h3>
             <div className="flex flex-col gap-2.5 mb-7">
               {s.desc.map((p, i) => (
                 <p key={i} className="text-[13.5px] text-slate-500 leading-[1.85]">{p}</p>

@@ -108,7 +108,7 @@ export default function GDTestimonials() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Client Testimonials
           </span>
-          <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2 className="text-[clamp(21px,2.5vw,37px)] font-bold text-slate-900 leading-tight tracking-tight">
             What Clients Say About{' '}
             <span className="text-gradient-blue">Our Branding Services</span>
           </h2>

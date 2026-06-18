@@ -1,4 +1,4 @@
-﻿import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
+import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
 
 const steps = [
   {
@@ -54,7 +54,7 @@ export default function MAProcess() {
             style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
             <GitBranch size={11} /> Our Process
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             How We Build Your{' '}
             <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Mobile App?
@@ -95,7 +95,7 @@ export default function MAProcess() {
                     e.currentTarget.style.boxShadow = 'none'
                   }}
                 >
-                  <h3 className="text-[13px] font-bold mb-2 leading-snug" style={{ color: '#1e293b' }}>{title}</h3>
+                  <h3 className="text-[12px] font-bold mb-2 leading-snug" style={{ color: '#1e293b' }}>{title}</h3>
                   <p className="text-[11.5px] text-slate-500 leading-[1.7]">{desc}</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function MAProcess() {
                 <span className="text-[10px] font-black" style={{ color: `${color}80` }}>{num}</span>
               </div>
               <div>
-                <h3 className="text-[14px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
                 <p className="text-[12.5px] text-slate-500 leading-[1.7]">{desc}</p>
               </div>
             </div>

@@ -58,7 +58,7 @@ export default function SWWhoShouldInvest() {
           >
             <Target size={11} /> Who Should Invest
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Who Should Invest in a{' '}
             <span
               style={{
@@ -118,7 +118,7 @@ export default function SWWhoShouldInvest() {
                   </div>
 
                   <div>
-                    <h3 className="text-[19px] font-bold text-white mb-3 leading-snug">{title}</h3>
+                    <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">{title}</h3>
                     <p className="text-[13px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.78)' }}>{desc}</p>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ export default function SWWhoShouldInvest() {
                     </span>
                   </div>
                   <div>
-                    <h3 className="text-[19px] font-bold text-white mb-3 leading-snug">{title}</h3>
+                    <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">{title}</h3>
                     <p className="text-[13px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.78)' }}>{desc}</p>
                   </div>
                 </div>

@@ -59,7 +59,7 @@ export default function SWWhyUs() {
               <Award size={11} /> Why Choose Us
             </span>
 
-            <h2 className="text-[clamp(24px,2.8vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,2.5vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               Why{' '}
               <span
                 style={{
@@ -167,7 +167,7 @@ export default function SWWhyUs() {
 
                 {/* Text */}
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-[14px] font-bold text-slate-800 mb-1 leading-snug">{title}</h3>
+                  <h3 className="text-[13px] font-bold text-slate-800 mb-1 leading-snug">{title}</h3>
                   <p className="text-[12.5px] text-slate-500 leading-[1.7]">{desc}</p>
                 </div>
               </div>

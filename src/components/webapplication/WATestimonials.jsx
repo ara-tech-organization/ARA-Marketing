@@ -72,7 +72,7 @@ export default function WATestimonials() {
           >
             <MessageSquare size={10} /> Client Reviews & Ratings
           </span>
-          <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 tracking-tight mb-3">
+          <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold text-slate-900 tracking-tight mb-3">
             What Our{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Clients Say

@@ -85,7 +85,7 @@ export default function OMCTA() {
               <Zap size={11} /> Ready to Grow Your Business
             </span>
 
-            <h2 className="text-[clamp(24px,3.5vw,48px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,3.1vw,47px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
               Ready to Improve{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Customer Engagement

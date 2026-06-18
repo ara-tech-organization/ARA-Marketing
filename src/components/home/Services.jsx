@@ -58,7 +58,7 @@ export default function Services() {
               <TrendingUp size={11} /> Digital Marketing Services
             </span>
             <h2
-              className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-6"
+              className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight mb-6"
               style={{ fontWeight: 700 }}
             >
               Result-Driven Digital Marketing Services<br />for Modern Businesses
@@ -149,7 +149,7 @@ export default function Services() {
             <Layers size={11} /> Our Services
           </span>
           <h2
-            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             Complete Digital Marketing &amp;<br />Branding Solutions
@@ -172,7 +172,7 @@ export default function Services() {
 
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <h3 className="svc-title text-[17px] font-bold text-slate-900 leading-tight transition-colors duration-300">
+                    <h3 className="svc-title text-[16px] font-bold text-slate-900 leading-tight transition-colors duration-300">
                       {s.title}
                     </h3>
                     {s.tag && (
@@ -207,7 +207,7 @@ export default function Services() {
           rounded-2xl p-7">
           <div className="flex items-center gap-2 text-slate-700 flex-shrink-0">
             <LayoutGrid size={16} className="text-blue-600" />
-            <h3 className="text-[15px] font-bold">Other Marketing Services</h3>
+            <h3 className="text-[14px] font-bold">Other Marketing Services</h3>
           </div>
           <div className="flex flex-wrap gap-2 flex-1">
             {otherTags.map(t => (

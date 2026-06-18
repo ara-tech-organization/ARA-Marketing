@@ -42,7 +42,7 @@ export default function CTA() {
             </span>
 
             <h2
-              className="text-[clamp(24px,3.8vw,40px)] font-bold text-white
+              className="text-[clamp(23px,3.4vw,39px)] font-bold text-white
               leading-tight tracking-[-0.8px] mb-4"
               style={{ fontWeight: 700 }}
             >

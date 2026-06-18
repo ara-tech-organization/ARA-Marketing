@@ -37,7 +37,7 @@ export default function VEPortfolio() {
             style={{ background: 'rgba(124,58,237,0.1)', border: '1px solid rgba(124,58,237,0.2)', color: '#7c3aed' }}>
             <Image size={11} /> Portfolio
           </span>
-          <h2 className="text-[clamp(24px,4vw,46px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
+          <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
             Creative Video Samples, Reels &amp;{' '}
             <span style={{
               background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',

@@ -23,7 +23,7 @@ function PromiseRow({ icon: Icon, title, desc, color, index }) {
         <Icon size={18} style={{ color }} />
       </div>
       <div className="flex-1 min-w-0">
-        <h3 className="text-[14px] font-bold text-slate-900 mb-1 leading-snug">{title}</h3>
+        <h3 className="text-[13px] font-bold text-slate-900 mb-1 leading-snug">{title}</h3>
         <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
       </div>
     </div>
@@ -41,7 +41,7 @@ export default function SEOAssurance() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Award size={11} /> Our Assurance
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Our Assurance
           </h2>
           <p className="text-[15px] text-slate-600 max-w-2xl mx-auto leading-[1.85]">
@@ -65,7 +65,7 @@ export default function SEOAssurance() {
                 style={{ background: '#2563eb', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
                 <Award size={24} />
               </div>
-              <h3 className="text-[18px] font-bold text-slate-900 leading-snug mb-3">
+              <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-3">
                 6 Core Commitments to Your SEO Success
               </h3>
               <p className="text-[13px] text-slate-600 leading-[1.8] mb-6">

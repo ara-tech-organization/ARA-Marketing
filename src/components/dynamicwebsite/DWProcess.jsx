@@ -39,7 +39,7 @@ export default function DWProcess() {
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <Workflow size={10} /> Our Development Process
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             How We Build{' '}
             <span style={gradBlue}>Dynamic Websites?</span>
           </h2>
@@ -75,7 +75,7 @@ export default function DWProcess() {
                   e.currentTarget.style.boxShadow = '0 4px 18px rgba(37,99,235,0.07)'
                 }}>
                 <span className="text-[10px] font-black uppercase tracking-widest mb-2 block" style={{ color }}>Step {num}</span>
-                <h3 className="text-[12.5px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
+                <h3 className="text-[11px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
                 <p className="text-[11px] text-slate-500 leading-[1.75]">{desc}</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function DWProcess() {
               </div>
               <div>
                 <span className="text-[10px] font-black uppercase tracking-widest block mb-1" style={{ color }}>Step {num}</span>
-                <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-1">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-1">{title}</h3>
                 <p className="text-[12px] text-slate-500 leading-[1.75]">{desc}</p>
               </div>
             </div>

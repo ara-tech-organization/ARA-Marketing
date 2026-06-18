@@ -49,7 +49,7 @@ export default function EWTestimonials() {
             style={{ background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
             <Users size={9} /> Client Success Stories
           </span>
-          <h2 className="text-[clamp(20px,4vw,44px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Our Clients{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Speak

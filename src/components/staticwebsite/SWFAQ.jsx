@@ -106,7 +106,7 @@ export default function SWFAQ() {
           >
             <HelpCircle size={11} /> FAQs
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Frequently Asked{' '}
             <span
               style={{

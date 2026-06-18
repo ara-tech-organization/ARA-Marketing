@@ -31,7 +31,7 @@ export default function WAWhyUs() {
           >
             <Trophy size={10} /> Why Choose Ara
           </span>
-          <h2 className="text-[clamp(22px,3vw,42px)] font-bold tracking-tight text-slate-900">
+          <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900">
             Why Businesses{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Choose Us
@@ -59,7 +59,7 @@ export default function WAWhyUs() {
                   <Icon size={19} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-[14px] xs:text-[15px] font-bold text-slate-800 mb-1">{label}</h3>
+                  <h3 className="text-[13px] xs:text-[14px] font-bold text-slate-800 mb-1">{label}</h3>
                   <p className="text-[12.5px] xs:text-[13.5px] text-slate-500 leading-relaxed">{desc}</p>
                 </div>
                 <ArrowRight
@@ -87,7 +87,7 @@ export default function WAWhyUs() {
                   >
                     <Smartphone size={18} />
                   </div>
-                  <h3 className="text-[14px] xs:text-[15px] font-bold leading-tight" style={{ color: '#e2e8f0' }}>
+                  <h3 className="text-[13px] xs:text-[14px] font-bold leading-tight" style={{ color: '#e2e8f0' }}>
                     Web App + Mobile App Integration
                   </h3>
                 </div>

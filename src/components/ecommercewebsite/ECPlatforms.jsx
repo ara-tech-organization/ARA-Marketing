@@ -75,7 +75,7 @@ export default function ECPlatforms() {
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
             <Layers size={10} /> Platform Expertise
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             We Specialise in{' '}
             <span style={{ color: '#2563eb' }}>
               Leading E-Commerce Platforms
@@ -131,7 +131,7 @@ export default function ECPlatforms() {
                   <Zap size={9} /> {plat.badge}
                 </span>
               </div>
-              <h3 className="text-[clamp(18px,2.5vw,26px)] font-bold text-slate-900 mb-2">{plat.name} Development</h3>
+              <h3 className="text-[clamp(17px,2.2vw,25px)] font-bold text-slate-900 mb-2">{plat.name} Development</h3>
               <p className="text-[13px] text-slate-500 leading-[1.75]">{plat.tagline}</p>
             </div>
 

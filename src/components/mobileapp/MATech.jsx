@@ -1,4 +1,4 @@
-﻿import { Code2, Server, Database, Cpu, Layers } from 'lucide-react'
+import { Code2, Server, Database, Cpu, Layers } from 'lucide-react'
 
 const categories = [
   {
@@ -44,7 +44,7 @@ export default function MATech() {
             style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
             <Code2 size={11} /> Technology Stack
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-white leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-white leading-tight tracking-tight mb-4">
             Cutting-Edge Technologies We{' '}
             <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Leverage

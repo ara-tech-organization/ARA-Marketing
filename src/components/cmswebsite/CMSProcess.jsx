@@ -1,4 +1,4 @@
-﻿import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
+import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
 
 const steps = [
   {
@@ -73,7 +73,7 @@ export default function CMSProcess() {
           >
             <Rocket size={11} /> Our Development Process
           </span>
-          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             How We Build{' '}
             <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               WordPress Websites
@@ -133,7 +133,7 @@ export default function CMSProcess() {
                   <div className="h-0.5 flex-1 rounded-full" style={{ background: `linear-gradient(90deg, ${color}50, transparent)` }} />
                 </div>
 
-                <h3 className="text-[12.5px] font-bold text-slate-800 leading-snug">{title}</h3>
+                <h3 className="text-[11px] font-bold text-slate-800 leading-snug">{title}</h3>
                 <p className="text-[11.5px] leading-[1.75] flex-1" style={{ color: '#64748b' }}>{desc}</p>
 
                 {/* Tags */}
@@ -172,7 +172,7 @@ export default function CMSProcess() {
                     STEP {num}
                   </span>
                 </div>
-                <h3 className="text-[13px] font-bold text-slate-800 leading-snug">{title}</h3>
+                <h3 className="text-[12px] font-bold text-slate-800 leading-snug">{title}</h3>
                 <p className="text-[12px] leading-[1.75] flex-1" style={{ color: '#64748b' }}>{desc}</p>
                 <div className="flex flex-wrap gap-1.5 mt-auto pt-1">
                   {tags.map(tag => (
@@ -212,7 +212,7 @@ export default function CMSProcess() {
                     style={{ color, background: `${color}12`, border: `1px solid ${color}20` }}>
                     {num}
                   </span>
-                  <h3 className="text-[14px] font-bold text-slate-800 leading-snug">{title}</h3>
+                  <h3 className="text-[13px] font-bold text-slate-800 leading-snug">{title}</h3>
                 </div>
                 <p className="text-[12.5px] leading-[1.75] mb-3" style={{ color: '#64748b' }}>{desc}</p>
                 <div className="flex flex-wrap gap-1.5">

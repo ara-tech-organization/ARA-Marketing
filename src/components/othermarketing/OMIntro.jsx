@@ -36,7 +36,7 @@ export default function OMIntro() {
               <Sparkles size={11} /> About Our Services
             </span>
 
-            <h2 className="text-[clamp(24px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Multi-Channel Marketing Solutions That{' '}
               <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Drive Engagement & Conversions

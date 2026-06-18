@@ -121,7 +121,7 @@ export default function DWServices() {
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <Layers size={10} /> Our Services
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Dynamic Website{' '}
             <span style={gradBlue}>Development Services</span>
           </h2>
@@ -182,7 +182,7 @@ export default function DWServices() {
                   style={{ background: `linear-gradient(135deg,${svc.color}15,${svc.color}08)`, border: `1.5px solid ${svc.color}25` }}>
                   <svc.icon size={18} style={{ color: svc.color }} />
                 </div>
-                <h3 className="text-[18px] sm:text-[20px] font-bold text-slate-900 leading-snug">{svc.label}</h3>
+                <h3 className="text-[17px] sm:text-[19px] font-bold text-slate-900 leading-snug">{svc.label}</h3>
               </div>
 
               <div className="flex flex-col gap-2.5 mb-7">

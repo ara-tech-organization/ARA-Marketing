@@ -78,7 +78,7 @@ export default function ECFAQ() {
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <HelpCircle size={11} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Frequently Asked{' '}
             <span style={{ color: '#2563eb' }}>
               Questions
@@ -183,7 +183,7 @@ export default function ECFAQ() {
 
               {/* Question text */}
               <div className="px-8 pt-6 pb-3">
-                <h3 className="text-[16px] sm:text-[17px] font-bold text-slate-900 leading-snug">{faq.q}</h3>
+                <h3 className="text-[15px] sm:text-[16px] font-bold text-slate-900 leading-snug">{faq.q}</h3>
               </div>
 
               {/* Divider */}

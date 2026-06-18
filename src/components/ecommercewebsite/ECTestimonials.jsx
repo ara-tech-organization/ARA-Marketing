@@ -48,7 +48,7 @@ export default function ECTestimonials() {
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
             <Users size={10} /> Client Success Stories
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold leading-[1.1] tracking-tight mb-4 text-slate-900">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4 text-slate-900">
             Success Stories From{' '}
             <span style={{ color: '#2563eb' }}>
               Our Clients

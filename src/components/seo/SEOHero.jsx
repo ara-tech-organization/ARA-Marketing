@@ -158,7 +158,7 @@ export default function SEOHero() {
               </span>
             </div>
 
-            <h1 className="animate-hero-d2 text-[clamp(20px,2.2vw,36px)] font-bold text-slate-900
+            <h1 className="animate-hero-d2 text-[clamp(19px,2vw,35px)] font-bold text-slate-900
               leading-[1.14] tracking-tight mb-5">
               Best SEO Services in Thanjavur to{' '}
               <span className="text-gradient-blue">Improve Rankings, Traffic</span>{' '}

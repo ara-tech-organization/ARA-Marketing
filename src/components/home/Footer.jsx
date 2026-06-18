@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-5 tracking-wide">Services</h4>
+            <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Services</h4>
             <ul className="flex flex-col gap-2.5">
               {services.map(({ label, href }) => (
                 <li key={label}>
@@ -113,7 +113,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-5 tracking-wide">Company</h4>
+            <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Company</h4>
             <ul className="flex flex-col gap-2.5">
               {company.map(({ label, href }) => (
                 <li key={label}>
@@ -131,7 +131,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-bold text-white mb-5 tracking-wide">Contact</h4>
+            <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Contact</h4>
             <div className="flex items-start gap-2.5 text-sm text-white/40 mb-3">
               <MapPin size={14} className="text-blue-400 flex-shrink-0 mt-0.5" />
               <span>67A, Giri Rd, Srinivasapuram, Thanjavur, Tamil Nadu 613009</span>

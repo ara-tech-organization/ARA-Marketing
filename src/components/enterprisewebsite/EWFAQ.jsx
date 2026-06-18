@@ -46,7 +46,7 @@ export default function EWFAQ() {
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
             <HelpCircle size={9} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(20px,4vw,42px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(19px,3.6vw,41px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Common Questions{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Answered

@@ -72,7 +72,7 @@ export default function EWHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(22px,3.5vw,46px)] font-bold leading-[1.06] tracking-tight mb-5 text-white">
+            <h1 className="text-[clamp(21px,3.1vw,45px)] font-bold leading-[1.06] tracking-tight mb-5 text-white">
               Transform Your{' '}
               <span style={{ background: 'linear-gradient(135deg,#a78bfa,#38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Enterprise

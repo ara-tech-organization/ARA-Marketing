@@ -56,7 +56,7 @@ export default function ECBenefits() {
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
             <Zap size={10} /> Key Benefits
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Benefits of{' '}
             <span style={{ color: '#2563eb' }}>
               E-Commerce Websites
@@ -84,7 +84,7 @@ export default function ECBenefits() {
 
               {/* Content */}
               <div className="flex-1 min-w-0">
-                <h3 className="text-[14.5px] font-bold text-slate-900 mb-1">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-900 mb-1">{title}</h3>
                 <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
               </div>
 
@@ -126,7 +126,7 @@ export default function ECBenefits() {
             <p className="text-[10px] font-black uppercase tracking-widest mb-3" style={{ color: 'rgba(255,255,255,0.55)' }}>
               ARA Discover Marketing
             </p>
-            <h3 className="text-[clamp(18px,3vw,32px)] font-bold text-white leading-[1.2] mb-4 max-w-lg">
+            <h3 className="text-[clamp(17px,2.7vw,31px)] font-bold text-white leading-[1.2] mb-4 max-w-lg">
               The Best E-Commerce Web Design &amp; Development Company in Thanjavur
             </h3>
             <p className="text-[13px] max-w-md leading-[1.7]" style={{ color: 'rgba(255,255,255,0.70)' }}>

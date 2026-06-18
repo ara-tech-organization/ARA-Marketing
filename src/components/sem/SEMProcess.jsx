@@ -28,7 +28,7 @@ function StepCard({ num, icon: Icon, title, desc, color }) {
           <Icon size={16} style={{ color }} />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-1">{title}</h3>
+          <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-1">{title}</h3>
           <p className="text-[12.5px] text-slate-500 leading-[1.72]">{desc}</p>
         </div>
         <span className="flex-shrink-0 text-[10px] font-black px-2 py-1 rounded-lg self-start mt-0.5"
@@ -50,7 +50,7 @@ export default function SEMProcess() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
               <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Our Strategic Google Ads{' '}
               <span className="text-gradient-blue">&amp; PPC Workflow</span>
             </h2>

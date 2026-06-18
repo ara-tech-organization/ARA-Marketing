@@ -93,7 +93,7 @@ export default function SEOFAQ() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <HelpCircle size={11} /> FAQs
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Frequently Asked Questions{' '}
             <span className="text-gradient-blue">(FAQs)</span>
           </h2>

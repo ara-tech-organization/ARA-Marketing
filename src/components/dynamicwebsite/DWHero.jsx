@@ -79,7 +79,7 @@ export default function DWHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(24px,3.5vw,48px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
+            <h1 className="text-[clamp(23px,3.1vw,47px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
               Build Powerful Dynamic Websites{' '}
               <span style={gradBlue}>That Grow With Your Business</span>
             </h1>

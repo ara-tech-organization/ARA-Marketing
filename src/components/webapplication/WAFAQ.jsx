@@ -45,7 +45,7 @@ export default function WAFAQ() {
           >
             <HelpCircle size={10} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(22px,3vw,40px)] font-bold tracking-tight text-slate-900 mb-3">
+          <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold tracking-tight text-slate-900 mb-3">
             Common{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Questions

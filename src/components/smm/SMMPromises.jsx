@@ -58,7 +58,7 @@ export default function SMMPromises() {
             <Layers size={11} /> Our Commitment
           </span>
 
-          <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Our{' '}
             <span className="text-gradient-blue">Promises</span>
           </h2>
@@ -120,7 +120,7 @@ export default function SMMPromises() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[15px] font-bold text-slate-800 mb-2.5 leading-snug">
+              <h3 className="text-[14px] font-bold text-slate-800 mb-2.5 leading-snug">
                 {title}
               </h3>
 

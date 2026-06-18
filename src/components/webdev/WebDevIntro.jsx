@@ -12,7 +12,7 @@ export default function WebDevIntro() {
                 border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
                 <Layers size={11} /> Our Approach
               </span>
-              <h2 className="text-[clamp(24px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+              <h2 className="text-[clamp(23px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
                 Professional Website Solutions That Drive{' '}
                 <span className="text-gradient-blue">Business Growth</span>
               </h2>

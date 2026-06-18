@@ -27,7 +27,7 @@ export default function DWWhyUs() {
               style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
               <Zap size={10} /> Why Choose Us
             </span>
-            <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+            <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
               Why We Stand Out{' '}
               <span style={gradBlue}>Today?</span>
             </h2>
@@ -54,7 +54,7 @@ export default function DWWhyUs() {
               </div>
               {/* Text */}
               <div className="flex-1 min-w-0">
-                <h3 className="text-[14px] sm:text-[16px] font-bold text-slate-900 mb-2 leading-snug">{title}</h3>
+                <h3 className="text-[13px] sm:text-[15px] font-bold text-slate-900 mb-2 leading-snug">{title}</h3>
                 <p className="text-[12.5px] sm:text-[13.5px] text-slate-500 leading-[1.80]">{desc}</p>
               </div>
               {/* Hover arrow */}

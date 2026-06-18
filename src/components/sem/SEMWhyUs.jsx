@@ -23,7 +23,7 @@ export default function SEMWhyUs() {
               style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
               <Award size={11} /> Why Choose Us
             </span>
-            <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Why Do Businesses Choose Our{' '}
               <span className="text-gradient-blue">Google Ads Expertise?</span>
             </h2>
@@ -66,7 +66,7 @@ export default function SEMWhyUs() {
                 </div>
               </div>
 
-              <h3 className="text-[14.5px] font-bold text-slate-900 leading-snug mb-2.5">{title}</h3>
+              <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-2.5">{title}</h3>
               <p className="text-[12.5px] text-slate-500 leading-[1.78]">{desc}</p>
 
               {/* Bottom accent bar */}

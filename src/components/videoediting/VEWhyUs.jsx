@@ -33,7 +33,7 @@ export default function VEWhyUs() {
             style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.2)', color: '#2563eb' }}>
             <Award size={11} /> Why Choose Us
           </span>
-          <h2 className="text-[clamp(24px,4vw,46px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
+          <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
             Why Businesses Trust Our{' '}
             <span style={{
               background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
@@ -87,7 +87,7 @@ export default function VEWhyUs() {
                   </span>
                 </div>
 
-                <h3 className="text-[15px] font-bold leading-snug mb-2.5" style={{ fontWeight: 700, color: '#0f172a' }}>
+                <h3 className="text-[14px] font-bold leading-snug mb-2.5" style={{ fontWeight: 700, color: '#0f172a' }}>
                   {title}
                 </h3>
                 <p className="text-[13px] leading-[1.78]" style={{ color: '#64748b' }}>

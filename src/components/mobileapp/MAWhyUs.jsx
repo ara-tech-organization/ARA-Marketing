@@ -1,4 +1,4 @@
-﻿import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
+import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
 
 import whyUsImage from '../../assets/MobileApp/m2.png'
 
@@ -59,7 +59,7 @@ export default function MAWhyUs() {
             style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
             <Sparkles size={11} /> What Makes Us Different
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Why Choose ARA Discover as Your{' '}
             <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               App Partner?
@@ -92,7 +92,7 @@ export default function MAWhyUs() {
                     style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>
                     <Trophy size={24} className="text-white" />
                   </div>
-                  <h3 className="text-[24px] font-bold text-white leading-tight mb-3">
+                  <h3 className="text-[23px] font-bold text-white leading-tight mb-3">
                     Professional Mobile App Development Services
                   </h3>
                   <p className="text-[14px] text-blue-100 leading-[1.8]">
@@ -139,7 +139,7 @@ export default function MAWhyUs() {
                   <Icon size={20} style={{ color }} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-[14.5px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
+                  <h3 className="text-[13px] font-bold text-slate-800 mb-1.5 leading-snug">{title}</h3>
                   <p className="text-[13px] text-slate-500 leading-[1.7]">{desc}</p>
                 </div>
                 <ChevronRight size={16} className="text-slate-300 flex-shrink-0 mt-0.5" />

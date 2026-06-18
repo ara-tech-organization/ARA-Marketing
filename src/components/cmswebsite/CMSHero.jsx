@@ -1,4 +1,4 @@
-﻿import { Globe, ArrowRight, ArrowUpRight, ChevronRight, Database, Layers, Cpu, Star, Sparkles, LayoutDashboard } from 'lucide-react'
+import { Globe, ArrowRight, ArrowUpRight, ChevronRight, Database, Layers, Cpu, Star, Sparkles, LayoutDashboard } from 'lucide-react'
 
 const stats = [
   { value: '40%+', label: 'Web Powered by WP',  color: '#2563eb' },
@@ -61,7 +61,7 @@ export default function CMSHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(22px,2.5vw,40px)] font-bold text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="animate-hero-d2 text-[clamp(21px,2.2vw,39px)] font-bold text-white leading-[1.1] tracking-tight mb-6">
               Build Powerful WordPress{' '}
               <span
                 style={{

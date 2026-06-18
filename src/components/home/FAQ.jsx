@@ -25,7 +25,7 @@ export default function FAQ() {
               <MessageSquare size={11} /> FAQs
             </span>
             <h2
-              className="text-[clamp(22px,2.8vw,34px)] font-bold text-slate-900
+              className="text-[clamp(21px,2.5vw,33px)] font-bold text-slate-900
               leading-tight tracking-tight mb-4"
               style={{ fontWeight: 700 }}
             >
@@ -38,7 +38,7 @@ export default function FAQ() {
 
             {/* Info card */}
             <div className="bg-blue-50 border border-blue-100 rounded-2xl p-7 mb-7">
-              <h3 className="text-[15px] font-bold text-slate-900 mb-2">Still have questions?</h3>
+              <h3 className="text-[14px] font-bold text-slate-900 mb-2">Still have questions?</h3>
               <p className="text-[13px] text-slate-500 leading-relaxed mb-5">
                 Our team is ready to help you find the best digital marketing strategy for your business.
               </p>

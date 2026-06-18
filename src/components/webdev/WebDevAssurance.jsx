@@ -25,7 +25,7 @@ export default function WebDevAssurance() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> Our Assurance
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Reliable Website Development with{' '}
             <span className="text-gradient-blue">Full Transparency</span>
           </h2>
@@ -63,7 +63,7 @@ export default function WebDevAssurance() {
                     <Icon size={28} style={{ color }} />
                   </div>
                 </div>
-                <h3 className="relative text-[15px] font-bold text-slate-800 mb-4 leading-snug">{title}</h3>
+                <h3 className="relative text-[14px] font-bold text-slate-800 mb-4 leading-snug">{title}</h3>
                 <div className="relative inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-bold"
                   style={{ background: color + '12', color }}>
                   <div className="w-1.5 h-1.5 rounded-full animate-pulse-dot" style={{ background: color }} />
@@ -84,7 +84,7 @@ export default function WebDevAssurance() {
             <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 px-10 py-8">
               <div>
                 <p className="text-[11px] font-bold text-blue-200 uppercase tracking-widest mb-2">Call Us Today</p>
-                <h3 className="text-[15px] font-bold text-white leading-tight max-w-lg">
+                <h3 className="text-[14px] font-bold text-white leading-tight max-w-lg">
                   Call us today to work with a trusted web development and designing company in
                   thanjavur for your next digital project.
                 </h3>

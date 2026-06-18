@@ -60,7 +60,7 @@ export default function WACTA() {
               >
                 <Shield size={10} /> What We Guarantee
               </span>
-              <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight">
+              <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight">
                 Our Commitment{' '}
                 <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                   to You
@@ -93,7 +93,7 @@ export default function WACTA() {
                     <Icon size={18} />
                   </div>
                   <div>
-                    <h3 className="text-[13px] xs:text-[14px] font-bold text-slate-800 mb-1">{title}</h3>
+                    <h3 className="text-[12px] xs:text-[13px] font-bold text-slate-800 mb-1">{title}</h3>
                     <p className="text-[12px] xs:text-[13px] text-slate-500 leading-relaxed">{desc}</p>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function WACTA() {
                   </div>
                 </div>
 
-                <h3 className="text-[20px] xs:text-[22px] sm:text-[24px] font-bold text-white leading-tight mb-3">
+                <h3 className="text-[19px] xs:text-[21px] sm:text-[23px] font-bold text-white leading-tight mb-3">
                   Let&apos;s Build Your Web App Together
                 </h3>
                 <p className="text-[13px] xs:text-[13.5px] text-white/70 leading-relaxed mb-5">

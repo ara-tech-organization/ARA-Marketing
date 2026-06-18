@@ -106,7 +106,7 @@ function ProjectCard({ num, icon: Icon, title, desc, tags, count, color, bg }) {
           </div>
         </div>
 
-        <h3 className="text-[15px] font-bold mb-2 leading-snug transition-colors duration-300"
+        <h3 className="text-[14px] font-bold mb-2 leading-snug transition-colors duration-300"
           style={{ color: hovered ? color : '#1e293b' }}>
           {title}
         </h3>
@@ -141,7 +141,7 @@ export default function WebDevPortfolio() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> Our Portfolio
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Successful Website Projects &amp;{' '}
             <span className="text-gradient-blue">Digital Solutions</span>
           </h2>

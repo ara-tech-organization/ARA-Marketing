@@ -30,7 +30,7 @@ export default function OMProcess() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <LineChart size={11} /> Our Workflow
           </span>
-          <h2 className="text-[clamp(24px,3.5vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Our Strategic Multi-Channel{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Marketing Workflow
@@ -66,7 +66,7 @@ export default function OMProcess() {
               {/* Accent line */}
               <div className="h-0.5 w-8 rounded-full mb-4" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
 
-              <h3 className="text-[13.5px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
+              <h3 className="text-[12px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
               <p className="text-[12px] text-slate-500 leading-[1.68] relative z-10">{desc}</p>
             </div>
           ))}
@@ -94,7 +94,7 @@ export default function OMProcess() {
 
               <div className="h-0.5 w-8 rounded-full mb-4" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
 
-              <h3 className="text-[13.5px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
+              <h3 className="text-[12px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
               <p className="text-[12px] text-slate-500 leading-[1.68] relative z-10">{desc}</p>
             </div>
           ))}

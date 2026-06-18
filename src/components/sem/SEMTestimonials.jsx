@@ -52,7 +52,7 @@ export default function SEMTestimonials() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <MessageSquare size={11} /> Client Testimonials
           </span>
-          <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+          <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
             What Clients Say About Our{' '}
             <span className="text-gradient-blue">Google Ads Services</span>
           </h2>

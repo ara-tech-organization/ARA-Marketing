@@ -55,7 +55,7 @@ export default function GDFAQ() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <HelpCircle size={11} /> Frequently Asked Questions
           </span>
-          <h2 className="text-[clamp(22px,2.8vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.5vw,35px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Frequently Asked Questions (FAQs)
           </h2>
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">

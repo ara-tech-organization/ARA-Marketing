@@ -99,7 +99,7 @@ export default function CMSFAQ() {
             </span>
 
             {/* Heading */}
-            <h2 className="text-[clamp(24px,2.8vw,42px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+            <h2 className="text-[clamp(23px,2.5vw,41px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
               Frequently Asked{' '}
               <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Questions

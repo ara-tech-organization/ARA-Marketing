@@ -40,7 +40,7 @@ export default function CMSCTA() {
             </span>
 
             {/* Heading */}
-            <h2 className="text-[clamp(26px,3.5vw,48px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+            <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Let's Build Your WordPress{' '}
               <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Website Together
@@ -98,7 +98,7 @@ export default function CMSCTA() {
               {/* Panel header */}
               <div className="relative mb-6">
                 <p className="text-[11px] font-bold uppercase tracking-widest text-blue-200 mb-1">Our Track Record</p>
-                <h3 className="text-[20px] font-bold text-white leading-snug">
+                <h3 className="text-[19px] font-bold text-white leading-snug">
                   Trusted by Businesses<br />Across Thanjavur & Beyond
                 </h3>
               </div>

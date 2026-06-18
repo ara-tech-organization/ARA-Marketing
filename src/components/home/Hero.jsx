@@ -119,7 +119,7 @@ export default function Hero() {
             </div>
 
             <h1 className="font-bold text-white tracking-tight mb-5"
-              style={{ fontSize:'clamp(28px,3.5vw,50px)', lineHeight: 1.2, animation: rev(100) }}>
+              style={{ fontSize: 'clamp(27px,3.1vw,49px)', lineHeight: 1.2, animation: rev(100) }}>
               Best Digital Marketing<br />Company in Thanjavur —{' '}
               <span style={{
                 background:'linear-gradient(135deg,#93c5fd 0%,#60a5fa 30%,#3b82f6 60%,#818cf8 100%)',

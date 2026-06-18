@@ -35,7 +35,7 @@ export default function ECCTA() {
               <ShoppingCart size={10} /> Our Delivery Promise
             </div>
 
-            <h2 className="text-[clamp(24px,4vw,50px)] font-bold leading-[1.1] tracking-tight mb-5 text-white">
+            <h2 className="text-[clamp(23px,3.6vw,49px)] font-bold leading-[1.1] tracking-tight mb-5 text-white">
               Let&apos;s Build Your{' '}
               <span style={{ color: '#60a5fa' }}>
                 E-Commerce Store
@@ -63,7 +63,7 @@ export default function ECCTA() {
             <div className="p-7 sm:p-8 rounded-3xl"
               style={{ background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(255,255,255,0.14)', backdropFilter: 'blur(20px)', boxShadow: '0 24px 70px rgba(0,0,0,0.40)' }}>
 
-              <h3 className="text-[18px] font-bold text-white mb-2">Start Your E-commerce Journey</h3>
+              <h3 className="text-[17px] font-bold text-white mb-2">Start Your E-commerce Journey</h3>
               <p className="text-[13px] mb-6" style={{ color: 'rgba(255,255,255,0.50)' }}>
                 Fill out the form and get a free consultation from our expert e-commerce developers.
               </p>

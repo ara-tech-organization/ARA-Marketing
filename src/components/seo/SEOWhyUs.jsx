@@ -25,7 +25,7 @@ function ReasonCard({ icon: Icon, num, title, desc, color }) {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1.5">
           <span className="text-[10px] font-black text-slate-300 tracking-widest">{num}</span>
-          <h3 className="text-[14px] font-bold text-slate-900 leading-snug">{title}</h3>
+          <h3 className="text-[13px] font-bold text-slate-900 leading-snug">{title}</h3>
         </div>
         <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
       </div>
@@ -56,7 +56,7 @@ export default function SEOWhyUs() {
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
               <Award size={11} /> Why Choose Us
             </span>
-            <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight">
+            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight">
               Why Do Businesses Choose Our{' '}
               <span className="text-gradient-blue">SEO Expertise?</span>
             </h2>

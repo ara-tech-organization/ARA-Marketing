@@ -105,7 +105,7 @@ export default function MATestimonials() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Users size={11} /> Client Feedback &amp; Experiences
           </span>
-          <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2 className="text-[clamp(27px,3.6vw,41px)] font-bold text-slate-900 leading-tight tracking-tight">
             What Our Clients Say<br />About Our Mobile Apps
           </h2>
         </div>

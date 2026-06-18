@@ -1,4 +1,4 @@
-﻿import { Globe, ShoppingBag, Layout, BookOpen, Server, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Globe, ShoppingBag, Layout, BookOpen, Server, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const platforms = [
   {
@@ -84,7 +84,7 @@ export default function CMSPlatforms() {
           >
             <Globe size={11} /> CMS Platform Expertise
           </span>
-          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             We Specialise in{' '}
             <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Popular CMS Platforms

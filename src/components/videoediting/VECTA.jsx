@@ -30,7 +30,7 @@ export default function VECTA() {
         </div>
 
         {/* Heading */}
-        <h2 className="text-[clamp(24px,4vw,56px)] font-bold text-white leading-[1.08] tracking-tight mb-5 sm:mb-6 drop-shadow-sm">
+        <h2 className="text-[clamp(23px,3.6vw,55px)] font-bold text-white leading-[1.08] tracking-tight mb-5 sm:mb-6 drop-shadow-sm">
           Transform Your Videos Into{' '}
           <span style={{ background: 'linear-gradient(135deg,#bfdbfe,#a5f3fc)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
             Powerful Visual Stories

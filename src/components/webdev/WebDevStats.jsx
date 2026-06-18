@@ -82,7 +82,7 @@ export default function WebDevStats() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
             <Layers size={11} /> Proven Results
           </span>
-          <h2 className="text-[clamp(22px,3vw,38px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Proven Success in Website Design &amp;{' '}
             <span className="text-gradient-blue">Development</span>
           </h2>

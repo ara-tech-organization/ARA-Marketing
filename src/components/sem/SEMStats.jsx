@@ -60,7 +60,7 @@ export default function SEMStats() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
               <TrendingUp size={11} /> Our Results
             </span>
-            <h2 className="text-[clamp(26px,3.5vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Delivering Measurable Advertising{' '}
               <span className="text-gradient-blue">Performance &amp; ROI</span>
             </h2>

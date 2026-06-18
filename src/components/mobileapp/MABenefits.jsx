@@ -1,4 +1,4 @@
-﻿import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
+import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
 
 const benefits = [
   { icon: Cpu,        title: 'Enhanced AI Engagement',      desc: 'AI-powered features drive meaningful customer interaction, personalization, and retention.', metric: '3x',  metricLabel: 'Higher Engagement', color: '#1e40af' },
@@ -25,7 +25,7 @@ export default function MABenefits() {
               style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
               <Smartphone size={11} /> Benefits
             </span>
-            <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               Benefits of Our{' '}
               <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Mobile App Services
@@ -63,7 +63,7 @@ export default function MABenefits() {
                   <Icon size={20} style={{ color }} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-[14px] font-bold text-slate-800 mb-1">{title}</h3>
+                  <h3 className="text-[13px] font-bold text-slate-800 mb-1">{title}</h3>
                   <p className="text-[12.5px] text-slate-500 leading-[1.65]">{desc}</p>
                 </div>
                 <div className="text-right flex-shrink-0 pl-2">

@@ -36,7 +36,7 @@ export default function WebDevHero() {
             <Globe2 size={11} /> Website Design &amp; Development
           </span>
 
-          <h1 className="text-[clamp(22px,3vw,44px)] font-bold text-slate-900 leading-[1.1]
+          <h1 className="text-[clamp(21px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1]
             tracking-tight mb-3">
             Best Website Design and Development{' '}
             <span className="text-gradient-blue">Company in Thanjavur</span>

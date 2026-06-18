@@ -32,7 +32,7 @@ export default function VETestimonials() {
             border border-blue-100 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5">
             <MessageSquare size={10} /> Client Testimonials
           </span>
-          <h2 className="text-[clamp(22px,4vw,46px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3 sm:mb-4">
             What Clients Say About Our{' '}
             <span style={gradBlue}>Video Editing Services</span>
           </h2>

@@ -18,7 +18,7 @@ export default function WebDevCTA() {
                 style={{ background: 'rgba(255,255,255,0.10)' }}>
                 <Globe2 size={22} className="text-white" />
               </div>
-              <h2 className="text-[clamp(22px,3vw,36px)] font-bold text-white leading-tight tracking-tight mb-4">
+              <h2 className="text-[clamp(21px,2.7vw,35px)] font-bold text-white leading-tight tracking-tight mb-4">
                 Ready to Build a Powerful Website for Your Business?
               </h2>
               <p className="text-[15px] text-blue-100 leading-[1.85] mb-8 max-w-lg">

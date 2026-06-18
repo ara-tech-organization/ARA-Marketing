@@ -1,4 +1,4 @@
-﻿import { ArrowRight, TrendingUp, Settings, Users, Sparkles } from 'lucide-react'
+import { ArrowRight, TrendingUp, Settings, Users, Sparkles } from 'lucide-react'
 import cmsIntroImg from '../../assets/Wordpress/w1.png'
 
 const pillars = [
@@ -53,7 +53,7 @@ export default function CMSIntro() {
           >
             <Sparkles size={11} /> Transform Your Business
           </span>
-          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             Transform Your Business with{' '}
             <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               WordPress CMS
@@ -148,7 +148,7 @@ export default function CMSIntro() {
                 style={{ background: `${color}12`, border: `1px solid ${color}25` }}>
                 <Icon size={19} style={{ color }} />
               </div>
-              <h3 className="text-[14px] font-bold text-slate-800 mb-2 leading-snug">{title}</h3>
+              <h3 className="text-[13px] font-bold text-slate-800 mb-2 leading-snug">{title}</h3>
               <p className="text-[12.5px] text-slate-500 leading-[1.75]">{desc}</p>
             </div>
           ))}

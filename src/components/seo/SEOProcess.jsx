@@ -62,7 +62,7 @@ export default function SEOProcess() {
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4 shadow-sm">
               <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-2">
+            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-2">
               Our Strategic SEO Workflow{' '}
               <span className="text-gradient-blue">for Long-Term Rankings</span>
             </h2>
@@ -139,7 +139,7 @@ export default function SEOProcess() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-3">{title}</h3>
+                  <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-3">{title}</h3>
 
                   {/* Description */}
                   <p className="text-[12.5px] text-slate-500 leading-[1.78]">{desc}</p>

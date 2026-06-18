@@ -39,7 +39,7 @@ export default function CMSWhyUs() {
               style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.18)' }}>
               <Award size={11} /> Why Choose Us
             </span>
-            <h2 className="text-[clamp(26px,3.5vw,48px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               We Build{' '}
               <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Digital
@@ -122,7 +122,7 @@ export default function CMSWhyUs() {
               </div>
 
               <div>
-                <h3 className="text-[14px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
                 <p className="text-[12.5px] text-slate-500 leading-[1.78]">{desc}</p>
               </div>
 

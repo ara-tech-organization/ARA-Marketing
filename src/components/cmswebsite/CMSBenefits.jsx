@@ -1,4 +1,4 @@
-﻿import { Edit3, Search, Puzzle, TrendingUp, DollarSign, RefreshCw, Layers } from 'lucide-react'
+import { Edit3, Search, Puzzle, TrendingUp, DollarSign, RefreshCw, Layers } from 'lucide-react'
 
 const benefits = [
   {
@@ -71,7 +71,7 @@ export default function CMSBenefits() {
           >
             <Layers size={11} /> WordPress Advantages
           </span>
-          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             Benefits of{' '}
             <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               WordPress Development
@@ -108,7 +108,7 @@ export default function CMSBenefits() {
                   <Icon size={18} style={{ color }} />
                 </div>
 
-                <h3 className="text-[14px] font-bold text-slate-800 mb-2.5 leading-snug pr-8">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-800 mb-2.5 leading-snug pr-8">{title}</h3>
                 <p className="text-[12.5px] leading-[1.75]" style={{ color: '#64748b' }}>{desc}</p>
               </div>
             ))}
@@ -137,7 +137,7 @@ export default function CMSBenefits() {
                   <Icon size={18} style={{ color }} />
                 </div>
 
-                <h3 className="text-[14px] font-bold text-slate-800 mb-2.5 leading-snug pr-8">{title}</h3>
+                <h3 className="text-[13px] font-bold text-slate-800 mb-2.5 leading-snug pr-8">{title}</h3>
                 <p className="text-[12.5px] leading-[1.75]" style={{ color: '#64748b' }}>{desc}</p>
               </div>
             ))}

@@ -67,7 +67,7 @@ export default function SWIntro() {
           >
             <Sparkles size={11} /> Why Static Websites
           </span>
-          <h2 className="text-[clamp(24px,3vw,42px)] font-bold leading-tight tracking-tight text-white mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold leading-tight tracking-tight text-white mb-5">
             Powering Digital Growth with{' '}
             <span
               style={{
@@ -178,7 +178,7 @@ export default function SWIntro() {
               >
                 <Icon size={19} style={{ color }} />
               </div>
-              <h3 className="text-[14px] font-bold text-white mb-2 leading-snug">{title}</h3>
+              <h3 className="text-[13px] font-bold text-white mb-2 leading-snug">{title}</h3>
               <p className="text-[12.5px] leading-[1.75]" style={{ color: '#94a3b8' }}>{desc}</p>
             </div>
           ))}

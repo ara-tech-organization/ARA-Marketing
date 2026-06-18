@@ -1,4 +1,4 @@
-﻿import { Store, ShoppingCart, PenLine, Building2, GraduationCap, CheckCircle2, Target } from 'lucide-react'
+import { Store, ShoppingCart, PenLine, Building2, GraduationCap, CheckCircle2, Target } from 'lucide-react'
 
 const audiences = [
   { icon: Store,         title: 'Small & Medium Businesses',  desc: 'Get a professional online presence that grows with your business — flexible, affordable, and easy to manage.',       color: '#2563eb' },
@@ -45,7 +45,7 @@ export default function CMSWhoShould() {
               <Target size={11} /> Who Should Invest
             </span>
 
-            <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Is WordPress Right{' '}
               <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 For You?
@@ -72,7 +72,7 @@ export default function CMSWhoShould() {
                       <Icon size={15} style={{ color }} />
                     </div>
                     <div>
-                      <h3 className="text-[13.5px] font-bold text-slate-800 mb-0.5">{title}</h3>
+                      <h3 className="text-[12px] font-bold text-slate-800 mb-0.5">{title}</h3>
                       <p className="text-[12px] text-slate-500 leading-[1.7]">{desc}</p>
                     </div>
                   </div>
@@ -115,7 +115,7 @@ export default function CMSWhoShould() {
               {/* Commitments list */}
               <div className="rounded-2xl p-6"
                 style={{ background: 'linear-gradient(135deg, #eff6ff, #dbeafe)', border: '1px solid rgba(37,99,235,0.15)' }}>
-                <h3 className="text-[15px] font-bold text-slate-800 mb-5">Our Commitments</h3>
+                <h3 className="text-[14px] font-bold text-slate-800 mb-5">Our Commitments</h3>
                 <div className="flex flex-col gap-3.5">
                   {commitments.map((c, i) => (
                     <div key={i} className="flex items-start gap-3">

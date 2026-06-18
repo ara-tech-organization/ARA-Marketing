@@ -71,7 +71,7 @@ export default function CMSPortfolio() {
             style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.18)' }}>
             <Trophy size={11} /> Our Success Stories
           </span>
-          <h2 className="text-[clamp(24px,3vw,44px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             WordPress Websites{' '}
             <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Across Industries
@@ -121,7 +121,7 @@ export default function CMSPortfolio() {
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest" style={{ color }}>Industry {num}</span>
-                    <h3 className="text-[17px] font-bold text-slate-900 leading-tight">{title}</h3>
+                    <h3 className="text-[16px] font-bold text-slate-900 leading-tight">{title}</h3>
                   </div>
                 </div>
 

@@ -149,7 +149,7 @@ export default function SMMServices() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Our Services
           </span>
-          <h2 className="text-[clamp(24px,3vw,40px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Platform-Focused{' '}
             <span className="text-gradient-blue">Social Media Marketing</span> Services
           </h2>
@@ -215,7 +215,7 @@ export default function SMMServices() {
                   <Icon size={26} style={{ color }} />
                 </div>
                 <div>
-                  <h3 className="text-[17px] font-bold text-slate-900 leading-tight">{h3}</h3>
+                  <h3 className="text-[16px] font-bold text-slate-900 leading-tight">{h3}</h3>
                   <div
                     className="h-1 w-8 rounded-full mt-1.5 transition-all duration-300 group-hover:w-16"
                     style={{ background: color }}

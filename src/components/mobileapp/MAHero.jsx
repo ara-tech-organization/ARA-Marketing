@@ -1,4 +1,4 @@
-﻿import { Smartphone, Cpu, Zap, Shield, Star, ArrowRight, ArrowUpRight, ChevronRight, CheckCircle2 } from 'lucide-react'
+import { Smartphone, Cpu, Zap, Shield, Star, ArrowRight, ArrowUpRight, ChevronRight, CheckCircle2 } from 'lucide-react'
 
 const stats = [
   { value: '200+', label: 'Apps Delivered' },
@@ -54,7 +54,7 @@ export default function MAHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(22px,3.2vw,44px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
+            <h1 className="text-[clamp(21px,2.9vw,43px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
               Elevate Your Business with{' '}
               <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Mobile Apps
