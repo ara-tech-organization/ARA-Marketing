@@ -42,7 +42,10 @@ export default function Blog() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
               <Newspaper size={11} /> Recent Blogs
             </span>
-            <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
+            <h2
+              className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+              style={{ fontWeight: 700 }}
+            >
               Recent Blogs
             </h2>
             <p className="text-[16px] text-slate-500 leading-tight mt-1">

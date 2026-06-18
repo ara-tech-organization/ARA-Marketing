@@ -28,7 +28,10 @@ export default function WhyUs() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Zap size={11} /> Why Choose Us
           </span>
-          <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2
+            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            style={{ fontWeight: 700 }}
+          >
             Why Do Businesses Choose<br />ARA Discover Marketing?
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">

@@ -24,8 +24,11 @@ export default function FAQ() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
               <MessageSquare size={11} /> FAQs
             </span>
-            <h2 className="text-[clamp(26px,3vw,38px)] font-bold text-slate-900
-              leading-tight tracking-tight mb-4">
+            <h2
+              className="text-[clamp(22px,2.8vw,34px)] font-bold text-slate-900
+              leading-tight tracking-tight mb-4"
+              style={{ fontWeight: 700 }}
+            >
               Frequently Asked<br />Question (FAQs)
             </h2>
             <p className="text-base text-slate-500 leading-relaxed mb-9">

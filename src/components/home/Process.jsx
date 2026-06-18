@@ -91,7 +91,10 @@ export default function Process() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Rocket size={11} /> How We Work
           </span>
-          <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2
+            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            style={{ fontWeight: 700 }}
+          >
             Our Proven Digital Marketing Workflow
           </h2>
           <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">

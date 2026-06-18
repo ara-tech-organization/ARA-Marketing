@@ -57,7 +57,10 @@ export default function Services() {
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
               <TrendingUp size={11} /> Digital Marketing Services
             </span>
-            <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-6">
+            <h2
+              className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-6"
+              style={{ fontWeight: 700 }}
+            >
               Result-Driven Digital Marketing Services<br />for Modern Businesses
             </h2>
             <div className="space-y-4">
@@ -145,7 +148,10 @@ export default function Services() {
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Layers size={11} /> Our Services
           </span>
-          <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2
+            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            style={{ fontWeight: 700 }}
+          >
             Complete Digital Marketing &amp;<br />Branding Solutions
           </h2>
         </div>

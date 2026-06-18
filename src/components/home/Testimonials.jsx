@@ -112,7 +112,10 @@ export default function Testimonials() {
             border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Star size={11} /> Client Reviews
           </span>
-          <h2 className="text-[clamp(28px,4vw,42px)] font-bold text-slate-900 leading-tight tracking-tight">
+          <h2
+            className="text-[clamp(24px,3.4vw,36px)] font-bold text-slate-900 leading-tight tracking-tight"
+            style={{ fontWeight: 700 }}
+          >
             What Our Clients Say<br />About Our Services
           </h2>
         </div>
@@ -132,4 +135,3 @@ export default function Testimonials() {
     </section>
   )
 }
-

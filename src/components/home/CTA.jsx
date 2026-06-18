@@ -41,8 +41,11 @@ export default function CTA() {
               <Rocket size={11} /> Ready to Grow?
             </span>
 
-            <h2 className="text-[clamp(28px,4.5vw,48px)] font-bold text-white
-              leading-tight tracking-[-0.8px] mb-4">
+            <h2
+              className="text-[clamp(24px,3.8vw,40px)] font-bold text-white
+              leading-tight tracking-[-0.8px] mb-4"
+              style={{ fontWeight: 700 }}
+            >
               Are You Ready to Grow<br />Your Business Online?
             </h2>
 
