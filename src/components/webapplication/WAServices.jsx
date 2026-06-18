@@ -1,5 +1,10 @@
 import { useState } from 'react'
 import { Settings2, ShoppingBag, Brain, Smartphone, Building2, CheckCircle2 } from 'lucide-react'
+import customImg     from '../../assets/WebApp/Custom.png'
+import ecommerceImg  from '../../assets/WebApp/E-commerce.png'
+import aiImg         from '../../assets/WebApp/AI.png'
+import webImg        from '../../assets/WebApp/Web.png'
+import enterpriseImg from '../../assets/WebApp/Enterprise.png'
 
 const services = [
   {
@@ -9,7 +14,7 @@ const services = [
     subtitle: 'Tailored to your unique business objectives',
     desc: 'Our custom web app development services in Thanjavur are tailored to meet your business objectives. All web apps are secure, scalable and optimised to provide a better user experience.',
     highlights: ['Business-specific architecture', 'Secure & scalable codebase', 'Optimised for performance', 'Tailored UI/UX experience'],
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&h=320&fit=crop&auto=format&q=80',
+    image: customImg,
     color: '#2563eb',
     light: '#f0f7ff',
   },
@@ -20,7 +25,7 @@ const services = [
     subtitle: 'Secure, feature-rich online stores',
     desc: 'We are a trusted eCommerce app development company in Thanjavur that builds secure, easy-to-use and feature-rich online stores. Our solutions simplify sales, inventory, and customer interactions efficiently.',
     highlights: ['Secure payment gateways', 'Inventory management', 'Customer interaction tools', 'AI-driven recommendations'],
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&h=320&fit=crop&auto=format&q=80',
+    image: ecommerceImg,
     color: '#0891b2',
     light: '#f0f9ff',
   },
@@ -31,7 +36,7 @@ const services = [
     subtitle: 'Automate workflows & gain actionable insights',
     desc: 'As a progressive web app development agency in Thanjavur, we use AI to optimise business processes, automate workflows, and deliver actionable insights for better decision-making.',
     highlights: ['AI workflow automation', 'Predictive analytics', 'Smart recommendations', 'Actionable business insights'],
-    image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=700&h=320&fit=crop&auto=format&q=80',
+    image: aiImg,
     color: '#1d4ed8',
     light: '#eff6ff',
   },
@@ -42,7 +47,7 @@ const services = [
     subtitle: 'Synchronised solutions across all platforms',
     desc: 'We are the best web and mobile applications development company in Thanjavur. Our team delivers synchronised solutions for web and mobile platforms, creating a seamless experience for users.',
     highlights: ['Cross-platform compatibility', 'iOS & Android native apps', 'Flutter & React Native', 'Seamless web-mobile sync'],
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=700&h=320&fit=crop&auto=format&q=80',
+    image: webImg,
     color: '#2563eb',
     light: '#f0f7ff',
   },
@@ -53,7 +58,7 @@ const services = [
     subtitle: 'Scalable solutions for large organisations',
     desc: 'Collaborate with ARA Discover Marketing, the top web application development company in Thanjavur, to develop scalable and secure enterprise solutions that perfectly align with your business objectives.',
     highlights: ['Enterprise-grade security', 'Scalable architecture', 'Role-based access control', 'Legacy system integration'],
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=700&h=320&fit=crop&auto=format&q=80',
+    image: enterpriseImg,
     color: '#0891b2',
     light: '#f0f9ff',
   },

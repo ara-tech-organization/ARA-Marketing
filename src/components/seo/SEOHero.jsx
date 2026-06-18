@@ -144,11 +144,11 @@ export default function SEOHero() {
           <div className="flex-1 min-w-0 flex flex-col justify-center items-center text-center lg:px-4">
 
             <nav className="flex items-center justify-center gap-1.5 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
+              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
               <ChevronRight size={13} className="text-slate-300" />
-              <span>Services</span>
+              <span>Digital Marketing</span>
               <ChevronRight size={13} className="text-slate-300" />
-              SEO Services
+              <span className="text-blue-600 font-medium">SEO Services</span>
             </nav>
 
             <div className="animate-hero-d1 mb-5">

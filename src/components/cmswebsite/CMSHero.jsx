@@ -42,13 +42,11 @@ export default function CMSHero() {
             {/* Breadcrumb */}
             <nav className="flex items-center gap-1.5 text-[13px] mb-6 animate-hero-enter"
               style={{ color: 'rgba(255,255,255,0.4)' }}>
-              <a href="/" className="hover:text-blue-400 transition-colors duration-200">Home</a>
+              <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors duration-200">Home</a>
               <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
-              <span>Services</span>
+              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-400 transition-colors duration-200">Web Design</a>
               <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
-              <span>Web Design</span>
-              <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
-              CMS Website
+              <span className="text-sky-300 font-medium">CMS Website</span>
             </nav>
 
             {/* Badge */}

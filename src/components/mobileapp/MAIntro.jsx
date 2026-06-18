@@ -1,5 +1,7 @@
 ﻿import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
 
+import introImage from '../../assets/MobileApp/m1.png'
+
 const features = [
   {
     icon: TrendingUp,
@@ -69,7 +71,7 @@ export default function MAIntro() {
           <div className="rounded-3xl overflow-hidden"
             style={{ boxShadow: '0 32px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(37,99,235,0.2)' }}>
             <img
-              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=420&fit=crop&auto=format&q=80"
+              src={introImage}
               alt="Mobile App Development Services Thanjavur"
               className="w-full object-cover h-[200px] sm:h-[260px] md:h-[320px]"
               loading="lazy"

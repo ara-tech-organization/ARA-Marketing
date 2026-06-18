@@ -1,4 +1,9 @@
 import { Wrench, Smartphone, CreditCard, Search, Zap, ThumbsUp } from 'lucide-react'
+import customBuiltImg  from '../../assets/E-commerce/Custom-Built.png'
+import mobileImg       from '../../assets/E-commerce/Mobile-Friendly.png'
+import seoOptImg       from '../../assets/E-commerce/SEO-optimization.png'
+import seoImg          from '../../assets/E-commerce/SEO.png'
+import highSpeedImg    from '../../assets/E-commerce/High-Speed.png'
 
 const reasons = [
   {
@@ -7,7 +12,7 @@ const reasons = [
     title: 'Custom-Built Ecommerce Solutions',
     desc: 'We never use generic templates. Every store is crafted from the ground up to match your brand identity, product structure, and business goals for maximum conversion and customer trust.',
     color: '#2563eb',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop&auto=format&q=75',
+    image: customBuiltImg,
   },
   {
     num: '02',
@@ -15,7 +20,7 @@ const reasons = [
     title: 'Mobile-Friendly Responsive Design',
     desc: 'Over 70% of online purchases happen on mobile. Our e-commerce stores are built with a mobile-first approach — delivering a flawless shopping experience on every device and screen size.',
     color: '#0891b2',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop&auto=format&q=75',
+    image: mobileImg,
   },
   {
     num: '03',
@@ -23,7 +28,7 @@ const reasons = [
     title: 'Secure Payment Gateway Integration',
     desc: 'We integrate Razorpay, Stripe, PayU, and other trusted gateways with SSL encryption and PCI-DSS compliance — giving your customers confidence to shop and complete purchases safely.',
     color: '#059669',
-    image: 'https://images.unsplash.com/photo-1556742208-999815fca738?w=500&h=300&fit=crop&auto=format&q=75',
+    image: seoOptImg,
   },
   {
     num: '04',
@@ -31,7 +36,7 @@ const reasons = [
     title: 'SEO-Optimised Architecture',
     desc: 'From clean URL structures to schema markup and Core Web Vitals, every store we build is engineered for top search engine rankings — driving organic traffic that turns into consistent revenue.',
     color: '#7c3aed',
-    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=500&h=300&fit=crop&auto=format&q=75',
+    image: seoImg,
   },
   {
     num: '05',
@@ -39,7 +44,7 @@ const reasons = [
     title: 'High-Speed Performance & Scalability',
     desc: 'Slow stores lose sales. We optimise every element — images, code, CDN delivery, and server performance — so your store loads in under 2 seconds and handles thousands of concurrent shoppers.',
     color: '#d97706',
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&h=300&fit=crop&auto=format&q=75',
+    image: highSpeedImg,
   },
 ]
 

@@ -84,11 +84,11 @@ export default function WATestimonials() {
         </div>
 
         {/* Three testimonial cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 items-stretch">
           {testimonials.map(({ name, role, company, quote, avatar, metric, featured, color }, i) => (
             <div
               key={name}
-              className={`relative rounded-3xl overflow-hidden transition-all duration-300 reveal delay-${i + 1} ${featured ? 'lg:-mt-5 lg:mb-5' : ''}`}
+              className={`relative rounded-3xl overflow-hidden transition-all duration-300 reveal delay-${i + 1} flex flex-col`}
               style={{
                 background: featured ? `linear-gradient(145deg,#1e3a8a,#2563eb 50%,#0369a1)` : 'white',
                 border: featured ? 'none' : '1.5px solid #e2e8f0',
@@ -110,7 +110,7 @@ export default function WATestimonials() {
                 />
               )}
 
-              <div className="relative p-5 xs:p-6 sm:p-7">
+              <div className="relative p-5 xs:p-6 sm:p-7 flex flex-col flex-1">
                 {/* Top row: stars + quote icon */}
                 <div className="flex items-center justify-between mb-4">
                   <Stars featured={featured} />
@@ -127,7 +127,7 @@ export default function WATestimonials() {
 
                 {/* Quote */}
                 <blockquote
-                  className="text-[13px] xs:text-[13.5px] leading-[1.8] mb-5 italic"
+                  className="text-[13px] xs:text-[13.5px] leading-[1.8] mb-5 italic flex-1"
                   style={{ color: featured ? 'rgba(255,255,255,0.88)' : '#475569' }}
                 >
                   &ldquo;{quote}&rdquo;

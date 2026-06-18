@@ -1,4 +1,5 @@
 import { Award, ShieldCheck, Zap, Clock, Headphones, Layers, ArrowRight, CheckCircle2 } from 'lucide-react'
+import ecDeliveryImg from '../../assets/E-commerce/e1.png'
 
 const promises = [
   { icon: Layers,      title: 'Fully Customised\nE-Commerce Solutions',  desc: 'Every store is built from scratch, tailored to your brand identity and business goals.',          color: '#2563eb', bg: '#dbeafe' },
@@ -44,7 +45,7 @@ export default function ECDeliveryPromise() {
             <div className="relative rounded-3xl overflow-hidden h-full"
               style={{ minHeight: 340, boxShadow: '0 20px 56px rgba(37,99,235,0.14)', border: '1px solid rgba(37,99,235,0.1)' }}>
               <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&h=700&fit=crop&auto=format&q=80"
+                src={ecDeliveryImg}
                 alt="E-Commerce Delivery Promise Thanjavur"
                 className="w-full h-full object-cover"
                 loading="lazy"

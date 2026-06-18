@@ -1,4 +1,9 @@
 import { Shirt, Cpu, ShoppingBasket, Sofa, Store, TrendingUp, ArrowRight, Award } from 'lucide-react'
+import fashionImg    from '../../assets/E-commerce/Fashion.png'
+import electronicsImg from '../../assets/E-commerce/Electronics.png'
+import groceryImg    from '../../assets/E-commerce/Grocery.png'
+import furnitureImg  from '../../assets/E-commerce/Furniture.png'
+import multiVendorImg from '../../assets/E-commerce/Multi-Vendor.png'
 
 const industries = [
   {
@@ -7,7 +12,7 @@ const industries = [
     desc: 'Size guides, lookbooks, and variant filters that drive conversions for apparel brands.',
     metric: '3x Sales Growth',
     color: '#2563eb',
-    image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=260&fit=crop&auto=format&q=75',
+    image: fashionImg,
   },
   {
     icon: Cpu,
@@ -15,7 +20,7 @@ const industries = [
     desc: 'Detailed product specs, comparison tables, and quick-checkout flows for tech stores.',
     metric: '45% More Orders',
     color: '#0891b2',
-    image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=260&fit=crop&auto=format&q=75',
+    image: electronicsImg,
   },
   {
     icon: ShoppingBasket,
@@ -23,7 +28,7 @@ const industries = [
     desc: 'Real-time inventory, slot-based delivery scheduling, and instant reorder features.',
     metric: '60% Repeat Orders',
     color: '#059669',
-    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&h=260&fit=crop&auto=format&q=75',
+    image: groceryImg,
   },
   {
     icon: Sofa,
@@ -31,7 +36,7 @@ const industries = [
     desc: 'AR previews, room-setup visualisers, and large-item shipping calculators.',
     metric: '28% Higher AOV',
     color: '#d97706',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=260&fit=crop&auto=format&q=75',
+    image: furnitureImg,
   },
   {
     icon: Store,
@@ -39,7 +44,7 @@ const industries = [
     desc: 'Seller dashboards, commission tracking, and unified catalogue management at scale.',
     metric: '200+ Vendors',
     color: '#7c3aed',
-    image: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?w=400&h=260&fit=crop&auto=format&q=75',
+    image: multiVendorImg,
   },
 ]
 

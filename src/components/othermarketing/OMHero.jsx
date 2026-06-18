@@ -32,9 +32,9 @@ export default function OMHero() {
           <nav className="flex items-center gap-1.5 text-[11.5px]" style={{ color: 'rgba(15,23,42,0.38)' }}>
             <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
             <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
-            <span>Services</span>
+            <span>Digital Marketing</span>
             <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
-            Other Marketing
+            <span className="text-blue-600 font-medium">Other Marketing</span>
           </nav>
           <div className="flex flex-wrap items-center gap-2">
             {channels.map(({ icon: Icon, label, color, light }) => (

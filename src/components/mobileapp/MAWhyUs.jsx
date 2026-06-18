@@ -1,5 +1,7 @@
 ﻿import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
 
+import whyUsImage from '../../assets/MobileApp/m2.png'
+
 const reasons = [
   {
     icon: Trophy,
@@ -76,7 +78,7 @@ export default function MAWhyUs() {
             <div className="relative h-full rounded-3xl overflow-hidden min-h-[320px] lg:min-h-[420px]"
               style={{ background: 'linear-gradient(135deg,#1e3a8a 0%,#2563eb 100%)' }}>
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=700&fit=crop&auto=format&q=80"
+                src={whyUsImage}
                 alt="Mobile App Development Agency Thanjavur"
                 className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-35"
                 loading="lazy"

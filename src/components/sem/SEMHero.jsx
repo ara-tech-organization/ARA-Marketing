@@ -75,9 +75,9 @@ export default function SEMHero() {
           <nav className="flex items-center justify-center gap-1.5 text-[12px] text-slate-400 mb-4">
             <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
             <ChevronRight size={12} className="text-slate-300" />
-            <span>Services</span>
+            <span>Digital Marketing</span>
             <ChevronRight size={12} className="text-slate-300" />
-            SEM Services
+            <span className="text-blue-600 font-medium">SEM Services</span>
           </nav>
 
           {/* Badge */}

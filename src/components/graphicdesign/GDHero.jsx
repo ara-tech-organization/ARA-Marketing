@@ -36,8 +36,6 @@ export default function GDHero() {
                 loading="eager"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(160deg, rgba(37,99,235,0.45) 0%, rgba(10,26,52,0.65) 100%)' }} />
 
               {/* Overlay badge */}
               <div className="absolute top-5 left-5 flex items-center gap-2 px-3.5 py-2 rounded-xl"
@@ -66,9 +64,9 @@ export default function GDHero() {
             <nav className="flex items-center gap-1.5 text-[12px] text-slate-500 mb-8 animate-hero-enter">
               <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors">Home</a>
               <ChevronRight size={11} className="text-slate-600" />
-              <span className="text-slate-600">Services</span>
+              <span>Digital Marketing</span>
               <ChevronRight size={11} className="text-slate-600" />
-              Graphic Design
+              <span className="text-blue-600 font-medium">Graphic Design</span>
             </nav>
 
             {/* Badge */}

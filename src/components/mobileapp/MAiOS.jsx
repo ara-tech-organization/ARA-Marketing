@@ -1,5 +1,7 @@
 ﻿import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
 
+import iosImage from '../../assets/MobileApp/IOS.png'
+
 const iosServices = [
   { icon: Code2,   title: 'iOS App Design & Development',    desc: 'Beautiful, intuitive iPhone and iPad applications built natively with Swift.' },
   { icon: Layers,  title: 'Cross-Platform Integration',       desc: 'Seamless iOS and Android development in Thanjavur for a unified user experience.' },
@@ -26,7 +28,7 @@ export default function MAiOS() {
               <div className="relative rounded-3xl overflow-hidden"
                 style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(37,99,235,0.12)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=400&fit=crop&auto=format&q=80"
+                  src={iosImage}
                   alt="iOS App Development Thanjavur"
                   className="w-full object-cover h-[220px] sm:h-[280px] md:h-[340px]"
                   loading="lazy"

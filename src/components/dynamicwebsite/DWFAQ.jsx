@@ -152,14 +152,6 @@ export default function DWFAQ() {
                       <div className="w-1 self-stretch rounded-full flex-shrink-0 transition-all duration-300"
                         style={{ background: isOpen ? `linear-gradient(180deg,${faq.color},${faq.color}88)` : '#f1f5f9' }} />
 
-                      {/* Number badge */}
-                      <span className="flex-shrink-0 w-8 h-8 rounded-xl flex items-center justify-center text-[10px] font-black transition-all duration-300"
-                        style={isOpen
-                          ? { background: `linear-gradient(135deg,${faq.color},${faq.color}cc)`, color: 'white', boxShadow: `0 4px 12px ${faq.color}35` }
-                          : { background: '#f8fafc', color: '#94a3b8' }}>
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
-
                       {/* Tag + question */}
                       <div className="flex-1 min-w-0">
                         <span className="inline-block text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full mb-1.5"

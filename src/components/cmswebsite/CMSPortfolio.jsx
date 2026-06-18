@@ -1,11 +1,16 @@
 import { ShoppingCart, GraduationCap, Building2, User, Wrench, Trophy, TrendingUp, Star, Award, CheckCircle2 } from 'lucide-react'
+import wpEcomImg      from '../../assets/Wordpress/e-commerce.png'
+import wpEduImg       from '../../assets/Wordpress/educational.png'
+import wpCorpImg      from '../../assets/Wordpress/Corporate.png'
+import wpPortImg      from '../../assets/Wordpress/Portfolio.png'
+import wpServiceImg   from '../../assets/Wordpress/Service.png'
 
 const industries = [
   {
     num: '01', icon: ShoppingCart,
     title: 'E-Commerce Stores',
     desc: 'WooCommerce-powered stores with secure checkout, product management, and seamless payment gateways.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format&q=80',
+    image: wpEcomImg,
     stat: '80+', statLabel: 'Stores Launched',
     color: '#2563eb', bg: '#dbeafe',
     points: ['Secure WooCommerce Setup', 'Payment Gateway Integration', 'Inventory Management'],
@@ -14,7 +19,7 @@ const industries = [
     num: '02', icon: GraduationCap,
     title: 'Educational Platforms',
     desc: 'LMS-integrated WordPress platforms for online learning, course management, and student portals.',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&auto=format&q=80',
+    image: wpEduImg,
     stat: '30+', statLabel: 'Ed-Tech Sites',
     color: '#7c3aed', bg: '#ede9fe',
     points: ['LMS Integration', 'Student Portal Setup', 'Course Management'],
@@ -23,7 +28,7 @@ const industries = [
     num: '03', icon: Building2,
     title: 'Corporate Websites',
     desc: 'Professional corporate WordPress sites with custom page builders, multilingual support, and CRM integration.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop&auto=format&q=80',
+    image: wpCorpImg,
     stat: '50+', statLabel: 'Corporates Served',
     color: '#0891b2', bg: '#cffafe',
     points: ['Custom Page Builder', 'CRM Integration', 'Multilingual Support'],
@@ -32,7 +37,7 @@ const industries = [
     num: '04', icon: User,
     title: 'Portfolio Websites',
     desc: 'Stunning portfolio showcases for creatives, photographers, designers, and freelancers to win more clients.',
-    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=600&h=400&fit=crop&auto=format&q=80',
+    image: wpPortImg,
     stat: '40+', statLabel: 'Portfolios Built',
     color: '#059669', bg: '#d1fae5',
     points: ['Gallery & Showcase Setup', 'Mobile Optimised', 'SEO-Ready Design'],
@@ -41,7 +46,7 @@ const industries = [
     num: '05', icon: Wrench,
     title: 'Service Businesses',
     desc: 'Lead-generating service websites with appointment booking, testimonials, and inquiry management.',
-    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop&auto=format&q=80',
+    image: wpServiceImg,
     stat: '60+', statLabel: 'Business Sites',
     color: '#d97706', bg: '#fef3c7',
     points: ['Booking System', 'Lead Generation Forms', 'Google Maps Integration'],

@@ -1,11 +1,15 @@
 import { Building2, Briefcase, GraduationCap, Wrench, ArrowRight, Target } from 'lucide-react'
+import imgLocalBusiness from '../../assets/Static/Local Businesses.png'
+import imgPortfolio from '../../assets/Static/Portfolio.Websites.png'
+import imgEducational from '../../assets/Static/Educational.png'
+import imgService from '../../assets/Static/Service.png'
 
 const audiences = [
   {
     icon: Building2,
     title: 'Local Businesses & Startups',
     desc: 'Establish a strong digital footprint fast. A static website gives your local business instant credibility, visibility, and new customer reach in Thanjavur and beyond.',
-    image: 'https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=600&h=360&fit=crop&auto=format&q=80',
+    image: imgLocalBusiness,
     color: '#0891b2',
     tag: 'Most Popular',
   },
@@ -13,7 +17,7 @@ const audiences = [
     icon: Briefcase,
     title: 'Portfolio Websites for Professionals',
     desc: 'Designers, photographers, architects, and freelancers — showcase your work with a blazing-fast portfolio site that leaves a lasting impression on every visitor.',
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=360&fit=crop&auto=format&q=80',
+    image: imgPortfolio,
     color: '#2563eb',
     tag: 'Professionals',
   },
@@ -21,7 +25,7 @@ const audiences = [
     icon: GraduationCap,
     title: 'Educational Institutions',
     desc: 'Schools, colleges, and coaching centers need a reliable, low-maintenance web presence. Our static sites deliver information efficiently with zero downtime.',
-    image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=360&fit=crop&auto=format&q=80',
+    image: imgEducational,
     color: '#7c3aed',
     tag: 'Institutions',
   },
@@ -29,7 +33,7 @@ const audiences = [
     icon: Wrench,
     title: 'Small Service-Based Companies',
     desc: 'Plumbers, electricians, consultants, salons — a professional website builds trust with local customers and generates leads around the clock, without ongoing costs.',
-    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=360&fit=crop&auto=format&q=80',
+    image: imgService,
     color: '#059669',
     tag: 'Service Providers',
   },

@@ -137,7 +137,7 @@ export default function VEServices() {
         </div>
 
         {/* ── Content panel ── */}
-        <div className="reveal rounded-3xl overflow-hidden"
+        <div className="rounded-3xl overflow-hidden animate-hero-enter"
           style={{
             background: 'white',
             border: `1.5px solid ${svc.color}18`,

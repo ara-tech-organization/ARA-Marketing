@@ -157,14 +157,6 @@ export default function SWWhyUs() {
                   e.currentTarget.style.transform = 'translateX(0)'
                 }}
               >
-                {/* Number */}
-                <span
-                  className="text-[11px] font-black flex-shrink-0 mt-0.5 w-7 h-7 rounded-lg flex items-center justify-center"
-                  style={{ background: `${color}14`, color }}
-                >
-                  {num}
-                </span>
-
                 {/* Icon */}
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"

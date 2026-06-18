@@ -1,4 +1,5 @@
 import { Clock, Globe2, RefreshCw, DollarSign, Heart, CheckCircle2, Zap } from 'lucide-react'
+import ecBenefitsImg from '../../assets/E-commerce/e2.png'
 
 const benefits = [
   {
@@ -113,7 +114,7 @@ export default function ECBenefits() {
         <div className="reveal rounded-3xl overflow-hidden relative"
           style={{ boxShadow: '0 24px 80px rgba(37,99,235,0.14)', border: '1.5px solid #dbeafe' }}>
           <img
-            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=320&fit=crop&auto=format&q=80"
+            src={ecBenefitsImg}
             alt="E-commerce web design and development company in Thanjavur — ARA Discover Marketing"
             loading="lazy"
             className="w-full object-cover hover:scale-[1.02] transition-transform duration-[1.5s]"

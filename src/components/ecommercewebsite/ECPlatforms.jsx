@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { CheckCircle2, ArrowRight, Layers, Zap, Globe } from 'lucide-react'
+import shopifyImg    from '../../assets/E-commerce/Shopify.png'
+import wooImg        from '../../assets/E-commerce/woo.png'
+import enterpriseImg from '../../assets/E-commerce/Enterprise.png'
 
 const C1 = '#2563eb'
 const C2 = '#0891b2'
@@ -10,7 +13,7 @@ const platforms = [
     name: 'Shopify',
     tagline: 'Best for fast-growing retail brands',
     badge: 'Most Popular',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&h=420&fit=crop&auto=format&q=80',
+    image: shopifyImg,
     features: [
       'Lightning-fast hosted store setup',
       'Built-in payment gateway integration',
@@ -25,7 +28,7 @@ const platforms = [
     name: 'WooCommerce',
     tagline: 'Best for WordPress-powered stores',
     badge: 'Most Flexible',
-    image: 'https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=700&h=420&fit=crop&auto=format&q=80',
+    image: wooImg,
     features: [
       'Full WordPress CMS flexibility',
       'Open-source & highly customisable',
@@ -40,7 +43,7 @@ const platforms = [
     name: 'Magento',
     tagline: 'Best for enterprise-scale operations',
     badge: 'Enterprise Ready',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=420&fit=crop&auto=format&q=80',
+    image: enterpriseImg,
     features: [
       'Enterprise-grade scalability',
       'Advanced inventory management',

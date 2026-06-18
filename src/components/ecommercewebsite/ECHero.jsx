@@ -46,13 +46,11 @@ export default function ECHero() {
 
             {/* Breadcrumb */}
             <nav className="flex items-center gap-1.5 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
+              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
               <ChevronRight size={13} className="text-slate-300" />
-              <span>Services</span>
+              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors duration-200">Web Design</a>
               <ChevronRight size={13} className="text-slate-300" />
-              <span>Web Design</span>
-              <ChevronRight size={13} className="text-slate-300" />
-              Ecommerce Website
+              <span className="text-blue-600 font-medium">Ecommerce Website</span>
             </nav>
 
             {/* Badge */}

@@ -3,6 +3,12 @@ import {
   Globe, ShoppingCart, GraduationCap, Newspaper, Plug, LayoutDashboard,
   CheckCircle2, ArrowRight, Layers,
 } from 'lucide-react'
+import cmsImg      from '../../assets/Dynamic/CMS.png'
+import ecomImg     from '../../assets/Dynamic/E-commerce.png'
+import portalImg   from '../../assets/Dynamic/ortalWebsites.png'
+import newsImg     from '../../assets/Dynamic/News&Blog.png'
+import apiImg      from '../../assets/Dynamic/API-Integrated Websites.png'
+import webappImg   from '../../assets/Dynamic/CustomWebApplications.png'
 
 const services = [
   {
@@ -11,7 +17,7 @@ const services = [
     label: 'CMS-Based Websites',
     color: '#2563eb',
     tag: 'CMS',
-    imgSrc: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: cmsImg,
     imgAlt: 'CMS website development in Thanjavur',
     desc: [
       'We build fully functional CMS-powered websites that give you complete control over your content.',
@@ -25,7 +31,7 @@ const services = [
     label: 'E-Commerce Dynamic Websites',
     color: '#0891b2',
     tag: 'E-Commerce',
-    imgSrc: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: ecomImg,
     imgAlt: 'E-Commerce dynamic website development in Thanjavur',
     desc: [
       'Our dynamic e-commerce website development service in Thanjavur delivers powerful online stores with real-time product catalogue management, cart systems, and secure payment gateway integration.',
@@ -39,7 +45,7 @@ const services = [
     label: 'Portal Websites',
     color: '#2563eb',
     tag: 'Portals',
-    imgSrc: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: portalImg,
     imgAlt: 'Portal website development company in Thanjavur',
     desc: [
       'We develop feature-rich portal websites for education, healthcare, and service-based industries.',
@@ -53,9 +59,9 @@ const services = [
     label: 'News & Blog Platforms',
     color: '#0891b2',
     tag: 'News & Blog',
-    imgSrc: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: newsImg,
     imgAlt: 'News website development in Thanjavur',
-    desc: 'We build high-performance news and blog platforms for publishers and media houses that need to publish content at scale. Our dynamic website designing company in Thanjavur ensures your platform handles high traffic, instant content updates, multimedia support, and audience engagement tools.',
+    desc: ['We build high-performance news and blog platforms for publishers and media houses that need to publish content at scale. Our dynamic website designing company in Thanjavur ensures your platform handles high traffic, instant content updates, multimedia support, and audience engagement tools.'],
     items: ['Multi-Author Blog Setup', 'Category & Tag Systems', 'Breaking News Feeds', 'Media Gallery Management', 'Comment & Engagement Tools', 'Newsletter Integration'],
   },
   {
@@ -64,7 +70,7 @@ const services = [
     label: 'API-Integrated Websites',
     color: '#2563eb',
     tag: 'API',
-    imgSrc: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: apiImg,
     imgAlt: 'API integrated dynamic website development in Thanjavur',
     desc: [
       'We design and develop API-integrated dynamic websites that connect seamlessly with third-party services, payment systems, CRMs, maps, social media platforms, and data sources.',
@@ -78,7 +84,7 @@ const services = [
     label: 'Custom Web Applications',
     color: '#0891b2',
     tag: 'Web App',
-    imgSrc: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&auto=format&q=80',
+    imgSrc: webappImg,
     imgAlt: 'Custom web application development in Thanjavur',
     desc: [
       'Beyond websites, we build scalable custom web applications tailored to your unique business logic.',
@@ -146,7 +152,7 @@ export default function DWServices() {
         </div>
 
         {/* ── Content panel ── */}
-        <div key={active} className="reveal rounded-3xl overflow-hidden"
+        <div key={active} className="rounded-3xl overflow-hidden animate-hero-enter"
           style={{ border: `1.5px solid ${svc.color}18`, boxShadow: `0 24px 72px ${svc.color}12` }}>
           <div className="flex flex-col lg:flex-row">
 

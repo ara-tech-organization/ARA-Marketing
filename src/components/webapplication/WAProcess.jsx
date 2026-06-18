@@ -78,7 +78,7 @@ export default function WAProcess() {
 
         {/* Desktop: horizontal timeline */}
         <div className="hidden lg:block reveal">
-          <div className="relative flex items-start gap-0">
+          <div className="relative flex items-stretch gap-0">
             {/* Dashed connector line */}
             <div
               className="absolute top-[28px] left-[10%] right-[10%] h-px pointer-events-none"
@@ -86,7 +86,7 @@ export default function WAProcess() {
             />
 
             {steps.map(({ num, icon: Icon, title, desc, color, duration }) => (
-              <div key={num} className="flex-1 flex flex-col items-center text-center px-2 xl:px-3 group">
+              <div key={num} className="flex-1 flex flex-col items-center text-center px-2 xl:px-3 group h-full">
 
                 {/* Circle node */}
                 <div
@@ -112,7 +112,7 @@ export default function WAProcess() {
 
                 {/* Card */}
                 <div
-                  className="w-full rounded-2xl p-4 xl:p-5 transition-all duration-300 group-hover:-translate-y-1.5"
+                  className="w-full flex-1 rounded-2xl p-4 xl:p-5 transition-all duration-300 group-hover:-translate-y-1.5"
                   style={{
                     background: 'white',
                     borderTop: `3px solid ${color}`,

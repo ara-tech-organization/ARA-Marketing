@@ -43,88 +43,48 @@ export default function DWWhoShould() {
           </p>
         </div>
 
-        {/* ── Industry tiles — top 3 then bottom 2 centred ── */}
-        <div className="reveal mb-10 sm:mb-14">
-          <div className="flex flex-col sm:flex-row gap-4 mb-4">
-            {industries.slice(0, 3).map(({ icon: Icon, label, desc, color }, i) => (
-              <div
-                key={label}
-                className={`group flex-1 p-5 sm:p-6 rounded-2xl sm:rounded-3xl transition-all duration-500 hover:-translate-y-2 delay-${i + 1}`}
-                style={{
-                  background: 'rgba(255,255,255,0.85)',
-                  backdropFilter: 'blur(16px)',
-                  border: '1.5px solid rgba(255,255,255,0.95)',
-                  boxShadow: '0 4px 20px rgba(79,70,229,0.07)',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.boxShadow = `0 20px 50px ${color}18`
-                  e.currentTarget.style.borderColor = color + '30'
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(79,70,229,0.07)'
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.95)'
-                }}
-              >
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}28` }}>
-                  <Icon size={18} style={{ color }} />
-                </div>
-                <h3 className="text-[14px] sm:text-[15px] font-bold text-slate-900 mb-2">{label}</h3>
-                <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
-                <div className="flex items-center gap-1.5 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <CheckCircle2 size={12} style={{ color }} />
-                  <span className="text-[11px] font-semibold" style={{ color }}>Perfect fit for dynamic websites</span>
-                </div>
+        {/* ── Industry tiles — 3×2 grid with CTA as 6th tile ── */}
+        <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {industries.map(({ icon: Icon, label, desc, color }) => (
+            <div
+              key={label}
+              className="group p-5 sm:p-6 rounded-2xl sm:rounded-3xl transition-all duration-500 hover:-translate-y-2"
+              style={{
+                background: 'rgba(255,255,255,0.85)',
+                backdropFilter: 'blur(16px)',
+                border: '1.5px solid rgba(255,255,255,0.95)',
+                boxShadow: '0 4px 20px rgba(79,70,229,0.07)',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.boxShadow = `0 20px 50px ${color}18`
+                e.currentTarget.style.borderColor = color + '30'
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(79,70,229,0.07)'
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.95)'
+              }}
+            >
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
+                style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}28` }}>
+                <Icon size={18} style={{ color }} />
               </div>
-            ))}
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 sm:max-w-[66%] sm:mx-auto">
-            {industries.slice(3).map(({ icon: Icon, label, desc, color }, i) => (
-              <div
-                key={label}
-                className={`group flex-1 p-5 sm:p-6 rounded-2xl sm:rounded-3xl transition-all duration-500 hover:-translate-y-2 delay-${i + 4}`}
-                style={{
-                  background: 'rgba(255,255,255,0.85)',
-                  backdropFilter: 'blur(16px)',
-                  border: '1.5px solid rgba(255,255,255,0.95)',
-                  boxShadow: '0 4px 20px rgba(79,70,229,0.07)',
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.boxShadow = `0 20px 50px ${color}18`
-                  e.currentTarget.style.borderColor = color + '30'
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(79,70,229,0.07)'
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.95)'
-                }}
-              >
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}28` }}>
-                  <Icon size={18} style={{ color }} />
-                </div>
-                <h3 className="text-[14px] sm:text-[15px] font-bold text-slate-900 mb-2">{label}</h3>
-                <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
-                <div className="flex items-center gap-1.5 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <CheckCircle2 size={12} style={{ color }} />
-                  <span className="text-[11px] font-semibold" style={{ color }}>Perfect fit for dynamic websites</span>
-                </div>
+              <h3 className="text-[14px] sm:text-[15px] font-bold text-slate-900 mb-2">{label}</h3>
+              <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.75]">{desc}</p>
+              <div className="flex items-center gap-1.5 mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <CheckCircle2 size={12} style={{ color }} />
+                <span className="text-[11px] font-semibold" style={{ color }}>Perfect fit for dynamic websites</span>
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
+          ))}
 
-        {/* ── CTA block ── */}
-        <div className="reveal text-center">
-          <p className="text-[12.5px] sm:text-[13.5px] text-slate-500 mb-6 max-w-xl mx-auto">
-            Choosing a dynamic website development company in Thanjavur helps your business get a flexible and future-ready digital platform.
-          </p>
-          <div className="inline-flex flex-col items-center gap-3 px-5 sm:px-8 py-6 sm:py-7 rounded-3xl w-full sm:w-auto"
-            style={{ background: 'white', border: '1.5px solid rgba(79,70,229,0.18)', boxShadow: '0 12px 40px rgba(79,70,229,0.12)' }}>
-            <p className="text-[11px] font-black uppercase tracking-widest text-indigo-600">Get Your Custom Website Plan Today</p>
-            <p className="text-[13.5px] font-medium text-slate-600">Start building a powerful digital presence with our expert team.</p>
+          {/* 6th tile — CTA box */}
+          <div className="flex flex-col items-center justify-center gap-3 p-5 sm:p-6 rounded-2xl sm:rounded-3xl text-center"
+            style={{ background: 'linear-gradient(135deg,#4338ca,#2563eb)', boxShadow: '0 12px 40px rgba(79,70,229,0.28)' }}>
+            <p className="text-[11px] font-black uppercase tracking-widest text-white/80">Get Your Custom Website Plan Today</p>
+            <p className="text-[13px] sm:text-[13.5px] font-medium text-white/90 leading-snug">Start building a powerful digital presence with our expert team.</p>
             <a href="/ARA-Marketing/contact-us"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg,#4338ca,#2563eb)', boxShadow: '0 8px 24px rgba(79,70,229,0.35)' }}>
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5 mt-1"
+              style={{ background: 'white', color: '#4338ca', boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}>
               Get Started Today <ArrowRight size={13} />
             </a>
           </div>

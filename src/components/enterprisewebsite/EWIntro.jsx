@@ -1,4 +1,5 @@
 import { CheckCircle2, Layers, TrendingUp, ShieldCheck, Clock4, Globe2 } from 'lucide-react'
+import ewIntroImg from '../../assets/Enterprise/e1.png'
 
 const stats = [
   { val: '500+', label: 'Projects Delivered' },
@@ -119,7 +120,7 @@ export default function EWIntro() {
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden mb-3 sm:mb-4"
               style={{ boxShadow: '0 20px 56px rgba(37,99,235,0.16)', border: '1.5px solid #dbeafe' }}>
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=500&fit=crop&auto=format&q=80"
+                src={ewIntroImg}
                 alt="Enterprise website development services in Thanjavur — ARA Discover Marketing"
                 loading="lazy"
                 className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.8s]"

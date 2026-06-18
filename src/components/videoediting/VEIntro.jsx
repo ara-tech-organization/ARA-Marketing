@@ -1,4 +1,5 @@
 import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
+import veIntroImg from '../../assets/Video-editing/V2.png'
 
 const expertise = [
   { icon: Wand2,   label: 'Digital Marketing Video', color: '#2563eb', desc: 'Platform-specific edits crafted to drive engagement and conversions across all digital channels.' },
@@ -86,7 +87,7 @@ export default function VEIntro() {
             <div className="relative rounded-3xl overflow-hidden"
               style={{ height: 'clamp(280px,38vw,420px)', boxShadow: '0 28px 64px rgba(37,99,235,0.18)' }}>
               <img
-                src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=900&h=700&fit=crop&auto=format&q=80"
+                src={veIntroImg}
                 alt="Professional video editing studio in Thanjavur"
                 loading="lazy"
                 className="w-full h-full object-cover"

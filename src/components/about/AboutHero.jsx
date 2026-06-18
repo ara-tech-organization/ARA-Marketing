@@ -1,5 +1,7 @@
 import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
 
+import heroImage from '../../assets/About/A1.png'
+
 const stats = [
   { icon: Users,      val: '100+', label: 'Brands Served'  },
   { icon: TrendingUp, val: '150+', label: 'Projects Done'  },
@@ -145,7 +147,7 @@ export default function AboutHero() {
               <div className="relative z-10 rounded-[24px] overflow-hidden"
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=530&fit=crop&auto=format&q=80"
+                  src={heroImage}
                   alt="ARA Discover Marketing team collaboration — Best Digital Marketing Agency in Thanjavur"
                   className="w-full h-full object-cover block"
                   style={{ aspectRatio: '4/3' }}

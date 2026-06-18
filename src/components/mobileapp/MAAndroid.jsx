@@ -1,5 +1,7 @@
 ﻿import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
 
+import androidImage from '../../assets/MobileApp/Android.png'
+
 const services = [
   { icon: Code2,   text: 'Custom Android app development services for unique, tailored business solutions' },
   { icon: Layers,  text: 'Enterprise Android solutions for streamlined and optimised business operations' },
@@ -63,7 +65,7 @@ export default function MAAndroid() {
               <div className="relative rounded-3xl overflow-hidden"
                 style={{ border: '1px solid rgba(37,99,235,0.25)', boxShadow: '0 32px 80px rgba(0,0,0,0.5)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=600&h=400&fit=crop&auto=format&q=80"
+                  src={androidImage}
                   alt="Android App Development Company Thanjavur"
                   className="w-full object-cover h-[220px] sm:h-[280px] md:h-[340px]"
                   loading="lazy"

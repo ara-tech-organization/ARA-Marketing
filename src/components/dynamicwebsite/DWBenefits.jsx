@@ -1,4 +1,5 @@
 import { Database, RefreshCw, TrendingUp, Users, GitBranch, Globe2, CheckCircle2, Zap } from 'lucide-react'
+import dwBenefitsImg from '../../assets/Dynamic/d1.png'
 
 const benefits = [
   { icon: Database,   label: 'Easy content management through CMS platforms',   color: '#93c5fd' },
@@ -83,7 +84,7 @@ export default function DWBenefits() {
           <div className="flex-1 flex flex-col">
             <div className="relative flex-1 overflow-hidden" style={{ minHeight: 200 }}>
               <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=420&fit=crop&auto=format&q=80"
+                src={dwBenefitsImg}
                 alt="Dynamic web design services in Thanjavur — ARA Discover Marketing"
                 loading="lazy"
                 className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"

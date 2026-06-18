@@ -1,4 +1,5 @@
 import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award, Star, CheckCircle2 } from 'lucide-react'
+import cmsWhyUsImg from '../../assets/Wordpress/w2.png'
 
 const reasons = [
   { icon: Palette,        title: 'Fully Customised WordPress Development', desc: 'Every website we build is crafted from scratch — no templates. Unique designs aligned to your brand identity.',   color: '#2563eb', light: '#dbeafe' },
@@ -58,7 +59,7 @@ export default function CMSWhyUs() {
           <div className="w-full lg:w-[400px] flex-shrink-0 relative rounded-3xl overflow-hidden"
             style={{ minHeight: 280, boxShadow: '0 24px 64px rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.1)' }}>
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&h=560&fit=crop&auto=format&q=80"
+              src={cmsWhyUsImg}
               alt="WordPress Development Team Thanjavur"
               className="w-full h-full object-cover"
               loading="lazy"

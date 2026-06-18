@@ -1,4 +1,10 @@
 import { ShoppingCart, HeartPulse, BookOpen, Landmark, Truck, Rocket } from 'lucide-react'
+import ecommerceImage from '../../assets/WebApp/Ecommerce.png'
+import logisticsImage from '../../assets/WebApp/Logistics.png'
+import startupImage from '../../assets/WebApp/Startup.png'
+import financeImage from '../../assets/WebApp/Finance.png'
+import educationImage from '../../assets/WebApp/Education.png'
+import healthcareImage from '../../assets/WebApp/Healthcare.png'
 
 const industries = [
   {
@@ -7,7 +13,7 @@ const industries = [
     desc: 'Scalable storefronts with AI-driven product discovery and seamless checkout flows.',
     color: '#2563eb',
     grad: 'linear-gradient(135deg,#1d4ed8,#2563eb)',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=340&fit=crop&auto=format&q=80',
+    image: ecommerceImage,
   },
   {
     icon: HeartPulse,
@@ -15,7 +21,7 @@ const industries = [
     desc: 'HIPAA-ready patient portals, appointment systems, and fitness tracking applications.',
     color: '#0891b2',
     grad: 'linear-gradient(135deg,#0369a1,#0891b2)',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=340&fit=crop&auto=format&q=80',
+    image: healthcareImage,
   },
   {
     icon: BookOpen,
@@ -23,7 +29,7 @@ const industries = [
     desc: 'Interactive LMS platforms, virtual classrooms, and student management systems.',
     color: '#1d4ed8',
     grad: 'linear-gradient(135deg,#1e3a8a,#1d4ed8)',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&h=340&fit=crop&auto=format&q=80',
+    image: educationImage,
   },
   {
     icon: Landmark,
@@ -31,7 +37,7 @@ const industries = [
     desc: 'Secure fintech apps, dashboards, and payment platforms built for compliance.',
     color: '#2563eb',
     grad: 'linear-gradient(135deg,#1e3a8a,#2563eb)',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=340&fit=crop&auto=format&q=80',
+    image: financeImage,
   },
   {
     icon: Truck,
@@ -39,7 +45,7 @@ const industries = [
     desc: 'Real-time tracking, fleet management, and supply chain optimisation tools.',
     color: '#0891b2',
     grad: 'linear-gradient(135deg,#155e75,#0891b2)',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=500&h=340&fit=crop&auto=format&q=80',
+    image: logisticsImage,
   },
   {
     icon: Rocket,
@@ -47,7 +53,7 @@ const industries = [
     desc: 'MVP-to-scale solutions and enterprise platforms built for growth and agility.',
     color: '#1d4ed8',
     grad: 'linear-gradient(135deg,#1e40af,#1d4ed8)',
-    image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500&h=340&fit=crop&auto=format&q=80',
+    image: startupImage,
   },
 ]
 

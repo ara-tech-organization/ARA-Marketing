@@ -55,11 +55,9 @@ export default function EWHero() {
               style={{ color: 'rgba(255,255,255,0.32)' }}>
               <a href="/ARA-Marketing/" className="hover:text-sky-300 transition-colors">Home</a>
               <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              <span>Services</span>
+              <a href="/ARA-Marketing/services/website-development" className="hover:text-sky-300 transition-colors">Web Design</a>
               <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              <span>Web Design</span>
-              <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              Enterprise Website
+              <span className="text-sky-300 font-medium">Enterprise Website</span>
             </nav>
 
             {/* Badge */}

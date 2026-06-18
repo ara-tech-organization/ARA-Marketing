@@ -56,12 +56,6 @@ export default function WebDevWhyUs() {
                   e.currentTarget.style.background = 'transparent'
                 }}
               >
-                {/* Number */}
-                <span className="text-[11px] font-black w-6 flex-shrink-0 mt-1 select-none"
-                  style={{ color: color + '60', fontFamily: 'var(--font-poppins)' }}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-
                 {/* Thin divider */}
                 <div className="w-px self-stretch flex-shrink-0 rounded-full mt-1"
                   style={{ background: color + '30' }} />

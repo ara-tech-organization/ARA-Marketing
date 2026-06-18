@@ -1,5 +1,8 @@
 import { Target, Eye, Zap, Globe, Rocket, TrendingUp, Lightbulb, Cpu, ArrowRight } from 'lucide-react'
 
+import missionImage from '../../assets/About/A2.png'
+import visionImage from '../../assets/About/A3.png'
+
 const missionPoints = [
   { icon: Target,     text: 'Deliver customized solutions that enhance online visibility' },
   { icon: Globe,      text: 'Reach target audiences effectively with data-driven strategies' },
@@ -71,7 +74,7 @@ export default function AboutMV() {
               <div className="relative z-10 rounded-[20px] overflow-hidden"
                 style={{ boxShadow: '0 24px 60px rgba(37,99,235,0.15)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=420&fit=crop&auto=format&q=80"
+                  src={missionImage}
                   alt="ARA Discover Marketing mission — strategic digital marketing planning in Thanjavur"
                   className="w-full object-cover block"
                   style={{ aspectRatio: '10/7' }}
@@ -146,7 +149,7 @@ export default function AboutMV() {
               <div className="relative z-10 rounded-[20px] overflow-hidden"
                 style={{ boxShadow: '0 24px 60px rgba(14,165,233,0.18)' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=420&fit=crop&auto=format&q=80"
+                  src={visionImage}
                   alt="ARA Discover Marketing vision — future digital innovation strategy in Thanjavur"
                   className="w-full object-cover block"
                   style={{ aspectRatio: '10/7' }}

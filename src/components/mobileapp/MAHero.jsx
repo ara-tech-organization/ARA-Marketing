@@ -42,11 +42,9 @@ export default function MAHero() {
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
               <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
               <ChevronRight size={12} className="text-slate-300" />
-              <span>Services</span>
+              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
               <ChevronRight size={12} className="text-slate-300" />
-              <span>Web Design</span>
-              <ChevronRight size={12} className="text-slate-300" />
-              Mobile App Development
+              <span className="text-blue-600 font-medium">Mobile App Development</span>
             </nav>
 
             {/* Badge */}

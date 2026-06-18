@@ -15,18 +15,8 @@ const gradBlue = {
 
 export default function DWWhyUs() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
 
-      <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
-      <div className="hidden sm:block absolute -top-24 -left-24 w-[420px] h-[420px] rounded-full border border-blue-200/40 pointer-events-none animate-[spin_38s_linear_infinite]" />
-      <div className="hidden sm:block absolute -top-14 -left-14 w-[280px] h-[280px] rounded-full border border-sky-200/30 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
-      <div className="hidden sm:block absolute -bottom-20 -right-20 w-[360px] h-[360px] rounded-full border border-blue-200/35 pointer-events-none animate-[spin_40s_linear_infinite]" />
-      <div className="absolute top-0 right-0 w-[300px] sm:w-[480px] h-[300px] sm:h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.18) 0%, transparent 65%)' }} />
-      <div className="absolute bottom-0 left-0 w-[260px] sm:w-[400px] h-[260px] sm:h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.20) 0%, transparent 65%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -44,15 +34,6 @@ export default function DWWhyUs() {
             <p className="text-[13.5px] sm:text-[15px] text-slate-500 leading-[1.85] max-w-[580px]">
               We are a results-driven, dynamic website development company in Thanjavur, focusing on building websites that perform, convert, and scale. Here's why businesses choose us:
             </p>
-          </div>
-          <div className="hidden lg:block flex-shrink-0">
-            <img
-              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=340&h=240&fit=crop&auto=format&q=80"
-              alt="Dynamic website designing company in Thanjavur"
-              loading="lazy"
-              className="rounded-2xl object-cover"
-              style={{ width: 320, height: 220, boxShadow: '0 20px 50px rgba(37,99,235,0.18)' }}
-            />
           </div>
         </div>
 

@@ -28,9 +28,7 @@ export default function WebDevHero() {
           <nav className="flex items-center justify-center gap-1.5 text-[13px] text-slate-400 mb-6">
             <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
             <ChevronRight size={13} className="text-slate-300" />
-            <span>Services</span>
-            <ChevronRight size={13} className="text-slate-300" />
-            Website Design &amp; Development
+            <span className="text-blue-600 font-medium">Website Design &amp; Development</span>
           </nav>
 
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600

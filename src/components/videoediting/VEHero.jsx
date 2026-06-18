@@ -57,9 +57,9 @@ export default function VEHero() {
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] mb-6" style={{ color: 'rgba(255,255,255,0.35)' }}>
               <a href="/ARA-Marketing/" className="transition-colors hover:text-sky-300">Home</a>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <span>Services</span>
+              <span>Digital Marketing</span>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              Video Editing
+              <span className="text-sky-300 font-medium">Video Editing</span>
             </nav>
 
             {/* Badge */}

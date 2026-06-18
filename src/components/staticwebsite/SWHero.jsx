@@ -43,18 +43,18 @@ export default function SWHero() {
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
               <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
               <ChevronRight size={12} className="text-slate-300" />
-              <span>Services</span>
+              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
               <ChevronRight size={12} className="text-slate-300" />
-              <span>Web Design</span>
-              <ChevronRight size={12} className="text-slate-300" />
-              Static Website
+              <span className="text-blue-600 font-medium">Static Website</span>
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8 text-blue-700"
-              style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.22)' }}>
-              <Layout size={10} /> Static Website Development Service
-            </span>
+            <div className="flex justify-center lg:justify-start mb-6 sm:mb-8">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-blue-700"
+                style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.22)' }}>
+                <Layout size={10} /> Static Website Development Service
+              </span>
+            </div>
 
             {/* H1 */}
             <h1 className="text-[clamp(22px,3.2vw,44px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">

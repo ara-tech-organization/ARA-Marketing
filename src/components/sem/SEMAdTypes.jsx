@@ -58,11 +58,11 @@ export default function SEMAdTypes() {
   return (
     <section className="py-16 sm:py-20 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col gap-20 sm:gap-24 lg:gap-28">
-        {adTypes.map(({ id, icon: Icon, label, tag, color, imgSrc, imgAlt, paragraphs, items }) => (
-          <div key={id} className="reveal flex flex-col gap-8">
+        {adTypes.map(({ id, icon: Icon, label, tag, color, imgSrc, imgAlt, paragraphs, items, reverse }) => (
+          <div key={id} className={`reveal flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-12 items-center`}>
 
-            {/* Full-width image */}
-            <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden"
+            {/* Image */}
+            <div className="w-full lg:w-[480px] flex-shrink-0 relative rounded-2xl sm:rounded-3xl overflow-hidden"
               style={{ boxShadow: `0 24px 64px ${color}22` }}>
               <img src={imgSrc} alt={imgAlt} loading="lazy"
                 className="w-full object-contain" />
@@ -76,7 +76,7 @@ export default function SEMAdTypes() {
             </div>
 
             {/* Content */}
-            <div className="w-full">
+            <div className="flex-1 min-w-0">
               <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4"
                 style={{ background: color + '12', color, border: `1px solid ${color}25` }}>
                 <Icon size={11} /> {tag}
