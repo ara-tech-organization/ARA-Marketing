@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Phone, Mail, ArrowRight, Heart } from 'lucide-react'
-import logoImg from '../../assets/Logo.webp'
+import logoImg from '../../assets/Footer.webp'
 
 const FacebookIcon = () => (
   <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">

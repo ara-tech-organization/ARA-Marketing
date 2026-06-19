@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logoImg from '../../assets/Logo.webp'
+import logoImgDark from '../../assets/Footer.webp'
 import {
   ArrowRight, Menu, X, ChevronDown,
   Search, Share2, TrendingUp, Palette, Video, Sparkles,
@@ -145,12 +146,19 @@ export default function Navbar() {
   const navBtnClass = (active, isOpen) =>
     `relative flex items-center gap-1.5 px-4 py-2.5 text-[13.5px] font-semibold
      rounded-xl transition-all duration-200 select-none cursor-pointer
-     ${active
-       ? 'text-blue-600 bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]'
-       : isOpen
-         ? 'text-blue-700 bg-blue-50 border border-blue-200'
-         : 'text-blue-600 hover:text-blue-700 hover:bg-blue-50 border border-transparent hover:border-blue-100'
+     ${transparent
+       ? active
+         ? 'text-white bg-white/15 border border-white/30'
+         : 'text-white/90 hover:text-white hover:bg-white/10 border border-transparent hover:border-white/20'
+       : active
+         ? 'text-blue-600 bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]'
+         : isOpen
+           ? 'text-blue-700 bg-blue-50 border border-blue-200'
+           : 'text-blue-600 hover:text-blue-700 hover:bg-blue-50 border border-transparent hover:border-blue-100'
      }`
+
+  const isHome = pathname === '/'
+  const transparent = isHome && !scrolled
 
   return (
     <>
@@ -158,10 +166,9 @@ export default function Navbar() {
       <nav
         ref={navRef}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-          bg-white backdrop-blur-xl
-          ${scrolled
-            ? 'border-b border-blue-200 shadow-[0_4px_24px_rgba(37,99,235,.08)]'
-            : 'border-b border-blue-100'
+          ${transparent
+            ? 'bg-transparent'
+            : 'bg-white backdrop-blur-xl border-b border-blue-200 shadow-[0_4px_24px_rgba(37,99,235,.08)]'
           }`}
       >
         <div className="max-w-[1200px] mx-auto px-6">
@@ -169,7 +176,12 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link to="/" className="flex items-center no-underline flex-shrink-0">
-              <img src={logoImg} alt="ARA Discover Marketing" className="h-14 w-auto object-contain" />
+              <img
+                src={transparent ? logoImgDark : logoImg}
+                alt="ARA Discover Marketing"
+                className="w-auto object-contain transition-all duration-300"
+                style={{ height: transparent ? '60px' : '56px' }}
+              />
             </Link>
 
             {/* Desktop links */}
@@ -182,16 +194,20 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown('dm')}
                 onMouseLeave={closeAll}
               >
-                <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]' : activeDropdown === 'dm' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50 hover:border-blue-100'}`}>
+                <div className={`relative flex items-center rounded-xl ${
+                  transparent
+                    ? digitalActive || activeDropdown === 'dm' ? 'bg-white/15 border border-white/30' : 'border border-transparent hover:bg-white/10 hover:border-white/20'
+                    : digitalActive ? 'bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]' : activeDropdown === 'dm' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50 hover:border-blue-100'
+                }`}>
                   <Link
                     to="/"
                     onClick={closeAll}
                     className={`px-4 py-2.5 text-[13.5px] font-semibold transition-colors duration-200 select-none
-                      ${digitalActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
+                      ${transparent ? 'text-white/90 hover:text-white' : digitalActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
                   >
                     Digital Marketing
                   </Link>
-                  <span className={`pr-3 py-2.5 ${digitalActive ? 'text-blue-600' : 'text-blue-400'}`}>
+                  <span className={`pr-3 py-2.5 ${transparent ? 'text-white/60' : digitalActive ? 'text-blue-600' : 'text-blue-400'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'dm' ? 'rotate-180' : ''}`} />
                   </span>
                 </div>
@@ -218,16 +234,20 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown('web')}
                 onMouseLeave={closeAll}
               >
-                <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]' : activeDropdown === 'web' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50 hover:border-blue-100'}`}>
+                <div className={`relative flex items-center rounded-xl ${
+                  transparent
+                    ? webActive || activeDropdown === 'web' ? 'bg-white/15 border border-white/30' : 'border border-transparent hover:bg-white/10 hover:border-white/20'
+                    : webActive ? 'bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]' : activeDropdown === 'web' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50 hover:border-blue-100'
+                }`}>
                   <Link
                     to="/services/website-development"
                     onClick={closeAll}
                     className={`px-4 py-2.5 text-[13.5px] font-semibold transition-colors duration-200 select-none
-                      ${webActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
+                      ${transparent ? 'text-white/90 hover:text-white' : webActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
                   >
                     Web Design
                   </Link>
-                  <span className={`pr-3 py-2.5 ${webActive ? 'text-blue-600' : 'text-blue-400'}`}>
+                  <span className={`pr-3 py-2.5 ${transparent ? 'text-white/60' : webActive ? 'text-blue-600' : 'text-blue-400'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'web' ? 'rotate-180' : ''}`} />
                   </span>
                 </div>
