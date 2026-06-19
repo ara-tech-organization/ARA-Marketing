@@ -122,7 +122,7 @@ export default function Navbar() {
     '/services/video-editing',
     '/services/other-digital-marketing-services-thanjavur',
   ])
-  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development', '/services/cms-website-development', '/services/ecommerce-website-development', '/services/enterprise-website-development'])
+  const webActive = isActive(['/services/website-development', '/services/static-website-development', '/services/dynamic-website-development', '/services/cms-website-development', '/services/ecommerce-website-development', '/services/enterprise-website-development', '/services/web-application-development', '/services/mobile-application-development'])
 
   const closeAll = () => setActiveDropdown(null)
 
@@ -146,10 +146,10 @@ export default function Navbar() {
     `relative flex items-center gap-1.5 px-4 py-2.5 text-[13.5px] font-semibold
      rounded-xl transition-all duration-200 select-none cursor-pointer
      ${active
-       ? 'text-blue-600 bg-blue-50 border border-blue-200 shadow-[0_0_12px_rgba(37,99,235,.1)]'
+       ? 'text-blue-600 bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]'
        : isOpen
          ? 'text-blue-700 bg-blue-50 border border-blue-200'
-         : 'text-blue-600 hover:text-blue-700 hover:bg-blue-50 border border-transparent'
+         : 'text-blue-600 hover:text-blue-700 hover:bg-blue-50 border border-transparent hover:border-blue-100'
      }`
 
   return (
@@ -182,7 +182,7 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown('dm')}
                 onMouseLeave={closeAll}
               >
-                <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-50 border border-blue-200 shadow-[0_0_12px_rgba(37,99,235,.1)]' : activeDropdown === 'dm' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50'}`}>
+                <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]' : activeDropdown === 'dm' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50 hover:border-blue-100'}`}>
                   <Link
                     to="/"
                     onClick={closeAll}
@@ -190,10 +190,6 @@ export default function Navbar() {
                       ${digitalActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
                   >
                     Digital Marketing
-                    {digitalActive && (
-                      <span className="absolute -bottom-px left-3 right-8 h-[2px] rounded-full"
-                        style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
-                    )}
                   </Link>
                   <span className={`pr-3 py-2.5 ${digitalActive ? 'text-blue-600' : 'text-blue-400'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'dm' ? 'rotate-180' : ''}`} />
@@ -222,7 +218,7 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown('web')}
                 onMouseLeave={closeAll}
               >
-                <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-50 border border-blue-200 shadow-[0_0_12px_rgba(37,99,235,.1)]' : activeDropdown === 'web' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50'}`}>
+                <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-50 border border-blue-600 shadow-[0_0_12px_rgba(37,99,235,.12)]' : activeDropdown === 'web' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50 hover:border-blue-100'}`}>
                   <Link
                     to="/services/website-development"
                     onClick={closeAll}
@@ -230,10 +226,6 @@ export default function Navbar() {
                       ${webActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
                   >
                     Web Design
-                    {webActive && (
-                      <span className="absolute -bottom-px left-3 right-8 h-[2px] rounded-full"
-                        style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
-                    )}
                   </Link>
                   <span className={`pr-3 py-2.5 ${webActive ? 'text-blue-600' : 'text-blue-400'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'web' ? 'rotate-180' : ''}`} />
