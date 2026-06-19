@@ -146,10 +146,10 @@ export default function Navbar() {
     `relative flex items-center gap-1.5 px-4 py-2.5 text-[13.5px] font-semibold
      rounded-xl transition-all duration-200 select-none cursor-pointer
      ${active
-       ? 'text-blue-400 bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]'
+       ? 'text-blue-600 bg-blue-50 border border-blue-200 shadow-[0_0_12px_rgba(37,99,235,.1)]'
        : isOpen
-         ? 'text-white bg-white/8 border border-white/12'
-         : 'text-white/70 hover:text-white hover:bg-white/6 border border-transparent'
+         ? 'text-blue-700 bg-blue-50 border border-blue-200'
+         : 'text-blue-600 hover:text-blue-700 hover:bg-blue-50 border border-transparent'
      }`
 
   return (
@@ -158,10 +158,10 @@ export default function Navbar() {
       <nav
         ref={navRef}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-          bg-[#0d2244]/90 backdrop-blur-xl
+          bg-white backdrop-blur-xl
           ${scrolled
-            ? 'border-b border-blue-600/20 shadow-[0_4px_32px_rgba(0,0,0,.5)]'
-            : 'border-b border-transparent'
+            ? 'border-b border-blue-200 shadow-[0_4px_24px_rgba(37,99,235,.08)]'
+            : 'border-b border-blue-100'
           }`}
       >
         <div className="max-w-[1200px] mx-auto px-6">
@@ -182,12 +182,12 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown('dm')}
                 onMouseLeave={closeAll}
               >
-                <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]' : activeDropdown === 'dm' ? 'bg-white/8 border border-white/12' : 'border border-transparent hover:bg-white/6'}`}>
+                <div className={`relative flex items-center rounded-xl ${digitalActive ? 'bg-blue-50 border border-blue-200 shadow-[0_0_12px_rgba(37,99,235,.1)]' : activeDropdown === 'dm' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50'}`}>
                   <Link
                     to="/"
                     onClick={closeAll}
                     className={`px-4 py-2.5 text-[13.5px] font-semibold transition-colors duration-200 select-none
-                      ${digitalActive ? 'text-blue-400' : 'text-white/70 hover:text-white'}`}
+                      ${digitalActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
                   >
                     Digital Marketing
                     {digitalActive && (
@@ -195,7 +195,7 @@ export default function Navbar() {
                         style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
                     )}
                   </Link>
-                  <span className={`pr-3 py-2.5 ${digitalActive ? 'text-blue-400' : 'text-white/50'}`}>
+                  <span className={`pr-3 py-2.5 ${digitalActive ? 'text-blue-600' : 'text-blue-400'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'dm' ? 'rotate-180' : ''}`} />
                   </span>
                 </div>
@@ -222,12 +222,12 @@ export default function Navbar() {
                 onMouseEnter={() => setActiveDropdown('web')}
                 onMouseLeave={closeAll}
               >
-                <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-600/15 border border-blue-500/25 shadow-[0_0_12px_rgba(37,99,235,.15)]' : activeDropdown === 'web' ? 'bg-white/8 border border-white/12' : 'border border-transparent hover:bg-white/6'}`}>
+                <div className={`relative flex items-center rounded-xl ${webActive ? 'bg-blue-50 border border-blue-200 shadow-[0_0_12px_rgba(37,99,235,.1)]' : activeDropdown === 'web' ? 'bg-blue-50 border border-blue-200' : 'border border-transparent hover:bg-blue-50'}`}>
                   <Link
                     to="/services/website-development"
                     onClick={closeAll}
                     className={`px-4 py-2.5 text-[13.5px] font-semibold transition-colors duration-200 select-none
-                      ${webActive ? 'text-blue-400' : 'text-white/70 hover:text-white'}`}
+                      ${webActive ? 'text-blue-600' : 'text-blue-600 hover:text-blue-700'}`}
                   >
                     Web Design
                     {webActive && (
@@ -235,7 +235,7 @@ export default function Navbar() {
                         style={{ background: 'linear-gradient(90deg,#3b82f6,#818cf8)' }} />
                     )}
                   </Link>
-                  <span className={`pr-3 py-2.5 ${webActive ? 'text-blue-400' : 'text-white/50'}`}>
+                  <span className={`pr-3 py-2.5 ${webActive ? 'text-blue-600' : 'text-blue-400'}`}>
                     <ChevronDown size={14} className={`transition-transform duration-200 ${activeDropdown === 'web' ? 'rotate-180' : ''}`} />
                   </span>
                 </div>
@@ -285,9 +285,9 @@ export default function Navbar() {
             {/* Hamburger */}
             <button
               onClick={() => setOpen(o => !o)}
-              className="lg:hidden p-2.5 rounded-xl text-white/70 hover:bg-white/8
-                hover:text-white transition-all duration-300 border border-transparent
-                hover:border-white/10"
+              className="lg:hidden p-2.5 rounded-xl text-blue-600 hover:bg-blue-50
+                hover:text-blue-700 transition-all duration-300 border border-transparent
+                hover:border-blue-200"
               aria-label="Toggle menu"
             >
               {open ? <X size={21} /> : <Menu size={21} />}
@@ -299,21 +299,21 @@ export default function Navbar() {
       {/* ─── Mobile menu ─── */}
       <div
         className={`lg:hidden fixed top-[72px] left-0 right-0 z-40
-          bg-[#0a1e3a]/98 backdrop-blur-2xl border-b border-white/8
+          bg-white border-b border-blue-100
           transition-all duration-300 overflow-y-auto max-h-[calc(100vh-72px)]
           ${open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
       >
         <div className="px-4 py-3 space-y-1 pb-6">
 
           {/* Digital Marketing */}
-          <div className="rounded-2xl overflow-hidden border border-white/[0.06]">
+          <div className="rounded-2xl overflow-hidden border border-blue-100">
             <button
               onClick={() => setMobileExpanded(p => p === 'dm' ? null : 'dm')}
               className={`w-full flex items-center justify-between py-4 px-4
                 text-[13.5px] font-semibold transition-all duration-200
                 ${digitalActive || mobileExpanded === 'dm'
-                  ? 'text-blue-400 bg-blue-600/10'
-                  : 'text-white/80 bg-white/[0.03] hover:bg-white/[0.06] hover:text-white'
+                  ? 'text-blue-700 bg-blue-50'
+                  : 'text-blue-600 bg-slate-50 hover:bg-blue-50 hover:text-blue-700'
                 }`}
             >
               <span className="flex items-center gap-2.5">
@@ -325,13 +325,13 @@ export default function Navbar() {
               <ChevronDown
                 size={15}
                 className={`transition-transform duration-200
-                  ${mobileExpanded === 'dm' ? 'rotate-180 text-blue-400' : 'text-white/30'}`}
+                  ${mobileExpanded === 'dm' ? 'rotate-180 text-blue-600' : 'text-blue-300'}`}
               />
             </button>
 
             <div className={`overflow-hidden transition-all duration-300
               ${mobileExpanded === 'dm' ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
-              <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-white/[0.02]">
+              <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-blue-50/50">
                 {digitalMarketingItems.map(({ href, label, icon: Icon, desc, isRoute: ir }) => {
                   const isItemActive = ir !== false && pathname === href
                   const card = (
@@ -339,25 +339,25 @@ export default function Navbar() {
                       onClick={() => setOpen(false)}
                       className="flex flex-col gap-2 p-3 rounded-xl transition-all duration-200 cursor-pointer"
                       style={isItemActive
-                        ? { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
-                        : { background: '#0d2244', border: '1px solid #1e3a5f' }
+                        ? { background: '#dbeafe', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
+                        : { background: '#ffffff', border: '1px solid #bfdbfe' }
                       }
                     >
                       <span className="flex items-center justify-between">
                         <span
                           className="w-8 h-8 rounded-lg flex items-center justify-center"
-                          style={{ background: isItemActive ? '#2563eb' : '#1a3a6e', color: isItemActive ? '#fff' : '#60a5fa' }}
+                          style={{ background: isItemActive ? '#2563eb' : '#eff6ff', color: isItemActive ? '#fff' : '#2563eb' }}
                         >
                           <Icon size={14} />
                         </span>
-                        {isItemActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />}
+                        {isItemActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />}
                       </span>
                       <span>
                         <span className="block text-[12px] font-semibold leading-tight"
-                          style={{ color: isItemActive ? '#93c5fd' : 'rgba(255,255,255,0.85)' }}>
+                          style={{ color: isItemActive ? '#1d4ed8' : '#1e40af' }}>
                           {label}
                         </span>
-                        <span className="block text-[10px] text-white/35 mt-0.5 leading-tight">{desc}</span>
+                        <span className="block text-[10px] text-slate-400 mt-0.5 leading-tight">{desc}</span>
                       </span>
                     </span>
                   )
@@ -370,14 +370,14 @@ export default function Navbar() {
           </div>
 
           {/* Web Design */}
-          <div className="rounded-2xl overflow-hidden border border-white/[0.06]">
+          <div className="rounded-2xl overflow-hidden border border-blue-100">
             <button
               onClick={() => setMobileExpanded(p => p === 'web' ? null : 'web')}
               className={`w-full flex items-center justify-between py-4 px-4
                 text-[13.5px] font-semibold transition-all duration-200
                 ${webActive || mobileExpanded === 'web'
-                  ? 'text-blue-400 bg-blue-600/10'
-                  : 'text-white/80 bg-white/[0.03] hover:bg-white/[0.06] hover:text-white'
+                  ? 'text-blue-700 bg-blue-50'
+                  : 'text-blue-600 bg-slate-50 hover:bg-blue-50 hover:text-blue-700'
                 }`}
             >
               <span className="flex items-center gap-2.5">
@@ -389,13 +389,13 @@ export default function Navbar() {
               <ChevronDown
                 size={15}
                 className={`transition-transform duration-200
-                  ${mobileExpanded === 'web' ? 'rotate-180 text-blue-400' : 'text-white/30'}`}
+                  ${mobileExpanded === 'web' ? 'rotate-180 text-blue-600' : 'text-blue-300'}`}
               />
             </button>
 
             <div className={`overflow-hidden transition-all duration-300
               ${mobileExpanded === 'web' ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
-              <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-white/[0.02]">
+              <div className="px-3 pb-3 pt-1 grid grid-cols-2 gap-2 bg-blue-50/50">
                 {webDesignItems.map(({ href, label, icon: Icon, desc, isRoute: ir }) => {
                   const isItemActive = pathname === href
                   return (
@@ -405,25 +405,25 @@ export default function Navbar() {
                       onClick={() => setOpen(false)}
                       className="flex flex-col gap-2 p-3 rounded-xl transition-all duration-200"
                       style={isItemActive
-                        ? { background: '#1a3560', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
-                        : { background: '#0d2244', border: '1px solid #1e3a5f' }
+                        ? { background: '#dbeafe', border: '1px solid #3b82f6', boxShadow: '0 0 10px rgba(59,130,246,0.15)' }
+                        : { background: '#ffffff', border: '1px solid #bfdbfe' }
                       }
                     >
                       <span className="flex items-center justify-between">
                         <span
                           className="w-8 h-8 rounded-lg flex items-center justify-center"
-                          style={{ background: isItemActive ? '#2563eb' : 'rgba(37,99,235,0.15)', color: isItemActive ? '#fff' : '#60a5fa' }}
+                          style={{ background: isItemActive ? '#2563eb' : '#eff6ff', color: isItemActive ? '#fff' : '#2563eb' }}
                         >
                           <Icon size={14} />
                         </span>
-                        {isItemActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />}
+                        {isItemActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />}
                       </span>
                       <span>
                         <span className="block text-[12px] font-semibold leading-tight"
-                          style={{ color: isItemActive ? '#93c5fd' : 'rgba(255,255,255,0.85)' }}>
+                          style={{ color: isItemActive ? '#1d4ed8' : '#1e40af' }}>
                           {label}
                         </span>
-                        <span className="block text-[10px] text-white/35 mt-0.5 leading-tight">{desc}</span>
+                        <span className="block text-[10px] text-slate-400 mt-0.5 leading-tight">{desc}</span>
                       </span>
                     </Link>
                   )
@@ -439,8 +439,8 @@ export default function Navbar() {
             className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
               border transition-all duration-200
               ${isActive('/about-us')
-                ? 'text-blue-400 bg-blue-600/10 border-blue-500/25'
-                : 'text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06] border-white/[0.06]'
+                ? 'text-blue-700 bg-blue-50 border-blue-200'
+                : 'text-blue-600 bg-slate-50 hover:bg-blue-50 hover:text-blue-700 border-blue-100'
               }`}
           >
             <span className={`w-7 h-7 rounded-lg flex items-center justify-center
@@ -457,8 +457,8 @@ export default function Navbar() {
             className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
               border transition-all duration-200
               ${isActive('/contact-us')
-                ? 'text-blue-400 bg-blue-600/10 border-blue-500/25'
-                : 'text-white/80 hover:text-white bg-white/[0.03] hover:bg-white/[0.06] border-white/[0.06]'
+                ? 'text-blue-700 bg-blue-50 border-blue-200'
+                : 'text-blue-600 bg-slate-50 hover:bg-blue-50 hover:text-blue-700 border-blue-100'
               }`}
           >
             <span className={`w-7 h-7 rounded-lg flex items-center justify-center
