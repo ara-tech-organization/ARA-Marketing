@@ -86,7 +86,7 @@ export default function WAProcess() {
             />
 
             {steps.map(({ num, icon: Icon, title, desc, color, duration }) => (
-              <div key={num} className="flex-1 flex flex-col items-center text-center px-2 xl:px-3 group h-full">
+              <div key={num} className="flex-1 flex flex-col items-center text-center px-2 xl:px-3 group">
 
                 {/* Circle node */}
                 <div
