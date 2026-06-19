@@ -1,9 +1,9 @@
 import { Shirt, Cpu, ShoppingBasket, Sofa, Store, TrendingUp, ArrowRight, Award } from 'lucide-react'
-import fashionImg    from '../../assets/E-commerce/Fashion.png'
-import electronicsImg from '../../assets/E-commerce/Electronics.png'
-import groceryImg    from '../../assets/E-commerce/Grocery.png'
-import furnitureImg  from '../../assets/E-commerce/Furniture.png'
-import multiVendorImg from '../../assets/E-commerce/Multi-Vendor.png'
+import fashionImg    from '../../assets/E-commerce/Fashion.webp'
+import electronicsImg from '../../assets/E-commerce/Electronics.webp'
+import groceryImg    from '../../assets/E-commerce/Grocery.webp'
+import furnitureImg  from '../../assets/E-commerce/Furniture.webp'
+import multiVendorImg from '../../assets/E-commerce/Multi-Vendor.webp'
 
 const industries = [
   {

@@ -1,5 +1,5 @@
 import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight, TrendingUp, Star, CheckCircle } from 'lucide-react'
-import serviceImg from '../../assets/Home/H2.png'
+import serviceImg from '../../assets/Home/H2.webp'
 
 const services = [
   {

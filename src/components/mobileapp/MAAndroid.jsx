@@ -1,6 +1,6 @@
 import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
 
-import androidImage from '../../assets/MobileApp/Android.png'
+import androidImage from '../../assets/MobileApp/Android.webp'
 
 const services = [
   { icon: Code2,   text: 'Custom Android app development services for unique, tailored business solutions' },

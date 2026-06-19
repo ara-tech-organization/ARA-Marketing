@@ -1,6 +1,6 @@
 import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
 
-import iosImage from '../../assets/MobileApp/IOS.png'
+import iosImage from '../../assets/MobileApp/IOS.webp'
 
 const iosServices = [
   { icon: Code2,   title: 'iOS App Design & Development',    desc: 'Beautiful, intuitive iPhone and iPad applications built natively with Swift.' },

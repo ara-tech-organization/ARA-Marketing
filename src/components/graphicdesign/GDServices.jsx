@@ -1,12 +1,12 @@
 import { Frame, Image, BookOpen, CreditCard, FileText, Share2, Megaphone, Layers, Check, ArrowRight } from 'lucide-react'
-import logoImg        from '../../assets/GD/LogoDesign.png'
-import bannerImg      from '../../assets/GD/Banner .png'
-import pamphletImg    from '../../assets/GD/Pamphlet.png'
-import visitingImg    from '../../assets/GD/Visitingcard.png'
-import stationeryImg  from '../../assets/GD/CorporateStationery.png'
-import socialImg      from '../../assets/GD/SocialMediaPost.png'
-import flyerImg       from '../../assets/GD/Flyer&Poster Design.png'
-import visualsImg     from '../../assets/GD/Visuals.png'
+import logoImg        from '../../assets/GD/LogoDesign.webp'
+import bannerImg      from '../../assets/GD/Banner .webp'
+import pamphletImg    from '../../assets/GD/Pamphlet.webp'
+import visitingImg    from '../../assets/GD/Visitingcard.webp'
+import stationeryImg  from '../../assets/GD/CorporateStationery.webp'
+import socialImg      from '../../assets/GD/SocialMediaPost.webp'
+import flyerImg       from '../../assets/GD/Flyer&Poster Design.webp'
+import visualsImg     from '../../assets/GD/Visuals.webp'
 
 const services = [
   {

@@ -1,5 +1,5 @@
 import { Database, RefreshCw, TrendingUp, Users, GitBranch, Globe2, CheckCircle2, Zap } from 'lucide-react'
-import dwBenefitsImg from '../../assets/Dynamic/d1.png'
+import dwBenefitsImg from '../../assets/Dynamic/d1.webp'
 
 const benefits = [
   { icon: Database,   label: 'Easy content management through CMS platforms',   color: '#93c5fd' },

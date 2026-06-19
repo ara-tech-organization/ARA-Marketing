@@ -1,9 +1,9 @@
 import { ShoppingCart, GraduationCap, Building2, User, Wrench, Trophy, TrendingUp, Star, Award, CheckCircle2 } from 'lucide-react'
-import wpEcomImg      from '../../assets/Wordpress/e-commerce.png'
-import wpEduImg       from '../../assets/Wordpress/educational.png'
-import wpCorpImg      from '../../assets/Wordpress/Corporate.png'
-import wpPortImg      from '../../assets/Wordpress/Portfolio.png'
-import wpServiceImg   from '../../assets/Wordpress/Service.png'
+import wpEcomImg      from '../../assets/Wordpress/e-commerce.webp'
+import wpEduImg       from '../../assets/Wordpress/educational.webp'
+import wpCorpImg      from '../../assets/Wordpress/Corporate.webp'
+import wpPortImg      from '../../assets/Wordpress/Portfolio.webp'
+import wpServiceImg   from '../../assets/Wordpress/Service.webp'
 
 const industries = [
   {

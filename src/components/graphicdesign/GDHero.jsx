@@ -1,5 +1,5 @@
 import { Palette, ChevronRight, ArrowRight, ArrowUpRight, CheckCircle, Frame, Type, Layers } from 'lucide-react'
-import gdHeroImg from '../../assets/GD/G1.png'
+import gdHeroImg from '../../assets/GD/G1.webp'
 
 export default function GDHero() {
   return (

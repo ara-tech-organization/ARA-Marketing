@@ -1,5 +1,5 @@
 import { Sparkles, TrendingUp, Users, Award, Zap, CheckCircle, Star } from 'lucide-react'
-import gdIntroImg from '../../assets/GD/G2.png'
+import gdIntroImg from '../../assets/GD/G2.webp'
 
 export default function GDIntro() {
   return (

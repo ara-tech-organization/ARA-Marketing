@@ -1,9 +1,9 @@
 import { Wrench, Smartphone, CreditCard, Search, Zap, ThumbsUp } from 'lucide-react'
-import customBuiltImg  from '../../assets/E-commerce/Custom-Built.png'
-import mobileImg       from '../../assets/E-commerce/Mobile-Friendly.png'
-import seoOptImg       from '../../assets/E-commerce/SEO-optimization.png'
-import seoImg          from '../../assets/E-commerce/SEO.png'
-import highSpeedImg    from '../../assets/E-commerce/High-Speed.png'
+import customBuiltImg  from '../../assets/E-commerce/Custom-Built.webp'
+import mobileImg       from '../../assets/E-commerce/Mobile-Friendly.webp'
+import seoOptImg       from '../../assets/E-commerce/SEO-optimization.webp'
+import seoImg          from '../../assets/E-commerce/SEO.webp'
+import highSpeedImg    from '../../assets/E-commerce/High-Speed.webp'
 
 const reasons = [
   {

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { CheckCircle2, ArrowRight, Layers, Zap, Globe } from 'lucide-react'
-import shopifyImg    from '../../assets/E-commerce/Shopify.png'
-import wooImg        from '../../assets/E-commerce/woo.png'
-import enterpriseImg from '../../assets/E-commerce/Enterprise.png'
+import shopifyImg    from '../../assets/E-commerce/Shopify.webp'
+import wooImg        from '../../assets/E-commerce/woo.webp'
+import enterpriseImg from '../../assets/E-commerce/Enterprise.webp'
 
 const C1 = '#2563eb'
 const C2 = '#0891b2'

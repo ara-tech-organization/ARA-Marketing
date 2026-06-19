@@ -1,5 +1,5 @@
 import { Target, Zap, TrendingUp, Globe2, Layers } from 'lucide-react'
-import smmIntroImg from '../../assets/SMM/m1.png'
+import smmIntroImg from '../../assets/SMM/m1.webp'
 
 const highlights = [
   {

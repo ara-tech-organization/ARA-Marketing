@@ -1,5 +1,5 @@
 import { Trophy, TrendingUp, Users, BarChart2, Globe2, CheckCircle, Briefcase } from 'lucide-react'
-import seoCampaignImg from '../../assets/SEO/s3.png'
+import seoCampaignImg from '../../assets/SEO/s3.webp'
 
 const industries = [
   'Healthcare', 'Education', 'Real Estate',

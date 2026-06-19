@@ -1,5 +1,5 @@
 import { Mail, Users, Smartphone, BarChart2, CheckCircle2, TrendingUp, Award, ArrowRight, Sparkles } from 'lucide-react'
-import omIntroImg from '../../assets/Other-services/o1.png'
+import omIntroImg from '../../assets/Other-services/o1.webp'
 
 const features = [
   { icon: Mail,       color: '#2563eb', label: 'Email Marketing',      desc: 'Targeted campaigns with high open rates and automated workflows that convert subscribers into loyal customers.' },

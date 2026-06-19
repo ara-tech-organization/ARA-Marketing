@@ -1,5 +1,5 @@
 import { Layout, Zap, Shield, ArrowRight, ArrowUpRight, ChevronRight, Globe, Monitor, CheckCircle2, Star } from 'lucide-react'
-import swHeroImg from '../../assets/static/s1.png'
+import swHeroImg from '../../assets/static/s1.webp'
 
 const techTags = ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS', 'Vite', 'Netlify', 'Vercel']
 

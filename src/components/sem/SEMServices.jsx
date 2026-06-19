@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import { Search, Monitor, Play, ShoppingBag, CheckCircle2, Layers, ArrowRight } from 'lucide-react'
-import googleImg   from '../../assets/SEM/google.png'
-import displayImg  from '../../assets/SEM/DisplayAdvertising.png'
-import youtubeImg  from '../../assets/SEM/youtube.png'
-import shoppingImg from '../../assets/SEM/Shopping.png'
+import googleImg   from '../../assets/SEM/google.webp'
+import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
+import youtubeImg  from '../../assets/SEM/youtube.webp'
+import shoppingImg from '../../assets/SEM/Shopping.webp'
 
 const services = [
   {

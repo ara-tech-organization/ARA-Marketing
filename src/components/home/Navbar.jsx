@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import logoImg from '../../assets/Logo.png'
+import logoImg from '../../assets/Logo.webp'
 import {
   ArrowRight, Menu, X, ChevronDown,
   Search, Share2, TrendingUp, Palette, Video, Sparkles,

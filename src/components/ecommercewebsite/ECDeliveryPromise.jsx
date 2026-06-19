@@ -1,5 +1,5 @@
 import { Award, ShieldCheck, Zap, Clock, Headphones, Layers, ArrowRight, CheckCircle2 } from 'lucide-react'
-import ecDeliveryImg from '../../assets/E-commerce/e1.png'
+import ecDeliveryImg from '../../assets/E-commerce/e1.webp'
 
 const promises = [
   { icon: Layers,      title: 'Fully Customised\nE-Commerce Solutions',  desc: 'Every store is built from scratch, tailored to your brand identity and business goals.',          color: '#2563eb', bg: '#dbeafe' },

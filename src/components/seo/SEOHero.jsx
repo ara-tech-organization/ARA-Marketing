@@ -1,5 +1,5 @@
 import { Search, TrendingUp, BarChart2, ChevronRight, ArrowRight, ArrowUpRight, ArrowUp } from 'lucide-react'
-import seoHeroImg from '../../assets/SEO/Seo.png'
+import seoHeroImg from '../../assets/SEO/Seo.webp'
 
 const keywords = [
   { kw: 'best seo companies in thanjavur', pos: 1, prev: 4, color: '#2563eb' },

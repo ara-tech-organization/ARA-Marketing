@@ -3,10 +3,10 @@ import {
   Search, MousePointer2, Play, ShoppingBag,
   Megaphone, Sparkles, Target, TrendingUp, CheckCircle2,
 } from 'lucide-react'
-import semImg1 from '../../assets/SEM/google.png'
-import semImg2 from '../../assets/SEM/DisplayAdvertising.png'
-import semImg3 from '../../assets/SEM/youtube.png'
-import semImg4 from '../../assets/SEM/Shopping.png'
+import semImg1 from '../../assets/SEM/google.webp'
+import semImg2 from '../../assets/SEM/DisplayAdvertising.webp'
+import semImg3 from '../../assets/SEM/youtube.webp'
+import semImg4 from '../../assets/SEM/Shopping.webp'
 
 const campaignTypes = [
   {

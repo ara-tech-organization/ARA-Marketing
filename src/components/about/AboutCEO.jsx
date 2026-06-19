@@ -1,6 +1,6 @@
 import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
   Globe, Quote, Sparkles } from 'lucide-react'
-import mamImg from '../../assets/Mam.png'
+import mamImg from '../../assets/Mam.webp'
 
 const expertise = [
   'Digital Marketing', 'Brand Strategy', 'SEO & SEM',

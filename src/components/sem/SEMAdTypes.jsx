@@ -1,7 +1,7 @@
 import { Monitor, Play, ShoppingBag, CheckCircle2, ArrowRight } from 'lucide-react'
-import displayImg  from '../../assets/SEM/DisplayAdvertising.png'
-import videoImg    from '../../assets/SEM/Video-editing.png'
-import ecommerceImg from '../../assets/SEM/E-commerce.png'
+import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
+import videoImg    from '../../assets/SEM/Video-editing.webp'
+import ecommerceImg from '../../assets/SEM/E-commerce.webp'
 
 const adTypes = [
   {

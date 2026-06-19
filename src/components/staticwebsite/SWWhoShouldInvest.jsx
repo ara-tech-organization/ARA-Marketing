@@ -1,8 +1,8 @@
 import { Building2, Briefcase, GraduationCap, Wrench, ArrowRight, Target } from 'lucide-react'
-import imgLocalBusiness from '../../assets/Static/Local Businesses.png'
-import imgPortfolio from '../../assets/Static/Portfolio.Websites.png'
-import imgEducational from '../../assets/Static/Educational.png'
-import imgService from '../../assets/Static/Service.png'
+import imgLocalBusiness from '../../assets/Static/Local Businesses.webp'
+import imgPortfolio from '../../assets/Static/Portfolio.Websites.webp'
+import imgEducational from '../../assets/Static/Educational.webp'
+import imgService from '../../assets/Static/Service.webp'
 
 const audiences = [
   {

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { Settings2, ShoppingBag, Brain, Smartphone, Building2, CheckCircle2 } from 'lucide-react'
-import customImg     from '../../assets/WebApp/Custom.png'
-import ecommerceImg  from '../../assets/WebApp/E-commerce.png'
-import aiImg         from '../../assets/WebApp/AI.png'
-import webImg        from '../../assets/WebApp/Web.png'
-import enterpriseImg from '../../assets/WebApp/Enterprise.png'
+import customImg     from '../../assets/WebApp/Custom.webp'
+import ecommerceImg  from '../../assets/WebApp/E-commerce.webp'
+import aiImg         from '../../assets/WebApp/AI.webp'
+import webImg        from '../../assets/WebApp/Web.webp'
+import enterpriseImg from '../../assets/WebApp/Enterprise.webp'
 
 const services = [
   {

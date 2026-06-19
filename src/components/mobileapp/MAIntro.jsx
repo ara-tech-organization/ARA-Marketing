@@ -1,6 +1,6 @@
 import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
 
-import introImage from '../../assets/MobileApp/m1.png'
+import introImage from '../../assets/MobileApp/m1.webp'
 
 const features = [
   {

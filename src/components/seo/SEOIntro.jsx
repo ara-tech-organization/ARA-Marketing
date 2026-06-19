@@ -1,5 +1,5 @@
 import { Cpu, Globe2, FileText, MapPin, Smartphone, ArrowRight } from 'lucide-react'
-import seoIntroImg from '../../assets/SEO/S2.png'
+import seoIntroImg from '../../assets/SEO/S2.webp'
 
 const services = [
   { icon: FileText,   label: 'On-Page SEO',   color: '#2563eb', href: '#seo-services' },

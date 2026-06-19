@@ -1,5 +1,5 @@
 import { ArrowRight, TrendingUp, Settings, Users, Sparkles } from 'lucide-react'
-import cmsIntroImg from '../../assets/Wordpress/w1.png'
+import cmsIntroImg from '../../assets/Wordpress/w1.webp'
 
 const pillars = [
   {

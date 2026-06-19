@@ -1,5 +1,5 @@
 import { Target, Palette, Zap, TrendingUp, Activity, BarChart2, Layers } from 'lucide-react'
-import whyUsImg from '../../assets/SMM/m2.png'
+import whyUsImg from '../../assets/SMM/m2.webp'
 
 const reasons = [
   {

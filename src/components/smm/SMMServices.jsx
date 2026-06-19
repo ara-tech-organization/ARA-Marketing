@@ -2,10 +2,10 @@ import {
   Share2, Target, Palette, Megaphone, MessageSquare, Eye, Users, BarChart2,
   CheckCircle, Briefcase, Image, TrendingUp, Layers, ArrowRight
 } from 'lucide-react'
-import facebookImg    from '../../assets/SMM/Facebook.png'
-import linkedinImg    from '../../assets/SMM/Linkedin.png'
-import pinterestImg   from '../../assets/SMM/Pintrest.png'
-import socialMediaImg from '../../assets/SMM/Socialmedia.png'
+import facebookImg    from '../../assets/SMM/Facebook.webp'
+import linkedinImg    from '../../assets/SMM/Linkedin.webp'
+import pinterestImg   from '../../assets/SMM/Pintrest.webp'
+import socialMediaImg from '../../assets/SMM/Socialmedia.webp'
 
 const overviewItems = [
   { icon: Target,        label: 'Social Media Strategy & Planning' },

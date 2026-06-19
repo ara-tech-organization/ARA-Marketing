@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ArrowRight, Phone, Star, CheckCheck, Users, TrendingUp, Search, BarChart2, Target, Zap, Activity } from 'lucide-react'
-import heroBgImage from '../../assets/Home/h1.png'
+import heroBgImage from '../../assets/Home/h1.webp'
 
 let _firstHeroLoad = true
 

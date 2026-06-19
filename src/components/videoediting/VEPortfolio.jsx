@@ -1,10 +1,10 @@
 import { Sparkles, Package, Briefcase, Share2, Wind, CalendarDays, PlayCircle, Image } from 'lucide-react'
-import brandingImg  from '../../assets/Video-editing/Branding-videos.png'
-import socialImg    from '../../assets/Video-editing/social-media.png'
-import corporateImg from '../../assets/Video-editing/corporate-films.png'
-import productImg   from '../../assets/Video-editing/product-add.png'
-import droneImg     from '../../assets/Video-editing/Drone-add.png'
-import eventImg     from '../../assets/Video-editing/Event-coverage.png'
+import brandingImg  from '../../assets/Video-editing/Branding-videos.webp'
+import socialImg    from '../../assets/Video-editing/social-media.webp'
+import corporateImg from '../../assets/Video-editing/corporate-films.webp'
+import productImg   from '../../assets/Video-editing/product-add.webp'
+import droneImg     from '../../assets/Video-editing/Drone-add.webp'
+import eventImg     from '../../assets/Video-editing/Event-coverage.webp'
 
 // Row 1: Branding(2) + Social(1)   = 3 cols
 // Row 2: Corporate(1) + Product(1) + Drone(1) = 3 cols

@@ -1,7 +1,7 @@
 import { Target, Eye, Zap, Globe, Rocket, TrendingUp, Lightbulb, Cpu, ArrowRight } from 'lucide-react'
 
-import missionImage from '../../assets/About/A2.png'
-import visionImage from '../../assets/About/A3.png'
+import missionImage from '../../assets/About/A2.webp'
+import visionImage from '../../assets/About/A3.webp'
 
 const missionPoints = [
   { icon: Target,     text: 'Deliver customized solutions that enhance online visibility' },

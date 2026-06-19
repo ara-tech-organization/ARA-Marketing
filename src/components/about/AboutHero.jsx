@@ -1,6 +1,6 @@
 import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
 
-import heroImage from '../../assets/About/A1.png'
+import heroImage from '../../assets/About/A1.webp'
 
 const stats = [
   { icon: Users,      val: '100+', label: 'Brands Served'  },

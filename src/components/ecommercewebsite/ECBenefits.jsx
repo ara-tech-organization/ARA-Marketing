@@ -1,5 +1,5 @@
 import { Clock, Globe2, RefreshCw, DollarSign, Heart, CheckCircle2, Zap } from 'lucide-react'
-import ecBenefitsImg from '../../assets/E-commerce/e2.png'
+import ecBenefitsImg from '../../assets/E-commerce/e2.webp'
 
 const benefits = [
   {

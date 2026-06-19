@@ -1,10 +1,10 @@
 import { Frame, BookOpen, Megaphone, CreditCard, Share2, Image, Layers } from 'lucide-react'
-import logoImg       from '../../assets/GD/LogoDesign.png'
-import pamphletImg   from '../../assets/GD/Pamphlet.png'
-import socialImg     from '../../assets/GD/SocialMediaPost.png'
-import flyerImg      from '../../assets/GD/Flyer&Poster Design.png'
-import visualsImg    from '../../assets/GD/Visuals.png'
-import visitingImg   from '../../assets/GD/Visitingcard.png'
+import logoImg       from '../../assets/GD/LogoDesign.webp'
+import pamphletImg   from '../../assets/GD/Pamphlet.webp'
+import socialImg     from '../../assets/GD/SocialMediaPost.webp'
+import flyerImg      from '../../assets/GD/Flyer&Poster Design.webp'
+import visualsImg    from '../../assets/GD/Visuals.webp'
+import visitingImg   from '../../assets/GD/Visitingcard.webp'
 
 const categories = [
   { label: 'Logo Designs',           icon: Frame,     color: '#2563eb', bg: '#dbeafe' },

@@ -1,4 +1,4 @@
-import omCtaImg from '../../assets/Other-services/o3.png'
+import omCtaImg from '../../assets/Other-services/o3.webp'
 import {
   ArrowRight, Zap, CheckCircle2, TrendingUp,
   Mail, Users, Smartphone, BarChart2, Bot, FileText,

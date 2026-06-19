@@ -3,12 +3,12 @@ import {
   Sparkles, Package, Briefcase, CalendarDays, Share2, Wind,
   CheckCircle2, ArrowRight, Layers,
 } from 'lucide-react'
-import brandingImg   from '../../assets/Video-editing/Branding.png'
-import productImg    from '../../assets/Video-editing/Product.png'
-import corporateImg  from '../../assets/Video-editing/CorporateFilms.png'
-import eventImg      from '../../assets/Video-editing/event.png'
-import socialImg     from '../../assets/Video-editing/Socialmedia.png'
-import droneImg      from '../../assets/Video-editing/Drone.png'
+import brandingImg   from '../../assets/Video-editing/Branding.webp'
+import productImg    from '../../assets/Video-editing/Product.webp'
+import corporateImg  from '../../assets/Video-editing/CorporateFilms.webp'
+import eventImg      from '../../assets/Video-editing/event.webp'
+import socialImg     from '../../assets/Video-editing/Socialmedia.webp'
+import droneImg      from '../../assets/Video-editing/Drone.webp'
 
 const services = [
   {

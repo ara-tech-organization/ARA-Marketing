@@ -1,5 +1,5 @@
 import { Share2, TrendingUp, Users, ChevronRight, ArrowRight, ArrowUpRight, Activity } from 'lucide-react'
-import smmHeroImg from '../../assets/SMM/m1.png'
+import smmHeroImg from '../../assets/SMM/m1.webp'
 
 export default function SMMHero() {
   return (

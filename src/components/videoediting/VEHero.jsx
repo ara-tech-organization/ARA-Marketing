@@ -3,7 +3,7 @@ import {
   Sparkles, TrendingUp, PlayCircle, Eye, CheckCircle2,
   Video, Scissors, Star,
 } from 'lucide-react'
-import veHeroImg from '../../assets/Video-editing/v1.png'
+import veHeroImg from '../../assets/Video-editing/v1.webp'
 
 const platformRows = [
   { label: 'YouTube Channel',   views: '2.8M', growth: '+34%', pct: 88, color: '#38bdf8' },

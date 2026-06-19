@@ -1,5 +1,5 @@
 import { Cpu, Search, Monitor, Play, ShoppingBag, ArrowRight, TrendingUp, BarChart2, Star } from 'lucide-react'
-import semIntroImg from '../../assets/SEM/e1.png'
+import semIntroImg from '../../assets/SEM/e1.webp'
 
 const highlights = [
   { value: '300%', label: 'Lead Growth',   color: '#2563eb', icon: TrendingUp },

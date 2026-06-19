@@ -1,5 +1,5 @@
 import { CheckCircle2, Layers, TrendingUp, ShieldCheck, Clock4, Globe2 } from 'lucide-react'
-import ewIntroImg from '../../assets/Enterprise/e1.png'
+import ewIntroImg from '../../assets/Enterprise/e1.webp'
 
 const stats = [
   { val: '500+', label: 'Projects Delivered' },

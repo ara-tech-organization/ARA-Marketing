@@ -3,11 +3,11 @@ import {
   FileText, Globe2, Cpu, MapPin, Smartphone,
   CheckCircle, Layers, ArrowRight, ChevronRight
 } from 'lucide-react'
-import onPageImg    from '../../assets/SEO/On-page.png'
-import offPageImg   from '../../assets/SEO/Off-page.png'
-import technicalImg from '../../assets/SEO/Technical.png'
-import localImg     from '../../assets/SEO/Local.png'
-import mobileImg    from '../../assets/SEO/Mobile.png'
+import onPageImg    from '../../assets/SEO/On-page.webp'
+import offPageImg   from '../../assets/SEO/Off-page.webp'
+import technicalImg from '../../assets/SEO/Technical.webp'
+import localImg     from '../../assets/SEO/Local.webp'
+import mobileImg    from '../../assets/SEO/Mobile.webp'
 
 const tabs = [
   {

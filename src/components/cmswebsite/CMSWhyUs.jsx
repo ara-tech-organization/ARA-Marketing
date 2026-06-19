@@ -1,5 +1,5 @@
 import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award, Star, CheckCircle2 } from 'lucide-react'
-import cmsWhyUsImg from '../../assets/Wordpress/w2.png'
+import cmsWhyUsImg from '../../assets/Wordpress/w2.webp'
 
 const reasons = [
   { icon: Palette,        title: 'Fully Customised WordPress Development', desc: 'Every website we build is crafted from scratch — no templates. Unique designs aligned to your brand identity.',   color: '#2563eb', light: '#dbeafe' },

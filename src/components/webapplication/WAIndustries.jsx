@@ -1,10 +1,10 @@
 import { ShoppingCart, HeartPulse, BookOpen, Landmark, Truck, Rocket } from 'lucide-react'
-import ecommerceImage from '../../assets/WebApp/Ecommerce.png'
-import logisticsImage from '../../assets/WebApp/Logistics.png'
-import startupImage from '../../assets/WebApp/Startup.png'
-import financeImage from '../../assets/WebApp/Finance.png'
-import educationImage from '../../assets/WebApp/Education.png'
-import healthcareImage from '../../assets/WebApp/Healthcare.png'
+import ecommerceImage from '../../assets/WebApp/Ecommerce.webp'
+import logisticsImage from '../../assets/WebApp/Logistics.webp'
+import startupImage from '../../assets/WebApp/Startup.webp'
+import financeImage from '../../assets/WebApp/Finance.webp'
+import educationImage from '../../assets/WebApp/Education.webp'
+import healthcareImage from '../../assets/WebApp/Healthcare.webp'
 
 const industries = [
   {

@@ -1,6 +1,6 @@
 import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
 
-import whyUsImage from '../../assets/MobileApp/m2.png'
+import whyUsImage from '../../assets/MobileApp/m2.webp'
 
 const reasons = [
   {

@@ -1,5 +1,5 @@
 import { Bot, Target, Users, BarChart2, Sparkles, DollarSign, Award, ArrowRight, CheckCircle2, TrendingUp } from 'lucide-react'
-import omWhyUsImg from '../../assets/Other-services/o2.png'
+import omWhyUsImg from '../../assets/Other-services/o2.webp'
 
 const reasons = [
   {

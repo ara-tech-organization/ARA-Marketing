@@ -3,12 +3,12 @@ import {
   Globe, ShoppingCart, GraduationCap, Newspaper, Plug, LayoutDashboard,
   CheckCircle2, ArrowRight, Layers,
 } from 'lucide-react'
-import cmsImg      from '../../assets/Dynamic/CMS.png'
-import ecomImg     from '../../assets/Dynamic/E-commerce.png'
-import portalImg   from '../../assets/Dynamic/ortalWebsites.png'
-import newsImg     from '../../assets/Dynamic/News&Blog.png'
-import apiImg      from '../../assets/Dynamic/API-Integrated Websites.png'
-import webappImg   from '../../assets/Dynamic/CustomWebApplications.png'
+import cmsImg      from '../../assets/Dynamic/CMS.webp'
+import ecomImg     from '../../assets/Dynamic/E-commerce.webp'
+import portalImg   from '../../assets/Dynamic/ortalWebsites.webp'
+import newsImg     from '../../assets/Dynamic/News&Blog.webp'
+import apiImg      from '../../assets/Dynamic/API-Integrated Websites.webp'
+import webappImg   from '../../assets/Dynamic/CustomWebApplications.webp'
 
 const services = [
   {

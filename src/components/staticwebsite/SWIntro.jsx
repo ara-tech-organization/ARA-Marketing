@@ -1,5 +1,5 @@
 import { Zap, Shield, Search, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
-import swIntroImg from '../../assets/static/s2.png'
+import swIntroImg from '../../assets/static/s2.webp'
 
 const features = [
   {

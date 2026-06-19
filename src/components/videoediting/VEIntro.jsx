@@ -1,5 +1,5 @@
 import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
-import veIntroImg from '../../assets/Video-editing/V2.png'
+import veIntroImg from '../../assets/Video-editing/V2.webp'
 
 const expertise = [
   { icon: Wand2,   label: 'Digital Marketing Video', color: '#2563eb', desc: 'Platform-specific edits crafted to drive engagement and conversions across all digital channels.' },

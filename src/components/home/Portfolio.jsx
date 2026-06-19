@@ -1,7 +1,7 @@
 import { ArrowUpRight, Briefcase } from 'lucide-react'
-import healthcareImg from '../../assets/Home/H9.png'
-import ecommerceImg from '../../assets/Home/H4.png'
-import realEstateImg from '../../assets/Home/H5.png'
+import healthcareImg from '../../assets/Home/H9.webp'
+import ecommerceImg from '../../assets/Home/H4.webp'
+import realEstateImg from '../../assets/Home/H5.webp'
 
 const caseStudies = [
   {

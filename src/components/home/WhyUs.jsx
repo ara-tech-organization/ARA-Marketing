@@ -1,5 +1,5 @@
 import { Bot, BarChart, Target, Users, Shield, Clock, Zap, Star, CheckCheck } from 'lucide-react'
-import whyUsImg from '../../assets/Home/H3.png'
+import whyUsImg from '../../assets/Home/H3.webp'
 
 const reasons = [
   { icon: Target,   title: 'Customized Digital Marketing Strategies', desc: 'Strategies built around your goals, target audience and competitive landscape — never generic.' },
