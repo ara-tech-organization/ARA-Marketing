@@ -63,7 +63,7 @@ export default function ECHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(21px,2.2vw,39px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
+            <h1 className="animate-hero-d2 text-[clamp(17px,1.8vw,30px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
               Build High-Performance{' '}
               <span style={{ color: '#2563eb' }}>
                 Ecommerce Websites

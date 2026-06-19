@@ -84,7 +84,7 @@ export default function GDCTA() {
           {/* ── Right — White action panel ── */}
           <div className="bg-white flex flex-col justify-center p-7 sm:p-10 lg:p-14">
             <p
-              className="text-[clamp(28px,3vw,44px)] font-black text-slate-900 leading-tight mb-3"
+              className="text-[clamp(20px,2.2vw,33px)] font-bold text-slate-900 leading-tight mb-3"
             >
               Ready to create something{' '}
               <span className="text-gradient-blue">remarkable?</span>

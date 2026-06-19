@@ -51,7 +51,7 @@ export default function OMHero() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10.5px] font-bold uppercase tracking-widest mb-5 bg-white border border-violet-200 text-violet-600 shadow-sm">
             <Send size={10} /> Advanced Digital Marketing Services
           </div>
-          <h1 className="text-[clamp(21px,2.7vw,39px)] font-bold leading-[1.12] tracking-tight text-slate-900">
+          <h1 className="text-[clamp(17px,2.1vw,30px)] font-bold leading-[1.12] tracking-tight text-slate-900">
             Advanced Digital{' '}
             <span style={{ background: 'linear-gradient(135deg,#2563eb 0%,#7c3aed 60%,#0891b2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Marketing

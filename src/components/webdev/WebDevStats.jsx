@@ -31,12 +31,12 @@ function StatItem({ target, suffix, label, icon: Icon, index }) {
 
       {/* Number */}
       <div className="flex items-end gap-0.5 mb-3">
-        <span className="font-black leading-none tracking-tight text-slate-900"
-          style={{ fontSize: 'clamp(36px,4vw,52px)', lineHeight: 1 }}>
+        <span className="font-bold leading-none tracking-tight text-slate-900"
+          style={{ fontSize: 'clamp(28px,3vw,40px)', lineHeight: 1 }}>
           {count}
         </span>
-        <span className="font-black leading-none text-blue-500 mb-1"
-          style={{ fontSize: 'clamp(20px,2.2vw,28px)', lineHeight: 1 }}>
+        <span className="font-bold leading-none text-blue-500 mb-1"
+          style={{ fontSize: 'clamp(16px,1.8vw,22px)', lineHeight: 1 }}>
           {suffix}
         </span>
       </div>

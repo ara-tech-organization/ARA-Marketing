@@ -79,7 +79,7 @@ export default function GDHero() {
 
             {/* H1 */}
             <h1 className="animate-hero-d2 tracking-tight mb-7 text-white"
-              style={{ fontSize: 'clamp(19px,2.2vw,35px)', lineHeight: 1.12, fontWeight: 800 }}>
+              style={{ fontSize: 'clamp(16px,1.7vw,27px)', lineHeight: 1.12, fontWeight: 700 }}>
               Best Branding &amp; Graphic Design Services in Thanjavur{' '}
               <span style={{
                 background: 'linear-gradient(90deg, #60a5fa 0%, #38bdf8 50%, #a78bfa 100%)',
