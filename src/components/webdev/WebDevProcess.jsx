@@ -76,7 +76,7 @@ export default function WebDevProcess() {
                         style={{ background: step.light || step.color + '12' }}>
                         <Icon size={16} style={{ color: step.color }} />
                       </div>
-                      <h3 className="text-[10px] font-bold text-slate-700 leading-tight">{step.title}</h3>
+                      <h3 className="text-[5px] font-bold text-slate-700 leading-tight">{step.title}</h3>
                     </div>
                   </div>
                 )

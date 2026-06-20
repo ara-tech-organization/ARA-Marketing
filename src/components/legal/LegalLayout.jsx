@@ -108,7 +108,7 @@ export default function LegalLayout({ title, subtitle, lastUpdated, children }) 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="mailto:aradiscovermarketing@gmail.com"
-                className="inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-full text-[13px] font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30"
+                className="btn-glow inline-flex items-center justify-center gap-2 px-6 py-2.5 text-white rounded-full text-[13px] font-semibold transition-all duration-300"
               >
                 aradiscovermarketing@gmail.com
               </a>

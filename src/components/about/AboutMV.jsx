@@ -218,8 +218,7 @@ export default function AboutMV() {
           <a href="/ARA-Marketing/contact-us"
             className="flex-shrink-0 btn-glow inline-flex items-center gap-2 px-7 py-3.5
               rounded-full font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-              boxShadow: '0 8px 32px rgba(37,99,235,0.28)' }}>
+            style={{ boxShadow: '0 8px 32px rgba(124,58,237,0.28)' }}>
             Talk to an Expert <ArrowRight size={15} />
           </a>
         </div>

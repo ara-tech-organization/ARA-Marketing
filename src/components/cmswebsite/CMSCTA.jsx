@@ -87,7 +87,7 @@ export default function CMSCTA() {
           {/* ── Right: Stats panel ── */}
           <div className="md:w-[340px] lg:w-[420px] flex-shrink-0 reveal">
             <div className="rounded-3xl p-7 relative overflow-hidden"
-              style={{ background: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 60%, #3b82f6 100%)', boxShadow: '0 24px 64px rgba(37,99,235,0.35)' }}>
+              style={{ background: '#071a36', boxShadow: '0 24px 64px rgba(7,26,54,0.50)' }}>
 
               {/* Panel glow */}
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"

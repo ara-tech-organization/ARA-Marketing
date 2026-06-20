@@ -202,8 +202,7 @@ export default function AboutCEO() {
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full
                   font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                  boxShadow: '0 8px 32px rgba(37,99,235,0.28)' }}>
+                style={{ boxShadow: '0 8px 32px rgba(124,58,237,0.28)' }}>
                 Work With Us <ArrowRight size={15} />
               </a>
               <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-full"

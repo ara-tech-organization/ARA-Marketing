@@ -59,21 +59,21 @@ function BenefitCard({ benefit, large }) {
     <div
       className="relative rounded-3xl overflow-hidden flex flex-col transition-all duration-300 cursor-default group"
       style={{
-        background: 'rgba(255,255,255,0.03)',
-        border: '1px solid rgba(255,255,255,0.07)',
+        background: 'rgba(186,230,255,0.06)',
+        border: '1px solid rgba(186,230,255,0.12)',
         flex: 1,
       }}
       onMouseEnter={e => {
         e.currentTarget.style.border = `1px solid ${color}50`
-        e.currentTarget.style.boxShadow = `0 16px 48px ${color}20`
+        e.currentTarget.style.boxShadow = 'none'
         e.currentTarget.style.transform = 'translateY(-4px)'
-        e.currentTarget.style.background = `${color}08`
+        e.currentTarget.style.background = 'rgba(186,230,255,0.10)'
       }}
       onMouseLeave={e => {
-        e.currentTarget.style.border = '1px solid rgba(255,255,255,0.07)'
+        e.currentTarget.style.border = '1px solid rgba(186,230,255,0.12)'
         e.currentTarget.style.boxShadow = 'none'
         e.currentTarget.style.transform = 'translateY(0)'
-        e.currentTarget.style.background = 'rgba(255,255,255,0.03)'
+        e.currentTarget.style.background = 'rgba(186,230,255,0.06)'
       }}
     >
       {/* Top gradient bar */}
@@ -153,7 +153,7 @@ export default function SWBenefits() {
   return (
     <section
       className="relative overflow-hidden py-16 sm:py-24"
-      style={{ background: 'linear-gradient(160deg, #030e18 0%, #04131c 60%, #030e18 100%)' }}
+      style={{ background: '#071a36' }}
     >
       {/* Orbs */}
       <div

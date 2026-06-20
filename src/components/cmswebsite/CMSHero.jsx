@@ -18,7 +18,7 @@ export default function CMSHero() {
   return (
     <section
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(145deg, #040c1a 0%, #071a36 55%, #040c1a 100%)' }}
+      style={{ background: 'linear-gradient(145deg, #f0f7ff 0%, #eff6ff 55%, #dbeafe 100%)' }}
     >
       {/* Background orbs */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] rounded-full pointer-events-none"
@@ -34,26 +34,25 @@ export default function CMSHero() {
         }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16">
-        <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
+        <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-stretch">
 
           {/* ── Left: Text ── */}
           <div className="flex-1 min-w-0 lg:pr-4">
 
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-1.5 text-[13px] mb-6 animate-hero-enter"
-              style={{ color: 'rgba(255,255,255,0.4)' }}>
-              <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
-              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-400 transition-colors duration-200">Web Design</a>
-              <ChevronRight size={13} style={{ color: 'rgba(255,255,255,0.2)' }} />
-              <span className="text-sky-300 font-medium">CMS Website</span>
+            <nav className="flex items-center gap-1.5 text-[13px] mb-6 animate-hero-enter text-slate-400">
+              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-slate-300" />
+              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors duration-200">Web Design</a>
+              <ChevronRight size={13} className="text-slate-300" />
+              <span className="text-blue-600 font-medium">CMS Website</span>
             </nav>
 
             {/* Badge */}
             <div className="animate-hero-d1 mb-5">
               <span
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest"
-                style={{ background: 'rgba(37,99,235,0.12)', color: '#93c5fd', border: '1px solid rgba(37,99,235,0.3)' }}
+                style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.22)' }}
               >
                 <Sparkles size={11} />
                 CMS Website Development — Thanjavur
@@ -61,7 +60,7 @@ export default function CMSHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(21px,2.2vw,39px)] font-bold text-white leading-[1.1] tracking-tight mb-6">
+            <h1 className="animate-hero-d2 text-[clamp(21px,2.2vw,39px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
               Build Powerful WordPress{' '}
               <span
                 style={{
@@ -77,12 +76,10 @@ export default function CMSHero() {
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-4"
-              style={{ color: 'rgba(255,255,255,0.6)' }}>
+            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-4 text-slate-600">
               Are you seeking the best WordPress development companies in Thanjavur offering AI-based, high-performing, scalable and SEO-friendly websites? We build powerful WordPress solutions for companies of all sizes.
             </p>
-            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-8"
-              style={{ color: 'rgba(255,255,255,0.6)' }}>
+            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-8 text-slate-600">
               Our dedicated team builds fast, secure, mobile-responsive and easy-to-manage websites using WordPress CMS.
             </p>
 
@@ -92,9 +89,9 @@ export default function CMSHero() {
                 <div key={text} className="flex items-center gap-2.5">
                   <div className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0"
                     style={{ background: 'rgba(37,99,235,0.15)' }}>
-                    <Icon size={11} style={{ color: '#60a5fa' }} />
+                    <Icon size={11} style={{ color: '#2563eb' }} />
                   </div>
-                  <span className="text-[13.5px] font-medium" style={{ color: 'rgba(255,255,255,0.72)' }}>{text}</span>
+                  <span className="text-[13.5px] font-medium text-slate-600">{text}</span>
                 </div>
               ))}
             </div>
@@ -111,9 +108,9 @@ export default function CMSHero() {
               <a
                 href="#cms-intro"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold transition-all duration-300 w-fit"
-                style={{ border: '1px solid rgba(37,99,235,0.35)', color: '#93c5fd' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(37,99,235,0.7)'; e.currentTarget.style.background = 'rgba(37,99,235,0.06)' }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(37,99,235,0.35)'; e.currentTarget.style.background = 'transparent' }}
+                style={{ border: '2px solid #2563eb', color: '#1d4ed8' }}
+                onMouseEnter={e => { e.currentTarget.style.background = '#eff6ff' }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent' }}
               >
                 Explore Services <ArrowUpRight size={15} />
               </a>
@@ -134,23 +131,23 @@ export default function CMSHero() {
                     style={{ background: `linear-gradient(135deg, ${color}, ${color}77)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     {value}
                   </span>
-                  <span className="text-[11px] font-medium mt-0.5" style={{ color: 'rgba(255,255,255,0.38)' }}>{label}</span>
+                  <span className="text-[11px] font-medium mt-0.5 text-slate-400">{label}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* ── Right: CMS Dashboard Mockup ── */}
-          <div className="animate-hero-visual hidden md:block md:w-[360px] lg:w-[460px] flex-shrink-0">
-            <div className="relative">
+          <div className="animate-hero-visual hidden md:flex flex-col md:w-[360px] lg:w-[460px] flex-shrink-0 self-start mt-[60px]">
+            <div className="relative flex flex-col">
 
               {/* Main card */}
               <div
-                className="rounded-3xl overflow-hidden"
+                className="rounded-3xl overflow-hidden flex flex-col"
                 style={{
-                  background: 'rgba(255,255,255,0.03)',
-                  border: '1px solid rgba(37,99,235,0.18)',
-                  boxShadow: '0 32px 80px rgba(0,0,0,0.65), 0 0 0 1px rgba(37,99,235,0.08)',
+                  background: 'white',
+                  border: '1.5px solid #e2e8f0',
+                  boxShadow: '0 32px 80px rgba(37,99,235,0.16)',
                 }}
               >
                 {/* Header bar */}
@@ -172,7 +169,7 @@ export default function CMSHero() {
                 </div>
 
                 {/* Image area */}
-                <div className="relative overflow-hidden" style={{ height: '240px' }}>
+                <div className="relative overflow-hidden" style={{ height: '480px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=300&fit=crop&auto=format&q=80"
                     alt="CMS Website Development in Thanjavur — ARA Discover Marketing"
@@ -206,7 +203,7 @@ export default function CMSHero() {
                     <div key={lbl} className="flex-1 text-center py-3.5"
                       style={{ borderRight: i < 3 ? '1px solid rgba(37,99,235,0.1)' : 'none' }}>
                       <p className="text-[15px] font-black leading-tight" style={{ color }}>{val}</p>
-                      <p className="text-[9px] font-medium mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>{lbl}</p>
+                      <p className="text-[9px] font-medium mt-0.5 text-slate-400">{lbl}</p>
                     </div>
                   ))}
                 </div>
@@ -214,41 +211,39 @@ export default function CMSHero() {
 
               {/* Floating: CMS Powered */}
               <div
-                className="absolute -top-4 -right-4 rounded-2xl px-4 py-2.5 flex items-center gap-2.5"
+                className="absolute top-3 -right-3 rounded-xl px-3 py-2 flex items-center gap-2"
                 style={{
-                  background: 'rgba(255,255,255,0.06)',
-                  backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(37,99,235,0.28)',
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.45)',
+                  background: 'white',
+                  border: '1px solid #dbeafe',
+                  boxShadow: '0 6px 20px rgba(37,99,235,0.14)',
                 }}
               >
-                <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
+                <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
                   style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)' }}>
-                  <Globe size={13} className="text-white" />
+                  <Globe size={10} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-[9px] font-medium mb-0.5" style={{ color: 'rgba(255,255,255,0.45)' }}>Powered By</p>
-                  <p className="text-[14px] font-black text-white leading-tight">WordPress CMS</p>
+                  <p className="text-[8px] font-medium mb-0.5 text-slate-400">Powered By</p>
+                  <p className="text-[11px] font-black text-slate-800 leading-tight">WordPress CMS</p>
                 </div>
               </div>
 
               {/* Floating: Rating */}
               <div
-                className="absolute -bottom-4 -left-4 rounded-2xl px-4 py-2.5 flex items-center gap-2.5"
+                className="absolute bottom-3 -left-3 rounded-xl px-3 py-2 flex items-center gap-2"
                 style={{
-                  background: 'rgba(255,255,255,0.06)',
-                  backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(245,158,11,0.28)',
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.45)',
+                  background: 'white',
+                  border: '1px solid #fde68a',
+                  boxShadow: '0 6px 20px rgba(245,158,11,0.14)',
                 }}
               >
-                <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
+                <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
                   style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
-                  <Star size={13} className="text-white" />
+                  <Star size={10} className="text-white" />
                 </div>
                 <div>
-                  <p className="text-[9px] font-medium mb-0.5" style={{ color: 'rgba(255,255,255,0.45)' }}>Client Rating</p>
-                  <p className="text-[14px] font-black text-white leading-tight">5★ Reviews</p>
+                  <p className="text-[8px] font-medium mb-0.5 text-slate-400">Client Rating</p>
+                  <p className="text-[11px] font-black text-slate-800 leading-tight">5★ Reviews</p>
                 </div>
               </div>
 
@@ -256,15 +251,14 @@ export default function CMSHero() {
 
             {/* CMS platform tags */}
             <div className="mt-6 flex items-center gap-2 flex-wrap">
-              <span className="text-[9px] font-bold uppercase tracking-widest flex-shrink-0 mr-1"
-                style={{ color: 'rgba(255,255,255,0.28)' }}>
+              <span className="text-[9px] font-bold uppercase tracking-widest flex-shrink-0 mr-1 text-slate-400">
                 CMS Platforms
               </span>
               {cmsTags.map(tag => (
                 <span
                   key={tag}
                   className="px-2 py-0.5 rounded-full text-[10px] font-semibold"
-                  style={{ background: 'rgba(37,99,235,0.1)', color: '#93c5fd', border: '1px solid rgba(37,99,235,0.2)' }}
+                  style={{ background: 'white', color: '#1d4ed8', border: '1.5px solid rgba(37,99,235,0.18)' }}
                 >
                   {tag}
                 </span>

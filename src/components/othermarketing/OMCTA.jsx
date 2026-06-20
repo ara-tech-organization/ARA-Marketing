@@ -101,7 +101,7 @@ export default function OMCTA() {
             <div className="flex flex-wrap gap-3 mb-8">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 10px 32px rgba(124,58,237,0.28)' }}>
+                style={{ boxShadow: '0 10px 32px rgba(124,58,237,0.28)' }}>
                 Start Your Campaign <ArrowRight size={15} />
               </a>
               <a href="#om-services"

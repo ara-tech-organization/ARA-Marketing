@@ -52,9 +52,8 @@ export default function SEOCTA() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="/ARA-Marketing/contact-us"
-                className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 bg-blue-600 text-white
-                  rounded-full text-[14px] font-bold hover:bg-blue-500
-                  shadow-xl shadow-blue-600/25 transition-all duration-300 hover:-translate-y-0.5"
+                className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 text-white
+                  rounded-full text-[14px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               >
                 Get Free SEO Consultation <ArrowRight size={15} />
               </a>

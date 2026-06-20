@@ -118,7 +118,7 @@ export default function DWCTA() {
                   />
                   <button type="submit"
                     className="btn-glow w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-white text-[14px] font-bold transition-all duration-300 hover:-translate-y-0.5 mt-1"
-                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}>
+                    style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.30)' }}>
                     Talk to an Expert <ArrowRight size={14} />
                   </button>
                 </form>

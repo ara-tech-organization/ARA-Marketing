@@ -124,7 +124,7 @@ export default function CMSFAQ() {
 
             {/* Contact card */}
             <div className="rounded-2xl p-5 mb-4 relative overflow-hidden"
-              style={{ background: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 60%, #3b82f6 100%)', boxShadow: '0 12px 36px rgba(37,99,235,0.3)' }}>
+              style={{ background: '#071a36', boxShadow: '0 12px 36px rgba(7,26,54,0.4)' }}>
               {/* Inner glow */}
               <div className="absolute top-0 right-0 w-40 h-40 rounded-full pointer-events-none"
                 style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 65%)' }} />

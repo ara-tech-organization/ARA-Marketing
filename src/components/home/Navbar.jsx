@@ -90,9 +90,8 @@ function DropdownPanel({ items, title, onClose, pathname }) {
         <a
           href="/ARA-Marketing/contact-us"
           onClick={onClose}
-          className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg
-            bg-blue-600 hover:bg-blue-500 text-white text-[12px] font-semibold
-            transition-all duration-200 shadow-lg shadow-blue-600/25 flex-shrink-0"
+          className="btn-glow inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg
+            text-white text-[12px] font-semibold transition-all duration-200 flex-shrink-0"
         >
           Talk to us <ArrowRight size={11} />
         </a>

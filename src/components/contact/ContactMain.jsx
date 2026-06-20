@@ -362,7 +362,7 @@ export default function ContactMain() {
 
                         <button type="submit" disabled={loading}
                           className="btn-glow w-full flex items-center justify-center gap-2.5 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 disabled:opacity-75 disabled:cursor-not-allowed hover:-translate-y-0.5"
-                          style={{ background: loading ? '#1d4ed8' : 'linear-gradient(135deg, #2563eb, #4f46e5)', boxShadow: '0 8px 32px rgba(37,99,235,0.4)' }}
+                          style={{ background: loading ? '#3b82f6' : undefined, boxShadow: '0 8px 32px rgba(124,58,237,0.35)' }}
                         >
                           {loading ? <><Loader2 size={17} className="animate-spin" /> Sending Message...</> : <><Send size={16} /> Send Message</>}
                         </button>

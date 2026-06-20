@@ -118,13 +118,13 @@ export default function SWHero() {
           </div>
 
           {/* ── Right: unified card + built-with ── */}
-          <div className="hidden md:flex flex-col justify-center lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
-            <div className="relative mt-10">
+          <div className="hidden md:flex flex-col lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
+            <div className="relative mt-10 flex flex-col flex-1">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.14) 0%, transparent 70%)' }} />
 
               {/* Single unified card */}
-              <div className="relative rounded-3xl overflow-hidden"
+              <div className="relative rounded-3xl overflow-hidden flex flex-col flex-1"
                 style={{ background: 'white', border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(37,99,235,0.16)' }}>
 
                 {/* Accent bar */}
@@ -148,7 +148,7 @@ export default function SWHero() {
                 </div>
 
                 {/* Screenshot image */}
-                <div className="relative overflow-hidden" style={{ height: '230px' }}>
+                <div className="relative overflow-hidden flex-1" style={{ minHeight: '230px' }}>
                   <img
                     src={swHeroImg}
                     alt="Static Website Development in Thanjavur — ARA Discover Marketing"

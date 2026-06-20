@@ -51,7 +51,7 @@ export default function SEMCTA() {
             <a href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-6 py-2.5 rounded-full
                 text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#6366f1)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>
+              style={{ boxShadow: '0 10px 36px rgba(124,58,237,0.30)' }}>
               Get Free PPC Consultation <ArrowRight size={16} />
             </a>
             <a href="#sem-services"

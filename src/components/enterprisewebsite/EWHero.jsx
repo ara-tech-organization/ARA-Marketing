@@ -110,7 +110,7 @@ export default function EWHero() {
             <div className="flex flex-wrap gap-3 mb-8 sm:mb-10">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.35)' }}>
+                style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.35)' }}>
                 Start Your Project <ArrowRight size={13} />
               </a>
               <a href="#ew-intro"

@@ -147,7 +147,7 @@ export default function EWCTA() {
 
                   <button type="submit"
                     className="btn-glow w-full inline-flex items-center justify-center gap-2 py-3 sm:py-3.5 rounded-xl text-[13px] sm:text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.32)' }}>
+                    style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.32)' }}>
                     <Send size={13} /> Send Message
                   </button>
 

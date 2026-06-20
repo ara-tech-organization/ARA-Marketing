@@ -26,22 +26,8 @@ export default function CMSIntro() {
   return (
     <section
       id="cms-intro"
-      className="relative overflow-hidden py-16 sm:py-24"
-      style={{ background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 55%, #f0f9ff 100%)' }}
+      className="overflow-hidden py-16 sm:py-24 bg-white"
     >
-      {/* Dot pattern */}
-      <div className="absolute inset-0 pointer-events-none opacity-30"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.2) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
-
-      {/* Decorative circles */}
-      <div className="hidden sm:block absolute -top-16 -right-16 w-[320px] h-[320px] rounded-full border pointer-events-none"
-        style={{ borderColor: 'rgba(37,99,235,0.12)', animation: 'spin 35s linear infinite' }} />
-      <div className="hidden sm:block absolute -top-6 -right-6 w-[200px] h-[200px] rounded-full border pointer-events-none"
-        style={{ borderColor: 'rgba(29,78,216,0.1)', animation: 'spin 22s linear infinite reverse' }} />
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 65%)' }} />
-      <div className="absolute bottom-0 left-0 w-[350px] h-[350px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 

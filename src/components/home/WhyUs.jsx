@@ -158,9 +158,8 @@ export default function WhyUs() {
               </p>
               <a
                 href="/ARA-Marketing/contact-us"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
-                  rounded-full text-[13px] font-bold transition-all duration-300
-                  hover:bg-blue-700 hover:-translate-y-0.5 shadow-lg shadow-blue-600/25"
+                className="btn-glow inline-flex items-center gap-2 px-6 py-3 text-white
+                  rounded-full text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               >
                 Get Started <Zap size={13} />
               </a>
