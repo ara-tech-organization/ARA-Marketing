@@ -89,7 +89,7 @@ export default function AboutCEO() {
             <div className="relative mb-6">
               {/* Accent square behind photo */}
               <div className="absolute pointer-events-none rounded-[24px]"
-                style={{ bottom: '-10px', right: '-10px', width: '80%', height: '80%',
+                style={{ bottom: '-10px', right: '-10px', width: '80%', height: '70%',
                   background: 'linear-gradient(135deg,#bfdbfe,#bae6fd)', zIndex: 0 }} />
 
               {/* Outer decorative border */}
@@ -103,7 +103,7 @@ export default function AboutCEO() {
                   src={mamImg}
                   alt="Mrs. Mehala Kumar — CEO of ARA Discover Marketing, Thanjavur"
                   className="w-full object-cover block"
-                  style={{ aspectRatio: '5/6' }}
+                  style={{ aspectRatio: '3/4' }}
                 />
                 {/* Bottom overlay */}
                 <div className="absolute inset-0"
