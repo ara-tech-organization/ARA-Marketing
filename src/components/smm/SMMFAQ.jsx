@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { ChevronDown, Layers } from 'lucide-react'
 
 const faqs = [
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'What is Social Media Optimisation (SMO)?',
-    a: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brand’s online presence stronger.',
+    a: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brandâ€™s online presence stronger.',
   },
   {
     q: 'Why choose ARA Discover Marketing for social media marketing services?',
@@ -29,7 +29,7 @@ const faqs = [
 ]
 
 export default function SMMFAQ() {
-  const [openIdx, setOpenIdx] = useState(null)
+  const [openIdx, setOpenIdx] = useState(0)
 
   const toggle = (i) => setOpenIdx(prev => (prev === i ? null : i))
 
@@ -153,3 +153,4 @@ export default function SMMFAQ() {
     </section>
   )
 }
+

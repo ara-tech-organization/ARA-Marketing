@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
@@ -29,7 +29,7 @@ const faqs = [
 ]
 
 export default function GDFAQ() {
-  const [openIdx, setOpenIdx] = useState(null)
+  const [openIdx, setOpenIdx] = useState(0)
   const toggle = (i) => setOpenIdx(prev => (prev === i ? null : i))
 
   return (
@@ -158,3 +158,4 @@ export default function GDFAQ() {
     </section>
   )
 }
+

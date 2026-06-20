@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, Plus, Minus, MessageSquare, ArrowRight, Zap, ChevronRight } from 'lucide-react'
 
 const faqs = [
@@ -41,7 +41,7 @@ const faqs = [
 ]
 
 export default function DWFAQ() {
-  const [open, setOpen] = useState(null)
+  const [open, setOpen] = useState(0)
 
   const toggle = (i) => setOpen(prev => prev === i ? null : i)
 
@@ -59,7 +59,7 @@ export default function DWFAQ() {
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 sm:mb-6 text-blue-600 bg-white/80 shadow-sm"
             style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
@@ -76,7 +76,7 @@ export default function DWFAQ() {
           </p>
         </div>
 
-        {/* ── Two-column layout ── */}
+        {/* â”€â”€ Two-column layout â”€â”€ */}
         <div className="reveal flex flex-col lg:flex-row gap-8 items-start">
 
           {/* Left: sticky dark panel */}
@@ -228,3 +228,4 @@ export default function DWFAQ() {
     </section>
   )
 }
+

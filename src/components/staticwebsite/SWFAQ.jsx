@@ -1,18 +1,18 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
   {
     q: 'What is a Static Web Page?',
-    a: 'A static website is a website developed in HTML and CSS that displays the same content to every visitor. It is fast, safe, and easy to host — making it an ideal choice for businesses that need a reliable, low-cost online presence.',
+    a: 'A static website is a website developed in HTML and CSS that displays the same content to every visitor. It is fast, safe, and easy to host â€” making it an ideal choice for businesses that need a reliable, low-cost online presence.',
   },
   {
     q: 'Why should I select a static website for my business?',
-    a: 'Static websites are faster, cheaper, and more secure than dynamic websites. They require no server-side processing, no database, and minimal maintenance — making them perfect for small and medium businesses that want maximum performance with minimal investment.',
+    a: 'Static websites are faster, cheaper, and more secure than dynamic websites. They require no server-side processing, no database, and minimal maintenance â€” making them perfect for small and medium businesses that want maximum performance with minimal investment.',
   },
   {
     q: 'How long does it take to develop a static website?',
-    a: 'Depending on your requirements, a basic static website can be built in 3–7 days with full design and deployment. More complex multi-page sites or custom animations may take up to 2 weeks. We always communicate timelines clearly before we begin.',
+    a: 'Depending on your requirements, a basic static website can be built in 3â€“7 days with full design and deployment. More complex multi-page sites or custom animations may take up to 2 weeks. We always communicate timelines clearly before we begin.',
   },
   {
     q: 'Can a static site rank on Google?',
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Can I get a custom design for my static website?',
-    a: 'Yes, absolutely. All our static websites are custom-designed from scratch to match your brand identity, color palette, and business goals. We don\'t use pre-made templates — every layout is crafted uniquely for your business.',
+    a: 'Yes, absolutely. All our static websites are custom-designed from scratch to match your brand identity, color palette, and business goals. We don\'t use pre-made templates â€” every layout is crafted uniquely for your business.',
   },
 ]
 
@@ -87,7 +87,7 @@ function FAQItem({ faq, index, active, setActive }) {
 }
 
 export default function SWFAQ() {
-  const [active, setActive] = useState(-1)
+  const [active, setActive] = useState(0)
 
   return (
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
@@ -141,3 +141,4 @@ export default function SWFAQ() {
     </section>
   )
 }
+

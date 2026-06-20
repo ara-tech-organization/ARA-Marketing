@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
@@ -81,7 +81,7 @@ function AccordionItem({ faq, index, active, setActive }) {
 }
 
 export default function SEOFAQ() {
-  const [active, setActive] = useState(-1)
+  const [active, setActive] = useState(0)
 
   return (
     <section className="py-12 md:py-16 lg:py-24 bg-white">
@@ -105,14 +105,14 @@ export default function SEOFAQ() {
         {/* 3 + 3 two-column accordion */}
         <div className="reveal flex flex-col lg:flex-row gap-4">
 
-          {/* Left column: FAQs 1–3 */}
+          {/* Left column: FAQs 1â€“3 */}
           <div className="flex-1 flex flex-col gap-3">
             {faqs.slice(0, 3).map((faq, i) => (
               <AccordionItem key={i} faq={faq} index={i} active={active} setActive={setActive} />
             ))}
           </div>
 
-          {/* Right column: FAQs 4–6 */}
+          {/* Right column: FAQs 4â€“6 */}
           <div className="flex-1 flex flex-col gap-3">
             {faqs.slice(3).map((faq, i) => (
               <AccordionItem key={i + 3} faq={faq} index={i + 3} active={active} setActive={setActive} />
@@ -125,3 +125,4 @@ export default function SEOFAQ() {
     </section>
   )
 }
+

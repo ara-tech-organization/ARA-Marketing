@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
@@ -29,7 +29,7 @@ const faqs = [
 ]
 
 export default function WAFAQ() {
-  const [open, setOpen] = useState(null)
+  const [open, setOpen] = useState(0)
 
   return (
     <section
@@ -115,3 +115,4 @@ export default function WAFAQ() {
     </section>
   )
 }
+

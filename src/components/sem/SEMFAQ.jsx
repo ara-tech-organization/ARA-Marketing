@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, Plus, Minus } from 'lucide-react'
 
 const faqs = [
@@ -11,13 +11,13 @@ const faqs = [
 ]
 
 export default function SEMFAQ() {
-  const [active, setActive] = useState(-1)
+  const [active, setActive] = useState(0)
 
   return (
     <section className="py-24 bg-white">
       <div className="max-w-[860px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
@@ -32,7 +32,7 @@ export default function SEMFAQ() {
           </p>
         </div>
 
-        {/* ── Accordion ── */}
+        {/* â”€â”€ Accordion â”€â”€ */}
         <div className="reveal flex flex-col gap-3">
           {faqs.map(({ q, a, color }, i) => {
             const isOpen = active === i
@@ -93,3 +93,4 @@ export default function SEMFAQ() {
     </section>
   )
 }
+

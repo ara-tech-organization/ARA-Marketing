@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, MessageSquare, ArrowRight, ChevronDown, Mail, Users, Smartphone } from 'lucide-react'
 
 const faqs = [
@@ -35,7 +35,7 @@ const faqs = [
 ]
 
 export default function OMFAQ() {
-  const [open, setOpen] = useState(null)
+  const [open, setOpen] = useState(0)
 
   return (
     <section className="py-20 overflow-hidden bg-white">
@@ -174,3 +174,4 @@ export default function OMFAQ() {
     </section>
   )
 }
+

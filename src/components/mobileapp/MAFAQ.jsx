@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
 
 const faqs = [
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'Do you offer custom mobile app development services in Thanjavur?',
-    a: 'Yes, our custom mobile app development services in Thanjavur are fully tailored to your unique business requirements. We do not use off-the-shelf templates — every app is built from scratch to match your goals, audience, and brand identity.',
+    a: 'Yes, our custom mobile app development services in Thanjavur are fully tailored to your unique business requirements. We do not use off-the-shelf templates â€” every app is built from scratch to match your goals, audience, and brand identity.',
   },
   {
     q: 'Can you develop e-commerce mobile apps?',
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'Do you provide post-launch support for apps?',
-    a: 'Yes, our mobile application development service in Thanjavur includes comprehensive post-launch support — maintenance, updates, bug fixes, performance monitoring, and ongoing optimisation to ensure your app keeps performing at its best.',
+    a: 'Yes, our mobile application development service in Thanjavur includes comprehensive post-launch support â€” maintenance, updates, bug fixes, performance monitoring, and ongoing optimisation to ensure your app keeps performing at its best.',
   },
   {
     q: 'What platforms do you develop for?',
@@ -67,7 +67,7 @@ function FAQItem({ faq, index, active, setActive }) {
 }
 
 export default function MAFAQ() {
-  const [active, setActive] = useState(-1)
+  const [active, setActive] = useState(0)
 
   return (
     <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
@@ -103,3 +103,4 @@ export default function MAFAQ() {
     </section>
   )
 }
+

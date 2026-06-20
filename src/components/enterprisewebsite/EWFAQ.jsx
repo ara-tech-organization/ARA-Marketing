@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqs = [
@@ -29,7 +29,7 @@ const faqs = [
 ]
 
 export default function EWFAQ() {
-  const [open, setOpen] = useState(null)
+  const [open, setOpen] = useState(0)
 
   return (
     <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden bg-white">
@@ -40,7 +40,7 @@ export default function EWFAQ() {
 
       <div className="relative max-w-[760px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">
           <span className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-blue-50"
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
@@ -57,7 +57,7 @@ export default function EWFAQ() {
           </p>
         </div>
 
-        {/* ── Accordion ── */}
+        {/* â”€â”€ Accordion â”€â”€ */}
         <div className="reveal space-y-2.5 sm:space-y-3">
           {faqs.map(({ q, a }, i) => {
             const isOpen = open === i
@@ -101,3 +101,4 @@ export default function EWFAQ() {
     </section>
   )
 }
+
