@@ -21,7 +21,7 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
 
       {/* Number */}
       <div
-        className="text-[clamp(30px,3.8vw,48px)] font-bold leading-none tracking-tight mb-2"
+        className="text-[clamp(20px,2.4vw,32px)] font-bold leading-none tracking-tight mb-2"
         style={{
           background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)',
           WebkitBackgroundClip: 'text',

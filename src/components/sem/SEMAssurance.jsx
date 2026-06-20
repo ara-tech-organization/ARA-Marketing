@@ -59,10 +59,6 @@ export default function SEMAssurance() {
               <div className="absolute -bottom-8 -right-8 w-44 h-44 rounded-full border-[2px] border-blue-400/20 pointer-events-none" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full border border-blue-400/25 pointer-events-none" />
 
-              {/* Dot grid overlay */}
-              <div className="absolute inset-0 pointer-events-none"
-                style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.12) 1.5px, transparent 1.5px)', backgroundSize: '24px 24px' }} />
-
               <div className="relative">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-white"
                   style={{ background: 'linear-gradient(135deg,#2563eb,#6366f1)', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>

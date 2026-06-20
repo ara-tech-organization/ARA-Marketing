@@ -101,105 +101,109 @@ export default function SMMHero() {
           />
 
           {/* Right Visual */}
-          <div className="animate-hero-visual hidden lg:block">
-            <div className="relative">
-              {/* Main dashboard card */}
-              <div
-                className="bg-white rounded-3xl p-7 border border-blue-100"
-                style={{ boxShadow: '0 24px 80px rgba(37,99,235,0.12)' }}
-              >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-blue-600 rounded-2xl flex items-center justify-center text-white flex-shrink-0">
-                    <Share2 size={18} />
+          <div className="animate-hero-visual hidden lg:flex lg:items-stretch">
+            <div className="relative w-[420px]">
+
+              {/* Main tall card */}
+              <div className="bg-white rounded-3xl border border-blue-100 overflow-hidden flex flex-col"
+                style={{ boxShadow: '0 24px 80px rgba(37,99,235,0.13)', minHeight: '520px' }}>
+
+                {/* Hero image banner */}
+                <div className="relative h-[220px] flex-shrink-0 overflow-hidden">
+                  <img
+                    src={smmHeroImg}
+                    alt="Social Media Marketing"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0"
+                    style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.18) 0%, rgba(10,26,80,0.55) 100%)' }} />
+
+                  {/* Live badge on image */}
+                  <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5
+                    bg-white/90 backdrop-blur-sm rounded-full border border-blue-100 shadow-sm">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[11px] font-bold text-slate-700">Live Campaign</span>
                   </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-[13px] font-bold text-slate-700">Campaign Performance</p>
-                    <p className="text-[11px] text-slate-400">Multi-Platform Overview</p>
+
+                  {/* Engagement float on image */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-2xl px-3 py-2 border border-blue-100 shadow-sm">
+                    <p className="text-[9px] text-slate-400 font-medium">Engagement Rate</p>
+                    <p className="text-[15px] font-bold text-blue-600">8.4%</p>
+                    <div className="flex items-center gap-1 text-emerald-500 text-[9px] font-semibold">
+                      <TrendingUp size={8} /> +2.1% this week
+                    </div>
                   </div>
-                  <span className="flex-shrink-0 flex items-center gap-1 px-2.5 py-1
-                    bg-emerald-50 text-emerald-600 text-[11px] font-bold rounded-full border border-emerald-100">
-                    <TrendingUp size={9} /> +300%
-                  </span>
                 </div>
 
-                {/* Bar chart */}
-                <div className="flex items-end gap-1.5 mb-5" style={{ height: '80px' }}>
-                  {[30, 45, 35, 60, 50, 72, 62, 85, 70, 95].map((h, i) => (
-                    <div
-                      key={i}
-                      style={{
-                        flex: 1,
-                        height: `${h}%`,
-                        borderRadius: '4px 4px 0 0',
-                        background: i >= 7
-                          ? 'linear-gradient(180deg, #60a5fa, #2563eb)'
-                          : '#dbeafe',
-                        animation: `bar-in 0.7s ${i * 0.06 + 0.3}s cubic-bezier(0,0,0.2,1) both`,
-                      }}
-                    />
-                  ))}
-                </div>
+                {/* Card body */}
+                <div className="p-6 flex flex-col flex-1">
 
-                {/* Platform tags */}
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    { label: 'Facebook', color: '#2563eb' },
-                    { label: 'LinkedIn', color: '#0284c7' },
-                    { label: 'Pinterest', color: '#dc2626' },
-                    { label: 'Instagram', color: '#9333ea' },
-                    { label: 'SMO', color: '#059669' },
-                  ].map(({ label, color }) => (
-                    <span
-                      key={label}
-                      className="flex items-center gap-1.5 px-2.5 py-1 bg-slate-50
-                        border border-slate-100 rounded-full text-[10px] font-semibold text-slate-600"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: color }} />
-                      {label}
+                  {/* Header */}
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                      <Share2 size={16} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-[13px] font-bold text-slate-700">Campaign Performance</p>
+                      <p className="text-[10px] text-slate-400">Multi-Platform Overview</p>
+                    </div>
+                    <span className="flex items-center gap-1 px-2.5 py-1
+                      bg-emerald-50 text-emerald-600 text-[10px] font-bold rounded-full border border-emerald-100">
+                      <TrendingUp size={8} /> +300%
                     </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Floating metric — engagement */}
-              <div
-                className="absolute -top-5 -right-4 bg-white rounded-2xl p-4 border border-blue-100 animate-float"
-                style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.15)' }}
-              >
-                <p className="text-[10px] text-slate-400 font-medium mb-1">Engagement Rate</p>
-                <p className="text-lg font-bold text-blue-600">8.4%</p>
-                <div className="flex items-center gap-1 text-emerald-500 text-[10px] font-semibold mt-1">
-                  <TrendingUp size={9} /> +2.1% this week
-                </div>
-              </div>
-
-              {/* Floating metric — followers */}
-              <div
-                className="absolute -bottom-5 -left-4 bg-white rounded-2xl p-4 border border-blue-100 animate-float-delay"
-                style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.15)' }}
-              >
-                <p className="text-[10px] text-slate-400 font-medium mb-1">New Followers</p>
-                <p className="text-lg font-bold text-slate-800">+1,247</p>
-                <div className="flex items-center gap-1 text-emerald-500 text-[10px] font-semibold mt-1">
-                  <Users size={9} /> This Month
-                </div>
-              </div>
-
-              {/* Live reach badge */}
-              <div
-                className="absolute top-1/2 -right-10 -translate-y-1/2 bg-white rounded-2xl p-3.5 border border-blue-100"
-                style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.12)' }}
-              >
-                <div className="flex items-center gap-2">
-                  <div className="w-7 h-7 bg-blue-50 rounded-xl flex items-center justify-center">
-                    <Activity size={13} className="text-blue-600" />
                   </div>
-                  <div>
-                    <p className="text-[9px] text-slate-400 font-medium">Live Reach</p>
-                    <p className="text-[13px] font-bold text-slate-800">12.4K</p>
+
+                  {/* Bar chart + platform list */}
+                  <div className="flex gap-4 flex-1">
+                    {/* Vertical bars */}
+                    <div className="flex-1 flex items-end gap-1.5" style={{ height: '110px' }}>
+                      {[30, 45, 35, 60, 50, 72, 62, 85, 70, 95].map((h, i) => (
+                        <div key={i} style={{
+                          flex: 1, height: `${h}%`,
+                          borderRadius: '4px 4px 0 0',
+                          background: i >= 7 ? 'linear-gradient(180deg, #60a5fa, #2563eb)' : '#dbeafe',
+                          animation: `bar-in 0.7s ${i * 0.06 + 0.3}s cubic-bezier(0,0,0.2,1) both`,
+                        }} />
+                      ))}
+                    </div>
+
+                    {/* Platform metrics */}
+                    <div className="flex flex-col gap-2.5 justify-center w-[120px] flex-shrink-0">
+                      {[
+                        { label: 'Facebook',  pct: 92, color: '#2563eb' },
+                        { label: 'Instagram', pct: 85, color: '#9333ea' },
+                        { label: 'LinkedIn',  pct: 74, color: '#0284c7' },
+                        { label: 'Pinterest', pct: 60, color: '#dc2626' },
+                        { label: 'SMO',       pct: 50, color: '#059669' },
+                      ].map(({ label, pct, color }) => (
+                        <div key={label} className="flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: color }} />
+                          <span className="text-[10px] text-slate-500 font-medium flex-1">{label}</span>
+                          <span className="text-[10px] font-bold" style={{ color }}>{pct}%</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Bottom stats row */}
+                  <div className="mt-5 pt-4 border-t border-slate-100 grid grid-cols-3 gap-3">
+                    {[
+                      { label: 'New Followers', value: '+1,247', color: '#2563eb', icon: Users },
+                      { label: 'Live Reach',    value: '12.4K',  color: '#7c3aed', icon: Activity },
+                      { label: 'This Month',    value: '95%',    color: '#059669', icon: TrendingUp },
+                    ].map(({ label, value, color, icon: Icon }) => (
+                      <div key={label} className="flex flex-col items-center text-center p-2 rounded-xl"
+                        style={{ background: color + '08', border: `1px solid ${color}18` }}>
+                        <Icon size={12} style={{ color }} className="mb-1" />
+                        <p className="text-[13px] font-bold" style={{ color }}>{value}</p>
+                        <p className="text-[9px] text-slate-400 leading-tight">{label}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
 

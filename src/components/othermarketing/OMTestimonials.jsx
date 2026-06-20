@@ -38,15 +38,7 @@ const testimonials = [
 
 export default function OMTestimonials() {
   return (
-    <section className="relative py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg,#f0f9ff 0%,#eff6ff 55%,#f5f3ff 100%)' }}>
-
-      <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />
-      <div className="absolute top-0 right-0 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(167,139,250,0.12) 0%,transparent 65%)' }} />
-      <div className="absolute bottom-0 left-0 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%)' }} />
+    <section className="py-20 overflow-hidden bg-white">
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

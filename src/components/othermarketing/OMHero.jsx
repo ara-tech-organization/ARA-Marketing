@@ -46,53 +46,59 @@ export default function OMHero() {
           </div>
         </div>
 
-        {/* ── Row 2: giant heading full-width ── */}
-        <div className="mb-2">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10.5px] font-bold uppercase tracking-widest mb-5 bg-white border border-violet-200 text-violet-600 shadow-sm">
-            <Send size={10} /> Advanced Digital Marketing Services
+        {/* ── Main content: 2-column ── */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start pb-14">
+
+          {/* Left: label + heading + description */}
+          <div className="flex-1 min-w-0">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10.5px] font-bold uppercase tracking-widest mb-6 bg-white border border-violet-200 text-violet-600 shadow-sm">
+              <Send size={10} /> Advanced Digital Marketing Services
+            </div>
+
+            <h1 className="text-[clamp(28px,3.2vw,48px)] font-bold leading-[1.1] tracking-tight text-slate-900 mb-4">
+              Advanced Digital{' '}
+              <span style={{ background: 'linear-gradient(135deg,#2563eb 0%,#7c3aed 60%,#0891b2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                Marketing
+              </span>
+              <span className="block">Services in Thanjavur</span>
+              <span className="block text-[clamp(18px,2vw,30px)] font-semibold text-slate-400 mt-2">
+                for Business Growth
+              </span>
+            </h1>
+
+            <div className="w-16 h-1 rounded-full mb-6"
+              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+
+            <p className="text-[15px] text-slate-500 leading-[1.9] max-w-[520px]">
+              ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencer marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
+            </p>
           </div>
-          <h1 className="text-[clamp(17px,2.1vw,30px)] font-bold leading-[1.12] tracking-tight text-slate-900">
-            Advanced Digital{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb 0%,#7c3aed 60%,#0891b2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-              Marketing
-            </span>
-            <span className="block">Services in Thanjavur</span>
-            <span className="block text-[clamp(18px,2.4vw,32px)] font-semibold text-slate-500 mt-1">for Business Growth</span>
-          </h1>
-        </div>
 
-        {/* ── Row 3: full-width divider ── */}
-        <div className="w-full h-px my-3"
-          style={{ background: 'linear-gradient(90deg,rgba(37,99,235,0.18),rgba(124,58,237,0.14) 50%,transparent)' }} />
-
-        {/* ── Row 4: description left  ·  CTAs + stats right ── */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start pb-12">
-          <p className="flex-1 text-[15px] text-slate-500 leading-[1.85] max-w-[500px]">
-            ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencers marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
-          </p>
-          <div className="flex-shrink-0 flex flex-col gap-4">
-            <div className="flex flex-wrap gap-3">
+          {/* Right: CTAs + stats */}
+          <div className="flex-shrink-0 w-full lg:w-[340px] flex flex-col gap-5 lg:pt-16">
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
               <a href="/ARA-Marketing/contact-us"
-                className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.26)' }}>
+                className="btn-glow inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
+                style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 28px rgba(124,58,237,0.28)' }}>
                 Start Your Campaign <ArrowRight size={14} />
               </a>
               <a href="#om-services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold bg-white border border-slate-200 text-slate-600 hover:border-violet-200 hover:text-violet-700 transition-all duration-300"
-                style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.05)' }}>
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[14px] font-semibold bg-white border border-slate-200 text-slate-600 hover:border-violet-300 hover:text-violet-700 transition-all duration-300"
+                style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
                 Explore Services
               </a>
             </div>
-            {/* Inline stats */}
-            <div className="flex flex-wrap items-center gap-3 sm:gap-5 px-4 py-3 rounded-2xl bg-white border border-slate-100"
-              style={{ boxShadow: '0 2px 12px rgba(37,99,235,0.06)' }}>
+
+            {/* Stats row */}
+            <div className="grid grid-cols-3 gap-3">
               {[['500+','Campaigns','#2563eb'],['98%','Satisfied','#7c3aed'],['4x','Avg ROI','#0891b2']].map(([v, l, c]) => (
-                <div key={l} className="flex items-center gap-2">
-                  <span className="text-[20px] font-bold leading-none"
-                    style={{ background: `linear-gradient(135deg,${c},${c}99)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                <div key={l} className="flex flex-col items-center text-center px-3 py-4 rounded-2xl bg-white border border-slate-100"
+                  style={{ boxShadow: '0 2px 12px rgba(37,99,235,0.07)' }}>
+                  <span className="text-[22px] font-black leading-none mb-1"
+                    style={{ background: `linear-gradient(135deg,${c},${c}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     {v}
                   </span>
-                  <span className="text-[10.5px] text-slate-400 font-medium leading-tight max-w-[48px]">{l}</span>
+                  <span className="text-[10px] text-slate-400 font-medium leading-tight">{l}</span>
                 </div>
               ))}
             </div>

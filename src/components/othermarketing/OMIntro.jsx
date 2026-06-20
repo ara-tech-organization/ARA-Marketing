@@ -16,8 +16,7 @@ const imageStats = [
 
 export default function OMIntro() {
   return (
-    <section className="relative py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#f5f3ff 100%)' }}>
+    <section className="relative py-20 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '32px 32px' }} />

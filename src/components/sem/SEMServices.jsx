@@ -45,12 +45,24 @@ export default function SEMServices() {
   const svc = services[active]
 
   return (
-    <section id="sem-services" className="py-24 overflow-hidden"
+    <section id="sem-services" className="relative py-24 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 60%, #f0f9ff 100%)' }}>
 
-      {/* Subtle dot grid */}
+      {/* Dot grid */}
       <div className="pointer-events-none absolute inset-0"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
+
+      {/* Orb glows */}
+      <div className="absolute top-0 right-0 w-[560px] h-[560px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.38) 0%, transparent 70%)' }} />
+      <div className="absolute bottom-0 left-0 w-[480px] h-[480px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(196,219,254,0.35) 0%, transparent 70%)' }} />
+
+      {/* Vertical accent lines */}
+      <div className="absolute top-0 left-1/4 w-px h-full opacity-[0.08] pointer-events-none"
+        style={{ background: 'linear-gradient(180deg, transparent, #2563eb, transparent)' }} />
+      <div className="absolute top-0 right-1/4 w-px h-full opacity-[0.08] pointer-events-none"
+        style={{ background: 'linear-gradient(180deg, transparent, #2563eb, transparent)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

@@ -92,7 +92,7 @@ export default function Hero() {
           SECTION 1 — Content  (with bg effects)
       ════════════════════════════════════════ */}
       <section
-        className="relative overflow-hidden pt-[72px]"
+        className="relative overflow-hidden pt-[88px]"
         style={{ minHeight: '60vh' }}
       >
         {/* Full background image — covers entire section */}

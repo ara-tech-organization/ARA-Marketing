@@ -1,231 +1,219 @@
-import { Search, TrendingUp, BarChart2, ChevronRight, ArrowRight, ArrowUpRight, ArrowUp } from 'lucide-react'
+import { Search, TrendingUp, BarChart2, ChevronRight, ArrowRight, ArrowUpRight, ArrowUp, Star, Shield, Zap } from 'lucide-react'
 import seoHeroImg from '../../assets/SEO/Seo.webp'
 
+const stats = [
+  { num: '120+', label: 'Projects Done',   color: '#60a5fa' },
+  { num: '95%',  label: 'Client Retention', color: '#a78bfa' },
+  { num: '200%', label: 'Avg Traffic Growth', color: '#34d399' },
+  { num: '#1',   label: 'Google Rankings', color: '#fbbf24' },
+]
+
+const badges = [
+  { icon: Shield,    text: 'White-Hat SEO' },
+  { icon: Zap,       text: 'AI-Powered'    },
+  { icon: TrendingUp, text: 'Result-Driven' },
+]
+
 const keywords = [
-  { kw: 'best seo companies in thanjavur', pos: 1, prev: 4, color: '#2563eb' },
-  { kw: 'top seo agencies in thanjavur',   pos: 2, prev: 7, color: '#7c3aed' },
-  { kw: 'digital marketing seo services',  pos: 3, prev: 9, color: '#0891b2' },
-  { kw: 'local seo marketing services',    pos: 1, prev: 5, color: '#059669' },
+  { kw: 'best seo companies in thanjavur', pos: 1, prev: 4, color: '#60a5fa' },
+  { kw: 'top seo agencies in thanjavur',   pos: 2, prev: 7, color: '#a78bfa' },
+  { kw: 'digital marketing seo services',  pos: 3, prev: 9, color: '#34d399' },
+  { kw: 'local seo marketing services',    pos: 1, prev: 5, color: '#fbbf24' },
 ]
 
 export default function SEOHero() {
   return (
     <section
-      className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(135deg, #f0f7ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}
+      className="relative overflow-hidden pt-[80px]"
+      style={{ background: 'linear-gradient(135deg, #040c20 0%, #0a1a3e 50%, #061428 100%)', minHeight: '100vh' }}
     >
-      {/* Orbs */}
-      <div className="absolute top-0 right-0 w-[700px] h-[700px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.55) 0%, transparent 70%)' }} />
-      <div className="absolute -bottom-24 -left-24 w-[550px] h-[550px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(224,242,254,0.7) 0%, transparent 70%)' }} />
+      {/* Background glows */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.18) 0%, transparent 70%)' }} />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%)' }} />
+
+      {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.12) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
-      <div className="absolute top-0 right-0 w-px h-full opacity-20 pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, transparent, #2563eb, transparent)' }} />
-      <div className="absolute top-0 left-1/3 w-px h-full opacity-10 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(circle, rgba(96,165,250,0.08) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+
+      {/* Vertical accent lines */}
+      <div className="absolute top-0 left-1/3 w-px h-full opacity-[0.06] pointer-events-none"
         style={{ background: 'linear-gradient(180deg, transparent, #60a5fa, transparent)' }} />
-      <div className="absolute top-0 left-2/3 w-px h-full opacity-10 pointer-events-none"
+      <div className="absolute top-0 right-1/3 w-px h-full opacity-[0.06] pointer-events-none"
         style={{ background: 'linear-gradient(180deg, transparent, #60a5fa, transparent)' }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 py-10">
-        <div className="flex flex-col lg:flex-row gap-6 items-stretch">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6 lg:py-8">
 
-          {/* ── COLUMN 1: Keywords card + badges + stats ── */}
-          <div className="animate-hero-visual hidden lg:flex lg:w-[240px] flex-shrink-0 flex-col justify-between gap-3">
+        {/* Breadcrumb */}
+        <nav className="flex items-center gap-1.5 text-[12px] text-slate-400 mb-5">
+          <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors">Home</a>
+          <ChevronRight size={12} className="text-slate-600" />
+          <span className="text-slate-500">Digital Marketing</span>
+          <ChevronRight size={12} className="text-slate-600" />
+          <span className="text-blue-400 font-medium">SEO Services</span>
+        </nav>
+
+        <div className="flex flex-col lg:flex-row gap-12 items-center">
+
+          {/* ── LEFT: Content ── */}
+          <div className="flex-1 min-w-0">
+
+            {/* Label */}
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6
+              border border-blue-500/30 bg-blue-500/10"
+              style={{ backdropFilter: 'blur(8px)' }}>
+              <Search size={11} className="text-blue-400" />
+              <span className="text-[11px] font-bold uppercase tracking-widest text-blue-300">
+                Search Engine Optimization
+              </span>
+            </div>
+
+            {/* Heading */}
+            <h1 className="text-[clamp(28px,4vw,56px)] font-black leading-[1.1] tracking-tight mb-6 text-white">
+              Rank Higher.{' '}
+              <span style={{
+                background: 'linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #34d399 100%)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
+              }}>
+                Get Found.
+              </span>
+              <br />Grow Faster.
+            </h1>
+
+            <p className="text-[15px] text-slate-300 leading-[1.85] mb-4 max-w-xl">
+              ARA Discover Marketing is Thanjavur's leading SEO agency, delivering AI-driven strategies that push your business to the top of Google — and keep it there.
+            </p>
+            <p className="text-[14px] text-slate-400 leading-[1.8] mb-8 max-w-xl">
+              From technical SEO and high-quality backlinks to local search domination and content marketing — we build rankings that convert to revenue.
+            </p>
+
+            {/* Badge pills */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {badges.map(({ icon: Icon, text }) => (
+                <span key={text}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold text-slate-300"
+                  style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
+                  <Icon size={12} className="text-blue-400" /> {text}
+                </span>
+              ))}
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-3 mb-10">
+              <a href="/ARA-Marketing/contact-us"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white
+                  transition-all duration-300 hover:scale-[1.03] shadow-lg"
+                style={{ background: 'linear-gradient(135deg, #2563eb, #7c3aed)', boxShadow: '0 8px 32px rgba(37,99,235,0.45)' }}>
+                Get Free SEO Audit <ArrowRight size={15} />
+              </a>
+              <a href="#seo-services"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-semibold text-blue-300
+                  transition-all duration-300 hover:text-white hover:bg-white/10"
+                style={{ border: '1px solid rgba(96,165,250,0.3)' }}>
+                Explore Services <ArrowUpRight size={15} />
+              </a>
+            </div>
+
+            {/* Stats row */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {stats.map(({ num, label, color }) => (
+                <div key={label}
+                  className="rounded-2xl px-4 py-3"
+                  style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                  <p className="text-[22px] font-black leading-tight" style={{ color }}>{num}</p>
+                  <p className="text-[10px] text-slate-400 font-medium mt-0.5 leading-snug">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── RIGHT: Image + Keyword card ── */}
+          <div className="lg:w-[420px] flex-shrink-0 flex flex-col gap-4">
+
+            {/* Image */}
+            <div className="relative rounded-3xl overflow-hidden"
+              style={{ boxShadow: '0 32px 80px rgba(0,0,0,0.5)', border: '1px solid rgba(96,165,250,0.15)' }}>
+              <img
+                src={seoHeroImg}
+                alt="SEO Services Thanjavur"
+                className="w-full h-[280px] object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0"
+                style={{ background: 'linear-gradient(180deg, transparent 30%, rgba(4,12,32,0.85) 100%)' }} />
+
+              {/* Live badge */}
+              <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5
+                bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="text-[11px] font-bold text-white">Live Rankings</span>
+              </div>
+
+              {/* Star rating */}
+              <div className="absolute top-4 right-4 flex items-center gap-1 px-2.5 py-1.5
+                bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                <Star size={10} className="text-yellow-400 fill-yellow-400" />
+                <span className="text-[11px] font-bold text-white">5.0 Rated</span>
+              </div>
+
+              <div className="absolute bottom-4 left-4 right-4">
+                <p className="text-white text-[14px] font-bold leading-snug drop-shadow-lg">
+                  Dominate Google Search in Thanjavur
+                </p>
+                <p className="text-blue-200 text-[12px] mt-1">AI-Powered SEO Strategies</p>
+              </div>
+            </div>
 
             {/* Keyword Rankings Card */}
-            <div
-              className="bg-white/90 backdrop-blur-sm rounded-3xl border border-blue-100/80 p-4 flex flex-col"
-              style={{ boxShadow: '0 24px 60px rgba(37,99,235,0.12)' }}
-            >
-              <div className="flex items-center gap-2 mb-3 pb-3 border-b border-slate-100">
-                <div className="w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center text-white flex-shrink-0">
-                  <BarChart2 size={14} />
+            <div className="rounded-2xl p-4"
+              style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(96,165,250,0.15)', backdropFilter: 'blur(12px)' }}>
+
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-blue-600">
+                    <BarChart2 size={13} className="text-white" />
+                  </div>
+                  <span className="text-[12px] font-bold text-white">Keyword Rankings</span>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-[11px] font-bold text-slate-800 leading-tight">Keyword Rankings</p>
-                  <p className="text-[9px] text-slate-400">Live Tracker</p>
-                </div>
-                <span className="flex items-center gap-1 px-2 py-0.5 bg-emerald-50
-                  text-emerald-600 text-[9px] font-bold rounded-full border border-emerald-100">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  Live
+                <span className="flex items-center gap-1 px-2 py-0.5 bg-emerald-500/10 text-emerald-400
+                  text-[9px] font-bold rounded-full border border-emerald-500/20">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" /> Live
                 </span>
               </div>
 
               <div className="flex flex-col gap-1.5">
                 {keywords.map(({ kw, pos, prev, color }) => (
-                  <div
-                    key={kw}
-                    className="flex items-center gap-2 px-2.5 py-2 rounded-xl"
-                    style={{ background: `${color}08`, border: `1px solid ${color}20` }}
-                  >
-                    <div
-                      className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0
-                        text-white text-[9px] font-black"
-                      style={{ background: `linear-gradient(135deg, ${color}, ${color}bb)` }}
-                    >
+                  <div key={kw}
+                    className="flex items-center gap-2.5 px-3 py-2 rounded-xl"
+                    style={{ background: `${color}10`, border: `1px solid ${color}25` }}>
+                    <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0
+                      text-white text-[9px] font-black"
+                      style={{ background: color }}>
                       #{pos}
                     </div>
-                    <span className="flex-1 text-[10px] font-medium text-slate-600 leading-snug line-clamp-2">{kw}</span>
-                    <div className="flex items-center gap-0.5 text-emerald-600 text-[9px] font-bold flex-shrink-0">
-                      <ArrowUp size={7} />+{prev - pos}
+                    <span className="flex-1 text-[10px] font-medium text-slate-300 leading-snug line-clamp-1">{kw}</span>
+                    <div className="flex items-center gap-0.5 text-emerald-400 text-[9px] font-bold flex-shrink-0">
+                      <ArrowUp size={8} />+{prev - pos}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+              <div className="mt-3 pt-3 border-t border-white/10 flex items-center justify-between">
                 <div>
-                  <p className="text-[9px] text-slate-400 font-semibold uppercase tracking-wider">Organic Traffic</p>
-                  <p className="text-[18px] font-black text-blue-600 leading-tight">+200%</p>
+                  <p className="text-[9px] text-slate-500 font-semibold uppercase tracking-wider">Organic Traffic</p>
+                  <p className="text-[20px] font-black text-blue-400 leading-tight">+200%</p>
                 </div>
-                <div className="flex items-center gap-1 px-2 py-1 bg-blue-50 rounded-xl border border-blue-100">
-                  <TrendingUp size={10} className="text-blue-600" />
-                  <span className="text-[9px] font-bold text-blue-600">Growing</span>
-                </div>
-              </div>
-            </div>
-
-            {/* DA 52 + 100+ badges side by side */}
-            <div className="flex gap-2">
-              <div
-                className="flex-1 bg-white rounded-2xl px-3 py-2.5 border border-blue-100"
-                style={{ boxShadow: '0 6px 20px rgba(37,99,235,0.14)' }}
-              >
-                <p className="text-[9px] text-slate-400 font-medium">Domain Authority</p>
-                <p className="text-[15px] font-black text-blue-600 leading-tight">DA 52</p>
-                <div className="flex items-center gap-0.5 text-emerald-500 text-[9px] font-semibold mt-0.5">
-                  <TrendingUp size={8} /> +8 this month
+                <div className="flex items-center gap-1 px-3 py-1.5 rounded-xl"
+                  style={{ background: 'rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.25)' }}>
+                  <TrendingUp size={11} className="text-blue-400" />
+                  <span className="text-[10px] font-bold text-blue-400">Growing Fast</span>
                 </div>
               </div>
-              <div
-                className="flex-1 bg-white rounded-2xl px-3 py-2.5 border border-emerald-100"
-                style={{ boxShadow: '0 6px 20px rgba(5,150,105,0.12)' }}
-              >
-                <p className="text-[9px] text-slate-400 font-medium">1st Page KW</p>
-                <p className="text-[15px] font-black text-emerald-600 leading-tight">100+</p>
-                <div className="flex items-center gap-0.5 text-emerald-500 text-[9px] font-semibold mt-0.5">
-                  <ArrowUp size={8} /> Ranked
-                </div>
-              </div>
-            </div>
-
-            {/* Stat strip */}
-            <div className="bg-white/80 backdrop-blur-sm border border-blue-100 rounded-2xl shadow-sm overflow-hidden flex">
-              {[
-                { num: '120+', label: 'Projects',    color: '#2563eb' },
-                { num: '95%',  label: 'Satisfied',   color: '#7c3aed' },
-                { num: '200%', label: 'Growth',      color: '#0891b2' },
-              ].map(({ num, label, color }, i) => (
-                <div
-                  key={label}
-                  className="flex-1 flex flex-col items-center py-3"
-                  style={{ borderRight: i < 2 ? '1px solid #e0eaff' : 'none' }}
-                >
-                  <span
-                    className="text-[16px] font-black leading-tight"
-                    style={{
-                      background: `linear-gradient(135deg, ${color}, ${color}88)`,
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >{num}</span>
-                  <span className="text-[9px] text-slate-500 font-medium">{label}</span>
-                </div>
-              ))}
             </div>
 
           </div>
-
-          {/* ── COLUMN 2: Text Content ── */}
-          <div className="flex-1 min-w-0 flex flex-col justify-center items-center text-center lg:px-4">
-
-            <nav className="flex items-center justify-center gap-1.5 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300" />
-              <span>Digital Marketing</span>
-              <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">SEO Services</span>
-            </nav>
-
-            <div className="animate-hero-d1 mb-5">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-600 text-white
-                rounded-full text-[11px] font-bold uppercase tracking-widest shadow-lg shadow-blue-600/25">
-                <Search size={11} /> Search Engine Optimization (SEO)
-              </span>
-            </div>
-
-            <h1 className="animate-hero-d2 text-[clamp(17px,1.8vw,31px)] font-bold text-slate-900
-              leading-[1.14] tracking-tight mb-5">
-              Best SEO Services in Thanjavur to{' '}
-              <span className="text-gradient-blue">Improve Rankings, Traffic</span>{' '}
-              &amp; Business Growth
-            </h1>
-
-            <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-3">
-              ARA Discover Marketing is one of the best SEO companies in Thanjavur, offering strategic and AI-driven SEO solutions to help businesses improve online visibility, generate high-quality leads, and achieve long-term digital growth.
-            </p>
-            <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-3">
-              Our SEO team delivers result-oriented optimization strategies customized for startups, local businesses, and enterprises looking to dominate search engine rankings.
-            </p>
-            <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-8">
-              We are a top SEO digital marketing agency in Thanjavur, offering modern AI-powered SEO techniques such as technical SEO, high-quality off-page SEO, AI-driven optimization, and content-based marketing campaigns to boost organic traffic and conversions.
-            </p>
-
-            <div className="animate-hero-d4 flex flex-wrap justify-center gap-3">
-              <a href="/ARA-Marketing/contact-us"
-                className="btn-glow inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white
-                  rounded-full text-sm font-semibold shadow-lg shadow-blue-600/25
-                  hover:bg-blue-500 transition-all duration-300">
-                Get Free SEO Audit <ArrowRight size={15} />
-              </a>
-              <a href="#seo-services"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-blue-300
-                  text-blue-700 bg-white/70 rounded-full text-sm font-semibold
-                  hover:bg-white hover:border-blue-400 transition-all duration-300 backdrop-blur-sm">
-                Explore SEO Services <ArrowUpRight size={15} />
-              </a>
-            </div>
-
-          </div>
-
-          {/* ── COLUMN 3: Right Image ── */}
-          <div className="animate-hero-visual hidden lg:block lg:w-[280px] flex-shrink-0">
-            <div className="relative h-full">
-              <div
-                className="relative rounded-3xl overflow-hidden border border-blue-100/60 h-full min-h-[360px]"
-                style={{ boxShadow: '0 24px 60px rgba(37,99,235,0.14)' }}
-              >
-                <img
-                  src={seoHeroImg}
-                  alt="SEO Services Thanjavur - ARA Discover Marketing"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(37,99,235,0.75) 100%)' }} />
-
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5
-                  bg-white/90 backdrop-blur-sm rounded-full border border-blue-100 shadow-sm whitespace-nowrap">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-[11px] font-bold text-slate-700">Live Rankings</span>
-                </div>
-
-                <div className="absolute bottom-5 left-5 right-5">
-                  <p className="text-white text-[13px] font-bold leading-snug drop-shadow">
-                    Dominate Google Search in Thanjavur
-                  </p>
-                  <p className="text-blue-100 text-[11px] mt-1 drop-shadow">
-                    AI-Driven SEO Strategies
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
