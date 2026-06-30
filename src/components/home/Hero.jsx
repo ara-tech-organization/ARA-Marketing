@@ -120,7 +120,7 @@ export default function Hero() {
 
             <h1 className="font-bold text-white tracking-tight mb-5"
               style={{ fontSize: 'clamp(27px,3.1vw,49px)', lineHeight: 1.2, animation: rev(100) }}>
-              Best Digital Marketing Company in Thanjavur for Business Growth &amp; Brand Visibility
+              Best Digital Marketing Company in Thanjavur
             </h1>
 
             <p className="text-[15px] leading-[1.85] mb-3"
