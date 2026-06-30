@@ -1,5 +1,4 @@
-import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight, TrendingUp, Star, CheckCircle } from 'lucide-react'
-import serviceImg from '../../assets/Home/H2.webp'
+import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight, TrendingUp, CheckCircle, Zap, Target, BarChart } from 'lucide-react'
 
 const services = [
   {
@@ -48,98 +47,121 @@ export default function Services() {
     <section id="services" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* Result-Driven intro section */}
-        <div className="mb-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+        {/* ── Result-Driven intro — dark full-width editorial ── */}
+        <div className="mb-16 reveal rounded-3xl overflow-hidden"
+          style={{ background: 'linear-gradient(145deg, #0a1628 0%, #0f2448 100%)', boxShadow: '0 20px 60px rgba(10,22,40,0.20)' }}>
 
-          {/* Left — text */}
-          <div className="reveal">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
-              border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
-              <TrendingUp size={11} /> Digital Marketing Services
-            </span>
-            <h2
-              className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight mb-6"
-              style={{ fontWeight: 700 }}
-            >
-              Result-Driven Digital Marketing Services<br />for Modern Businesses
-            </h2>
-            <div className="space-y-4">
-              <p className="text-base text-slate-500 leading-relaxed">
-                If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, ARA Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.
-              </p>
-              <p className="text-base text-slate-500 leading-relaxed">
-                In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. ARA Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.
-              </p>
-              <p className="text-base text-slate-500 leading-relaxed">
-                ARA Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.
-              </p>
+          {/* Top accent line */}
+          <div className="h-[3px]" style={{ background: 'linear-gradient(90deg, #2563eb, #7c3aed, #2563eb)' }} />
+
+          <div className="px-7 sm:px-10 pt-10 pb-8">
+
+            {/* Eyebrow + heading */}
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 mb-10">
+              <div className="max-w-xl">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.18em] mb-4"
+                  style={{ background: 'rgba(37,99,235,0.20)', color: '#93c5fd', border: '1px solid rgba(147,197,253,0.20)' }}>
+                  <TrendingUp size={9} /> Digital Marketing Services
+                </span>
+                <h2 className="font-bold text-white leading-[1.18] tracking-tight"
+                  style={{ fontSize: 'clamp(22px,3vw,38px)' }}>
+                  Result-Driven Digital Marketing Services for Modern Businesses
+                </h2>
+              </div>
+
+              {/* Right — 3 quick stats */}
+              <div className="flex sm:flex-col gap-4 sm:gap-3 flex-shrink-0">
+                {[
+                  { val: '500+', label: 'Clients Served',      color: '#60a5fa' },
+                  { val: '5.0★', label: 'Google Rating',       color: '#fbbf24' },
+                  { val: '98%',  label: 'Client Satisfaction',  color: '#34d399' },
+                ].map(({ val, label, color }) => (
+                  <div key={label} className="flex sm:flex-row items-center gap-2.5 px-4 py-2.5 rounded-xl"
+                    style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
+                    <span className="text-[20px] font-black leading-none" style={{ color }}>{val}</span>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider"
+                      style={{ color: 'rgba(255,255,255,0.40)' }}>{label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Key highlights */}
-            <div className="mt-6 flex flex-col gap-2.5">
+            {/* 3 paragraph columns */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+              {[
+                {
+                  icon: Zap,
+                  text: 'If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, ARA Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.',
+                },
+                {
+                  icon: Target,
+                  text: "In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. ARA Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.",
+                },
+                {
+                  icon: BarChart,
+                  text: "ARA Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.",
+                },
+              ].map(({ icon: Icon, text }, i) => (
+                <div key={i} className="flex flex-col gap-3">
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ background: 'rgba(37,99,235,0.22)' }}>
+                    <Icon size={15} style={{ color: '#93c5fd' }} />
+                  </div>
+                  <p className="text-[13px] leading-[1.80]" style={{ color: 'rgba(255,255,255,0.52)' }}>{text}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom — 3 highlight chips */}
+            <div className="flex flex-wrap gap-2.5 pt-6" style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}>
               {[
                 'AI-powered campaigns with measurable results',
                 'Expert team for SEO, SMM, SEM & Branding',
                 'Best digital marketing agency in Thanjavur',
               ].map(item => (
-                <div key={item} className="flex items-center gap-2.5">
-                  <CheckCircle size={15} className="text-blue-600 flex-shrink-0" />
-                  <span className="text-[13.5px] text-slate-600 font-medium">{item}</span>
+                <div key={item} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full"
+                  style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)' }}>
+                  <CheckCircle size={12} style={{ color: '#34d399', flexShrink: 0 }} />
+                  <span className="text-[12.5px] font-medium" style={{ color: 'rgba(255,255,255,0.70)' }}>{item}</span>
                 </div>
               ))}
             </div>
           </div>
+        </div>
 
-          {/* Right — image panel */}
-          <div className="reveal-right relative rounded-3xl overflow-hidden" style={{ minHeight: '420px', boxShadow: '0 24px 64px rgba(37,99,235,0.18)' }}>
-            <img
-              src={serviceImg}
-              alt="Digital Marketing Agency in Thanjavur - ARA Discover Marketing"
-              width="640" height="480" loading="lazy"
-              className="w-full h-full object-cover"
-              style={{ minHeight: '420px' }}
-            />
-            <div
-              className="absolute inset-0"
-              style={{ background: 'linear-gradient(160deg, rgba(15,23,42,0.35) 0%, rgba(29,78,216,0.45) 50%, rgba(15,23,42,0.80) 100%)' }}
-            />
-
-            {/* Top badge */}
-            <div className="absolute top-5 left-5">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold text-white"
-                style={{ background: 'rgba(37,99,235,0.6)', border: '1px solid rgba(96,165,250,0.3)', backdropFilter: 'blur(8px)' }}>
-                <TrendingUp size={9} /> ARA Discover Marketing
-              </span>
-            </div>
-
-            {/* Floating stat card */}
-            <div
-              className="absolute top-5 right-5 px-4 py-3 rounded-2xl text-center"
-              style={{ background: 'rgba(255,255,255,0.12)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.2)' }}
-            >
-              <p className="text-[26px] font-black text-white leading-none">500+</p>
-              <p className="text-[9px] text-blue-200 font-bold uppercase tracking-wide mt-0.5">Clients Served</p>
-            </div>
-
-            {/* Bottom panel */}
-            <div className="absolute bottom-0 left-0 right-0 px-6 py-5"
-              style={{ background: 'linear-gradient(0deg, rgba(15,23,42,0.95) 0%, transparent 100%)' }}>
-              <div className="flex items-end justify-between">
-                <div>
-                  <p className="text-[15px] font-bold text-white mb-1.5">Best Digital Marketing Agency</p>
-                  <div className="flex items-center gap-1">
-                    {[1,2,3,4,5].map(i => <Star key={i} size={10} className="text-amber-400" fill="#fbbf24" />)}
-                    <span className="text-[10px] text-amber-300 font-semibold ml-1">5.0 Rating</span>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <p className="text-[28px] font-black leading-none text-white">98%</p>
-                  <p className="text-[9px] text-blue-300 font-bold uppercase tracking-wide mt-0.5">Client Satisfaction</p>
-                </div>
-              </div>
-            </div>
+        {/* Why Do Businesses Choose Ara */}
+        <div className="mb-16 reveal">
+          <div className="text-center mb-8">
+            <h2 className="text-[clamp(21px,2.8vw,33px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+              Why Do Businesses Choose Ara Discover Marketing?
+            </h2>
+            <p className="text-[14px] text-slate-500 leading-relaxed max-w-3xl mx-auto">
+              Businesses and startups trust Ara because we focus on measurable growth, transparency and long-term success.
+              Also one of the top digital marketing companies in Thanjavur, our approach is centered around understanding
+              your business requirements and building AI-driven customized strategies that generate ROI.
+            </p>
           </div>
 
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
+            {[
+              'Customized digital marketing strategies',
+              'Experienced SEO & advertising experts',
+              'Transparent reporting & analytics',
+              'AI-focused marketing campaigns',
+              'Affordable packages for startups & enterprises',
+              'Dedicated support & campaign optimization',
+            ].map(item => (
+              <div key={item} className="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-blue-50 border border-blue-100">
+                <CheckCircle size={15} className="text-blue-600 flex-shrink-0" />
+                <span className="text-[13.5px] text-slate-700 font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-[14px] text-slate-500 leading-relaxed text-center">
+            Are you looking for the <strong className="text-slate-700">best digital marketing agency in Thanjavur</strong>?
+            Ara Discover Marketing offers a complete digital solution that drives visibility, engagement and conversions.
+          </p>
         </div>
 
         {/* Header */}
@@ -232,6 +254,12 @@ export default function Services() {
         </div>
 
         <p className="reveal text-center text-[14px] text-slate-500 leading-relaxed mt-8">
+          Grow your business with Email Marketing, Influencer Marketing, SMS Marketing, Content Marketing,
+          and Lead Generation Campaigns. We create targeted strategies to improve brand visibility, engage
+          customers, generate quality leads, and support business growth.
+        </p>
+
+        <p className="reveal text-center text-[14px] text-slate-500 leading-relaxed mt-4">
           As the top digital branding and advertising in Thanjavur, we help businesses create memorable
           brand identities and impactful customer experiences.
         </p>

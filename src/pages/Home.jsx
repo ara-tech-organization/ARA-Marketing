@@ -2,7 +2,6 @@ import useReveal     from '../hooks/useReveal'
 import useSEO        from '../hooks/useSEO'
 import Navbar        from '../components/home/Navbar'
 import Hero          from '../components/home/Hero'
-import StatsBand     from '../components/home/StatsBand'
 import Services      from '../components/home/Services'
 import WhyUs         from '../components/home/WhyUs'
 import Process       from '../components/home/Process'
@@ -64,7 +63,6 @@ export default function Home() {
       <Navbar />
       <main className="page-transition">
         <Hero />
-        <StatsBand />
         <Services />
         <WhyUs />
         <Process />

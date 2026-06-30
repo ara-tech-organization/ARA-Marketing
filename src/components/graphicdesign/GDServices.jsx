@@ -1,4 +1,4 @@
-﻿import { Frame, Image, BookOpen, CreditCard, FileText, Share2, Megaphone, Layers, Check, ArrowRight } from 'lucide-react'
+﻿import { Check, ArrowRight, Layers } from 'lucide-react'
 import logoImg        from '../../assets/GD/LogoDesign.webp'
 import bannerImg      from '../../assets/GD/Banner .webp'
 import pamphletImg    from '../../assets/GD/Pamphlet.webp'
@@ -10,7 +10,6 @@ import visualsImg     from '../../assets/GD/Visuals.webp'
 
 const services = [
   {
-    icon: Frame,
     title: 'Logo Design & Brand Identity Creation',
     keyword: 'Logo Design Services',
     desc: 'We are experts in creating unique corporate logo layouts in Thanjavur which help businesses to build a strong brand identity and trust.',
@@ -20,7 +19,6 @@ const services = [
     accent: '#2563eb',
   },
   {
-    icon: Image,
     title: 'Banner & Advertisement Design',
     keyword: 'Creative Ad Design',
     desc: 'We design high-impact banners and advertisement creatives that capture attention and drive action. Every design is visually appealing and marketing focused.',
@@ -30,7 +28,6 @@ const services = [
     accent: '#7c3aed',
   },
   {
-    icon: BookOpen,
     title: 'Brochure & Pamphlet Design',
     keyword: 'Brochure Design Services',
     desc: 'We create premium brochure layouts in thanjavur that capture attention and deliver your message clearly. We tailor every layout for impact.',
@@ -40,7 +37,6 @@ const services = [
     accent: '#7c3aed',
   },
   {
-    icon: CreditCard,
     title: 'Business Card & Visiting Card Design',
     keyword: 'Business Card Design',
     desc: 'Your stationery materials are a reflection of your business identity. We design professional business cards, visiting cards and letterheads that enhance your brand image and gain the trust of clients.',
@@ -50,7 +46,6 @@ const services = [
     accent: '#059669',
   },
   {
-    icon: FileText,
     title: 'Letterhead Design & Corporate Stationery',
     keyword: 'Letterhead Design',
     desc: 'A consistent corporate stationery package reinforces professionalism and builds client trust. We design letterheads, envelopes, invoice templates and office stationery aligned with your brand.',
@@ -60,7 +55,6 @@ const services = [
     accent: '#d97706',
   },
   {
-    icon: Share2,
     title: 'Social Media Post Design',
     keyword: 'Social Media Posts',
     desc: 'Visuals are key to successful online marketing. We develop engaging social media creatives that enhance brand visibility and audience interaction across Instagram, Facebook, LinkedIn and more.',
@@ -70,7 +64,6 @@ const services = [
     accent: '#db2777',
   },
   {
-    icon: Megaphone,
     title: 'Flyer & Poster Design',
     keyword: 'Flyer Design Services',
     desc: 'We also possess a team of professionals in flyer creation and designing in thanjavur designed to improve marketing reach and customer engagement.',
@@ -80,7 +73,6 @@ const services = [
     accent: '#0891b2',
   },
   {
-    icon: Layers,
     title: 'Graphic Design & Marketing Visuals',
     keyword: 'Graphic Design Services',
     desc: 'We are a top-rated creative agency in thanjavur with a wide range of creative services to enhance your brand presence.',
@@ -126,52 +118,45 @@ export default function GDServices() {
 
         {/* ── Service grid — 2-column cards with image top ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {services.map(({ icon: Icon, title, keyword, desc, features, img, imgAlt, accent }, i) => (
+          {services.map(({ title, keyword, desc, features, img, imgAlt, accent }, i) => (
             <div
               key={title}
               className={`reveal delay-${(i % 4) + 1} group relative bg-white rounded-2xl overflow-hidden border border-slate-100
                 hover:shadow-2xl hover:-translate-y-2 transition-all duration-350`}
               style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
             >
-              {/* Image with overlay */}
-              <div className="relative h-40 overflow-hidden">
+              {/* Clean image — no heavy overlay */}
+              <div className="relative h-44 overflow-hidden">
                 <img
                   src={img}
                   alt={imgAlt}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                {/* Keyword badge — top-left corner */}
+                <span
+                  className="absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full"
+                  style={{
+                    background: 'rgba(255,255,255,0.92)',
+                    color: accent,
+                    backdropFilter: 'blur(6px)',
+                    border: `1px solid ${accent}33`,
+                  }}
+                >
+                  {keyword}
+                </span>
+                {/* Subtle bottom gradient for smooth card transition */}
                 <div
-                  className="absolute inset-0"
-                  style={{ background: `linear-gradient(180deg, ${accent}99 0%, ${accent}cc 100%)` }}
-                />
-                {/* Icon */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                    style={{ background: 'rgba(255,255,255,0.2)', border: '1.5px solid rgba(255,255,255,0.35)' }}
-                  >
-                    <Icon size={26} className="text-white" />
-                  </div>
-                </div>
-                {/* Accent bar bottom */}
-                <div
-                  className="absolute bottom-0 left-0 right-0 h-1"
-                  style={{ background: accent }}
+                  className="absolute bottom-0 left-0 right-0 h-8"
+                  style={{ background: 'linear-gradient(to bottom, transparent, rgba(255,255,255,0.9))' }}
                 />
               </div>
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-[12px] font-bold text-slate-800 leading-snug mb-1.5 group-hover:text-blue-700 transition-colors duration-200">
+                <h3 className="text-[12px] font-bold text-slate-800 leading-snug mb-3 group-hover:text-blue-700 transition-colors duration-200">
                   {title}
                 </h3>
-                <span
-                  className="inline-block text-[9px] font-bold px-2 py-0.5 rounded-full mb-3"
-                  style={{ background: accent + '15', color: accent }}
-                >
-                  {keyword}
-                </span>
                 <p className="text-[12px] text-slate-500 leading-[1.7] mb-4 line-clamp-3">{desc}</p>
 
                 {/* Feature list */}

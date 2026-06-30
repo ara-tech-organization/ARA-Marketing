@@ -1,4 +1,4 @@
-﻿import { Zap, Shield, TrendingUp, DollarSign, Server, Star } from 'lucide-react'
+import { Zap, Shield, TrendingUp, DollarSign, Server, Star } from 'lucide-react'
 
 const benefits = [
   {
@@ -6,220 +6,267 @@ const benefits = [
     icon: Zap,
     title: 'Extremely Fast Loading Speed',
     desc: 'Static websites serve pre-rendered HTML files directly — no server processing, no wait times. Visitors get instant page loads that reduce bounce rates and improve engagement significantly.',
-    color: '#2563eb',
+    color: '#0ea5e9',
     metric: '<1s',
     metricLabel: 'Load Time',
-    grad: 'linear-gradient(135deg, #2563eb, #3b82f6)',
+    grad: 'linear-gradient(135deg, #0ea5e9, #38bdf8)',
   },
   {
     num: '02',
     icon: Shield,
     title: 'Enhanced Security — No Database Vulnerabilities',
     desc: 'With no backend server or database, static sites are immune to SQL injection, server exploits, and CMS vulnerabilities. Your business data and user experience stay safe 24/7.',
-    color: '#1d4ed8',
+    color: '#a855f7',
     metric: '0',
     metricLabel: 'DB Risk',
-    grad: 'linear-gradient(135deg, #1d4ed8, #2563eb)',
+    grad: 'linear-gradient(135deg, #a855f7, #c084fc)',
   },
   {
     num: '03',
     icon: TrendingUp,
     title: 'Better SEO Performance',
     desc: 'Fast load speed, clean semantic HTML, structured data, and mobile-first design all contribute to higher Google rankings. Our static websites are built to be found and indexed easily.',
-    color: '#2563eb',
+    color: '#10b981',
     metric: '98+',
     metricLabel: 'SEO Score',
-    grad: 'linear-gradient(135deg, #2563eb, #60a5fa)',
+    grad: 'linear-gradient(135deg, #10b981, #34d399)',
   },
   {
     num: '04',
     icon: DollarSign,
     title: 'Low Hosting & Maintenance Costs',
     desc: 'Deploy on Netlify, Vercel, or GitHub Pages for free or at minimal cost. No server bills, no CMS licenses, and virtually zero ongoing maintenance expenses.',
-    color: '#1d4ed8',
+    color: '#f59e0b',
     metric: '90%',
     metricLabel: 'Cost Saving',
-    grad: 'linear-gradient(135deg, #1d4ed8, #3b82f6)',
+    grad: 'linear-gradient(135deg, #f59e0b, #fbbf24)',
   },
   {
     num: '05',
     icon: Server,
     title: 'High Reliability & Uptime',
     desc: 'Static files hosted on CDNs deliver near-perfect uptime with global distribution. Even during traffic spikes, your website stays fast and fully available to every visitor worldwide.',
-    color: '#2563eb',
+    color: '#ec4899',
     metric: '99.9%',
     metricLabel: 'Uptime',
-    grad: 'linear-gradient(135deg, #2563eb, #93c5fd)',
+    grad: 'linear-gradient(135deg, #ec4899, #f472b6)',
   },
 ]
-
-function BenefitCard({ benefit, large }) {
-  const { num, icon: Icon, title, desc, color, metric, metricLabel, grad } = benefit
-  return (
-    <div
-      className="relative rounded-3xl overflow-hidden flex flex-col transition-all duration-300 cursor-default group"
-      style={{
-        background: 'rgba(186,230,255,0.06)',
-        border: '1px solid rgba(186,230,255,0.12)',
-        flex: 1,
-      }}
-      onMouseEnter={e => {
-        e.currentTarget.style.border = `1px solid ${color}50`
-        e.currentTarget.style.boxShadow = 'none'
-        e.currentTarget.style.transform = 'translateY(-4px)'
-        e.currentTarget.style.background = 'rgba(186,230,255,0.10)'
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.style.border = '1px solid rgba(186,230,255,0.12)'
-        e.currentTarget.style.boxShadow = 'none'
-        e.currentTarget.style.transform = 'translateY(0)'
-        e.currentTarget.style.background = 'rgba(186,230,255,0.06)'
-      }}
-    >
-      {/* Top gradient bar */}
-      <div className="h-[3px] w-full flex-shrink-0" style={{ background: grad }} />
-
-      {/* Faded number watermark */}
-      <span
-        className="absolute top-4 right-5 text-[64px] font-black leading-none select-none pointer-events-none"
-        style={{
-          background: `linear-gradient(135deg, ${color}20, ${color}06)`,
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-        }}
-      >
-        {num}
-      </span>
-
-      <div className={`relative flex flex-col flex-1 ${large ? 'p-8' : 'p-6'}`}>
-
-        {/* Icon */}
-        <div
-          className={`${large ? 'w-14 h-14' : 'w-12 h-12'} rounded-2xl flex items-center justify-center mb-5 flex-shrink-0`}
-          style={{
-            background: `${color}16`,
-            border: `1px solid ${color}30`,
-            boxShadow: `0 0 24px ${color}18`,
-          }}
-        >
-          <Icon size={large ? 22 : 18} style={{ color }} />
-        </div>
-
-        {/* Title */}
-        <h3
-          className={`${large ? 'text-[17px]' : 'text-[14px]'} font-bold text-white leading-snug mb-3`}
-        >
-          {title}
-        </h3>
-
-        {/* Description */}
-        <p
-          className={`${large ? 'text-[14px]' : 'text-[12.5px]'} leading-[1.8] flex-1`}
-          style={{ color: '#94a3b8' }}
-        >
-          {desc}
-        </p>
-
-        {/* Divider */}
-        <div
-          className="my-4 h-px"
-          style={{ background: `linear-gradient(90deg, ${color}40, transparent)` }}
-        />
-
-        {/* Metric */}
-        <div className="flex items-end gap-2">
-          <span
-            className={`${large ? 'text-[32px]' : 'text-[26px]'} font-black leading-none tabular-nums`}
-            style={{
-              background: grad,
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}
-          >
-            {metric}
-          </span>
-          <span className="text-[11px] font-semibold pb-1" style={{ color: `${color}aa` }}>
-            {metricLabel}
-          </span>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default function SWBenefits() {
   return (
     <section
-      className="relative overflow-hidden py-16 sm:py-16"
-      style={{ background: '#071a36' }}
+      className="relative overflow-hidden py-20 sm:py-24"
+      style={{ background: 'linear-gradient(160deg, #06090f 0%, #090e1c 55%, #06090f 100%)' }}
     >
       {/* Orbs */}
-      <div
-        className="absolute top-0 right-0 w-[550px] h-[550px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.11) 0%, transparent 65%)' }}
-      />
-      <div
-        className="absolute bottom-0 left-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }}
-      />
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(168,85,247,0.08) 0%, transparent 65%)' }} />
+      <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.07) 0%, transparent 65%)' }} />
+
       {/* Dot grid */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-20"
+      <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(8,145,178,0.4) 1px, transparent 1px)',
-          backgroundSize: '40px 40px',
-        }}
-      />
+          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.09) 1px, transparent 1px)',
+          backgroundSize: '38px 38px',
+          opacity: 0.4,
+        }} />
 
-      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
 
-        {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 reveal">
-          <div>
+          {/* ── LEFT: Header + metric stack ── */}
+          <div className="lg:w-[36%] lg:sticky lg:top-24 lg:self-start reveal">
+
+            {/* Badge */}
             <span
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(37,99,235,0.18)', color: '#93c5fd', border: '1px solid rgba(37,99,235,0.35)' }}
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
+              style={{ background: 'rgba(14,165,233,0.12)', color: '#38bdf8', border: '1px solid rgba(14,165,233,0.28)' }}
             >
               <Star size={11} /> Key Benefits
             </span>
-            <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold text-white leading-tight tracking-tight">
+
+            {/* Heading */}
+            <h2 className="text-[clamp(22px,2.5vw,36px)] font-bold text-white leading-tight tracking-tight mb-4">
               Benefits of{' '}
-              <span className="text-gradient-blue">
+              <span style={{
+                background: 'linear-gradient(135deg, #38bdf8, #c084fc)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>
                 Static Websites
               </span>
             </h2>
+
+            {/* Description */}
+            <p className="text-[13.5px] leading-[1.85] mb-10" style={{ color: '#475569' }}>
+              Static websites can be a huge boon for businesses that value speed and performance. Our
+              static website development services in Thanjavur ensure maximum impact with minimum maintenance.
+            </p>
+
+            {/* Stat grid panel */}
+            <div className="rounded-2xl overflow-hidden"
+              style={{ border: '1px solid rgba(255,255,255,0.08)', background: 'rgba(255,255,255,0.02)' }}>
+
+              {/* 2 × 2 top grid */}
+              <div className="grid grid-cols-2">
+                {benefits.slice(0, 4).map(({ icon: Icon, metric, metricLabel, color, grad }, i) => (
+                  <div
+                    key={metricLabel}
+                    className="p-5 transition-all duration-300 hover:bg-white/[0.03]"
+                    style={{
+                      borderRight: i % 2 === 0 ? '1px solid rgba(255,255,255,0.07)' : 'none',
+                      borderBottom: '1px solid rgba(255,255,255,0.07)',
+                    }}
+                  >
+                    {/* Icon */}
+                    <div className="w-7 h-7 rounded-lg flex items-center justify-center mb-3"
+                      style={{ background: `${color}18`, border: `1px solid ${color}30` }}>
+                      <Icon size={13} style={{ color }} />
+                    </div>
+                    {/* Metric */}
+                    <div
+                      className="font-black tabular-nums leading-none mb-1"
+                      style={{
+                        fontSize: '30px',
+                        background: grad,
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                      }}
+                    >
+                      {metric}
+                    </div>
+                    {/* Label */}
+                    <div className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#374151' }}>
+                      {metricLabel}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* 5th stat — full width row */}
+              {(() => {
+                const { icon: Icon, metric, metricLabel, color, grad } = benefits[4]
+                return (
+                  <div className="flex items-center gap-5 px-5 py-4 transition-all duration-300 hover:bg-white/[0.03]">
+                    <div className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
+                      style={{ background: `${color}18`, border: `1px solid ${color}30` }}>
+                      <Icon size={13} style={{ color }} />
+                    </div>
+                    <div>
+                      <div
+                        className="font-black tabular-nums leading-none mb-0.5"
+                        style={{
+                          fontSize: '26px',
+                          background: grad,
+                          WebkitBackgroundClip: 'text',
+                          WebkitTextFillColor: 'transparent',
+                          backgroundClip: 'text',
+                        }}
+                      >
+                        {metric}
+                      </div>
+                      <div className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: '#374151' }}>
+                        {metricLabel}
+                      </div>
+                    </div>
+                    {/* Decorative divider */}
+                    <div className="flex-1 h-px ml-2" style={{ background: `linear-gradient(90deg, ${color}30, transparent)` }} />
+                  </div>
+                )
+              })()}
+            </div>
           </div>
-          <p className="text-[14.5px] leading-[1.8] lg:max-w-md" style={{ color: '#94a3b8' }}>
-            Static websites can be a huge boon for businesses that value speed and performance. Our static website development services in Thanjavur ensure your website makes maximum impact with minimum maintenance.
-          </p>
-        </div>
 
-        {/* Row 1: Two wide cards */}
-        <div className="flex flex-col sm:flex-row gap-5 mb-5 reveal">
-          <BenefitCard benefit={benefits[0]} large />
-          <BenefitCard benefit={benefits[1]} large />
-        </div>
+          {/* ── RIGHT: Benefit list ── */}
+          <div className="lg:w-[64%] flex flex-col reveal">
+            {benefits.map(({ num, icon: Icon, title, desc, color, metric, grad }, i) => (
+              <div
+                key={num}
+                className="group flex gap-5 py-7 transition-all duration-300 cursor-default"
+                style={{
+                  borderBottom: i < benefits.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.paddingLeft = '12px' }}
+                onMouseLeave={e => { e.currentTarget.style.paddingLeft = '0px' }}
+              >
+                {/* Icon col */}
+                <div className="flex flex-col items-center gap-2 flex-shrink-0">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300"
+                    style={{
+                      background: `${color}14`,
+                      border: `1px solid ${color}30`,
+                    }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.background = `${color}25`
+                      e.currentTarget.style.boxShadow = `0 0 24px ${color}30`
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.background = `${color}14`
+                      e.currentTarget.style.boxShadow = 'none'
+                    }}
+                  >
+                    <Icon size={16} style={{ color }} />
+                  </div>
+                  <span className="text-[9px] font-black tracking-widest" style={{ color: `${color}55` }}>
+                    {num}
+                  </span>
+                </div>
 
-        {/* Row 2: Three equal cards */}
-        <div className="flex flex-col sm:flex-row gap-5 reveal">
-          {benefits.slice(2).map(b => (
-            <BenefitCard key={b.num} benefit={b} large={false} />
-          ))}
+                {/* Content */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-start justify-between gap-3 mb-2.5">
+                    <h3 className="text-[15px] sm:text-[16px] font-bold text-white leading-snug
+                      group-hover:text-transparent transition-all duration-300"
+                      style={{
+                        backgroundImage: `linear-gradient(135deg, #ffffff, ${color})`,
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'inherit',
+                      }}
+                      onMouseEnter={e => {
+                        e.currentTarget.style.WebkitTextFillColor = 'transparent'
+                      }}
+                      onMouseLeave={e => {
+                        e.currentTarget.style.WebkitTextFillColor = 'inherit'
+                      }}
+                    >
+                      {title}
+                    </h3>
+                    {/* Metric pill */}
+                    <span
+                      className="flex-shrink-0 px-3 py-1 rounded-full text-[12px] font-black text-white leading-none"
+                      style={{ background: grad, boxShadow: `0 2px 12px ${color}40` }}
+                    >
+                      {metric}
+                    </span>
+                  </div>
+                  <p className="text-[12.5px] sm:text-[13px] leading-[1.82]" style={{ color: '#374151' }}>
+                    {desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
 
         {/* Bottom note */}
-        <div className="mt-14 text-center reveal">
-          <p className="text-[14px] leading-[1.8] mb-1.5" style={{ color: '#94a3b8' }}>
-            We are experts in developing static web pages in Thanjavur — your website will be lightweight yet powerful enough to handle consistent traffic.
-          </p>
-          <p className="text-[14px] leading-[1.8] mb-1.5" style={{ color: '#94a3b8' }}>
-            We also offer static web design services in Thanjavur according to modern UI/UX principles to keep visitors engaged.
-          </p>
-          <p className="text-[14px] leading-[1.8]" style={{ color: '#94a3b8' }}>
-            Our approach of developing static web pages in Thanjavur guarantees that all pages are designed for user experience and SEO.
-          </p>
+        <div className="mt-16 pt-10 reveal" style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+            {[
+              'We are experts in developing static web pages in Thanjavur — your website will be lightweight yet powerful enough to handle consistent traffic.',
+              'We also offer static web design services in Thanjavur according to modern UI/UX principles to keep visitors engaged.',
+              'Our approach of developing static web pages in Thanjavur guarantees that all pages are designed for user experience and SEO.',
+            ].map((note, i) => (
+              <p key={i} className="text-[12.5px] leading-[1.82] px-2" style={{ color: '#64748b' }}>
+                {note}
+              </p>
+            ))}
+          </div>
         </div>
 
       </div>

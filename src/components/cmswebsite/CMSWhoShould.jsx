@@ -87,35 +87,27 @@ export default function CMSWhoShould() {
           </div>
 
           {/* Right: Our Commitments */}
-          <div className="md:w-[320px] lg:w-[400px] flex-shrink-0 reveal">
+          <div className="md:w-[320px] lg:w-[380px] flex-shrink-0 reveal">
             <div className="sticky top-24">
 
-              {/* Image */}
-              <div className="rounded-3xl overflow-hidden relative mb-7"
-                style={{ height: 260, boxShadow: '0 20px 60px rgba(37,99,235,0.12)', border: '1px solid rgba(37,99,235,0.1)' }}>
-                <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=360&fit=crop&auto=format&q=80"
-                  alt="WordPress CMS Solutions in Thanjavur"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(135deg, rgba(29,78,216,0.3) 0%, rgba(3,8,20,0.4) 100%)' }} />
-                <div className="absolute bottom-5 left-5 right-5 px-4 py-3 rounded-xl"
-                  style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)' }}>
-                  <p className="text-[11px] font-black uppercase tracking-widest mb-1" style={{ color: '#1d4ed8' }}>
-                    Our Commitment
-                  </p>
-                  <p className="text-[12px] font-bold text-slate-800 leading-snug">
-                    Transparency, quality, and long-term partnerships — always.
-                  </p>
-                </div>
+              {/* Commitment header card */}
+              <div className="rounded-2xl p-6 mb-4"
+                style={{ background: 'linear-gradient(145deg, #0d1f3c 0%, #1d4ed8 100%)', boxShadow: '0 16px 48px rgba(29,78,216,0.22)' }}>
+                <p className="text-[10px] font-black uppercase tracking-[0.18em] mb-3" style={{ color: 'rgba(147,197,253,0.80)' }}>
+                  WordPress CMS Solutions in Thanjavur
+                </p>
+                <h3 className="text-[18px] font-bold text-white leading-[1.3] mb-2">
+                  Our Commitment
+                </h3>
+                <p className="text-[13px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                  Transparency, quality, and long-term partnerships — always.
+                </p>
               </div>
 
               {/* Commitments list */}
               <div className="rounded-2xl p-6"
                 style={{ background: 'linear-gradient(135deg, #eff6ff, #dbeafe)', border: '1px solid rgba(37,99,235,0.15)' }}>
-                <h3 className="text-[14px] font-bold text-slate-800 mb-5">Our Commitments</h3>
+                <h3 className="text-[13px] font-bold text-slate-700 mb-5 uppercase tracking-widest">Our Commitments</h3>
                 <div className="flex flex-col gap-3.5">
                   {commitments.map((c, i) => (
                     <div key={i} className="flex items-start gap-3">

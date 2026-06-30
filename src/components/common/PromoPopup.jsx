@@ -1,23 +1,31 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { X, ArrowRight, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const STORAGE_KEY = 'ara_popup_dismissed_at'
-const COOLDOWN_MS = 24 * 60 * 60 * 1000 // 24 hours
-
 export default function PromoPopup() {
   const [visible, setVisible] = useState(false)
+  const timerRef = useRef(null)
+  const shownRef = useRef(false)
 
   useEffect(() => {
-    const last = localStorage.getItem(STORAGE_KEY)
-    if (last && Date.now() - Number(last) < COOLDOWN_MS) return
-    const timer = setTimeout(() => setVisible(true), 10000)
-    return () => clearTimeout(timer)
+    const EVENTS = ['mousemove', 'scroll', 'keydown', 'touchstart', 'click']
+
+    function onActivity() {
+      if (shownRef.current) return
+      shownRef.current = true
+      EVENTS.forEach(e => window.removeEventListener(e, onActivity))
+      timerRef.current = setTimeout(() => setVisible(true), 10000)
+    }
+
+    EVENTS.forEach(e => window.addEventListener(e, onActivity, { passive: true }))
+    return () => {
+      EVENTS.forEach(e => window.removeEventListener(e, onActivity))
+      clearTimeout(timerRef.current)
+    }
   }, [])
 
   function dismiss() {
     setVisible(false)
-    localStorage.setItem(STORAGE_KEY, String(Date.now()))
   }
 
   if (!visible) return null

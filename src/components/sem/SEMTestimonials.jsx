@@ -59,7 +59,7 @@ export default function SEMTestimonials() {
         </div>
 
         {/* ── Split layout ── */}
-        <div className="reveal flex flex-col lg:flex-row gap-10 max-w-[900px] mx-auto items-stretch">
+        <div className="reveal flex flex-col lg:flex-row gap-10 items-stretch max-w-[1000px] mx-auto">
 
           {/* Left: featured testimonial */}
           <div className="flex-1 min-w-0 lg:max-w-[560px]">

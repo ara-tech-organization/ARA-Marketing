@@ -81,7 +81,7 @@ export default function SWProcess() {
 
         {/* Desktop: horizontal timeline */}
         <div className="hidden lg:block reveal">
-          <div className="relative flex items-start gap-0">
+          <div className="relative flex items-stretch gap-0">
 
             {/* Connector line */}
             <div
@@ -90,7 +90,7 @@ export default function SWProcess() {
             />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (
-              <div key={num} className="flex-1 flex flex-col items-center text-center px-3 group">
+              <div key={num} className="flex-1 flex flex-col items-center text-center px-3 group self-stretch">
 
                 {/* Node */}
                 <div
@@ -112,7 +112,7 @@ export default function SWProcess() {
 
                 {/* Card */}
                 <div
-                  className="w-full rounded-2xl p-5 transition-all duration-300 group-hover:-translate-y-1"
+                  className="w-full flex-1 rounded-2xl p-5 transition-all duration-300 group-hover:-translate-y-1"
                   style={{
                     background: '#f8fafc',
                     border: '1px solid #e2e8f0',

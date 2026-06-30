@@ -1,4 +1,4 @@
-import { CheckCircle2, Layers, TrendingUp, ShieldCheck, Clock4, Globe2 } from 'lucide-react'
+import { Layers, TrendingUp, ShieldCheck, Clock4, Globe2 } from 'lucide-react'
 import ewIntroImg from '../../assets/Enterprise/e1.webp'
 
 const stats = [
@@ -30,7 +30,7 @@ export default function EWIntro() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
 
-      {/* Decorative rings — lg only so they never crowd small screens */}
+      {/* Decorative rings */}
       <div className="hidden lg:block absolute -right-28 top-1/3 w-[340px] h-[340px] rounded-full pointer-events-none"
         style={{ border: '1.5px solid rgba(37,99,235,0.07)', animation: 'spin 65s linear infinite' }} />
       <div className="hidden lg:block absolute -left-20 bottom-0 w-[240px] h-[240px] rounded-full pointer-events-none"
@@ -39,7 +39,6 @@ export default function EWIntro() {
       {/* ── Stats strip ── */}
       <div className="relative" style={{ background: 'linear-gradient(90deg,#1e3a8a,#1d4ed8 40%,#0891b2 80%,#0e7490)' }}>
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
-          {/* 2 cols on xs, 4 cols on md+ */}
           <div className="grid grid-cols-2 md:grid-cols-4">
             {stats.map(({ val, label }, i) => (
               <div key={label}
@@ -58,7 +57,6 @@ export default function EWIntro() {
 
       {/* ── Main content ── */}
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 py-10 sm:py-14 lg:py-20">
-        {/* Stack on xs/sm/md, side-by-side on lg */}
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-14 items-start">
 
           {/* ── LEFT: Text block ── */}
@@ -87,11 +85,11 @@ export default function EWIntro() {
               In today's competitive market, enterprises need websites that are visually attractive, secure, scalable, and capable of managing complex business operations. Our enterprise web development services in Thanjavur apply the latest technology, personalised designs, and data-driven insights to help enterprises realise measurable growth.
             </p>
 
-            {/* Feature points — 1 col on xs, 2 col on sm+ */}
+            {/* Feature point cards — 1 col on xs, 2 col on sm+ */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
               {points.map(({ icon: Icon, text }) => (
                 <div key={text}
-                  className="flex items-start gap-2.5 sm:gap-3 px-3 sm:px-4 py-3 sm:py-3.5 rounded-2xl bg-white cursor-default group transition-all duration-300"
+                  className="flex items-start gap-2.5 sm:gap-3 px-3 sm:px-4 py-3 sm:py-3.5 rounded-2xl bg-white cursor-default transition-all duration-300"
                   style={{ border: '1px solid #e8edf5', boxShadow: '0 2px 10px rgba(37,99,235,0.05)' }}
                   onMouseEnter={e => {
                     e.currentTarget.style.borderColor = '#bfdbfe'
@@ -103,7 +101,7 @@ export default function EWIntro() {
                     e.currentTarget.style.boxShadow = '0 2px 10px rgba(37,99,235,0.05)'
                     e.currentTarget.style.transform = 'none'
                   }}>
-                  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 transition-all duration-300 group-hover:scale-110"
+                  <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
                     style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
                     <Icon size={12} className="text-blue-600" />
                   </div>
@@ -117,13 +115,13 @@ export default function EWIntro() {
           <div className="w-full lg:flex-1 reveal-right">
 
             {/* Main image */}
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden mb-3 sm:mb-4"
+            <div className="relative rounded-3xl overflow-hidden mb-3 sm:mb-4"
               style={{ boxShadow: '0 20px 56px rgba(37,99,235,0.16)', border: '1.5px solid #dbeafe' }}>
               <img
                 src={ewIntroImg}
                 alt="Enterprise website development services in Thanjavur — ARA Discover Marketing"
                 loading="lazy"
-                className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.8s]"
+                className="w-full object-cover scale-105 hover:scale-100 transition-transform duration-[1800ms]"
                 style={{ height: 'clamp(190px,38vw,340px)' }}
               />
               <div className="absolute inset-0"
@@ -137,7 +135,7 @@ export default function EWIntro() {
                 <p className="text-[8px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">Client Retention</p>
               </div>
 
-              {/* Bottom left label */}
+              {/* Bottom-left label */}
               <div className="absolute bottom-2.5 left-2.5 sm:bottom-4 sm:left-4 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg sm:rounded-xl"
                 style={{ background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(10px)' }}>
                 <p className="text-[8.5px] sm:text-[10px] font-bold uppercase tracking-widest text-purple-600 mb-0.5">Enterprise Ready</p>
@@ -145,7 +143,7 @@ export default function EWIntro() {
               </div>
             </div>
 
-            {/* 3 info tiles — always 3 cols */}
+            {/* 3 info tiles */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3">
               {tiles.map(({ icon: Icon, label, color, bg, border }) => (
                 <div key={label}

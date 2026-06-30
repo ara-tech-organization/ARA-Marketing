@@ -1,78 +1,184 @@
-﻿import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
+import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const benefits = [
-  { icon: Cpu,        title: 'Enhanced AI Engagement',      desc: 'AI-powered features drive meaningful customer interaction, personalization, and retention.', metric: '3x',  metricLabel: 'Higher Engagement', color: '#1e40af' },
-  { icon: Settings,   title: 'Streamlined Operations',      desc: 'Mobile apps automate workflows, reduce bottlenecks, and improve team efficiency.', metric: '60%', metricLabel: 'Efficiency Gain',   color: '#2563eb' },
-  { icon: Zap,        title: 'Optimised Performance',       desc: 'High-performance apps for Android and iOS with sub-second load times and flawless UX.', metric: '<1s', metricLabel: 'Load Time',         color: '#0891b2' },
-  { icon: TrendingUp, title: 'Higher ROI',                  desc: 'Intuitive UI/UX combined with AI insights drives measurable revenue and business growth.', metric: '40%', metricLabel: 'ROI Increase',      color: '#059669' },
-  { icon: DollarSign, title: 'Scalable Custom Solutions',   desc: 'Custom mobile app development services in Thanjavur that grow with your business needs.', metric: '50%', metricLabel: 'Cost Reduction',    color: '#d97706' },
+  {
+    icon: Cpu,
+    title: 'Enhanced AI Engagement',
+    desc: 'AI-powered features drive meaningful customer interaction, personalization, and retention.',
+    metric: '3x',
+    metricLabel: 'Higher Engagement',
+    color: '#2563eb',
+    grad: 'linear-gradient(135deg,#1e40af,#3b82f6)',
+    bg: '#eff6ff',
+    border: '#bfdbfe',
+  },
+  {
+    icon: Settings,
+    title: 'Streamlined Operations',
+    desc: 'Mobile apps automate workflows, reduce bottlenecks, and improve team efficiency.',
+    metric: '60%',
+    metricLabel: 'Efficiency Gain',
+    color: '#7c3aed',
+    grad: 'linear-gradient(135deg,#7c3aed,#6366f1)',
+    bg: '#f5f3ff',
+    border: '#ddd6fe',
+  },
+  {
+    icon: Zap,
+    title: 'Optimised Performance',
+    desc: 'High-performance apps for Android and iOS with sub-second load times and flawless UX.',
+    metric: '<1s',
+    metricLabel: 'Load Time',
+    color: '#0891b2',
+    grad: 'linear-gradient(135deg,#0891b2,#06b6d4)',
+    bg: '#ecfeff',
+    border: '#a5f3fc',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Higher ROI',
+    desc: 'Intuitive UI/UX combined with AI insights drives measurable revenue and business growth.',
+    metric: '40%',
+    metricLabel: 'ROI Increase',
+    color: '#059669',
+    grad: 'linear-gradient(135deg,#059669,#10b981)',
+    bg: '#ecfdf5',
+    border: '#a7f3d0',
+  },
+  {
+    icon: DollarSign,
+    title: 'Scalable Custom Solutions',
+    desc: 'Custom mobile app development services in Thanjavur that grow with your business needs.',
+    metric: '50%',
+    metricLabel: 'Cost Reduction',
+    color: '#d97706',
+    grad: 'linear-gradient(135deg,#d97706,#f59e0b)',
+    bg: '#fffbeb',
+    border: '#fde68a',
+  },
+]
+
+const trustPoints = [
+  '200+ apps successfully delivered',
+  'iOS, Android & cross-platform',
+  'AI-powered & scalable solutions',
 ]
 
 export default function MABenefits() {
   return (
-    <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.03) 0%,transparent 65%)' }} />
+    <section className="relative py-14 sm:py-16 lg:py-20 overflow-hidden bg-white">
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
-        <div className="flex flex-col lg:flex-row gap-14 items-start">
+      {/* Dot grid */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
 
-          {/* Left: intro */}
-          <div className="lg:w-[360px] flex-shrink-0 reveal-left">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.08)', color: '#1e40af', border: '1px solid rgba(37,99,235,0.2)' }}>
-              <Smartphone size={11} /> Benefits
+      {/* Orbs */}
+      <div className="absolute -top-24 -right-24 w-[360px] h-[360px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+      <div className="hidden lg:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full pointer-events-none"
+        style={{ border: '1.5px solid rgba(37,99,235,0.07)', animation: 'spin 55s linear infinite' }} />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+
+        {/* ── Split layout ── */}
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+
+          {/* LEFT: sticky heading panel */}
+          <div className="w-full lg:w-[300px] xl:w-[340px] flex-shrink-0 lg:sticky lg:top-24 reveal-left">
+
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+              style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
+              <Smartphone size={9} /> Benefits
             </span>
-            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+
+            <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-4">
               Benefits of Our{' '}
-              <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{
+                background: 'linear-gradient(135deg,#1e40af,#2563eb)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>
                 Mobile App Services
               </span>
             </h2>
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-8">
+
+            <div className="w-10 h-[3px] rounded-full mb-5"
+              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+
+            <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
               Our mobile application development service in Thanjavur delivers measurable results — from increased engagement and streamlined operations to a higher ROI for your business.
             </p>
+
+            {/* Trust bullets */}
+            <div className="flex flex-col gap-2.5 mb-8">
+              {trustPoints.map(pt => (
+                <div key={pt} className="flex items-center gap-2.5">
+                  <CheckCircle2 size={14} className="flex-shrink-0" style={{ color: '#2563eb' }} />
+                  <span className="text-[12.5px] font-medium text-slate-600">{pt}</span>
+                </div>
+              ))}
+            </div>
+
             <a href="/ARA-Marketing/contact-us"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.25)' }}>
-              Start Your App Project <ArrowRight size={15} />
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:gap-3"
+              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+              Start Your App Project <ArrowRight size={13} />
             </a>
           </div>
 
-          {/* Right: benefit cards with metric numbers */}
-          <div className="flex-1 flex flex-col gap-4">
-            {benefits.map(({ icon: Icon, title, desc, metric, metricLabel, color }, i) => (
-              <div key={title}
-                className={`reveal delay-${Math.min(i + 1, 6)} flex items-center gap-5 p-5 sm:p-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5`}
-                style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.border = `1px solid ${color}25`
-                  e.currentTarget.style.boxShadow = `0 8px 24px ${color}10`
-                  e.currentTarget.style.background = `${color}03`
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.border = '1px solid #e2e8f0'
-                  e.currentTarget.style.boxShadow = 'none'
-                  e.currentTarget.style.background = '#f8fafc'
-                }}
+          {/* RIGHT: benefit rows */}
+          <div className="flex-1 reveal-right">
+            {benefits.map(({ icon: Icon, title, desc, metric, metricLabel, color, grad, bg, border }, i) => (
+              <div
+                key={title}
+                className="group flex items-start gap-5 py-6 cursor-default transition-all duration-300"
+                style={{ borderBottom: i < benefits.length - 1 ? '1px solid #f1f5f9' : 'none' }}
+                onMouseEnter={e => e.currentTarget.style.paddingLeft = '10px'}
+                onMouseLeave={e => e.currentTarget.style.paddingLeft = '0px'}
               >
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: `${color}10`, border: `1px solid ${color}20` }}>
-                  <Icon size={20} style={{ color }} />
+                {/* Icon */}
+                <div className="flex-shrink-0 pt-0.5">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                    style={{ background: bg, border: `1.5px solid ${border}` }}
+                  >
+                    <Icon size={17} style={{ color }} />
+                  </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-[13px] font-bold text-slate-800 mb-1">{title}</h3>
-                  <p className="text-[12.5px] text-slate-500 leading-[1.65]">{desc}</p>
+
+                {/* Text */}
+                <div className="flex-1 min-w-0 pt-0.5">
+                  <h3 className="text-[14px] sm:text-[15px] font-bold text-slate-800 leading-snug mb-2
+                    transition-colors duration-300 group-hover:text-slate-900">
+                    {title}
+                  </h3>
+                  <p className="text-[12.5px] sm:text-[13px] text-slate-500 leading-[1.80]">{desc}</p>
                 </div>
-                <div className="text-right flex-shrink-0 pl-2">
-                  <p className="text-[22px] sm:text-[26px] font-black leading-tight" style={{ color }}>{metric}</p>
-                  <p className="text-[10px] text-slate-400 font-medium">{metricLabel}</p>
+
+                {/* Metric badge */}
+                <div className="flex-shrink-0 text-right pt-0.5">
+                  <div
+                    className="font-black leading-none tabular-nums"
+                    style={{
+                      fontSize: 'clamp(22px,2.5vw,30px)',
+                      background: grad,
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                    }}
+                  >
+                    {metric}
+                  </div>
+                  <div className="text-[9.5px] font-semibold uppercase tracking-wider mt-0.5"
+                    style={{ color: color + 'aa' }}>
+                    {metricLabel}
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

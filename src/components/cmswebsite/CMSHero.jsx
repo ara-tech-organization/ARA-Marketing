@@ -34,10 +34,10 @@ export default function CMSHero() {
         }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16">
-        <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-stretch">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-stretch">
 
           {/* ── Left: Text ── */}
-          <div className="flex-1 min-w-0 lg:pr-4">
+          <div className="flex-1 min-w-0">
 
             {/* Breadcrumb */}
             <nav className="flex items-center gap-1.5 text-[13px] mb-6 animate-hero-enter text-slate-400">
@@ -60,8 +60,8 @@ export default function CMSHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-slate-900 leading-[1.15] tracking-tight mb-6"
-              style={{ fontWeight: 700, fontSize: 'clamp(21px, 2vw, 28px)' }}>
+            <h1 className="animate-hero-d2 text-slate-900 leading-[1.2] tracking-tight mb-6"
+              style={{ fontWeight: 700, fontSize: 'clamp(20px, 2.2vw, 28px)' }}>
               <span style={{ display: 'block' }}>Build Powerful WordPress</span>
               <span style={{ display: 'block', color: '#2563eb' }}>Websites That Grow Your Business</span>
             </h1>
@@ -129,7 +129,7 @@ export default function CMSHero() {
           </div>
 
           {/* ── Right: CMS Dashboard Mockup ── */}
-          <div className="animate-hero-visual hidden md:flex flex-col md:w-[360px] lg:w-[460px] flex-shrink-0 self-start mt-[60px]">
+          <div className="animate-hero-visual hidden lg:flex flex-col lg:w-[460px] flex-shrink-0 self-start mt-[60px]">
             <div className="relative flex flex-col">
 
               {/* Main card */}

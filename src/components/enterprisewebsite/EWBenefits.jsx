@@ -1,4 +1,4 @@
-﻿import { Cpu, TrendingUp, ShieldCheck, Paintbrush2, ShoppingBag, Settings2, Zap } from 'lucide-react'
+import { Cpu, TrendingUp, ShieldCheck, Paintbrush2, ShoppingBag, Settings2, Zap, CheckCircle2, ArrowUpRight } from 'lucide-react'
 
 const benefits = [
   {
@@ -6,137 +6,153 @@ const benefits = [
     title: 'AI-Integrated Websites',
     body: 'Seamless AI integration delivers intelligent user experiences — personalised content, predictive analytics, and smart automation.',
     color: '#7c3aed',
-    img: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&h=400&fit=crop&auto=format&q=80',
-    large: true,
+    num: '01',
   },
   {
     icon: TrendingUp,
     title: 'Traffic Growth Engine',
     body: 'Our enterprise web development services in Thanjavur deliver SEO-optimised, high-performance architecture focused on increasing enterprise traffic and conversion rates.',
     color: '#2563eb',
+    num: '02',
   },
   {
     icon: ShieldCheck,
     title: 'Enterprise-Grade Security',
     body: 'Industry-leading SSL, WAF, GDPR compliance and regular security audits protect your sensitive business data.',
     color: '#059669',
+    num: '03',
   },
   {
     icon: Paintbrush2,
     title: 'Brand-Aligned Design',
     body: 'Customised design that aligns with your brand identity, business requirements, and user expectations.',
     color: '#f59e0b',
-    img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=280&fit=crop&auto=format&q=80',
+    num: '04',
   },
   {
     icon: ShoppingBag,
     title: 'Enterprise eCommerce',
     body: 'Robust enterprise eCommerce development in Thanjavur — multi-currency, multi-language, ERP-integrated global stores for high-volume sales.',
     color: '#0891b2',
+    num: '05',
   },
   {
     icon: Settings2,
     title: 'WordPress CMS Management',
     body: 'Enterprise WordPress development services in Thanjavur for effortless, scalable content management without any technical dependency — ideal for large editorial teams.',
-    color: '#2563eb',
+    color: '#4f46e5',
+    num: '06',
   },
 ]
 
-function BentoCard({ icon: Icon, title, body, color, img, large = false }) {
-  return (
-    <div
-      className="group relative rounded-2xl sm:rounded-3xl overflow-hidden transition-all duration-300 cursor-default bg-white h-full"
-      style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 4px 18px rgba(0,0,0,0.05)' }}
-      onMouseEnter={e => {
-        e.currentTarget.style.boxShadow = `0 18px 44px ${color}1a`
-        e.currentTarget.style.borderColor = `${color}45`
-        e.currentTarget.style.transform = 'translateY(-3px)'
-      }}
-      onMouseLeave={e => {
-        e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.05)'
-        e.currentTarget.style.borderColor = '#e2e8f0'
-        e.currentTarget.style.transform = 'none'
-      }}>
-
-      {img && (
-        <div className="absolute inset-0">
-          <img src={img} alt={title} loading="lazy"
-            className="w-full h-full object-cover opacity-[0.12] group-hover:opacity-[0.20] transition-opacity duration-500" />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(160deg,#ffffff 25%,rgba(255,255,255,0.82) 100%)' }} />
-        </div>
-      )}
-
-      <div className="relative p-4 sm:p-5 lg:p-6 h-full flex flex-col">
-        <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-          style={{ background: `${color}14`, border: `1px solid ${color}28` }}>
-          <Icon size={17} style={{ color }} />
-        </div>
-        <h3 className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold text-slate-800 mb-2 sm:mb-2.5 leading-snug">{title}</h3>
-        <p className="text-[11.5px] sm:text-[12.5px] lg:text-[13px] text-slate-500 leading-[1.78] flex-1">{body}</p>
-
-        {/* Bottom bar */}
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
-          style={{ background: `linear-gradient(90deg,${color},${color}50)` }} />
-      </div>
-    </div>
-  )
-}
+const trustPoints = [
+  '500+ enterprise projects delivered',
+  '99.9% uptime guaranteed',
+  'AI-powered, scalable & secure',
+  'GDPR & ISO compliant solutions',
+]
 
 export default function EWBenefits() {
-  const [large, ...rest] = benefits
-
   return (
-    <section className="relative py-12 sm:py-16 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(170deg,#f4f8ff 0%,#eef4ff 60%,#f8faff 100%)' }}>
+    <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-white">
 
-      {/* Dot grid */}
+      {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.045) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.035) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+
+      <div className="hidden lg:block absolute -top-20 -right-20 w-[300px] h-[300px] rounded-full pointer-events-none"
+        style={{ border: '1.5px solid rgba(124,58,237,0.07)', animation: 'spin 60s linear infinite' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* ── Header ── */}
-        <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">
-          <span className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-blue-50"
-            style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
-            <Zap size={9} /> Core Benefits
-          </span>
-          <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
-            Benefits of{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-              Enterprise Website
-            </span>{' '}
-            Design &amp; Development
-          </h2>
-          <p className="text-[12.5px] sm:text-[14px] lg:text-[15px] text-slate-500 leading-[1.85] max-w-2xl mx-auto px-2 sm:px-0">
-            Partnering with ARA Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.
-          </p>
-        </div>
+        {/* ── Split layout ── */}
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
 
-        {/* ── Bento layout ── */}
-        <div className="reveal flex flex-col gap-3 sm:gap-4">
+          {/* LEFT: sticky heading panel */}
+          <div className="w-full lg:w-[300px] xl:w-[340px] flex-shrink-0 lg:sticky lg:top-24 reveal-left">
 
-          {/* Row 1: large card + 2 small */}
-          <div className="flex flex-col lg:flex-row gap-3 sm:gap-4">
-            {/* Large hero card */}
-            <div className="w-full lg:w-[40%] flex">
-              <div className="w-full">
-                <BentoCard {...large} large />
-              </div>
-            </div>
-            {/* 2 small cards — equal height flex column on lg */}
-            <div className="flex-1 flex flex-col gap-3 sm:gap-4">
-              {rest.slice(0, 2).map(b => (
-                <div key={b.title} className="flex-1">
-                  <BentoCard {...b} />
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+              style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
+              <Zap size={9} /> Core Benefits
+            </span>
+
+            <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 leading-[1.12] tracking-tight mb-4">
+              Benefits of{' '}
+              <span style={{
+                background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>
+                Enterprise Website
+              </span>{' '}
+              Design &amp; Development
+            </h2>
+
+            <div className="w-10 h-[3px] rounded-full mb-5"
+              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+
+            <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
+              Partnering with ARA Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.
+            </p>
+
+            {/* Trust bullets */}
+            <div className="flex flex-col gap-2.5">
+              {trustPoints.map(pt => (
+                <div key={pt} className="flex items-center gap-2.5">
+                  <CheckCircle2 size={14} className="flex-shrink-0" style={{ color: '#2563eb' }} />
+                  <span className="text-[12.5px] font-medium text-slate-600">{pt}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Row 2: 3 equal cards — 1col xs, 2col sm/md, 3col lg */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-            {rest.slice(2).map(b => <BentoCard key={b.title} {...b} />)}
+          {/* RIGHT: numbered list */}
+          <div className="flex-1 reveal-right">
+            {benefits.map(({ icon: Icon, title, body, color, num }, i) => (
+              <div
+                key={num}
+                className="group flex items-start gap-5 py-6 cursor-default transition-all duration-300"
+                style={{ borderBottom: i < benefits.length - 1 ? '1px solid #f1f5f9' : 'none' }}
+                onMouseEnter={e => e.currentTarget.style.paddingLeft = '8px'}
+                onMouseLeave={e => e.currentTarget.style.paddingLeft = '0px'}
+              >
+                {/* Icon column */}
+                <div className="flex-shrink-0 pt-0.5">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                    style={{ background: `${color}12`, border: `1.5px solid ${color}28` }}
+                  >
+                    <Icon size={18} style={{ color }} />
+                  </div>
+                </div>
+
+                {/* Text */}
+                <div className="flex-1 min-w-0 pt-0.5">
+                  <div className="flex items-start justify-between gap-3 mb-2">
+                    <h3
+                      className="text-[14px] sm:text-[15px] font-bold text-slate-800 leading-snug transition-colors duration-300 group-hover:text-slate-900"
+                    >
+                      {title}
+                    </h3>
+                    <ArrowUpRight
+                      size={15}
+                      className="flex-shrink-0 mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      style={{ color }}
+                    />
+                  </div>
+                  <p className="text-[12.5px] sm:text-[13px] text-slate-500 leading-[1.80]">
+                    {body}
+                  </p>
+                </div>
+
+                {/* Left color line on hover */}
+                <div
+                  className="absolute left-0 w-[3px] rounded-full scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top"
+                  style={{ height: '100%', background: color }}
+                />
+              </div>
+            ))}
           </div>
 
         </div>

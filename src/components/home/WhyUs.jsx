@@ -1,172 +1,243 @@
-import { Bot, BarChart, Target, Users, Shield, Clock, Zap, Star, CheckCheck } from 'lucide-react'
-import whyUsImg from '../../assets/Home/H3.webp'
+import { useState, useEffect, useRef } from 'react'
+import { Star, ArrowRight, Zap, TrendingUp, Eye, BarChart3, Award, Target } from 'lucide-react'
 
-const reasons = [
-  { icon: Target,   title: 'Customized Digital Marketing Strategies', desc: 'Strategies built around your goals, target audience and competitive landscape — never generic.' },
-  { icon: Users,    title: 'Experienced SEO & Advertising Experts',   desc: 'A dedicated team of SEO, advertising and branding specialists with proven, measurable results.' },
-  { icon: BarChart, title: 'Transparent Reporting & Analytics',       desc: 'Real-time reporting dashboards so you always know exactly how your campaigns perform.' },
-  { icon: Bot,      title: 'AI-Focused Marketing Campaigns',          desc: 'We leverage AI-powered tools to optimize every campaign for maximum ROI and measurable results.' },
-  { icon: Shield,   title: 'Affordable Packages for Startups & Enterprises', desc: 'Flexible and affordable digital marketing packages designed for businesses of every size and budget.' },
-  { icon: Clock,    title: 'Dedicated Support & Campaign Optimization', desc: 'Direct communication and continuous campaign optimization every step of the way.' },
+const stats = [
+  { val: '150+', num: 150, suffix: '+', label: 'Projects Completed',  icon: Award,     color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#1d4ed8)' },
+  { val: '95%',  num: 95,  suffix: '%', label: 'Client Satisfaction', icon: Star,      color: '#059669', bg: '#ecfdf5', border: '#a7f3d0', grad: 'linear-gradient(135deg,#059669,#047857)' },
+  { val: '120+', num: 120, suffix: '+', label: 'SEO Campaigns',       icon: TrendingUp, color: '#7c3aed', bg: '#f5f3ff', border: '#ddd6fe', grad: 'linear-gradient(135deg,#7c3aed,#6d28d9)' },
+  { val: '200%', num: 200, suffix: '%', label: 'Visibility Growth',   icon: Eye,       color: '#d97706', bg: '#fffbeb', border: '#fde68a', grad: 'linear-gradient(135deg,#f59e0b,#d97706)' },
+  { val: '100+', num: 100, suffix: '+', label: 'Brands Promoted',     icon: Target,    color: '#0891b2', bg: '#ecfeff', border: '#a5f3fc', grad: 'linear-gradient(135deg,#0891b2,#0e7490)' },
 ]
 
-const credStats = [
-  { val: '150+', label: 'Projects Completed' },
-  { val: '95%',  label: 'Client Satisfaction' },
-  { val: '100+', label: 'Brands Promoted' },
-  { val: '200%', label: 'Avg. Traffic Growth' },
+const cards = [
+  {
+    eyebrow: 'Strategy',
+    icon: TrendingUp,
+    title: 'AI-driven campaigns built to scale brands faster.',
+    body: 'Smarter targeting, sharper planning, and consistent optimisation for long-term growth.',
+    accent: '#2563eb',
+    grad: 'linear-gradient(135deg,#1e40af,#2563eb)',
+  },
+  {
+    eyebrow: 'Focus',
+    icon: Eye,
+    title: 'Better visibility, stronger leads, sustainable growth.',
+    body: 'We put your brand in front of the right audience at the right time — every time.',
+    accent: '#7c3aed',
+    grad: 'linear-gradient(135deg,#6d28d9,#7c3aed)',
+  },
+  {
+    eyebrow: 'Summary',
+    icon: BarChart3,
+    title: 'Performance-first digital marketing for ambitious brands.',
+    body: 'We combine AI insights with practical execution to help businesses grow faster without losing consistency.',
+    accent: '#059669',
+    grad: 'linear-gradient(135deg,#047857,#059669)',
+  },
 ]
+
+function useCountUp(target, active) {
+  const [count, setCount] = useState(0)
+  useEffect(() => {
+    if (!active) return
+    let cur = 0
+    const step = Math.max(1, Math.ceil(target / 55))
+    const t = setInterval(() => {
+      cur += step
+      if (cur >= target) { setCount(target); clearInterval(t) }
+      else setCount(cur)
+    }, 22)
+    return () => clearInterval(t)
+  }, [target, active])
+  return count
+}
+
+function StatCard({ val, num, suffix, label, icon: Icon, color, bg, border, grad, active, delay }) {
+  const count = useCountUp(num, active)
+  return (
+    <div
+      className="group bg-white rounded-2xl p-5 flex flex-col cursor-default transition-all duration-300"
+      style={{ border: `1.5px solid ${border}`, boxShadow: '0 2px 12px rgba(0,0,0,0.05)' }}
+      onMouseEnter={e => {
+        e.currentTarget.style.borderColor = color + '55'
+        e.currentTarget.style.boxShadow = `0 16px 40px ${color}18`
+        e.currentTarget.style.transform = 'translateY(-5px)'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.borderColor = border
+        e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.05)'
+        e.currentTarget.style.transform = 'none'
+      }}
+    >
+      {/* Icon */}
+      <div className="w-9 h-9 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
+        style={{ background: bg, border: `1px solid ${border}` }}>
+        <Icon size={15} style={{ color }} />
+      </div>
+
+      {/* Count */}
+      <div
+        className="font-black leading-none tabular-nums mb-1"
+        style={{
+          fontSize: 'clamp(30px,3vw,44px)',
+          opacity: active ? 1 : 0,
+          transform: active ? 'none' : 'translateY(14px)',
+          transition: `opacity 0.55s ease ${delay}ms, transform 0.55s ease ${delay}ms`,
+          background: grad,
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+        }}
+      >
+        {count}{suffix}
+      </div>
+
+      {/* Label */}
+      <div className="text-[11px] font-semibold text-slate-400 leading-tight mt-0.5">{label}</div>
+
+      {/* Bottom accent bar on hover */}
+      <div className="mt-4 h-[2px] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
+        style={{ background: grad }} />
+    </div>
+  )
+}
 
 export default function WhyUs() {
-  return (
-    <section id="why-us" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+  const [visible, setVisible] = useState(false)
+  const sectionRef = useRef(null)
 
-        {/* Header */}
-        <div className="text-center mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
-            border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
-            <Zap size={11} /> Why Choose Us
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) setVisible(true) },
+      { threshold: 0.06 }
+    )
+    if (sectionRef.current) obs.observe(sectionRef.current)
+    return () => obs.disconnect()
+  }, [])
+
+  const anim = (delay, fromY = 24) => ({
+    opacity: visible ? 1 : 0,
+    transform: visible ? 'none' : `translateY(${fromY}px)`,
+    transition: `opacity 0.60s ease ${delay}ms, transform 0.60s ease ${delay}ms`,
+  })
+
+  return (
+    <section id="why-us" ref={sectionRef} className="relative overflow-hidden py-16 sm:py-20"
+      style={{ background: 'linear-gradient(160deg, #f8faff 0%, #ffffff 50%, #f3f0ff 100%)' }}>
+
+      {/* Dot grid */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+
+      {/* Orbs */}
+      <div className="absolute -top-28 -right-28 w-[420px] h-[420px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.07) 0%, transparent 65%)' }} />
+      <div className="absolute -bottom-20 -left-20 w-[360px] h-[360px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+
+      {/* Spinning ring decoration */}
+      <div className="hidden lg:block absolute top-10 right-10 w-[220px] h-[220px] rounded-full pointer-events-none"
+        style={{ border: '1.5px solid rgba(124,58,237,0.07)', animation: 'spin 60s linear infinite' }} />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
+
+        {/* ── Header ── */}
+        <div className="text-center mb-12 sm:mb-14" style={anim(0)}>
+
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+            style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
+            <Zap size={9} /> Growth Metrics
           </span>
-          <h2
-            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
-            style={{ fontWeight: 700 }}
-          >
-            Why Do Businesses Choose<br />ARA Discover Marketing?
+
+          <h2 className="font-black text-slate-900 leading-[1.15] tracking-tight mb-4"
+            style={{ fontSize: 'clamp(24px,3.5vw,50px)' }}>
+            Delivering Measurable Growth
+            <br className="hidden sm:block" />{' '}
+            <span style={{
+              background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}>
+              Through Strategic Marketing
+            </span>
           </h2>
-          <p className="text-base text-slate-500 leading-relaxed max-w-3xl mx-auto mt-3.5">
-            Businesses and startups trust ARA because we focus on measurable growth, transparency and
-            long-term success. Also one of the top digital marketing companies in Thanjavur, our approach
-            is centered around understanding your business requirements and building AI-driven customized
-            strategies that generate ROI.
+
+          <p className="text-[14px] sm:text-[15px] text-slate-500 leading-[1.85] max-w-2xl mx-auto mb-7">
+            Our AI-driven digital marketing strategies make us the best digital marketing agency
+            in Thanjavur for businesses looking to scale faster and achieve sustainable growth.
           </p>
+
+          {/* Stars + CTA */}
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <div className="flex items-center gap-1.5">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Star key={i} size={14} fill="#f59e0b" color="#f59e0b" />
+              ))}
+              <span className="text-[13px] font-semibold text-slate-500 ml-1.5">5.0 Rated</span>
+            </div>
+            <span className="w-px h-4 bg-slate-200 hidden sm:block" />
+            <a href="/ARA-Marketing/contact-us"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:gap-3"
+              style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+              Get Started <ArrowRight size={13} />
+            </a>
+          </div>
         </div>
 
-        {/* Mobile credential stats — shown only below lg */}
-        <div className="lg:hidden grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 reveal">
-          {credStats.map(s => (
+        {/* ── Stats bento grid ── */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 mb-6">
+          {stats.map(({ val, num, suffix, label, icon, color, bg, border, grad }, i) => (
+            <StatCard
+              key={val}
+              val={val} num={num} suffix={suffix} label={label}
+              icon={icon} color={color} bg={bg} border={border} grad={grad}
+              active={visible} delay={160 + i * 70}
+            />
+          ))}
+        </div>
+
+        {/* ── Feature cards ── */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8" style={anim(500)}>
+          {cards.map(({ eyebrow, icon: Icon, title, body, accent, grad }) => (
             <div
-              key={s.label}
-              className="rounded-2xl p-4 border border-blue-100 bg-blue-50 text-center"
+              key={eyebrow}
+              className="group bg-white rounded-2xl overflow-hidden cursor-default transition-all duration-300"
+              style={{ border: `1.5px solid ${accent}18`, boxShadow: '0 2px 14px rgba(0,0,0,0.05)' }}
+              onMouseEnter={e => {
+                e.currentTarget.style.borderColor = accent + '40'
+                e.currentTarget.style.boxShadow = `0 18px 44px ${accent}14`
+                e.currentTarget.style.transform = 'translateY(-5px)'
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.borderColor = accent + '18'
+                e.currentTarget.style.boxShadow = '0 2px 14px rgba(0,0,0,0.05)'
+                e.currentTarget.style.transform = 'none'
+              }}
             >
-              <div className="text-[22px] font-bold text-blue-600 leading-none">{s.val}</div>
-              <div className="text-[11px] text-slate-500 font-medium mt-1.5 leading-tight">{s.label}</div>
+              {/* Gradient top strip */}
+              <div className="h-[72px] flex items-center px-5 gap-3" style={{ background: grad }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110"
+                  style={{ background: 'rgba(255,255,255,0.18)', border: '1.5px solid rgba(255,255,255,0.28)' }}>
+                  <Icon size={17} className="text-white" />
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-[0.18em]"
+                  style={{ color: 'rgba(255,255,255,0.85)' }}>{eyebrow}</span>
+              </div>
+
+              {/* Body */}
+              <div className="p-5 pb-4">
+                <h3 className="text-[13.5px] font-bold text-slate-800 leading-snug mb-2">{title}</h3>
+                <p className="text-[12px] text-slate-500 leading-[1.75]">{body}</p>
+              </div>
+
+              {/* Bottom sweep bar */}
+              <div className="mx-5 mb-4 h-[2px] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
+                style={{ background: grad }} />
             </div>
           ))}
         </div>
 
-        {/* Main layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-8 items-stretch">
-
-          {/* Left: Dark credential panel */}
-          <div
-            className="hidden lg:flex reveal-left flex-col rounded-[28px] overflow-hidden"
-            style={{ background: '#071a36' }}
-          >
-            {/* Image */}
-            <div className="relative flex-shrink-0 overflow-hidden">
-              <img
-                src={whyUsImg}
-                alt="ARA Marketing team — Best Digital Marketing Agency in Thanjavur | Top Digital Branding and Advertising Company in Thanjavur"
-                className="w-full object-contain"
-              />
-              <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(to top, #071a36 0%, transparent 60%)' }}
-              />
-            </div>
-
-            <div className="p-8 flex flex-col flex-1">
-              {/* Stars */}
-              <div className="flex items-center gap-2 mb-4">
-                <div className="flex gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} size={14} fill="#f59e0b" color="#f59e0b" />
-                  ))}
-                </div>
-                <span className="text-[13px] font-bold text-white/80">5.0 — Excellent</span>
-              </div>
-
-              <h3 className="text-[17px] font-bold text-white leading-snug mb-7">
-                #1 Rated Digital Marketing<br />Agency in Thanjavur
-              </h3>
-
-              {/* Stats grid */}
-              <div className="grid grid-cols-2 gap-3 mb-auto">
-                {credStats.map(s => (
-                  <div
-                    key={s.label}
-                    className="rounded-2xl p-4 border border-white/8"
-                    style={{ background: 'rgba(255,255,255,0.05)' }}
-                  >
-                    <div className="text-[22px] font-bold text-white leading-none">{s.val}</div>
-                    <div className="text-[11px] text-white/40 font-medium mt-1.5 leading-tight">{s.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Verified */}
-              <div className="mt-6 pt-5 border-t border-white/8 flex items-center gap-2
-                text-[12px] text-white/35 font-medium">
-                <CheckCheck size={13} className="text-blue-400" />
-                All metrics verified by Google Analytics
-              </div>
-            </div>
-          </div>
-
-          {/* Right: Numbered feature list */}
-          <div className="reveal-right flex flex-col divide-y divide-slate-100">
-            {reasons.map((r, i) => {
-              const Icon = r.icon
-              return (
-                <div
-                  key={r.title}
-                  className="flex items-start gap-5 py-[22px] group cursor-default
-                    transition-all duration-300 hover:pl-2"
-                >
-                  {/* Number */}
-                  <span className="text-[12px] font-extrabold text-slate-200 flex-shrink-0 w-6 mt-1.5
-                    leading-none transition-colors duration-300 group-hover:text-blue-500 select-none">
-                    0{i + 1}
-                  </span>
-
-                  {/* Icon */}
-                  <div className="w-11 h-11 bg-blue-50 border border-blue-100 rounded-xl
-                    flex items-center justify-center text-blue-600 flex-shrink-0
-                    transition-all duration-300
-                    group-hover:bg-blue-600 group-hover:text-white
-                    group-hover:border-transparent group-hover:shadow-lg group-hover:shadow-blue-600/30">
-                    <Icon size={20} />
-                  </div>
-
-                  {/* Text */}
-                  <div className="flex-1">
-                    <h4 className="text-[14px] font-bold text-slate-900 mb-1.5
-                      transition-colors duration-300 group-hover:text-blue-700">
-                      {r.title}
-                    </h4>
-                    <p className="text-[13px] text-slate-500 leading-relaxed">{r.desc}</p>
-                  </div>
-                </div>
-              )
-            })}
-
-            {/* Bottom CTA strip */}
-            <div className="pt-7 pb-1 flex flex-wrap items-center justify-between gap-4">
-              <p className="text-[13px] text-slate-500 leading-relaxed max-w-sm">
-                Are you looking for the best digital marketing agency in Thanjavur? ARA Discover Marketing
-                offers a complete digital solution that drives visibility, engagement and conversions.
-              </p>
-              <a
-                href="/ARA-Marketing/contact-us"
-                className="btn-glow inline-flex items-center gap-2 px-6 py-3 text-white
-                  rounded-full text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-              >
-                Get Started <Zap size={13} />
-              </a>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   )

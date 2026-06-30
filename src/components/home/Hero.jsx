@@ -120,7 +120,7 @@ export default function Hero() {
 
             <h1 className="font-bold text-white tracking-tight mb-5"
               style={{ fontSize: 'clamp(27px,3.1vw,49px)', lineHeight: 1.2, animation: rev(100) }}>
-              Best Digital Marketing Company in Thanjavur
+              Best Digital Marketing Company in Thanjavur for Business Growth &amp; Brand Visibility
             </h1>
 
             <p className="text-[15px] leading-[1.85] mb-3"
@@ -131,8 +131,10 @@ export default function Hero() {
             </p>
             <p className="text-[13px] leading-[1.8] mb-8"
               style={{ color:'rgba(255,255,255,0.38)', animation: rev(280) }}>
-              We deliver complete SEO, social media marketing, paid advertising, branding, video
-              editing and performance marketing solutions tailored for digital businesses.
+              We are one of the best digital marketing companies in Thanjavur, delivering complete
+              search engine optimization (SEO), social media marketing management, all types of paid
+              advertising, branding, video editing services and performance marketing solutions
+              tailored for digital businesses.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8" style={{ animation: revS(360) }}>

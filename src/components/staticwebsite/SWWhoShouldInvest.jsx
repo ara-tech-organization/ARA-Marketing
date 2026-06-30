@@ -1,8 +1,8 @@
-﻿import { Building2, Briefcase, GraduationCap, Wrench, ArrowRight, Target } from 'lucide-react'
+import { Building2, Briefcase, GraduationCap, Wrench, ArrowRight, Target, CheckCircle2 } from 'lucide-react'
 import imgLocalBusiness from '../../assets/Static/Local Businesses.webp'
-import imgPortfolio from '../../assets/Static/Portfolio.Websites.webp'
-import imgEducational from '../../assets/Static/Educational.webp'
-import imgService from '../../assets/Static/Service.webp'
+import imgPortfolio     from '../../assets/Static/Portfolio.Websites.webp'
+import imgEducational   from '../../assets/Static/Educational.jpg'
+import imgService       from '../../assets/Static/Service.jpg'
 
 const audiences = [
   {
@@ -10,180 +10,180 @@ const audiences = [
     title: 'Local Businesses & Startups',
     desc: 'Establish a strong digital footprint fast. A static website gives your local business instant credibility, visibility, and new customer reach in Thanjavur and beyond.',
     image: imgLocalBusiness,
+    imgPos: 'center center',
     color: '#0891b2',
-    tag: 'Most Popular',
+    tag: '★ Most Popular',
+    tagGold: true,
+    points: ['Instant online credibility', 'Local SEO ready', 'Fast to launch'],
   },
   {
     icon: Briefcase,
     title: 'Portfolio Websites for Professionals',
-    desc: 'Designers, photographers, architects, and freelancers — showcase your work with a blazing-fast portfolio site that leaves a lasting impression on every visitor.',
+    desc: 'Designers, photographers, architects, and freelancers — showcase your work with a blazing-fast portfolio site that leaves a lasting impression.',
     image: imgPortfolio,
-    color: '#2563eb',
+    imgPos: 'center center',
+    color: '#6366f1',
     tag: 'Professionals',
+    points: ['Showcase your work', 'Blazing fast load', 'Mobile responsive'],
   },
   {
     icon: GraduationCap,
     title: 'Educational Institutions',
     desc: 'Schools, colleges, and coaching centers need a reliable, low-maintenance web presence. Our static sites deliver information efficiently with zero downtime.',
     image: imgEducational,
+    imgPos: 'center center',
     color: '#7c3aed',
     tag: 'Institutions',
+    points: ['Zero downtime', 'Easy to maintain', 'Cost effective'],
   },
   {
     icon: Wrench,
     title: 'Small Service-Based Companies',
-    desc: 'Plumbers, electricians, consultants, salons — a professional website builds trust with local customers and generates leads around the clock, without ongoing costs.',
+    desc: 'Plumbers, electricians, consultants, salons — a professional website builds trust with local customers and generates leads around the clock.',
     image: imgService,
+    imgPos: 'center center',
     color: '#059669',
     tag: 'Service Providers',
+    points: ['24/7 lead generation', 'Builds local trust', 'No ongoing costs'],
   },
 ]
 
 export default function SWWhoShouldInvest() {
   return (
-    <section className="py-16 sm:py-16 relative overflow-hidden" style={{ background: '#f8fafc' }}>
-      {/* Background decorations */}
-      <div
-        className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.06) 0%, transparent 65%)' }}
-      />
+    <section
+      className="py-16 sm:py-20 relative overflow-hidden bg-white"
+    >
+      {/* Subtle bg */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(99,102,241,0.05) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
+        }} />
+      <div className="absolute top-0 right-0 w-[500px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse, rgba(8,145,178,0.06) 0%, transparent 65%)' }} />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* Header */}
-        <div className="text-center mb-14 reveal">
-          <span
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(8,145,178,0.08)', color: '#0891b2', border: '1px solid rgba(8,145,178,0.2)' }}
-          >
-            <Target size={11} /> Who Should Invest
+        {/* ── Header ── */}
+        <div className="text-center mb-12 reveal">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full
+            text-[10px] font-bold uppercase tracking-widest mb-4"
+            style={{ background: 'rgba(251,191,36,0.12)', color: '#d97706', border: '1px solid rgba(251,191,36,0.3)' }}>
+            <Target size={9} /> Who Should Invest
           </span>
-          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="font-bold leading-tight tracking-tight mb-3 text-slate-900"
+            style={{ fontSize: 'clamp(20px,2.5vw,34px)' }}>
             Who Should Invest in a{' '}
-            <span
-              style={{
-                background: 'linear-gradient(135deg, #0891b2, #2563eb)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span style={{
+              background: 'linear-gradient(135deg, #0891b2, #6366f1)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+            }}>
               Static Website?
             </span>
           </h2>
-          <p className="text-[15px] text-slate-500 max-w-2xl mx-auto leading-[1.8]">
-            Static websites are ideal for businesses that need speed, simplicity, and a strong online presence. If you want to build a static website in Thanjavur, this solution is perfect for you.
+          <p className="text-[13px] max-w-xl mx-auto leading-[1.85]" style={{ color: '#64748b' }}>
+            Static websites are ideal for businesses that need speed, simplicity, and a strong online presence.
+            If you want to build a static website in Thanjavur, this solution is perfect for you.
           </p>
         </div>
 
-        {/* Bento-style layout: top 2 wide + bottom 2 wide */}
-        <div className="flex flex-col gap-5">
-
-          {/* Row 1: two equal cards */}
-          <div className="flex flex-col md:flex-row gap-5">
-            {audiences.slice(0, 2).map(({ icon: Icon, title, desc, image, color, tag }) => (
-              <div
-                key={title}
-                className="flex-1 relative rounded-3xl overflow-hidden group cursor-default reveal"
-                style={{ minHeight: '300px' }}
-              >
-                {/* Background image */}
+        {/* ── Cards ── */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+          {audiences.map(({ icon: Icon, title, desc, image, imgPos, color, tag, tagGold, points }, i) => (
+            <div
+              key={title}
+              className={`reveal delay-${i + 1} group flex flex-col rounded-2xl overflow-hidden
+                border border-slate-100 bg-white transition-all duration-300 hover:-translate-y-2`}
+              style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}
+              onMouseEnter={e => {
+                e.currentTarget.style.boxShadow = `0 16px 48px ${color}22`
+                e.currentTarget.style.borderColor = `${color}30`
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)'
+                e.currentTarget.style.borderColor = '#f1f5f9'
+              }}
+            >
+              {/* Image — clean, no heavy overlay */}
+              <div className="relative h-44 overflow-hidden">
                 <img
                   src={image}
                   alt={title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  style={{ objectPosition: imgPos }}
                 />
-                {/* Gradient overlay */}
-                <div
-                  className="absolute inset-0"
-                  style={{ background: `linear-gradient(160deg, rgba(3,11,24,0.72) 0%, ${color}55 100%)` }}
-                />
+                {/* Subtle gradient only at bottom */}
+                <div className="absolute inset-0"
+                  style={{ background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
-                {/* Content */}
-                <div className="relative p-5 sm:p-8 h-full flex flex-col justify-between" style={{ minHeight: '300px' }}>
-                  <div className="flex items-center justify-between">
-                    <div
-                      className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                      style={{ background: `${color}30`, border: `1px solid ${color}50`, backdropFilter: 'blur(8px)' }}
-                    >
-                      <Icon size={20} style={{ color: 'white' }} />
-                    </div>
-                    <span
-                      className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white"
-                      style={{ background: `${color}55`, border: `1px solid ${color}60`, backdropFilter: 'blur(4px)' }}
-                    >
-                      {tag}
-                    </span>
-                  </div>
+                {/* Tag pill — top left */}
+                <span
+                  className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider"
+                  style={tagGold
+                    ? { background: 'rgba(251,191,36,0.92)', color: '#78350f', backdropFilter: 'blur(6px)' }
+                    : { background: 'rgba(255,255,255,0.92)', color, backdropFilter: 'blur(6px)' }
+                  }
+                >
+                  {tag}
+                </span>
 
-                  <div>
-                    <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">{title}</h3>
-                    <p className="text-[13px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.78)' }}>{desc}</p>
-                  </div>
+                {/* Icon — bottom right of image */}
+                <div className="absolute bottom-3 right-3 w-9 h-9 rounded-xl flex items-center justify-center"
+                  style={{ background: `${color}`, boxShadow: `0 4px 14px ${color}55` }}>
+                  <Icon size={16} className="text-white" />
                 </div>
               </div>
-            ))}
-          </div>
 
-          {/* Row 2: two equal cards */}
-          <div className="flex flex-col md:flex-row gap-5">
-            {audiences.slice(2).map(({ icon: Icon, title, desc, image, color, tag }) => (
-              <div
-                key={title}
-                className="flex-1 relative rounded-3xl overflow-hidden group cursor-default reveal"
-                style={{ minHeight: '280px' }}
-              >
-                <img
-                  src={image}
-                  alt={title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{ background: `linear-gradient(160deg, rgba(3,11,24,0.72) 0%, ${color}55 100%)` }}
-                />
-                <div className="relative p-5 sm:p-8 h-full flex flex-col justify-between" style={{ minHeight: '280px' }}>
-                  <div className="flex items-center justify-between">
-                    <div
-                      className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                      style={{ background: `${color}30`, border: `1px solid ${color}50`, backdropFilter: 'blur(8px)' }}
-                    >
-                      <Icon size={20} style={{ color: 'white' }} />
-                    </div>
-                    <span
-                      className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white"
-                      style={{ background: `${color}55`, border: `1px solid ${color}60`, backdropFilter: 'blur(4px)' }}
-                    >
-                      {tag}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-[18px] font-bold text-white mb-3 leading-snug">{title}</h3>
-                    <p className="text-[13px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.78)' }}>{desc}</p>
-                  </div>
-                </div>
+              {/* Content */}
+              <div className="flex flex-col flex-1 p-5">
+                {/* Top accent */}
+                <div className="w-8 h-[3px] rounded-full mb-3" style={{ background: color }} />
+
+                <h3 className="text-[13px] font-bold text-slate-800 leading-snug mb-2
+                  group-hover:text-blue-700 transition-colors duration-200">
+                  {title}
+                </h3>
+                <p className="text-[11.5px] text-slate-500 leading-[1.72] mb-4 flex-1">{desc}</p>
+
+                {/* Feature points */}
+                <ul className="flex flex-col gap-1.5">
+                  {points.map(pt => (
+                    <li key={pt} className="flex items-center gap-2 text-[11px] font-medium text-slate-600">
+                      <CheckCircle2 size={11} style={{ color }} className="shrink-0" />
+                      {pt}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom note */}
-        <div className="text-center mt-12 reveal">
-          <p className="text-[14.5px] text-slate-600 max-w-2xl mx-auto leading-[1.85] mb-6">
-            Choose our static web page development in Thanjavur and get a cost-effective solution that delivers long-term value for your business.
-          </p>
+        {/* ── Bottom CTA strip ── */}
+        <div className="reveal rounded-2xl px-6 sm:px-10 py-7 flex flex-col sm:flex-row items-center justify-between gap-5"
+          style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #eef2ff 100%)', border: '1px solid rgba(99,102,241,0.12)' }}>
+          <div>
+            <p className="text-[13.5px] font-bold text-slate-800 mb-1">
+              Choose our static web page development in Thanjavur
+            </p>
+            <p className="text-[12px] text-slate-500">
+              We will help you launch your digital identity with a high-performance static website tailored to your goals.
+            </p>
+          </div>
           <a
             href="/ARA-Marketing/contact-us"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
-            style={{ background: 'linear-gradient(135deg, #2563eb, #1d4ed8)' }}
+            className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
+              font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
+            style={{
+              background: 'linear-gradient(135deg, #0891b2, #6366f1)',
+              boxShadow: '0 6px 22px rgba(99,102,241,0.28)',
+            }}
           >
-            Start Your Project Today <ArrowRight size={15} />
+            Start Your Project Today <ArrowRight size={14} />
           </a>
-          <p className="text-[13px] text-slate-500 mt-4 max-w-md mx-auto">
-            We will help you launch your digital identity with a high-performance static website tailored to your business goals.
-          </p>
         </div>
 
       </div>
