@@ -1,8 +1,8 @@
-import { Film, ArrowRight, ArrowUpRight, Rocket } from 'lucide-react'
+﻿import { Film, ArrowRight, ArrowUpRight, Rocket } from 'lucide-react'
 
 export default function VECTA() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-28 overflow-hidden"
+    <section className="relative py-20 sm:py-16 lg:py-18 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #071a36 0%, #0f1f4a 35%, #1a0a3d 70%, #0a0a0f 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"

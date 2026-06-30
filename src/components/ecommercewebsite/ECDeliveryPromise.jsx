@@ -1,4 +1,4 @@
-import { Award, ShieldCheck, Zap, Clock, Headphones, Layers, ArrowRight, CheckCircle2 } from 'lucide-react'
+﻿import { Award, ShieldCheck, Zap, Clock, Headphones, Layers, ArrowRight, CheckCircle2 } from 'lucide-react'
 import ecDeliveryImg from '../../assets/E-commerce/e1.webp'
 
 const promises = [
@@ -11,7 +11,7 @@ const promises = [
 
 export default function ECDeliveryPromise() {
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '30px 30px' }} />

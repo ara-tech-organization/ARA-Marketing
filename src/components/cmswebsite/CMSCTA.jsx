@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Globe, Sparkles, CheckCircle2, Users, Star, Clock } from 'lucide-react'
+﻿import { ArrowRight, Phone, Globe, Sparkles, CheckCircle2, Users, Star, Clock } from 'lucide-react'
 
 const stats = [
   { icon: Globe,  val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
@@ -16,7 +16,7 @@ const perks = [
 
 export default function CMSCTA() {
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-16 overflow-hidden bg-white">
       {/* Subtle orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />

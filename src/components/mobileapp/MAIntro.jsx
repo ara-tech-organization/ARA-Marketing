@@ -1,4 +1,4 @@
-import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
+﻿import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles } from 'lucide-react'
 
 import introImage from '../../assets/MobileApp/m1.webp'
 
@@ -37,7 +37,7 @@ export default function MAIntro() {
   return (
     <section
       id="ma-intro"
-      className="relative overflow-hidden py-16 sm:py-24"
+      className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#04131c 50%,#030e18 100%)' }}
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] pointer-events-none"

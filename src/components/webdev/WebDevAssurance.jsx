@@ -1,4 +1,4 @@
-import { Smartphone, Search, Zap, Shield, Headphones, Eye, Phone, ArrowRight, Layers } from 'lucide-react'
+﻿import { Smartphone, Search, Zap, Shield, Headphones, Eye, Phone, ArrowRight, Layers } from 'lucide-react'
 
 const assurances = [
   { icon: Smartphone, title: 'Fully Responsive Website Design',  color: '#2563eb', num: '01' },
@@ -11,7 +11,7 @@ const assurances = [
 
 export default function WebDevAssurance() {
   return (
-    <section className="relative overflow-hidden py-24"
+    <section className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}>
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)', backgroundSize: '28px 28px', opacity: 0.22 }} />

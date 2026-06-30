@@ -1,4 +1,4 @@
-import {
+﻿import {
   Globe2, ShoppingCart, Building2, LayoutDashboard,
   Palette, RefreshCw, Code2, Wrench,
   ArrowRight, ChevronRight, Layers, CheckCircle
@@ -25,7 +25,7 @@ const customFeatures = [
 
 export default function WebDevServices() {
   return (
-    <section id="webdev-services" className="py-24 bg-white">
+    <section id="webdev-services" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-16 reveal">

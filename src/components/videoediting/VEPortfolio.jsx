@@ -1,4 +1,4 @@
-import { Sparkles, Package, Briefcase, Share2, Wind, CalendarDays, PlayCircle, Image } from 'lucide-react'
+﻿import { Sparkles, Package, Briefcase, Share2, Wind, CalendarDays, PlayCircle, Image } from 'lucide-react'
 import brandingImg  from '../../assets/Video-editing/Branding-videos.webp'
 import socialImg    from '../../assets/Video-editing/social-media.webp'
 import corporateImg from '../../assets/Video-editing/corporate-films.webp'
@@ -20,7 +20,7 @@ const categories = [
 
 export default function VEPortfolio() {
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: '#f8fafc' }}>
+    <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#f8fafc' }}>
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.05) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />

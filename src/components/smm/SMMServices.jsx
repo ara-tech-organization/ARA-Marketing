@@ -1,4 +1,4 @@
-import {
+﻿import {
   Share2, Target, Palette, Megaphone, MessageSquare, Eye, Users, BarChart2,
   CheckCircle, Briefcase, Image, TrendingUp, Layers, ArrowRight
 } from 'lucide-react'
@@ -140,7 +140,7 @@ function PlatformImage({ src, alt, color, bgLight }) {
 
 export default function SMMServices() {
   return (
-    <section id="smm-services" className="py-24 bg-white">
+    <section id="smm-services" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}

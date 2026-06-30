@@ -19,7 +19,7 @@ const smmSchema = {
     {
       '@type': 'Service',
       '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/social-media-marketing',
-      name: 'Best Social Media Marketing Services in Thanjavur to Grow Your Brand Online',
+      name: 'Best Social Media Marketing Services in Thanjavur',
       description: 'ARA Discover Marketing is recognized as one of the best Social Media Marketing (SMM) companies in Thanjavur, offering creative strategies and result-driven campaigns.',
       provider: {
         '@type': 'LocalBusiness',

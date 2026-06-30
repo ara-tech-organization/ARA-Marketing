@@ -1,4 +1,4 @@
-import { Cpu, Users, BarChart2, Shield, DollarSign, Target, Award, ArrowRight } from 'lucide-react'
+﻿import { Cpu, Users, BarChart2, Shield, DollarSign, Target, Award, ArrowRight } from 'lucide-react'
 
 const reasons = [
   { icon: Target,     num: '01', title: 'Customized SEO Strategies',    desc: 'Tailored SEO solutions designed for every business type, industry, and target audience.',                      color: '#2563eb' },
@@ -36,7 +36,7 @@ function ReasonCard({ icon: Icon, num, title, desc, color }) {
 export default function SEOWhyUs() {
   return (
     <section
-      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #dbeafe 40%, #e0f2fe 100%)' }}
     >
       {/* Orbs */}

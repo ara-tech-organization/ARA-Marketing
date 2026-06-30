@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
+﻿import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
 
 const highlights = [
   { icon: Zap,          text: 'On-time delivery with zero compromise on quality'     },
@@ -10,7 +10,7 @@ const highlights = [
 export default function MACTA() {
   return (
     <section id="contact"
-      className="relative overflow-hidden py-16 sm:py-24">
+      className="relative overflow-hidden py-16 sm:py-16">
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">

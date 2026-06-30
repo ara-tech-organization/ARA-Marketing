@@ -1,4 +1,4 @@
-import { Zap, Shield, TrendingUp, DollarSign, Server, Star } from 'lucide-react'
+﻿import { Zap, Shield, TrendingUp, DollarSign, Server, Star } from 'lucide-react'
 
 const benefits = [
   {
@@ -152,7 +152,7 @@ function BenefitCard({ benefit, large }) {
 export default function SWBenefits() {
   return (
     <section
-      className="relative overflow-hidden py-16 sm:py-24"
+      className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: '#071a36' }}
     >
       {/* Orbs */}

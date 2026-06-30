@@ -1,4 +1,4 @@
-import { Cpu, TrendingUp, ShieldCheck, Paintbrush2, ShoppingBag, Settings2, Zap } from 'lucide-react'
+﻿import { Cpu, TrendingUp, ShieldCheck, Paintbrush2, ShoppingBag, Settings2, Zap } from 'lucide-react'
 
 const benefits = [
   {
@@ -86,7 +86,7 @@ export default function EWBenefits() {
   const [large, ...rest] = benefits
 
   return (
-    <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden"
+    <section className="relative py-12 sm:py-16 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(170deg,#f4f8ff 0%,#eef4ff 60%,#f8faff 100%)' }}>
 
       {/* Dot grid */}

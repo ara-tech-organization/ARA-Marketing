@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from 'react'
+﻿import { useRef, useEffect, useCallback } from 'react'
 import { Search, BarChart2, Cpu, FileText, Globe2, MapPin, LineChart, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const steps = [
@@ -42,7 +42,7 @@ export default function SEOProcess() {
 
   return (
     <section
-      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}
     >
       {/* Orbs */}

@@ -120,13 +120,7 @@ export default function Hero() {
 
             <h1 className="font-bold text-white tracking-tight mb-5"
               style={{ fontSize: 'clamp(27px,3.1vw,49px)', lineHeight: 1.2, animation: rev(100) }}>
-              Best Digital Marketing<br />Company in Thanjavur —{' '}
-              <span style={{
-                background:'linear-gradient(135deg,#93c5fd 0%,#60a5fa 30%,#3b82f6 60%,#818cf8 100%)',
-                WebkitBackgroundClip:'text', WebkitTextFillColor:'transparent',
-              }}>
-                for Business Growth &amp; Brand Visibility
-              </span>
+              Best Digital Marketing Company in Thanjavur
             </h1>
 
             <p className="text-[15px] leading-[1.85] mb-3"
@@ -197,6 +191,14 @@ export default function Hero() {
             ))}
           </div>
 
+        </div>
+
+        {/* Curved bottom wave */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+          <svg viewBox="0 0 1440 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+            style={{ display: 'block', width: '100%', height: 64 }}>
+            <path d="M0,32 C360,80 1080,-16 1440,32 L1440,64 L0,64 Z" fill="#ffffff" />
+          </svg>
         </div>
       </section>
 

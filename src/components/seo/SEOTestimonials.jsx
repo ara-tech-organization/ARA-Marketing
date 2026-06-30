@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Quote, Star, MessageSquare } from 'lucide-react'
 
 const testimonials = [
@@ -30,7 +30,7 @@ export default function SEOTestimonials() {
 
   return (
     <section
-      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}
     >
       {/* Orbs */}

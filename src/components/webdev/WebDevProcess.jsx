@@ -1,4 +1,4 @@
-import {
+﻿import {
   ClipboardList, Palette, LayoutDashboard, Code2,
   FileText, TestTube, Rocket, Layers
 } from 'lucide-react'
@@ -15,7 +15,7 @@ const steps = [
 
 export default function WebDevProcess() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-16 reveal">

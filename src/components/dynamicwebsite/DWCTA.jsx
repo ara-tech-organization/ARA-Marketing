@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { ArrowRight, Rocket, Phone, CheckCircle2, Globe } from 'lucide-react'
 
 const gradBlue = {
@@ -16,7 +16,7 @@ export default function DWCTA() {
   const blurInput  = e => { e.target.style.borderColor = '#e2e8f0'; e.target.style.boxShadow = 'none' }
 
   return (
-    <section id="dw-cta" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section id="dw-cta" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #dbeafe 0%, #eff6ff 50%, #e0f2fe 100%)' }}>
 
       {/* Dot grid */}

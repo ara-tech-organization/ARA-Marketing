@@ -1,4 +1,4 @@
-import { Clock, Globe2, RefreshCw, DollarSign, Heart, CheckCircle2, Zap } from 'lucide-react'
+﻿import { Clock, Globe2, RefreshCw, DollarSign, Heart, CheckCircle2, Zap } from 'lucide-react'
 import ecBenefitsImg from '../../assets/E-commerce/e2.webp'
 
 const benefits = [
@@ -41,7 +41,7 @@ const benefits = [
 
 export default function ECBenefits() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />

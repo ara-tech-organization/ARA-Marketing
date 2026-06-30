@@ -1,4 +1,4 @@
-import { Lightbulb, Target, Award, Zap, RotateCcw, DollarSign, Layers } from 'lucide-react'
+﻿import { Lightbulb, Target, Award, Zap, RotateCcw, DollarSign, Layers } from 'lucide-react'
 
 const reasons = [
   {
@@ -35,7 +35,7 @@ const reasons = [
 
 export default function GDWhyUs() {
   return (
-    <section className="relative overflow-hidden py-24 bg-white">
+    <section className="relative overflow-hidden py-16 bg-white">
 
 
       {/* Top border line */}

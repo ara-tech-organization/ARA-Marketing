@@ -1,4 +1,4 @@
-import useCounter from '../../hooks/useCounter'
+﻿import useCounter from '../../hooks/useCounter'
 import { FolderOpen, Users, TrendingUp, Star, Clock } from 'lucide-react'
 
 function StatRow({ target, suffix, label, icon: Icon, delay, color }) {
@@ -47,7 +47,7 @@ const stats = [
 export default function SEOStats() {
   return (
     <section
-      className="relative overflow-hidden py-12 md:py-16 lg:py-24"
+      className="relative overflow-hidden py-12 md:py-16 lg:py-16"
       style={{ background: 'linear-gradient(135deg, #dbeafe 0%, #e0f2fe 50%, #ede9fe 100%)' }}
     >
       <div className="absolute -top-20 -left-20 w-[460px] h-[460px] rounded-full pointer-events-none"

@@ -1,4 +1,4 @@
-import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
+﻿import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight } from 'lucide-react'
 
 const benefits = [
   { icon: Cpu,        title: 'Enhanced AI Engagement',      desc: 'AI-powered features drive meaningful customer interaction, personalization, and retention.', metric: '3x',  metricLabel: 'Higher Engagement', color: '#1e40af' },
@@ -10,7 +10,7 @@ const benefits = [
 
 export default function MABenefits() {
   return (
-    <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] pointer-events-none"

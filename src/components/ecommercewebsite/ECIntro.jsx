@@ -1,4 +1,4 @@
-import { Globe, TrendingUp, ShoppingBag, Layers, ArrowRight, Zap } from 'lucide-react'
+﻿import { Globe, TrendingUp, ShoppingBag, Layers, ArrowRight, Zap } from 'lucide-react'
 
 const features = [
   { icon: Globe,       label: 'Scalable Architecture',      desc: 'Grows with your business from day one'  },
@@ -16,7 +16,7 @@ const platformPills = [
 
 export default function ECIntro() {
   return (
-    <section id="ec-intro" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section id="ec-intro" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(145deg, #020b18 0%, #071428 50%, #040e1f 100%)' }}>
 
       {/* Background orbs */}

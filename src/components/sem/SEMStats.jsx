@@ -1,4 +1,4 @@
-import useCounter from '../../hooks/useCounter'
+﻿import useCounter from '../../hooks/useCounter'
 import { FolderOpen, Users, TrendingUp, Star, Globe2 } from 'lucide-react'
 
 const allStats = [
@@ -46,7 +46,7 @@ function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
 
 export default function SEMStats() {
   return (
-    <section className="overflow-hidden py-24 bg-white">
+    <section className="overflow-hidden py-16 bg-white">
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

@@ -13,7 +13,7 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section id="tools" className="py-24 bg-white">
+    <section id="tools" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}

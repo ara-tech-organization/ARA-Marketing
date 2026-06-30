@@ -1,4 +1,4 @@
-import { Award, Cpu, ShieldCheck, Clock4, Layers3, ArrowUpRight } from 'lucide-react'
+﻿import { Award, Cpu, ShieldCheck, Clock4, Layers3, ArrowUpRight } from 'lucide-react'
 
 const reasons = [
   {
@@ -111,7 +111,7 @@ function WhyCard({ num, Icon, title, body, color, grad, border, tag }) {
 
 export default function EWWhyUs() {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden"
+    <section className="relative py-12 sm:py-16 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(145deg,#040e1f 0%,#0d2244 55%,#060f22 100%)' }}>
 
       {/* Dot grid */}

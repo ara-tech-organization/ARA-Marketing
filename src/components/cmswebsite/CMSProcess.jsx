@@ -1,4 +1,4 @@
-import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
+﻿import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
 
 const steps = [
   {
@@ -51,7 +51,7 @@ const steps = [
 export default function CMSProcess() {
   return (
     <section
-      className="relative py-16 sm:py-24 overflow-hidden bg-white"
+      className="relative py-16 sm:py-16 overflow-hidden bg-white"
     >
       {/* Subtle orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"

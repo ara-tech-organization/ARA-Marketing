@@ -1,4 +1,4 @@
-import { Building2, ShoppingCart, Globe, BrainCircuit, CheckCircle2 } from 'lucide-react'
+﻿import { Building2, ShoppingCart, Globe, BrainCircuit, CheckCircle2 } from 'lucide-react'
 
 const segments = [
   {
@@ -41,7 +41,7 @@ const segments = [
 
 export default function EWWhoShould() {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-12 sm:py-16 lg:py-16 overflow-hidden bg-white">
 
       {/* Light dot grid */}
       <div className="absolute inset-0 pointer-events-none"

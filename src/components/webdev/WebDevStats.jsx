@@ -1,4 +1,4 @@
-import useCounter from '../../hooks/useCounter'
+﻿import useCounter from '../../hooks/useCounter'
 import { Globe2, Users, TrendingUp, Monitor, ShoppingCart, Layers } from 'lucide-react'
 
 const stats = [
@@ -53,7 +53,7 @@ function StatItem({ target, suffix, label, icon: Icon, index }) {
 
 export default function WebDevStats() {
   return (
-    <section className="relative overflow-hidden py-24"
+    <section className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}>
 
       {/* Grid pattern overlay */}

@@ -1,4 +1,4 @@
-import { Star, Quote, MessageSquare } from 'lucide-react'
+﻿import { Star, Quote, MessageSquare } from 'lucide-react'
 
 const testimonials = [
   { text: 'ARA Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.', name: 'Ramesh Kumar',   role: 'CEO, Thanjavur Textile Exports',  rating: 5, color: '#2563eb', avatar: 'R' },
@@ -13,7 +13,7 @@ const gradBlue = {
 
 export default function VETestimonials() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />

@@ -72,13 +72,12 @@ export default function EWHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(21px,3.1vw,45px)] font-bold leading-[1.06] tracking-tight mb-5 text-white">
-              Transform Your{' '}
-              <span style={{ background: 'linear-gradient(135deg,#a78bfa,#38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Enterprise
+            <h1 className="leading-[1.15] tracking-tight mb-5 text-white"
+              style={{ fontWeight: 700, fontSize: 'min(4.5vw, 32px)' }}>
+              <span style={{ display: 'block' }}>Transform Your Enterprise</span>
+              <span style={{ display: 'block', background: 'linear-gradient(135deg,#a78bfa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                Digital Presence
               </span>
-              <br />
-              Digital Presence
             </h1>
 
             <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-8 max-w-[540px]"

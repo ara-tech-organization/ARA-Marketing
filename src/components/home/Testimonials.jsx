@@ -83,7 +83,7 @@ function TestiCard({ t, featured }) {
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-24 overflow-hidden"
+    <section id="testimonials" className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
     >
       {/* Blurred orb â€” top left */}

@@ -1,4 +1,4 @@
-import { Layers, Globe2, Server, Database, BookOpen, Monitor, Cloud } from 'lucide-react'
+﻿import { Layers, Globe2, Server, Database, BookOpen, Monitor, Cloud } from 'lucide-react'
 
 const techs = [
   { label: 'HTML5, CSS3, JavaScript', icon: Globe2,    color: '#2563eb', bg: '#dbeafe', tag: 'Frontend',       pct: 98 },
@@ -12,7 +12,7 @@ const techs = [
 
 export default function WebDevTech() {
   return (
-    <section className="py-24" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #f0f6ff 100%)' }}>
+    <section className="py-16" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #f0f6ff 100%)' }}>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-14 reveal">

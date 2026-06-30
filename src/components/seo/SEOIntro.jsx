@@ -1,4 +1,4 @@
-import { Cpu, Globe2, FileText, MapPin, Smartphone, ArrowRight } from 'lucide-react'
+﻿import { Cpu, Globe2, FileText, MapPin, Smartphone, ArrowRight } from 'lucide-react'
 import seoIntroImg from '../../assets/SEO/S2.webp'
 
 const services = [
@@ -11,7 +11,7 @@ const services = [
 
 export default function SEOIntro() {
   return (
-    <section className="py-12 md:py-16 lg:py-24 overflow-hidden" style={{ background: '#ffffff' }}>
+    <section className="py-12 md:py-16 lg:py-16 overflow-hidden" style={{ background: '#ffffff' }}>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Split layout: image left, content right ── */}

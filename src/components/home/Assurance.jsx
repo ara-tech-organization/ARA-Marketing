@@ -11,7 +11,7 @@ const assurances = [
 
 export default function Assurance() {
   return (
-    <section id="assurance" className="py-24 bg-white">
+    <section id="assurance" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}

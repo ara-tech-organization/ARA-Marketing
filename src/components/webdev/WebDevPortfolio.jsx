@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Building2, ShoppingCart, GraduationCap, HeartPulse, Store, Briefcase, Layers, ArrowUpRight } from 'lucide-react'
 
 const projects = [
@@ -133,7 +133,7 @@ function ProjectCard({ num, icon: Icon, title, desc, tags, count, color, bg }) {
 
 export default function WebDevPortfolio() {
   return (
-    <section className="py-24" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #f0f6ff 100%)' }}>
+    <section className="py-16" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #f0f6ff 100%)' }}>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-14 reveal">

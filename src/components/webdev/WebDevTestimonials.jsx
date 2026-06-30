@@ -1,4 +1,4 @@
-import { Star, Quote, Layers } from 'lucide-react'
+﻿import { Star, Quote, Layers } from 'lucide-react'
 
 const testimonials = [
   {
@@ -23,7 +23,7 @@ const testimonials = [
 
 export default function WebDevTestimonials() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600

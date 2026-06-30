@@ -1,9 +1,9 @@
-import { Sparkles, TrendingUp, Users, Award, Zap, CheckCircle, Star } from 'lucide-react'
+﻿import { Sparkles, TrendingUp, Users, Award, Zap, CheckCircle, Star } from 'lucide-react'
 import gdIntroImg from '../../assets/GD/G2.webp'
 
 export default function GDIntro() {
   return (
-    <section className="relative overflow-hidden py-24 bg-white">
+    <section className="relative overflow-hidden py-16 bg-white">
       {/* Subtle grid */}
       <div
         className="absolute inset-0 pointer-events-none"

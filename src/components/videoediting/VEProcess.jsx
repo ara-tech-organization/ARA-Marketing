@@ -1,4 +1,4 @@
-import { ClipboardList, FolderOpen, Scissors, Layers, Volume2, RotateCcw, CheckCircle2, LineChart } from 'lucide-react'
+﻿import { ClipboardList, FolderOpen, Scissors, Layers, Volume2, RotateCcw, CheckCircle2, LineChart } from 'lucide-react'
 
 const steps = [
   { num: '01', icon: ClipboardList, title: 'Requirement & Concept Analysis',  desc: 'Deep understanding of your brand goals, target audience, platform requirements, and the message you want to convey.', color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)'  },
@@ -12,7 +12,7 @@ const steps = [
 
 export default function VEProcess() {
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: '#0d2244' }}>
+    <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#0d2244' }}>
 
       {/* BG decoration */}
       <div className="absolute inset-0 pointer-events-none"

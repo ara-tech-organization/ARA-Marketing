@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Search, Monitor, Play, ShoppingBag, CheckCircle2, Layers, ArrowRight } from 'lucide-react'
 import googleImg   from '../../assets/SEM/google.webp'
 import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
@@ -45,7 +45,7 @@ export default function SEMServices() {
   const svc = services[active]
 
   return (
-    <section id="sem-services" className="relative py-24 overflow-hidden"
+    <section id="sem-services" className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 60%, #f0f9ff 100%)' }}>
 
       {/* Dot grid */}

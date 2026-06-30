@@ -1,4 +1,4 @@
-import { Edit3, Search, Puzzle, TrendingUp, DollarSign, RefreshCw, Layers } from 'lucide-react'
+﻿import { Edit3, Search, Puzzle, TrendingUp, DollarSign, RefreshCw, Layers } from 'lucide-react'
 
 const benefits = [
   {
@@ -48,7 +48,7 @@ const benefits = [
 export default function CMSBenefits() {
   return (
     <section
-      className="relative py-16 sm:py-24 overflow-hidden"
+      className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%)' }}
     >
       {/* Background glow */}

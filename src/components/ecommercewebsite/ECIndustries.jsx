@@ -1,4 +1,4 @@
-import { Shirt, Cpu, ShoppingBasket, Sofa, Store, TrendingUp, ArrowRight, Award } from 'lucide-react'
+﻿import { Shirt, Cpu, ShoppingBasket, Sofa, Store, TrendingUp, ArrowRight, Award } from 'lucide-react'
 import fashionImg    from '../../assets/E-commerce/Fashion.webp'
 import electronicsImg from '../../assets/E-commerce/Electronics.webp'
 import groceryImg    from '../../assets/E-commerce/Grocery.webp'
@@ -50,7 +50,7 @@ const industries = [
 
 export default function ECIndustries() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Settings2, ShoppingBag, Brain, Smartphone, Building2, CheckCircle2 } from 'lucide-react'
 import customImg     from '../../assets/WebApp/Custom.webp'
 import ecommerceImg  from '../../assets/WebApp/E-commerce.webp'
@@ -69,7 +69,7 @@ export default function WAServices() {
   const s = services[active]
 
   return (
-    <section id="wa-services" className="py-16 sm:py-20 lg:py-28 bg-white">
+    <section id="wa-services" className="py-16 sm:py-20 lg:py-18 bg-white">
       <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">

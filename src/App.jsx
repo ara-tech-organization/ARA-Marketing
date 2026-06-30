@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, lazy, Suspense } from 'react'
 import MouseEffect from './components/common/MouseEffect'
+import FloatingSocial from './components/common/FloatingSocial'
+import PromoPopup from './components/common/PromoPopup'
 import './index.css'
 
 const Home                = lazy(() => import('./pages/Home'))
@@ -43,6 +45,8 @@ export default function App() {
   return (
     <BrowserRouter basename="/ARA-Marketing">
       <MouseEffect />
+      <FloatingSocial />
+      <PromoPopup />
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <Routes>

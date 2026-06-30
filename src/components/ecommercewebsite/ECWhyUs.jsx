@@ -1,4 +1,4 @@
-import { Wrench, Smartphone, CreditCard, Search, Zap, ThumbsUp } from 'lucide-react'
+﻿import { Wrench, Smartphone, CreditCard, Search, Zap, ThumbsUp } from 'lucide-react'
 import customBuiltImg  from '../../assets/E-commerce/Custom-Built.webp'
 import mobileImg       from '../../assets/E-commerce/Mobile-Friendly.webp'
 import seoOptImg       from '../../assets/E-commerce/SEO-optimization.webp'
@@ -50,7 +50,7 @@ const reasons = [
 
 export default function ECWhyUs() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.035) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />

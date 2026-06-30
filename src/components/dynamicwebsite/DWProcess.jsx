@@ -1,4 +1,4 @@
-import { ClipboardList, PenTool, Code2, Database, Rocket, Workflow } from 'lucide-react'
+﻿import { ClipboardList, PenTool, Code2, Database, Rocket, Workflow } from 'lucide-react'
 
 const steps = [
   { icon: ClipboardList, num: '01', title: 'Business Analysis & Requirement Gathering', desc: 'We begin by understanding your business goals, target audience, and functional requirements to plan the ideal dynamic website structure.', color: '#2563eb' },
@@ -15,7 +15,7 @@ const gradBlue = {
 
 export default function DWProcess() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
 
       {/* Dot grid */}

@@ -32,7 +32,7 @@ export default function EWFAQ() {
   const [open, setOpen] = useState(0)
 
   return (
-    <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-12 sm:py-16 lg:py-16 overflow-hidden bg-white">
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

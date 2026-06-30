@@ -1,4 +1,4 @@
-import { ShoppingCart, ArrowRight, CheckCircle2, Phone } from 'lucide-react'
+﻿import { ShoppingCart, ArrowRight, CheckCircle2, Phone } from 'lucide-react'
 
 const promises = [
   'Fully customised e-commerce solutions',
@@ -10,7 +10,7 @@ const promises = [
 
 export default function ECCTA() {
   return (
-    <section id="ec-cta" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section id="ec-cta" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #020b18 0%, #0c1e4a 40%, #0f2d6b 70%, #1e3a8a 100%)' }}>
 
       {/* Decorative orbs */}

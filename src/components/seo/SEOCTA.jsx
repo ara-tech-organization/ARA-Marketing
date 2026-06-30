@@ -1,9 +1,9 @@
-import { ArrowRight, Search, TrendingUp, Zap } from 'lucide-react'
+﻿import { ArrowRight, Search, TrendingUp, Zap } from 'lucide-react'
 
 export default function SEOCTA() {
   return (
     <section
-      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}
     >
       {/* Orbs */}

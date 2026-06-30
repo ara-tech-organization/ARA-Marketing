@@ -1,4 +1,4 @@
-import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
+﻿import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 import heroImage from '../../assets/About/A1.webp'
 
@@ -49,7 +49,7 @@ export default function AboutHero() {
           transform: 'rotate(20deg)' }} />
 
       {/* ── Content ── */}
-      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16 md:py-20 lg:py-24">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16 md:py-20 lg:py-16">
         <div className="flex flex-col lg:flex-row gap-10 md:gap-12 xl:gap-16 items-center">
 
           {/* ── Left: text ── */}

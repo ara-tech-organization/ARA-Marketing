@@ -1,4 +1,4 @@
-import { Star, Quote, Users } from 'lucide-react'
+﻿import { Star, Quote, Users } from 'lucide-react'
 
 const testimonials = [
   {
@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function ECTestimonials() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }} />

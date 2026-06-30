@@ -1,4 +1,4 @@
-import { Clapperboard, Zap, BookOpen, MonitorPlay, Settings, DollarSign, Award, ArrowRight, CheckCircle2, Play } from 'lucide-react'
+﻿import { Clapperboard, Zap, BookOpen, MonitorPlay, Settings, DollarSign, Award, ArrowRight, CheckCircle2, Play } from 'lucide-react'
 
 const reasons = [
   { icon: Clapperboard, title: 'High-Quality Cinematic Editing',      desc: 'Professional cinematic techniques — colour grading, motion design, and seamless cuts applied to every project.',      color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)', num: '01' },
@@ -11,7 +11,7 @@ const reasons = [
 
 export default function VEWhyUs() {
   return (
-    <section className="relative py-20 lg:py-28 overflow-hidden" style={{ background: '#f0f6ff' }}>
+    <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#f0f6ff' }}>
 
       {/* BG decorations */}
       <div className="absolute inset-0 pointer-events-none"

@@ -1,4 +1,4 @@
-import { Target, Palette, Zap, TrendingUp, Activity, BarChart2, Layers } from 'lucide-react'
+﻿import { Target, Palette, Zap, TrendingUp, Activity, BarChart2, Layers } from 'lucide-react'
 import whyUsImg from '../../assets/SMM/m2.webp'
 
 const reasons = [
@@ -37,7 +37,7 @@ const reasons = [
 export default function SMMWhyUs() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}
     >
       {/* Full-section dot grid */}

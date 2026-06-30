@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { Send, Phone, Building2, ChevronRight, CheckCircle2 } from 'lucide-react'
 
 export default function EWCTA() {
@@ -19,7 +19,7 @@ export default function EWCTA() {
   const onBlur  = e => { e.target.style.background = 'rgba(255,255,255,0.08)'; e.target.style.borderColor = 'rgba(255,255,255,0.14)'; e.target.style.boxShadow = 'none' }
 
   return (
-    <section id="ew-cta" className="relative py-12 sm:py-16 lg:py-24 overflow-hidden"
+    <section id="ew-cta" className="relative py-12 sm:py-16 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(150deg,#040e1f 0%,#0d2244 50%,#060f22 100%)' }}>
 
       {/* Dot grid */}

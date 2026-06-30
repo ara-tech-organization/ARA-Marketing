@@ -169,7 +169,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link to="/" className="flex items-center no-underline flex-shrink-0">
-              <img src={logoImg} alt="ARA Discover Marketing" className="h-14 w-auto object-contain" />
+              <img src={logoImg} alt="ARA Discover Marketing" className="h-16 w-auto object-contain" />
             </Link>
 
             {/* Desktop links */}

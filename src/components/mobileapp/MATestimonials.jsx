@@ -1,4 +1,4 @@
-import { Star, Quote, CheckCheck, Users } from 'lucide-react'
+﻿import { Star, Quote, CheckCheck, Users } from 'lucide-react'
 
 const testimonials = [
   {
@@ -78,7 +78,7 @@ function TestiCard({ t, featured }) {
 
 export default function MATestimonials() {
   return (
-    <section className="relative py-24 overflow-hidden"
+    <section className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
     >
       {/* Orbs */}

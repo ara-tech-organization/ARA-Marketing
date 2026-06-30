@@ -1,4 +1,4 @@
-import { Shield, Clock, Headphones, Cpu, ArrowRight, Phone, CheckCircle2 } from 'lucide-react'
+﻿import { Shield, Clock, Headphones, Cpu, ArrowRight, Phone, CheckCircle2 } from 'lucide-react'
 
 const guarantees = [
   {
@@ -38,7 +38,7 @@ export default function WACTA() {
   return (
     <section
       id="contact"
-      className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-18 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%)' }}
     >
       {/* Decorative orbs */}

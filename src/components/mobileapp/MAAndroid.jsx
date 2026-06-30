@@ -1,4 +1,4 @@
-import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
+﻿import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
 
 import androidImage from '../../assets/MobileApp/Android.webp'
 
@@ -11,7 +11,7 @@ const services = [
 
 export default function MAAndroid() {
   return (
-    <section className="relative overflow-hidden py-16 sm:py-24"
+    <section className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#040d1a 100%)' }}>
       <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[500px] h-[500px] pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.12) 0%,transparent 65%)' }} />

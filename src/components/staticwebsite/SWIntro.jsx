@@ -1,4 +1,4 @@
-import { Zap, Shield, Search, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
+﻿import { Zap, Shield, Search, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
 import swIntroImg from '../../assets/static/s2.webp'
 
 const features = [
@@ -36,7 +36,7 @@ export default function SWIntro() {
   return (
     <section
       id="sw-intro"
-      className="relative overflow-hidden py-16 sm:py-24"
+      className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: 'linear-gradient(160deg, #03111f 0%, #04131c 50%, #030e18 100%)' }}
     >
       {/* Background orbs */}

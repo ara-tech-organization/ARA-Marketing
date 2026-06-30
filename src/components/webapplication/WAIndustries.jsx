@@ -1,4 +1,4 @@
-import { ShoppingCart, HeartPulse, BookOpen, Landmark, Truck, Rocket } from 'lucide-react'
+﻿import { ShoppingCart, HeartPulse, BookOpen, Landmark, Truck, Rocket } from 'lucide-react'
 import ecommerceImage from '../../assets/WebApp/Ecommerce.webp'
 import logisticsImage from '../../assets/WebApp/Logistics.webp'
 import startupImage from '../../assets/WebApp/Startup.webp'
@@ -60,7 +60,7 @@ const industries = [
 export default function WAIndustries() {
   return (
     <section
-      className="py-16 sm:py-20 lg:py-28 overflow-hidden"
+      className="py-16 sm:py-20 lg:py-18 overflow-hidden"
       style={{ background: 'linear-gradient(180deg, white 0%, #f0f7ff 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">

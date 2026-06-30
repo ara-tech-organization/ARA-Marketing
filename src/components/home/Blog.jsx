@@ -32,7 +32,7 @@ const blogs = [
 
 export default function Blog() {
   return (
-    <section id="blog" className="py-24 bg-slate-50">
+    <section id="blog" className="py-16 bg-slate-50">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}

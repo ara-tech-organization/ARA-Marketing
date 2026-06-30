@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import {
   HeartPulse, GraduationCap, Building2, ShoppingCart,
   UtensilsCrossed, Factory, TrendingUp, Store, Layers, ArrowRight
@@ -43,7 +43,7 @@ function IndustryPill({ icon: Icon, title, color, bg }) {
 
 export default function WebDevIndustries() {
   return (
-    <section className="py-24" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
+    <section className="py-16" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-14 reveal">

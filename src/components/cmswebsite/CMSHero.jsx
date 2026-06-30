@@ -60,19 +60,10 @@ export default function CMSHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(21px,2.2vw,39px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-6">
-              Build Powerful WordPress{' '}
-              <span
-                style={{
-                  background: 'linear-gradient(135deg, #2563eb 0%, #60a5fa 50%, #60a5fa 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
-              >
-                Websites
-              </span>{' '}
-              That Grow Your Business
+            <h1 className="animate-hero-d2 text-slate-900 leading-[1.15] tracking-tight mb-6"
+              style={{ fontWeight: 700, fontSize: 'clamp(21px, 2vw, 28px)' }}>
+              <span style={{ display: 'block' }}>Build Powerful WordPress</span>
+              <span style={{ display: 'block', color: '#2563eb' }}>Websites That Grow Your Business</span>
             </h1>
 
             {/* Description */}

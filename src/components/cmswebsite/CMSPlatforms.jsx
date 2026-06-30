@@ -1,4 +1,4 @@
-import { Globe, ShoppingBag, Layout, BookOpen, Server, ArrowRight, CheckCircle2 } from 'lucide-react'
+﻿import { Globe, ShoppingBag, Layout, BookOpen, Server, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const platforms = [
   {
@@ -61,7 +61,7 @@ const platforms = [
 export default function CMSPlatforms() {
   return (
     <section
-      className="relative py-16 sm:py-24 overflow-hidden"
+      className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: '#ffffff' }}
     >
       {/* Background glows */}

@@ -1,4 +1,4 @@
-import useCounter from '../../hooks/useCounter'
+﻿import useCounter from '../../hooks/useCounter'
 import { Share2, Users, TrendingUp, Megaphone } from 'lucide-react'
 
 function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
@@ -57,7 +57,7 @@ const stats = [
 export default function SMMStats() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}
     >
 

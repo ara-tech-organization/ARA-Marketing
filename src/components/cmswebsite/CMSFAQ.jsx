@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown, MessageCircle, Phone, ArrowRight, BookOpen } from 'lucide-react'
 
 const faqs = [
@@ -76,7 +76,7 @@ export default function CMSFAQ() {
   const [active, setActive] = useState(0)
 
   return (
-    <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />
       <div className="absolute top-0 left-0 w-[350px] h-[350px] rounded-full pointer-events-none"

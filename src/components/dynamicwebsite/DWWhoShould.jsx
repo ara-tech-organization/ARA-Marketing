@@ -1,4 +1,4 @@
-import { ShoppingCart, BookOpen, Newspaper, Home, Briefcase, ArrowRight, Users, CheckCircle2 } from 'lucide-react'
+﻿import { ShoppingCart, BookOpen, Newspaper, Home, Briefcase, ArrowRight, Users, CheckCircle2 } from 'lucide-react'
 
 const industries = [
   { icon: ShoppingCart, label: 'E-Commerce Businesses',     desc: 'Online stores that need product catalogue updates, cart systems, and real-time inventory management for seamless shopping.',             color: '#2563eb' },
@@ -15,7 +15,7 @@ const gradInd = {
 
 export default function DWWhoShould() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"

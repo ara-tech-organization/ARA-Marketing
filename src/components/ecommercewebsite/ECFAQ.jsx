@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { HelpCircle, MessageSquare, ArrowRight, ShoppingCart, ChevronRight } from 'lucide-react'
 
 const C1 = '#2563eb'
@@ -59,7 +59,7 @@ export default function ECFAQ() {
   const accent = active % 2 === 0 ? C1 : C2
 
   return (
-    <section className="relative py-24 overflow-hidden"
+    <section className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 50%, #e0f2fe 100%)' }}>
 
       {/* Background decorations */}

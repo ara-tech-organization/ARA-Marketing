@@ -1,4 +1,4 @@
-import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
+﻿import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
 
 const highlights = [
   { icon: Zap,          text: 'Lightning-fast delivery in 3–7 days' },
@@ -10,7 +10,7 @@ const highlights = [
 export default function SWCTA() {
   return (
     <section
-      className="relative overflow-hidden py-16 sm:py-24"
+      className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: 'linear-gradient(135deg, #03111f 0%, #04131c 100%)' }}
     >
       {/* Orbs */}

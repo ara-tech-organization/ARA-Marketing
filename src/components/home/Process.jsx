@@ -70,7 +70,7 @@ function StepCard({ s, isLast }) {
 
 export default function Process() {
   return (
-    <section id="process" className="relative py-24 overflow-hidden bg-white">
+    <section id="process" className="relative py-16 overflow-hidden bg-white">
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 70%)' }} />

@@ -1,4 +1,4 @@
-import { FileBarChart, Headphones, Activity, Shield, TrendingUp, Cpu, Award, ArrowRight } from 'lucide-react'
+﻿import { FileBarChart, Headphones, Activity, Shield, TrendingUp, Cpu, Award, ArrowRight } from 'lucide-react'
 
 const promises = [
   { icon: FileBarChart, title: 'Monthly SEO Reports & Performance Tracking',       desc: 'Transparent monthly reports covering keyword rankings, traffic trends, and actionable growth insights.',                       color: '#2563eb' },
@@ -32,7 +32,7 @@ function PromiseRow({ icon: Icon, title, desc, color, index }) {
 
 export default function SEOAssurance() {
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-white">
+    <section className="py-12 md:py-16 lg:py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}

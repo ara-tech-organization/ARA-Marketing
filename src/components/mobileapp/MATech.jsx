@@ -1,4 +1,4 @@
-import { Code2, Server, Database, Cpu, Layers } from 'lucide-react'
+﻿import { Code2, Server, Database, Cpu, Layers } from 'lucide-react'
 
 const categories = [
   {
@@ -29,7 +29,7 @@ const categories = [
 
 export default function MATech() {
   return (
-    <section className="py-16 sm:py-24 relative overflow-hidden"
+    <section className="py-16 sm:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#040d1a 100%)' }}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] pointer-events-none"
         style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.1) 0%,transparent 70%)' }} />

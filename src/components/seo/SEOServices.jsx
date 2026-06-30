@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import {
   FileText, Globe2, Cpu, MapPin, Smartphone,
   CheckCircle, Layers, ArrowRight, ChevronRight
@@ -81,7 +81,7 @@ export default function SEOServices() {
   const tab = tabs[active]
 
   return (
-    <section id="seo-services" className="py-12 md:py-16 lg:py-24 bg-white relative">
+    <section id="seo-services" className="py-12 md:py-16 lg:py-16 bg-white relative">
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

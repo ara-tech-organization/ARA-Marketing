@@ -1,4 +1,4 @@
-import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
+﻿import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
 
 const industries = [
   { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#1e40af' },
@@ -14,7 +14,7 @@ export default function MAIndustries() {
   const bottomFour = industries.slice(2)
 
   return (
-    <section className="py-16 sm:py-24 relative overflow-hidden"
+    <section className="py-16 sm:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#03111f 0%,#040d1a 100%)' }}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none"
         style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />

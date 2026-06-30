@@ -1,4 +1,4 @@
-import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
+﻿import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
 import veIntroImg from '../../assets/Video-editing/V2.webp'
 
 const expertise = [
@@ -21,7 +21,7 @@ const gradBlue = {
 
 export default function VEIntro() {
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
 
       {/* Background decorations */}

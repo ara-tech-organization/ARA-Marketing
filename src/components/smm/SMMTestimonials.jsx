@@ -1,4 +1,4 @@
-import { Star, Quote, Layers } from 'lucide-react'
+﻿import { Star, Quote, Layers } from 'lucide-react'
 
 const testimonials = [
   {
@@ -24,7 +24,7 @@ const testimonials = [
 export default function SMMTestimonials() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%)' }}
     >
       {/* Large decorative rings */}

@@ -6,6 +6,7 @@ import StatsBand     from '../components/home/StatsBand'
 import Services      from '../components/home/Services'
 import WhyUs         from '../components/home/WhyUs'
 import Process       from '../components/home/Process'
+import Pricing       from '../components/home/Pricing'
 import Portfolio     from '../components/home/Portfolio'
 import Industries    from '../components/home/Industries'
 import Tools         from '../components/home/Tools'
@@ -67,6 +68,7 @@ export default function Home() {
         <Services />
         <WhyUs />
         <Process />
+        <Pricing />
         <Portfolio />
         <Industries />
         <Tools />

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import {
   Globe, ShoppingCart, GraduationCap, Newspaper, Plug, LayoutDashboard,
   CheckCircle2, ArrowRight, Layers,
@@ -104,7 +104,7 @@ export default function DWServices() {
   const svc = services.find(s => s.id === active)
 
   return (
-    <section className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />

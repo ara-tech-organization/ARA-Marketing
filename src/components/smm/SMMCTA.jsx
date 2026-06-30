@@ -1,9 +1,9 @@
-import { ArrowRight, Share2, MessageSquare } from 'lucide-react'
+﻿import { ArrowRight, Share2, MessageSquare } from 'lucide-react'
 
 export default function SMMCTA() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg, #0d2244 0%, #0f2245 50%, #0d2244 100%)' }}
     >
       {/* Decorative orbs */}

@@ -6,7 +6,7 @@ export default function CTA() {
   return (
     <section
       id="contact"
-      className="relative py-24 overflow-hidden text-center"
+      className="relative py-16 overflow-hidden text-center"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
     >
       {/* Dot grid */}

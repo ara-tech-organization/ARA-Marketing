@@ -1,4 +1,4 @@
-import { Quote, Star, Users } from 'lucide-react'
+﻿import { Quote, Star, Users } from 'lucide-react'
 
 const testimonials = [
   {
@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function EWTestimonials() {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-12 sm:py-16 lg:py-16 overflow-hidden bg-white">
 
       {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"

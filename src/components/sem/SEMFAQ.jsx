@@ -14,7 +14,7 @@ export default function SEMFAQ() {
   const [active, setActive] = useState(0)
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-[860px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* â”€â”€ Header â”€â”€ */}

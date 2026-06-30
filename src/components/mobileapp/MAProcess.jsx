@@ -1,4 +1,4 @@
-import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
+﻿import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
 
 const steps = [
   {
@@ -40,7 +40,7 @@ const steps = [
 
 export default function MAProcess() {
   return (
-    <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.05) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full pointer-events-none"

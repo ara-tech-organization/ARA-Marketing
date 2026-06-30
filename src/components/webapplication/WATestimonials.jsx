@@ -1,4 +1,4 @@
-import { Quote, Star, MessageSquare } from 'lucide-react'
+﻿import { Quote, Star, MessageSquare } from 'lucide-react'
 
 const testimonials = [
   {
@@ -51,7 +51,7 @@ function Stars({ featured }) {
 export default function WATestimonials() {
   return (
     <section
-      className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-18 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, white 0%, #f0f7ff 100%)' }}
     >
       {/* Decorative large background quote */}

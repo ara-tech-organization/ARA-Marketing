@@ -1,4 +1,4 @@
-import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
+﻿import { Trophy, Cpu, Users, Clock, Briefcase, ChevronRight, Sparkles, CheckCircle2 } from 'lucide-react'
 
 import whyUsImage from '../../assets/MobileApp/m2.webp'
 
@@ -45,7 +45,7 @@ const checklist = [
 
 export default function MAWhyUs() {
   return (
-    <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"

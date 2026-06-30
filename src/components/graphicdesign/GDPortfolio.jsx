@@ -1,4 +1,4 @@
-import { Frame, BookOpen, Megaphone, CreditCard, Share2, Image, Layers } from 'lucide-react'
+﻿import { Frame, BookOpen, Megaphone, CreditCard, Share2, Image, Layers } from 'lucide-react'
 import logoImg       from '../../assets/GD/LogoDesign.webp'
 import pamphletImg   from '../../assets/GD/Pamphlet.webp'
 import socialImg     from '../../assets/GD/SocialMediaPost.webp'
@@ -57,7 +57,7 @@ const projects = [
 export default function GDPortfolio() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}
     >
       {/* Wave top */}

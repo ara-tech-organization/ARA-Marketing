@@ -1,4 +1,4 @@
-import { BarChart2, Users, Activity, Palette, Target, Eye, Layers, CheckCircle } from 'lucide-react'
+﻿import { BarChart2, Users, Activity, Palette, Target, Eye, Layers, CheckCircle } from 'lucide-react'
 
 const promises = [
   {
@@ -47,7 +47,7 @@ const promises = [
 
 export default function SMMPromises() {
   return (
-    <section className="relative overflow-hidden py-24 bg-white">
+    <section className="relative overflow-hidden py-16 bg-white">
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

@@ -1,4 +1,4 @@
-import { Frame, Image, BookOpen, CreditCard, FileText, Share2, Megaphone, Layers, Check, ArrowRight } from 'lucide-react'
+﻿import { Frame, Image, BookOpen, CreditCard, FileText, Share2, Megaphone, Layers, Check, ArrowRight } from 'lucide-react'
 import logoImg        from '../../assets/GD/LogoDesign.webp'
 import bannerImg      from '../../assets/GD/Banner .webp'
 import pamphletImg    from '../../assets/GD/Pamphlet.webp'
@@ -95,7 +95,7 @@ export default function GDServices() {
   return (
     <section
       id="gd-services"
-      className="relative overflow-hidden py-24 bg-white"
+      className="relative overflow-hidden py-16 bg-white"
     >
       {/* Subtle dot bg */}
       <div

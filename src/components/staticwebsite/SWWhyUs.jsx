@@ -1,4 +1,4 @@
-import { Code2, Smartphone, Zap, DollarSign, Users, Award, ArrowRight } from 'lucide-react'
+﻿import { Code2, Smartphone, Zap, DollarSign, Users, Award, ArrowRight } from 'lucide-react'
 
 const reasons = [
   {
@@ -40,7 +40,7 @@ const reasons = [
 
 export default function SWWhyUs() {
   return (
-    <section className="py-16 sm:py-24 bg-white relative overflow-hidden">
+    <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       {/* Subtle background tint top-right */}
       <div
         className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"

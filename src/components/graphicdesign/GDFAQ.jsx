@@ -34,7 +34,7 @@ export default function GDFAQ() {
 
   return (
     <section
-      className="py-24"
+      className="py-16"
       style={{ background: 'linear-gradient(180deg, #f0f7ff 0%, #e8f3ff 100%)' }}
     >
       {/* Dot grid */}

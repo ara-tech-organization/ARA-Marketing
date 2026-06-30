@@ -1,4 +1,4 @@
-import { Search, Palette, Code2, FlaskConical, Rocket, ArrowRight, GitBranch } from 'lucide-react'
+﻿import { Search, Palette, Code2, FlaskConical, Rocket, ArrowRight, GitBranch } from 'lucide-react'
 
 const steps = [
   {
@@ -46,7 +46,7 @@ const steps = [
 export default function WAProcess() {
   return (
     <section
-      className="py-16 sm:py-20 lg:py-28 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-18 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #eff6ff 0%, #f0f7ff 100%)' }}
     >
       {/* Decorative orbs */}

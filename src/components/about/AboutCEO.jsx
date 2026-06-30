@@ -1,4 +1,4 @@
-import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
+﻿import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
   Globe, Quote, Sparkles } from 'lucide-react'
 import mamImg from '../../assets/Mam.webp'
 
@@ -32,7 +32,7 @@ const bioParagraphs = [
 
 export default function AboutCEO() {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-28 bg-white">
+    <section className="relative overflow-hidden py-20 sm:py-18 bg-white">
 
       {/* ── Background decorations ── */}
       <div className="absolute pointer-events-none rounded-full"

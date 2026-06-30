@@ -1,4 +1,4 @@
-import { Quote, Star, MessageSquare } from 'lucide-react'
+﻿import { Quote, Star, MessageSquare } from 'lucide-react'
 
 const testimonials = [
   {
@@ -44,7 +44,7 @@ function StarRow({ count }) {
 export default function CMSTestimonials() {
   return (
     <section
-      className="relative py-16 sm:py-24 overflow-hidden"
+      className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%)' }}
     >
       {/* Subtle orbs */}

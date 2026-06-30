@@ -1,4 +1,4 @@
-import { Building2, Briefcase, GraduationCap, Wrench, ArrowRight, Target } from 'lucide-react'
+﻿import { Building2, Briefcase, GraduationCap, Wrench, ArrowRight, Target } from 'lucide-react'
 import imgLocalBusiness from '../../assets/Static/Local Businesses.webp'
 import imgPortfolio from '../../assets/Static/Portfolio.Websites.webp'
 import imgEducational from '../../assets/Static/Educational.webp'
@@ -41,7 +41,7 @@ const audiences = [
 
 export default function SWWhoShouldInvest() {
   return (
-    <section className="py-16 sm:py-24 relative overflow-hidden" style={{ background: '#f8fafc' }}>
+    <section className="py-16 sm:py-16 relative overflow-hidden" style={{ background: '#f8fafc' }}>
       {/* Background decorations */}
       <div
         className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full pointer-events-none"

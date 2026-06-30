@@ -1,4 +1,4 @@
-import { Trophy, TrendingUp, Users, BarChart2, Globe2, CheckCircle, Briefcase } from 'lucide-react'
+﻿import { Trophy, TrendingUp, Users, BarChart2, Globe2, CheckCircle, Briefcase } from 'lucide-react'
 import seoCampaignImg from '../../assets/SEO/s3.webp'
 
 const industries = [
@@ -17,7 +17,7 @@ const achievements = [
 export default function SEOCampaigns() {
   return (
     <section
-      className="py-12 md:py-16 lg:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #f8faff 0%, #eff6ff 50%, #ffffff 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">

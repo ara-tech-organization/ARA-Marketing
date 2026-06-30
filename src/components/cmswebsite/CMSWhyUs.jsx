@@ -1,4 +1,4 @@
-import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award, Star, CheckCircle2 } from 'lucide-react'
+﻿import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award, Star, CheckCircle2 } from 'lucide-react'
 import cmsWhyUsImg from '../../assets/Wordpress/w2.webp'
 
 const reasons = [
@@ -18,7 +18,7 @@ const stats = [
 
 export default function CMSWhyUs() {
   return (
-    <section className="relative py-20 sm:py-28 overflow-hidden bg-white">
+    <section className="relative py-20 sm:py-18 overflow-hidden bg-white">
 
       {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"

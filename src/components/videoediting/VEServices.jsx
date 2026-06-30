@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import {
   Sparkles, Package, Briefcase, CalendarDays, Share2, Wind,
   CheckCircle2, ArrowRight, Layers,
@@ -77,7 +77,7 @@ export default function VEServices() {
   const svc = services[active]
 
   return (
-    <section id="ve-services" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+    <section id="ve-services" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}>
 
       {/* Dot grid */}

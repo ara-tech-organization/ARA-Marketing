@@ -1,4 +1,4 @@
-import { Trophy, Clock, BarChart3, Shield, Handshake, Smartphone, CheckCircle2, ArrowRight, Cpu } from 'lucide-react'
+﻿import { Trophy, Clock, BarChart3, Shield, Handshake, Smartphone, CheckCircle2, ArrowRight, Cpu } from 'lucide-react'
 
 const reasons = [
   { icon: Trophy,    label: 'Experienced Team',              desc: 'Professional custom web application development company in Thanjavur with a proven track record of successful projects across diverse industries.' },
@@ -19,7 +19,7 @@ const benefits = [
 export default function WAWhyUs() {
   return (
     <section
-      className="py-16 sm:py-20 lg:py-28 overflow-hidden"
+      className="py-16 sm:py-20 lg:py-18 overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #f8fafc 0%, white 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">

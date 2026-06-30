@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { Quote, Star, Layers, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
@@ -86,7 +86,7 @@ export default function GDTestimonials() {
   const tx = `${-((pos - 1) * 100) / 3}%`
 
   return (
-    <section className="relative overflow-hidden py-24 bg-white">
+    <section className="relative overflow-hidden py-16 bg-white">
       {/* Dot bg */}
       <div
         className="absolute inset-0 pointer-events-none"

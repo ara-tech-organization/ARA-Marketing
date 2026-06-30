@@ -1,4 +1,4 @@
-import { FileBarChart, Headphones, Activity, Shield, TrendingUp, DollarSign, Award, ArrowRight, CheckCircle2 } from 'lucide-react'
+﻿import { FileBarChart, Headphones, Activity, Shield, TrendingUp, DollarSign, Award, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const promises = [
   { icon: FileBarChart, title: 'Monthly Google Ads Performance Reports',     desc: 'Transparent monthly reports covering impressions, clicks, conversions, cost-per-lead, and ROAS for complete campaign visibility.',               color: '#2563eb' },
@@ -11,7 +11,7 @@ const promises = [
 
 export default function SEMAssurance() {
   return (
-    <section className="py-24 overflow-hidden"
+    <section className="py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 55%, #f0f9ff 100%)' }}>
 
       {/* Dot grid */}

@@ -1,4 +1,4 @@
-import {
+﻿import {
   ClipboardList, Search, Layout, PenTool, MessageSquare,
   Package, Printer, Layers
 } from 'lucide-react'
@@ -43,7 +43,7 @@ const steps = [
 
 export default function GDProcess() {
   return (
-    <section className="relative overflow-hidden py-24 bg-white">
+    <section className="relative overflow-hidden py-16 bg-white">
       {/* Light grid pattern */}
       <div
         className="absolute inset-0 pointer-events-none"

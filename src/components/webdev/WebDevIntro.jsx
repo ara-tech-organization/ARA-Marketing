@@ -1,8 +1,8 @@
-import { Smartphone, Search, Zap, Code2, Layers } from 'lucide-react'
+﻿import { Smartphone, Search, Zap, Code2, Layers } from 'lucide-react'
 
 export default function WebDevIntro() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="grid lg:grid-cols-[55%_45%] gap-8 lg:gap-14 items-center">
 

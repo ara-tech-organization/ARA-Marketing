@@ -1,4 +1,4 @@
-import { Target, Eye, Zap, Globe, Rocket, TrendingUp, Lightbulb, Cpu, ArrowRight } from 'lucide-react'
+﻿import { Target, Eye, Zap, Globe, Rocket, TrendingUp, Lightbulb, Cpu, ArrowRight } from 'lucide-react'
 
 import missionImage from '../../assets/About/A2.webp'
 import visionImage from '../../assets/About/A3.webp'
@@ -17,7 +17,7 @@ const visionPoints = [
 
 export default function AboutMV() {
   return (
-    <section id="our-story" className="relative overflow-hidden py-20 sm:py-28"
+    <section id="our-story" className="relative overflow-hidden py-20 sm:py-18"
       style={{ background: '#f0f9ff' }}>
 
       {/* ── Background decorations ── */}

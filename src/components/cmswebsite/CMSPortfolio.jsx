@@ -1,4 +1,4 @@
-import { ShoppingCart, GraduationCap, Building2, User, Wrench, Trophy, TrendingUp, Star, Award, CheckCircle2 } from 'lucide-react'
+﻿import { ShoppingCart, GraduationCap, Building2, User, Wrench, Trophy, TrendingUp, Star, Award, CheckCircle2 } from 'lucide-react'
 import wpEcomImg      from '../../assets/Wordpress/e-commerce.webp'
 import wpEduImg       from '../../assets/Wordpress/educational.webp'
 import wpCorpImg      from '../../assets/Wordpress/Corporate.webp'
@@ -55,7 +55,7 @@ const industries = [
 
 export default function CMSPortfolio() {
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden"
+    <section className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#f8faff 0%,#eff6ff 50%,#f0f9ff 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
