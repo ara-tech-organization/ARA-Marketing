@@ -80,7 +80,7 @@ export default function MAHero() {
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
                 }}>
-                  iOS &amp; Android
+                  IOS &amp; Android
                 </span>
               </span>
             </h1>
