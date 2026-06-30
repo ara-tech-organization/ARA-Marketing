@@ -89,9 +89,9 @@ export default function WAHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="leading-[1.15] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff', fontWeight: 700, fontSize: 'min(4.5vw, 32px)' }}>
-              <span style={{ display: 'block' }}>Power Your Business with</span>
-              <span style={{ display: 'block', ...gradBlue }}>Advanced Web App Solutions</span>
+            <h1 className="leading-[1.15] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff', fontWeight: 700, fontSize: 'min(3vw, 18px)' }}>
+              <span style={{ display: 'block' }}>Power Your Business</span>
+              <span style={{ display: 'block', ...gradBlue }}>with Advanced Web App Solutions</span>
             </h1>
 
             {/* Tagline */}

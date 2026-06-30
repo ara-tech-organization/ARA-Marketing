@@ -5,7 +5,7 @@ import {
   ArrowRight, Menu, X, ChevronDown,
   Search, Share2, TrendingUp, Palette, Video, Sparkles,
   Layout, Zap, Globe, ShoppingCart, Building2, Code2, Smartphone,
-  Info, Phone
+  Info, Phone, Tag
 } from 'lucide-react'
 
 const digitalMarketingItems = [
@@ -257,6 +257,12 @@ export default function Navbar() {
                 About Us
               </Link>
 
+              {/* Price Details */}
+              <Link to="/price-details" onClick={closeAll} className={navBtnClass(isActive('/price-details'), false)}>
+                <Tag size={14} className="opacity-50" />
+                Pricing
+              </Link>
+
               {/* Contact Us */}
               <Link to="/contact-us" onClick={closeAll} className={navBtnClass(isActive('/contact-us'), false)}>
                 <Phone size={14} className="opacity-50" />
@@ -445,6 +451,24 @@ export default function Navbar() {
               <Info size={13} className={isActive('/about-us') ? 'text-blue-400' : 'text-indigo-400'} />
             </span>
             About Us
+          </Link>
+
+          {/* Price Details */}
+          <Link
+            to="/price-details"
+            onClick={() => setOpen(false)}
+            className={`flex items-center gap-3 py-4 px-4 rounded-2xl text-[13.5px] font-semibold
+              border transition-all duration-200
+              ${isActive('/price-details')
+                ? 'text-blue-700 bg-blue-50 border-blue-200'
+                : 'text-blue-600 bg-slate-50 hover:bg-blue-50 hover:text-blue-700 border-blue-100'
+              }`}
+          >
+            <span className={`w-7 h-7 rounded-lg flex items-center justify-center
+              ${isActive('/price-details') ? 'bg-blue-600/25' : 'bg-amber-600/20'}`}>
+              <Tag size={13} className={isActive('/price-details') ? 'text-blue-400' : 'text-amber-500'} />
+            </span>
+            Pricing
           </Link>
 
           {/* Contact Us */}
