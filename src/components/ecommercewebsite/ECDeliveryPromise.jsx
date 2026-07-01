@@ -11,7 +11,7 @@ const promises = [
 
 export default function ECDeliveryPromise() {
   return (
-    <section className="relative py-16 sm:py-16 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-16 overflow-hidden" style={{ background: '#f0f9ff' }}>
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '30px 30px' }} />
@@ -96,7 +96,7 @@ export default function ECDeliveryPromise() {
 
         {/* ── Bottom SEO + CTA ── */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 p-7 rounded-3xl"
-          style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.05),rgba(14,165,233,0.05))', border: '1px solid rgba(37,99,235,0.1)' }}>
+          style={{ background: 'white', border: '1px solid #dbeafe', boxShadow: '0 4px 16px rgba(37,99,235,0.06)' }}>
           <p className="text-[13.5px] text-slate-500 leading-[1.8] max-w-2xl">
             We are the best e-commerce web design and development company in Thanjavur, offering business-focused solutions with high performance. We provide custom e-commerce website development services in Thanjavur and advanced e-commerce web application development in Thanjavur.
           </p>

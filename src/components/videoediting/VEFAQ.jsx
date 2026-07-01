@@ -38,7 +38,7 @@ export default function VEFAQ() {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 50%,#e0f2fe 100%)' }}>
+      style={{ background: '#ffffff' }}>
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />

@@ -56,23 +56,20 @@ const reasons = [
 function WhyCard({ num, Icon, title, body, color, tag }) {
   return (
     <div
-      className="group relative rounded-3xl p-5 sm:p-6 lg:p-7 overflow-hidden transition-all duration-300 cursor-default"
+      className="group relative rounded-3xl p-5 sm:p-6 lg:p-7 overflow-hidden transition-all duration-300 cursor-default bg-white"
       style={{
-        background: 'rgba(255,255,255,0.04)',
-        border: '1.5px solid rgba(255,255,255,0.08)',
-        boxShadow: '0 4px 24px rgba(0,0,0,0.18)',
+        border: '1.5px solid rgba(37,99,235,0.12)',
+        boxShadow: '0 4px 20px rgba(37,99,235,0.06)',
       }}
       onMouseEnter={e => {
-        e.currentTarget.style.borderColor = `${color}66`
-        e.currentTarget.style.boxShadow = `0 20px 50px ${color}22, 0 4px 24px rgba(0,0,0,0.22)`
+        e.currentTarget.style.borderColor = `${color}55`
+        e.currentTarget.style.boxShadow = `0 20px 50px ${color}18, 0 4px 20px rgba(37,99,235,0.08)`
         e.currentTarget.style.transform = 'translateY(-5px)'
-        e.currentTarget.style.background = 'rgba(255,255,255,0.065)'
       }}
       onMouseLeave={e => {
-        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'
-        e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.18)'
+        e.currentTarget.style.borderColor = 'rgba(37,99,235,0.12)'
+        e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.06)'
         e.currentTarget.style.transform = 'none'
-        e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
       }}
     >
 
@@ -108,12 +105,12 @@ function WhyCard({ num, Icon, title, body, color, tag }) {
         Reason {num}
       </p>
 
-      <h3 className="text-[13px] sm:text-[14px] lg:text-[15px] font-bold mb-2.5 leading-snug" style={{ color: '#ffffff' }}>
+      <h3 className="text-[13px] sm:text-[14px] lg:text-[15px] font-bold mb-2.5 leading-snug" style={{ color: '#0f172a' }}>
         {title}
       </h3>
       <p
         className="text-[11.5px] sm:text-[12.5px] lg:text-[13px] leading-[1.80]"
-        style={{ color: 'rgba(255,255,255,0.50)' }}
+        style={{ color: '#64748b' }}
       >
         {body}
       </p>
@@ -137,7 +134,7 @@ export default function EWWhyUs() {
   return (
     <section
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(145deg,#040e1f 0%,#0d2244 55%,#060f22 100%)' }}
+      style={{ background: '#f0f9ff' }}
     >
 
       {/* Dot grid overlay */}
@@ -152,13 +149,13 @@ export default function EWWhyUs() {
       {/* Purple orb — top-right */}
       <div
         className="hidden md:block absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }}
       />
 
       {/* Cyan orb — bottom-left */}
       <div
         className="hidden md:block absolute bottom-0 left-0 w-[340px] h-[340px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.10) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.10) 0%, transparent 65%)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
@@ -168,22 +165,22 @@ export default function EWWhyUs() {
           <span
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-5"
             style={{
-              background: 'rgba(124,58,237,0.18)',
-              border: '1px solid rgba(167,139,250,0.28)',
-              color: '#c4b5fd',
+              background: 'rgba(37,99,235,0.10)',
+              border: '1px solid rgba(37,99,235,0.20)',
+              color: '#2563eb',
             }}
           >
             <Award size={9} /> Why Choose Us
           </span>
           <h2
             className="text-[clamp(20px,4vw,46px)] font-bold leading-[1.10] tracking-tight mb-4"
-            style={{ color: '#ffffff' }}
+            style={{ color: '#0f172a' }}
           >
             Why ARA Discover Marketing{' '}
             <br className="hidden sm:block lg:hidden" />
             <span
               style={{
-                background: 'linear-gradient(135deg,#a78bfa,#38bdf8)',
+                background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -194,7 +191,7 @@ export default function EWWhyUs() {
           </h2>
           <p
             className="text-[12.5px] sm:text-[14px] leading-[1.85] max-w-[500px] mx-auto px-2 sm:px-0"
-            style={{ color: 'rgba(255,255,255,0.40)' }}
+            style={{ color: '#64748b' }}
           >
             Five compelling reasons enterprises across Thanjavur and beyond trust us for their most critical digital initiatives.
           </p>

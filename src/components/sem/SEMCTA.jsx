@@ -1,16 +1,16 @@
 import {
-  ArrowRight, Zap, CheckCircle2, TrendingUp, Target,
-  Users, BarChart2, Search, Monitor, Play, ShoppingBag, Activity,
+  ArrowRight, Zap, CheckCircle2, TrendingUp,
+  BarChart2, Search, Monitor, Play, ShoppingBag, Activity, Users,
 } from 'lucide-react'
 
 const packageItems = [
-  { icon: Search,       label: 'AI-Powered Keyword & Audience Research', color: '#2563eb' },
-  { icon: Zap,          label: 'Google Search Ads Campaign Setup',        color: '#7c3aed' },
-  { icon: Monitor,      label: 'Display & YouTube Advertising',           color: '#0891b2' },
-  { icon: ShoppingBag,  label: 'Shopping Ads Management',                 color: '#059669' },
-  { icon: Activity,     label: 'Conversion Tracking Integration',         color: '#dc2626' },
-  { icon: BarChart2,    label: 'Monthly Performance Reports',             color: '#d97706' },
-  { icon: Users,        label: 'Dedicated PPC Campaign Manager',          color: '#0f766e' },
+  { icon: Search,      label: 'AI-Powered Keyword & Audience Research' },
+  { icon: Zap,         label: 'Google Search Ads Campaign Setup' },
+  { icon: Monitor,     label: 'Display & YouTube Advertising' },
+  { icon: ShoppingBag, label: 'Shopping Ads Management' },
+  { icon: Activity,    label: 'Conversion Tracking Integration' },
+  { icon: BarChart2,   label: 'Monthly Performance Reports' },
+  { icon: Users,       label: 'Dedicated PPC Campaign Manager' },
 ]
 
 export default function SEMCTA() {
@@ -39,7 +39,9 @@ export default function SEMCTA() {
 
           <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
             Are You Ready to Generate More Leads{' '}
-            <span className="text-gradient-blue">Through Google Ads?</span>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              Through Google Ads?
+            </span>
           </h2>
 
           <p className="text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[600px] mx-auto">
@@ -49,9 +51,9 @@ export default function SEMCTA() {
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-4 mb-10">
             <a href="/ARA-Marketing/contact-us"
-              className="btn-glow inline-flex items-center gap-2 px-6 py-2.5 rounded-full
-                text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ boxShadow: '0 10px 36px rgba(124,58,237,0.30)' }}>
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full
+                text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
+              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>
               Get Free PPC Consultation <ArrowRight size={16} />
             </a>
             <a href="#sem-services"
@@ -63,48 +65,64 @@ export default function SEMCTA() {
           </div>
         </div>
 
-        {/* ── Package strip ── */}
-        <div className="reveal rounded-3xl overflow-hidden border border-blue-100/80"
-          style={{ boxShadow: '0 12px 48px rgba(37,99,235,0.09)' }}>
+        {/* ── Package card ── */}
+        <div className="reveal rounded-3xl overflow-hidden border border-blue-100"
+          style={{ boxShadow: '0 20px 60px rgba(37,99,235,0.10)' }}>
 
-          {/* Header bar */}
-          <div className="flex items-center gap-3 px-6 py-4 bg-white border-b border-blue-100">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#6366f1)', boxShadow: '0 4px 14px rgba(37,99,235,0.28)' }}>
-              <TrendingUp size={16} />
-            </div>
-            <div>
-              <p className="text-[13px] font-bold text-slate-800">Google Ads Growth Package</p>
-              <p className="text-[11px] text-slate-400">Everything you need to grow with paid advertising</p>
+          {/* Gradient header */}
+          <div className="relative px-8 py-7 overflow-hidden"
+            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
+            {/* Decorative ring */}
+            <div className="absolute -top-8 -right-8 w-40 h-40 rounded-full pointer-events-none"
+              style={{ border: '1.5px solid rgba(255,255,255,0.15)' }} />
+            <div className="absolute -bottom-10 right-24 w-24 h-24 rounded-full pointer-events-none"
+              style={{ border: '1px solid rgba(255,255,255,0.10)' }} />
+
+            <div className="relative flex items-center gap-4">
+              <div className="w-11 h-11 rounded-2xl flex items-center justify-center flex-shrink-0"
+                style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.25)' }}>
+                <TrendingUp size={18} className="text-white" />
+              </div>
+              <div>
+                <p className="text-[15px] font-bold text-white leading-snug">Google Ads Growth Package</p>
+                <p className="text-[12px] text-blue-100/80">Everything you need to grow with paid advertising</p>
+              </div>
             </div>
           </div>
 
-          {/* Items as even 2-col grid */}
-          <div className="grid grid-cols-2 gap-3 px-6 py-5 bg-white">
-            {packageItems.map(({ icon: Icon, label, color }, i) => (
-              <div key={label}
-                className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl border
-                  hover:shadow-md transition-all duration-200${i === packageItems.length - 1 && packageItems.length % 2 !== 0 ? ' col-span-2' : ''}`}
-                style={{
-                  background: `${color}07`,
-                  borderColor: `${color}20`,
-                }}>
-                <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: `linear-gradient(135deg,${color},${color}bb)` }}>
-                  <Icon size={12} className="text-white" />
+          {/* Items grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 bg-white">
+            {packageItems.map(({ icon: Icon, label }, i) => {
+              const isLast = i === packageItems.length - 1
+              const isOdd = packageItems.length % 2 !== 0
+              return (
+                <div key={label}
+                  className={`group flex items-center gap-3.5 px-6 py-4 transition-all duration-200
+                    hover:bg-blue-50/60 cursor-default
+                    ${isLast && isOdd ? 'sm:col-span-2' : ''}
+                    ${i < packageItems.length - (isOdd ? 1 : 2) ? 'border-b border-blue-50' : ''}
+                    ${i % 2 === 0 && !isLast ? 'sm:border-r sm:border-blue-50' : ''}
+                  `}>
+                  <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-200 group-hover:scale-110"
+                    style={{ background: 'linear-gradient(135deg,#eff6ff,#e0f2fe)', border: '1px solid #bfdbfe' }}>
+                    <Icon size={14} style={{ color: '#2563eb' }} />
+                  </div>
+                  <span className="text-[13px] font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-200">
+                    {label}
+                  </span>
+                  <CheckCircle2 size={13} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex-shrink-0"
+                    style={{ color: '#0ea5e9' }} />
                 </div>
-                <span className="text-[12.5px] font-semibold text-slate-700">{label}</span>
-              </div>
-            ))}
+              )
+            })}
           </div>
 
           {/* Footer */}
-          <div className="flex flex-wrap items-center justify-center gap-5 px-6 py-3.5 border-t border-blue-100"
-            style={{ background: 'linear-gradient(135deg,#eff6ff,#f8faff)' }}>
-            {['No setup fees', 'Cancel anytime', 'Monthly transparent reporting'].map((t, i) => (
-              <span key={t} className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium">
-                {i > 0 && <span className="w-px h-3 bg-slate-200 mr-3" />}
-                <CheckCircle2 size={11} className="text-blue-400" /> {t}
+          <div className="flex flex-wrap items-center justify-center gap-6 px-6 py-4 border-t border-blue-100"
+            style={{ background: '#f8fbff' }}>
+            {['No setup fees', 'Cancel anytime', 'Monthly transparent reporting'].map((t) => (
+              <span key={t} className="flex items-center gap-1.5 text-[12px] text-slate-500 font-medium">
+                <CheckCircle2 size={12} style={{ color: '#2563eb' }} /> {t}
               </span>
             ))}
           </div>

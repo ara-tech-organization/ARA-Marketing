@@ -78,7 +78,7 @@ export default function VEServices() {
 
   return (
     <section id="ve-services" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}>
+      style={{ background: '#f0f9ff' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

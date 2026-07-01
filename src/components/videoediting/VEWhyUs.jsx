@@ -11,7 +11,7 @@ const reasons = [
 
 export default function VEWhyUs() {
   return (
-    <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#f0f6ff' }}>
+    <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#ffffff' }}>
 
       {/* BG decorations */}
       <div className="absolute inset-0 pointer-events-none"
