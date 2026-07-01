@@ -131,7 +131,7 @@ export default function Pricing() {
 
                   {/* Price */}
                   <div className="mb-6">
-                    <span className="text-[clamp(28px,3vw,36px)] font-black text-slate-900"
+                    <span className="text-[clamp(28px,3vw,36px)] font-bold text-slate-900"
                       style={{ color: plan.color }}>
                       {plan.price}
                     </span>

@@ -2,37 +2,40 @@ import { useState, useEffect, useRef } from 'react'
 import { Star, ArrowRight, Zap, TrendingUp, Eye, BarChart3, Award, Target } from 'lucide-react'
 
 const stats = [
-  { val: '150+', num: 150, suffix: '+', label: 'Projects Completed',  icon: Award,     color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#1d4ed8)' },
-  { val: '95%',  num: 95,  suffix: '%', label: 'Client Satisfaction', icon: Star,      color: '#059669', bg: '#ecfdf5', border: '#a7f3d0', grad: 'linear-gradient(135deg,#059669,#047857)' },
-  { val: '120+', num: 120, suffix: '+', label: 'SEO Campaigns',       icon: TrendingUp, color: '#7c3aed', bg: '#f5f3ff', border: '#ddd6fe', grad: 'linear-gradient(135deg,#7c3aed,#6d28d9)' },
-  { val: '200%', num: 200, suffix: '%', label: 'Visibility Growth',   icon: Eye,       color: '#d97706', bg: '#fffbeb', border: '#fde68a', grad: 'linear-gradient(135deg,#f59e0b,#d97706)' },
-  { val: '100+', num: 100, suffix: '+', label: 'Brands Promoted',     icon: Target,    color: '#0891b2', bg: '#ecfeff', border: '#a5f3fc', grad: 'linear-gradient(135deg,#0891b2,#0e7490)' },
+  { val: '150+', num: 150, suffix: '+', label: 'Projects Completed',  icon: Award,      color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)' },
+  { val: '95%',  num: 95,  suffix: '%', label: 'Client Satisfaction', icon: Star,       color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)' },
+  { val: '120+', num: 120, suffix: '+', label: 'SEO Campaigns',       icon: TrendingUp, color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)' },
+  { val: '200%', num: 200, suffix: '%', label: 'Visibility Growth',   icon: Eye,        color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)' },
+  { val: '100+', num: 100, suffix: '+', label: 'Brands Promoted',     icon: Target,     color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)' },
 ]
 
 const cards = [
   {
     eyebrow: 'Strategy',
     icon: TrendingUp,
+    iconBg: '#eff6ff',
+    iconBorder: '#bfdbfe',
+    iconColor: '#2563eb',
     title: 'AI-driven campaigns built to scale brands faster.',
     body: 'Smarter targeting, sharper planning, and consistent optimisation for long-term growth.',
-    accent: '#2563eb',
-    grad: 'linear-gradient(135deg,#1e40af,#2563eb)',
   },
   {
     eyebrow: 'Focus',
     icon: Eye,
+    iconBg: '#f0f9ff',
+    iconBorder: '#bae6fd',
+    iconColor: '#0ea5e9',
     title: 'Better visibility, stronger leads, sustainable growth.',
     body: 'We put your brand in front of the right audience at the right time — every time.',
-    accent: '#7c3aed',
-    grad: 'linear-gradient(135deg,#6d28d9,#7c3aed)',
   },
   {
     eyebrow: 'Summary',
     icon: BarChart3,
+    iconBg: '#eff6ff',
+    iconBorder: '#bfdbfe',
+    iconColor: '#2563eb',
     title: 'Performance-first digital marketing for ambitious brands.',
     body: 'We combine AI insights with practical execution to help businesses grow faster without losing consistency.',
-    accent: '#059669',
-    grad: 'linear-gradient(135deg,#047857,#059669)',
   },
 ]
 
@@ -122,39 +125,39 @@ export default function WhyUs() {
   })
 
   return (
-    <section id="why-us" ref={sectionRef} className="relative overflow-hidden py-16 sm:py-20"
-      style={{ background: 'linear-gradient(160deg, #f8faff 0%, #ffffff 50%, #f3f0ff 100%)' }}>
+    <section id="why-us" ref={sectionRef} className="relative overflow-hidden py-16 sm:py-20 bg-white">
 
-      {/* Dot grid */}
+      {/* Dot grid — matches about page */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.07) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
-      {/* Orbs */}
-      <div className="absolute -top-28 -right-28 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.07) 0%, transparent 65%)' }} />
-      <div className="absolute -bottom-20 -left-20 w-[360px] h-[360px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+      {/* Orbs — matches about page */}
+      <div className="absolute pointer-events-none rounded-full"
+        style={{ top: '-8%', right: '-6%', width: '480px', height: '480px', background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+      <div className="absolute pointer-events-none rounded-full"
+        style={{ bottom: '-6%', left: '-4%', width: '360px', height: '360px', background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
 
-      {/* Spinning ring decoration */}
-      <div className="hidden lg:block absolute top-10 right-10 w-[220px] h-[220px] rounded-full pointer-events-none"
-        style={{ border: '1.5px solid rgba(124,58,237,0.07)', animation: 'spin 60s linear infinite' }} />
+      {/* Decorative rings — matches about page */}
+      <div className="absolute hidden lg:block pointer-events-none rounded-full"
+        style={{ top: '30%', left: '-3%', width: '160px', height: '160px', border: '1.5px dashed rgba(14,165,233,0.25)' }} />
+      <div className="absolute hidden lg:block pointer-events-none"
+        style={{ top: '15%', right: '8%', width: '40px', height: '40px', border: '1.5px solid rgba(37,99,235,0.2)', borderRadius: '8px', transform: 'rotate(25deg)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* ── Header ── */}
         <div className="text-center mb-12 sm:mb-14" style={anim(0)}>
 
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
-            style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
-            <Zap size={9} /> Growth Metrics
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+            style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
+            <Zap size={11} /> Growth Metrics
           </span>
 
-          <h2 className="font-black text-slate-900 leading-[1.15] tracking-tight mb-4"
-            style={{ fontSize: 'clamp(24px,3.5vw,50px)' }}>
-            Delivering Measurable Growth
-            <br className="hidden sm:block" />{' '}
+          <h2 className="font-bold text-slate-900 leading-tight tracking-tight mb-4"
+            style={{ fontSize: 'clamp(24px,3.5vw,43px)' }}>
+            Delivering Measurable Growth{' '}
             <span style={{
-              background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
+              background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -179,7 +182,7 @@ export default function WhyUs() {
             <span className="w-px h-4 bg-slate-200 hidden sm:block" />
             <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:gap-3"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.3)' }}>
               Get Started <ArrowRight size={13} />
             </a>
           </div>
@@ -197,43 +200,38 @@ export default function WhyUs() {
           ))}
         </div>
 
-        {/* ── Feature cards ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8" style={anim(500)}>
-          {cards.map(({ eyebrow, icon: Icon, title, body, accent, grad }) => (
-            <div
-              key={eyebrow}
-              className="group bg-white rounded-2xl overflow-hidden cursor-default transition-all duration-300"
-              style={{ border: `1.5px solid ${accent}18`, boxShadow: '0 2px 14px rgba(0,0,0,0.05)' }}
-              onMouseEnter={e => {
-                e.currentTarget.style.borderColor = accent + '40'
-                e.currentTarget.style.boxShadow = `0 18px 44px ${accent}14`
-                e.currentTarget.style.transform = 'translateY(-5px)'
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.borderColor = accent + '18'
-                e.currentTarget.style.boxShadow = '0 2px 14px rgba(0,0,0,0.05)'
-                e.currentTarget.style.transform = 'none'
-              }}
-            >
-              {/* Gradient top strip */}
-              <div className="h-[72px] flex items-center px-5 gap-3" style={{ background: grad }}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110"
-                  style={{ background: 'rgba(255,255,255,0.18)', border: '1.5px solid rgba(255,255,255,0.28)' }}>
-                  <Icon size={17} className="text-white" />
-                </div>
-                <span className="text-[10px] font-black uppercase tracking-[0.18em]"
-                  style={{ color: 'rgba(255,255,255,0.85)' }}>{eyebrow}</span>
+        {/* ── Editorial feature rows — no boxes ── */}
+        <div className="flex flex-col mt-10" style={anim(460)}>
+          {cards.map(({ eyebrow, icon: Icon, iconColor, title, body }, i) => (
+            <div key={eyebrow}
+              className="group relative flex items-start gap-5 sm:gap-8 py-8 cursor-default
+                transition-all duration-300 pl-0 hover:pl-3"
+              style={{ borderBottom: i < 2 ? '1px solid #e8f0fe' : 'none' }}>
+
+
+              {/* Icon */}
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center
+                transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+                style={{
+                  background: `linear-gradient(135deg, ${iconColor}18, ${iconColor}08)`,
+                  border: `1.5px solid ${iconColor}30`,
+                  boxShadow: `0 8px 24px ${iconColor}14`,
+                }}>
+                <Icon size={22} style={{ color: iconColor }} />
               </div>
 
-              {/* Body */}
-              <div className="p-5 pb-4">
-                <h3 className="text-[13.5px] font-bold text-slate-800 leading-snug mb-2">{title}</h3>
-                <p className="text-[12px] text-slate-500 leading-[1.75]">{body}</p>
+              {/* Vertical accent line */}
+              <div className="hidden sm:block w-px self-stretch flex-shrink-0 my-1 transition-all duration-300"
+                style={{ background: `linear-gradient(180deg, ${iconColor}55, transparent)` }} />
+
+              {/* Content */}
+              <div className="flex-1 min-w-0 pt-1">
+                <span className="text-[10px] font-black uppercase tracking-[0.22em] block mb-2"
+                  style={{ color: iconColor }}>{eyebrow}</span>
+                <h3 className="text-[16px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
+                <p className="text-[13.5px] text-slate-500 leading-[1.85]">{body}</p>
               </div>
 
-              {/* Bottom sweep bar */}
-              <div className="mx-5 mb-4 h-[2px] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left"
-                style={{ background: grad }} />
             </div>
           ))}
         </div>
