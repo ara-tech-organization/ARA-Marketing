@@ -46,27 +46,36 @@ const introColumns = [
   {
     icon: Zap,
     eyebrow: 'Who We Are',
-    color: '#60a5fa',
+    iconBg: '#eff6ff',
+    iconBorder: '#bfdbfe',
+    iconColor: '#2563eb',
+    borderColor: '#bfdbfe',
     text: 'If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, ARA Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.',
   },
   {
     icon: Target,
     eyebrow: 'What We Do',
-    color: '#a78bfa',
+    iconBg: '#f0f9ff',
+    iconBorder: '#bae6fd',
+    iconColor: '#0ea5e9',
+    borderColor: '#bae6fd',
     text: "In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. ARA Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.",
   },
   {
     icon: BarChart,
     eyebrow: 'Why Choose Us',
-    color: '#34d399',
+    iconBg: '#eff6ff',
+    iconBorder: '#bfdbfe',
+    iconColor: '#2563eb',
+    borderColor: '#bfdbfe',
     text: "ARA Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.",
   },
 ]
 
 const introStats = [
-  { val: '500+', label: 'Clients Served',     color: '#60a5fa' },
-  { val: '5.0★', label: 'Google Rating',      color: '#fbbf24' },
-  { val: '98%',  label: 'Client Satisfaction', color: '#34d399' },
+  { val: '500+', label: 'Clients Served',      color: '#2563eb' },
+  { val: '5.0★', label: 'Google Rating',       color: '#0ea5e9' },
+  { val: '98%',  label: 'Client Satisfaction',  color: '#2563eb' },
 ]
 
 const introChips = [
@@ -82,45 +91,45 @@ export default function Services() {
       {/* ══════════════════════════════════════════════════════
           FULL-WIDTH EDITORIAL INTRO — Result-Driven block
       ══════════════════════════════════════════════════════ */}
-      <div className="relative w-full overflow-hidden"
+      <div className="relative w-full overflow-hidden py-16 sm:py-20"
         style={{ background: '#f0f9ff' }}>
 
-        {/* Dot pattern overlay */}
-        <div className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage: 'radial-gradient(rgba(37,99,235,0.08) 1.5px, transparent 1.5px)',
-            backgroundSize: '32px 32px',
-          }} />
-
-        {/* Glow orbs — same as AboutMV */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.6) 0%, transparent 65%)', transform: 'translate(30%,-40%)' }} />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] pointer-events-none rounded-full"
-          style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.7) 0%, transparent 65%)', transform: 'translate(-25%,40%)' }} />
+        {/* Background decorations — identical to AboutMV */}
+        <div className="absolute pointer-events-none rounded-full"
+          style={{ top: '-5%', right: '-4%', width: '320px', height: '320px',
+            background: 'radial-gradient(circle, rgba(186,230,253,0.6) 0%, transparent 65%)' }} />
+        <div className="absolute pointer-events-none rounded-full"
+          style={{ bottom: '-5%', left: '-4%', width: '260px', height: '260px',
+            background: 'radial-gradient(circle, rgba(219,234,254,0.7) 0%, transparent 65%)' }} />
         <div className="absolute pointer-events-none rounded-full hidden lg:block"
-          style={{ top: '30%', left: '-2%', width: '160px', height: '160px', border: '1.5px dashed rgba(14,165,233,0.25)' }} />
+          style={{ top: '30%', left: '-3%', width: '160px', height: '160px',
+            border: '1.5px dashed rgba(14,165,233,0.25)' }} />
+        <div className="absolute pointer-events-none rounded-full hidden lg:block"
+          style={{ bottom: '20%', right: '-2%', width: '110px', height: '110px',
+            border: '1.5px solid rgba(37,99,235,0.15)' }} />
         <div className="absolute pointer-events-none hidden lg:block"
-          style={{ top: '12%', right: '6%', width: '40px', height: '40px', border: '1.5px solid rgba(37,99,235,0.2)', borderRadius: '8px', transform: 'rotate(25deg)' }} />
+          style={{ top: '15%', right: '8%', width: '40px', height: '40px',
+            border: '1.5px solid rgba(37,99,235,0.2)', borderRadius: '8px', transform: 'rotate(25deg)' }} />
 
-        <div className="relative max-w-[1440px] mx-auto px-6 sm:px-12 xl:px-24 py-16 sm:py-20">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 xl:px-24">
 
-          {/* ── Zone 1: Heading + Stats ── */}
+          {/* ── Zone 1: Badge + Heading + Stats ── */}
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 lg:gap-20 items-start mb-12">
 
             {/* Left — badge + heading */}
             <div>
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full
-                text-[10px] font-black uppercase tracking-[0.18em] mb-5"
-                style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
-                <TrendingUp size={9} /> Digital Marketing Services
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
+                text-[11px] font-bold uppercase tracking-widest mb-5"
+                style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe',
+                  boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
+                <Zap size={11} /> Digital Marketing Services
               </span>
 
-              <h2 className="font-bold leading-[1.13] tracking-tight"
-                style={{ fontSize: 'clamp(26px,3.6vw,54px)', color: '#0f172a' }}>
-                Result-Driven Digital Marketing
-                <br />
+              <h2 className="font-bold text-slate-900 leading-tight tracking-tight"
+                style={{ fontSize: 'clamp(26px,3.6vw,50px)' }}>
+                Result-Driven Digital Marketing{' '}
                 <span style={{
-                  background: 'linear-gradient(90deg,#2563eb,#7c3aed)',
+                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -135,66 +144,62 @@ export default function Services() {
               {introStats.map(({ val, label, color }) => (
                 <div key={label}
                   className="flex items-center gap-3 px-5 py-3.5 rounded-2xl"
-                  style={{
-                    background: '#ffffff',
-                    border: '1px solid rgba(37,99,235,0.14)',
-                    boxShadow: '0 2px 12px rgba(37,99,235,0.08)',
-                  }}>
+                  style={{ background: 'white', border: '1px solid #dbeafe',
+                    boxShadow: '0 16px 48px rgba(37,99,235,0.08)' }}>
                   <span className="text-[22px] font-black leading-none" style={{ color }}>{val}</span>
-                  <span className="text-[10px] font-bold uppercase tracking-wider"
-                    style={{ color: '#64748b' }}>{label}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">{label}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Separator */}
-          <div className="h-px mb-10"
-            style={{ background: 'linear-gradient(90deg,transparent,rgba(37,99,235,0.18),transparent)' }} />
+          {/* Dot divider — identical to AboutMV */}
+          <div className="flex items-center gap-4 mb-12">
+            <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,transparent,#bfdbfe)' }} />
+            <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
+            <div className="w-2 h-2 rounded-full" style={{ background: '#0ea5e9' }} />
+            <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
+            <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#bfdbfe,transparent)' }} />
+          </div>
 
           {/* ── Zone 2: 3 feature columns ── */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-            {introColumns.map(({ icon: Icon, eyebrow, color, text }) => (
-              <div key={eyebrow} className="rounded-2xl p-6"
-                style={{
-                  background: '#ffffff',
-                  border: `1px solid ${color}28`,
-                  borderLeft: `3px solid ${color}`,
-                  boxShadow: '0 2px 16px rgba(37,99,235,0.07)',
-                }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            {introColumns.map(({ icon: Icon, eyebrow, iconBg, iconBorder, iconColor, borderColor, text }) => (
+              <div key={eyebrow} className="rounded-[20px] p-6 group"
+                style={{ background: 'white', border: `1.5px solid ${borderColor}`,
+                  boxShadow: '0 16px 48px rgba(37,99,235,0.08)' }}>
                 <div className="flex items-center gap-2.5 mb-4">
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: `${color}14`, border: `1px solid ${color}30` }}>
-                    <Icon size={14} style={{ color }} />
+                  <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0
+                    transition-all duration-300 group-hover:scale-110"
+                    style={{ background: iconBg, border: `1px solid ${iconBorder}` }}>
+                    <Icon size={14} style={{ color: iconColor }} />
                   </div>
-                  <span className="text-[10px] font-black uppercase tracking-[0.16em]"
-                    style={{ color }}>{eyebrow}</span>
+                  <span className="text-[11px] font-bold uppercase tracking-widest"
+                    style={{ color: iconColor }}>{eyebrow}</span>
                 </div>
-                <p className="text-[13px] leading-[1.82]"
-                  style={{ color: '#475569' }}>{text}</p>
+                <p className="text-[13.5px] leading-[1.85] text-slate-500">{text}</p>
+                {/* Bottom accent line — identical to AboutMV */}
+                <div className="mt-5 h-[3px] w-16 rounded-full"
+                  style={{ background: `linear-gradient(90deg,${iconColor},#0ea5e9)` }} />
               </div>
             ))}
           </div>
 
           {/* ── Zone 3: chips ── */}
-          <div className="flex flex-wrap justify-center gap-2.5 pt-8"
-            style={{ borderTop: '1px solid rgba(37,99,235,0.12)' }}>
+          <div className="flex flex-wrap justify-center gap-3 pt-8"
+            style={{ borderTop: '1px solid #bfdbfe' }}>
             {introChips.map(item => (
               <div key={item}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
-                style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.18)', boxShadow: '0 1px 6px rgba(37,99,235,0.07)' }}>
-                <CheckCircle size={12} style={{ color: '#059669', flexShrink: 0 }} />
-                <span className="text-[12.5px] font-medium"
-                  style={{ color: '#1e3a5f' }}>{item}</span>
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full"
+                style={{ background: 'white', border: '1px solid #bfdbfe',
+                  boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
+                <CheckCircle size={13} style={{ color: '#2563eb', flexShrink: 0 }} />
+                <span className="text-[13px] font-medium text-slate-700">{item}</span>
               </div>
             ))}
           </div>
 
         </div>
-
-        {/* Bottom separator */}
-        <div className="h-px"
-          style={{ background: 'linear-gradient(90deg,transparent,rgba(37,99,235,0.15),transparent)' }} />
       </div>
 
 
