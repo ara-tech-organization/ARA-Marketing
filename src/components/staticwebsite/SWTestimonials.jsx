@@ -76,7 +76,7 @@ export default function SWTestimonials() {
               <div className="flex items-center justify-between mb-3 pt-1">
                 <div className="flex items-center gap-0.5">
                   {Array.from({ length: rating }).map((_, i) => (
-                    <Star key={i} size={12} fill="#f59e0b" style={{ color: '#f59e0b' }} />
+                    <Star key={i} size={12} fill="#60a5fa" style={{ color: '#60a5fa' }} />
                   ))}
                 </div>
                 <div

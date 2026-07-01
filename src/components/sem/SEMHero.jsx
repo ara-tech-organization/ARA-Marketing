@@ -24,8 +24,8 @@ const campaignTypes = [
     label: 'Display Ads',
     roas: 'Wide Reach',
     sub: 'Brand awareness across the web',
-    color: '#7c3aed',
-    grad: 'linear-gradient(140deg,#6d28d9 0%,#8b5cf6 100%)',
+    color: '#2563eb',
+    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
   },
   {
     icon: Play,
@@ -33,8 +33,8 @@ const campaignTypes = [
     label: 'YouTube Ads',
     roas: '5.1x',
     sub: 'Video-led brand campaigns',
-    color: '#0891b2',
-    grad: 'linear-gradient(140deg,#0369a1 0%,#06b6d4 100%)',
+    color: '#0ea5e9',
+    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
   },
   {
     icon: ShoppingBag,
@@ -42,8 +42,8 @@ const campaignTypes = [
     label: 'Shopping Ads',
     roas: '6.3x',
     sub: 'E-commerce product visibility',
-    color: '#059669',
-    grad: 'linear-gradient(140deg,#047857 0%,#10b981 100%)',
+    color: '#2563eb',
+    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
   },
 ]
 
@@ -116,7 +116,7 @@ export default function SEMHero() {
             <a href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full
                 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.30)' }}>
+              style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}>
               Get Free PPC Audit <ArrowRight size={15} />
             </a>
             <a href="#sem-services"

@@ -17,7 +17,7 @@ export default function SWCTA() {
       <div
         className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(8,145,178,0.18) 0%, transparent 65%)',
+          background: 'radial-gradient(circle, rgba(14,165,233,0.18) 0%, transparent 65%)',
           animation: 'float-y 9s ease-in-out infinite',
         }}
       />
@@ -29,14 +29,14 @@ export default function SWCTA() {
       <div
         className="absolute inset-0 pointer-events-none opacity-15"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(8,145,178,0.5) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, rgba(14,165,233,0.5) 1px, transparent 1px)',
           backgroundSize: '44px 44px',
         }}
       />
       {/* Top gradient line */}
       <div
         className="absolute top-0 left-0 right-0 h-[2px]"
-        style={{ background: 'linear-gradient(90deg, transparent, #0891b2, #2563eb, #7c3aed, transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, #0ea5e9, #2563eb, #0ea5e9, transparent)' }}
       />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
@@ -46,7 +46,7 @@ export default function SWCTA() {
           <div className="flex-1 reveal-left">
             <span
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(8,145,178,0.15)', color: '#38bdf8', border: '1px solid rgba(8,145,178,0.3)' }}
+              style={{ background: 'rgba(14,165,233,0.15)', color: '#60a5fa', border: '1px solid rgba(14,165,233,0.3)' }}
             >
               <Rocket size={11} /> Let's Build Together
             </span>
@@ -55,7 +55,7 @@ export default function SWCTA() {
               Let's Build Your{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #38bdf8, #818cf8)',
+                  background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -81,9 +81,9 @@ export default function SWCTA() {
                 <div key={text} className="flex items-center gap-3">
                   <div
                     className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(8,145,178,0.18)', border: '1px solid rgba(8,145,178,0.3)' }}
+                    style={{ background: 'rgba(14,165,233,0.18)', border: '1px solid rgba(14,165,233,0.3)' }}
                   >
-                    <Icon size={13} style={{ color: '#38bdf8' }} />
+                    <Icon size={13} style={{ color: '#60a5fa' }} />
                   </div>
                   <span className="text-[13.5px] font-medium" style={{ color: '#cbd5e1' }}>{text}</span>
                 </div>
@@ -94,11 +94,11 @@ export default function SWCTA() {
             <a
               href="tel:+919876543210"
               className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'rgba(8,145,178,0.15)', border: '1px solid rgba(8,145,178,0.35)' }}
+              style={{ background: 'rgba(14,165,233,0.15)', border: '1px solid rgba(14,165,233,0.35)' }}
             >
               <div
                 className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg, #0891b2, #2563eb)' }}
+                style={{ background: 'linear-gradient(135deg, #0ea5e9, #2563eb)' }}
               >
                 <Phone size={16} className="text-white" />
               </div>
@@ -141,8 +141,8 @@ export default function SWCTA() {
                       border: '1px solid rgba(255,255,255,0.1)',
                     }}
                     onFocus={e => {
-                      e.currentTarget.style.border = '1px solid rgba(8,145,178,0.6)'
-                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(8,145,178,0.12)'
+                      e.currentTarget.style.border = '1px solid rgba(14,165,233,0.6)'
+                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(14,165,233,0.12)'
                     }}
                     onBlur={e => {
                       e.currentTarget.style.border = '1px solid rgba(255,255,255,0.1)'
@@ -165,8 +165,8 @@ export default function SWCTA() {
                       border: '1px solid rgba(255,255,255,0.1)',
                     }}
                     onFocus={e => {
-                      e.currentTarget.style.border = '1px solid rgba(8,145,178,0.6)'
-                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(8,145,178,0.12)'
+                      e.currentTarget.style.border = '1px solid rgba(14,165,233,0.6)'
+                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(14,165,233,0.12)'
                     }}
                     onBlur={e => {
                       e.currentTarget.style.border = '1px solid rgba(255,255,255,0.1)'
@@ -189,8 +189,8 @@ export default function SWCTA() {
                       border: '1px solid rgba(255,255,255,0.1)',
                     }}
                     onFocus={e => {
-                      e.currentTarget.style.border = '1px solid rgba(8,145,178,0.6)'
-                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(8,145,178,0.12)'
+                      e.currentTarget.style.border = '1px solid rgba(14,165,233,0.6)'
+                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(14,165,233,0.12)'
                     }}
                     onBlur={e => {
                       e.currentTarget.style.border = '1px solid rgba(255,255,255,0.1)'
@@ -213,8 +213,8 @@ export default function SWCTA() {
                       border: '1px solid rgba(255,255,255,0.1)',
                     }}
                     onFocus={e => {
-                      e.currentTarget.style.border = '1px solid rgba(8,145,178,0.6)'
-                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(8,145,178,0.12)'
+                      e.currentTarget.style.border = '1px solid rgba(14,165,233,0.6)'
+                      e.currentTarget.style.boxShadow = '0 0 0 3px rgba(14,165,233,0.12)'
                     }}
                     onBlur={e => {
                       e.currentTarget.style.border = '1px solid rgba(255,255,255,0.1)'

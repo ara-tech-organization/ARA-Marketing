@@ -3,14 +3,14 @@ import { HelpCircle, MessageSquare, ArrowRight, Sparkles, Film } from 'lucide-re
 
 const faqs = [
   { q: 'Which company offers the best video editing services in Thanjavur?',  a: 'ARA Discover Marketing is one of the best video editing services in Thanjavur, offering complete YouTube editing solutions, social media videos, corporate videos, branding videos, drone video editing, and more for businesses and brands.', color: '#2563eb', tag: 'General' },
-  { q: 'Do you offer Corporate Video Editing Services in Thanjavur?',         a: 'Yes, we are one of the corporate video editing companies in Thanjavur, providing professional corporate films, company profile videos, training videos, and promotional content designed to communicate your brand effectively.',              color: '#0891b2', tag: 'Corporate' },
-  { q: 'Do you edit videos for YouTube channels?',                            a: 'Yes, we offer YouTube video editing services in Thanjavur, and we are a preferred choice and professional YouTube video editing company in Thanjavur for video content creators and businesses looking to grow their channel audience.',         color: '#059669', tag: 'YouTube' },
-  { q: 'Do you provide social media video editing?',                          a: 'We provide digital marketing video editing in Thanjavur services including Instagram Reels, Facebook video ads, short-form viral content, and platform-optimised videos for all major social media channels.',                                    color: '#d97706', tag: 'Social' },
-  { q: 'What makes your video editing services different from others?',       a: 'We combine cinematic storytelling, AI-powered marketing strategy, professional editing tools, and creative expertise to deliver high-performing video content. Our platform-optimised formats and fast turnaround time set us apart.',          color: '#7c3aed', tag: 'Expertise' },
+  { q: 'Do you offer Corporate Video Editing Services in Thanjavur?',         a: 'Yes, we are one of the corporate video editing companies in Thanjavur, providing professional corporate films, company profile videos, training videos, and promotional content designed to communicate your brand effectively.',              color: '#0ea5e9', tag: 'Corporate' },
+  { q: 'Do you edit videos for YouTube channels?',                            a: 'Yes, we offer YouTube video editing services in Thanjavur, and we are a preferred choice and professional YouTube video editing company in Thanjavur for video content creators and businesses looking to grow their channel audience.',         color: '#2563eb', tag: 'YouTube' },
+  { q: 'Do you provide social media video editing?',                          a: 'We provide digital marketing video editing in Thanjavur services including Instagram Reels, Facebook video ads, short-form viral content, and platform-optimised videos for all major social media channels.',                                    color: '#0ea5e9', tag: 'Social' },
+  { q: 'What makes your video editing services different from others?',       a: 'We combine cinematic storytelling, AI-powered marketing strategy, professional editing tools, and creative expertise to deliver high-performing video content. Our platform-optimised formats and fast turnaround time set us apart.',          color: '#2563eb', tag: 'Expertise' },
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -246,7 +246,7 @@ export default function VEFAQ() {
             <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold
                 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
+              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
               Contact Us <ArrowRight size={13} />
             </a>
           </div>

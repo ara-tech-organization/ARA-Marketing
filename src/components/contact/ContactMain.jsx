@@ -31,8 +31,8 @@ const infoCards = [
     value: 'aradiscovermarketing@gmail.com',
     sub: 'We reply within 24 hours',
     href: 'mailto:aradiscovermarketing@gmail.com',
-    color: '#7c3aed',
-    glow: 'rgba(124,58,237,0.35)',
+    color: '#0ea5e9',
+    glow: 'rgba(14,165,233,0.35)',
   },
   {
     icon: MapPin,
@@ -40,8 +40,8 @@ const infoCards = [
     value: '67A, Giri Rd, Srinivasapuram',
     sub: 'Thanjavur, Tamil Nadu 613009',
     href: 'https://maps.google.com/?q=67A,+Giri+Rd,+Srinivasapuram,+Thanjavur,+Tamil+Nadu+613009',
-    color: '#0891b2',
-    glow: 'rgba(8,145,178,0.35)',
+    color: '#0ea5e9',
+    glow: 'rgba(14,165,233,0.35)',
   },
   {
     icon: Clock,
@@ -49,8 +49,8 @@ const infoCards = [
     value: 'Mon – Sat: 9:30 AM – 6:30 PM',
     sub: 'Sunday: Closed · 6 days a week',
     href: null,
-    color: '#059669',
-    glow: 'rgba(5,150,105,0.35)',
+    color: '#2563eb',
+    glow: 'rgba(37,99,235,0.35)',
   },
 ]
 
@@ -110,7 +110,7 @@ export default function ContactMain() {
       />
       <div className="absolute pointer-events-none rounded-full"
         style={{ bottom: '5%', left: '-4%', width: '380px', height: '380px',
-          background: 'radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 65%)' }}
+          background: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 65%)' }}
       />
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
@@ -223,7 +223,7 @@ export default function ContactMain() {
             <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full pointer-events-none"
               style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.14) 0%, transparent 65%)' }} />
             <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.12) 0%, transparent 65%)' }} />
+              style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
             {/* Dot grid */}
             <div className="absolute inset-0 pointer-events-none"
               style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
@@ -234,8 +234,8 @@ export default function ContactMain() {
                   {submitted ? (
                     <div className="flex flex-col items-center justify-center py-12 text-center">
                       <div className="w-16 h-16 rounded-full flex items-center justify-center mb-5"
-                        style={{ background: 'rgba(5,150,105,0.15)', border: '1px solid rgba(5,150,105,0.3)' }}>
-                        <CheckCircle2 size={32} style={{ color: '#10b981' }} />
+                        style={{ background: 'rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.3)' }}>
+                        <CheckCircle2 size={32} style={{ color: '#2563eb' }} />
                       </div>
                       <h3 className="text-[21px] font-bold text-white mb-3" style={{ fontWeight: 700 }}>
                         Message Sent Successfully
@@ -362,7 +362,7 @@ export default function ContactMain() {
 
                         <button type="submit" disabled={loading}
                           className="btn-glow w-full flex items-center justify-center gap-2.5 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 disabled:opacity-75 disabled:cursor-not-allowed hover:-translate-y-0.5"
-                          style={{ background: loading ? '#3b82f6' : undefined, boxShadow: '0 8px 32px rgba(124,58,237,0.35)' }}
+                          style={{ background: loading ? '#3b82f6' : undefined, boxShadow: '0 8px 32px rgba(37,99,235,0.35)' }}
                         >
                           {loading ? <><Loader2 size={17} className="animate-spin" /> Sending Message...</> : <><Send size={16} /> Send Message</>}
                         </button>

@@ -2,11 +2,11 @@
 
 const steps = [
   { icon: ClipboardList, num: '01', title: 'Business Analysis & Planning',       desc: 'We study your products, audience, competitors, and revenue goals to map the ideal e-commerce architecture and platform choice.',     color: '#2563eb' },
-  { icon: PenTool,       num: '02', title: 'UI/UX Design & Wireframing',          desc: 'Our designers craft high-converting store layouts, product pages, and checkout flows that guide shoppers toward purchase.',             color: '#0891b2' },
-  { icon: ShoppingCart,  num: '03', title: 'E-Commerce Platform Setup',           desc: 'We configure Shopify, WooCommerce, or Magento with your catalogue, categories, variants, and custom theme matching your brand.',         color: '#059669' },
-  { icon: CreditCard,    num: '04', title: 'Backend & Payment Integration',       desc: 'Secure payment gateways, shipping APIs, inventory sync, and customer account systems are wired up and thoroughly tested.',               color: '#7c3aed' },
-  { icon: Rocket,        num: '05', title: 'Testing, Optimisation & Launch',      desc: 'Multi-device testing, page speed optimisation, SEO setup, and a fully monitored go-live ensure a smooth, successful launch.',            color: '#d97706' },
-  { icon: Headphones,    num: '06', title: 'Ongoing Support & Maintenance',       desc: 'Post-launch we handle updates, security patches, performance monitoring, and feature enhancements so your store stays ahead.',           color: '#dc2626' },
+  { icon: PenTool,       num: '02', title: 'UI/UX Design & Wireframing',          desc: 'Our designers craft high-converting store layouts, product pages, and checkout flows that guide shoppers toward purchase.',             color: '#0ea5e9' },
+  { icon: ShoppingCart,  num: '03', title: 'E-Commerce Platform Setup',           desc: 'We configure Shopify, WooCommerce, or Magento with your catalogue, categories, variants, and custom theme matching your brand.',         color: '#2563eb' },
+  { icon: CreditCard,    num: '04', title: 'Backend & Payment Integration',       desc: 'Secure payment gateways, shipping APIs, inventory sync, and customer account systems are wired up and thoroughly tested.',               color: '#0ea5e9' },
+  { icon: Rocket,        num: '05', title: 'Testing, Optimisation & Launch',      desc: 'Multi-device testing, page speed optimisation, SEO setup, and a fully monitored go-live ensure a smooth, successful launch.',            color: '#2563eb' },
+  { icon: Headphones,    num: '06', title: 'Ongoing Support & Maintenance',       desc: 'Post-launch we handle updates, security patches, performance monitoring, and feature enhancements so your store stays ahead.',           color: '#0ea5e9' },
 ]
 
 export default function ECProcess() {

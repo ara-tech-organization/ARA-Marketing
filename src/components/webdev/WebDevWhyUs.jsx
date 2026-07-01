@@ -2,11 +2,11 @@
 
 const reasons = [
   { icon: Smartphone, title: 'Mobile-first responsive design approach',        desc: 'Every website we build looks flawless on all screen sizes — from desktop to mobile.',        color: '#2563eb' },
-  { icon: Search,     title: 'SEO-optimized website architecture',             desc: 'Clean code structure, fast loading, and semantic HTML built for top Google rankings.',      color: '#7c3aed' },
-  { icon: Zap,        title: 'Fast loading & performance-focused development', desc: 'Optimised assets, lazy loading, and CDN delivery for sub-2s load times.',                   color: '#059669' },
-  { icon: Palette,    title: 'Custom UI/UX design solutions',                  desc: 'Pixel-perfect interfaces tailored to your brand identity and target audience.',              color: '#d97706' },
-  { icon: Shield,     title: 'Secure and scalable coding standards',           desc: 'SSL, best-practice authentication, and architecture that grows with your business.',         color: '#db2777' },
-  { icon: Headphones, title: 'Ongoing technical support & maintenance',        desc: 'Post-launch monitoring, updates, and dedicated support to keep your site running.',          color: '#0891b2' },
+  { icon: Search,     title: 'SEO-optimized website architecture',             desc: 'Clean code structure, fast loading, and semantic HTML built for top Google rankings.',      color: '#0ea5e9' },
+  { icon: Zap,        title: 'Fast loading & performance-focused development', desc: 'Optimised assets, lazy loading, and CDN delivery for sub-2s load times.',                   color: '#2563eb' },
+  { icon: Palette,    title: 'Custom UI/UX design solutions',                  desc: 'Pixel-perfect interfaces tailored to your brand identity and target audience.',              color: '#0ea5e9' },
+  { icon: Shield,     title: 'Secure and scalable coding standards',           desc: 'SSL, best-practice authentication, and architecture that grows with your business.',         color: '#2563eb' },
+  { icon: Headphones, title: 'Ongoing technical support & maintenance',        desc: 'Post-launch monitoring, updates, and dedicated support to keep your site running.',          color: '#0ea5e9' },
 ]
 
 export default function WebDevWhyUs() {

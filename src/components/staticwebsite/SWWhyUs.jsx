@@ -6,7 +6,7 @@ const reasons = [
     icon: Code2,
     title: 'Clean and SEO-Optimized Coding Structure',
     desc: 'Every website we build follows best practices for semantic HTML, clean CSS, and structured code that search engines love and browsers render at peak speed.',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     num: '02',
@@ -20,21 +20,21 @@ const reasons = [
     icon: Zap,
     title: 'Lightning-Fast Loading Speed',
     desc: 'Static pages load in under a second with no database roundtrips. Faster sites rank higher, retain visitors longer, and convert better.',
-    color: '#7c3aed',
+    color: '#0ea5e9',
   },
   {
     num: '04',
     icon: DollarSign,
     title: 'Affordable Pricing for All Business Sizes',
     desc: 'From startups to established enterprises, we offer transparent, budget-friendly packages with no hidden fees and maximum ROI.',
-    color: '#059669',
+    color: '#2563eb',
   },
   {
     num: '05',
     icon: Users,
     title: 'Expert Team of Designers and Developers',
     desc: 'Our experienced team combines creative design with technical excellence to deliver websites that are both beautiful and high-performing.',
-    color: '#dc2626',
+    color: '#0ea5e9',
   },
 ]
 
@@ -44,7 +44,7 @@ export default function SWWhyUs() {
       {/* Subtle background tint top-right */}
       <div
         className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.05) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }}
       />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
@@ -54,7 +54,7 @@ export default function SWWhyUs() {
           <div className="lg:w-[380px] flex-shrink-0 reveal-left">
             <span
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(8,145,178,0.08)', color: '#0891b2', border: '1px solid rgba(8,145,178,0.2)' }}
+              style={{ background: 'rgba(14,165,233,0.08)', color: '#0ea5e9', border: '1px solid rgba(14,165,233,0.2)' }}
             >
               <Award size={11} /> Why Choose Us
             </span>
@@ -63,7 +63,7 @@ export default function SWWhyUs() {
               Why{' '}
               <span
                 style={{
-                  background: 'linear-gradient(135deg, #0891b2, #2563eb)',
+                  background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -86,12 +86,12 @@ export default function SWWhyUs() {
             {/* Highlights box */}
             <div
               className="rounded-2xl p-6"
-              style={{ background: 'linear-gradient(135deg, rgba(8,145,178,0.06), rgba(37,99,235,0.06))', border: '1px solid rgba(8,145,178,0.14)' }}
+              style={{ background: 'linear-gradient(135deg, rgba(14,165,233,0.06), rgba(37,99,235,0.06))', border: '1px solid rgba(14,165,233,0.14)' }}
             >
               <div className="flex items-center gap-3 mb-4">
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg, #0891b2, #2563eb)' }}
+                  style={{ background: 'linear-gradient(135deg, #0ea5e9, #2563eb)' }}
                 >
                   <Award size={16} className="text-white" />
                 </div>
@@ -110,7 +110,7 @@ export default function SWWhyUs() {
                     <p
                       className="text-[20px] font-black leading-tight"
                       style={{
-                        background: 'linear-gradient(135deg, #0891b2, #2563eb)',
+                        background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         backgroundClip: 'text',

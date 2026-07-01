@@ -2,13 +2,13 @@
 
 const expertise = [
   { icon: Cpu,       label: 'Latest Backend Engines',    color: '#2563eb', desc: 'Powered by modern backend technologies that ensure your website runs fast, stays secure, and scales effortlessly with your business.' },
-  { icon: Layers,    label: 'CMS Platform Integration',  color: '#0891b2', desc: 'Seamless integration with WordPress, custom CMS, and headless systems for easy, code-free content management.' },
+  { icon: Layers,    label: 'CMS Platform Integration',  color: '#0ea5e9', desc: 'Seamless integration with WordPress, custom CMS, and headless systems for easy, code-free content management.' },
   { icon: RefreshCw, label: 'Real-Time Content Updates', color: '#2563eb', desc: 'Publish, edit, and update content in real-time without relying on a developer — full control is yours, anytime.' },
-  { icon: Palette,   label: 'Modern UI/UX Design',       color: '#0891b2', desc: 'Stunning, user-friendly interfaces paired with strong backend architecture for an exceptional digital experience.' },
+  { icon: Palette,   label: 'Modern UI/UX Design',       color: '#0ea5e9', desc: 'Stunning, user-friendly interfaces paired with strong backend architecture for an exceptional digital experience.' },
 ]
 
 const gradInd = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -32,7 +32,7 @@ export default function DWIntro() {
         {/* ── Header ── */}
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-white/80 shadow-sm"
-            style={{ border: '1px solid rgba(79,70,229,0.18)' }}>
+            style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
             <Globe2 size={10} /> Next-Gen Dynamic Web Solutions
           </span>
           <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
@@ -58,7 +58,7 @@ export default function DWIntro() {
               style={{ minHeight: 220 }}
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.22) 0%, rgba(8,145,178,0.18) 100%)' }} />
+              style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.22) 0%, rgba(14,165,233,0.18) 100%)' }} />
             <div className="absolute bottom-5 left-5 right-5 px-5 py-4 rounded-2xl"
               style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.95)' }}>
               <p className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-1">Dynamic Web Page Development in Thanjavur</p>

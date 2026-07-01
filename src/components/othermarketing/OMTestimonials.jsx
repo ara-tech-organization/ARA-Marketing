@@ -18,7 +18,7 @@ const testimonials = [
     role: 'Brand Manager, FashionHub',
     company: 'Fashion & Lifestyle',
     initials: 'PS',
-    color: '#7c3aed',
+    color: '#2563eb',
     metric: '41%',
     metricLabel: 'Audience Growth',
     channel: 'Influencer Marketing',
@@ -29,7 +29,7 @@ const testimonials = [
     role: 'Director, MedPlus Clinics',
     company: 'Healthcare Services',
     initials: 'VA',
-    color: '#0891b2',
+    color: '#0ea5e9',
     metric: '40%',
     metricLabel: 'Cost Reduction',
     channel: 'Email Marketing',
@@ -51,7 +51,7 @@ export default function OMTestimonials() {
             </span>
             <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               What Clients Say About{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Our Services
               </span>
             </h2>
@@ -143,8 +143,8 @@ export default function OMTestimonials() {
           style={{ boxShadow: '0 4px 16px rgba(37,99,235,0.06)' }}>
           {[
             { label: '500+ Campaigns Delivered', color: '#2563eb' },
-            { label: '98% Client Satisfaction',  color: '#7c3aed' },
-            { label: 'Trusted in Thanjavur',     color: '#0891b2' },
+            { label: '98% Client Satisfaction',  color: '#2563eb' },
+            { label: 'Trusted in Thanjavur',     color: '#0ea5e9' },
           ].map(({ label, color }, i) => (
             <div key={label} className="flex items-center gap-2">
               {i > 0 && <span className="hidden sm:block w-px h-4 bg-slate-200" />}

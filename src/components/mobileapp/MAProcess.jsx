@@ -20,14 +20,14 @@ const steps = [
     icon: Code2,
     title: 'Development',
     desc: 'Using the latest tools for Android and iOS, we build high-performance, scalable, and secure mobile applications.',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     num: '04',
     icon: Gauge,
     title: 'Testing & QA',
     desc: 'Rigorous testing across devices and OS versions ensures flawless functionality, performance, and a bug-free user experience.',
-    color: '#059669',
+    color: '#2563eb',
   },
   {
     num: '05',
@@ -69,7 +69,7 @@ export default function MAProcess() {
         <div className="hidden lg:block reveal">
           <div className="relative flex items-start gap-0">
             <div className="absolute top-[28px] left-[8%] right-[8%] h-[2px] pointer-events-none"
-              style={{ background: 'linear-gradient(90deg,#1e40af,#2563eb,#0891b2,#059669,#dc2626)' }} />
+              style={{ background: 'linear-gradient(90deg,#1e40af,#2563eb,#0ea5e9,#2563eb,#1e40af)' }} />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (
               <div key={num} className="flex-1 flex flex-col items-center text-center px-3 group">

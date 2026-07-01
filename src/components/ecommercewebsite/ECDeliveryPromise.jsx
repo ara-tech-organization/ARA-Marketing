@@ -3,10 +3,10 @@ import ecDeliveryImg from '../../assets/E-commerce/e1.webp'
 
 const promises = [
   { icon: Layers,      title: 'Fully Customised\nE-Commerce Solutions',  desc: 'Every store is built from scratch, tailored to your brand identity and business goals.',          color: '#2563eb', bg: '#dbeafe' },
-  { icon: ShieldCheck, title: 'Secure & Scalable\nArchitecture',         desc: 'Enterprise-grade security, SSL, and scalable infrastructure to grow with your business.',           color: '#7c3aed', bg: '#ede9fe' },
-  { icon: Zap,         title: 'SEO-Friendly\nDevelopment Structure',     desc: 'Clean URLs, schema markup, fast loading and mobile responsiveness — built to rank.',               color: '#0891b2', bg: '#cffafe' },
-  { icon: Clock,       title: 'On-Time\nProject Delivery',               desc: 'Structured timeline ensuring your store launches on schedule without compromising quality.',       color: '#059669', bg: '#d1fae5' },
-  { icon: Headphones,  title: 'Continuous Support\n& Maintenance',       desc: 'Post-launch support, security updates, and performance monitoring — always here for you.',        color: '#d97706', bg: '#fef3c7' },
+  { icon: ShieldCheck, title: 'Secure & Scalable\nArchitecture',         desc: 'Enterprise-grade security, SSL, and scalable infrastructure to grow with your business.',           color: '#0ea5e9', bg: '#e0f2fe' },
+  { icon: Zap,         title: 'SEO-Friendly\nDevelopment Structure',     desc: 'Clean URLs, schema markup, fast loading and mobile responsiveness — built to rank.',               color: '#2563eb', bg: '#dbeafe' },
+  { icon: Clock,       title: 'On-Time\nProject Delivery',               desc: 'Structured timeline ensuring your store launches on schedule without compromising quality.',       color: '#0ea5e9', bg: '#e0f2fe' },
+  { icon: Headphones,  title: 'Continuous Support\n& Maintenance',       desc: 'Post-launch support, security updates, and performance monitoring — always here for you.',        color: '#2563eb', bg: '#dbeafe' },
 ]
 
 export default function ECDeliveryPromise() {
@@ -27,7 +27,7 @@ export default function ECDeliveryPromise() {
             </span>
             <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Committed to{' '}
-              <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Delivering Excellence
               </span>
             </h2>
@@ -96,13 +96,13 @@ export default function ECDeliveryPromise() {
 
         {/* ── Bottom SEO + CTA ── */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 p-7 rounded-3xl"
-          style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.05),rgba(124,58,237,0.05))', border: '1px solid rgba(37,99,235,0.1)' }}>
+          style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.05),rgba(14,165,233,0.05))', border: '1px solid rgba(37,99,235,0.1)' }}>
           <p className="text-[13.5px] text-slate-500 leading-[1.8] max-w-2xl">
             We are the best e-commerce web design and development company in Thanjavur, offering business-focused solutions with high performance. We provide custom e-commerce website development services in Thanjavur and advanced e-commerce web application development in Thanjavur.
           </p>
           <a href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 flex-shrink-0"
-            style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
+            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
             Get Started <ArrowRight size={14} />
           </a>
         </div>

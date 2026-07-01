@@ -23,32 +23,32 @@ const reasons = [
     icon: Briefcase,
     title: 'Professional Services to Meet Business Goals',
     desc: 'Professional mobile app development services in Thanjavur tailored to achieve your specific business objectives.',
-    accent: '#6366f1',
-    bg: 'rgba(99,102,241,0.07)',
+    accent: '#2563eb',
+    bg: 'rgba(37,99,235,0.07)',
   },
   {
     num: '03',
     icon: Cpu,
     title: 'AI-Powered Solutions & Insights',
     desc: 'AI-powered solutions for smarter user engagement, intelligent insights, and AI mobile app development.',
-    accent: '#0891b2',
-    bg: 'rgba(8,145,178,0.07)',
+    accent: '#0ea5e9',
+    bg: 'rgba(14,165,233,0.07)',
   },
   {
     num: '04',
     icon: Users,
     title: 'Full-Cycle Development',
     desc: 'We handle every phase — strategy, design, development, QA, deployment, and post-launch support.',
-    accent: '#059669',
-    bg: 'rgba(5,150,105,0.07)',
+    accent: '#2563eb',
+    bg: 'rgba(37,99,235,0.07)',
   },
   {
     num: '05',
     icon: Clock,
     title: 'Transparent Process & Timely Delivery',
     desc: 'Zero surprises. Clear communication, milestone tracking, and on-schedule delivery every time.',
-    accent: '#d97706',
-    bg: 'rgba(217,119,6,0.07)',
+    accent: '#0ea5e9',
+    bg: 'rgba(14,165,233,0.07)',
   },
 ]
 
@@ -60,7 +60,7 @@ export default function MAWhyUs() {
       <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
         style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.05) 0%,transparent 70%)' }} />
       <div className="absolute bottom-0 left-0 w-[500px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(99,102,241,0.04) 0%,transparent 70%)' }} />
+        style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.04) 0%,transparent 70%)' }} />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 relative">
 
@@ -72,7 +72,7 @@ export default function MAWhyUs() {
           </span>
           <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Why Choose ARA Discover as Your{' '}
-            <span style={{ background: 'linear-gradient(135deg,#1e40af,#6366f1)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#1e40af,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               App Partner?
             </span>
           </h2>

@@ -13,21 +13,21 @@ const reasons = [
     icon: Target,
     title: 'Customised Campaign Planning',
     desc: 'Tailored marketing campaigns that align precisely with your brand goals, customer personas, and budget — no one-size-fits-all solutions here.',
-    color: '#7c3aed', num: '02',
+    color: '#2563eb', num: '02',
     highlight: 'Audience-First',
   },
   {
     icon: Users,
     title: 'Multi-Channel Customer Engagement',
     desc: 'Cohesive brand experience across email, influencer platforms, and SMS — we keep your customers engaged at every touchpoint in their journey.',
-    color: '#0891b2', num: '03',
+    color: '#0ea5e9', num: '03',
     highlight: '3 Channels',
   },
   {
     icon: BarChart2,
     title: 'Transparent Reporting & Analytics',
     desc: 'Clear monthly campaign performance reports with engagement metrics, conversion tracking, and full ROI visibility — you always know where your money goes.',
-    color: '#059669', num: '04',
+    color: '#2563eb', num: '04',
     highlight: 'Full Visibility',
   },
   {
@@ -41,27 +41,27 @@ const reasons = [
     icon: DollarSign,
     title: 'Affordable Plans for Every Business',
     desc: 'Flexible pricing packages for startups, SMEs, and growing brands — premium multi-channel marketing without the premium agency cost.',
-    color: '#7c3aed', num: '06',
+    color: '#2563eb', num: '06',
     highlight: 'No Setup Fees',
   },
 ]
 
 const stats = [
   { value: '500+', label: 'Campaigns Delivered', color: '#2563eb' },
-  { value: '98%',  label: 'Client Satisfaction',  color: '#7c3aed' },
-  { value: '2.4M', label: 'Audience Reached',     color: '#0891b2' },
-  { value: '4x',   label: 'Average Campaign ROI', color: '#059669' },
+  { value: '98%',  label: 'Client Satisfaction',  color: '#2563eb' },
+  { value: '2.4M', label: 'Audience Reached',     color: '#0ea5e9' },
+  { value: '4x',   label: 'Average Campaign ROI', color: '#2563eb' },
 ]
 
 export default function OMWhyUs() {
   return (
     <section className="relative py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg,#f0f9ff 0%,#eff6ff 50%,#f5f3ff 100%)' }}>
+      style={{ background: 'linear-gradient(160deg,#f0f9ff 0%,#eff6ff 50%,#e0f2fe 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '36px 36px' }} />
       <div className="absolute top-0 right-0 w-[520px] h-[520px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(167,139,250,0.14) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.14) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
 
@@ -75,7 +75,7 @@ export default function OMWhyUs() {
           </span>
           <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Why Businesses Choose{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               ARA Discover Marketing
             </span>
           </h2>
@@ -146,7 +146,7 @@ export default function OMWhyUs() {
 
         {/* Bottom CTA banner */}
         <div className="reveal mt-10 flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-5 rounded-2xl overflow-hidden relative"
-          style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', boxShadow: '0 16px 48px rgba(124,58,237,0.25)' }}>
+          style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 16px 48px rgba(37,99,235,0.25)' }}>
           <div className="absolute inset-0 pointer-events-none"
             style={{ background: 'radial-gradient(ellipse at 20% 50%,rgba(255,255,255,0.10) 0%,transparent 60%)' }} />
           <div className="relative flex items-center gap-4">
@@ -163,7 +163,7 @@ export default function OMWhyUs() {
           </div>
           <a href="/ARA-Marketing/contact-us"
             className="relative flex-shrink-0 inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-            style={{ background: 'white', color: '#7c3aed' }}>
+            style={{ background: 'white', color: '#2563eb' }}>
             Work With Us <ArrowRight size={13} />
           </a>
         </div>

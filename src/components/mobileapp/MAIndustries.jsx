@@ -4,9 +4,9 @@ const industries = [
   { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#1e40af' },
   { icon: Heart,        title: 'Healthcare & Fitness',       desc: 'HIPAA-compliant health apps, telemedicine platforms, and fitness trackers with AI wellness insights.',     color: '#dc2626' },
   { icon: BookOpen,     title: 'Education & E-learning',     desc: 'Interactive learning apps with video, quizzes, and progress tracking for students and educators.',        color: '#2563eb' },
-  { icon: DollarSign,   title: 'Finance & Banking',          desc: 'Secure fintech apps with real-time transactions, budgeting tools, and robust data encryption.',         color: '#059669' },
-  { icon: Truck,        title: 'Logistics & Transportation', desc: 'Fleet management, live tracking, and delivery optimisation apps for modern supply chains.',              color: '#0891b2' },
-  { icon: Building2,    title: 'Startups & Enterprises',     desc: 'Scalable mobile solutions for startups launching fast and enterprises modernising at scale.',             color: '#d97706' },
+  { icon: DollarSign,   title: 'Finance & Banking',          desc: 'Secure fintech apps with real-time transactions, budgeting tools, and robust data encryption.',         color: '#2563eb' },
+  { icon: Truck,        title: 'Logistics & Transportation', desc: 'Fleet management, live tracking, and delivery optimisation apps for modern supply chains.',              color: '#0ea5e9' },
+  { icon: Building2,    title: 'Startups & Enterprises',     desc: 'Scalable mobile solutions for startups launching fast and enterprises modernising at scale.',             color: '#0ea5e9' },
 ]
 
 export default function MAIndustries() {

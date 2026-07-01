@@ -2,11 +2,11 @@
 
 const segments = [
   { icon: Store,   label: 'Retail Businesses',          desc: 'Take your physical retail store online and reach customers across cities.',           color: '#2563eb' },
-  { icon: Truck,   label: 'Wholesale Distributors',     desc: 'Automate B2B ordering, bulk pricing, and distributor management seamlessly.',         color: '#0891b2' },
-  { icon: Rocket,  label: 'Startups Launching Online',  desc: 'Launch your brand online with a scalable store ready for rapid growth.',              color: '#059669' },
-  { icon: MapPin,  label: 'Local Shops Going Digital',  desc: 'Bring your local customer base online and expand to new markets digitally.',          color: '#d97706' },
-  { icon: Network, label: 'Multi-Vendor Marketplaces',  desc: 'Build a platform connecting multiple sellers with unified order management.',          color: '#7c3aed' },
-  { icon: Tag,     label: 'Direct-to-Consumer Brands',  desc: 'Sell directly to customers without middlemen and maximise your profit margins.',       color: '#dc2626' },
+  { icon: Truck,   label: 'Wholesale Distributors',     desc: 'Automate B2B ordering, bulk pricing, and distributor management seamlessly.',         color: '#0ea5e9' },
+  { icon: Rocket,  label: 'Startups Launching Online',  desc: 'Launch your brand online with a scalable store ready for rapid growth.',              color: '#2563eb' },
+  { icon: MapPin,  label: 'Local Shops Going Digital',  desc: 'Bring your local customer base online and expand to new markets digitally.',          color: '#0ea5e9' },
+  { icon: Network, label: 'Multi-Vendor Marketplaces',  desc: 'Build a platform connecting multiple sellers with unified order management.',          color: '#2563eb' },
+  { icon: Tag,     label: 'Direct-to-Consumer Brands',  desc: 'Sell directly to customers without middlemen and maximise your profit margins.',       color: '#0ea5e9' },
 ]
 
 export default function ECWhoShould() {
@@ -19,7 +19,7 @@ export default function ECWhoShould() {
       <div className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-16 -left-16 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.08) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.08) 0%, transparent 65%)' }} />
       <div className="hidden sm:block absolute top-20 left-20 w-[200px] h-[200px] rounded-full border pointer-events-none animate-[spin_40s_linear_infinite]"
         style={{ borderColor: 'rgba(37,99,235,0.18)' }} />
 

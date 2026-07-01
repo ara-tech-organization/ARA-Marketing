@@ -3,17 +3,17 @@ import cmsWhyUsImg from '../../assets/Wordpress/w2.webp'
 
 const reasons = [
   { icon: Palette,        title: 'Fully Customised WordPress Development', desc: 'Every website we build is crafted from scratch — no templates. Unique designs aligned to your brand identity.',   color: '#2563eb', light: '#dbeafe' },
-  { icon: Search,         title: 'SEO-Optimised Website Structure',        desc: 'Built with Google in mind from day one — proper heading hierarchy, schema markup, fast loading, and clean URLs.',  color: '#7c3aed', light: '#ede9fe' },
-  { icon: Zap,            title: 'Fast Loading & Secure Architecture',     desc: 'Performance-first builds with CDN, image optimisation, security hardening, and caching for lightning-fast pages.', color: '#0891b2', light: '#cffafe' },
-  { icon: Smartphone,     title: 'Mobile-First Responsive Design',         desc: 'Every page looks and works flawlessly on phones, tablets, and desktops — tested across all major devices.',         color: '#059669', light: '#d1fae5' },
-  { icon: Shield,         title: 'Easy-to-Manage CMS Dashboard',          desc: 'We configure your WordPress admin panel so you can update content, add pages, and manage media without any coding.', color: '#d97706', light: '#fef3c7' },
-  { icon: HeadphonesIcon, title: 'Dedicated Support & Maintenance',       desc: 'Post-launch support to keep your website secure, updated, and performing at its peak — we are always here.',         color: '#db2777', light: '#fce7f3' },
+  { icon: Search,         title: 'SEO-Optimised Website Structure',        desc: 'Built with Google in mind from day one — proper heading hierarchy, schema markup, fast loading, and clean URLs.',  color: '#2563eb', light: '#dbeafe' },
+  { icon: Zap,            title: 'Fast Loading & Secure Architecture',     desc: 'Performance-first builds with CDN, image optimisation, security hardening, and caching for lightning-fast pages.', color: '#0ea5e9', light: '#e0f2fe' },
+  { icon: Smartphone,     title: 'Mobile-First Responsive Design',         desc: 'Every page looks and works flawlessly on phones, tablets, and desktops — tested across all major devices.',         color: '#2563eb', light: '#dbeafe' },
+  { icon: Shield,         title: 'Easy-to-Manage CMS Dashboard',          desc: 'We configure your WordPress admin panel so you can update content, add pages, and manage media without any coding.', color: '#0ea5e9', light: '#e0f2fe' },
+  { icon: HeadphonesIcon, title: 'Dedicated Support & Maintenance',       desc: 'Post-launch support to keep your website secure, updated, and performing at its peak — we are always here.',         color: '#2563eb', light: '#dbeafe' },
 ]
 
 const stats = [
   { val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb', light: '#dbeafe' },
-  { val: '5★',   lbl: 'Average Client Rating',     color: '#d97706', light: '#fef3c7' },
-  { val: '100%', lbl: 'Custom-Built Websites',     color: '#7c3aed', light: '#ede9fe' },
+  { val: '5★',   lbl: 'Average Client Rating',     color: '#0ea5e9', light: '#e0f2fe' },
+  { val: '100%', lbl: 'Custom-Built Websites',     color: '#2563eb', light: '#dbeafe' },
 ]
 
 export default function CMSWhyUs() {
@@ -28,7 +28,7 @@ export default function CMSWhyUs() {
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
       <div className="absolute -bottom-24 -left-24 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.06) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(14,165,233,0.06) 0%,transparent 65%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -41,7 +41,7 @@ export default function CMSWhyUs() {
             </span>
             <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               We Build{' '}
-              <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Digital
               </span>{' '}
               Success
@@ -74,7 +74,7 @@ export default function CMSWhyUs() {
             </div>
 
             <div className="absolute bottom-5 left-5 right-5 flex items-center gap-2">
-              {[1,2,3,4,5].map(s => <Star key={s} size={14} fill="#fbbf24" color="#fbbf24" />)}
+              {[1,2,3,4,5].map(s => <Star key={s} size={14} fill="#60a5fa" color="#60a5fa" />)}
               <span className="text-white font-bold text-[12px] ml-1">5.0 · 100+ Clients</span>
             </div>
           </div>

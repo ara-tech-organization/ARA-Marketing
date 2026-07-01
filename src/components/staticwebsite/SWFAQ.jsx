@@ -35,8 +35,8 @@ function FAQItem({ faq, index, active, setActive }) {
     <div
       className="rounded-2xl overflow-hidden transition-all duration-300"
       style={{
-        border: isOpen ? '1.5px solid rgba(8,145,178,0.5)' : '1.5px solid #e2e8f0',
-        boxShadow: isOpen ? '0 8px 32px rgba(8,145,178,0.1)' : '0 2px 8px rgba(0,0,0,0.04)',
+        border: isOpen ? '1.5px solid rgba(14,165,233,0.5)' : '1.5px solid #e2e8f0',
+        boxShadow: isOpen ? '0 8px 32px rgba(14,165,233,0.1)' : '0 2px 8px rgba(0,0,0,0.04)',
       }}
     >
       <button
@@ -49,8 +49,8 @@ function FAQItem({ faq, index, active, setActive }) {
           className="flex-shrink-0 text-[11px] font-black w-7 h-7 rounded-lg flex items-center justify-center transition-all duration-300 mt-0.5"
           style={
             isOpen
-              ? { background: 'linear-gradient(135deg, #0891b2, #2563eb)', color: 'white' }
-              : { background: '#e0f2fe', color: '#0891b2' }
+              ? { background: 'linear-gradient(135deg, #0ea5e9, #2563eb)', color: 'white' }
+              : { background: '#e0f2fe', color: '#0ea5e9' }
           }
         >
           {String(index + 1).padStart(2, '0')}
@@ -58,7 +58,7 @@ function FAQItem({ faq, index, active, setActive }) {
 
         <span
           className="flex-1 text-[14px] font-semibold leading-snug pt-0.5 transition-colors duration-200"
-          style={{ color: isOpen ? '#0e7490' : '#334155' }}
+          style={{ color: isOpen ? '#1d4ed8' : '#334155' }}
         >
           {faq.q}
         </span>
@@ -67,7 +67,7 @@ function FAQItem({ faq, index, active, setActive }) {
           size={17}
           className="flex-shrink-0 mt-0.5 transition-transform duration-300"
           style={{
-            color: isOpen ? '#0891b2' : '#94a3b8',
+            color: isOpen ? '#0ea5e9' : '#94a3b8',
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
           }}
         />
@@ -77,7 +77,7 @@ function FAQItem({ faq, index, active, setActive }) {
         <div className="px-6 pb-6 bg-white">
           <div
             className="h-px mb-4"
-            style={{ background: 'linear-gradient(90deg, rgba(8,145,178,0.5), transparent)' }}
+            style={{ background: 'linear-gradient(90deg, rgba(14,165,233,0.5), transparent)' }}
           />
           <p className="text-[13.5px] text-slate-600 leading-[1.85] pl-11">{faq.a}</p>
         </div>
@@ -93,7 +93,7 @@ export default function SWFAQ() {
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div
         className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.05) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }}
       />
 
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7">
@@ -102,7 +102,7 @@ export default function SWFAQ() {
         <div className="text-center mb-12 reveal">
           <span
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(8,145,178,0.08)', color: '#0891b2', border: '1px solid rgba(8,145,178,0.2)' }}
+            style={{ background: 'rgba(14,165,233,0.08)', color: '#0ea5e9', border: '1px solid rgba(14,165,233,0.2)' }}
           >
             <HelpCircle size={11} /> FAQs
           </span>
@@ -110,7 +110,7 @@ export default function SWFAQ() {
             Frequently Asked{' '}
             <span
               style={{
-                background: 'linear-gradient(135deg, #0891b2, #2563eb)',
+                background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',

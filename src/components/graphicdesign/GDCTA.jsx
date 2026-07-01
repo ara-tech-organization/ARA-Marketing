@@ -125,7 +125,7 @@ export default function GDCTA() {
                     className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center
                       text-white text-[11px] font-bold flex-shrink-0"
                     style={{
-                      background: ['#2563eb', '#0284c7', '#7c3aed', '#059669'][i],
+                      background: ['#2563eb', '#0284c7', '#2563eb', '#0ea5e9'][i],
                     }}
                   >
                     {l}

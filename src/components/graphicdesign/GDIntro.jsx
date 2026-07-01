@@ -37,7 +37,7 @@ export default function GDIntro() {
             }}
           >
             {/* Top gradient accent bar */}
-            <div className="h-1.5" style={{ background: 'linear-gradient(90deg, #2563eb, #38bdf8, #818cf8)' }} />
+            <div className="h-1.5" style={{ background: 'linear-gradient(90deg, #2563eb, #38bdf8, #0ea5e9)' }} />
 
             {/* Large watermark */}
             <div
@@ -104,8 +104,8 @@ export default function GDIntro() {
                 <div>
                   <p className="text-[14px] font-bold text-white mb-1.5">Best Graphic Design Company</p>
                   <div className="flex items-center gap-1">
-                    {[1,2,3,4,5].map(i => <Star key={i} size={10} className="text-amber-400" fill="#fbbf24" />)}
-                    <span className="text-[10px] text-amber-300 font-semibold ml-1">5.0 Rating</span>
+                    {[1,2,3,4,5].map(i => <Star key={i} size={10} className="text-blue-400" fill="#60a5fa" />)}
+                    <span className="text-[10px] text-blue-300 font-semibold ml-1">5.0 Rating</span>
                   </div>
                 </div>
                 <div className="text-right">
@@ -163,8 +163,8 @@ export default function GDIntro() {
               {[
                 { icon: TrendingUp, text: 'Visual storytelling & modern design trends',       color: '#2563eb', bg: '#eff6ff' },
                 { icon: Users,      text: 'Customer psychology-driven brand experiences',     color: '#0284c7', bg: '#f0f9ff' },
-                { icon: Award,      text: 'Consistent result-oriented design approach',       color: '#7c3aed', bg: '#f5f3ff' },
-                { icon: Zap,        text: 'Enhanced visibility across digital & print media', color: '#059669', bg: '#f0fdf4' },
+                { icon: Award,      text: 'Consistent result-oriented design approach',       color: '#2563eb', bg: '#eff6ff' },
+                { icon: Zap,        text: 'Enhanced visibility across digital & print media', color: '#2563eb', bg: '#eff6ff' },
               ].map(({ icon: Icon, text, color, bg }) => (
                 <div
                   key={text}
@@ -197,7 +197,7 @@ export default function GDIntro() {
               {[
                 { num: '500+', label: 'Designs Delivered', color: '#2563eb' },
                 { num: '100+', label: 'Brands Created',    color: '#0284c7' },
-                { num: '98%',  label: 'Client Satisfaction', color: '#7c3aed' },
+                { num: '98%',  label: 'Client Satisfaction', color: '#2563eb' },
               ].map(({ num, label, color }) => (
                 <div key={label} className="flex items-center justify-between py-3.5 border-b border-blue-200/50 last:border-0">
                   <span className="text-[12px] font-semibold text-slate-600">{label}</span>

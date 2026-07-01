@@ -15,7 +15,7 @@ export default function GDHero() {
       <div className="absolute top-0 right-0 w-[700px] h-[700px] pointer-events-none"
         style={{ background: 'radial-gradient(circle at 65% 15%, rgba(37,99,235,0.22) 0%, transparent 55%)' }} />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle at 15% 85%, rgba(124,58,237,0.14) 0%, transparent 55%)' }} />
+        style={{ background: 'radial-gradient(circle at 15% 85%, rgba(37,99,235,0.14) 0%, transparent 55%)' }} />
       <div className="absolute top-[30%] left-0 w-[350px] h-[350px] pointer-events-none"
         style={{ background: 'radial-gradient(circle at 5% 50%, rgba(14,165,233,0.09) 0%, transparent 60%)' }} />
 
@@ -149,11 +149,11 @@ export default function GDHero() {
                 {/* Box 3 — Brochure: centered in remaining space */}
                 <div className="flex-1 flex items-center">
                 <div className="w-full rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
-                  style={{ background: 'linear-gradient(145deg,rgba(124,58,237,0.18),rgba(124,58,237,0.07))', border: '1px solid rgba(167,139,250,0.2)' }}>
+                  style={{ background: 'linear-gradient(145deg,rgba(37,99,235,0.18),rgba(37,99,235,0.07))', border: '1px solid rgba(96,165,250,0.2)' }}>
                   <div className="absolute inset-0 rounded-2xl pointer-events-none"
                     style={{ backgroundImage: 'radial-gradient(circle,rgba(147,197,253,0.05) 1px,transparent 1px)', backgroundSize: '18px 18px' }} />
                   <div className="relative w-10 h-10 rounded-xl flex items-center justify-center"
-                    style={{ background: 'linear-gradient(135deg,#7c3aed,#a78bfa)', boxShadow: '0 6px 18px #7c3aed44' }}>
+                    style={{ background: 'linear-gradient(135deg,#2563eb,#60a5fa)', boxShadow: '0 6px 18px #2563eb44' }}>
                     <Type size={18} className="text-white" />
                   </div>
                   <div className="relative">
@@ -186,11 +186,11 @@ export default function GDHero() {
                 </div>
                 {/* Box 4 bottom */}
                 <div className="rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
-                  style={{ background: 'linear-gradient(145deg,rgba(5,150,105,0.18),rgba(5,150,105,0.07))', border: '1px solid rgba(52,211,153,0.2)' }}>
+                  style={{ background: 'linear-gradient(145deg,rgba(14,165,233,0.18),rgba(14,165,233,0.07))', border: '1px solid rgba(56,189,248,0.2)' }}>
                   <div className="absolute inset-0 rounded-2xl pointer-events-none"
                     style={{ backgroundImage: 'radial-gradient(circle,rgba(147,197,253,0.05) 1px,transparent 1px)', backgroundSize: '18px 18px' }} />
                   <div className="relative w-10 h-10 rounded-xl flex items-center justify-center"
-                    style={{ background: 'linear-gradient(135deg,#059669,#34d399)', boxShadow: '0 6px 18px #05966944' }}>
+                    style={{ background: 'linear-gradient(135deg,#0ea5e9,#60a5fa)', boxShadow: '0 6px 18px #0ea5e944' }}>
                     <CheckCircle size={18} className="text-white" />
                   </div>
                   <div className="relative">

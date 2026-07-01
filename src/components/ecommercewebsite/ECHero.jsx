@@ -5,8 +5,8 @@ import {
 
 const stats = [
   { value: '50+',  label: 'Stores Launched',    color: '#2563eb' },
-  { value: '3x',   label: 'Avg Revenue Growth',  color: '#059669' },
-  { value: '24/7', label: 'Uptime & Security',   color: '#0891b2' },
+  { value: '3x',   label: 'Avg Revenue Growth',  color: '#0ea5e9' },
+  { value: '24/7', label: 'Uptime & Security',   color: '#2563eb' },
 ]
 
 const platformTags = ['Shopify', 'WooCommerce', 'Magento', 'Razorpay', 'Stripe', 'Custom Build']
@@ -18,9 +18,9 @@ const quickWins = [
 ]
 
 const orders = [
-  { id: '#EC-1842', product: 'Blue Denim Jacket',  amount: '₹2,499', status: 'Confirmed', dot: '#059669' },
-  { id: '#EC-1841', product: 'Wireless Earbuds Pro', amount: '₹3,999', status: 'Shipping',  dot: '#2563eb' },
-  { id: '#EC-1840', product: 'Silk Saree (Red)',    amount: '₹5,499', status: 'Delivered', dot: '#0891b2' },
+  { id: '#EC-1842', product: 'Blue Denim Jacket',  amount: '₹2,499', status: 'Confirmed', dot: '#2563eb' },
+  { id: '#EC-1841', product: 'Wireless Earbuds Pro', amount: '₹3,999', status: 'Shipping',  dot: '#0ea5e9' },
+  { id: '#EC-1840', product: 'Silk Saree (Red)',    amount: '₹5,499', status: 'Delivered', dot: '#2563eb' },
 ]
 
 export default function ECHero() {
@@ -32,7 +32,7 @@ export default function ECHero() {
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)', animation: 'float-y 8s ease-in-out infinite' }} />
       <div className="absolute bottom-0 -left-24 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-30"
@@ -133,7 +133,7 @@ export default function ECHero() {
                     <span className="text-[12px] font-bold text-white">Your E-commerce Store</span>
                   </div>
                   <span className="flex items-center gap-1.5 text-[10px] font-semibold px-2.5 py-1 rounded-full text-white"
-                    style={{ background: 'rgba(5,150,105,0.4)', border: '1px solid rgba(5,150,105,0.6)' }}>
+                    style={{ background: 'rgba(14,165,233,0.4)', border: '1px solid rgba(14,165,233,0.6)' }}>
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     Live Store
                   </span>
@@ -147,7 +147,7 @@ export default function ECHero() {
                       <p className="text-[22px] font-black text-slate-900 leading-none">₹2,45,800</p>
                     </div>
                     <span className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg"
-                      style={{ background: 'rgba(5,150,105,0.1)', color: '#059669' }}>
+                      style={{ background: 'rgba(14,165,233,0.1)', color: '#0ea5e9' }}>
                       <TrendingUp size={10} /> +34.2%
                     </span>
                   </div>
@@ -171,8 +171,8 @@ export default function ECHero() {
                 <div className="flex" style={{ borderBottom: '1px solid #f1f5f9' }}>
                   {[
                     { val: '142', lbl: 'Orders Today',    color: '#2563eb', icon: Package },
-                    { val: '98%', lbl: 'Fulfillment Rate', color: '#059669', icon: CheckCircle2 },
-                    { val: '4.9★', lbl: 'Store Rating',   color: '#f59e0b', icon: Star },
+                    { val: '98%', lbl: 'Fulfillment Rate', color: '#0ea5e9', icon: CheckCircle2 },
+                    { val: '4.9★', lbl: 'Store Rating',   color: '#2563eb', icon: Star },
                   ].map(({ val, lbl, color, icon: Icon }, i) => (
                     <div key={lbl} className="flex-1 text-center py-3.5"
                       style={{ borderRight: i < 2 ? '1px solid #f1f5f9' : 'none' }}>
@@ -219,9 +219,9 @@ export default function ECHero() {
 
               {/* Floating: Conversion rate */}
               <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3"
-                style={{ border: '1px solid #d1fae5', boxShadow: '0 8px 28px rgba(5,150,105,0.18)' }}>
+                style={{ border: '1px solid #bae6fd', boxShadow: '0 8px 28px rgba(14,165,233,0.18)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #059669, #047857)', boxShadow: '0 4px 14px rgba(5,150,105,0.35)' }}>
+                  style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)', boxShadow: '0 4px 14px rgba(14,165,233,0.35)' }}>
                   <BarChart2 size={15} className="text-white" />
                 </div>
                 <div>

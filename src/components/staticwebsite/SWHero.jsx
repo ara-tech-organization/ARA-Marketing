@@ -28,7 +28,7 @@ export default function SWHero() {
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 -left-24 w-[480px] h-[480px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.07) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.07) 0%, transparent 65%)' }} />
       {/* Rings */}
       <div className="hidden md:block absolute top-20 right-[6%] w-52 h-52 rounded-full border border-blue-200/40 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-24 left-[4%] w-36 h-36 rounded-full border border-sky-200/35 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
@@ -59,7 +59,7 @@ export default function SWHero() {
             {/* H1 */}
             <h1 className="text-[clamp(21px,2.9vw,43px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
               Launch Your Online{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Presence
               </span>{' '}
               with Static Websites
@@ -92,7 +92,7 @@ export default function SWHero() {
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Take a First Step <ArrowRight size={14} />
               </a>
               <a href="#sw-intro"
@@ -108,7 +108,7 @@ export default function SWHero() {
                 <div key={label} className="flex flex-col items-center lg:items-start"
                   style={{ borderLeft: i > 0 ? '1px solid #bfdbfe' : 'none', paddingLeft: i > 0 ? '1.75rem' : '0' }}>
                   <span className="text-[26px] sm:text-[30px] font-black leading-tight"
-                    style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                    style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     {value}
                   </span>
                   <span className="text-[11px] text-slate-400 font-medium mt-0.5">{label}</span>
@@ -128,7 +128,7 @@ export default function SWHero() {
                 style={{ background: 'white', border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(37,99,235,0.16)' }}>
 
                 {/* Accent bar */}
-                <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#38bdf8)' }} />
+                <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#0ea5e9)' }} />
 
                 {/* Browser chrome */}
                 <div className="flex items-center gap-2 px-4 py-2.5" style={{ background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>
@@ -160,7 +160,7 @@ export default function SWHero() {
                   <div className="absolute top-3 left-3 flex gap-2">
                     {[
                       { lbl: 'Performance', val: '100', bg: 'rgba(37,99,235,0.92)' },
-                      { lbl: 'SEO',         val: '98',  bg: 'rgba(16,185,129,0.92)' },
+                      { lbl: 'SEO',         val: '98',  bg: 'rgba(14,165,233,0.92)' },
                     ].map(({ lbl, val, bg }) => (
                       <div key={lbl} className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
                         style={{ background: bg, backdropFilter: 'blur(6px)' }}>
@@ -192,7 +192,7 @@ export default function SWHero() {
                   {[
                     { val: '100', lbl: 'Performance', color: '#2563eb' },
                     { val: '98',  lbl: 'SEO Score',   color: '#1d4ed8' },
-                    { val: '<1s', lbl: 'Load Time',   color: '#0891b2' },
+                    { val: '<1s', lbl: 'Load Time',   color: '#0ea5e9' },
                     { val: '5★',  lbl: 'Rating',      color: '#2563eb' },
                   ].map(({ val, lbl, color }, i) => (
                     <div key={lbl} className="flex-1 text-center py-4"
@@ -219,9 +219,9 @@ export default function SWHero() {
 
               {/* Floating: Rating */}
               <div className="hidden lg:flex absolute -bottom-4 -left-4 items-center gap-3 px-4 py-3 rounded-2xl bg-white animate-float"
-                style={{ border: '1px solid #fde68a', boxShadow: '0 10px 32px rgba(245,158,11,0.16)', animationDelay: '1.5s' }}>
+                style={{ border: '1px solid #bfdbfe', boxShadow: '0 10px 32px rgba(37,99,235,0.16)', animationDelay: '1.5s' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#f59e0b,#d97706)', boxShadow: '0 4px 12px rgba(245,158,11,0.35)' }}>
+                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 4px 12px rgba(37,99,235,0.35)' }}>
                   <Star size={16} className="text-white" />
                 </div>
                 <div>

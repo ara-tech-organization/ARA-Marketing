@@ -2,11 +2,11 @@
 
 const reasons = [
   { icon: Clapperboard, title: 'High-Quality Cinematic Editing',      desc: 'Professional cinematic techniques — colour grading, motion design, and seamless cuts applied to every project.',      color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)', num: '01' },
-  { icon: Zap,          title: 'Fast Turnaround Time',                  desc: 'Deadline-driven workflow ensures your video is delivered on time without compromising on quality or creative depth.',   color: '#059669', accent: 'rgba(5,150,105,0.07)',  border: 'rgba(5,150,105,0.18)', num: '02' },
-  { icon: BookOpen,     title: 'Creative Storytelling Approach',        desc: 'Every edit is built around a narrative. We craft emotional arcs that connect your brand with your audience.',           color: '#7c3aed', accent: 'rgba(124,58,237,0.07)', border: 'rgba(124,58,237,0.18)', num: '03' },
-  { icon: MonitorPlay,  title: 'Platform-Optimised Video Formats',      desc: 'Videos formatted and optimised for YouTube, Instagram Reels, Facebook, LinkedIn, and broadcast channels.',              color: '#db2777', accent: 'rgba(219,39,119,0.07)', border: 'rgba(219,39,119,0.18)', num: '04' },
-  { icon: Settings,     title: 'Professional Tools & Software',         desc: 'Industry-standard editing suites for colour science, audio mastering, motion graphics, and VFX compositing.',           color: '#0891b2', accent: 'rgba(8,145,178,0.07)',  border: 'rgba(8,145,178,0.18)', num: '05' },
-  { icon: DollarSign,   title: 'Affordable Pricing for All Businesses', desc: 'Flexible packages for startups, SMEs, and large enterprises — premium quality without the premium price tag.',         color: '#d97706', accent: 'rgba(217,119,6,0.07)',  border: 'rgba(217,119,6,0.18)', num: '06' },
+  { icon: Zap,          title: 'Fast Turnaround Time',                  desc: 'Deadline-driven workflow ensures your video is delivered on time without compromising on quality or creative depth.',   color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)',  num: '02' },
+  { icon: BookOpen,     title: 'Creative Storytelling Approach',        desc: 'Every edit is built around a narrative. We craft emotional arcs that connect your brand with your audience.',           color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)',  num: '03' },
+  { icon: MonitorPlay,  title: 'Platform-Optimised Video Formats',      desc: 'Videos formatted and optimised for YouTube, Instagram Reels, Facebook, LinkedIn, and broadcast channels.',              color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)',  num: '04' },
+  { icon: Settings,     title: 'Professional Tools & Software',         desc: 'Industry-standard editing suites for colour science, audio mastering, motion graphics, and VFX compositing.',           color: '#0ea5e9', accent: 'rgba(14,165,233,0.07)', border: 'rgba(14,165,233,0.18)', num: '05' },
+  { icon: DollarSign,   title: 'Affordable Pricing for All Businesses', desc: 'Flexible packages for startups, SMEs, and large enterprises — premium quality without the premium price tag.',         color: '#0ea5e9', accent: 'rgba(14,165,233,0.07)', border: 'rgba(14,165,233,0.18)', num: '06' },
 ]
 
 export default function VEWhyUs() {
@@ -19,11 +19,11 @@ export default function VEWhyUs() {
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.09) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }} />
       <div className="absolute top-0 left-0 w-80 h-80 pointer-events-none"
         style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.07) 0%, transparent 60%)' }} />
       <div className="absolute bottom-0 right-0 w-80 h-80 pointer-events-none"
-        style={{ background: 'linear-gradient(315deg, rgba(124,58,237,0.07) 0%, transparent 60%)' }} />
+        style={{ background: 'linear-gradient(315deg, rgba(37,99,235,0.07) 0%, transparent 60%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -36,7 +36,7 @@ export default function VEWhyUs() {
           <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
             Why Businesses Trust Our{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
+              background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             }}>
               Video Editing Expertise
@@ -107,7 +107,7 @@ export default function VEWhyUs() {
         {/* Bottom banner */}
         <div className="reveal relative rounded-2xl overflow-hidden px-7 py-6 flex flex-col sm:flex-row items-center justify-between gap-5"
           style={{
-            background: 'linear-gradient(135deg, #1e3a8a 0%, #4338ca 100%)',
+            background: 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)',
             boxShadow: '0 16px 48px rgba(37,99,235,0.25)',
           }}>
           <div className="absolute inset-0 pointer-events-none"

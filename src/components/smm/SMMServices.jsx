@@ -44,8 +44,8 @@ const platforms = [
   },
   {
     icon: Briefcase,
-    color: '#0891b2',
-    bgLight: '#cffafe',
+    color: '#0ea5e9',
+    bgLight: '#e0f2fe',
     h3: 'LinkedIn Marketing',
     imgSrc: linkedinImg,
     imgAlt: 'LinkedIn Professional Networking and Branding in Thanjavur',
@@ -67,8 +67,8 @@ const platforms = [
   },
   {
     icon: Image,
-    color: '#db2777',
-    bgLight: '#fce7f3',
+    color: '#2563eb',
+    bgLight: '#dbeafe',
     h3: 'Pinterest Marketing',
     imgSrc: pinterestImg,
     imgAlt: 'Pinterest Branding and Visual Marketing in Thanjavur',
@@ -90,8 +90,8 @@ const platforms = [
   },
   {
     icon: TrendingUp,
-    color: '#059669',
-    bgLight: '#d1fae5',
+    color: '#2563eb',
+    bgLight: '#dbeafe',
     h3: 'Social Media Optimization (SMO)',
     imgSrc: socialMediaImg,
     imgAlt: 'Social Media Optimization SMO Services in Thanjavur',

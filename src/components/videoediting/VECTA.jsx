@@ -13,7 +13,7 @@ export default function VECTA() {
       <div className="absolute top-0 left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full pointer-events-none animate-orb"
         style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 right-1/4 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.22) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.22) 0%, transparent 65%)' }} />
 
       <div className="hidden sm:block absolute -top-16 -left-16 w-[320px] h-[320px] rounded-full border border-white/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden sm:block absolute -top-8 -left-8 w-[200px] h-[200px] rounded-full border border-white/08 pointer-events-none" />

@@ -20,19 +20,19 @@ const features = [
     icon: Cpu,
     title: 'AI-Driven Intelligence',
     desc: 'Our AI mobile app development in Thanjavur embeds smart features — recommendation engines, chatbots, predictive analytics — turning your app into a competitive asset.',
-    color: '#7c3aed',
+    color: '#2563eb',
   },
   {
     icon: Users,
     title: 'Seamless Cross-Platform Reach',
     desc: 'Reach your entire audience whether they use iOS or Android. Our cross-platform expertise ensures a consistent, premium experience across all devices.',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     icon: Smartphone,
     title: 'Full-Cycle Development',
     desc: 'From strategy and design to deployment and post-launch support, we handle every phase of mobile app development with precision and transparency.',
-    color: '#059669',
+    color: '#2563eb',
   },
 ]
 
@@ -51,7 +51,7 @@ export default function MAIntro() {
       <div className="absolute -top-32 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.14) 0%,transparent 65%)' }} />
       <div className="absolute -bottom-24 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.10) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -71,7 +71,7 @@ export default function MAIntro() {
             <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-white mb-5">
               Mobile Apps —{' '}
               <span style={{
-                background: 'linear-gradient(135deg,#60a5fa,#a78bfa)',
+                background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -97,7 +97,7 @@ export default function MAIntro() {
             {/* CTA */}
             <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:gap-3"
-              style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
+              style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
               Start Your App Project <ArrowRight size={14} />
             </a>
           </div>
@@ -129,7 +129,7 @@ export default function MAIntro() {
                   <p className="text-white text-[14px] sm:text-[16px] font-semibold leading-snug max-w-lg mb-1">
                     We are one of the best app development agencies in Thanjavur offering innovative solutions that seamlessly integrate with your digital strategy.
                   </p>
-                  <p className="text-[12px]" style={{ color: '#c4b5fd' }}>
+                  <p className="text-[12px]" style={{ color: '#93c5fd' }}>
                     Native iOS &amp; Android apps, cross-platform solutions, and AI-powered features — all under one roof.
                   </p>
                 </div>
@@ -152,7 +152,7 @@ export default function MAIntro() {
               <div className="absolute -bottom-5 right-6 bg-white rounded-2xl px-4 py-3 hidden md:flex items-center gap-3 animate-float"
                 style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.22)', border: '1px solid rgba(37,99,235,0.15)', animationDelay: '1.6s' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)' }}>
+                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
                   <TrendingUp size={16} className="text-white" />
                 </div>
                 <div>

@@ -6,14 +6,14 @@ import {
 
 const cmsModules = [
   { label: 'Pages Published',  val: '48',   pct: 80, color: '#2563eb' },
-  { label: 'Content Updates',  val: '312',  pct: 72, color: '#0891b2' },
-  { label: 'Active Sessions',  val: '2.1K', pct: 65, color: '#38bdf8' },
+  { label: 'Content Updates',  val: '312',  pct: 72, color: '#0ea5e9' },
+  { label: 'Active Sessions',  val: '2.1K', pct: 65, color: '#60a5fa' },
 ]
 
 const techStack = [
   { label: 'React',     color: '#2563eb', icon: Code2 },
-  { label: 'Node.js',   color: '#0891b2', icon: Database },
-  { label: 'WordPress', color: '#38bdf8', icon: Globe },
+  { label: 'Node.js',   color: '#0ea5e9', icon: Database },
+  { label: 'WordPress', color: '#60a5fa', icon: Globe },
   { label: 'REST API',  color: '#60a5fa', icon: RefreshCw },
 ]
 
@@ -24,7 +24,7 @@ const highlights = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#93c5fd,#38bdf8)',
+  background: 'linear-gradient(135deg,#93c5fd,#60a5fa)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   backgroundClip: 'text',
@@ -46,7 +46,7 @@ export default function DWHero() {
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.20) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.20) 0%, transparent 65%)' }} />
       {/* Rings */}
       <div className="hidden md:block absolute top-20 right-[8%] w-48 h-48 rounded-full border border-blue-500/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-20 left-[5%] w-32 h-32 rounded-full border border-sky-500/10 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
@@ -103,7 +103,7 @@ export default function DWHero() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-12">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ boxShadow: '0 8px 32px rgba(124,58,237,0.35)' }}>
+                style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.35)' }}>
                 Take a First Step <ArrowRight size={14} />
               </a>
               <a href="#dw-intro"
@@ -173,7 +173,7 @@ export default function DWHero() {
                       </div>
                     </div>
                     <span className="text-[28px] font-black leading-none"
-                      style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                      style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                       98<span className="text-[14px] text-slate-300">/100</span>
                     </span>
                   </div>
@@ -213,7 +213,7 @@ export default function DWHero() {
 
                 {/* Bottom strip */}
                 <div className="flex flex-wrap items-center justify-between gap-2 px-5 sm:px-7 py-3"
-                  style={{ background: 'linear-gradient(90deg,#1e3a8a,#1d4ed8,#0891b2)' }}>
+                  style={{ background: 'linear-gradient(90deg,#0f172a,#1d4ed8,#0ea5e9)' }}>
                   <div className="flex items-center gap-2">
                     <Layers size={11} className="text-white/70" />
                     <span className="text-[10px] font-bold text-white/80">CMS Powered</span>

@@ -22,7 +22,7 @@ const services = [
     items: ['Brand Introduction Videos', 'Company Profile Videos', 'Promotional Brand Videos', 'Marketing Campaign Videos', 'Cinematic Storytelling', 'Colour Grading & Mood Design'],
   },
   {
-    id: 'product', icon: Package, label: 'Product Videos', color: '#0891b2', tag: 'Product',
+    id: 'product', icon: Package, label: 'Product Videos', color: '#0ea5e9', tag: 'Product',
     imgSrc: productImg,
     imgAlt: 'Product video editing services in Thanjavur',
     desc: [
@@ -32,21 +32,21 @@ const services = [
     items: ['Product Demo Videos', 'Service Explainer Videos', 'Promotional Ads', 'Marketing Video Content', 'Feature Highlight Reels', 'Before & After Showcases'],
   },
   {
-    id: 'corporate', icon: Briefcase, label: 'Corporate Films', color: '#059669', tag: 'Corporate',
+    id: 'corporate', icon: Briefcase, label: 'Corporate Films', color: '#2563eb', tag: 'Corporate',
     imgSrc: corporateImg,
     imgAlt: 'Corporate film editing companies in Thanjavur',
     desc: ['As one of the professional corporate video editing companies in Thanjavur, we deliver polished and powerful corporate films that communicate your company values, culture, and capabilities to clients, investors, and stakeholders with professional precision.'],
     items: ['Company Profile Films', 'Training & HR Videos', 'Investor Pitch Videos', 'Annual Report Videos', 'Internal Communication Videos', 'CEO & Leadership Videos'],
   },
   {
-    id: 'event', icon: CalendarDays, label: 'Event Coverage', color: '#d97706', tag: 'Events',
+    id: 'event', icon: CalendarDays, label: 'Event Coverage', color: '#0ea5e9', tag: 'Events',
     imgSrc: eventImg,
     imgAlt: 'Event video editing in Thanjavur',
     desc: ['We edit high-quality event footage for corporate events, seminars, conferences, and business functions. We ensure storytelling is smooth and visuals are engaging, preserving the energy and highlights of every occasion for lasting brand memory.'],
     items: ['Event Highlight Videos', 'Corporate Event Coverage', 'Seminar & Conference Editing', 'Live Event Editing', 'Award Ceremony Videos', 'Product Launch Coverage'],
   },
   {
-    id: 'social', icon: Share2, label: 'Social Media', color: '#db2777', tag: 'Social',
+    id: 'social', icon: Share2, label: 'Social Media', color: '#2563eb', tag: 'Social',
     imgSrc: socialImg,
     imgAlt: 'Social media video editing services in Thanjavur',
     desc: [
@@ -56,7 +56,7 @@ const services = [
     items: ['Instagram Reels Editing', 'Facebook Video Ads', 'Short Promotional Videos', 'Viral Content Editing', 'YouTube Channel Videos', 'Story & Short-form Content'],
   },
   {
-    id: 'drone', icon: Wind, label: 'Drone Aerial', color: '#7c3aed', tag: 'Aerial',
+    id: 'drone', icon: Wind, label: 'Drone Aerial', color: '#2563eb', tag: 'Aerial',
     imgSrc: droneImg,
     imgAlt: 'Drone video editing in Thanjavur',
     desc: [
@@ -68,7 +68,7 @@ const services = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 

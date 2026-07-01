@@ -19,7 +19,7 @@ const reasons = [
     icon: Smartphone,
     title: 'Mobile-Friendly Responsive Design',
     desc: 'Over 70% of online purchases happen on mobile. Our e-commerce stores are built with a mobile-first approach — delivering a flawless shopping experience on every device and screen size.',
-    color: '#0891b2',
+    color: '#0ea5e9',
     image: mobileImg,
   },
   {
@@ -27,7 +27,7 @@ const reasons = [
     icon: CreditCard,
     title: 'Secure Payment Gateway Integration',
     desc: 'We integrate Razorpay, Stripe, PayU, and other trusted gateways with SSL encryption and PCI-DSS compliance — giving your customers confidence to shop and complete purchases safely.',
-    color: '#059669',
+    color: '#2563eb',
     image: seoOptImg,
   },
   {
@@ -35,7 +35,7 @@ const reasons = [
     icon: Search,
     title: 'SEO-Optimised Architecture',
     desc: 'From clean URL structures to schema markup and Core Web Vitals, every store we build is engineered for top search engine rankings — driving organic traffic that turns into consistent revenue.',
-    color: '#7c3aed',
+    color: '#0ea5e9',
     image: seoImg,
   },
   {
@@ -43,7 +43,7 @@ const reasons = [
     icon: Zap,
     title: 'High-Speed Performance & Scalability',
     desc: 'Slow stores lose sales. We optimise every element — images, code, CDN delivery, and server performance — so your store loads in under 2 seconds and handles thousands of concurrent shoppers.',
-    color: '#d97706',
+    color: '#2563eb',
     image: highSpeedImg,
   },
 ]

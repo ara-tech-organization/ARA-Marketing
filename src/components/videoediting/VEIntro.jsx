@@ -3,19 +3,19 @@ import veIntroImg from '../../assets/Video-editing/V2.webp'
 
 const expertise = [
   { icon: Wand2,   label: 'Digital Marketing Video', color: '#2563eb', desc: 'Platform-specific edits crafted to drive engagement and conversions across all digital channels.' },
-  { icon: Layers,  label: 'Cinematic Storytelling',   color: '#7c3aed', desc: 'Narrative-driven edits with professional colour grading, motion effects, and seamless transitions.' },
-  { icon: Globe,   label: 'Platform Optimisation',    color: '#0891b2', desc: 'Videos formatted and optimised for YouTube, Instagram, Facebook, and corporate distribution.' },
-  { icon: Palette, label: 'Brand Identity',           color: '#059669', desc: 'Consistent visual language that reinforces your brand across every frame and every format.' },
+  { icon: Layers,  label: 'Cinematic Storytelling',   color: '#2563eb', desc: 'Narrative-driven edits with professional colour grading, motion effects, and seamless transitions.' },
+  { icon: Globe,   label: 'Platform Optimisation',    color: '#0ea5e9', desc: 'Videos formatted and optimised for YouTube, Instagram, Facebook, and corporate distribution.' },
+  { icon: Palette, label: 'Brand Identity',           color: '#2563eb', desc: 'Consistent visual language that reinforces your brand across every frame and every format.' },
 ]
 
 const stats = [
   { value: '500+', label: 'Videos Edited',    icon: Play,      color: '#2563eb' },
-  { value: '150+', label: 'Brands Served',    icon: Award,     color: '#7c3aed' },
-  { value: '98%',  label: 'Client Retention', icon: TrendingUp, color: '#059669' },
+  { value: '150+', label: 'Brands Served',    icon: Award,     color: '#2563eb' },
+  { value: '98%',  label: 'Client Retention', icon: TrendingUp, color: '#2563eb' },
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -30,7 +30,7 @@ export default function VEIntro() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.30) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(196,181,253,0.20) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -77,7 +77,7 @@ export default function VEIntro() {
 
             <a href="/ARA-Marketing/contact-us"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
+              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
               Get Video Editing Services <ArrowRight size={14} />
             </a>
           </div>

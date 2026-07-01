@@ -3,14 +3,14 @@ import omIntroImg from '../../assets/Other-services/o1.webp'
 
 const features = [
   { icon: Mail,       color: '#2563eb', label: 'Email Marketing',      desc: 'Targeted campaigns with high open rates and automated workflows that convert subscribers into loyal customers.' },
-  { icon: Users,      color: '#7c3aed', label: 'Influencer Marketing', desc: 'Strategic partnerships with trusted creators who amplify your brand to engaged, highly relevant audiences.' },
-  { icon: Smartphone, color: '#0891b2', label: 'SMS Marketing',        desc: '99% delivery rate bulk SMS campaigns delivering timely offers, reminders, and updates directly to phones.' },
-  { icon: BarChart2,  color: '#059669', label: 'Campaign Analytics',   desc: 'Monthly transparent reports covering ROI, audience growth, and conversion data with actionable insights.' },
+  { icon: Users,      color: '#2563eb', label: 'Influencer Marketing', desc: 'Strategic partnerships with trusted creators who amplify your brand to engaged, highly relevant audiences.' },
+  { icon: Smartphone, color: '#0ea5e9', label: 'SMS Marketing',        desc: '99% delivery rate bulk SMS campaigns delivering timely offers, reminders, and updates directly to phones.' },
+  { icon: BarChart2,  color: '#2563eb', label: 'Campaign Analytics',   desc: 'Monthly transparent reports covering ROI, audience growth, and conversion data with actionable insights.' },
 ]
 
 const imageStats = [
   { value: '500+', label: 'Campaigns', color: '#60a5fa' },
-  { value: '98%',  label: 'Satisfied',  color: '#a78bfa' },
+  { value: '98%',  label: 'Satisfied',  color: '#60a5fa' },
   { value: '2.4M', label: 'Reach',      color: '#38bdf8' },
 ]
 
@@ -23,7 +23,7 @@ export default function OMIntro() {
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.08) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -37,7 +37,7 @@ export default function OMIntro() {
 
             <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Multi-Channel Marketing Solutions That{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Drive Engagement & Conversions
               </span>
             </h2>
@@ -71,7 +71,7 @@ export default function OMIntro() {
 
             <a href="/ARA-Marketing/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.28)' }}>
+              style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
               Start Your Campaign <ArrowRight size={15} />
             </a>
           </div>
@@ -80,7 +80,7 @@ export default function OMIntro() {
           <div className="lg:w-[460px] flex-shrink-0 reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[3rem]"
-                style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.12),rgba(124,58,237,0.08))', filter: 'blur(4px)' }} />
+                style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.12),rgba(37,99,235,0.08))', filter: 'blur(4px)' }} />
 
               <div className="relative rounded-3xl overflow-hidden shadow-2xl"
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
@@ -109,7 +109,7 @@ export default function OMIntro() {
               {/* Floating badge top-right */}
               <div className="hidden sm:flex absolute -top-4 -right-4 items-center gap-2.5 px-4 py-2.5 bg-white rounded-2xl shadow-xl border border-violet-100 animate-float">
                 <div className="w-8 h-8 rounded-xl flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)' }}>
+                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
                   <Award size={14} className="text-white" />
                 </div>
                 <div>

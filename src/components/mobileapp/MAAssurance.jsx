@@ -17,13 +17,13 @@ const commitments = [
     icon: Layers,
     title: 'Full-Cycle Support',
     desc: 'From strategy and design through deployment and post-launch maintenance, we are your partner at every stage.',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     icon: MessageSquare,
     title: 'Transparent Communication',
     desc: 'Regular progress updates, clear reporting, and direct access to your development team throughout the entire project.',
-    color: '#059669',
+    color: '#2563eb',
   },
 ]
 

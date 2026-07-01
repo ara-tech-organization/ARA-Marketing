@@ -25,7 +25,7 @@ const services = [
     features: ['Digital banners (all sizes)', 'Print-ready formats', 'Campaign creatives', 'Outdoor hoardings', 'Brand-aligned layouts'],
     img: bannerImg,
     imgAlt: 'Creative Ad Design in Thanjavur',
-    accent: '#7c3aed',
+    accent: '#2563eb',
   },
   {
     title: 'Brochure & Pamphlet Design',
@@ -34,7 +34,7 @@ const services = [
     features: ['Bi-fold & tri-fold layouts', 'A4 / A5 / DL formats', 'Print-ready PDF output', 'Full-colour illustrations', 'Catalogue design'],
     img: pamphletImg,
     imgAlt: 'premium brochure layout in thanjavur',
-    accent: '#7c3aed',
+    accent: '#2563eb',
   },
   {
     title: 'Business Card & Visiting Card Design',
@@ -43,7 +43,7 @@ const services = [
     features: ['Standard & premium finishes', 'Single & double-sided', 'Spot UV & foil options', 'Print-ready artwork', 'Digital card variants'],
     img: visitingImg,
     imgAlt: 'Business Card Design in Thanjavur',
-    accent: '#059669',
+    accent: '#2563eb',
   },
   {
     title: 'Letterhead Design & Corporate Stationery',
@@ -52,7 +52,7 @@ const services = [
     features: ['Letterhead design', 'Envelope & stamp design', 'Invoice template', 'Corporate folder', 'Email signature'],
     img: stationeryImg,
     imgAlt: 'Letterhead Design in Thanjavur',
-    accent: '#d97706',
+    accent: '#0ea5e9',
   },
   {
     title: 'Social Media Post Design',
@@ -61,7 +61,7 @@ const services = [
     features: ['Instagram post & story', 'Facebook cover & ad', 'LinkedIn banner', 'WhatsApp promotional', 'Campaign template sets'],
     img: socialImg,
     imgAlt: 'Social Media Post Design in Thanjavur',
-    accent: '#db2777',
+    accent: '#2563eb',
   },
   {
     title: 'Flyer & Poster Design',
@@ -70,7 +70,7 @@ const services = [
     features: ['Event & promotional flyers', 'A3 / A4 / A5 posters', 'Product launch designs', 'Retail POS designs', 'Offset-ready artwork'],
     img: flyerImg,
     imgAlt: 'Business Flyer Layout in Thanjavur',
-    accent: '#0891b2',
+    accent: '#0ea5e9',
   },
   {
     title: 'Graphic Design & Marketing Visuals',

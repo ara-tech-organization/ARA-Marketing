@@ -5,14 +5,14 @@ import {
 
 const channels = [
   { icon: Mail,       label: 'Email Marketing',      metric: '68%',  sub: 'Avg open rate',  pct: 68, color: '#2563eb', light: '#eff6ff' },
-  { icon: Users,      label: 'Influencer Marketing', metric: '2.4M', sub: 'Monthly reach',  pct: 82, color: '#7c3aed', light: '#f5f3ff' },
-  { icon: Smartphone, label: 'SMS Marketing',         metric: '99%',  sub: 'Delivery rate', pct: 99, color: '#0891b2', light: '#f0f9ff' },
+  { icon: Users,      label: 'Influencer Marketing', metric: '2.4M', sub: 'Monthly reach',  pct: 82, color: '#2563eb', light: '#e0f2fe' },
+  { icon: Smartphone, label: 'SMS Marketing',         metric: '99%',  sub: 'Delivery rate', pct: 99, color: '#0ea5e9', light: '#f0f9ff' },
 ]
 
 export default function OMHero() {
   return (
     <section className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#f5f3ff 100%)' }}>
+      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#e0f2fe 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
@@ -21,7 +21,7 @@ export default function OMHero() {
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.09) 0%,transparent 65%)' }} />
       <div className="absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(124,58,237,0.07) 0%,transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
       <div className="absolute top-16 left-[12%] w-10 h-10 rounded-full border border-blue-300/25 pointer-events-none" />
       <div className="absolute top-28 right-[14%] w-6 h-6 rounded-full border border-violet-300/20 pointer-events-none" />
 
@@ -57,7 +57,7 @@ export default function OMHero() {
 
             <h1 className="text-[clamp(28px,3.2vw,48px)] font-bold leading-[1.1] tracking-tight text-slate-900 mb-4">
               Advanced Digital{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb 0%,#7c3aed 60%,#0891b2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Marketing
               </span>
               <span className="block">Services in Thanjavur</span>
@@ -67,7 +67,7 @@ export default function OMHero() {
             </h1>
 
             <div className="w-16 h-1 rounded-full mb-6"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+              style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
 
             <p className="text-[15px] text-slate-500 leading-[1.9] max-w-[520px]">
               ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencer marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
@@ -79,7 +79,7 @@ export default function OMHero() {
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.28)' }}>
+                style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
                 Start Your Campaign <ArrowRight size={14} />
               </a>
               <a href="#om-services"
@@ -91,7 +91,7 @@ export default function OMHero() {
 
             {/* Stats row */}
             <div className="grid grid-cols-3 gap-3">
-              {[['500+','Campaigns','#2563eb'],['98%','Satisfied','#7c3aed'],['4x','Avg ROI','#0891b2']].map(([v, l, c]) => (
+              {[['500+','Campaigns','#2563eb'],['98%','Satisfied','#2563eb'],['4x','Avg ROI','#0ea5e9']].map(([v, l, c]) => (
                 <div key={l} className="flex flex-col items-center text-center px-3 py-4 rounded-2xl bg-white border border-slate-100"
                   style={{ boxShadow: '0 2px 12px rgba(37,99,235,0.07)' }}>
                   <span className="text-[22px] font-black leading-none mb-1"

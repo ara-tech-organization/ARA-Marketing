@@ -21,7 +21,7 @@ const industries = [
     desc: 'LMS-integrated WordPress platforms for online learning, course management, and student portals.',
     image: wpEduImg,
     stat: '30+', statLabel: 'Ed-Tech Sites',
-    color: '#7c3aed', bg: '#ede9fe',
+    color: '#2563eb', bg: '#dbeafe',
     points: ['LMS Integration', 'Student Portal Setup', 'Course Management'],
   },
   {
@@ -30,7 +30,7 @@ const industries = [
     desc: 'Professional corporate WordPress sites with custom page builders, multilingual support, and CRM integration.',
     image: wpCorpImg,
     stat: '50+', statLabel: 'Corporates Served',
-    color: '#0891b2', bg: '#cffafe',
+    color: '#0ea5e9', bg: '#e0f2fe',
     points: ['Custom Page Builder', 'CRM Integration', 'Multilingual Support'],
   },
   {
@@ -39,7 +39,7 @@ const industries = [
     desc: 'Stunning portfolio showcases for creatives, photographers, designers, and freelancers to win more clients.',
     image: wpPortImg,
     stat: '40+', statLabel: 'Portfolios Built',
-    color: '#059669', bg: '#d1fae5',
+    color: '#2563eb', bg: '#dbeafe',
     points: ['Gallery & Showcase Setup', 'Mobile Optimised', 'SEO-Ready Design'],
   },
   {
@@ -48,7 +48,7 @@ const industries = [
     desc: 'Lead-generating service websites with appointment booking, testimonials, and inquiry management.',
     image: wpServiceImg,
     stat: '60+', statLabel: 'Business Sites',
-    color: '#d97706', bg: '#fef3c7',
+    color: '#0ea5e9', bg: '#e0f2fe',
     points: ['Booking System', 'Lead Generation Forms', 'Google Maps Integration'],
   },
 ]
@@ -73,7 +73,7 @@ export default function CMSPortfolio() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             WordPress Websites{' '}
-            <span style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Across Industries
             </span>
           </h2>
@@ -150,8 +150,8 @@ export default function CMSPortfolio() {
         <div className="reveal grid grid-cols-3 gap-4 mb-10">
           {[
             { icon: TrendingUp, val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
-            { icon: Star,       val: '98%',  lbl: 'Client Satisfaction Rate',  color: '#7c3aed' },
-            { icon: Award,      val: '5★',   lbl: 'Average Client Rating',     color: '#059669' },
+            { icon: Star,       val: '98%',  lbl: 'Client Satisfaction Rate',  color: '#0ea5e9' },
+            { icon: Award,      val: '5★',   lbl: 'Average Client Rating',     color: '#2563eb' },
           ].map(({ icon: Icon, val, lbl, color }) => (
             <div key={lbl} className="flex items-center gap-4 px-5 py-4 rounded-2xl bg-white"
               style={{ border: `1px solid ${color}18`, boxShadow: `0 4px 16px ${color}0a` }}>

@@ -9,47 +9,47 @@ const benefits = [
     color: '#0ea5e9',
     metric: '<1s',
     metricLabel: 'Load Time',
-    grad: 'linear-gradient(135deg, #0ea5e9, #38bdf8)',
+    grad: 'linear-gradient(135deg, #0ea5e9, #60a5fa)',
   },
   {
     num: '02',
     icon: Shield,
     title: 'Enhanced Security — No Database Vulnerabilities',
     desc: 'With no backend server or database, static sites are immune to SQL injection, server exploits, and CMS vulnerabilities. Your business data and user experience stay safe 24/7.',
-    color: '#a855f7',
+    color: '#2563eb',
     metric: '0',
     metricLabel: 'DB Risk',
-    grad: 'linear-gradient(135deg, #a855f7, #c084fc)',
+    grad: 'linear-gradient(135deg, #2563eb, #60a5fa)',
   },
   {
     num: '03',
     icon: TrendingUp,
     title: 'Better SEO Performance',
     desc: 'Fast load speed, clean semantic HTML, structured data, and mobile-first design all contribute to higher Google rankings. Our static websites are built to be found and indexed easily.',
-    color: '#10b981',
+    color: '#0ea5e9',
     metric: '98+',
     metricLabel: 'SEO Score',
-    grad: 'linear-gradient(135deg, #10b981, #34d399)',
+    grad: 'linear-gradient(135deg, #0ea5e9, #60a5fa)',
   },
   {
     num: '04',
     icon: DollarSign,
     title: 'Low Hosting & Maintenance Costs',
     desc: 'Deploy on Netlify, Vercel, or GitHub Pages for free or at minimal cost. No server bills, no CMS licenses, and virtually zero ongoing maintenance expenses.',
-    color: '#f59e0b',
+    color: '#2563eb',
     metric: '90%',
     metricLabel: 'Cost Saving',
-    grad: 'linear-gradient(135deg, #f59e0b, #fbbf24)',
+    grad: 'linear-gradient(135deg, #2563eb, #60a5fa)',
   },
   {
     num: '05',
     icon: Server,
     title: 'High Reliability & Uptime',
     desc: 'Static files hosted on CDNs deliver near-perfect uptime with global distribution. Even during traffic spikes, your website stays fast and fully available to every visitor worldwide.',
-    color: '#ec4899',
+    color: '#0ea5e9',
     metric: '99.9%',
     metricLabel: 'Uptime',
-    grad: 'linear-gradient(135deg, #ec4899, #f472b6)',
+    grad: 'linear-gradient(135deg, #0ea5e9, #60a5fa)',
   },
 ]
 
@@ -61,7 +61,7 @@ export default function SWBenefits() {
     >
       {/* Orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(168,85,247,0.08) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.07) 0%, transparent 65%)' }} />
 
@@ -82,7 +82,7 @@ export default function SWBenefits() {
             {/* Badge */}
             <span
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(14,165,233,0.12)', color: '#38bdf8', border: '1px solid rgba(14,165,233,0.28)' }}
+              style={{ background: 'rgba(14,165,233,0.12)', color: '#60a5fa', border: '1px solid rgba(14,165,233,0.28)' }}
             >
               <Star size={11} /> Key Benefits
             </span>
@@ -91,7 +91,7 @@ export default function SWBenefits() {
             <h2 className="text-[clamp(22px,2.5vw,36px)] font-bold text-white leading-tight tracking-tight mb-4">
               Benefits of{' '}
               <span style={{
-                background: 'linear-gradient(135deg, #38bdf8, #c084fc)',
+                background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',

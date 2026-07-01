@@ -2,7 +2,7 @@
 
 const stats = [
   { icon: Globe,  val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
-  { icon: Star,   val: '5★',   lbl: 'Average Client Rating',     color: '#f59e0b' },
+  { icon: Star,   val: '5★',   lbl: 'Average Client Rating',     color: '#0ea5e9' },
   { icon: Users,  val: '150+', lbl: 'Happy Business Clients',    color: '#2563eb' },
   { icon: Clock,  val: '5 Days', lbl: 'Average Project Kickoff', color: '#1d4ed8' },
 ]
@@ -113,7 +113,7 @@ export default function CMSCTA() {
                       <Icon size={15} className="text-white" />
                     </div>
                     <p className="text-[24px] font-black text-white leading-none mb-1"
-                      style={{ color: val === '5★' ? '#fbbf24' : 'white' }}>{val}</p>
+                      style={{ color: val === '5★' ? '#60a5fa' : 'white' }}>{val}</p>
                     <p className="text-[10.5px] font-medium leading-snug" style={{ color: 'rgba(255,255,255,0.65)' }}>{lbl}</p>
                   </div>
                 ))}

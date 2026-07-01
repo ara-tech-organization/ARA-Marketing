@@ -35,7 +35,7 @@ function StarRow({ count }) {
   return (
     <div className="flex gap-0.5">
       {Array.from({ length: count }).map((_, i) => (
-        <Star key={i} size={12} style={{ color: '#f59e0b', fill: '#f59e0b' }} />
+        <Star key={i} size={12} style={{ color: '#60a5fa', fill: '#60a5fa' }} />
       ))}
     </div>
   )
@@ -135,7 +135,7 @@ export default function CMSTestimonials() {
         <div className="reveal mt-12 flex flex-wrap items-center justify-center gap-6 pt-8"
           style={{ borderTop: '1px solid #f1f5f9' }}>
           {[
-            { val: '5★', lbl: 'Average Rating', color: '#f59e0b' },
+            { val: '5★', lbl: 'Average Rating', color: '#0ea5e9' },
             { val: '99%', lbl: 'Client Satisfaction', color: '#2563eb' },
             { val: '200+', lbl: 'Happy Clients', color: '#2563eb' },
           ].map(({ val, lbl, color }) => (

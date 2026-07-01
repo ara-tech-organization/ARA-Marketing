@@ -144,8 +144,8 @@ export default function WebDevHero() {
                 <p className="text-[13px] font-bold text-slate-700">Performance Score</p>
                 <p className="text-[11px] text-slate-400">Live Audit Result</p>
               </div>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50
-                text-emerald-600 border border-emerald-100 rounded-full text-[10px] font-bold">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50
+                text-blue-600 border border-blue-100 rounded-full text-[10px] font-bold">
                 <TrendingUp size={10} /> Excellent
               </span>
             </div>
@@ -180,8 +180,8 @@ export default function WebDevHero() {
                 {[
                   { label: 'Desktop', color: '#2563eb', icon: Globe2 },
                   { label: 'Mobile',  color: '#0284c7', icon: Smartphone },
-                  { label: 'Tablet',  color: '#7c3aed', icon: Smartphone },
-                  { label: 'PWA',     color: '#059669', icon: Zap },
+                  { label: 'Tablet',  color: '#2563eb', icon: Smartphone },
+                  { label: 'PWA',     color: '#0ea5e9', icon: Zap },
                 ].map(({ label, color, icon: Icon }) => (
                   <div key={label}
                     className="flex items-center gap-2 px-3 py-2 rounded-xl"
@@ -192,9 +192,9 @@ export default function WebDevHero() {
                 ))}
               </div>
               <div className="flex items-center gap-2 mt-2 px-3 py-2.5 rounded-xl"
-                style={{ background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
-                <CheckCircle size={14} className="text-emerald-500 flex-shrink-0" />
-                <span className="text-[11px] font-semibold text-emerald-700">Website Fully Optimized</span>
+                style={{ background: '#eff6ff', border: '1px solid #bfdbfe' }}>
+                <CheckCircle size={14} className="text-blue-500 flex-shrink-0" />
+                <span className="text-[11px] font-semibold text-blue-700">Website Fully Optimized</span>
               </div>
             </div>
 

@@ -124,7 +124,7 @@ export default function GDTestimonials() {
             >
               <div className="flex gap-0.5 mb-3">
                 {Array.from({ length: t.stars }).map((_, j) => (
-                  <Star key={j} size={13} className="text-amber-400" fill="#fbbf24" />
+                  <Star key={j} size={13} className="text-blue-400" fill="#60a5fa" />
                 ))}
               </div>
               <Quote size={22} className="text-blue-100 mb-2.5 flex-shrink-0" fill="currentColor" />
@@ -180,7 +180,7 @@ export default function GDTestimonials() {
                           <div>
                             <div className="flex gap-1 mb-4">
                               {Array.from({ length: t.stars }).map((_, j) => (
-                                <Star key={j} size={15} className="text-amber-400" fill="#fbbf24" />
+                                <Star key={j} size={15} className="text-blue-400" fill="#60a5fa" />
                               ))}
                             </div>
                             <div className="relative">
@@ -201,7 +201,7 @@ export default function GDTestimonials() {
                             </div>
                             <div className="flex items-center gap-1 px-2.5 py-1 bg-white rounded-full border border-blue-200"
                               style={{ boxShadow: '0 2px 8px rgba(37,99,235,0.1)' }}>
-                              <Star size={9} className="text-amber-400" fill="#fbbf24" />
+                              <Star size={9} className="text-blue-400" fill="#60a5fa" />
                               <span className="text-[10px] font-bold text-slate-700">5.0</span>
                             </div>
                           </div>
@@ -220,7 +220,7 @@ export default function GDTestimonials() {
                       >
                         <div className="flex gap-0.5 mb-3">
                           {Array.from({ length: t.stars }).map((_, j) => (
-                            <Star key={j} size={11} className="text-amber-400" fill="#fbbf24" />
+                            <Star key={j} size={11} className="text-blue-400" fill="#60a5fa" />
                           ))}
                         </div>
                         <Quote size={20} className="text-blue-100 mb-2.5 flex-shrink-0" fill="currentColor" />

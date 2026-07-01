@@ -170,10 +170,10 @@ export default function SMMHero() {
                     <div className="flex flex-col gap-2.5 justify-center w-[120px] flex-shrink-0">
                       {[
                         { label: 'Facebook',  pct: 92, color: '#2563eb' },
-                        { label: 'Instagram', pct: 85, color: '#9333ea' },
-                        { label: 'LinkedIn',  pct: 74, color: '#0284c7' },
-                        { label: 'Pinterest', pct: 60, color: '#dc2626' },
-                        { label: 'SMO',       pct: 50, color: '#059669' },
+                        { label: 'Instagram', pct: 85, color: '#2563eb' },
+                        { label: 'LinkedIn',  pct: 74, color: '#0ea5e9' },
+                        { label: 'Pinterest', pct: 60, color: '#2563eb' },
+                        { label: 'SMO',       pct: 50, color: '#2563eb' },
                       ].map(({ label, pct, color }) => (
                         <div key={label} className="flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: color }} />
@@ -188,8 +188,8 @@ export default function SMMHero() {
                   <div className="mt-5 pt-4 border-t border-slate-100 grid grid-cols-3 gap-3">
                     {[
                       { label: 'New Followers', value: '+1,247', color: '#2563eb', icon: Users },
-                      { label: 'Live Reach',    value: '12.4K',  color: '#7c3aed', icon: Activity },
-                      { label: 'This Month',    value: '95%',    color: '#059669', icon: TrendingUp },
+                      { label: 'Live Reach',    value: '12.4K',  color: '#2563eb', icon: Activity },
+                      { label: 'This Month',    value: '95%',    color: '#2563eb', icon: TrendingUp },
                     ].map(({ label, value, color, icon: Icon }) => (
                       <div key={label} className="flex flex-col items-center text-center p-2 rounded-xl"
                         style={{ background: color + '08', border: `1px solid ${color}18` }}>

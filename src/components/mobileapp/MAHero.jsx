@@ -28,7 +28,7 @@ const tabItems = [
 
 const appCards = [
   { label: 'Total Revenue', val: '₹2.4M', change: '+24%', color: '#2563eb',  bg: '#eff6ff' },
-  { label: 'Active Users',  val: '12.4K', change: '+18%', color: '#7c3aed',  bg: '#f5f3ff' },
+  { label: 'Active Users',  val: '12.4K', change: '+18%', color: '#0ea5e9',  bg: '#e0f2fe' },
 ]
 
 const chartBars = [28, 45, 38, 60, 48, 75, 55, 70, 50, 88, 65, 92]
@@ -155,9 +155,9 @@ export default function MAHero() {
 
               {/* Floating badge — rating */}
               <div className="absolute -bottom-8 -right-14 z-20 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white animate-float"
-                style={{ border: '1px solid #fde68a', boxShadow: '0 8px 28px rgba(245,158,11,0.16)', animationDelay: '1.6s' }}>
+                style={{ border: '1px solid #bae6fd', boxShadow: '0 8px 28px rgba(14,165,233,0.16)', animationDelay: '1.6s' }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#f59e0b,#d97706)' }}>
+                  style={{ background: 'linear-gradient(135deg,#0ea5e9,#2563eb)' }}>
                   <Star size={14} className="text-white" />
                 </div>
                 <div>
@@ -258,9 +258,9 @@ export default function MAHero() {
                         <p className="text-[7.5px] font-bold text-blue-600">See all</p>
                       </div>
                       {[
-                        { name: 'Priya S.',    amount: '₹2,499', dot: '#10b981' },
+                        { name: 'Priya S.',    amount: '₹2,499', dot: '#0ea5e9' },
                         { name: 'Karthik R.',  amount: '₹5,200', dot: '#2563eb' },
-                        { name: 'Meena Co.',   amount: '₹8,750', dot: '#f59e0b' },
+                        { name: 'Meena Co.',   amount: '₹8,750', dot: '#60a5fa' },
                       ].map(({ name, amount, dot }) => (
                         <div key={name} className="flex items-center gap-2 px-3 py-2"
                           style={{ borderBottom: '1px solid #f8fafc' }}>
@@ -276,7 +276,7 @@ export default function MAHero() {
 
                     {/* Liked products row */}
                     <div className="flex items-center gap-1.5 px-3 mb-3">
-                      {['#2563eb','#7c3aed','#059669'].map((c, i) => (
+                      {['#2563eb','#0ea5e9','#2563eb'].map((c, i) => (
                         <div key={i} className="flex-1 rounded-xl py-3 flex flex-col items-center gap-1"
                           style={{ background: `${c}0f`, border: `1px solid ${c}20` }}>
                           <Heart size={11} style={{ color: c }} />

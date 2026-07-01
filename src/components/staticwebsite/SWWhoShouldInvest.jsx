@@ -11,7 +11,7 @@ const audiences = [
     desc: 'Establish a strong digital footprint fast. A static website gives your local business instant credibility, visibility, and new customer reach in Thanjavur and beyond.',
     image: imgLocalBusiness,
     imgPos: 'center center',
-    color: '#0891b2',
+    color: '#0ea5e9',
     tag: '★ Most Popular',
     tagGold: true,
     points: ['Instant online credibility', 'Local SEO ready', 'Fast to launch'],
@@ -22,7 +22,7 @@ const audiences = [
     desc: 'Designers, photographers, architects, and freelancers — showcase your work with a blazing-fast portfolio site that leaves a lasting impression.',
     image: imgPortfolio,
     imgPos: 'center center',
-    color: '#6366f1',
+    color: '#2563eb',
     tag: 'Professionals',
     points: ['Showcase your work', 'Blazing fast load', 'Mobile responsive'],
   },
@@ -32,7 +32,7 @@ const audiences = [
     desc: 'Schools, colleges, and coaching centers need a reliable, low-maintenance web presence. Our static sites deliver information efficiently with zero downtime.',
     image: imgEducational,
     imgPos: 'center center',
-    color: '#7c3aed',
+    color: '#2563eb',
     tag: 'Institutions',
     points: ['Zero downtime', 'Easy to maintain', 'Cost effective'],
   },
@@ -42,7 +42,7 @@ const audiences = [
     desc: 'Plumbers, electricians, consultants, salons — a professional website builds trust with local customers and generates leads around the clock.',
     image: imgService,
     imgPos: 'center center',
-    color: '#059669',
+    color: '#0ea5e9',
     tag: 'Service Providers',
     points: ['24/7 lead generation', 'Builds local trust', 'No ongoing costs'],
   },
@@ -56,11 +56,11 @@ export default function SWWhoShouldInvest() {
       {/* Subtle bg */}
       <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(99,102,241,0.05) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.05) 1px, transparent 1px)',
           backgroundSize: '40px 40px',
         }} />
       <div className="absolute top-0 right-0 w-[500px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(8,145,178,0.06) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(ellipse, rgba(14,165,233,0.06) 0%, transparent 65%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
@@ -68,14 +68,14 @@ export default function SWWhoShouldInvest() {
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full
             text-[10px] font-bold uppercase tracking-widest mb-4"
-            style={{ background: 'rgba(251,191,36,0.12)', color: '#d97706', border: '1px solid rgba(251,191,36,0.3)' }}>
+            style={{ background: 'rgba(14,165,233,0.12)', color: '#0ea5e9', border: '1px solid rgba(14,165,233,0.3)' }}>
             <Target size={9} /> Who Should Invest
           </span>
           <h2 className="font-bold leading-tight tracking-tight mb-3 text-slate-900"
             style={{ fontSize: 'clamp(20px,2.5vw,34px)' }}>
             Who Should Invest in a{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #0891b2, #6366f1)',
+              background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -123,7 +123,7 @@ export default function SWWhoShouldInvest() {
                 <span
                   className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider"
                   style={tagGold
-                    ? { background: 'rgba(251,191,36,0.92)', color: '#78350f', backdropFilter: 'blur(6px)' }
+                    ? { background: 'rgba(37,99,235,0.92)', color: '#ffffff', backdropFilter: 'blur(6px)' }
                     : { background: 'rgba(255,255,255,0.92)', color, backdropFilter: 'blur(6px)' }
                   }
                 >
@@ -164,7 +164,7 @@ export default function SWWhoShouldInvest() {
 
         {/* ── Bottom CTA strip ── */}
         <div className="reveal rounded-2xl px-6 sm:px-10 py-7 flex flex-col sm:flex-row items-center justify-between gap-5"
-          style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #eef2ff 100%)', border: '1px solid rgba(99,102,241,0.12)' }}>
+          style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #eef2ff 100%)', border: '1px solid rgba(37,99,235,0.12)' }}>
           <div>
             <p className="text-[13.5px] font-bold text-slate-800 mb-1">
               Choose our static web page development in Thanjavur
@@ -178,8 +178,8 @@ export default function SWWhoShouldInvest() {
             className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
               font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
             style={{
-              background: 'linear-gradient(135deg, #0891b2, #6366f1)',
-              boxShadow: '0 6px 22px rgba(99,102,241,0.28)',
+              background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
+              boxShadow: '0 6px 22px rgba(37,99,235,0.28)',
             }}
           >
             Start Your Project Today <ArrowRight size={14} />

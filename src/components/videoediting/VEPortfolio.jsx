@@ -10,12 +10,12 @@ import eventImg     from '../../assets/Video-editing/Event-coverage.webp'
 // Row 2: Corporate(1) + Product(1) + Drone(1) = 3 cols
 // Row 3: Event Coverage full width  = 3 cols
 const categories = [
-  { label: 'Branding Videos',        icon: Sparkles,    color: '#7c3aed', count: '80+',  img: brandingImg,  alt: 'Branding video portfolio Thanjavur',     span: 'lg:col-span-2' },
-  { label: 'Social Media Reels',     icon: Share2,      color: '#db2777', count: '120+', img: socialImg,    alt: 'Social media reels portfolio Thanjavur', span: 'lg:col-span-1' },
-  { label: 'Corporate Films',        icon: Briefcase,   color: '#0891b2', count: '60+',  img: corporateImg, alt: 'Corporate film portfolio Thanjavur',     span: 'lg:col-span-1' },
+  { label: 'Branding Videos',        icon: Sparkles,    color: '#2563eb', count: '80+',  img: brandingImg,  alt: 'Branding video portfolio Thanjavur',     span: 'lg:col-span-2' },
+  { label: 'Social Media Reels',     icon: Share2,      color: '#2563eb', count: '120+', img: socialImg,    alt: 'Social media reels portfolio Thanjavur', span: 'lg:col-span-1' },
+  { label: 'Corporate Films',        icon: Briefcase,   color: '#0ea5e9', count: '60+',  img: corporateImg, alt: 'Corporate film portfolio Thanjavur',     span: 'lg:col-span-1' },
   { label: 'Product Advertisements', icon: Package,     color: '#2563eb', count: '90+',  img: productImg,   alt: 'Product video portfolio Thanjavur',      span: 'lg:col-span-1' },
-  { label: 'Drone Aerial Videos',    icon: Wind,        color: '#d97706', count: '40+',  img: droneImg,     alt: 'Drone aerial portfolio Thanjavur',       span: 'lg:col-span-1' },
-  { label: 'Event Coverage Videos',  icon: CalendarDays,color: '#059669', count: '70+',  img: eventImg,     alt: 'Event coverage portfolio Thanjavur',     span: 'lg:col-span-3' },
+  { label: 'Drone Aerial Videos',    icon: Wind,        color: '#0ea5e9', count: '40+',  img: droneImg,     alt: 'Drone aerial portfolio Thanjavur',       span: 'lg:col-span-1' },
+  { label: 'Event Coverage Videos',  icon: CalendarDays,color: '#2563eb', count: '70+',  img: eventImg,     alt: 'Event coverage portfolio Thanjavur',     span: 'lg:col-span-3' },
 ]
 
 export default function VEPortfolio() {
@@ -25,7 +25,7 @@ export default function VEPortfolio() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.05) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
       <div className="absolute -top-28 -right-28 w-[440px] h-[440px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.09) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-20 -left-20 w-[360px] h-[360px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
 
@@ -34,13 +34,13 @@ export default function VEPortfolio() {
         {/* Header */}
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(124,58,237,0.1)', border: '1px solid rgba(124,58,237,0.2)', color: '#7c3aed' }}>
+            style={{ background: 'rgba(37,99,235,0.1)', border: '1px solid rgba(37,99,235,0.2)', color: '#2563eb' }}>
             <Image size={11} /> Portfolio
           </span>
           <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
             Creative Video Samples, Reels &amp;{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
+              background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             }}>
               Project Highlights

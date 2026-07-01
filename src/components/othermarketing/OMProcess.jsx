@@ -2,12 +2,12 @@ import { Search, ClipboardList, Palette, Zap, Eye, BarChart2, RefreshCw, LineCha
 
 const steps = [
   { num: 1, icon: Search,        title: 'Business & Audience Analysis',      desc: 'Deep-dive analysis of goals, audience, and competitors to identify winning opportunities across all channels.',  color: '#2563eb', accent: '#dbeafe' },
-  { num: 2, icon: ClipboardList,  title: 'Campaign Planning & Strategy',      desc: 'Multi-channel plan covering email sequences, influencer picks, and SMS timelines aligned to your KPIs.',         color: '#7c3aed', accent: '#ede9fe' },
-  { num: 3, icon: Palette,        title: 'Content & Creative Design',         desc: 'Compelling copy, influencer briefs, and SMS messages crafted to resonate and reinforce your brand.',              color: '#0891b2', accent: '#e0f2fe' },
-  { num: 4, icon: Zap,            title: 'Campaign Execution',                desc: 'Simultaneous launch across email, influencer networks, and SMS for consistent messaging and maximum reach.',        color: '#059669', accent: '#dcfce7' },
-  { num: 5, icon: Eye,            title: 'Engagement Monitoring',             desc: 'Real-time tracking of open rates, influencer engagement, and SMS responses to optimise live campaigns instantly.', color: '#dc2626', accent: '#fee2e2' },
-  { num: 6, icon: BarChart2,      title: 'Performance Reporting',             desc: 'Monthly reports with ROI, audience growth, conversions, and clear recommendations for the next cycle.',            color: '#d97706', accent: '#fef3c7' },
-  { num: 7, icon: RefreshCw,      title: 'Continuous Optimization',           desc: 'AI-driven refinements that improve results, reduce costs, and keep your audience consistently engaged.',           color: '#0f766e', accent: '#ccfbf1' },
+  { num: 2, icon: ClipboardList,  title: 'Campaign Planning & Strategy',      desc: 'Multi-channel plan covering email sequences, influencer picks, and SMS timelines aligned to your KPIs.',         color: '#2563eb', accent: '#e0f2fe' },
+  { num: 3, icon: Palette,        title: 'Content & Creative Design',         desc: 'Compelling copy, influencer briefs, and SMS messages crafted to resonate and reinforce your brand.',              color: '#0ea5e9', accent: '#e0f2fe' },
+  { num: 4, icon: Zap,            title: 'Campaign Execution',                desc: 'Simultaneous launch across email, influencer networks, and SMS for consistent messaging and maximum reach.',        color: '#2563eb', accent: '#dbeafe' },
+  { num: 5, icon: Eye,            title: 'Engagement Monitoring',             desc: 'Real-time tracking of open rates, influencer engagement, and SMS responses to optimise live campaigns instantly.', color: '#2563eb', accent: '#e0f2fe' },
+  { num: 6, icon: BarChart2,      title: 'Performance Reporting',             desc: 'Monthly reports with ROI, audience growth, conversions, and clear recommendations for the next cycle.',            color: '#0ea5e9', accent: '#e0f2fe' },
+  { num: 7, icon: RefreshCw,      title: 'Continuous Optimization',           desc: 'AI-driven refinements that improve results, reduce costs, and keep your audience consistently engaged.',           color: '#0ea5e9', accent: '#e0f2fe' },
 ]
 
 export default function OMProcess() {
@@ -24,7 +24,7 @@ export default function OMProcess() {
           </span>
           <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Our Strategic Multi-Channel{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Marketing Workflow
             </span>
           </h2>
@@ -97,7 +97,7 @@ export default function OMProcess() {
           style={{ boxShadow: '0 6px 24px rgba(37,99,235,0.07)' }}>
           <div className="flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg,#eff6ff,#f5f3ff)', border: '1px solid #c7d2fe' }}>
+              style={{ background: 'linear-gradient(135deg,#eff6ff,#e0f2fe)', border: '1px solid #c7d2fe' }}>
               <LineChart size={16} className="text-blue-600" />
             </div>
             <div>
@@ -107,7 +107,7 @@ export default function OMProcess() {
           </div>
           <a href="/ARA-Marketing/contact-us"
             className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 5px 16px rgba(124,58,237,0.22)' }}>
+            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 5px 16px rgba(37,99,235,0.22)' }}>
             Start Your Campaign <ArrowRight size={13} />
           </a>
         </div>

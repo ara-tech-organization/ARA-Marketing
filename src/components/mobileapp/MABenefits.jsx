@@ -18,10 +18,10 @@ const benefits = [
     desc: 'Mobile apps automate workflows, reduce bottlenecks, and improve team efficiency.',
     metric: '60%',
     metricLabel: 'Efficiency Gain',
-    color: '#7c3aed',
-    grad: 'linear-gradient(135deg,#7c3aed,#6366f1)',
-    bg: '#f5f3ff',
-    border: '#ddd6fe',
+    color: '#2563eb',
+    grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+    bg: '#e0f2fe',
+    border: '#bae6fd',
   },
   {
     icon: Zap,
@@ -29,10 +29,10 @@ const benefits = [
     desc: 'High-performance apps for Android and iOS with sub-second load times and flawless UX.',
     metric: '<1s',
     metricLabel: 'Load Time',
-    color: '#0891b2',
-    grad: 'linear-gradient(135deg,#0891b2,#06b6d4)',
-    bg: '#ecfeff',
-    border: '#a5f3fc',
+    color: '#0ea5e9',
+    grad: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
+    bg: '#e0f2fe',
+    border: '#bae6fd',
   },
   {
     icon: TrendingUp,
@@ -40,10 +40,10 @@ const benefits = [
     desc: 'Intuitive UI/UX combined with AI insights drives measurable revenue and business growth.',
     metric: '40%',
     metricLabel: 'ROI Increase',
-    color: '#059669',
-    grad: 'linear-gradient(135deg,#059669,#10b981)',
-    bg: '#ecfdf5',
-    border: '#a7f3d0',
+    color: '#2563eb',
+    grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+    bg: '#dbeafe',
+    border: '#bfdbfe',
   },
   {
     icon: DollarSign,
@@ -51,10 +51,10 @@ const benefits = [
     desc: 'Custom mobile app development services in Thanjavur that grow with your business needs.',
     metric: '50%',
     metricLabel: 'Cost Reduction',
-    color: '#d97706',
-    grad: 'linear-gradient(135deg,#d97706,#f59e0b)',
-    bg: '#fffbeb',
-    border: '#fde68a',
+    color: '#0ea5e9',
+    grad: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
+    bg: '#e0f2fe',
+    border: '#bae6fd',
   },
 ]
 
@@ -104,7 +104,7 @@ export default function MABenefits() {
             </h2>
 
             <div className="w-10 h-[3px] rounded-full mb-5"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+              style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
 
             <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
               Our mobile application development service in Thanjavur delivers measurable results — from increased engagement and streamlined operations to a higher ROI for your business.

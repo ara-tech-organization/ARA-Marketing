@@ -2,12 +2,12 @@
 
 const steps = [
   { num: '01', icon: ClipboardList, title: 'Requirement & Concept Analysis',  desc: 'Deep understanding of your brand goals, target audience, platform requirements, and the message you want to convey.', color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)'  },
-  { num: '02', icon: FolderOpen,    title: 'Footage Collection & Planning',    desc: 'Raw footage, assets, scripts, and reference materials are collected and organised into a structured edit plan.',       color: '#7c3aed', accent: 'rgba(124,58,237,0.07)', border: 'rgba(124,58,237,0.18)' },
-  { num: '03', icon: Scissors,      title: 'Editing & Storyboarding',          desc: 'Cut, sequence, and structure your footage into a compelling story using timing, pacing, and narrative techniques.',      color: '#0891b2', accent: 'rgba(8,145,178,0.07)',  border: 'rgba(8,145,178,0.18)'  },
-  { num: '04', icon: Layers,        title: 'Motion Graphics & Effects',        desc: 'Titles, lower thirds, animated elements, transitions, and visual effects added to elevate production value.',             color: '#059669', accent: 'rgba(5,150,105,0.07)',  border: 'rgba(5,150,105,0.18)'  },
-  { num: '05', icon: Volume2,       title: 'Audio Sync & Colour Correction',   desc: 'Professional audio mixing, sound design, music integration, and cinematic colour grading for every sensory element.',     color: '#d97706', accent: 'rgba(217,119,6,0.07)',  border: 'rgba(217,119,6,0.18)'  },
-  { num: '06', icon: RotateCcw,     title: 'Client Review & Revisions',        desc: 'Preview shared for your feedback. Revisions applied to ensure perfect alignment with your vision and brand guidelines.', color: '#db2777', accent: 'rgba(219,39,119,0.07)', border: 'rgba(219,39,119,0.18)' },
-  { num: '07', icon: CheckCircle2,  title: 'Final Video Delivery',             desc: 'Finished videos exported in platform-optimised formats, delivered in full resolution for YouTube, Instagram, or broadcast.', color: '#059669', accent: 'rgba(5,150,105,0.07)', border: 'rgba(5,150,105,0.18)' },
+  { num: '02', icon: FolderOpen,    title: 'Footage Collection & Planning',    desc: 'Raw footage, assets, scripts, and reference materials are collected and organised into a structured edit plan.',       color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)'  },
+  { num: '03', icon: Scissors,      title: 'Editing & Storyboarding',          desc: 'Cut, sequence, and structure your footage into a compelling story using timing, pacing, and narrative techniques.',      color: '#0ea5e9', accent: 'rgba(14,165,233,0.07)', border: 'rgba(14,165,233,0.18)' },
+  { num: '04', icon: Layers,        title: 'Motion Graphics & Effects',        desc: 'Titles, lower thirds, animated elements, transitions, and visual effects added to elevate production value.',             color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)'  },
+  { num: '05', icon: Volume2,       title: 'Audio Sync & Colour Correction',   desc: 'Professional audio mixing, sound design, music integration, and cinematic colour grading for every sensory element.',     color: '#0ea5e9', accent: 'rgba(14,165,233,0.07)', border: 'rgba(14,165,233,0.18)' },
+  { num: '06', icon: RotateCcw,     title: 'Client Review & Revisions',        desc: 'Preview shared for your feedback. Revisions applied to ensure perfect alignment with your vision and brand guidelines.', color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)'  },
+  { num: '07', icon: CheckCircle2,  title: 'Final Video Delivery',             desc: 'Finished videos exported in platform-optimised formats, delivered in full resolution for YouTube, Instagram, or broadcast.', color: '#2563eb', accent: 'rgba(37,99,235,0.07)', border: 'rgba(37,99,235,0.18)' },
 ]
 
 export default function VEProcess() {
@@ -34,7 +34,7 @@ export default function VEProcess() {
             <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold text-white leading-[1.1] tracking-tight" style={{ fontWeight: 700 }}>
               Our Strategic Video{' '}
               <span style={{
-                background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
+                background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
               }}>
                 Editing Workflow
@@ -60,7 +60,7 @@ export default function VEProcess() {
               <div key={i} className="rounded-full transition-all"
                 style={{
                   width: i === 3 ? 8 : 5, height: i === 3 ? 8 : 5,
-                  background: i === 3 ? 'linear-gradient(135deg,#2563eb,#7c3aed)' : 'rgba(255,255,255,0.18)',
+                  background: i === 3 ? 'linear-gradient(135deg,#2563eb,#0ea5e9)' : 'rgba(255,255,255,0.18)',
                 }} />
             ))}
           </div>

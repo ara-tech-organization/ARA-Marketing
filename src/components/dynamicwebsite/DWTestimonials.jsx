@@ -14,8 +14,8 @@ const testimonials = [
     name: 'Akash Chopra',
     role: 'Startup Founder',
     tag: 'Startup',
-    color: '#0891b2',
-    barColor: '#38bdf8',
+    color: '#0ea5e9',
+    barColor: '#60a5fa',
   },
   {
     quote: "The team at ARA Discover Marketing is highly skilled and they built us a responsive and visually appealing website that loads quickly and works smoothly.",
@@ -28,7 +28,7 @@ const testimonials = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -104,7 +104,7 @@ export default function DWTestimonials() {
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {Array(5).fill(0).map((_, j) => (
-                    <Star key={j} size={13} fill="#fbbf24" style={{ color: '#fbbf24' }} />
+                    <Star key={j} size={13} fill="#60a5fa" style={{ color: '#60a5fa' }} />
                   ))}
                 </div>
 

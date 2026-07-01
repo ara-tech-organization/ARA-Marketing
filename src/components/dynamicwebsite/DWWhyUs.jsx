@@ -2,14 +2,14 @@
 
 const reasons = [
   { icon: Package,    title: 'Custom-Built Dynamic Website Solutions Tailored to Business Needs', desc: 'Every feature, every page, and every interaction is built specifically for your business goals — no generic templates, no compromise on quality.', color: '#2563eb' },
-  { icon: Settings,   title: 'CMS Integration for Easy Content Updates',                          desc: 'Manage your website content effortlessly with user-friendly CMS platforms like WordPress. No coding required — complete control is in your hands.', color: '#0891b2' },
+  { icon: Settings,   title: 'CMS Integration for Easy Content Updates',                          desc: 'Manage your website content effortlessly with user-friendly CMS platforms like WordPress. No coding required — complete control is in your hands.', color: '#0ea5e9' },
   { icon: Cpu,        title: 'High-Performance Backend Architecture',                             desc: 'Robust server-side technology built to handle heavy traffic, complex operations, and data-intensive tasks without slowing down your website.', color: '#2563eb' },
-  { icon: Smartphone, title: 'Mobile-First Responsive Design',                                   desc: 'Every dynamic website we build is optimised for all screen sizes — delivering a flawless, engaging experience on mobile, tablet, and desktop.', color: '#0891b2' },
+  { icon: Smartphone, title: 'Mobile-First Responsive Design',                                   desc: 'Every dynamic website we build is optimised for all screen sizes — delivering a flawless, engaging experience on mobile, tablet, and desktop.', color: '#0ea5e9' },
   { icon: Search,     title: 'SEO-Optimised Coding Structure',                                   desc: 'Clean, structured code with fast load speeds, schema markup, and performance optimisation to maximise your organic search rankings.', color: '#2563eb' },
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -67,7 +67,7 @@ export default function DWWhyUs() {
 
         {/* ── Bottom banner ── */}
         <div className="reveal mt-10 sm:mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 rounded-2xl sm:rounded-3xl overflow-hidden relative"
-          style={{ background: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0891b2 100%)', boxShadow: '0 20px 60px rgba(37,99,235,0.28)' }}>
+          style={{ background: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0ea5e9 100%)', boxShadow: '0 20px 60px rgba(37,99,235,0.28)' }}>
           <div className="absolute inset-0 pointer-events-none"
             style={{ background: 'radial-gradient(ellipse at 25% 50%, rgba(255,255,255,0.12) 0%, transparent 60%)' }} />
           <div className="hidden sm:block absolute right-8 top-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-white/10 pointer-events-none" />

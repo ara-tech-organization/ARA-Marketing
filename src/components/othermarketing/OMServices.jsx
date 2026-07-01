@@ -37,8 +37,8 @@ const services = [
     id: 'influencer',
     label: 'Influencer Marketing',
     icon: Users,
-    color: '#7c3aed',
-    bg: '#f5f3ff',
+    color: '#2563eb',
+    bg: '#e0f2fe',
     badge: 'Influencer Marketing in Thanjavur',
     heading: 'Influencer Marketing & Brand Collaborations',
     desc: [
@@ -64,8 +64,8 @@ const services = [
     id: 'sms',
     label: 'SMS Marketing',
     icon: Smartphone,
-    color: '#0891b2',
-    bg: '#ecfeff',
+    color: '#0ea5e9',
+    bg: '#e0f2fe',
     badge: 'Bulk SMS Promotion in Thanjavur',
     heading: 'SMS Marketing & Bulk Promotional Campaigns',
     desc: [
@@ -106,7 +106,7 @@ export default function OMServices() {
             </span>
             <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Strategic Marketing Services That{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Drive Real Results
               </span>
             </h2>

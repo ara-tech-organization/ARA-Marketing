@@ -44,7 +44,7 @@ function FAQItem({ faq, index, active, setActive }) {
         <span className="flex-shrink-0 text-[11px] font-black w-7 h-7 rounded-lg flex items-center justify-center transition-all duration-300 mt-0.5"
           style={isOpen
             ? { background: 'linear-gradient(135deg,#1e40af,#2563eb)', color: 'white' }
-            : { background: '#ede9fe', color: '#1e40af' }}>
+            : { background: '#e0f2fe', color: '#1e40af' }}>
           {String(index + 1).padStart(2, '0')}
         </span>
         <span className="flex-1 text-[14px] font-semibold leading-snug pt-0.5 transition-colors duration-200"

@@ -2,11 +2,11 @@
 
 const reasons = [
   { icon: Target,     title: 'AI-Focused PPC Campaign Strategies',       desc: 'Advanced AI-powered bidding and targeting strategies that maximize conversions while reducing wasted ad spend.',                     color: '#60a5fa', num: '01' },
-  { icon: Cpu,        title: 'Certified Google Ads Specialists',          desc: 'Our team holds Google Ads certifications with deep expertise across Search, Display, YouTube, and Shopping campaigns.',               color: '#a78bfa', num: '02' },
-  { icon: Users,      title: 'Conversion-Focused Ad Optimization',        desc: 'Every ad, landing page, and bid strategy is optimized with one goal in mind — turning clicks into qualified leads.',                   color: '#34d399', num: '03' },
-  { icon: BarChart2,  title: 'Transparent Campaign Reporting',            desc: 'Clear, detailed monthly reports covering impressions, clicks, conversions, and ROI so you always know your results.',                   color: '#fb923c', num: '04' },
-  { icon: Shield,     title: 'Smart Audience Targeting & Remarketing',    desc: 'Precision audience segments, interest targeting, and remarketing campaigns to reach your ideal customers repeatedly.',                 color: '#f472b6', num: '05' },
-  { icon: DollarSign, title: 'ROI-Driven Budget Management',              desc: 'Strategic budget allocation and bid management to maximize your advertising return on every rupee invested.',                         color: '#facc15', num: '06' },
+  { icon: Cpu,        title: 'Certified Google Ads Specialists',          desc: 'Our team holds Google Ads certifications with deep expertise across Search, Display, YouTube, and Shopping campaigns.',               color: '#60a5fa', num: '02' },
+  { icon: Users,      title: 'Conversion-Focused Ad Optimization',        desc: 'Every ad, landing page, and bid strategy is optimized with one goal in mind — turning clicks into qualified leads.',                   color: '#60a5fa', num: '03' },
+  { icon: BarChart2,  title: 'Transparent Campaign Reporting',            desc: 'Clear, detailed monthly reports covering impressions, clicks, conversions, and ROI so you always know your results.',                   color: '#0ea5e9', num: '04' },
+  { icon: Shield,     title: 'Smart Audience Targeting & Remarketing',    desc: 'Precision audience segments, interest targeting, and remarketing campaigns to reach your ideal customers repeatedly.',                 color: '#2563eb', num: '05' },
+  { icon: DollarSign, title: 'ROI-Driven Budget Management',              desc: 'Strategic budget allocation and bid management to maximize your advertising return on every rupee invested.',                         color: '#60a5fa', num: '06' },
 ]
 
 export default function SEMWhyUs() {

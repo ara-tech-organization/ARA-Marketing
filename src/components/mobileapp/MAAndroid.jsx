@@ -79,7 +79,7 @@ export default function MAAndroid() {
                     {[
                       { val: '4.9★', lbl: 'Play Store',   color: '#1e40af' },
                       { val: '100+', lbl: 'Android Apps', color: '#2563eb' },
-                      { val: 'Kotlin', lbl: '& Java',     color: '#0891b2' },
+                      { val: 'Kotlin', lbl: '& Java',     color: '#0ea5e9' },
                     ].map(({ val, lbl, color }) => (
                       <div key={lbl} className="flex-1 rounded-2xl px-3 py-3 text-center"
                         style={{ background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(8px)', border: `1px solid ${color}40` }}>

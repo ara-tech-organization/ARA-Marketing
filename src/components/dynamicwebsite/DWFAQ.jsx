@@ -12,7 +12,7 @@ const faqs = [
     q: 'Why Should I Choose a Dynamic Website for My Business?',
     a: 'Dynamic websites are the perfect choice for growing businesses and interactive platforms as they are flexible, scalable and can be updated in real time. They support user accounts, e-commerce, personalisation, and seamless CMS-based content management.',
     tag: 'Business',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     q: 'How does a dynamic website differ from a static website?',
@@ -24,7 +24,7 @@ const faqs = [
     q: 'How long does it take to create a dynamic website?',
     a: 'Development of a dynamic website can take between 2 and 6 weeks, depending on complexity, the number of features required, and the CMS platform chosen. We provide a clear timeline after the initial business analysis and requirement gathering phase.',
     tag: 'Timeline',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     q: 'Can I manage my website content easily?',
@@ -36,7 +36,7 @@ const faqs = [
     q: 'Is SEO possible on dynamic websites?',
     a: 'Yes, dynamic websites are fully SEO-optimised when properly developed with clean coding, fast performance, structured data, and schema markup. We build every dynamic website with an SEO-first approach to maximise your organic visibility and rankings.',
     tag: 'SEO',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
 ]
 
@@ -67,7 +67,7 @@ export default function DWFAQ() {
           </span>
           <h2 className="text-[clamp(21px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Got Questions?{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               We Have Answers
             </span>
           </h2>
@@ -83,7 +83,7 @@ export default function DWFAQ() {
           <div className="lg:w-[300px] flex-shrink-0 lg:sticky lg:top-28">
             <div className="rounded-3xl overflow-hidden"
               style={{ background: 'white', border: '1.5px solid #dbeafe', boxShadow: '0 16px 48px rgba(37,99,235,0.10)' }}>
-              <div className="h-1.5 w-full" style={{ background: 'linear-gradient(90deg,#2563eb,#0891b2)' }} />
+              <div className="h-1.5 w-full" style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
               <div className="p-5 sm:p-7">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-5"
                   style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
@@ -104,7 +104,7 @@ export default function DWFAQ() {
                         : { background: 'transparent', border: '1px solid transparent' }}>
                       <span className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0 text-[9px] font-black transition-all duration-200"
                         style={open === i
-                          ? { background: 'linear-gradient(135deg,#2563eb,#0891b2)', color: 'white' }
+                          ? { background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', color: 'white' }
                           : { background: '#f1f5f9', color: '#94a3b8' }}>
                         {String(i + 1).padStart(2, '0')}
                       </span>
@@ -122,7 +122,7 @@ export default function DWFAQ() {
                   <p className="text-[11px] text-slate-400 mb-3">Still have questions?</p>
                   <a href="/ARA-Marketing/contact-us"
                     className="inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
-                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', color: 'white', boxShadow: '0 4px 14px rgba(37,99,235,0.25)' }}>
+                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', color: 'white', boxShadow: '0 4px 14px rgba(37,99,235,0.25)' }}>
                     Contact Us <ArrowRight size={11} />
                   </a>
                 </div>
@@ -216,7 +216,7 @@ export default function DWFAQ() {
                 </div>
                 <a href="/ARA-Marketing/contact-us"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
+                  style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
                   Contact Us <ArrowRight size={12} />
                 </a>
               </div>

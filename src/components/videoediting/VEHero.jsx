@@ -15,7 +15,7 @@ const types = [
   { label: 'Branding',  color: '#60a5fa', icon: Sparkles },
   { label: 'Corporate', color: '#38bdf8', icon: Video },
   { label: 'YouTube',   color: '#93c5fd', icon: PlayCircle },
-  { label: 'Drone',     color: '#34d399', icon: Film },
+  { label: 'Drone',     color: '#60a5fa', icon: Film },
 ]
 
 const gradBlue = {

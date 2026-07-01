@@ -38,7 +38,7 @@ function TestiCard({ t, featured }) {
       {/* Stars */}
       <div className="flex gap-1 mb-4">
         {Array.from({ length: t.rating }).map((_, j) => (
-          <Star key={j} size={featured ? 15 : 13} fill="#f59e0b" color="#f59e0b" />
+          <Star key={j} size={featured ? 15 : 13} fill="#60a5fa" color="#60a5fa" />
         ))}
       </div>
 

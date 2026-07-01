@@ -2,14 +2,14 @@
 
 const steps = [
   { icon: ClipboardList, num: '01', title: 'Business Analysis & Requirement Gathering', desc: 'We begin by understanding your business goals, target audience, and functional requirements to plan the ideal dynamic website structure.', color: '#2563eb' },
-  { icon: PenTool,       num: '02', title: 'UI/UX Design & Wireframing',                desc: 'Our design team creates intuitive wireframes and visual mockups that align with your brand identity and deliver exceptional user experience.', color: '#0891b2' },
+  { icon: PenTool,       num: '02', title: 'UI/UX Design & Wireframing',                desc: 'Our design team creates intuitive wireframes and visual mockups that align with your brand identity and deliver exceptional user experience.', color: '#0ea5e9' },
   { icon: Code2,         num: '03', title: 'Backend Development & CMS Integration',     desc: 'We develop a robust backend engine and integrate your preferred CMS platform for seamless, code-free content management and administration.', color: '#2563eb' },
-  { icon: Database,      num: '04', title: 'Database Architecture Setup',               desc: 'We architect and configure secure, scalable databases that store and serve your dynamic content efficiently, reliably, and at speed.', color: '#0891b2' },
+  { icon: Database,      num: '04', title: 'Database Architecture Setup',               desc: 'We architect and configure secure, scalable databases that store and serve your dynamic content efficiently, reliably, and at speed.', color: '#0ea5e9' },
   { icon: Rocket,        num: '05', title: 'Testing, Optimisation & Deployment',        desc: 'Rigorous multi-device and cross-browser testing, followed by performance optimisation and a smooth, fully monitored launch.', color: '#2563eb' },
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -52,7 +52,7 @@ export default function DWProcess() {
         <div className="hidden lg:flex items-stretch gap-4 relative reveal">
           {/* Connector line */}
           <div className="absolute top-[52px] left-[10%] right-[10%] h-0.5 pointer-events-none"
-            style={{ background: 'linear-gradient(90deg, #2563eb, #38bdf8, #0891b2, #38bdf8, #2563eb)' }} />
+            style={{ background: 'linear-gradient(90deg, #2563eb, #60a5fa, #0ea5e9, #60a5fa, #2563eb)' }} />
           {steps.map(({ icon: Icon, num, title, desc, color }, i) => (
             <div key={num} className="flex-1 flex flex-col items-center text-center group">
               {/* Icon bubble */}

@@ -29,7 +29,7 @@ const services = [
     id: 'ecommerce',
     icon: ShoppingCart,
     label: 'E-Commerce Dynamic Websites',
-    color: '#0891b2',
+    color: '#0ea5e9',
     tag: 'E-Commerce',
     imgSrc: ecomImg,
     imgAlt: 'E-Commerce dynamic website development in Thanjavur',
@@ -57,7 +57,7 @@ const services = [
     id: 'news',
     icon: Newspaper,
     label: 'News & Blog Platforms',
-    color: '#0891b2',
+    color: '#0ea5e9',
     tag: 'News & Blog',
     imgSrc: newsImg,
     imgAlt: 'News website development in Thanjavur',
@@ -82,7 +82,7 @@ const services = [
     id: 'webapp',
     icon: LayoutDashboard,
     label: 'Custom Web Applications',
-    color: '#0891b2',
+    color: '#0ea5e9',
     tag: 'Web App',
     imgSrc: webappImg,
     imgAlt: 'Custom web application development in Thanjavur',
@@ -95,7 +95,7 @@ const services = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 

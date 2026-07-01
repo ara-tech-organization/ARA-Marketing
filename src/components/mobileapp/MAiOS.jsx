@@ -42,7 +42,7 @@ export default function MAiOS() {
                     {[
                       { val: '4.8★',  lbl: 'App Store',    color: '#1e40af' },
                       { val: 'Swift', lbl: 'Native iOS',   color: '#2563eb' },
-                      { val: '100%',  lbl: 'App Approval', color: '#0891b2' },
+                      { val: '100%',  lbl: 'App Approval', color: '#0ea5e9' },
                     ].map(({ val, lbl, color }) => (
                       <div key={lbl} className="flex-1 rounded-2xl px-3 py-3 text-center"
                         style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(8px)', border: `1px solid ${color}20`, boxShadow: '0 4px 16px rgba(0,0,0,0.08)' }}>
@@ -56,7 +56,7 @@ export default function MAiOS() {
 
               {/* Floating badge */}
               <div className="hidden lg:flex absolute -bottom-4 -right-4 items-center gap-3 px-4 py-3 rounded-2xl bg-white animate-float"
-                style={{ border: '1px solid #ddd6fe', boxShadow: '0 10px 32px rgba(37,99,235,0.18)' }}>
+                style={{ border: '1px solid #bae6fd', boxShadow: '0 10px 32px rgba(37,99,235,0.18)' }}>
                 <Smartphone size={18} style={{ color: '#1e40af' }} />
                 <div>
                   <p className="text-[9px] text-slate-400 font-semibold">Mobile App for</p>

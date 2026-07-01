@@ -16,13 +16,13 @@ const categories = [
   {
     icon: Database,
     label: 'Databases',
-    color: '#0891b2',
+    color: '#0ea5e9',
     items: ['MySQL', 'MongoDB', 'PostgreSQL'],
   },
   {
     icon: Cpu,
     label: 'AI & Cloud',
-    color: '#059669',
+    color: '#2563eb',
     items: ['AWS', 'Google Cloud', 'AI/ML Solutions', 'Firebase'],
   },
 ]

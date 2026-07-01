@@ -59,14 +59,14 @@ export default function PromoPopup() {
           {/* Badge */}
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px]
             font-bold uppercase tracking-wider mb-5"
-            style={{ background: 'rgba(99,102,241,0.2)', color: '#a5b4fc' }}>
+            style={{ background: 'rgba(37,99,235,0.2)', color: '#60a5fa' }}>
             <Sparkles size={11} /> Limited Time Offer
           </span>
 
           <h3 className="text-[22px] font-bold text-white leading-tight mb-3">
             Get a Free Digital Marketing{' '}
             <span style={{
-              background: 'linear-gradient(135deg,#60a5fa,#818cf8)',
+              background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             }}>
               Strategy Session
@@ -83,7 +83,7 @@ export default function PromoPopup() {
             onClick={dismiss}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[14px] font-bold
               text-white no-underline transition-all duration-200 hover:gap-3 group"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)' }}
+            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}
           >
             Book Free Consultation
             <ArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />

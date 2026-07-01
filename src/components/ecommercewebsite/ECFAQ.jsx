@@ -2,7 +2,7 @@
 import { HelpCircle, MessageSquare, ArrowRight, ShoppingCart, ChevronRight } from 'lucide-react'
 
 const C1 = '#2563eb'
-const C2 = '#0891b2'
+const C2 = '#0ea5e9'
 
 const faqs = [
   {

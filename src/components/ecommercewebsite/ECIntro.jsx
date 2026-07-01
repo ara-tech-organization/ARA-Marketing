@@ -10,8 +10,8 @@ const features = [
 const platformPills = [
   { name: 'Shopify',     bg: '#2563eb' },
   { name: 'WooCommerce', bg: '#2563eb' },
-  { name: 'Magento',     bg: '#0891b2' },
-  { name: 'Custom Code', bg: '#0891b2' },
+  { name: 'Magento',     bg: '#0ea5e9' },
+  { name: 'Custom Code', bg: '#0ea5e9' },
 ]
 
 export default function ECIntro() {
@@ -23,7 +23,7 @@ export default function ECIntro() {
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-20 -left-20 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.08) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.08) 0%, transparent 65%)' }} />
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.025) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 

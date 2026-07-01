@@ -10,12 +10,12 @@ const faqs = [
   {
     q: 'What are the advantages of influencer marketing for businesses?',
     a: 'Influencer marketing helps businesses boost brand awareness, build trust with customers, increase audience engagement, and achieve better social media visibility. It connects your brand to an engaged, loyal audience through trusted content creators.',
-    color: '#7c3aed', tag: 'Influencer Marketing', icon: Users,
+    color: '#2563eb', tag: 'Influencer Marketing', icon: Users,
   },
   {
     q: 'Do you offer bulk SMS promotion services in Thanjavur?',
     a: 'Yes, we provide bulk SMS promotion in Thanjavur, including promotional SMS campaigns, customer engagement messaging, transactional SMS, event and offer promotions, and complete business communication solutions with 99% delivery rates.',
-    color: '#0891b2', tag: 'SMS Marketing', icon: Smartphone,
+    color: '#0ea5e9', tag: 'SMS Marketing', icon: Smartphone,
   },
   {
     q: 'What is Email Marketing and How Can it Help Your Business Grow?',
@@ -25,12 +25,12 @@ const faqs = [
   {
     q: 'What industries can benefit from influencer marketing?',
     a: 'Influencer collaborations and audience-focused promotional campaigns can help healthcare, fashion, restaurants, education, retail, real estate, and e-commerce businesses build credibility and reach new customer segments effectively.',
-    color: '#7c3aed', tag: 'Influencer Marketing', icon: Users,
+    color: '#2563eb', tag: 'Influencer Marketing', icon: Users,
   },
   {
     q: 'Why Choose ARA Discover Marketing for Your Digital Marketing Services?',
     a: 'With AI-powered strategies, audience-centric campaigns, transparent reporting, and multi-channel expertise across email, influencer, and SMS channels, we are your trusted partner for business growth and customer engagement in Thanjavur.',
-    color: '#0891b2', tag: 'General', icon: Smartphone,
+    color: '#0ea5e9', tag: 'General', icon: Smartphone,
   },
 ]
 
@@ -50,7 +50,7 @@ export default function OMFAQ() {
           </span>
           <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
             Frequently Asked Questions{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               About Our Services
             </span>
           </h2>
@@ -129,8 +129,8 @@ export default function OMFAQ() {
               </div>
               {[
                 { icon: Mail,       label: 'Email Marketing',      color: '#2563eb', stat: '68% Open Rate' },
-                { icon: Users,      label: 'Influencer Marketing', color: '#7c3aed', stat: '2.4M+ Reach' },
-                { icon: Smartphone, label: 'SMS Marketing',        color: '#0891b2', stat: '99% Delivery' },
+                { icon: Users,      label: 'Influencer Marketing', color: '#2563eb', stat: '2.4M+ Reach' },
+                { icon: Smartphone, label: 'SMS Marketing',        color: '#0ea5e9', stat: '99% Delivery' },
               ].map(({ icon: Icon, label, color, stat }) => (
                 <div key={label} className="group flex items-center gap-3 px-5 py-3.5 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors duration-200 cursor-default">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -147,7 +147,7 @@ export default function OMFAQ() {
 
             {/* Still have questions card */}
             <div className="rounded-2xl p-5 overflow-hidden relative"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', boxShadow: '0 12px 36px rgba(124,58,237,0.22)' }}>
+              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 36px rgba(37,99,235,0.22)' }}>
               <div className="absolute inset-0 pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse at 80% 20%,rgba(255,255,255,0.12) 0%,transparent 60%)' }} />
               <div className="relative">
@@ -161,7 +161,7 @@ export default function OMFAQ() {
                 </p>
                 <a href="/ARA-Marketing/contact-us"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-[12px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: 'white', color: '#7c3aed' }}>
+                  style={{ background: 'white', color: '#2563eb' }}>
                   Contact Us <ArrowRight size={12} />
                 </a>
               </div>

@@ -14,21 +14,21 @@ const benefits = [
     title: 'Global Customer Reach',
     desc: 'Break geographic limits and sell to customers nationwide — or worldwide — from a single online platform.',
     metric: '190+', metricLabel: 'Countries Reachable',
-    color: '#0891b2', grad: 'linear-gradient(135deg,#0891b2,#0e7490)', border: '#a5f3fc',
+    color: '#0ea5e9', grad: 'linear-gradient(135deg,#0ea5e9,#0284c7)', border: '#bae6fd',
   },
   {
     icon: RefreshCw,
     title: 'Automated Order & Inventory',
     desc: 'Eliminate manual errors with automated stock tracking, order notifications, and fulfilment workflows.',
     metric: '80%', metricLabel: 'Less Manual Work',
-    color: '#059669', grad: 'linear-gradient(135deg,#059669,#047857)', border: '#a7f3d0',
+    color: '#2563eb', grad: 'linear-gradient(135deg,#2563eb,#1d4ed8)', border: '#bfdbfe',
   },
   {
     icon: DollarSign,
     title: 'Increased Revenue Opportunities',
     desc: 'Upsell, cross-sell, discount coupons, and abandoned cart recovery — all built into your store by default to maximise every transaction.',
     metric: '3x', metricLabel: 'Revenue Potential',
-    color: '#d97706', grad: 'linear-gradient(135deg,#f59e0b,#d97706)', border: '#fde68a',
+    color: '#0ea5e9', grad: 'linear-gradient(135deg,#0ea5e9,#0284c7)', border: '#bae6fd',
     wide: true,
   },
   {
@@ -36,7 +36,7 @@ const benefits = [
     title: 'Better Customer Engagement',
     desc: 'Loyalty programmes, personalised recommendations, and review systems that build lasting customer relationships.',
     metric: '60%', metricLabel: 'Repeat Purchase Rate',
-    color: '#7c3aed', grad: 'linear-gradient(135deg,#7c3aed,#6d28d9)', border: '#ddd6fe',
+    color: '#2563eb', grad: 'linear-gradient(135deg,#2563eb,#1d4ed8)', border: '#bfdbfe',
   },
 ]
 
@@ -103,7 +103,7 @@ export default function ECBenefits() {
       <div className="absolute -top-24 -right-24 w-[380px] h-[380px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
       <div className="absolute -bottom-16 -left-16 w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }} />
 
       {/* Spinning ring */}
       <div className="hidden lg:block absolute -top-16 -right-16 w-[260px] h-[260px] rounded-full pointer-events-none"
@@ -120,7 +120,7 @@ export default function ECBenefits() {
           <h2 className="text-[clamp(21px,3.4vw,44px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-3">
             Benefits of{' '}
             <span style={{
-              background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+              background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',

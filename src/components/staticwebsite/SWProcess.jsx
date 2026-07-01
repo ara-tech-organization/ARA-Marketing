@@ -6,7 +6,7 @@ const steps = [
     icon: ClipboardList,
     title: 'Requirement Analysis & Planning',
     desc: 'We begin with an in-depth discovery session to understand your business goals, target audience, preferred design style, and functional requirements before touching any code.',
-    color: '#0891b2',
+    color: '#0ea5e9',
   },
   {
     num: '02',
@@ -20,21 +20,21 @@ const steps = [
     icon: Code2,
     title: 'Static Development & Coding',
     desc: 'Our developers translate approved designs into clean, semantic HTML/CSS/JavaScript with optimized assets, responsive breakpoints, and accessibility standards built in from day one.',
-    color: '#7c3aed',
+    color: '#0ea5e9',
   },
   {
     num: '04',
     icon: Gauge,
     title: 'SEO Optimization & Performance Testing',
     desc: 'We run Lighthouse audits, optimize images, implement meta tags, structured data, and ensure every page scores 95+ across performance, SEO, and best practices before launch.',
-    color: '#059669',
+    color: '#2563eb',
   },
   {
     num: '05',
     icon: Rocket,
     title: 'Deployment & Launch',
     desc: 'Your website is deployed to a high-performance CDN with SSL, custom domain configuration, and post-launch monitoring. We ensure a smooth go-live and remain available for support.',
-    color: '#dc2626',
+    color: '#0ea5e9',
   },
 ]
 
@@ -44,7 +44,7 @@ export default function SWProcess() {
       {/* Background tint */}
       <div
         className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.05) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }}
       />
       <div
         className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full pointer-events-none"
@@ -57,7 +57,7 @@ export default function SWProcess() {
         <div className="text-center mb-16 reveal">
           <span
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(8,145,178,0.08)', color: '#0891b2', border: '1px solid rgba(8,145,178,0.2)' }}
+            style={{ background: 'rgba(14,165,233,0.08)', color: '#0ea5e9', border: '1px solid rgba(14,165,233,0.2)' }}
           >
             <GitBranch size={11} /> Our Process
           </span>
@@ -65,7 +65,7 @@ export default function SWProcess() {
             How We Build Your{' '}
             <span
               style={{
-                background: 'linear-gradient(135deg, #0891b2, #2563eb)',
+                background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -86,7 +86,7 @@ export default function SWProcess() {
             {/* Connector line */}
             <div
               className="absolute top-[28px] left-[10%] right-[10%] h-[2px] pointer-events-none"
-              style={{ background: 'linear-gradient(90deg, #0891b2, #2563eb, #7c3aed, #059669, #dc2626)' }}
+              style={{ background: 'linear-gradient(90deg, #0ea5e9, #2563eb, #0ea5e9, #2563eb, #0ea5e9)' }}
             />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (

@@ -3,9 +3,9 @@ import seoHeroImg from '../../assets/SEO/Seo.webp'
 
 const stats = [
   { num: '120+', label: 'Projects Done',   color: '#60a5fa' },
-  { num: '95%',  label: 'Client Retention', color: '#a78bfa' },
-  { num: '200%', label: 'Avg Traffic Growth', color: '#34d399' },
-  { num: '#1',   label: 'Google Rankings', color: '#fbbf24' },
+  { num: '95%',  label: 'Client Retention', color: '#60a5fa' },
+  { num: '200%', label: 'Avg Traffic Growth', color: '#60a5fa' },
+  { num: '#1',   label: 'Google Rankings', color: '#60a5fa' },
 ]
 
 const badges = [
@@ -16,9 +16,9 @@ const badges = [
 
 const keywords = [
   { kw: 'best seo companies in thanjavur', pos: 1, prev: 4, color: '#60a5fa' },
-  { kw: 'top seo agencies in thanjavur',   pos: 2, prev: 7, color: '#a78bfa' },
-  { kw: 'digital marketing seo services',  pos: 3, prev: 9, color: '#34d399' },
-  { kw: 'local seo marketing services',    pos: 1, prev: 5, color: '#fbbf24' },
+  { kw: 'top seo agencies in thanjavur',   pos: 2, prev: 7, color: '#60a5fa' },
+  { kw: 'digital marketing seo services',  pos: 3, prev: 9, color: '#60a5fa' },
+  { kw: 'local seo marketing services',    pos: 1, prev: 5, color: '#60a5fa' },
 ]
 
 export default function SEOHero() {
@@ -31,7 +31,7 @@ export default function SEOHero() {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.18) 0%, transparent 70%)' }} />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 70%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
@@ -73,7 +73,7 @@ export default function SEOHero() {
             <h1 className="text-[clamp(28px,4vw,56px)] font-black leading-[1.1] tracking-tight mb-6 text-white">
               Rank Higher.{' '}
               <span style={{
-                background: 'linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #34d399 100%)',
+                background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
               }}>
                 Get Found.
@@ -104,7 +104,7 @@ export default function SEOHero() {
               <a href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white
                   transition-all duration-300 hover:scale-[1.03] shadow-lg"
-                style={{ background: 'linear-gradient(135deg, #2563eb, #7c3aed)', boxShadow: '0 8px 32px rgba(37,99,235,0.45)' }}>
+                style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.45)' }}>
                 Get Free SEO Audit <ArrowRight size={15} />
               </a>
               <a href="#seo-services"
@@ -153,7 +153,7 @@ export default function SEOHero() {
               {/* Star rating */}
               <div className="absolute top-4 right-4 flex items-center gap-1 px-2.5 py-1.5
                 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-                <Star size={10} className="text-yellow-400 fill-yellow-400" />
+                <Star size={10} className="text-blue-400 fill-blue-400" />
                 <span className="text-[11px] font-bold text-white">5.0 Rated</span>
               </div>
 

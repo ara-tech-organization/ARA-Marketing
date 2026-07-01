@@ -2,7 +2,7 @@
 import { ArrowRight, Rocket, Phone, CheckCircle2, Globe } from 'lucide-react'
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0891b2)',
+  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -26,7 +26,7 @@ export default function DWCTA() {
       <div className="absolute top-0 left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full pointer-events-none animate-orb"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
       <div className="absolute bottom-0 right-1/4 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.12) 0%, transparent 65%)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 65%)' }} />
       {/* Rings */}
       <div className="hidden sm:block absolute -top-16 -left-16 w-[320px] h-[320px] rounded-full border border-blue-300/25 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[280px] h-[280px] rounded-full border border-sky-300/20 pointer-events-none animate-[spin_35s_linear_infinite_reverse]" />
@@ -57,7 +57,7 @@ export default function DWCTA() {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-3">
               <a href="tel:+919876543210"
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 sm:py-3 rounded-full text-[14px] sm:text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
+                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
                 <Phone size={14} /> Call Us Now
               </a>
             </div>
@@ -85,7 +85,7 @@ export default function DWCTA() {
           <div className="w-full lg:w-[440px] flex-shrink-0 reveal-right">
             <div className="relative rounded-3xl overflow-hidden bg-white"
               style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
-              <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#38bdf8)' }} />
+              <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#0ea5e9)' }} />
               <div className="px-6 sm:px-8 py-7 sm:py-8">
                 <p className="text-[16px] font-bold text-slate-900 mb-1">Get a Free Consultation</p>
                 <p className="text-[12.5px] text-slate-500 mb-6 leading-relaxed">
@@ -118,7 +118,7 @@ export default function DWCTA() {
                   />
                   <button type="submit"
                     className="btn-glow w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-white text-[14px] font-bold transition-all duration-300 hover:-translate-y-0.5 mt-1"
-                    style={{ boxShadow: '0 8px 28px rgba(124,58,237,0.30)' }}>
+                    style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}>
                     Talk to an Expert <ArrowRight size={14} />
                   </button>
                 </form>

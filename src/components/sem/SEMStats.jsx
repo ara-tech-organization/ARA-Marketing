@@ -3,10 +3,10 @@ import { FolderOpen, Users, TrendingUp, Star, Globe2 } from 'lucide-react'
 
 const allStats = [
   { target: 200, suffix: '+', label: 'PPC Campaigns Successfully Managed',  sub: 'All ad types covered',      icon: FolderOpen, color: '#2563eb' },
-  { target: 95,  suffix: '%', label: 'Client Satisfaction Rate',             sub: 'Consistent & measurable',   icon: Users,      color: '#7c3aed' },
-  { target: 300, suffix: '%', label: 'Average Lead Growth',                  sub: 'Across partner businesses',  icon: TrendingUp, color: '#0891b2' },
-  { target: 150, suffix: '+', label: 'Google Ads Campaign Optimizations',    sub: 'Ongoing improvements',       icon: Star,       color: '#059669' },
-  { target: null, suffix: '', label: 'Multi-Industry Advertising Expertise', sub: 'Diverse sector experience',  icon: Globe2,     color: '#d97706' },
+  { target: 95,  suffix: '%', label: 'Client Satisfaction Rate',             sub: 'Consistent & measurable',   icon: Users,      color: '#0ea5e9' },
+  { target: 300, suffix: '%', label: 'Average Lead Growth',                  sub: 'Across partner businesses',  icon: TrendingUp, color: '#0ea5e9' },
+  { target: 150, suffix: '+', label: 'Google Ads Campaign Optimizations',    sub: 'Ongoing improvements',       icon: Star,       color: '#2563eb' },
+  { target: null, suffix: '', label: 'Multi-Industry Advertising Expertise', sub: 'Diverse sector experience',  icon: Globe2,     color: '#0ea5e9' },
 ]
 
 function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
@@ -73,7 +73,7 @@ export default function SEMStats() {
 
           {/* Top accent */}
           <div className="h-1 w-full"
-            style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#7c3aed,#059669,#d97706)' }} />
+            style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#0ea5e9)' }} />
 
           <div className="flex flex-col sm:flex-row divide-y sm:divide-y-0 divide-slate-100">
             {allStats.map((s, i) => (

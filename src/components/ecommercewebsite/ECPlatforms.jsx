@@ -5,7 +5,7 @@ import wooImg        from '../../assets/E-commerce/woo.webp'
 import enterpriseImg from '../../assets/E-commerce/Enterprise.webp'
 
 const C1 = '#2563eb'
-const C2 = '#0891b2'
+const C2 = '#0ea5e9'
 
 const platforms = [
   {
