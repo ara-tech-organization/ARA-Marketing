@@ -93,7 +93,7 @@ export default function Hero() {
       ════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden pt-[88px]"
-        style={{ minHeight: '60vh' }}
+        style={{ minHeight: '92vh' }}
       >
         {/* Full background image — covers entire section */}
         <img
@@ -106,7 +106,7 @@ export default function Hero() {
         {/* Left — text content sits on top of image */}
         <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8
           flex flex-col items-start text-left
-          pt-12 pb-10 sm:pt-16 sm:pb-12">
+          pt-14 pb-20 sm:pt-20 sm:pb-28">
 
           <div className="w-full max-w-[580px]">
 

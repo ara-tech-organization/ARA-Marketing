@@ -77,7 +77,7 @@ function StatCard({ val, num, suffix, label, icon: Icon, color, bg, border, grad
 
       {/* Count */}
       <div
-        className="font-black leading-none tabular-nums mb-1"
+        className="font-bold leading-none tabular-nums mb-1"
         style={{
           fontSize: 'clamp(30px,3vw,44px)',
           opacity: active ? 1 : 0,

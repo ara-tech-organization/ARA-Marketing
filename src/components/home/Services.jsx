@@ -42,92 +42,166 @@ const otherTags = [
   { label: 'Lead Generation Campaigns', link: '/services/lead-generation' },
 ]
 
+const introColumns = [
+  {
+    icon: Zap,
+    eyebrow: 'Who We Are',
+    color: '#60a5fa',
+    text: 'If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, ARA Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.',
+  },
+  {
+    icon: Target,
+    eyebrow: 'What We Do',
+    color: '#a78bfa',
+    text: "In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. ARA Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.",
+  },
+  {
+    icon: BarChart,
+    eyebrow: 'Why Choose Us',
+    color: '#34d399',
+    text: "ARA Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.",
+  },
+]
+
+const introStats = [
+  { val: '500+', label: 'Clients Served',     color: '#60a5fa' },
+  { val: '5.0★', label: 'Google Rating',      color: '#fbbf24' },
+  { val: '98%',  label: 'Client Satisfaction', color: '#34d399' },
+]
+
+const introChips = [
+  'AI-powered campaigns with measurable results',
+  'Expert team for SEO, SMM, SEM & Branding',
+  'Best digital marketing agency in Thanjavur',
+]
+
 export default function Services() {
   return (
-    <section id="services" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="services" className="bg-white">
 
-        {/* ── Result-Driven intro — dark full-width editorial ── */}
-        <div className="mb-16 reveal rounded-3xl overflow-hidden"
-          style={{ background: 'linear-gradient(145deg, #0a1628 0%, #0f2448 100%)', boxShadow: '0 20px 60px rgba(10,22,40,0.20)' }}>
+      {/* ══════════════════════════════════════════════════════
+          FULL-WIDTH EDITORIAL INTRO — Result-Driven block
+      ══════════════════════════════════════════════════════ */}
+      <div className="relative w-full overflow-hidden"
+        style={{ background: '#f0f9ff' }}>
 
-          {/* Top accent line */}
-          <div className="h-[3px]" style={{ background: 'linear-gradient(90deg, #2563eb, #7c3aed, #2563eb)' }} />
+        {/* Dot pattern overlay */}
+        <div className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(rgba(37,99,235,0.08) 1.5px, transparent 1.5px)',
+            backgroundSize: '32px 32px',
+          }} />
 
-          <div className="px-7 sm:px-10 pt-10 pb-8">
+        {/* Glow orbs — same as AboutMV */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.6) 0%, transparent 65%)', transform: 'translate(30%,-40%)' }} />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] pointer-events-none rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.7) 0%, transparent 65%)', transform: 'translate(-25%,40%)' }} />
+        <div className="absolute pointer-events-none rounded-full hidden lg:block"
+          style={{ top: '30%', left: '-2%', width: '160px', height: '160px', border: '1.5px dashed rgba(14,165,233,0.25)' }} />
+        <div className="absolute pointer-events-none hidden lg:block"
+          style={{ top: '12%', right: '6%', width: '40px', height: '40px', border: '1.5px solid rgba(37,99,235,0.2)', borderRadius: '8px', transform: 'rotate(25deg)' }} />
 
-            {/* Eyebrow + heading */}
-            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 mb-10">
-              <div className="max-w-xl">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.18em] mb-4"
-                  style={{ background: 'rgba(37,99,235,0.20)', color: '#93c5fd', border: '1px solid rgba(147,197,253,0.20)' }}>
-                  <TrendingUp size={9} /> Digital Marketing Services
+        <div className="relative max-w-[1440px] mx-auto px-6 sm:px-12 xl:px-24 py-16 sm:py-20">
+
+          {/* ── Zone 1: Heading + Stats ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 lg:gap-20 items-start mb-12">
+
+            {/* Left — badge + heading */}
+            <div>
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full
+                text-[10px] font-black uppercase tracking-[0.18em] mb-5"
+                style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
+                <TrendingUp size={9} /> Digital Marketing Services
+              </span>
+
+              <h2 className="font-bold leading-[1.13] tracking-tight"
+                style={{ fontSize: 'clamp(26px,3.6vw,54px)', color: '#0f172a' }}>
+                Result-Driven Digital Marketing
+                <br />
+                <span style={{
+                  background: 'linear-gradient(90deg,#2563eb,#7c3aed)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Services for Modern Businesses
                 </span>
-                <h2 className="font-bold text-white leading-[1.18] tracking-tight"
-                  style={{ fontSize: 'clamp(22px,3vw,38px)' }}>
-                  Result-Driven Digital Marketing Services for Modern Businesses
-                </h2>
-              </div>
-
-              {/* Right — 3 quick stats */}
-              <div className="flex sm:flex-col gap-4 sm:gap-3 flex-shrink-0">
-                {[
-                  { val: '500+', label: 'Clients Served',      color: '#60a5fa' },
-                  { val: '5.0★', label: 'Google Rating',       color: '#fbbf24' },
-                  { val: '98%',  label: 'Client Satisfaction',  color: '#34d399' },
-                ].map(({ val, label, color }) => (
-                  <div key={label} className="flex sm:flex-row items-center gap-2.5 px-4 py-2.5 rounded-xl"
-                    style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                    <span className="text-[20px] font-black leading-none" style={{ color }}>{val}</span>
-                    <span className="text-[10px] font-semibold uppercase tracking-wider"
-                      style={{ color: 'rgba(255,255,255,0.40)' }}>{label}</span>
-                  </div>
-                ))}
-              </div>
+              </h2>
             </div>
 
-            {/* 3 paragraph columns */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
-              {[
-                {
-                  icon: Zap,
-                  text: 'If you are seeking the best digital marketing agency in Thanjavur or the best branding agency in Thanjavur for a trusted partner for branding and advertising, ARA Discover Marketing is here. We have an expert team that offers AI-powered measurable growth with innovative digital campaigns.',
-                },
-                {
-                  icon: Target,
-                  text: "In today's competitive online marketplace, companies require more than just a website. They need to be found, engaged, converted, and trusted. ARA Discover Marketing is the best digital marketing services in Thanjavur which helps businesses to attract the right audience, and convert them into loyal customers.",
-                },
-                {
-                  icon: BarChart,
-                  text: "ARA Discover Marketing is a top digital marketing company in Thanjavur and we combine creativity, analytics and technology to create campaigns that drive real business results. Whether it's SEO optimization, social media campaigns or paid advertising, we help brands get ahead of the competition.",
-                },
-              ].map(({ icon: Icon, text }, i) => (
-                <div key={i} className="flex flex-col gap-3">
-                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(37,99,235,0.22)' }}>
-                    <Icon size={15} style={{ color: '#93c5fd' }} />
-                  </div>
-                  <p className="text-[13px] leading-[1.80]" style={{ color: 'rgba(255,255,255,0.52)' }}>{text}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Bottom — 3 highlight chips */}
-            <div className="flex flex-wrap gap-2.5 pt-6" style={{ borderTop: '1px solid rgba(255,255,255,0.07)' }}>
-              {[
-                'AI-powered campaigns with measurable results',
-                'Expert team for SEO, SMM, SEM & Branding',
-                'Best digital marketing agency in Thanjavur',
-              ].map(item => (
-                <div key={item} className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full"
-                  style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)' }}>
-                  <CheckCircle size={12} style={{ color: '#34d399', flexShrink: 0 }} />
-                  <span className="text-[12.5px] font-medium" style={{ color: 'rgba(255,255,255,0.70)' }}>{item}</span>
+            {/* Right — 3 stats */}
+            <div className="flex flex-row lg:flex-col gap-3 flex-shrink-0">
+              {introStats.map(({ val, label, color }) => (
+                <div key={label}
+                  className="flex items-center gap-3 px-5 py-3.5 rounded-2xl"
+                  style={{
+                    background: '#ffffff',
+                    border: '1px solid rgba(37,99,235,0.14)',
+                    boxShadow: '0 2px 12px rgba(37,99,235,0.08)',
+                  }}>
+                  <span className="text-[22px] font-black leading-none" style={{ color }}>{val}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider"
+                    style={{ color: '#64748b' }}>{label}</span>
                 </div>
               ))}
             </div>
           </div>
+
+          {/* Separator */}
+          <div className="h-px mb-10"
+            style={{ background: 'linear-gradient(90deg,transparent,rgba(37,99,235,0.18),transparent)' }} />
+
+          {/* ── Zone 2: 3 feature columns ── */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+            {introColumns.map(({ icon: Icon, eyebrow, color, text }) => (
+              <div key={eyebrow} className="rounded-2xl p-6"
+                style={{
+                  background: '#ffffff',
+                  border: `1px solid ${color}28`,
+                  borderLeft: `3px solid ${color}`,
+                  boxShadow: '0 2px 16px rgba(37,99,235,0.07)',
+                }}>
+                <div className="flex items-center gap-2.5 mb-4">
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+                    style={{ background: `${color}14`, border: `1px solid ${color}30` }}>
+                    <Icon size={14} style={{ color }} />
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-[0.16em]"
+                    style={{ color }}>{eyebrow}</span>
+                </div>
+                <p className="text-[13px] leading-[1.82]"
+                  style={{ color: '#475569' }}>{text}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* ── Zone 3: chips ── */}
+          <div className="flex flex-wrap justify-center gap-2.5 pt-8"
+            style={{ borderTop: '1px solid rgba(37,99,235,0.12)' }}>
+            {introChips.map(item => (
+              <div key={item}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.18)', boxShadow: '0 1px 6px rgba(37,99,235,0.07)' }}>
+                <CheckCircle size={12} style={{ color: '#059669', flexShrink: 0 }} />
+                <span className="text-[12.5px] font-medium"
+                  style={{ color: '#1e3a5f' }}>{item}</span>
+              </div>
+            ))}
+          </div>
+
         </div>
+
+        {/* Bottom separator */}
+        <div className="h-px"
+          style={{ background: 'linear-gradient(90deg,transparent,rgba(37,99,235,0.15),transparent)' }} />
+      </div>
+
+
+      {/* ══════════════════════════════════════
+          REST OF SERVICES SECTION
+      ══════════════════════════════════════ */}
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-16">
 
         {/* Why Do Businesses Choose Ara */}
         <div className="mb-16 reveal">
@@ -178,7 +252,7 @@ export default function Services() {
           </h2>
         </div>
 
-        {/* Service rows — all 6 */}
+        {/* Service rows */}
         <div className="flex flex-col mb-10">
           {services.map((s, i) => {
             const Icon = s.icon
