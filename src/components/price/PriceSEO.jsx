@@ -71,20 +71,20 @@ export default function PriceSEO() {
 
           {/* WhatsApp */}
           <div className="reveal delay-2 flex flex-col rounded-[24px] p-7 transition-all duration-300 hover:-translate-y-1"
-            style={{ background: 'rgba(5,150,105,0.04)', border: '1.5px solid rgba(5,150,105,0.2)' }}>
+            style={{ background: 'rgba(14,165,233,0.04)', border: '1.5px solid rgba(14,165,233,0.2)' }}>
             <div className="w-11 h-11 rounded-[14px] flex items-center justify-center mb-5"
-              style={{ background: 'rgba(5,150,105,0.1)' }}>
-              <MessageCircle size={20} className="text-emerald-600" />
+              style={{ background: 'rgba(14,165,233,0.1)' }}>
+              <MessageCircle size={20} style={{ color: '#0ea5e9' }} />
             </div>
             <h3 className="text-[18px] font-bold text-slate-900 mb-1">WhatsApp Business Setup &amp; Automation</h3>
             <div className="flex items-baseline gap-1 mb-2">
-              <span className="text-[34px] font-bold text-emerald-600" style={{ letterSpacing: '-1px' }}>₹5,000</span>
+              <span className="text-[34px] font-bold" style={{ color: '#0ea5e9', letterSpacing: '-1px' }}>₹5,000</span>
             </div>
             <p className="text-[12px] text-slate-400 mb-6 uppercase tracking-wider font-semibold">One-time setup</p>
             <ul className="flex flex-col gap-2.5 flex-1">
               {waFeatures.map(f => (
                 <li key={f} className="flex items-center gap-2.5 text-[13.5px] text-slate-600">
-                  <Check size={14} className="text-emerald-600 shrink-0" />
+                  <Check size={14} style={{ color: '#0ea5e9' }} className="shrink-0" />
                   {f}
                 </li>
               ))}
@@ -93,7 +93,7 @@ export default function PriceSEO() {
               href="/ARA-Marketing/contact-us"
               className="mt-7 w-full flex items-center justify-center py-3 rounded-full text-[13px]
                 font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
-              style={{ background: '#059669' }}
+              style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 4px 16px rgba(14,165,233,0.28)' }}
             >
               Get Started
             </a>

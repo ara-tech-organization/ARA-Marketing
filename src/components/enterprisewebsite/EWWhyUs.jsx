@@ -134,7 +134,7 @@ export default function EWWhyUs() {
   return (
     <section
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
-      style={{ background: '#f0f9ff' }}
+      style={{ background: '#ffffff' }}
     >
 
       {/* Dot grid overlay */}

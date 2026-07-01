@@ -144,7 +144,7 @@ export default function EWCTA() {
                 >
                   Call Us Directly
                 </p>
-                <p className="text-[13px] sm:text-[14px] font-bold" style={{ color: '#0f172a' }}>+91 XXXXX XXXXX</p>
+                <p className="text-[13px] sm:text-[14px] font-bold" style={{ color: '#0f172a' }}>+91 98765 43210</p>
               </div>
               <ChevronRight size={13} style={{ color: '#94a3b8' }} />
             </a>

@@ -29,8 +29,8 @@ export default function PriceCTA() {
             href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold
               text-white transition-all duration-200 hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg, #2563eb, #7c3aed)',
-              boxShadow: '0 8px 30px rgba(37,99,235,0.3)' }}
+            style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+              boxShadow: '0 8px 30px rgba(37,99,235,0.28)' }}
           >
             Request a Free Quote
             <ArrowRight size={15} />

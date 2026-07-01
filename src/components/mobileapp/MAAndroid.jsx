@@ -12,10 +12,10 @@ const services = [
 export default function MAAndroid() {
   return (
     <section className="relative overflow-hidden py-16 sm:py-16"
-      style={{ background: 'linear-gradient(160deg,#03111f 0%,#040d1a 100%)' }}>
+      style={{ background: '#f0f9ff' }}>
       <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[500px] h-[500px] pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.12) 0%,transparent 65%)' }} />
-      <div className="absolute inset-0 pointer-events-none opacity-15"
+      <div className="absolute inset-0 pointer-events-none opacity-10"
         style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.5) 1px,transparent 1px)', backgroundSize: '44px 44px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
@@ -24,16 +24,16 @@ export default function MAAndroid() {
           {/* Left: Content */}
           <div className="flex-1 reveal-left">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
+              style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
               <Smartphone size={11} /> Android App Development
             </span>
-            <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-white leading-tight tracking-tight mb-5">
+            <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
               Android App Development{' '}
-              <span style={{ background: 'linear-gradient(135deg,#60a5fa,#60a5fa)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 Services
               </span>
             </h2>
-            <p className="text-[15px] mb-8 leading-[1.85]" style={{ color: '#94a3b8' }}>
+            <p className="text-[15px] mb-8 leading-[1.85]" style={{ color: '#64748b' }}>
               We are a top Android app development company in Thanjavur, delivering intuitive and high-performing apps. As an Android app development firm in Thanjavur, our Android mobile application development services are designed around your unique requirements, offering scalability and enterprise-grade security.
             </p>
 
@@ -42,10 +42,10 @@ export default function MAAndroid() {
               {services.map(({ icon: Icon, text }, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
-                    style={{ background: 'rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.3)' }}>
-                    <Icon size={16} style={{ color: '#60a5fa' }} />
+                    style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.20)' }}>
+                    <Icon size={16} style={{ color: '#2563eb' }} />
                   </div>
-                  <p className="text-[13.5px] leading-[1.75] pt-2" style={{ color: '#cbd5e1' }}>{text}</p>
+                  <p className="text-[13.5px] leading-[1.75] pt-2" style={{ color: '#475569' }}>{text}</p>
                 </div>
               ))}
             </div>
@@ -93,9 +93,9 @@ export default function MAAndroid() {
 
               {/* Floating badge */}
               <div className="hidden lg:flex absolute -top-4 -right-4 items-center gap-3 px-4 py-3 rounded-2xl animate-float"
-                style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(37,99,235,0.4)', backdropFilter: 'blur(12px)' }}>
+                style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.3)', boxShadow: '0 4px 16px rgba(37,99,235,0.12)' }}>
                 <CheckCircle2 size={20} style={{ color: '#60a5fa' }} />
-                <span className="text-[12px] font-bold text-white">Top Android Agency</span>
+                <span className="text-[12px] font-bold text-slate-800">Top Android Agency</span>
               </div>
             </div>
           </div>

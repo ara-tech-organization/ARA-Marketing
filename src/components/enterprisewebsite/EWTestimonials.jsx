@@ -31,7 +31,7 @@ export default function EWTestimonials() {
   return (
     <section
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(170deg, #f4f8ff 0%, #eef4ff 60%, #f8faff 100%)' }}
+      style={{ background: '#ffffff' }}
     >
       {/* Dot grid */}
       <div

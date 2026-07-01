@@ -41,10 +41,10 @@ export default function MAIntro() {
     <section
       id="ma-intro"
       className="relative overflow-hidden py-14 sm:py-16 lg:py-20"
-      style={{ background: 'linear-gradient(160deg,#03111f 0%,#04131c 50%,#030e18 100%)' }}
+      style={{ background: '#f0f9ff' }}
     >
       {/* Dot grid */}
-      <div className="absolute inset-0 pointer-events-none opacity-20"
+      <div className="absolute inset-0 pointer-events-none opacity-10"
         style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.4) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
 
       {/* Orbs */}
@@ -63,12 +63,12 @@ export default function MAIntro() {
 
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(37,99,235,0.15)', color: '#60a5fa', border: '1px solid rgba(37,99,235,0.3)' }}>
+              style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
               <Sparkles size={11} /> Why Mobile Apps Matter
             </span>
 
             {/* H2 */}
-            <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-white mb-5">
+            <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-slate-900 mb-5">
               Mobile Apps —{' '}
               <span style={{
                 background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
@@ -80,7 +80,7 @@ export default function MAIntro() {
               </span>
             </h2>
 
-            <p className="text-[13.5px] sm:text-[15px] leading-[1.85] mb-7" style={{ color: '#94a3b8' }}>
+            <p className="text-[13.5px] sm:text-[15px] leading-[1.85] mb-7" style={{ color: '#64748b' }}>
               Mobile apps are essential in today's digital age. ARA Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and performance-driven AI-powered mobile apps that transform how businesses connect with customers.
             </p>
 
@@ -88,8 +88,8 @@ export default function MAIntro() {
             <ul className="flex flex-col gap-2.5 mb-8">
               {bullets.map(b => (
                 <li key={b} className="flex items-start gap-2.5">
-                  <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5" style={{ color: '#60a5fa' }} />
-                  <span className="text-[13px] sm:text-[13.5px]" style={{ color: 'rgba(255,255,255,0.65)' }}>{b}</span>
+                  <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5" style={{ color: '#2563eb' }} />
+                  <span className="text-[13px] sm:text-[13.5px]" style={{ color: '#475569' }}>{b}</span>
                 </li>
               ))}
             </ul>
@@ -112,7 +112,7 @@ export default function MAIntro() {
 
               {/* Image */}
               <div className="relative rounded-3xl overflow-hidden"
-                style={{ boxShadow: '0 32px 80px rgba(0,0,0,0.55)', border: '1px solid rgba(37,99,235,0.25)' }}>
+                style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.15)', border: '1px solid rgba(37,99,235,0.25)' }}>
                 <img
                   src={introImage}
                   alt="Mobile App Development Services Thanjavur"
@@ -170,17 +170,17 @@ export default function MAIntro() {
           {features.map(({ icon: Icon, title, desc, color }) => (
             <div key={title}
               className="group rounded-2xl p-5 sm:p-6 transition-all duration-300 cursor-default"
-              style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 4px 24px rgba(0,0,0,0.2)' }}
+              style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.12)', boxShadow: '0 4px 20px rgba(37,99,235,0.06)' }}
               onMouseEnter={e => {
                 e.currentTarget.style.borderColor = `${color}45`
                 e.currentTarget.style.background = `${color}0d`
-                e.currentTarget.style.boxShadow = `0 16px 40px rgba(0,0,0,0.30), 0 0 0 1px ${color}30`
+                e.currentTarget.style.boxShadow = `0 16px 40px ${color}18, 0 0 0 1px ${color}30`
                 e.currentTarget.style.transform = 'translateY(-3px)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'
-                e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
-                e.currentTarget.style.boxShadow = '0 4px 24px rgba(0,0,0,0.2)'
+                e.currentTarget.style.borderColor = 'rgba(37,99,235,0.12)'
+                e.currentTarget.style.background = '#ffffff'
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.06)'
                 e.currentTarget.style.transform = 'none'
               }}
             >
@@ -189,20 +189,20 @@ export default function MAIntro() {
                 style={{ background: `${color}18`, border: `1px solid ${color}30` }}>
                 <Icon size={18} style={{ color }} />
               </div>
-              <h3 className="text-[13px] font-bold text-white mb-2 leading-snug">{title}</h3>
-              <p className="text-[12px] sm:text-[12.5px] leading-[1.75]" style={{ color: '#94a3b8' }}>{desc}</p>
+              <h3 className="text-[13px] font-bold text-slate-900 mb-2 leading-snug">{title}</h3>
+              <p className="text-[12px] sm:text-[12.5px] leading-[1.75]" style={{ color: '#64748b' }}>{desc}</p>
             </div>
           ))}
         </div>
 
         {/* Bottom CTA line */}
         <div className="text-center mt-10 reveal">
-          <p className="text-[13.5px] mb-3" style={{ color: '#94a3b8' }}>
+          <p className="text-[13.5px] mb-3" style={{ color: '#64748b' }}>
             As a leading mobile app development company in Thanjavur, we make your brand shine in the competitive market.
           </p>
           <a href="/ARA-Marketing/contact-us"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-all duration-200 hover:gap-3"
-            style={{ color: '#60a5fa' }}>
+            style={{ color: '#2563eb' }}>
             Start Your App Project Today <ArrowRight size={14} />
           </a>
         </div>

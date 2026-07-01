@@ -121,7 +121,7 @@ function StepCard({ num, icon: Icon, title, body, color, lightBg, border, origin
 
 export default function EWProcess() {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-white">
+    <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden" style={{ background: '#f0f9ff' }}>
 
       {/* Dot grid */}
       <div
