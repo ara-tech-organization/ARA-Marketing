@@ -67,13 +67,13 @@ export default function MAProcess() {
 
         {/* Desktop: horizontal timeline */}
         <div className="hidden lg:block reveal">
-          <div className="relative flex items-start gap-0">
-            <div className="absolute top-[28px] left-[8%] right-[8%] h-[2px] pointer-events-none"
+          <div className="relative flex items-stretch gap-0">
+            <div className="absolute top-[28px] left-[10%] right-[10%] h-[2px] pointer-events-none"
               style={{ background: 'linear-gradient(90deg,#1e40af,#2563eb,#0ea5e9,#2563eb,#1e40af)' }} />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (
               <div key={num} className="flex-1 flex flex-col items-center text-center px-3 group">
-                <div className="relative w-14 h-14 rounded-full flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 z-10"
+                <div className="relative w-14 h-14 rounded-full flex items-center justify-center mb-6 flex-shrink-0 transition-all duration-300 group-hover:scale-110 z-10"
                   style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 4px 20px ${color}40` }}>
                   <Icon size={20} className="text-white" />
                   <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full text-[9px] font-black flex items-center justify-center text-white"
@@ -82,7 +82,7 @@ export default function MAProcess() {
                   </span>
                 </div>
 
-                <div className="w-full rounded-2xl p-5 transition-all duration-300 group-hover:-translate-y-1"
+                <div className="w-full flex-1 rounded-2xl p-5 transition-all duration-300 group-hover:-translate-y-1"
                   style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}
                   onMouseEnter={e => {
                     e.currentTarget.style.border = `1px solid ${color}30`

@@ -21,17 +21,17 @@ function FeatureRow({ label, value, accent }) {
     <div className="flex items-center gap-3 py-2.5"
       style={{ borderBottom: '1px solid #f1f5f9' }}>
       <div className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
-        style={{ background: included ? `${accent}18` : '#f1f5f9' }}>
+        style={{ background: included ? `${accent}18` : '#e2e8f0' }}>
         {included
           ? <Check size={11} style={{ color: accent }} />
-          : <X size={10} className="text-slate-300" />}
+          : <X size={10} className="text-slate-400" />}
       </div>
-      <span className="flex-1 text-[12.5px]" style={{ color: included ? '#334155' : '#cbd5e1' }}>
+      <span className="flex-1 text-[12.5px]" style={{ color: included ? '#334155' : '#94a3b8' }}>
         {label}
       </span>
       {typeof value === 'string' && (
-        <span className="text-[11.5px] font-bold px-2 py-0.5 rounded-md"
-          style={{ background: `${accent}12`, color: accent }}>
+        <span className="text-[12.5px] px-2.5 py-0.5 rounded-md"
+          style={{ background: `${accent}15`, color: accent, fontWeight: 800 }}>
           {value}
         </span>
       )}
