@@ -190,7 +190,7 @@ export default function Navbar() {
             style={{ background: 'linear-gradient(90deg,transparent 0%,#2563eb 30%,#6366f1 60%,transparent 100%)', opacity: scrolled ? 1 : 0, transition: 'opacity 0.3s' }} />
 
           <div className="max-w-[1400px] mx-auto px-6 sm:px-10">
-            <div className="flex items-center justify-between h-[64px] gap-6">
+            <div className="flex items-center justify-between h-[76px] gap-6">
 
               {/* Logo */}
               <Link to="/" className="flex items-center no-underline flex-shrink-0">
