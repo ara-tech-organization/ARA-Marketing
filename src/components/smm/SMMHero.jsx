@@ -33,17 +33,17 @@ export default function SMMHero() {
 
             {/* Badge */}
             <div className="animate-hero-d1">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
-                border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
+              <span className="inline-flex items-center gap-2 px-2.5 sm:px-3.5 py-1.5 bg-blue-50 text-blue-600
+                border border-blue-200 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-5">
                 <Share2 size={11} /> Social Media Marketing (SMM)
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-[clamp(18px,2.1vw,33px)] font-bold text-slate-900
-              leading-[1.12] tracking-tight mb-5">
-              Best Social Media Marketing{' '}
-              <span className="text-gradient-blue">Services in Thanjavur</span>
+            <h1 className="animate-hero-d2 text-slate-900 leading-[1.12] tracking-tight mb-5"
+              style={{ fontSize: '40px', fontWeight: 600 }}>
+              <span style={{ display: 'block', whiteSpace: 'normal' }}>Best Social Media Marketing</span>
+              <span className="text-gradient-blue" style={{ display: 'block', whiteSpace: 'normal' }}>Services in Thanjavur</span>
             </h1>
 
             {/* Description */}

@@ -57,12 +57,13 @@ export default function SWHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="text-[clamp(21px,2.9vw,43px)] font-bold leading-[1.08] tracking-tight mb-5 text-slate-900">
-              Launch Your Online{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Presence
-              </span>{' '}
-              with Static Websites
+            <h1 className="leading-[1.08] tracking-tight mb-5 text-slate-900"
+              style={{ fontSize: '40px', fontWeight: 600 }}>
+              <span style={{ display: 'block', whiteSpace: 'normal' }}>
+                Launch Your Online{' '}
+                <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Presence</span>
+              </span>
+              <span style={{ display: 'block', whiteSpace: 'normal' }}>with Static Websites</span>
             </h1>
 
             {/* Tagline */}

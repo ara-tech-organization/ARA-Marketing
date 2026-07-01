@@ -64,9 +64,9 @@ export default function ECHero() {
 
             {/* H1 */}
             <h1 className="animate-hero-d2 text-slate-900 leading-[1.15] tracking-tight mb-6"
-              style={{ fontWeight: 700, fontSize: 'clamp(17px, 1.5vw, 24px)' }}>
-              <span style={{ display: 'block' }}>Build High-Performance</span>
-              <span style={{ display: 'block', color: '#2563eb' }}>Ecommerce Websites That Sell 24/7</span>
+              style={{ fontWeight: 600, fontSize: '40px' }}>
+              <span style={{ display: 'block', whiteSpace: 'normal' }}>Build High-Performance</span>
+              <span style={{ display: 'block', whiteSpace: 'normal', color: '#2563eb' }}>Ecommerce Websites That Sell 24/7</span>
             </h1>
 
             <p className="animate-hero-d3 text-[15px] text-slate-600 leading-[1.9] mb-4">

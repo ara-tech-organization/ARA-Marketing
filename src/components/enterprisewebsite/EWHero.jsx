@@ -58,7 +58,7 @@ export default function EWHero() {
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6"
+            <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6"
               style={{
                 background: 'rgba(124,58,237,0.16)',
                 border: '1px solid rgba(167,139,250,0.28)',
@@ -70,7 +70,7 @@ export default function EWHero() {
 
             {/* H1 */}
             <h1 className="leading-[1.2] tracking-tight mb-5 text-white"
-              style={{ fontWeight: 700, fontSize: 'clamp(22px, 2.6vw, 34px)' }}>
+              style={{ fontWeight: 700, fontSize: '40px' }}>
               <span style={{ display: 'block' }}>Transform Your Enterprise</span>
               <span style={{
                 display: 'block',

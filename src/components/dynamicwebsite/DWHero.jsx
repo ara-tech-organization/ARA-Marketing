@@ -79,9 +79,9 @@ export default function DWHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="text-[clamp(23px,3.1vw,47px)] font-bold leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff' }}>
-              Build Powerful Dynamic Websites{' '}
-              <span style={gradBlue}>That Grow With Your Business</span>
+            <h1 className="leading-[1.08] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff', fontSize: '37px', fontWeight: 600 }}>
+              <span style={{ display: 'block', whiteSpace: 'normal' }}>Build Powerful Dynamic Websites</span>
+              <span style={{ display: 'block', whiteSpace: 'normal', ...gradBlue }}>That Grow With Your Business</span>
             </h1>
 
             {/* Tagline */}

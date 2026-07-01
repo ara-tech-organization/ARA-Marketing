@@ -78,7 +78,7 @@ export default function WAHero() {
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8"
+            <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8"
               style={{
                 background: 'rgba(37,99,235,0.18)',
                 border: '1px solid rgba(96,165,250,0.30)',
@@ -89,9 +89,9 @@ export default function WAHero() {
             </span>
 
             {/* H1 */}
-            <h1 className="leading-[1.2] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff', fontWeight: 700, fontSize: 'clamp(18px, 1.8vw, 24px)' }}>
-              <span style={{ display: 'block' }}>Power Your Business</span>
-              <span style={{ display: 'block', ...gradBlue }}>with Advanced Web App Solutions</span>
+            <h1 className="leading-[1.2] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff', fontWeight: 600, fontSize: '40px' }}>
+              <span style={{ display: 'block', whiteSpace: 'nowrap' }}>Power Your Business with</span>
+              <span style={{ display: 'block', whiteSpace: 'nowrap', ...gradBlue }}> Advanced Web App Solutions</span>
             </h1>
 
             {/* Tagline */}

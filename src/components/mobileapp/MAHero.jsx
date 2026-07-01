@@ -63,14 +63,14 @@ export default function MAHero() {
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-7 text-blue-700"
+            <span className="inline-flex self-start items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-7 text-blue-700"
               style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.20)' }}>
               <Smartphone size={10} /> Mobile App Development · Thanjavur
             </span>
 
             {/* H1 — 2 lines */}
             <h1 className="font-bold leading-[1.2] tracking-tight mb-5 text-slate-900"
-              style={{ fontSize: 'clamp(20px,2.0vw,32px)' }}>
+              style={{ fontSize: '50px' }}>
               <span style={{ display: 'block' }}>Build Powerful Mobile</span>
               <span style={{ display: 'block' }}>
                 Apps for{' '}
