@@ -86,29 +86,31 @@ export default function MABenefits() {
           {/* LEFT: sticky heading panel */}
           <div className="w-full lg:w-[300px] xl:w-[340px] flex-shrink-0 lg:sticky lg:top-24 reveal-left">
 
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
-              style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
-              <Smartphone size={9} /> Benefits
-            </span>
-
-            <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-4">
-              Benefits of Our{' '}
-              <span style={{
-                background: 'linear-gradient(135deg,#1e40af,#2563eb)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                Mobile App Services
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+                style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
+                <Smartphone size={9} /> Benefits
               </span>
-            </h2>
 
-            <div className="w-10 h-[3px] rounded-full mb-5"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+              <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-4">
+                Benefits of Our{' '}
+                <span style={{
+                  background: 'linear-gradient(135deg,#1e40af,#2563eb)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Mobile App Services
+                </span>
+              </h2>
 
-            <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
-              Our mobile application development service in Thanjavur delivers measurable results — from increased engagement and streamlined operations to a higher ROI for your business.
-            </p>
+              <div className="w-10 h-[3px] rounded-full mb-5 mx-auto lg:mx-0"
+                style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+
+              <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
+                Our mobile application development service in Thanjavur delivers measurable results — from increased engagement and streamlined operations to a higher ROI for your business.
+              </p>
+            </div>
 
             {/* Trust bullets */}
             <div className="flex flex-col gap-2.5 mb-8">

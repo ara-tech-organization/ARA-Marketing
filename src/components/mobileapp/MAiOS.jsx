@@ -68,19 +68,21 @@ export default function MAiOS() {
 
           {/* Right: Content */}
           <div className="flex-1 reveal-right order-1 lg:order-2">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.08)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.2)' }}>
-              <Smartphone size={11} /> iOS App Development
-            </span>
-            <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
-              iOS App Development{' '}
-              <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Services
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
+                style={{ background: 'rgba(37,99,235,0.08)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.2)' }}>
+                <Smartphone size={11} /> iOS App Development
               </span>
-            </h2>
-            <p className="text-[15px] text-slate-500 mb-8 leading-[1.85]">
-              Our iOS Development team builds strong, user-friendly iPhone and iPad applications. We are a trusted partner for Mobile App Development for iOS &amp; Android in Thanjavur, delivering powerful apps for businesses across all industries.
-            </p>
+              <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+                iOS App Development{' '}
+                <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  Services
+                </span>
+              </h2>
+              <p className="text-[15px] text-slate-500 mb-8 leading-[1.85]">
+                Our iOS Development team builds strong, user-friendly iPhone and iPad applications. We are a trusted partner for Mobile App Development for iOS &amp; Android in Thanjavur, delivering powerful apps for businesses across all industries.
+              </p>
+            </div>
 
             {/* Service cards — no grid, just flex column */}
             <div className="flex flex-col gap-4">

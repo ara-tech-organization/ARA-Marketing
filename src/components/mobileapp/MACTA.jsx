@@ -17,27 +17,29 @@ export default function MACTA() {
 
           {/* Left: CTA Content */}
           <div className="flex-1 reveal-left">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ color: '#1e40af', border: '1px solid rgba(37,99,235,0.3)' }}>
-              <Rocket size={11} /> Let's Build Your App
-            </span>
-
-            <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-gray-900 leading-tight tracking-tight mb-5">
-              Let's Build Your{' '}
-              <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Mobile App Together
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+                style={{ color: '#1e40af', border: '1px solid rgba(37,99,235,0.3)' }}>
+                <Rocket size={11} /> Let's Build Your App
               </span>
-            </h2>
 
-            <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
-              Partner with a reliable mobile app development company in Thanjavur to build your iOS and Android app from the ground up.
-            </p>
-            <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
-              Our custom mobile app development services in Thanjavur are tailored to your unique business requirements — from ideation to launch.
-            </p>
-            <p className="text-[15px] leading-[1.85] mb-10" style={{ color: '#475569' }}>
-              Fill in the form and our specialists will help you plan your perfect app solution — secure, scalable, and built to perform.
-            </p>
+              <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-gray-900 leading-tight tracking-tight mb-5">
+                Let's Build Your{' '}
+                <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  Mobile App Together
+                </span>
+              </h2>
+
+              <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
+                Partner with a reliable mobile app development company in Thanjavur to build your iOS and Android app from the ground up.
+              </p>
+              <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
+                Our custom mobile app development services in Thanjavur are tailored to your unique business requirements — from ideation to launch.
+              </p>
+              <p className="text-[15px] leading-[1.85] mb-10" style={{ color: '#475569' }}>
+                Fill in the form and our specialists will help you plan your perfect app solution — secure, scalable, and built to perform.
+              </p>
+            </div>
 
             {/* Highlights */}
             <div className="flex flex-col gap-3 mb-10">
