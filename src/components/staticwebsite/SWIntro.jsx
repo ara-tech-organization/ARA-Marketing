@@ -110,7 +110,7 @@ export default function SWIntro() {
           </div>
 
           {/* Text */}
-          <div className="flex-1 flex flex-col justify-center gap-4">
+          <div className="flex-1 flex flex-col justify-center gap-4 text-center lg:text-left">
             <h3 className="text-[13.5px] font-bold text-slate-900 leading-snug">
               Static Website Development Services Thanjavur
             </h3>
@@ -126,33 +126,26 @@ export default function SWIntro() {
             </p>
 
             {/* Mini stats */}
-            <div className="flex gap-5 pt-2" style={{ borderTop: '1px solid #dbeafe' }}>
-              <div>
-                <p className="text-[20px] font-black leading-tight"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                  &lt;1s
-                </p>
-                <p className="text-[10px] font-semibold text-slate-400">Page Load Time</p>
-              </div>
-              <div>
-                <p className="text-[20px] font-black leading-tight"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                  98/100
-                </p>
-                <p className="text-[10px] font-semibold text-slate-400">SEO Score</p>
-              </div>
-              <div>
-                <p className="text-[20px] font-black leading-tight"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                  100%
-                </p>
-                <p className="text-[10px] font-semibold text-slate-400">Secure</p>
-              </div>
+            <div className="flex justify-center lg:justify-start gap-0 pt-2" style={{ borderTop: '1px solid #dbeafe' }}>
+              {[
+                { val: '<1s',   label: 'Page Load Time' },
+                { val: '98/100', label: 'SEO Score' },
+                { val: '100%',  label: 'Secure' },
+              ].map(({ val, label }, i) => (
+                <div key={label} className="flex flex-col items-center lg:items-start px-5 first:pl-0"
+                  style={{ borderLeft: i > 0 ? '1px solid #bfdbfe' : 'none' }}>
+                  <p className="text-[20px] font-black leading-tight"
+                    style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                    {val}
+                  </p>
+                  <p className="text-[10px] font-semibold text-slate-400 whitespace-nowrap">{label}</p>
+                </div>
+              ))}
             </div>
 
             <a
               href="/ARA-Marketing/contact-us"
-              className="inline-flex items-center gap-2 self-start px-5 py-2.5 rounded-full
+              className="inline-flex items-center gap-2 self-center lg:self-start px-5 py-2.5 rounded-full
                 text-[12.5px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 mt-1"
               style={{
                 background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',

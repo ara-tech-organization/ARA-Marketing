@@ -60,7 +60,7 @@ export default function EWIntro() {
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-14 items-start">
 
           {/* ── LEFT: Text block ── */}
-          <div className="w-full lg:w-[50%] reveal-left">
+          <div className="w-full lg:w-[50%] reveal-left text-center lg:text-left">
 
             {/* Badge */}
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-blue-50"
@@ -78,7 +78,7 @@ export default function EWIntro() {
             </h2>
 
             {/* Accent bar */}
-            <div className="w-12 h-[3px] rounded-full mb-4 sm:mb-5"
+            <div className="w-12 h-[3px] rounded-full mb-4 sm:mb-5 mx-auto lg:mx-0"
               style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
 
             <p className="text-[12.5px] sm:text-[13.5px] lg:text-[14.5px] text-slate-500 leading-[1.90] mb-6 sm:mb-7">
@@ -105,7 +105,7 @@ export default function EWIntro() {
                     style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
                     <Icon size={12} className="text-blue-600" />
                   </div>
-                  <p className="text-[11.5px] sm:text-[12.5px] font-medium text-slate-600 leading-[1.65]">{text}</p>
+                  <p className="text-[11.5px] sm:text-[12.5px] font-medium text-slate-600 leading-[1.65] text-left">{text}</p>
                 </div>
               ))}
             </div>

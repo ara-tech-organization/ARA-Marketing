@@ -71,7 +71,7 @@ export default function CMSWhoShould() {
                       style={{ background: `${color}10`, border: `1px solid ${color}20` }}>
                       <Icon size={15} style={{ color }} />
                     </div>
-                    <div>
+                    <div className="text-left">
                       <h3 className="text-[12px] font-bold text-slate-800 mb-0.5">{title}</h3>
                       <p className="text-[12px] text-slate-500 leading-[1.7]">{desc}</p>
                     </div>

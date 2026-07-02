@@ -120,13 +120,13 @@ export default function MAHero() {
               style={{ borderTop: '1px solid rgba(37,99,235,0.10)' }}>
               {stats.map(({ value, label }, i) => (
                 <div key={label}
-                  className="flex flex-col items-center lg:items-start px-5 sm:px-6 first:pl-0"
+                  className="flex flex-col items-center lg:items-start px-3 sm:px-6 first:pl-0"
                   style={{ borderLeft: i > 0 ? '1px solid #dbeafe' : 'none' }}>
-                  <span className="text-[22px] sm:text-[26px] font-black leading-tight"
+                  <span className="text-[18px] sm:text-[26px] font-black leading-tight"
                     style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                     {value}
                   </span>
-                  <span className="text-[11px] text-slate-400 font-medium mt-0.5">{label}</span>
+                  <span className="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5 leading-tight text-center lg:text-left">{label}</span>
                 </div>
               ))}
             </div>

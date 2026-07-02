@@ -64,7 +64,7 @@ export default function EWCTA() {
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-16 items-start lg:items-center reveal">
 
           {/* LEFT: Copy */}
-          <div className="w-full lg:w-[46%]">
+          <div className="w-full lg:w-[46%] text-center lg:text-left">
             <span
               className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-6"
               style={{
@@ -109,7 +109,7 @@ export default function EWCTA() {
                 'Post-launch maintenance & continuous support',
                 'Transparent pricing with milestone-based delivery',
               ].map(pt => (
-                <div key={pt} className="flex items-center gap-2.5 sm:gap-3">
+                <div key={pt} className="flex items-center gap-2.5 sm:gap-3 justify-center lg:justify-start">
                   <CheckCircle2 size={14} style={{ color: '#2563eb', flexShrink: 0 }} />
                   <span
                     className="text-[12px] sm:text-[13px] font-medium"

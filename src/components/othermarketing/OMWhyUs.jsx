@@ -88,13 +88,13 @@ export default function OMWhyUs() {
         <div className="reveal grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-3 mb-12">
           {stats.map(({ value, label, color }) => (
             <div key={label}
-              className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-white border border-slate-100 shadow-sm"
+              className="flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-white border border-slate-100 shadow-sm"
               style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
-              <span className="text-[28px] font-bold leading-none"
+              <span className="text-[22px] sm:text-[28px] font-bold leading-none flex-shrink-0"
                 style={{ background: `linear-gradient(135deg,${color},${color}99)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                 {value}
               </span>
-              <span className="text-[12px] text-slate-500 font-medium max-w-[80px] leading-snug">{label}</span>
+              <span className="text-[11px] sm:text-[12px] text-slate-500 font-medium max-w-[90px] leading-snug">{label}</span>
             </div>
           ))}
         </div>

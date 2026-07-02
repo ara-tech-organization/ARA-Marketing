@@ -50,7 +50,7 @@ export default function OMIntro() {
             </p>
 
             {/* Feature rows */}
-            <div className="flex flex-col gap-3 mb-10">
+            <div className="flex flex-col gap-3 mb-10 text-left">
               {features.map(({ icon: Icon, color, label, desc }) => (
                 <div key={label} className="group flex gap-4 p-4 rounded-2xl bg-white border border-slate-100
                   hover:border-blue-100 hover:shadow-md transition-all duration-300"

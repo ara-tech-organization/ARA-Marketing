@@ -79,7 +79,7 @@ export default function OMCTA() {
           </div>
 
           {/* Right: CTA content */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px]
               font-bold uppercase tracking-widest mb-6 bg-white border border-violet-200 text-violet-600 shadow-sm">
               <Zap size={11} /> Ready to Grow Your Business
@@ -93,12 +93,12 @@ export default function OMCTA() {
               & Business Growth?
             </h2>
 
-            <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-7 max-w-[480px]">
+            <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-7 max-w-[480px] mx-auto lg:mx-0">
               Partner with ARA Discover Marketing to build strategic email marketing, influencer collaborations, and SMS marketing tactics that boost audience engagement and drive measurable business results.
             </p>
 
             {/* CTA buttons */}
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ boxShadow: '0 10px 32px rgba(37,99,235,0.28)' }}>

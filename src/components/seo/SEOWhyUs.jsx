@@ -9,7 +9,7 @@ const reasons = [
   { icon: DollarSign, num: '06', title: 'Affordable SEO Solutions',     desc: 'Cost-effective SEO packages built for startups, local businesses, and large enterprises alike.',              color: '#d97706' },
 ]
 
-function ReasonCard({ icon: Icon, num, title, desc, color }) {
+function ReasonCard({ icon: Icon, title, desc, color }) {
   return (
     <div
       className="group flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-100
@@ -24,7 +24,6 @@ function ReasonCard({ icon: Icon, num, title, desc, color }) {
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1.5">
-          <span className="text-[10px] font-black text-slate-300 tracking-widest">{num}</span>
           <h3 className="text-[13px] font-bold text-slate-900 leading-snug">{title}</h3>
         </div>
         <p className="text-[13px] text-slate-500 leading-[1.75]">{desc}</p>

@@ -108,7 +108,7 @@ export default function AboutMV() {
               strive to help brands grow, adapt, and stay ahead in the competitive digital marketplace.
             </p>
 
-            <div className="flex flex-col items-center lg:items-start gap-3.5 mb-7">
+            <div className="flex flex-col gap-3.5 mb-7 text-left">
               {missionPoints.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-start gap-3.5 group">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
@@ -183,7 +183,7 @@ export default function AboutMV() {
               marketing and generate sustainable value for businesses.
             </p>
 
-            <div className="flex flex-col items-center lg:items-start gap-3.5 mb-7">
+            <div className="flex flex-col gap-3.5 mb-7 text-left">
               {visionPoints.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-start gap-3.5 group">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5

@@ -86,7 +86,7 @@ export default function SEMAdTypes() {
                 {label} <span style={{ color }}>Services in Thanjavur</span>
               </h2>
 
-              <div className="flex flex-col gap-3.5 mb-7">
+              <div className="flex flex-col gap-3.5 mb-7 text-left">
                 {paragraphs.map((p, i) => (
                   <p key={i} className="text-[13.5px] text-slate-600 leading-[1.82]">{p}</p>
                 ))}
@@ -94,7 +94,7 @@ export default function SEMAdTypes() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8 text-left">
                 {items.map(item => (
-                  <div key={item} className="flex items-center gap-2.5 justify-center lg:justify-start">
+                  <div key={item} className="flex items-center gap-2.5 justify-start">
                     <CheckCircle2 size={14} style={{ color, flexShrink: 0 }} />
                     <span className="text-[13px] font-medium text-slate-700">{item}</span>
                   </div>
