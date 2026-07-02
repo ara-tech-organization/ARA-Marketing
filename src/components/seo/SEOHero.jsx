@@ -46,18 +46,18 @@ export default function SEOHero() {
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6 lg:py-8">
 
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-1.5 text-[12px] text-slate-400 mb-5">
-          <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors">Home</a>
-          <ChevronRight size={12} className="text-slate-600" />
-          <span className="text-slate-500">Digital Marketing</span>
-          <ChevronRight size={12} className="text-slate-600" />
-          <span className="text-blue-400 font-medium">SEO Services</span>
+        <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-5">
+          <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+          <ChevronRight size={12} className="text-slate-600 flex-shrink-0" />
+          <span className="whitespace-nowrap text-slate-500">Digital Marketing</span>
+          <ChevronRight size={12} className="text-slate-600 flex-shrink-0" />
+          <span className="whitespace-nowrap text-blue-400 font-medium">SEO Services</span>
         </nav>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
 
           {/* ── LEFT: Content ── */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 text-center lg:text-left">
 
             {/* Label */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6
@@ -89,7 +89,7 @@ export default function SEOHero() {
             </p>
 
             {/* Badge pills */}
-            <div className="flex flex-wrap gap-2 mb-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
               {badges.map(({ icon: Icon, text }) => (
                 <span key={text}
                   className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold text-slate-300"
@@ -100,7 +100,7 @@ export default function SEOHero() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white
                   transition-all duration-300 hover:scale-[1.03] shadow-lg"

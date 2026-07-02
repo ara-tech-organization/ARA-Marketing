@@ -58,7 +58,7 @@ export default function SEOIntro() {
 
           {/* Right: content */}
           <div className="flex-1 min-w-0">
-            <div className="reveal">
+            <div className="reveal text-center md:text-left">
               <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight
                 tracking-tight mb-7">
                 AI-Driven SEO Strategies That Deliver{' '}

@@ -37,7 +37,7 @@ export default function CMSWhoShould() {
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20">
 
           {/* Left: Who Should */}
-          <div className="flex-1 reveal">
+          <div className="flex-1 reveal text-center md:text-left">
             <span
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
               style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.2)' }}
@@ -51,7 +51,7 @@ export default function CMSWhoShould() {
                 For You?
               </span>
             </h2>
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-3 max-w-lg">
+            <p className="text-[15px] text-slate-500 leading-[1.85] mb-3 max-w-lg mx-auto md:mx-0">
               WordPress is ideal for businesses that want flexibility, control, and scalability. If you are looking for <span className="text-slate-600">cms website development services in Thanjavur</span>, WordPress is perfect for:
             </p>
 
@@ -81,7 +81,7 @@ export default function CMSWhoShould() {
             </div>
 
             {/* Closing keyword sentences */}
-            <p className="text-[13px] text-slate-400 leading-[1.85] mt-5 max-w-lg">
+            <p className="text-[13px] text-slate-400 leading-[1.85] mt-5 max-w-lg mx-auto md:mx-0">
               Our <span className="text-slate-500">custom cms wordpress development services in Thanjavur</span> make sure your website is customised as per your business needs. We are also one of the <span className="text-slate-500">best WordPress development companies in Thanjavur</span>, providing end-to-end WordPress solutions.
             </p>
           </div>

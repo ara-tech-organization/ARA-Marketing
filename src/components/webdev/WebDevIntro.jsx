@@ -6,7 +6,7 @@ export default function WebDevIntro() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="grid lg:grid-cols-[55%_45%] gap-8 lg:gap-14 items-center">
 
-          <div>
+          <div className="text-center lg:text-left">
             <div className="reveal">
               <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
                 border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
@@ -38,7 +38,7 @@ export default function WebDevIntro() {
               </p>
             </div>
 
-            <div className="reveal delay-2 flex flex-wrap gap-2.5">
+            <div className="reveal delay-2 flex flex-wrap gap-2.5 justify-center lg:justify-start">
               {[
                 { icon: Smartphone, label: 'Mobile-First' },
                 { icon: Search,     label: 'SEO-Optimized' },

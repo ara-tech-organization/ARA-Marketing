@@ -23,19 +23,21 @@ export default function MAAndroid() {
 
           {/* Left: Content */}
           <div className="flex-1 reveal-left">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
-              <Smartphone size={11} /> Android App Development
-            </span>
-            <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
-              Android App Development{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                Services
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
+                style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
+                <Smartphone size={11} /> Android App Development
               </span>
-            </h2>
-            <p className="text-[15px] mb-8 leading-[1.85]" style={{ color: '#64748b' }}>
-              We are a top Android app development company in Thanjavur, delivering intuitive and high-performing apps. As an Android app development firm in Thanjavur, our Android mobile application development services are designed around your unique requirements, offering scalability and enterprise-grade security.
-            </p>
+              <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+                Android App Development{' '}
+                <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  Services
+                </span>
+              </h2>
+              <p className="text-[15px] mb-8 leading-[1.85]" style={{ color: '#64748b' }}>
+                We are a top Android app development company in Thanjavur, delivering intuitive and high-performing apps. As an Android app development firm in Thanjavur, our Android mobile application development services are designed around your unique requirements, offering scalability and enterprise-grade security.
+              </p>
+            </div>
 
             {/* Service list */}
             <div className="flex flex-col gap-4 mb-8">

@@ -29,7 +29,7 @@ export default function OMIntro() {
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — content */}
-          <div className="flex-1 min-w-0 reveal-left">
+          <div className="flex-1 min-w-0 reveal-left text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6 shadow-sm">
               <Sparkles size={11} /> About Our Services

@@ -57,36 +57,38 @@ export default function EWHero() {
               <span className="text-sky-300 font-medium">Enterprise Website</span>
             </nav>
 
-            {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{
-                background: 'rgba(124,58,237,0.16)',
-                border: '1px solid rgba(167,139,250,0.28)',
-                color: '#c4b5fd',
-                backdropFilter: 'blur(8px)',
-              }}>
-              <Building2 size={10} /> Enterprise Website Development
-            </span>
-
-            {/* H1 */}
-            <h1 className="leading-[1.2] tracking-tight mb-5 text-white"
-              style={{ fontWeight: 700, fontSize: '40px' }}>
-              <span style={{ display: 'block' }}>Transform Your Enterprise</span>
-              <span style={{
-                display: 'block',
-                background: 'linear-gradient(135deg,#a78bfa,#60a5fa)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                Digital Presence
+            <div className="text-center lg:text-left">
+              {/* Badge */}
+              <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6"
+                style={{
+                  background: 'rgba(124,58,237,0.16)',
+                  border: '1px solid rgba(167,139,250,0.28)',
+                  color: '#c4b5fd',
+                  backdropFilter: 'blur(8px)',
+                }}>
+                <Building2 size={10} /> Enterprise Website Development
               </span>
-            </h1>
 
-            <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-7 max-w-[540px]"
-              style={{ color: 'rgba(255,255,255,0.48)' }}>
-              ARA Discover Marketing is a trusted enterprise website development company in Thanjavur that creates AI-driven enterprise websites to boost your digital presence and simplify complex business operations.
-            </p>
+              {/* H1 */}
+              <h1 className="leading-[1.2] tracking-tight mb-5 text-white"
+                style={{ fontWeight: 700, fontSize: '40px' }}>
+                <span style={{ display: 'block' }}>Transform Your Enterprise</span>
+                <span style={{
+                  display: 'block',
+                  background: 'linear-gradient(135deg,#a78bfa,#60a5fa)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Digital Presence
+                </span>
+              </h1>
+
+              <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-7 max-w-[540px] mx-auto lg:mx-0"
+                style={{ color: 'rgba(255,255,255,0.48)' }}>
+                ARA Discover Marketing is a trusted enterprise website development company in Thanjavur that creates AI-driven enterprise websites to boost your digital presence and simplify complex business operations.
+              </p>
+            </div>
 
             {/* Bullet list */}
             <ul className="flex flex-col gap-2.5 mb-8">
@@ -115,7 +117,7 @@ export default function EWHero() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3 mb-8 sm:mb-10">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-10">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 8px 28px rgba(124,58,237,0.35)' }}>

@@ -35,36 +35,38 @@ export default function SWCTA() {
 
           {/* ── Left: CTA Content ── */}
           <div className="flex-1 reveal-left">
-            <span
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}
-            >
-              <Rocket size={11} /> Let's Build Together
-            </span>
-
-            <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
-              Let's Build Your{' '}
+            <div className="text-center lg:text-left">
               <span
-                style={{
-                  background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+                style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}
               >
-                Website Together
+                <Rocket size={11} /> Let's Build Together
               </span>
-            </h2>
 
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-4">
-              Ready to take your business online with a powerful static website? Join hands with a trusted static web design services firm in Thanjavur and change your digital presence with speed and simplicity.
-            </p>
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-4">
-              As a leading static web design company in Thanjavur, we bring expertise in speed, security, and SEO to every project we deliver.
-            </p>
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-10">
-              Fill in the form and our specialists will help you plan your perfect static website solution — fast, affordable, and built to perform.
-            </p>
+              <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+                Let's Build Your{' '}
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  Website Together
+                </span>
+              </h2>
+
+              <p className="text-[15px] text-slate-500 leading-[1.85] mb-4">
+                Ready to take your business online with a powerful static website? Join hands with a trusted static web design services firm in Thanjavur and change your digital presence with speed and simplicity.
+              </p>
+              <p className="text-[15px] text-slate-500 leading-[1.85] mb-4">
+                As a leading static web design company in Thanjavur, we bring expertise in speed, security, and SEO to every project we deliver.
+              </p>
+              <p className="text-[15px] text-slate-500 leading-[1.85] mb-10">
+                Fill in the form and our specialists will help you plan your perfect static website solution — fast, affordable, and built to perform.
+              </p>
+            </div>
 
             {/* Highlights */}
             <div className="flex flex-col gap-3 mb-10">

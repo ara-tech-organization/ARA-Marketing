@@ -57,7 +57,7 @@ export default function SEOProcess() {
 
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 reveal">
-          <div>
+          <div className="text-center sm:text-left">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4 shadow-sm">
               <LineChart size={11} /> Our Workflow
@@ -105,7 +105,7 @@ export default function SEOProcess() {
 
           <div
             ref={scrollRef}
-            className="flex gap-4 overflow-x-auto pb-4 scroll-smooth"
+            className="flex gap-4 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             onMouseEnter={() => { pausedRef.current = true }}
             onMouseLeave={() => { pausedRef.current = false }}
@@ -113,7 +113,7 @@ export default function SEOProcess() {
             {steps.map(({ num, icon: Icon, title, desc, color }, i) => (
               <div
                 key={num}
-                className="group flex-shrink-0 w-[280px] bg-white/90 rounded-3xl border border-white
+                className="group snap-center flex-shrink-0 w-[calc(100vw-48px)] sm:w-[280px] bg-white/90 rounded-3xl border border-white
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
               >

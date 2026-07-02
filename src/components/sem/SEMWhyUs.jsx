@@ -16,7 +16,7 @@ export default function SEMWhyUs() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
-        <div className="flex flex-col lg:flex-row gap-8 items-end mb-14 reveal">
+        <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-end mb-14 reveal text-center lg:text-left">
           <div className="flex-1">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px]
               font-bold uppercase tracking-widest mb-5 text-blue-600 bg-white/70 shadow-sm"

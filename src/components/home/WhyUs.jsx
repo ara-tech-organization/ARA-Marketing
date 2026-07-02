@@ -189,7 +189,7 @@ export default function WhyUs() {
         </div>
 
         {/* ── Stats bento grid ── */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 mb-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 mb-6 [&>*:last-child]:col-span-full [&>*:last-child]:w-1/2 [&>*:last-child]:mx-auto sm:[&>*:last-child]:col-span-1 sm:[&>*:last-child]:w-auto sm:[&>*:last-child]:mx-0">
           {stats.map(({ val, num, suffix, label, icon, color, bg, border, grad }, i) => (
             <StatCard
               key={val}

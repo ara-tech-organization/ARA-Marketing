@@ -69,7 +69,7 @@ export default function DWIntro() {
           </div>
 
           {/* Text */}
-          <div className="flex-1 flex flex-col justify-center gap-5">
+          <div className="flex-1 flex flex-col justify-center gap-5 text-center lg:text-left">
             <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.85]">
               As one of the best dynamic website development companies in Thanjavur, we build websites using the latest backend engines, CMS platforms, and interactive features that will make content management simple.
             </p>

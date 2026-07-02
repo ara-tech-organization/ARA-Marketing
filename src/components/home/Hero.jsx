@@ -105,7 +105,7 @@ export default function Hero() {
 
         {/* Left — text content sits on top of image */}
         <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8
-          flex flex-col items-start text-left
+          flex flex-col items-center text-center sm:items-start sm:text-left
           pt-14 pb-20 sm:pt-20 sm:pb-28">
 
           <div className="w-full max-w-[580px]">
@@ -137,7 +137,7 @@ export default function Hero() {
               tailored for digital businesses.
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-8" style={{ animation: revS(360) }}>
+            <div className="flex flex-wrap justify-center sm:justify-start gap-4 mb-8" style={{ animation: revS(360) }}>
               <a href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-[14px]
                   transition-all duration-300 hover:opacity-90"
@@ -152,7 +152,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="flex flex-wrap items-center gap-6" style={{ animation: fade(440) }}>
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-6" style={{ animation: fade(440) }}>
               {[
                 { icon: CheckCheck, text: '150+ Projects Delivered' },
                 { icon: Star,       text: '5-Star Rated Agency'     },

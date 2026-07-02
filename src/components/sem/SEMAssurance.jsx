@@ -11,7 +11,7 @@ const promises = [
 
 export default function SEMAssurance() {
   return (
-    <section className="py-16 overflow-hidden"
+    <section className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 55%, #f0f9ff 100%)' }}>
 
       {/* Dot grid */}
@@ -27,7 +27,7 @@ export default function SEMAssurance() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
-        <div className="flex flex-col lg:flex-row gap-10 items-end mb-14 reveal">
+        <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-end mb-14 reveal text-center lg:text-left">
           <div className="flex-1">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
@@ -82,12 +82,14 @@ export default function SEMAssurance() {
                   ))}
                 </div>
 
-                <a href="/ARA-Marketing/contact-us"
-                  className="btn-glow inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
-                    font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-                  style={{ boxShadow: '0 6px 24px rgba(37,99,235,0.30)' }}>
-                  Start Your PPC Campaign Today <ArrowRight size={14} />
-                </a>
+                <div className="flex justify-center lg:justify-start">
+                  <a href="/ARA-Marketing/contact-us"
+                    className="btn-glow inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
+                      font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
+                    style={{ boxShadow: '0 6px 24px rgba(37,99,235,0.30)' }}>
+                    Start Your PPC Campaign Today <ArrowRight size={14} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

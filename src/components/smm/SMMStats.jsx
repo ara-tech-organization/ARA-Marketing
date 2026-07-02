@@ -107,7 +107,9 @@ export default function SMMStats() {
         </div>
 
         {/* Stat cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5
+          [&>*:nth-child(5)]:col-span-2 [&>*:nth-child(5)]:mx-auto [&>*:nth-child(5)]:w-1/2
+          md:[&>*:nth-child(5)]:col-span-1 md:[&>*:nth-child(5)]:mx-0 md:[&>*:nth-child(5)]:w-auto">
           {stats.map(s => <StatCard key={s.label} {...s} />)}
         </div>
 

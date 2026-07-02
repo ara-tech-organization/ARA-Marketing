@@ -31,7 +31,7 @@ export default function CMSCTA() {
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-16 items-center">
 
           {/* ── Left: Heading + CTAs ── */}
-          <div className="flex-1 reveal">
+          <div className="flex-1 reveal text-center md:text-left">
 
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
@@ -48,7 +48,7 @@ export default function CMSCTA() {
             </h2>
 
             {/* Sub */}
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-lg">
+            <p className="text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-lg mx-auto md:mx-0">
               Are you ready to grow your business online with a powerful WordPress website? Collaborate with one of the <span className="text-slate-600">best WordPress development firms in Thanjavur</span> and elevate your online presence to the next level.
             </p>
 

@@ -42,15 +42,15 @@ export default function ECHero() {
         <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
 
           {/* ── Left: Text ── */}
-          <div className="flex-1 min-w-0 lg:pr-4">
+          <div className="flex-1 min-w-0 lg:pr-4 text-center md:text-left">
 
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-1.5 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300" />
-              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors duration-200">Web Design</a>
-              <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">Ecommerce Website</span>
+            <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-slate-400 mb-6 animate-hero-enter">
+              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+              <a href="/ARA-Marketing/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
+              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-600 font-medium">Ecommerce Website</span>
             </nav>
 
             {/* Badge */}
@@ -79,7 +79,7 @@ export default function ECHero() {
             {/* Quick wins */}
             <div className="animate-hero-d3 flex flex-col gap-2 mb-8">
               {quickWins.map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2.5">
+                <div key={text} className="flex items-center gap-2.5 justify-center md:justify-start">
                   <Icon size={14} className="text-blue-600 flex-shrink-0" />
                   <span className="text-[13.5px] text-slate-600 font-medium">{text}</span>
                 </div>
@@ -87,7 +87,7 @@ export default function ECHero() {
             </div>
 
             {/* CTAs */}
-            <div className="animate-hero-d4 flex flex-row flex-wrap gap-3 mb-10">
+            <div className="animate-hero-d4 flex flex-wrap justify-center md:justify-start gap-3 mb-10">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
                 style={{ background: '#2563eb', boxShadow: '0 4px 16px rgba(37,99,235,0.22)' }}>
@@ -100,7 +100,7 @@ export default function ECHero() {
             </div>
 
             {/* Stats strip */}
-            <div className="animate-hero-d5 flex flex-wrap gap-4 sm:gap-8">
+            <div className="animate-hero-d5 flex flex-wrap justify-center md:justify-start gap-4 sm:gap-8">
               {stats.map(({ value, label, color }, i) => (
                 <div key={label} className="flex flex-col"
                   style={{ borderLeft: i > 0 ? '1px solid #bfdbfe' : 'none', paddingLeft: i > 0 ? '2rem' : '0' }}>

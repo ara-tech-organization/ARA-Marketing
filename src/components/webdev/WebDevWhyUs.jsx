@@ -17,7 +17,7 @@ export default function WebDevWhyUs() {
         <div className="reveal grid lg:grid-cols-[42%_58%] gap-8 lg:gap-14 items-center">
 
           {/* Left — sticky intro panel */}
-          <div>
+          <div className="text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
               <Layers size={11} /> Why Choose Us
@@ -32,7 +32,7 @@ export default function WebDevWhyUs() {
             </p>
 
             {/* Mini proof strip */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
               {['150+ Websites Delivered', '98% Client Satisfaction', '5+ Years Experience'].map(badge => (
                 <span key={badge} className="inline-flex items-center gap-1.5 px-3 py-1.5
                   bg-white border border-blue-100 rounded-full text-[11px] font-semibold text-blue-700 shadow-sm">

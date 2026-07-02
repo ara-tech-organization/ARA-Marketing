@@ -29,7 +29,7 @@ export default function SEOCTA() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10 lg:gap-12">
 
           {/* Left content */}
-          <div className="flex-1 reveal">
+          <div className="flex-1 reveal text-center md:text-left">
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-600 text-white
               rounded-full text-[11px] font-bold uppercase tracking-widest mb-6
@@ -49,7 +49,7 @@ export default function SEOCTA() {
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a
                 href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 text-white

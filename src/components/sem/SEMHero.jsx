@@ -72,12 +72,12 @@ export default function SEMHero() {
         <div className="text-center animate-hero-enter">
 
           {/* Breadcrumb */}
-          <nav className="flex items-center justify-center gap-1.5 text-[12px] text-slate-400 mb-4">
-            <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
-            <ChevronRight size={12} className="text-slate-300" />
-            <span>Digital Marketing</span>
-            <ChevronRight size={12} className="text-slate-300" />
-            <span className="text-blue-600 font-medium">SEM Services</span>
+          <nav className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-4">
+            <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
+            <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
+            <span className="whitespace-nowrap">Digital Marketing</span>
+            <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
+            <span className="whitespace-nowrap text-blue-600 font-medium">SEM Services</span>
           </nav>
 
           {/* Badge */}

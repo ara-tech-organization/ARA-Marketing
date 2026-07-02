@@ -93,7 +93,7 @@ export default function MAHero() {
             </p>
 
             {/* Quick wins */}
-            <div className="flex flex-col gap-2.5 mb-8 items-center lg:items-start">
+            <div className="flex flex-col gap-2.5 mb-8 items-start ml-4">
               {quickWins.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-2.5">
                   <Icon size={14} className="text-blue-600 flex-shrink-0" />

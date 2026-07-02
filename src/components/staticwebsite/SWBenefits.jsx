@@ -77,32 +77,34 @@ export default function SWBenefits() {
           {/* ── LEFT: Header + metric stack ── */}
           <div className="lg:w-[36%] lg:sticky lg:top-24 lg:self-start reveal">
 
-            {/* Badge */}
-            <span
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}
-            >
-              <Star size={11} /> Key Benefits
-            </span>
-
-            {/* Heading */}
-            <h2 className="text-[clamp(22px,2.5vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-              Benefits of{' '}
-              <span style={{
-                background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                Static Websites
+            <div className="text-center lg:text-left">
+              {/* Badge */}
+              <span
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
+                style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}
+              >
+                <Star size={11} /> Key Benefits
               </span>
-            </h2>
 
-            {/* Description */}
-            <p className="text-[13.5px] text-slate-500 leading-[1.85] mb-10">
-              Static websites can be a huge boon for businesses that value speed and performance. Our
-              static website development services in Thanjavur ensure maximum impact with minimum maintenance.
-            </p>
+              {/* Heading */}
+              <h2 className="text-[clamp(22px,2.5vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+                Benefits of{' '}
+                <span style={{
+                  background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Static Websites
+                </span>
+              </h2>
+
+              {/* Description */}
+              <p className="text-[13.5px] text-slate-500 leading-[1.85] mb-10">
+                Static websites can be a huge boon for businesses that value speed and performance. Our
+                static website development services in Thanjavur ensure maximum impact with minimum maintenance.
+              </p>
+            </div>
 
             {/* Stat grid panel */}
             <div className="rounded-2xl overflow-hidden bg-white"

@@ -94,14 +94,14 @@ export default function WAServices() {
 
           {/* Tab list */}
           <div className="lg:w-[260px] flex-shrink-0 w-full">
-            <div className="flex flex-row lg:flex-col gap-2 overflow-x-auto pb-2 lg:pb-0 lg:overflow-visible">
+            <div className="flex flex-col gap-2">
               {services.map((svc, i) => {
                 const isActive = i === active
                 return (
                   <button
                     key={i}
                     onClick={() => setActive(i)}
-                    className="flex items-center gap-2.5 xs:gap-3 px-3.5 xs:px-4 py-3 xs:py-3.5 rounded-2xl text-left transition-all duration-300 flex-shrink-0 lg:flex-shrink lg:w-full"
+                    className="flex items-center gap-2.5 xs:gap-3 px-3.5 xs:px-4 py-3 xs:py-3.5 rounded-2xl text-left transition-all duration-300 w-full"
                     style={{
                       background: isActive ? svc.color : '#f8fafc',
                       border: `1.5px solid ${isActive ? svc.color : '#e2e8f0'}`,

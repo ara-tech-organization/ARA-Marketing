@@ -81,9 +81,8 @@ export default function ECWhyUs() {
             const isEven = i % 2 === 0
             return (
               <div key={num}
-                className="group flex flex-col md:flex-row gap-0 rounded-3xl overflow-hidden transition-all duration-400 hover:shadow-xl"
+                className={`group flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-0 rounded-3xl overflow-hidden transition-all duration-400 hover:shadow-xl`}
                 style={{
-                  flexDirection: isEven ? undefined : 'row-reverse',
                   border: `1.5px solid ${color}15`,
                   boxShadow: '0 4px 20px rgba(37,99,235,0.06)',
                 }}
@@ -91,10 +90,7 @@ export default function ECWhyUs() {
                 onMouseLeave={e => { e.currentTarget.style.borderColor = color + '15'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.06)' }}>
 
                 {/* Content side */}
-                <div className="flex-1 p-7 sm:p-9 flex items-center gap-6"
-                  style={isEven
-                    ? { borderRight: `1px solid ${color}12` }
-                    : { borderLeft: `1px solid ${color}12` }}>
+                <div className="flex-1 p-7 sm:p-9 flex items-center gap-6">
 
                   {/* Large number */}
                   <div className="hidden sm:flex flex-shrink-0 w-16 h-16 rounded-2xl items-center justify-center transition-all duration-300 group-hover:scale-110"

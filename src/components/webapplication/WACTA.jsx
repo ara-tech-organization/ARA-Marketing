@@ -53,7 +53,7 @@ export default function WACTA() {
 
           {/* Left: What We Guarantee */}
           <div className="flex-1 min-w-0">
-            <div className="mb-7 sm:mb-9 reveal">
+            <div className="mb-7 sm:mb-9 reveal text-center lg:text-left">
               <span
                 className="inline-flex items-center gap-2 px-3 xs:px-4 py-1.5 rounded-full text-[10px] xs:text-[11px] font-bold uppercase tracking-widest mb-4"
                 style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.22)' }}
@@ -66,7 +66,7 @@ export default function WACTA() {
                   to You
                 </span>
               </h2>
-              <p className="text-[13px] xs:text-[14px] text-slate-500 mt-3 max-w-[480px] leading-relaxed">
+              <p className="text-[13px] xs:text-[14px] text-slate-500 mt-3 max-w-[480px] mx-auto lg:mx-0 leading-relaxed">
                 Every project comes with our full commitment to excellence, transparency, and your long-term success.
               </p>
             </div>

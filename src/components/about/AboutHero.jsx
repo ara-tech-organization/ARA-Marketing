@@ -53,7 +53,7 @@ export default function AboutHero() {
         <div className="flex flex-col lg:flex-row gap-10 md:gap-12 xl:gap-16 items-center">
 
           {/* ── Left: text ── */}
-          <div className="flex-1 reveal-left">
+          <div className="flex-1 reveal-left text-center lg:text-left">
 
             {/* Chip */}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
@@ -79,7 +79,7 @@ export default function AboutHero() {
               {' '}Marketing
             </h1>
 
-            <p className="mb-7 max-w-[520px]"
+            <p className="mb-7 max-w-[520px] mx-auto lg:mx-0"
               style={{ fontSize: 'clamp(14px,1.4vw,16px)', lineHeight: '1.85', color: '#475569' }}>
               At ARA Discover Marketing, we go beyond traditional digital marketing by creating
               impactful online experiences that strengthen brands, increase audience engagement, and
@@ -89,7 +89,7 @@ export default function AboutHero() {
             </p>
 
             {/* Trust bullets */}
-            <div className="flex flex-col gap-2 mb-8">
+            <div className="flex flex-col items-center lg:items-start gap-2 mb-8">
               {trustPoints.map(p => (
                 <div key={p} className="flex items-center gap-2.5">
                   <CheckCircle2 size={15} style={{ color: '#2563eb', flexShrink: 0 }} />
@@ -113,7 +113,7 @@ export default function AboutHero() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full
                   font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"

@@ -19,7 +19,7 @@ export default function FAQ() {
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-20 items-start">
 
           {/* Left */}
-          <div className="reveal-left">
+          <div className="reveal-left text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
               <MessageSquare size={11} /> FAQs

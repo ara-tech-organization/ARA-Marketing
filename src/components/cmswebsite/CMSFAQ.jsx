@@ -90,7 +90,7 @@ export default function CMSFAQ() {
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20 items-start">
 
           {/* ── Left: sticky panel ── */}
-          <div className="md:w-[300px] lg:w-[380px] flex-shrink-0 md:sticky md:top-24 reveal">
+          <div className="md:w-[300px] lg:w-[380px] flex-shrink-0 md:sticky md:top-24 reveal text-center md:text-left">
 
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"

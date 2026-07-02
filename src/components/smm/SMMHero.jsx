@@ -21,14 +21,14 @@ export default function SMMHero() {
         <div className="grid lg:grid-cols-[55%_45%] gap-16 items-center">
 
           {/* Left Content */}
-          <div>
+          <div className="text-center lg:text-left">
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-1.5 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300" />
-              <span>Digital Marketing</span>
-              <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">Social Media Marketing</span>
+            <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] text-slate-400 mb-6 animate-hero-enter">
+              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+              <span className="whitespace-nowrap">Digital Marketing</span>
+              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-600 font-medium">Social Media Marketing</span>
             </nav>
 
             {/* Badge */}
@@ -47,15 +47,15 @@ export default function SMMHero() {
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-4 max-w-[620px]">
+            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-4 max-w-[620px] mx-auto lg:mx-0">
               ARA Discover Marketing provides the best social media marketing services in Thanjavur, which help businesses to build brand awareness, improve customer engagement, and generate quality leads through result-driven social media strategies. As one of the best social media companies in Thanjavur, we create and optimize high-performance campaigns for startups, local businesses, and emerging brands.
             </p>
-            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[620px]">
+            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[620px] mx-auto lg:mx-0">
               From organic building to paid advertising campaigns, our dedicated social media team specializes in platform-specific strategies that keep businesses ahead in today's competitive digital landscape.
             </p>
 
             {/* CTAs */}
-            <div className="animate-hero-d4 flex flex-wrap gap-3 mb-10">
+            <div className="animate-hero-d4 flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a
                 href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center gap-2 px-6 py-3 text-white
@@ -74,13 +74,13 @@ export default function SMMHero() {
             </div>
 
             {/* Trust metrics */}
-            <div className="animate-hero-d5 flex flex-wrap gap-8">
+            <div className="animate-hero-d5 flex flex-wrap justify-center lg:justify-start gap-8">
               {[
                 ['200+', 'Campaigns Managed'],
                 ['95%', 'Client Satisfaction'],
                 ['300%', 'Engagement Growth'],
               ].map(([num, label]) => (
-                <div key={label} className="flex flex-col">
+                <div key={label} className="flex flex-col items-center lg:items-start">
                   <span className="text-2xl font-bold text-blue-600 leading-tight">{num}</span>
                   <span className="text-[12px] text-slate-400 mt-0.5">{label}</span>
                 </div>

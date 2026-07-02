@@ -98,7 +98,7 @@ export default function OMServices() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 reveal">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 reveal text-center sm:text-left">
           <div>
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
@@ -111,7 +111,7 @@ export default function OMServices() {
               </span>
             </h2>
           </div>
-          <p className="text-[14px] text-slate-500 sm:max-w-[320px] leading-[1.85]">
+          <p className="text-[14px] text-slate-500 sm:max-w-[320px] leading-[1.85] text-center sm:text-left">
             Trusted by businesses in Thanjavur for creative, performance-oriented email, influencer, and SMS marketing campaigns.
           </p>
         </div>

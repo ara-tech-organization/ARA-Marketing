@@ -54,7 +54,7 @@ export default function CMSIntro() {
         <div className="reveal flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-16 items-stretch mb-14">
 
           {/* Text side */}
-          <div className="flex-1 flex flex-col justify-center gap-5">
+          <div className="flex-1 flex flex-col justify-center gap-5 text-center lg:text-left">
             <p className="text-[15px] text-slate-600 leading-[1.85]">
               We are one of the best WordPress development companies in Thanjavur, focused on providing custom-built solutions that align with your brand identity and business goals.
             </p>
@@ -66,7 +66,7 @@ export default function CMSIntro() {
             </p>
 
             {/* Inline stats */}
-            <div className="flex gap-6 mt-2">
+            <div className="flex justify-center lg:justify-start gap-6 mt-2">
               {[
                 { val: '40%+', lbl: 'Global web share', color: '#2563eb' },
                 { val: '5x',   lbl: 'Faster content updates', color: '#1d4ed8' },
@@ -81,7 +81,7 @@ export default function CMSIntro() {
 
             <a
               href="/ARA-Marketing/contact-us"
-              className="inline-flex items-center gap-2 text-[13.5px] font-semibold mt-2 transition-all duration-200 hover:gap-3 w-fit"
+              className="inline-flex items-center gap-2 text-[13.5px] font-semibold mt-2 transition-all duration-200 hover:gap-3 w-fit mx-auto lg:mx-0"
               style={{ color: '#1d4ed8' }}
             >
               Start Your WordPress Project <ArrowRight size={14} />

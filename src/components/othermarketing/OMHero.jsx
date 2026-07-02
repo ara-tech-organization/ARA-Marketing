@@ -29,12 +29,12 @@ export default function OMHero() {
 
         {/* ── Row 1: breadcrumb left  ·  channel tags right ── */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-10 pb-8 gap-3">
-          <nav className="flex items-center gap-1.5 text-[11.5px]" style={{ color: 'rgba(15,23,42,0.38)' }}>
-            <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
-            <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
-            <span>Digital Marketing</span>
-            <ChevronRight size={11} style={{ color: 'rgba(15,23,42,0.20)' }} />
-            <span className="text-blue-600 font-medium">Other Marketing</span>
+          <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11.5px]" style={{ color: 'rgba(15,23,42,0.38)' }}>
+            <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
+            <ChevronRight size={11} className="flex-shrink-0" style={{ color: 'rgba(15,23,42,0.20)' }} />
+            <span className="whitespace-nowrap">Digital Marketing</span>
+            <ChevronRight size={11} className="flex-shrink-0" style={{ color: 'rgba(15,23,42,0.20)' }} />
+            <span className="whitespace-nowrap text-blue-600 font-medium">Other Marketing</span>
           </nav>
           <div className="flex flex-wrap items-center gap-2">
             {channels.map(({ icon: Icon, label, color, light }) => (
@@ -50,7 +50,7 @@ export default function OMHero() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start pb-14">
 
           {/* Left: label + heading + description */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[10.5px] font-bold uppercase tracking-widest mb-6 bg-white border border-violet-200 text-violet-600 shadow-sm">
               <Send size={10} /> Advanced Digital Marketing Services
             </div>
@@ -66,7 +66,7 @@ export default function OMHero() {
               </span>
             </h1>
 
-            <div className="w-16 h-1 rounded-full mb-6"
+            <div className="w-16 h-1 rounded-full mb-6 mx-auto lg:mx-0"
               style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
 
             <p className="text-[15px] text-slate-500 leading-[1.9] max-w-[520px]">

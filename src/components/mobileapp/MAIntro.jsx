@@ -61,28 +61,30 @@ export default function MAIntro() {
           {/* LEFT: text */}
           <div className="flex-1 lg:max-w-[48%] reveal-left">
 
-            {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
-              <Sparkles size={11} /> Why Mobile Apps Matter
-            </span>
-
-            {/* H2 */}
-            <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-slate-900 mb-5">
-              Mobile Apps —{' '}
-              <span style={{
-                background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                The Backbone of Growth
+            <div className="text-center lg:text-left">
+              {/* Badge */}
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+                style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
+                <Sparkles size={11} /> Why Mobile Apps Matter
               </span>
-            </h2>
 
-            <p className="text-[13.5px] sm:text-[15px] leading-[1.85] mb-7" style={{ color: '#64748b' }}>
-              Mobile apps are essential in today's digital age. ARA Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and performance-driven AI-powered mobile apps that transform how businesses connect with customers.
-            </p>
+              {/* H2 */}
+              <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-slate-900 mb-5">
+                Mobile Apps —{' '}
+                <span style={{
+                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  The Backbone of Growth
+                </span>
+              </h2>
+
+              <p className="text-[13.5px] sm:text-[15px] leading-[1.85] mb-7" style={{ color: '#64748b' }}>
+                Mobile apps are essential in today's digital age. ARA Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and performance-driven AI-powered mobile apps that transform how businesses connect with customers.
+              </p>
+            </div>
 
             {/* Bullet list */}
             <ul className="flex flex-col gap-2.5 mb-8">

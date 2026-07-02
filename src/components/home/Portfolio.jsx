@@ -37,7 +37,7 @@ export default function Portfolio() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="flex flex-wrap justify-between items-center gap-6 mb-14 reveal">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-5 sm:gap-6 mb-14 reveal text-center sm:text-left">
           <div>
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
               border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
@@ -50,7 +50,7 @@ export default function Portfolio() {
               Successful Projects &amp;<br />Brand Growth Stories
             </h2>
           </div>
-          <p className="text-base text-slate-500 leading-relaxed max-w-lg">
+          <p className="text-base text-slate-500 leading-relaxed max-w-lg sm:text-left text-center">
             Our portfolio includes businesses from healthcare, education, retail, real estate,
             restaurants, manufacturing and eCommerce industries. We have helped brands improve
             search rankings, generate quality leads and build strong digital identities.

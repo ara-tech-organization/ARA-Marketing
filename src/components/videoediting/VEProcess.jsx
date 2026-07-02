@@ -25,7 +25,7 @@ export default function VEProcess() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-12 reveal">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-12 reveal text-center lg:text-left">
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
               style={{ background: 'white', border: '1px solid #bfdbfe', color: '#2563eb', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>

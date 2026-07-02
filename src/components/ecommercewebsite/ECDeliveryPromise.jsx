@@ -19,7 +19,7 @@ export default function ECDeliveryPromise() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header: left heading + right text ── */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16 reveal">
+        <div className="flex flex-col lg:flex-row items-center lg:items-end lg:justify-between gap-6 mb-16 reveal text-center lg:text-left">
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
               style={{ background: 'rgba(37,99,235,0.07)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.18)' }}>
@@ -32,7 +32,7 @@ export default function ECDeliveryPromise() {
               </span>
             </h2>
           </div>
-          <p className="text-[14px] text-slate-500 leading-[1.8] max-w-sm lg:text-right">
+          <p className="text-[14px] text-slate-500 leading-[1.8] max-w-sm text-center lg:text-left">
             We are committed to delivering excellence in every project — from design to launch and beyond.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function ECDeliveryPromise() {
         {/* ── Bottom SEO + CTA ── */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 p-7 rounded-3xl"
           style={{ background: 'white', border: '1px solid #dbeafe', boxShadow: '0 4px 16px rgba(37,99,235,0.06)' }}>
-          <p className="text-[13.5px] text-slate-500 leading-[1.8] max-w-2xl">
+          <p className="text-[13.5px] text-slate-500 leading-[1.8] max-w-2xl text-center sm:text-left">
             We are the best e-commerce web design and development company in Thanjavur, offering business-focused solutions with high performance. We provide custom e-commerce website development services in Thanjavur and advanced e-commerce web application development in Thanjavur.
           </p>
           <a href="/ARA-Marketing/contact-us"

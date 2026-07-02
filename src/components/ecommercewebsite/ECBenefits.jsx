@@ -149,10 +149,10 @@ export default function ECBenefits() {
           style={{ boxShadow: '0 20px 60px rgba(15,23,42,0.12)', border: '1px solid #e2e8f0' }}>
 
           {/* Left — dark text panel */}
-          <div className="flex flex-col justify-between p-7 sm:p-10 flex-1"
+          <div className="flex flex-col justify-between items-center sm:items-start p-7 sm:p-10 flex-1 text-center sm:text-left"
             style={{ background: 'linear-gradient(145deg, #0d1f3c 0%, #0f2850 100%)', minWidth: 0 }}>
 
-            <span className="inline-flex items-center gap-1.5 self-start text-[9px] font-black uppercase tracking-[0.18em] px-3 py-1.5 rounded-full mb-6"
+            <span className="inline-flex items-center gap-1.5 self-center sm:self-start text-[9px] font-black uppercase tracking-[0.18em] px-3 py-1.5 rounded-full mb-6"
               style={{ background: 'rgba(37,99,235,0.25)', color: '#93c5fd', border: '1px solid rgba(147,197,253,0.20)' }}>
               ARA Discover Marketing
             </span>
@@ -170,7 +170,7 @@ export default function ECBenefits() {
               </p>
             </div>
 
-            <div className="flex gap-6 mt-7 mb-7">
+            <div className="flex gap-6 mt-7 mb-7 justify-center sm:justify-start">
               {[
                 { val: '100%', label: 'Secure Checkout' },
                 { val: '3x',   label: 'Revenue Growth'  },
@@ -184,7 +184,7 @@ export default function ECBenefits() {
             </div>
 
             <a href="/ARA-Marketing/contact-us"
-              className="self-start inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-200 hover:opacity-90 hover:gap-3"
+              className="self-center sm:self-start inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-200 hover:opacity-90 hover:gap-3"
               style={{ background: '#2563eb', boxShadow: '0 4px 18px rgba(37,99,235,0.45)' }}>
               Get Started <ArrowRight size={14} />
             </a>

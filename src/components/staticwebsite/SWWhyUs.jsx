@@ -52,36 +52,38 @@ export default function SWWhyUs() {
 
           {/* ── Left: Intro block ── */}
           <div className="lg:w-[380px] flex-shrink-0 reveal-left">
-            <span
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'rgba(14,165,233,0.08)', color: '#0ea5e9', border: '1px solid rgba(14,165,233,0.2)' }}
-            >
-              <Award size={11} /> Why Choose Us
-            </span>
-
-            <h2 className="text-[clamp(23px,2.5vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
-              Why{' '}
+            <div className="text-center lg:text-left">
               <span
-                style={{
-                  background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+                style={{ background: 'rgba(14,165,233,0.08)', color: '#0ea5e9', border: '1px solid rgba(14,165,233,0.2)' }}
               >
-                Choose Us?
+                <Award size={11} /> Why Choose Us
               </span>
-            </h2>
 
-            <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-4">
-              We are a trusted static website development company in Thanjavur for all sizes of business, offering modern, conversion-focused websites built to perform.
-            </p>
-            <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-4">
-              As a leading static website development company in Thanjavur, we make sure that every website we develop is performance-driven and future-ready.
-            </p>
-            <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-8">
-              We're also a trusted static web design company in Thanjavur, creating conversion-oriented, visually-appealing layouts that match your brand identity.
-            </p>
+              <h2 className="text-[clamp(23px,2.5vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+                Why{' '}
+                <span
+                  style={{
+                    background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  Choose Us?
+                </span>
+              </h2>
+
+              <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-4">
+                We are a trusted static website development company in Thanjavur for all sizes of business, offering modern, conversion-focused websites built to perform.
+              </p>
+              <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-4">
+                As a leading static website development company in Thanjavur, we make sure that every website we develop is performance-driven and future-ready.
+              </p>
+              <p className="text-[14.5px] text-slate-600 leading-[1.85] mb-8">
+                We're also a trusted static web design company in Thanjavur, creating conversion-oriented, visually-appealing layouts that match your brand identity.
+              </p>
+            </div>
 
             {/* Highlights box */}
             <div

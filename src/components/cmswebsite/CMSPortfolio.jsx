@@ -147,7 +147,7 @@ export default function CMSPortfolio() {
         </div>
 
         {/* ── Bottom metrics ── */}
-        <div className="reveal grid grid-cols-3 gap-4 mb-10">
+        <div className="reveal grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
           {[
             { icon: TrendingUp, val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
             { icon: Star,       val: '98%',  lbl: 'Client Satisfaction Rate',  color: '#0ea5e9' },

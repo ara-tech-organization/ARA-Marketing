@@ -84,7 +84,7 @@ export default function AboutMV() {
           </div>
 
           {/* Content right */}
-          <div className="flex-1">
+          <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl mb-5"
               style={{ background: '#eff6ff', border: '1px solid #bfdbfe' }}>
               <Target size={13} style={{ color: '#2563eb' }} />
@@ -108,7 +108,7 @@ export default function AboutMV() {
               strive to help brands grow, adapt, and stay ahead in the competitive digital marketplace.
             </p>
 
-            <div className="flex flex-col gap-3.5 mb-7">
+            <div className="flex flex-col items-center lg:items-start gap-3.5 mb-7">
               {missionPoints.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-start gap-3.5 group">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
@@ -122,7 +122,7 @@ export default function AboutMV() {
             </div>
 
             {/* Bottom accent line */}
-            <div className="h-[3px] w-24 rounded-full"
+            <div className="h-[3px] w-24 rounded-full mx-auto lg:mx-0"
               style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function AboutMV() {
           </div>
 
           {/* Content left */}
-          <div className="flex-1">
+          <div className="flex-1 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl mb-5"
               style={{ background: '#f0f9ff', border: '1px solid #bae6fd' }}>
               <Eye size={13} style={{ color: '#0ea5e9' }} />
@@ -183,7 +183,7 @@ export default function AboutMV() {
               marketing and generate sustainable value for businesses.
             </p>
 
-            <div className="flex flex-col gap-3.5 mb-7">
+            <div className="flex flex-col items-center lg:items-start gap-3.5 mb-7">
               {visionPoints.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-start gap-3.5 group">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
@@ -197,7 +197,7 @@ export default function AboutMV() {
             </div>
 
             {/* Bottom accent line */}
-            <div className="h-[3px] w-24 rounded-full"
+            <div className="h-[3px] w-24 rounded-full mx-auto lg:mx-0"
               style={{ background: 'linear-gradient(90deg,#0ea5e9,#2563eb)' }} />
           </div>
         </div>

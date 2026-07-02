@@ -71,30 +71,32 @@ export default function EWBenefits() {
           {/* LEFT: sticky heading panel */}
           <div className="w-full lg:w-[300px] xl:w-[340px] flex-shrink-0 lg:sticky lg:top-24 reveal-left">
 
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
-              style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
-              <Zap size={9} /> Core Benefits
-            </span>
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
+                style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
+                <Zap size={9} /> Core Benefits
+              </span>
 
-            <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 leading-[1.12] tracking-tight mb-4">
-              Benefits of{' '}
-              <span style={{
-                background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}>
-                Enterprise Website
-              </span>{' '}
-              Design &amp; Development
-            </h2>
+              <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 leading-[1.12] tracking-tight mb-4">
+                Benefits of{' '}
+                <span style={{
+                  background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}>
+                  Enterprise Website
+                </span>{' '}
+                Design &amp; Development
+              </h2>
 
-            <div className="w-10 h-[3px] rounded-full mb-5"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+              <div className="w-10 h-[3px] rounded-full mb-5 mx-auto lg:mx-0"
+                style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
 
-            <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
-              Partnering with ARA Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.
-            </p>
+              <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
+                Partnering with ARA Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.
+              </p>
+            </div>
 
             {/* Trust bullets */}
             <div className="flex flex-col gap-2.5">

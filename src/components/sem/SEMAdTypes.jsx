@@ -76,7 +76,7 @@ export default function SEMAdTypes() {
             </div>
 
             {/* Content */}
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 text-center lg:text-left">
               <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4"
                 style={{ background: color + '12', color, border: `1px solid ${color}25` }}>
                 <Icon size={11} /> {tag}
@@ -92,21 +92,23 @@ export default function SEMAdTypes() {
                 ))}
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8 text-left">
                 {items.map(item => (
-                  <div key={item} className="flex items-center gap-2.5">
+                  <div key={item} className="flex items-center gap-2.5 justify-center lg:justify-start">
                     <CheckCircle2 size={14} style={{ color, flexShrink: 0 }} />
                     <span className="text-[13px] font-medium text-slate-700">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <a href="/ARA-Marketing/contact-us"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px]
-                  font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-                style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 6px 20px ${color}35` }}>
-                Get {label} Services <ArrowRight size={14} />
-              </a>
+              <div className="flex justify-center lg:justify-start">
+                <a href="/ARA-Marketing/contact-us"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px]
+                    font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
+                  style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 6px 20px ${color}35` }}>
+                  Get {label} Services <ArrowRight size={14} />
+                </a>
+              </div>
             </div>
 
           </div>

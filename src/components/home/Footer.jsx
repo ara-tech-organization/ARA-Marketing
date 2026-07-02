@@ -93,40 +93,43 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Services</h4>
-            <ul className="flex flex-col gap-2.5">
-              {services.map(({ label, href }) => (
-                <li key={label}>
-                  <Link
-                    to={href}
-                    className="text-sm text-white/40 hover:text-blue-400
-                      hover:pl-1 transition-all duration-300"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Services + Company */}
+          <div className="grid grid-cols-2 sm:contents gap-6">
+            {/* Services */}
+            <div>
+              <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Services</h4>
+              <ul className="flex flex-col gap-2.5">
+                {services.map(({ label, href }) => (
+                  <li key={label}>
+                    <Link
+                      to={href}
+                      className="text-sm text-white/40 hover:text-blue-400
+                        hover:pl-1 transition-all duration-300"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Company */}
-          <div>
-            <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Company</h4>
-            <ul className="flex flex-col gap-2.5">
-              {company.map(({ label, href }) => (
-                <li key={label}>
-                  <Link
-                    to={href}
-                    className="text-sm text-white/40 hover:text-blue-400
-                      hover:pl-1 transition-all duration-300"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Company */}
+            <div>
+              <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Company</h4>
+              <ul className="flex flex-col gap-2.5">
+                {company.map(({ label, href }) => (
+                  <li key={label}>
+                    <Link
+                      to={href}
+                      className="text-sm text-white/40 hover:text-blue-400
+                        hover:pl-1 transition-all duration-300"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Contact */}
@@ -156,7 +159,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/8 pt-7 grid grid-cols-3 items-center gap-4">
+        <div className="border-t border-white/8 pt-7 flex flex-col sm:grid sm:grid-cols-3 items-center gap-3 sm:gap-4 text-center sm:text-left">
           <p className="text-[13px] text-white/30">
             &copy; 2025 ARA Marketing. All rights reserved.
           </p>
@@ -168,7 +171,7 @@ export default function Footer() {
               Terms &amp; Conditions
             </Link>
           </div>
-          <div className="flex justify-end items-center gap-1.5 text-[13px] text-white/30">
+          <div className="flex justify-center sm:justify-end items-center gap-1.5 text-[13px] text-white/30">
             <Heart size={13} className="text-red-400 fill-red-400 flex-shrink-0" />
             <span>Crafted by </span>
             <a href="https://discovertechnologies.co/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition-colors duration-300">

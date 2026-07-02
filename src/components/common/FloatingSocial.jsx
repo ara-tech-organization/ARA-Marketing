@@ -76,7 +76,7 @@ export default function FloatingSocial() {
       `}</style>
 
       <div
-        className="fs-wrap fixed right-0 z-50 flex flex-col gap-2 py-3 px-2.5"
+        className="fs-wrap hidden md:flex fixed right-0 z-50 flex-col gap-2 py-3 px-2.5"
         style={{
           top: '50%',
           transform: 'translateY(-50%)',

@@ -117,7 +117,7 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 lg:gap-20 items-start mb-12">
 
             {/* Left — badge + heading */}
-            <div>
+            <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
                 text-[11px] font-bold uppercase tracking-widest mb-5"
                 style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe',

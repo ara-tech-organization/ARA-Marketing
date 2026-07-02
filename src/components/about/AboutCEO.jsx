@@ -172,7 +172,7 @@ export default function AboutCEO() {
             </div>
 
             {/* Bio paragraphs */}
-            <div className="flex flex-col gap-5 mb-8">
+            <div className="flex flex-col gap-5 mb-8 text-center lg:text-left">
               {bioParagraphs.map((text, i) => (
                 <p key={i} className="text-[14.5px] leading-[1.9] text-slate-500">{text}</p>
               ))}

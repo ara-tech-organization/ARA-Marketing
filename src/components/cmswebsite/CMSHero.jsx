@@ -37,15 +37,15 @@ export default function CMSHero() {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-stretch">
 
           {/* ── Left: Text ── */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 text-center lg:text-left">
 
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-1.5 text-[13px] mb-6 animate-hero-enter text-slate-400">
-              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300" />
-              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors duration-200">Web Design</a>
-              <ChevronRight size={13} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">CMS Website</span>
+            <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] mb-6 animate-hero-enter text-slate-400">
+              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+              <a href="/ARA-Marketing/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
+              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-600 font-medium">CMS Website</span>
             </nav>
 
             {/* Badge */}
@@ -77,7 +77,7 @@ export default function CMSHero() {
             {/* Highlights */}
             <div className="animate-hero-d3 flex flex-col gap-2.5 mb-8">
               {highlights.map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2.5">
+                <div key={text} className="flex items-center justify-center lg:justify-start gap-2.5">
                   <div className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0"
                     style={{ background: 'rgba(37,99,235,0.15)' }}>
                     <Icon size={11} style={{ color: '#2563eb' }} />
@@ -88,7 +88,7 @@ export default function CMSHero() {
             </div>
 
             {/* CTAs */}
-            <div className="animate-hero-d4 flex flex-row flex-wrap gap-3 mb-10">
+            <div className="animate-hero-d4 flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a
                 href="/ARA-Marketing/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] w-fit"
@@ -108,7 +108,7 @@ export default function CMSHero() {
             </div>
 
             {/* Stats strip */}
-            <div className="animate-hero-d5 flex flex-wrap gap-4 sm:gap-8">
+            <div className="animate-hero-d5 flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-8">
               {stats.map(({ value, label, color }, i) => (
                 <div
                   key={label}

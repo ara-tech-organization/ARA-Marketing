@@ -61,12 +61,12 @@ export default function GDHero() {
           <div className="flex flex-col items-center text-center lg:items-center">
 
             {/* Breadcrumb */}
-            <nav className="flex items-center gap-1.5 text-[12px] text-slate-500 mb-8 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="hover:text-blue-400 transition-colors">Home</a>
-              <ChevronRight size={11} className="text-slate-600" />
-              <span>Digital Marketing</span>
-              <ChevronRight size={11} className="text-slate-600" />
-              <span className="text-blue-600 font-medium">Graphic Design</span>
+            <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-slate-500 mb-8 animate-hero-enter">
+              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+              <ChevronRight size={11} className="text-slate-600 flex-shrink-0" />
+              <span className="whitespace-nowrap">Digital Marketing</span>
+              <ChevronRight size={11} className="text-slate-600 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-600 font-medium">Graphic Design</span>
             </nav>
 
             {/* Badge */}

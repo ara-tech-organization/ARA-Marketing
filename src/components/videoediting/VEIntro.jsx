@@ -38,7 +38,7 @@ export default function VEIntro() {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center mb-14 reveal">
 
           {/* Left: Content */}
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px]
               font-bold uppercase tracking-widest mb-5 text-blue-600 bg-white/80 shadow-sm"
               style={{ border: '1px solid rgba(37,99,235,0.18)' }}>
@@ -50,16 +50,16 @@ export default function VEIntro() {
               <span style={gradBlue}>Powerful Visual Stories</span>
             </h2>
 
-            <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-6 max-w-[540px]">
+            <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-6 max-w-[540px] mx-auto lg:mx-0">
               Today, video content is the most effective way to engage audiences and build brand trust. We offer advanced digital marketing video editing services in Thanjavur, enabling businesses to convey their message clearly and creatively.
             </p>
 
-            <p className="text-[13.5px] text-slate-500 leading-[1.85] mb-8 max-w-[520px]">
+            <p className="text-[13.5px] text-slate-500 leading-[1.85] mb-8 max-w-[520px] mx-auto lg:mx-0">
               If you are looking for the best video editing services in Thanjavur, then you are at the right place.
             </p>
 
             {/* Stats row */}
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
               {stats.map(({ value, label, icon: Icon, color }) => (
                 <div key={label} className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/80"
                   style={{ border: `1px solid ${color}18`, boxShadow: `0 4px 16px ${color}0a` }}>
@@ -75,11 +75,13 @@ export default function VEIntro() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact-us"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
-              Get Video Editing Services <ArrowRight size={14} />
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/ARA-Marketing/contact-us"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
+                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
+                Get Video Editing Services <ArrowRight size={14} />
+              </a>
+            </div>
           </div>
 
           {/* Right: Image with overlays */}
