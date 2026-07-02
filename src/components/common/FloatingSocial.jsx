@@ -76,7 +76,7 @@ export default function FloatingSocial() {
       `}</style>
 
       <div
-        className="fs-wrap hidden md:flex fixed right-0 z-50 flex-col gap-2 py-3 px-2.5"
+        className="fs-wrap flex fixed right-0 z-50 flex-col gap-1.5 sm:gap-2 py-2 sm:py-3 px-1.5 sm:px-2.5"
         style={{
           top: '50%',
           transform: 'translateY(-50%)',
@@ -136,9 +136,8 @@ export default function FloatingSocial() {
                 aria-label={label}
                 onMouseEnter={() => setHovered(id)}
                 onMouseLeave={() => setHovered(null)}
+                className="w-8 h-8 sm:w-[42px] sm:h-[42px]"
                 style={{
-                  width: 42,
-                  height: 42,
                   borderRadius: '10px',
                   background: btnBg,
                   display: 'flex',
@@ -152,7 +151,7 @@ export default function FloatingSocial() {
                   transition: 'all 0.22s cubic-bezier(.34,1.4,.64,1)',
                 }}
               >
-                {svg}
+                <span className="scale-[0.8] sm:scale-100">{svg}</span>
               </a>
             </div>
           )

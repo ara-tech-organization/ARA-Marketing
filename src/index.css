@@ -8,8 +8,8 @@
 }
 
 /* ── Base ── */
-html { scroll-behavior: smooth; }
-body { font-family: var(--font-poppins), sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+body { font-family: var(--font-poppins), sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; width: 100%; }
 a { text-decoration: none; }
 h1, h2, h3, h4, h5, h6 { font-weight: 700 !important; }
 h1 { font-size: clamp(27px, 3.1vw, 49px); }
