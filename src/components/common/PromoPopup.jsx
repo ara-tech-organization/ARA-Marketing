@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
-import { X, User, Mail, Phone, ChevronDown, Send, CheckCircle2, Loader2, Sparkles } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { X, User, Mail, Phone, ChevronDown, Send, Loader2, Sparkles } from 'lucide-react'
+import { submitContactForm } from '../../utils/submitContactForm'
 
 const services = [
   'SEO (Search Engine Optimization)',
@@ -13,11 +15,11 @@ const services = [
 ]
 
 export default function PromoPopup() {
+  const navigate = useNavigate()
   const [visible, setVisible]     = useState(false)
   const [form, setForm]           = useState({ name: '', email: '', phone: '', service: '', message: '' })
   const [errors, setErrors]       = useState({})
   const [loading, setLoading]     = useState(false)
-  const [submitted, setSubmitted] = useState(false)
   const timerRef = useRef(null)
   const shownRef = useRef(false)
 
@@ -41,6 +43,9 @@ export default function PromoPopup() {
     if (!form.name.trim())  e.name  = 'Name is required'
     if (!form.email.trim()) e.email = 'Email is required'
     else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = 'Enter a valid email'
+    if (!form.phone.trim()) e.phone = 'Phone number is required'
+    else if (!/^(\+91[-\s]?)?[6-9]\d{9}$/.test(form.phone.replace(/[\s-]/g, ''))) e.phone = 'Enter a valid mobile number'
+    if (!form.service)      e.service = 'Please select a service'
     if (!form.message.trim()) e.message = 'Message is required'
     return e
   }
@@ -55,9 +60,14 @@ export default function PromoPopup() {
     const errs = validate()
     if (Object.keys(errs).length) { setErrors(errs); return }
     setLoading(true)
-    await new Promise(r => setTimeout(r, 1600))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      await submitContactForm(form, 'Popup Form')
+      setVisible(false)
+      navigate('/thank-you')
+    } catch {
+      setErrors({ submit: 'Something went wrong sending your message. Please try again or call us directly.' })
+      setLoading(false)
+    }
   }
 
   const inputBase = {
@@ -119,28 +129,7 @@ export default function PromoPopup() {
           </button>
 
           <div className="px-6 pt-5 pb-6">
-
-            {submitted ? (
-              /* ── Success state ── */
-              <div className="flex flex-col items-center justify-center py-8 text-center">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4"
-                  style={{ background: 'rgba(37,99,235,0.08)', border: '1.5px solid rgba(37,99,235,0.18)' }}>
-                  <CheckCircle2 size={30} style={{ color: '#2563eb' }} />
-                </div>
-                <h3 className="text-[19px] font-bold text-slate-900 mb-2">Message Sent!</h3>
-                <p className="text-[13px] text-slate-500 leading-relaxed max-w-[300px]">
-                  Thank you for reaching out! Our team will get back to you within 24 hours.
-                </p>
-                <button
-                  onClick={() => setVisible(false)}
-                  className="mt-6 px-7 py-2.5 rounded-full text-[13px] font-bold text-white"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}
-                >
-                  Close
-                </button>
-              </div>
-            ) : (
-              <>
+            <>
                 {/* Header */}
                 <div className="mb-5 pr-6">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-3"
@@ -190,30 +179,32 @@ export default function PromoPopup() {
                   {/* Phone + Service */}
                   <div className="grid grid-cols-2 gap-3 mb-3">
                     <div>
-                      <label className="block text-[10.5px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">Phone</label>
+                      <label className="block text-[10.5px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">Phone *</label>
                       <div className="relative">
                         <Phone size={13} style={{ position:'absolute', left:10, top:'50%', transform:'translateY(-50%)', color:'#94a3b8', pointerEvents:'none' }} />
                         <input type="tel" placeholder="(+91) 81100 25254" value={form.phone}
                           onChange={handleChange('phone')}
-                          style={{ ...inputBase, paddingLeft: 30 }}
+                          style={{ ...inputBase, paddingLeft: 30, ...(errors.phone ? inputErr : {}) }}
                           onFocus={e => Object.assign(e.target.style, inputFocus)}
-                          onBlur={e => Object.assign(e.target.style, inputBlur)}
+                          onBlur={e => Object.assign(e.target.style, errors.phone ? inputErr : inputBlur)}
                         />
                       </div>
+                      {errors.phone && <p style={{ color:'#f87171', fontSize:10.5, marginTop:4 }}>{errors.phone}</p>}
                     </div>
                     <div>
-                      <label className="block text-[10.5px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">Service</label>
+                      <label className="block text-[10.5px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">Service *</label>
                       <div className="relative">
                         <select value={form.service} onChange={handleChange('service')}
-                          style={{ ...inputBase, paddingRight: 28, appearance:'none', cursor:'pointer', color: form.service ? '#0f172a' : '#94a3b8' }}
+                          style={{ ...inputBase, paddingRight: 28, appearance:'none', cursor:'pointer', color: form.service ? '#0f172a' : '#94a3b8', ...(errors.service ? inputErr : {}) }}
                           onFocus={e => Object.assign(e.target.style, inputFocus)}
-                          onBlur={e => Object.assign(e.target.style, inputBlur)}
+                          onBlur={e => Object.assign(e.target.style, errors.service ? inputErr : inputBlur)}
                         >
                           <option value="" disabled style={{ color:'#94a3b8' }}>Select a service</option>
                           {services.map(s => <option key={s} value={s}>{s}</option>)}
                         </select>
                         <ChevronDown size={13} style={{ position:'absolute', right:10, top:'50%', transform:'translateY(-50%)', color:'#94a3b8', pointerEvents:'none' }} />
                       </div>
+                      {errors.service && <p style={{ color:'#f87171', fontSize:10.5, marginTop:4 }}>{errors.service}</p>}
                     </div>
                   </div>
 
@@ -228,6 +219,8 @@ export default function PromoPopup() {
                     />
                     {errors.message && <p style={{ color:'#f87171', fontSize:10.5, marginTop:4 }}>{errors.message}</p>}
                   </div>
+
+                  {errors.submit && <p style={{ color:'#f87171', fontSize:12, textAlign:'center', marginBottom:12 }}>{errors.submit}</p>}
 
                   {/* Submit */}
                   <button type="submit" disabled={loading}
@@ -247,8 +240,7 @@ export default function PromoPopup() {
                   </button>
 
                 </form>
-              </>
-            )}
+            </>
           </div>
         </div>
       </div>

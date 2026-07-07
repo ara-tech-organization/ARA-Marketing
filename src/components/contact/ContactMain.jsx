@@ -1,19 +1,124 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
+import { createPortal } from 'react-dom'
+import { useNavigate } from 'react-router-dom'
 import {
   Phone, Mail, MapPin, Clock, Send, User,
-  ChevronDown, CheckCircle2, ArrowRight, Loader2
+  ChevronDown, ArrowRight, Loader2, Check,
+  Search, Share2, TrendingUp, Palette, Video, Globe, Smartphone, Sparkles,
 } from 'lucide-react'
+import { submitContactForm } from '../../utils/submitContactForm'
 
 const services = [
-  'SEO (Search Engine Optimization)',
-  'Social Media Marketing (SMM)',
-  'Search Engine Marketing (SEM)',
-  'Graphic Design',
-  'Video Editing',
-  'Website Development',
-  'Mobile App Development',
-  'Other Digital Marketing',
+  { label: 'SEO (Search Engine Optimization)', icon: Search },
+  { label: 'Social Media Marketing (SMM)',     icon: Share2 },
+  { label: 'Search Engine Marketing (SEM)',    icon: TrendingUp },
+  { label: 'Graphic Design',                   icon: Palette },
+  { label: 'Video Editing',                    icon: Video },
+  { label: 'Website Development',               icon: Globe },
+  { label: 'Mobile App Development',            icon: Smartphone },
+  { label: 'Other Digital Marketing',           icon: Sparkles },
 ]
+
+function ServiceDropdown({ value, onChange, inputBase, inputFocus, inputBlur, inputErr, error }) {
+  const [open, setOpen] = useState(false)
+  const [coords, setCoords] = useState(null)
+  const ref = useRef(null)
+  const panelRef = useRef(null)
+  const selected = services.find(s => s.label === value)
+
+  useEffect(() => {
+    const onClickOutside = e => {
+      if (ref.current && !ref.current.contains(e.target) && panelRef.current && !panelRef.current.contains(e.target)) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', onClickOutside)
+    return () => document.removeEventListener('mousedown', onClickOutside)
+  }, [])
+
+  useEffect(() => {
+    if (!open) return
+    const close = e => {
+      if (panelRef.current && panelRef.current.contains(e.target)) return
+      setOpen(false)
+    }
+    window.addEventListener('scroll', close, true)
+    window.addEventListener('resize', close)
+    return () => {
+      window.removeEventListener('scroll', close, true)
+      window.removeEventListener('resize', close)
+    }
+  }, [open])
+
+  const toggleOpen = () => {
+    if (!open && ref.current) {
+      const rect = ref.current.getBoundingClientRect()
+      const spaceBelow = window.innerHeight - rect.bottom
+      const openUp = spaceBelow < 320
+      setCoords({
+        left: rect.left,
+        width: rect.width,
+        top: openUp ? null : rect.bottom + 8,
+        bottom: openUp ? window.innerHeight - rect.top + 8 : null,
+      })
+    }
+    setOpen(o => !o)
+  }
+
+  return (
+    <div className="relative" ref={ref}>
+      <button type="button" onClick={toggleOpen}
+        className="w-full flex items-center justify-between pl-4 pr-4 py-3 text-[13.5px] text-left"
+        style={{
+          ...inputBase,
+          color: value ? '#0f172a' : '#94a3b8',
+          ...(error ? inputErr : (open ? inputFocus : inputBlur)),
+        }}>
+        <span className="flex items-center gap-2.5 min-w-0">
+          {selected && (
+            <span className="w-6 h-6 rounded-md flex items-center justify-center flex-shrink-0"
+              style={{ background: 'rgba(37,99,235,0.10)' }}>
+              <selected.icon size={13} style={{ color: '#2563eb' }} />
+            </span>
+          )}
+          <span className="truncate">{value || 'Select a service'}</span>
+        </span>
+        <ChevronDown size={14} className="flex-shrink-0 ml-2 transition-transform duration-200 text-slate-400"
+          style={{ transform: open ? 'rotate(180deg)' : 'none' }} />
+      </button>
+
+      {open && coords && createPortal(
+        <div ref={panelRef}
+          className="scrollbar-light fixed z-[999] rounded-[12px] overflow-hidden bg-white max-h-72 overflow-y-auto"
+          style={{
+            left: coords.left, width: coords.width,
+            top: coords.top ?? 'auto', bottom: coords.bottom ?? 'auto',
+            border: '1.5px solid #e2e8f0', boxShadow: '0 12px 32px rgba(37,99,235,0.14)',
+          }}>
+          {services.map(({ label, icon: Icon }) => {
+            const active = label === value
+            return (
+              <button key={label} type="button"
+                onClick={() => { onChange(label); setOpen(false) }}
+                className="w-full flex items-center gap-2.5 px-4 py-2.5 text-[13px] text-left transition-colors duration-150"
+                style={{ background: active ? '#eff6ff' : 'white', color: active ? '#2563eb' : '#0f172a', fontWeight: active ? 600 : 400 }}
+                onMouseEnter={e => { if (!active) e.currentTarget.style.background = '#f8fafc' }}
+                onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'white' }}>
+                <span className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
+                  style={{ background: active ? 'rgba(37,99,235,0.15)' : 'rgba(37,99,235,0.08)' }}>
+                  <Icon size={14} style={{ color: '#2563eb' }} />
+                </span>
+                <span className="truncate flex-1">{label}</span>
+                {active && <Check size={14} className="flex-shrink-0" style={{ color: '#2563eb' }} />}
+              </button>
+            )
+          })}
+        </div>,
+        document.body
+      )}
+    </div>
+  )
+}
 
 const infoCards = [
   {
@@ -55,18 +160,21 @@ const infoCards = [
 ]
 
 export default function ContactMain() {
+  const navigate = useNavigate()
   const [form, setForm] = useState({
     name: '', email: '', phone: '', service: '', message: ''
   })
   const [errors, setErrors]     = useState({})
   const [loading, setLoading]   = useState(false)
-  const [submitted, setSubmitted] = useState(false)
 
   const validate = () => {
     const e = {}
     if (!form.name.trim())    e.name    = 'Name is required'
     if (!form.email.trim())   e.email   = 'Email is required'
     else if (!/\S+@\S+\.\S+/.test(form.email)) e.email = 'Enter a valid email'
+    if (!form.phone.trim())   e.phone   = 'Phone number is required'
+    else if (!/^(\+91[-\s]?)?[6-9]\d{9}$/.test(form.phone.replace(/[\s-]/g, ''))) e.phone = 'Enter a valid mobile number'
+    if (!form.service)        e.service = 'Please select a service'
     if (!form.message.trim()) e.message = 'Message is required'
     return e
   }
@@ -81,9 +189,13 @@ export default function ContactMain() {
     const errs = validate()
     if (Object.keys(errs).length) { setErrors(errs); return }
     setLoading(true)
-    await new Promise(r => setTimeout(r, 1800))
-    setLoading(false)
-    setSubmitted(true)
+    try {
+      await submitContactForm(form, 'Website Form')
+      navigate('/thank-you')
+    } catch {
+      setErrors({ submit: 'Something went wrong sending your message. Please try again or call us directly.' })
+      setLoading(false)
+    }
   }
 
   const inputBase = {
@@ -227,28 +339,6 @@ export default function ContactMain() {
             {/* ── Form ── */}
             <div className="relative z-10 p-4 sm:p-6 md:p-7 lg:p-10">
               <>
-                  {submitted ? (
-                    <div className="flex flex-col items-center justify-center py-12 text-center">
-                      <div className="w-16 h-16 rounded-full flex items-center justify-center mb-5"
-                        style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.2)' }}>
-                        <CheckCircle2 size={32} style={{ color: '#2563eb' }} />
-                      </div>
-                      <h3 className="text-[21px] font-bold text-slate-900 mb-3" style={{ fontWeight: 700 }}>
-                        Message Sent Successfully
-                      </h3>
-                      <p className="text-[14px] leading-[1.75] max-w-[400px] text-slate-500">
-                        Thank you for reaching out! Our team will get back to you within 24 hours.
-                      </p>
-                      <button
-                        onClick={() => { setSubmitted(false); setForm({ name:'', email:'', phone:'', service:'', message:'' }) }}
-                        className="mt-8 inline-flex items-center gap-2 px-7 py-3 rounded-full text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
-                        style={{ background: '#2563eb', boxShadow: '0 8px 24px rgba(37,99,235,0.28)' }}
-                      >
-                        Send Another Message <ArrowRight size={14} />
-                      </button>
-                    </div>
-                  ) : (
-                    <>
                       <div className="mb-6">
                         <h2 className="text-[clamp(17px,2.2vw,23px)] font-bold text-slate-900 leading-tight tracking-[-0.5px]"
                           style={{ fontWeight: 700 }}>
@@ -299,36 +389,29 @@ export default function ContactMain() {
                           {/* Phone */}
                           <div>
                             <label className="block text-[11px] font-bold mb-1.5 uppercase tracking-[0.12em] text-slate-500">
-                              Phone Number
+                              Phone Number *
                             </label>
                             <div className="relative">
                               <Phone size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400" />
                               <input type="tel" placeholder="(+91) 81100 25254" value={form.phone}
                                 onChange={handleChange('phone')}
                                 className="w-full pl-10 pr-4 py-3 text-[13.5px] placeholder:text-slate-400"
-                                style={inputBase}
+                                style={{ ...inputBase, ...(errors.phone ? inputErr : {}) }}
                                 onFocus={e => Object.assign(e.target.style, inputFocus)}
-                                onBlur={e => Object.assign(e.target.style, inputBlur)} />
+                                onBlur={e => Object.assign(e.target.style, errors.phone ? inputErr : inputBlur)} />
                             </div>
+                            {errors.phone && <p className="text-[11px] mt-1.5" style={{ color: '#f87171' }}>{errors.phone}</p>}
                           </div>
 
                           {/* Service */}
                           <div>
                             <label className="block text-[11px] font-bold mb-1.5 uppercase tracking-[0.12em] text-slate-500">
-                              Service Interested In
+                              Service Interested In *
                             </label>
-                            <div className="relative">
-                              <select value={form.service} onChange={handleChange('service')}
-                                className="w-full pl-4 pr-10 py-3 text-[13.5px] appearance-none cursor-pointer"
-                                style={{ ...inputBase, color: form.service ? '#0f172a' : '#94a3b8' }}
-                                onFocus={e => Object.assign(e.target.style, inputFocus)}
-                                onBlur={e => Object.assign(e.target.style, inputBlur)}
-                              >
-                                <option value="" disabled style={{ background: 'white', color: '#94a3b8' }}>Select a service</option>
-                                {services.map(s => <option key={s} value={s} style={{ background: 'white', color: '#0f172a' }}>{s}</option>)}
-                              </select>
-                              <ChevronDown size={14} className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400" />
-                            </div>
+                            <ServiceDropdown value={form.service}
+                              onChange={s => { setForm(prev => ({ ...prev, service: s })); if (errors.service) setErrors(prev => ({ ...prev, service: '' })) }}
+                              inputBase={inputBase} inputFocus={inputFocus} inputBlur={inputBlur} inputErr={inputErr} error={errors.service} />
+                            {errors.service && <p className="text-[11px] mt-1.5" style={{ color: '#f87171' }}>{errors.service}</p>}
                           </div>
                         </div>
 
@@ -346,6 +429,8 @@ export default function ContactMain() {
                           {errors.message && <p className="text-[11px] mt-1.5" style={{ color: '#f87171' }}>{errors.message}</p>}
                         </div>
 
+                        {errors.submit && <p className="text-[12px] mb-4 text-center" style={{ color: '#f87171' }}>{errors.submit}</p>}
+
                         <button type="submit" disabled={loading}
                           className="btn-glow w-full flex items-center justify-center gap-2.5 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 disabled:opacity-75 disabled:cursor-not-allowed hover:-translate-y-0.5"
                           style={{ background: loading ? '#3b82f6' : 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.28)' }}
@@ -353,8 +438,6 @@ export default function ContactMain() {
                           {loading ? <><Loader2 size={17} className="animate-spin" /> Sending Message...</> : <><Send size={16} /> Send Message</>}
                         </button>
                       </form>
-                    </>
-                  )}
               </>
             </div>
           </div>

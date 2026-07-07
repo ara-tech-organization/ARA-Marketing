@@ -169,8 +169,8 @@ export default function Navbar() {
           {/* center — tagline */}
           <span className="font-semibold tracking-wide">Best Digital Marketing Agency in Thanjavur</span>
           {/* right — email */}
-          <a href="mailto:aradicovertech01@gmail.com" className="flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-150 no-underline">
-            <span className="font-medium">aradicovertech01@gmail.com</span>
+          <a href="mailto:aradiscovermarketing@gmail.com" className="flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-150 no-underline">
+            <span className="font-medium">aradiscovermarketing@gmail.com</span>
           </a>
         </div>
 

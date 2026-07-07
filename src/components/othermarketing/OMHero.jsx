@@ -47,7 +47,7 @@ export default function OMHero() {
         </div>
 
         {/* ── Main content: 2-column ── */}
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start pb-14">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center pb-14">
 
           {/* Left: label + heading + description */}
           <div className="flex-1 min-w-0 text-center lg:text-left">
@@ -75,7 +75,7 @@ export default function OMHero() {
           </div>
 
           {/* Right: CTAs + stats */}
-          <div className="flex-shrink-0 w-full lg:w-[340px] flex flex-col gap-5 lg:pt-16">
+          <div className="flex-shrink-0 w-full lg:w-[340px] flex flex-col gap-5">
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
               <a href="/ARA-Marketing/contact-us"
                 className="btn-glow inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"

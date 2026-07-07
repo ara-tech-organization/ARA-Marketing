@@ -22,6 +22,7 @@ const WebAppPage          = lazy(() => import('./pages/WebAppPage'))
 const MobileAppPage       = lazy(() => import('./pages/MobileAppPage'))
 const AboutUsPage         = lazy(() => import('./pages/AboutUsPage'))
 const ContactPage         = lazy(() => import('./pages/ContactPage'))
+const ThankYouPage        = lazy(() => import('./pages/ThankYouPage'))
 const PriceDetailsPage    = lazy(() => import('./pages/PriceDetailsPage'))
 const PrivacyPolicyPage   = lazy(() => import('./pages/PrivacyPolicyPage'))
 const TermsConditionsPage = lazy(() => import('./pages/TermsConditionsPage'))
@@ -69,6 +70,7 @@ export default function App() {
           <Route path="/about-us"                                        element={<AboutUsPage />}   />
           <Route path="/price-details"                                   element={<PriceDetailsPage />} />
           <Route path="/contact-us"                                      element={<ContactPage />}   />
+          <Route path="/thank-you"                                       element={<ThankYouPage />}   />
           <Route path="/privacy-policy"                                  element={<PrivacyPolicyPage />}   />
           <Route path="/terms-and-conditions"                            element={<TermsConditionsPage />} />
         </Routes>
