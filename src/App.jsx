@@ -55,10 +55,10 @@ export default function App() {
           <Route path="/services/social-media-marketing" element={<SMMPage />}           />
           <Route path="/services/website-development"    element={<WebDevPage />}        />
           <Route path="/services/graphic-design"         element={<GraphicDesignPage />} />
-          <Route path="/services/best-seo-company-thanjavur" element={<SEOPage />} />
-          <Route path="/services/best-sem-company-thanjavur" element={<SEMPage />} />
+          <Route path="/services/search-engine-optimization" element={<SEOPage />} />
+          <Route path="/services/search-engine-marketing" element={<SEMPage />} />
           <Route path="/services/video-editing"              element={<VideoEditingPage />} />
-          <Route path="/services/other-digital-marketing-services-thanjavur" element={<OtherServicesPage />} />
+          <Route path="/services/other-digital-marketing-services" element={<OtherServicesPage />} />
           <Route path="/services/static-website-development"               element={<StaticWebsitePage />} />
           <Route path="/services/dynamic-website-development"             element={<DynamicWebsitePage />} />
           <Route path="/services/cms-website-development"               element={<CMSWebsitePage />} />

@@ -32,9 +32,9 @@ const LinkedInIcon = () => (
 )
 
 const services = [
-  { label: 'SEO',                  href: '/ARA-Marketing/services/best-seo-company-thanjavur' },
+  { label: 'SEO',                  href: '/ARA-Marketing/services/search-engine-optimization' },
   { label: 'Social Media Marketing', href: '/ARA-Marketing/services/social-media-marketing' },
-  { label: 'SEM / Google Ads',     href: '/ARA-Marketing/services/best-sem-company-thanjavur' },
+  { label: 'SEM / Google Ads',     href: '/ARA-Marketing/services/search-engine-marketing' },
   { label: 'Graphic Design',       href: '/ARA-Marketing/services/graphic-design' },
   { label: 'Video Editing',        href: '/ARA-Marketing/services/video-editing' },
   { label: 'Website Development',  href: '/ARA-Marketing/services/website-development' },

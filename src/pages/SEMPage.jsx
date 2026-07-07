@@ -19,7 +19,7 @@ const semSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-sem-company-thanjavur',
+      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-marketing',
       name: 'Best Search Engine Marketing Company (SEM) in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
       provider: {
@@ -95,7 +95,7 @@ export default function SEMPage() {
     title: 'Best Search Engine Marketing Company (SEM) in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
     keywords: 'google ads and ppc service in thanjavur, google paid advertising in thanjavur, ppc ads service in thanjavur, youtube ads in thanjavur, ppc search ads in thanjavur, shopping ads in thanjavur, best search engine marketing sem agencies in thanjavur, search engine marketing consulting services in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-sem-company-thanjavur',
+    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-marketing',
     ogImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: semSchema,
   })

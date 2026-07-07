@@ -55,7 +55,7 @@ export default function OtherServicesPage() {
     title:       'Email & SMS Marketing | Influencers Marketing | ARA Discover Marketing',
     description: 'ARA Discover Marketing offers other digital marketing services in Thanjavur including Email, SMS, and Influencer marketing to grow your business.',
     keywords:    'best email marketing companies in thanjavur, best email marketing service in thanjavur, bulk email advertising services in thanjavur, influencer advertising agency in thanjavur, influencers marketing in thanjavur, bulk sms promotion in thanjavur, sms agency in thanjavur',
-    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/other-digital-marketing-services-thanjavur',
+    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/other-digital-marketing-services',
     schema,
   })
 

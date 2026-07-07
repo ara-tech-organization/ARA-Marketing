@@ -19,7 +19,7 @@ const seoSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-seo-company-thanjavur',
+      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-optimization',
       name: 'Best Search Engine Optimization Company (SEO) in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
       provider: {
@@ -94,7 +94,7 @@ export default function SEOPage() {
     title: 'Best Search Engine Optimization Company (SEO) in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
     keywords: 'best seo companies in thanjavur, digital marketing seo services in thanjavur, international seo services in thanjavur, seo and digital marketing services in thanjavur, top seo agencies in thanjavur, top seo companies in thanjavur, top seo services in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/best-seo-company-thanjavur',
+    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-optimization',
     ogImage: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: seoSchema,
   })

@@ -9,12 +9,12 @@ import {
 } from 'lucide-react'
 
 const digitalMarketingItems = [
-  { href: '/services/best-seo-company-thanjavur', label: 'SEO',            icon: Search,     desc: 'Search Engine Optimization',    isRoute: true  },
+  { href: '/services/search-engine-optimization', label: 'SEO',            icon: Search,     desc: 'Search Engine Optimization',    isRoute: true  },
   { href: '/services/social-media-marketing',     label: 'SMM',            icon: Share2,     desc: 'Social Media Marketing',        isRoute: true  },
-  { href: '/services/best-sem-company-thanjavur', label: 'SEM',            icon: TrendingUp, desc: 'Search Engine Marketing',       isRoute: true  },
+  { href: '/services/search-engine-marketing', label: 'SEM',            icon: TrendingUp, desc: 'Search Engine Marketing',       isRoute: true  },
   { href: '/services/graphic-design',             label: 'Graphic Design', icon: Palette,    desc: 'Creative Visual Design',        isRoute: true  },
   { href: '/services/video-editing',              label: 'Video Editing',  icon: Video,      desc: 'Professional Video Production', isRoute: true  },
-  { href: '/services/other-digital-marketing-services-thanjavur', label: 'Other Services', icon: Sparkles, desc: 'Email, Influencer & SMS', isRoute: true },
+  { href: '/services/other-digital-marketing-services', label: 'Other Services', icon: Sparkles, desc: 'Email, Influencer & SMS', isRoute: true },
 ]
 
 const webDesignItems = [
@@ -115,9 +115,9 @@ export default function Navbar() {
       : pathname === paths || (paths !== '/' && pathname.startsWith(paths))
 
   const digitalActive = isActive([
-    '/services/best-seo-company-thanjavur', '/services/social-media-marketing',
-    '/services/best-sem-company-thanjavur', '/services/graphic-design',
-    '/services/video-editing', '/services/other-digital-marketing-services-thanjavur',
+    '/services/search-engine-optimization', '/services/social-media-marketing',
+    '/services/search-engine-marketing', '/services/graphic-design',
+    '/services/video-editing', '/services/other-digital-marketing-services',
   ])
   const webActive = isActive([
     '/services/website-development', '/services/static-website-development',
