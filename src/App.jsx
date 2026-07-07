@@ -45,7 +45,7 @@ function PageLoader() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/ARA-Marketing">
+    <BrowserRouter>
       <MouseEffect />
       <FloatingSocial />
       <PromoPopup />
