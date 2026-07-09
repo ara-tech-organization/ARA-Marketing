@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://discovermarketing.co/sitemap.xml

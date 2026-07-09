@@ -1,0 +1,31 @@
+# ARA Discover Marketing
+
+> ARA Discover Marketing is a digital marketing, branding, and web/app development agency based in Thanjavur, Tamil Nadu, India, offering SEO, social media marketing, paid advertising, branding, video editing, website development, and mobile app development services for startups, local businesses, and enterprises.
+
+ARA Discover Marketing positions itself as a top digital marketing and branding agency in Thanjavur, combining AI-driven strategy with creative execution across SEO, social/paid media, branding, and web/app development. The company reports serving 100+ brands and delivering 150+ projects with a 5-star client rating over 3+ years, led by CEO Mrs. Mehala Kumar.
+
+## Digital Marketing Services
+- [Search Engine Optimization](https://discovermarketing.co/services/search-engine-optimization): On-page, off-page, technical, local, and mobile SEO services to improve organic search rankings.
+- [Social Media Marketing](https://discovermarketing.co/services/social-media-marketing): Social media management and campaigns across Facebook, Instagram, LinkedIn, and Pinterest.
+- [Search Engine Marketing](https://discovermarketing.co/services/search-engine-marketing): Google Ads, PPC, display, YouTube, and shopping ad campaign management.
+- [Graphic Design](https://discovermarketing.co/services/graphic-design): Branding and graphic design services including visual identity and ad creatives.
+- [Video Editing](https://discovermarketing.co/services/video-editing): Reels, promotional videos, corporate videos, motion graphics, and cinematic editing.
+- [Other Digital Marketing Services](https://discovermarketing.co/services/other-digital-marketing-services): Email marketing, influencer marketing, SMS marketing, and content marketing.
+
+## Web & App Design Services
+- [Website Development (Overview)](https://discovermarketing.co/services/website-development): General overview of website design and development offerings.
+- [Static Website Development](https://discovermarketing.co/services/static-website-development): Fast, SEO-ready static websites for schools, clinics, and small businesses.
+- [Dynamic Website Development](https://discovermarketing.co/services/dynamic-website-development): CMS-powered, scalable websites for institutions and service businesses.
+- [CMS Website Development](https://discovermarketing.co/services/cms-website-development): WordPress and CMS-based website builds.
+- [Ecommerce Website Development](https://discovermarketing.co/services/ecommerce-website-development): Online stores with payment gateways, catalogs, and inventory management.
+- [Enterprise Website Development](https://discovermarketing.co/services/enterprise-website-development): Large-scale website solutions for enterprise digital presence.
+- [Web Application Development](https://discovermarketing.co/services/web-application-development): Custom, secure, and scalable web applications.
+- [Mobile Application Development](https://discovermarketing.co/services/mobile-application-development): iOS and Android mobile app development.
+
+## Company Information
+- [About Us](https://discovermarketing.co/about-us): Company mission, vision, and leadership profile of CEO Mrs. Mehala Kumar.
+- [Pricing](https://discovermarketing.co/price-details): Transparent starting-from pricing for website packages (₹10,000+), SEO, and marketing services.
+- [Contact Us](https://discovermarketing.co/contact-us): Contact form, phone, email, and office address (Thanjavur, Tamil Nadu).
+
+## Optional
+- [Sitemap](https://discovermarketing.co/sitemap.xml): XML sitemap of site pages (note: this URL currently does not resolve to an actual sitemap file).
