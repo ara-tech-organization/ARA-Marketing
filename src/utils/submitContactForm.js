@@ -11,7 +11,7 @@ export async function submitContactForm(form, source) {
     source,
   }
 
-  const res = await fetch('https://aradiscovermarketing.in/api/email.php', {
+  const res = await fetch('https://discovermarketing.co/api/email.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
