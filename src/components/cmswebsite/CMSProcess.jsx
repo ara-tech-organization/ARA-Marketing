@@ -1,4 +1,4 @@
-﻿import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
+import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
 
 const steps = [
   {
@@ -239,7 +239,7 @@ export default function CMSProcess() {
             </p>
           </div>
           <a
-            href="/ARA-Marketing/contact-us"
+            href="/contact-us"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px] font-bold text-white flex-shrink-0 transition-all duration-300 hover:scale-[1.04]"
             style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 4px 16px rgba(37,99,235,0.28)' }}
           >

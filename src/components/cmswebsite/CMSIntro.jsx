@@ -1,4 +1,4 @@
-﻿import { ArrowRight, TrendingUp, Settings, Users, Sparkles } from 'lucide-react'
+import { ArrowRight, TrendingUp, Settings, Users, Sparkles } from 'lucide-react'
 import cmsIntroImg from '../../assets/Wordpress/w1.webp'
 
 const pillars = [
@@ -80,7 +80,7 @@ export default function CMSIntro() {
             </div>
 
             <a
-              href="/ARA-Marketing/contact-us"
+              href="/contact-us"
               className="inline-flex items-center gap-2 text-[13.5px] font-semibold mt-2 transition-all duration-200 hover:gap-3 w-fit mx-auto lg:mx-0"
               style={{ color: '#1d4ed8' }}
             >

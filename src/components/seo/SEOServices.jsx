@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import {
   FileText, Globe2, Cpu, MapPin, Smartphone,
   CheckCircle, Layers, ArrowRight, ChevronRight
@@ -176,7 +176,7 @@ export default function SEOServices() {
                 ))}
               </ul>
 
-              <a href="/ARA-Marketing/contact-us"
+              <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-white text-[13px]
                   font-semibold transition-all duration-300 hover:opacity-90 hover:shadow-lg hover:-translate-y-0.5"
                 style={{ background: tab.color, boxShadow: `0 4px 16px ${tab.color}30` }}>

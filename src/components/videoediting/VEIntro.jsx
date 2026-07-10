@@ -1,4 +1,4 @@
-﻿import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
+import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
 import veIntroImg from '../../assets/Video-editing/V2.webp'
 
 const expertise = [
@@ -76,7 +76,7 @@ export default function VEIntro() {
             </div>
 
             <div className="flex justify-center lg:justify-start">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
                 Get Video Editing Services <ArrowRight size={14} />

@@ -27,10 +27,10 @@ export default function OMHero() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Row 1: breadcrumb left  ·  channel tags right ── */}
+        {/* â”€â”€ Row 1: breadcrumb left  Â·  channel tags right â”€â”€ */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-10 pb-8 gap-3">
           <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11.5px]" style={{ color: 'rgba(15,23,42,0.38)' }}>
-            <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
+            <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
             <ChevronRight size={11} className="flex-shrink-0" style={{ color: 'rgba(15,23,42,0.20)' }} />
             <span className="whitespace-nowrap">Digital Marketing</span>
             <ChevronRight size={11} className="flex-shrink-0" style={{ color: 'rgba(15,23,42,0.20)' }} />
@@ -46,7 +46,7 @@ export default function OMHero() {
           </div>
         </div>
 
-        {/* ── Main content: 2-column ── */}
+        {/* â”€â”€ Main content: 2-column â”€â”€ */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center pb-14">
 
           {/* Left: label + heading + description */}
@@ -70,14 +70,14 @@ export default function OMHero() {
               style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
 
             <p className="text-[15px] text-slate-500 leading-[1.9] max-w-[520px]">
-              ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions — driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencer marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
+              ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions â€” driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencer marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
             </p>
           </div>
 
           {/* Right: CTAs + stats */}
           <div className="flex-shrink-0 w-full lg:w-[340px] flex flex-col gap-5">
             <div className="flex flex-col sm:flex-row lg:flex-col gap-3">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="/contact-us"
                 className="btn-glow inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
                 Start Your Campaign <ArrowRight size={14} />
@@ -105,7 +105,7 @@ export default function OMHero() {
           </div>
         </div>
 
-        {/* ── Row 5: 3 full-width channel panels ── */}
+        {/* â”€â”€ Row 5: 3 full-width channel panels â”€â”€ */}
         <div className="reveal grid grid-cols-1 sm:grid-cols-3 gap-0 rounded-2xl overflow-hidden border border-slate-200 mb-10 sm:mb-16"
           style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.09)' }}>
           {channels.map(({ icon: Icon, label, metric, sub, pct, color, light }, i) => (

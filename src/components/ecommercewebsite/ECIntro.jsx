@@ -1,4 +1,4 @@
-import { Globe, TrendingUp, ShoppingBag, Layers, ArrowRight, Zap } from 'lucide-react'
+import { Globe, TrendingUp, ShoppingBag, Layers, Zap } from 'lucide-react'
 
 const features = [
   { icon: Globe,       label: 'Scalable Architecture',      desc: 'Grows with your business from day one'  },
@@ -29,7 +29,7 @@ export default function ECIntro() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
             style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
@@ -42,11 +42,11 @@ export default function ECIntro() {
             </span>
           </h2>
           <p className="text-[14px] sm:text-[15px] text-slate-500 leading-[1.9] max-w-2xl mx-auto">
-            In today&apos;s digital era, a strong online store is not an option — it is a necessity. As a top e-commerce web design &amp; development company in Thanjavur, we deliver high-performance platforms built for real revenue growth.
+            In today&apos;s digital era, a strong online store is not an option â€” it is a necessity. As a top e-commerce web design &amp; development company in Thanjavur, we deliver high-performance platforms built for real revenue growth.
           </p>
         </div>
 
-        {/* ── Feature cards ── */}
+        {/* â”€â”€ Feature cards â”€â”€ */}
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
           {features.map(({ icon: Icon, label, desc }, i) => (
             <div key={label}
@@ -64,7 +64,7 @@ export default function ECIntro() {
           ))}
         </div>
 
-        {/* ── Additional content ── */}
+        {/* â”€â”€ Additional content â”€â”€ */}
         <div className="reveal mb-8 text-center space-y-3">
           <p className="text-[13.5px] sm:text-[14.5px] text-slate-500 leading-[1.85] max-w-2xl mx-auto">
             We develop scalable, SEO-friendly, conversion-optimised, and sales-based e-commerce platforms customised for your business requirements.
@@ -74,7 +74,7 @@ export default function ECIntro() {
           </p>
         </div>
 
-        {/* ── Platform pills strip ── */}
+        {/* â”€â”€ Platform pills strip â”€â”€ */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 px-7 py-5 rounded-2xl bg-white"
           style={{ border: '1px solid #dbeafe', boxShadow: '0 4px 16px rgba(37,99,235,0.06)' }}>
           <div>
@@ -93,11 +93,6 @@ export default function ECIntro() {
               </span>
             ))}
           </div>
-          <a href="/ARA-Marketing/contact-us"
-            className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 6px 18px rgba(37,99,235,0.28)' }}>
-            Talk to an Expert <ArrowRight size={13} />
-          </a>
         </div>
 
       </div>

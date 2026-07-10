@@ -51,7 +51,7 @@ export default function VideoEditingPage() {
     title:       'Best Video Editing Services in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a professional video editing company in Thanjavur offering drone, corporate, branding & YouTube video editing services.',
     keywords:    'best video editing services in thanjavur, business video editing services in thanjavur, corporate video editing companies in thanjavur, digital marketing video editing in thanjavur, drone video editing in thanjavur, online youtube video editing in thanjavur, videography and editing in thanjavur, Branding Videos editing in thanjavur',
-    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/video-editing',
+    canonical:   'https://discovermarketing.co/services/video-editing',
     schema,
   })
 

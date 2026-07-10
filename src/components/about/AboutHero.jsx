@@ -1,4 +1,4 @@
-﻿import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 import heroImage from '../../assets/About/A1.webp'
 
@@ -114,7 +114,7 @@ export default function AboutHero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full
                   font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',

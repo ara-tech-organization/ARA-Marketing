@@ -47,7 +47,7 @@ export default function SEOHero() {
 
         {/* Breadcrumb */}
         <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-5">
-          <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+          <a href="/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
           <ChevronRight size={12} className="text-slate-600 flex-shrink-0" />
           <span className="whitespace-nowrap text-slate-500">Digital Marketing</span>
           <ChevronRight size={12} className="text-slate-600 flex-shrink-0" />
@@ -56,7 +56,7 @@ export default function SEOHero() {
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
 
-          {/* ── LEFT: Content ── */}
+          {/* â”€â”€ LEFT: Content â”€â”€ */}
           <div className="flex-1 min-w-0 text-center lg:text-left">
 
             {/* Label */}
@@ -82,10 +82,10 @@ export default function SEOHero() {
             </h1>
 
             <p className="text-[15px] text-slate-300 leading-[1.85] mb-4 max-w-xl">
-              ARA Discover Marketing is Thanjavur's leading SEO agency, delivering AI-driven strategies that push your business to the top of Google — and keep it there.
+              ARA Discover Marketing is Thanjavur's leading SEO agency, delivering AI-driven strategies that push your business to the top of Google â€” and keep it there.
             </p>
             <p className="text-[14px] text-slate-400 leading-[1.8] mb-8 max-w-xl">
-              From technical SEO and high-quality backlinks to local search domination and content marketing — we build rankings that convert to revenue.
+              From technical SEO and high-quality backlinks to local search domination and content marketing â€” we build rankings that convert to revenue.
             </p>
 
             {/* Badge pills */}
@@ -101,13 +101,13 @@ export default function SEOHero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white
                   transition-all duration-300 hover:scale-[1.03] shadow-lg"
                 style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.45)' }}>
                 Get Free SEO Audit <ArrowRight size={15} />
               </a>
-              <a href="#seo-services"
+              <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-semibold text-blue-300
                   transition-all duration-300 hover:text-white hover:bg-white/10"
                 style={{ border: '1px solid rgba(96,165,250,0.3)' }}>
@@ -128,7 +128,7 @@ export default function SEOHero() {
             </div>
           </div>
 
-          {/* ── RIGHT: Image + Keyword card ── */}
+          {/* â”€â”€ RIGHT: Image + Keyword card â”€â”€ */}
           <div className="lg:w-[420px] flex-shrink-0 flex flex-col gap-4">
 
             {/* Image */}

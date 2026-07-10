@@ -74,7 +74,7 @@ const introColumns = [
 
 const introStats = [
   { val: '500+', label: 'Clients Served',      color: '#2563eb' },
-  { val: '5.0★', label: 'Google Rating',       color: '#0ea5e9' },
+  { val: '5.0â˜…', label: 'Google Rating',       color: '#0ea5e9' },
   { val: '98%',  label: 'Client Satisfaction',  color: '#2563eb' },
 ]
 
@@ -88,13 +88,13 @@ export default function Services() {
   return (
     <section id="services" className="bg-white">
 
-      {/* ══════════════════════════════════════════════════════
-          FULL-WIDTH EDITORIAL INTRO — Result-Driven block
-      ══════════════════════════════════════════════════════ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+          FULL-WIDTH EDITORIAL INTRO â€” Result-Driven block
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <div className="relative w-full overflow-hidden py-16 sm:py-20"
         style={{ background: '#f0f9ff' }}>
 
-        {/* Background decorations — identical to AboutMV */}
+        {/* Background decorations â€” identical to AboutMV */}
         <div className="absolute pointer-events-none rounded-full"
           style={{ top: '-5%', right: '-4%', width: '320px', height: '320px',
             background: 'radial-gradient(circle, rgba(186,230,253,0.6) 0%, transparent 65%)' }} />
@@ -113,10 +113,10 @@ export default function Services() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 xl:px-24">
 
-          {/* ── Zone 1: Badge + Heading + Stats ── */}
+          {/* â”€â”€ Zone 1: Badge + Heading + Stats â”€â”€ */}
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-10 lg:gap-20 items-start mb-12">
 
-            {/* Left — badge + heading */}
+            {/* Left â€” badge + heading */}
             <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full
                 text-[11px] font-bold uppercase tracking-widest mb-5"
@@ -139,7 +139,7 @@ export default function Services() {
               </h2>
             </div>
 
-            {/* Right — 3 stats */}
+            {/* Right â€” 3 stats */}
             <div className="flex flex-row lg:flex-col gap-3 flex-shrink-0">
               {introStats.map(({ val, label, color }) => (
                 <div key={label}
@@ -153,7 +153,7 @@ export default function Services() {
             </div>
           </div>
 
-          {/* Dot divider — identical to AboutMV */}
+          {/* Dot divider â€” identical to AboutMV */}
           <div className="flex items-center gap-4 mb-12">
             <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,transparent,#bfdbfe)' }} />
             <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
@@ -162,7 +162,7 @@ export default function Services() {
             <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#bfdbfe,transparent)' }} />
           </div>
 
-          {/* ── Zone 2: 3 feature columns ── */}
+          {/* â”€â”€ Zone 2: 3 feature columns â”€â”€ */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
             {introColumns.map(({ icon: Icon, eyebrow, iconBg, iconBorder, iconColor, borderColor, text }) => (
               <div key={eyebrow} className="rounded-[20px] p-6 group"
@@ -178,14 +178,14 @@ export default function Services() {
                     style={{ color: iconColor }}>{eyebrow}</span>
                 </div>
                 <p className="text-[13.5px] leading-[1.85] text-slate-500">{text}</p>
-                {/* Bottom accent line — identical to AboutMV */}
+                {/* Bottom accent line â€” identical to AboutMV */}
                 <div className="mt-5 h-[3px] w-16 rounded-full"
                   style={{ background: `linear-gradient(90deg,${iconColor},#0ea5e9)` }} />
               </div>
             ))}
           </div>
 
-          {/* ── Zone 3: chips ── */}
+          {/* â”€â”€ Zone 3: chips â”€â”€ */}
           <div className="flex flex-wrap justify-center gap-3 pt-8"
             style={{ borderTop: '1px solid #bfdbfe' }}>
             {introChips.map(item => (
@@ -203,19 +203,19 @@ export default function Services() {
       </div>
 
 
-      {/* ══════════════════════════════════════
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
           REST OF SERVICES SECTION
-      ══════════════════════════════════════ */}
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-16">
 
-        {/* Why Do Businesses Choose Ara */}
+        {/* Why Do Businesses Choose ARA */}
         <div className="mb-16 reveal">
           <div className="text-center mb-8">
             <h2 className="text-[clamp(21px,2.8vw,33px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
-              Why Do Businesses Choose Ara Discover Marketing?
+              Why Do Businesses Choose ARA Discover Marketing?
             </h2>
             <p className="text-[14px] text-slate-500 leading-relaxed max-w-3xl mx-auto">
-              Businesses and startups trust Ara because we focus on measurable growth, transparency and long-term success.
+              Businesses and startups trust ARA because we focus on measurable growth, transparency and long-term success.
               Also one of the top digital marketing companies in Thanjavur, our approach is centered around understanding
               your business requirements and building AI-driven customized strategies that generate ROI.
             </p>
@@ -239,7 +239,7 @@ export default function Services() {
 
           <p className="text-[14px] text-slate-500 leading-relaxed text-center">
             Are you looking for the <strong className="text-slate-700">best digital marketing agency in Thanjavur</strong>?
-            Ara Discover Marketing offers a complete digital solution that drives visibility, engagement and conversions.
+            ARA Discover Marketing offers a complete digital solution that drives visibility, engagement and conversions.
           </p>
         </div>
 

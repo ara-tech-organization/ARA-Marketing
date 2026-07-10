@@ -7,7 +7,7 @@ const bullets = [
   'Enterprise website development services in Thanjavur',
   'AI-integrated, high-performance architecture',
   'Industry-leading SSL, WAF & GDPR compliance',
-  'Full-cycle — strategy, design, launch & support',
+  'Full-cycle â€” strategy, design, launch & support',
   'Scalable solutions for 10x business growth',
 ]
 
@@ -44,15 +44,15 @@ export default function EWHero() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 py-14 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
 
-          {/* ── LEFT: Text ── */}
+          {/* â”€â”€ LEFT: Text â”€â”€ */}
           <div className="flex-1 lg:max-w-[52%] animate-hero-enter">
 
             {/* Breadcrumb */}
             <nav className="hidden sm:flex items-center gap-1.5 text-[11.5px] mb-6"
               style={{ color: 'rgba(255,255,255,0.32)' }}>
-              <a href="/ARA-Marketing/" className="hover:text-sky-300 transition-colors">Home</a>
+              <a href="/" className="hover:text-sky-300 transition-colors">Home</a>
               <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
-              <a href="/ARA-Marketing/services/website-development" className="hover:text-sky-300 transition-colors">Web Design</a>
+              <a href="/services/website-development" className="hover:text-sky-300 transition-colors">Web Design</a>
               <ChevronRight size={11} style={{ color: 'rgba(255,255,255,0.18)' }} />
               <span className="text-sky-300 font-medium">Enterprise Website</span>
             </nav>
@@ -118,7 +118,7 @@ export default function EWHero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-10">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#7c3aed,#2563eb)', boxShadow: '0 8px 28px rgba(124,58,237,0.35)' }}>
                 Start Your Project <ArrowRight size={13} />
@@ -155,7 +155,7 @@ export default function EWHero() {
             </div>
           </div>
 
-          {/* ── RIGHT: Hero image with floating badges ── */}
+          {/* â”€â”€ RIGHT: Hero image with floating badges â”€â”€ */}
           <div className="w-full lg:flex-1 animate-hero-visual">
             <div className="relative">
 
@@ -188,12 +188,12 @@ export default function EWHero() {
                     The Best Enterprise Web Development Company in Thanjavur
                   </p>
                   <p className="text-[12px] mt-1" style={{ color: 'rgba(255,255,255,0.50)' }}>
-                    Scalable · Secure · AI-Powered · High-Performance
+                    Scalable Â· Secure Â· AI-Powered Â· High-Performance
                   </p>
                 </div>
               </div>
 
-              {/* Floating badge — top left */}
+              {/* Floating badge â€” top left */}
               <div className="absolute -top-4 -left-4 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl animate-float"
                 style={{
                   background: 'rgba(13,27,58,0.96)',
@@ -211,7 +211,7 @@ export default function EWHero() {
                 </div>
               </div>
 
-              {/* Floating badge — bottom right */}
+              {/* Floating badge â€” bottom right */}
               <div className="absolute -bottom-4 -right-4 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl animate-float"
                 style={{
                   background: 'rgba(13,27,58,0.96)',

@@ -3,7 +3,7 @@ import { Globe, Check } from 'lucide-react'
 const plans = [
   {
     name: 'Static Website',
-    price: '₹10,000',
+    price: 'â‚¹10,000',
     label: 'Starting from',
     for: 'Schools, Clinics, Small Businesses',
     color: '#2563eb',
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: 'Dynamic Website',
-    price: '₹20,000',
+    price: 'â‚¹20,000',
     label: 'Starting from',
     for: 'Educational Institutions, Hospitals, Service Businesses',
     color: '#0ea5e9',
@@ -37,7 +37,7 @@ const plans = [
   },
   {
     name: 'E-Commerce Website',
-    price: '₹30,000',
+    price: 'â‚¹30,000',
     label: 'Starting from',
     for: 'Retail Stores, Fashion Brands, D2C Businesses',
     color: '#2563eb',
@@ -76,7 +76,7 @@ export default function PriceWebsite() {
             }}>Packages</span>
           </h2>
           <p className="text-[15px] text-slate-500 max-w-[600px] mx-auto leading-relaxed">
-            Professional websites built for performance, SEO, and conversions — at prices that work for every business.
+            Professional websites built for performance, SEO, and conversions â€” at prices that work for every business.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export default function PriceWebsite() {
 
               {/* CTA */}
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="w-full flex items-center justify-center py-3 rounded-full text-[13px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)`,
                   boxShadow: `0 4px 20px ${glow}` }}

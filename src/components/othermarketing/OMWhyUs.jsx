@@ -5,42 +5,42 @@ const reasons = [
   {
     icon: Bot,
     title: 'AI-Focused Marketing Strategies',
-    desc: 'We leverage AI-driven insights to build smarter campaigns that reach the right audience at the right time — maximising engagement and minimising wasted spend.',
+    desc: 'We leverage AI-driven insights to build smarter campaigns that reach the right audience at the right time â€” maximising engagement and minimising wasted spend.',
     color: '#2563eb', num: '01',
     highlight: 'Smart Targeting',
   },
   {
     icon: Target,
     title: 'Customised Campaign Planning',
-    desc: 'Tailored marketing campaigns that align precisely with your brand goals, customer personas, and budget — no one-size-fits-all solutions here.',
+    desc: 'Tailored marketing campaigns that align precisely with your brand goals, customer personas, and budget â€” no one-size-fits-all solutions here.',
     color: '#2563eb', num: '02',
     highlight: 'Audience-First',
   },
   {
     icon: Users,
     title: 'Multi-Channel Customer Engagement',
-    desc: 'Cohesive brand experience across email, influencer platforms, and SMS — we keep your customers engaged at every touchpoint in their journey.',
+    desc: 'Cohesive brand experience across email, influencer platforms, and SMS â€” we keep your customers engaged at every touchpoint in their journey.',
     color: '#0ea5e9', num: '03',
     highlight: '3 Channels',
   },
   {
     icon: BarChart2,
     title: 'Transparent Reporting & Analytics',
-    desc: 'Clear monthly campaign performance reports with engagement metrics, conversion tracking, and full ROI visibility — you always know where your money goes.',
+    desc: 'Clear monthly campaign performance reports with engagement metrics, conversion tracking, and full ROI visibility â€” you always know where your money goes.',
     color: '#2563eb', num: '04',
     highlight: 'Full Visibility',
   },
   {
     icon: Sparkles,
     title: 'ROI-Driven Marketing Solutions',
-    desc: 'Every strategy is optimised for measurable results — from email open rates and influencer reach to SMS delivery rates and revenue attribution.',
+    desc: 'Every strategy is optimised for measurable results â€” from email open rates and influencer reach to SMS delivery rates and revenue attribution.',
     color: '#2563eb', num: '05',
     highlight: '4x Avg ROI',
   },
   {
     icon: DollarSign,
     title: 'Affordable Plans for Every Business',
-    desc: 'Flexible pricing packages for startups, SMEs, and growing brands — premium multi-channel marketing without the premium agency cost.',
+    desc: 'Flexible pricing packages for startups, SMEs, and growing brands â€” premium multi-channel marketing without the premium agency cost.',
     color: '#2563eb', num: '06',
     highlight: 'No Setup Fees',
   },
@@ -161,7 +161,7 @@ export default function OMWhyUs() {
               </p>
             </div>
           </div>
-          <a href="/ARA-Marketing/contact-us"
+          <a href="/contact-us"
             className="relative flex-shrink-0 inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
             style={{ background: 'white', color: '#2563eb' }}>
             Work With Us <ArrowRight size={13} />

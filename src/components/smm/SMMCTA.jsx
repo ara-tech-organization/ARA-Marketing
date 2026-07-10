@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Share2, MessageSquare } from 'lucide-react'
+import { Share2, MessageSquare } from 'lucide-react'
 
 export default function SMMCTA() {
   return (
@@ -46,13 +46,6 @@ export default function SMMCTA() {
 
         {/* CTAs */}
         <div className="reveal delay-2 flex flex-wrap gap-4 justify-center mb-12">
-          <a
-            href="/ARA-Marketing/contact-us"
-            className="btn-glow inline-flex items-center gap-2.5 px-8 py-3.5 text-white
-              rounded-full font-bold text-[15px] transition-all duration-300"
-          >
-            Talk to an Expert <ArrowRight size={16} />
-          </a>
           <a
             href="#smm-services"
             className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-[15px]

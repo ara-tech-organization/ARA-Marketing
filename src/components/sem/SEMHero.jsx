@@ -73,7 +73,7 @@ export default function SEMHero() {
 
           {/* Breadcrumb */}
           <nav className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-4">
-            <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
+            <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
             <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
             <span className="whitespace-nowrap">Digital Marketing</span>
             <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
@@ -113,7 +113,7 @@ export default function SEMHero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-3 mb-4">
-            <a href="/ARA-Marketing/contact-us"
+            <a href="tel:+918110025254"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full
                 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}>
@@ -138,7 +138,7 @@ export default function SEMHero() {
             ))}
           </div>
 
-          {/* ── Campaign type cards ── */}
+          {/* â”€â”€ Campaign type cards â”€â”€ */}
           <div className="reveal relative">
 
             {/* Floating badges */}

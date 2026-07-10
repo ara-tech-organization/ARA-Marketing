@@ -1,4 +1,4 @@
-﻿import { Clapperboard, Zap, BookOpen, MonitorPlay, Settings, DollarSign, Award, ArrowRight, CheckCircle2, Play } from 'lucide-react'
+import { Clapperboard, Zap, BookOpen, MonitorPlay, Settings, DollarSign, Award, ArrowRight, CheckCircle2, Play } from 'lucide-react'
 
 const reasons = [
   { icon: Clapperboard, title: 'High-Quality Cinematic Editing',      desc: 'Professional cinematic techniques — colour grading, motion design, and seamless cuts applied to every project.',      color: '#2563eb', accent: 'rgba(37,99,235,0.07)',  border: 'rgba(37,99,235,0.18)', num: '01' },
@@ -126,7 +126,7 @@ export default function VEWhyUs() {
               </p>
             </div>
           </div>
-          <a href="/ARA-Marketing/contact-us"
+          <a href="/contact-us"
             className="relative flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
             style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.28)', backdropFilter: 'blur(10px)' }}>
             Work With Us <ArrowRight size={14} />

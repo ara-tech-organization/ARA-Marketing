@@ -26,7 +26,7 @@ const cards = [
     iconBorder: '#bae6fd',
     iconColor: '#0ea5e9',
     title: 'Better visibility, stronger leads, sustainable growth.',
-    body: 'We put your brand in front of the right audience at the right time — every time.',
+    body: 'We put your brand in front of the right audience at the right time â€” every time.',
   },
   {
     eyebrow: 'Summary',
@@ -127,17 +127,17 @@ export default function WhyUs() {
   return (
     <section id="why-us" ref={sectionRef} className="relative overflow-hidden py-16 sm:py-20 bg-white">
 
-      {/* Dot grid — matches about page */}
+      {/* Dot grid â€” matches about page */}
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.07) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
 
-      {/* Orbs — matches about page */}
+      {/* Orbs â€” matches about page */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ top: '-8%', right: '-6%', width: '480px', height: '480px', background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
       <div className="absolute pointer-events-none rounded-full"
         style={{ bottom: '-6%', left: '-4%', width: '360px', height: '360px', background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
 
-      {/* Decorative rings — matches about page */}
+      {/* Decorative rings â€” matches about page */}
       <div className="absolute hidden lg:block pointer-events-none rounded-full"
         style={{ top: '30%', left: '-3%', width: '160px', height: '160px', border: '1.5px dashed rgba(14,165,233,0.25)' }} />
       <div className="absolute hidden lg:block pointer-events-none"
@@ -145,7 +145,7 @@ export default function WhyUs() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-12 sm:mb-14" style={anim(0)}>
 
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
@@ -180,7 +180,7 @@ export default function WhyUs() {
               <span className="text-[13px] font-semibold text-slate-500 ml-1.5">5.0 Rated</span>
             </div>
             <span className="w-px h-4 bg-slate-200 hidden sm:block" />
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:gap-3"
               style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.3)' }}>
               Get Started <ArrowRight size={13} />
@@ -188,7 +188,7 @@ export default function WhyUs() {
           </div>
         </div>
 
-        {/* ── Stats bento grid ── */}
+        {/* â”€â”€ Stats bento grid â”€â”€ */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 mb-6 [&>*:last-child]:col-span-full [&>*:last-child]:w-1/2 [&>*:last-child]:mx-auto sm:[&>*:last-child]:col-span-1 sm:[&>*:last-child]:w-auto sm:[&>*:last-child]:mx-0">
           {stats.map(({ val, num, suffix, label, icon, color, bg, border, grad }, i) => (
             <StatCard
@@ -200,7 +200,7 @@ export default function WhyUs() {
           ))}
         </div>
 
-        {/* ── Editorial feature rows — no boxes ── */}
+        {/* â”€â”€ Editorial feature rows â€” no boxes â”€â”€ */}
         <div className="flex flex-col mt-10" style={anim(460)}>
           {cards.map(({ eyebrow, icon: Icon, iconColor, title, body }, i) => (
             <div key={eyebrow}

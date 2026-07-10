@@ -26,7 +26,7 @@ export default function WebDevHero() {
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7 pt-16 pb-6">
         <div className="text-center max-w-[1000px] mx-auto animate-hero-enter">
           <nav className="flex items-center justify-center gap-1.5 text-[13px] text-slate-400 mb-6">
-            <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
+            <a href="/" className="hover:text-blue-600 transition-colors duration-200">Home</a>
             <ChevronRight size={13} className="text-slate-300" />
             <span className="text-blue-600 font-medium">Website Design &amp; Development</span>
           </nav>
@@ -58,7 +58,7 @@ export default function WebDevHero() {
 
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             <a
-              href="/ARA-Marketing/contact-us"
+              href="/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 text-white
                 rounded-full text-sm font-semibold transition-all duration-300"
             >

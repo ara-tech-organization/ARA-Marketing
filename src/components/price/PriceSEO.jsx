@@ -48,7 +48,7 @@ export default function PriceSEO() {
             </div>
             <h3 className="text-[18px] font-bold text-slate-900 mb-1">Local SEO Package</h3>
             <div className="flex items-baseline gap-1 mb-2">
-              <span className="text-[34px] font-bold text-blue-600" style={{ letterSpacing: '-1px' }}>₹8,000</span>
+              <span className="text-[34px] font-bold text-blue-600" style={{ letterSpacing: '-1px' }}>â‚¹8,000</span>
               <span className="text-[14px] font-semibold text-slate-400">/month</span>
             </div>
             <p className="text-[12px] text-slate-400 mb-6 uppercase tracking-wider font-semibold">Starting from</p>
@@ -61,7 +61,7 @@ export default function PriceSEO() {
               ))}
             </ul>
             <a
-              href="/ARA-Marketing/contact-us"
+              href="tel:+918110025254"
               className="mt-7 w-full flex items-center justify-center py-3 rounded-full text-[13px]
                 font-bold text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:-translate-y-0.5"
             >
@@ -78,7 +78,7 @@ export default function PriceSEO() {
             </div>
             <h3 className="text-[18px] font-bold text-slate-900 mb-1">WhatsApp Business Setup &amp; Automation</h3>
             <div className="flex items-baseline gap-1 mb-2">
-              <span className="text-[34px] font-bold" style={{ color: '#0ea5e9', letterSpacing: '-1px' }}>₹5,000</span>
+              <span className="text-[34px] font-bold" style={{ color: '#0ea5e9', letterSpacing: '-1px' }}>â‚¹5,000</span>
             </div>
             <p className="text-[12px] text-slate-400 mb-6 uppercase tracking-wider font-semibold">One-time setup</p>
             <ul className="flex flex-col gap-2.5 flex-1">
@@ -90,7 +90,7 @@ export default function PriceSEO() {
               ))}
             </ul>
             <a
-              href="/ARA-Marketing/contact-us"
+              href="tel:+918110025254"
               className="mt-7 w-full flex items-center justify-center py-3 rounded-full text-[13px]
                 font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
               style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 4px 16px rgba(14,165,233,0.28)' }}

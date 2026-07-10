@@ -1,4 +1,4 @@
-﻿import { Monitor, Play, ShoppingBag, CheckCircle2, ArrowRight } from 'lucide-react'
+import { Monitor, Play, ShoppingBag, CheckCircle2, ArrowRight } from 'lucide-react'
 import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
 import videoImg    from '../../assets/SEM/Video-editing.webp'
 import ecommerceImg from '../../assets/SEM/E-commerce.webp'
@@ -102,7 +102,7 @@ export default function SEMAdTypes() {
               </div>
 
               <div className="flex justify-center lg:justify-start">
-                <a href="/ARA-Marketing/contact-us"
+                <a href="/contact-us"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px]
                     font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
                   style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 6px 20px ${color}35` }}>

@@ -27,23 +27,23 @@ export default function OMCTA() {
         {/* Split layout */}
         <div className="flex flex-col lg:flex-row gap-12 items-center reveal">
 
-          {/* Left: image — outer wrapper (no overflow-hidden so badge is visible) */}
+          {/* Left: image â€” outer wrapper (no overflow-hidden so badge is visible) */}
           <div className="w-full lg:w-[460px] flex-shrink-0">
             <div className="relative pt-6 pr-6 sm:pt-6 sm:pr-6">
 
-              {/* Floating badge — sits outside overflow-hidden container */}
+              {/* Floating badge â€” sits outside overflow-hidden container */}
               <div className="absolute top-0 right-0 z-10 flex items-center gap-2 px-3.5 py-2 bg-white rounded-2xl shadow-xl border border-emerald-100 animate-float"
                 style={{ boxShadow: '0 12px 32px rgba(37,99,235,0.15)' }}>
                 <CheckCircle2 size={13} className="text-emerald-500" />
                 <span className="text-[11px] font-bold text-slate-800">Results Guaranteed</span>
               </div>
 
-              {/* Image container — overflow-hidden only here */}
+              {/* Image container â€” overflow-hidden only here */}
               <div className="relative rounded-3xl overflow-hidden"
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
                 <img
                   src={omCtaImg}
-                  alt="Business growth through digital marketing campaigns — ARA Discover Marketing Thanjavur"
+                  alt="Business growth through digital marketing campaigns â€” ARA Discover Marketing Thanjavur"
                   className="w-full h-[620px] object-cover object-center"
                 />
 
@@ -99,7 +99,7 @@ export default function OMCTA() {
 
             {/* CTA buttons */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ boxShadow: '0 10px 32px rgba(37,99,235,0.28)' }}>
                 Start Your Campaign <ArrowRight size={15} />

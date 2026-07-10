@@ -27,7 +27,7 @@ const HOME_DEFAULTS = {
   title: 'Best Digital Marketing Company in Thanjavur | ARA Discover Marketing',
   description: 'ARA Discover Marketing is one of the best digital marketing companies in Thanjavur and offers best digital marketing services in Thanjavur for business growth.',
   keywords: 'Best digital marketing company in thanjavur, Best digital marketing services in thanjavur',
-  canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/',
+  canonical: 'https://discovermarketing.co/',
 }
 
 export default function useSEO({ title, description, keywords, canonical, ogImage, schema }) {

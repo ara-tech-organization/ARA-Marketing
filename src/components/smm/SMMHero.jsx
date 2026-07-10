@@ -24,7 +24,7 @@ export default function SMMHero() {
           <div className="text-center lg:text-left">
             {/* Breadcrumb */}
             <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
+              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
               <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
               <span className="whitespace-nowrap">Digital Marketing</span>
               <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
@@ -57,7 +57,7 @@ export default function SMMHero() {
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-6 py-3 text-white
                   rounded-full text-sm font-semibold transition-all duration-300"
               >
@@ -88,7 +88,7 @@ export default function SMMHero() {
             </div>
           </div>
 
-          {/* Hidden SEO image — primary keyword */}
+          {/* Hidden SEO image â€” primary keyword */}
           <img
             src={smmHeroImg}
             alt="Best Social Media Marketing Services in Thanjavur - ARA Discover Marketing"

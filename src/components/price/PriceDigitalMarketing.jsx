@@ -51,7 +51,7 @@ export default function PriceDigitalMarketing() {
 
       <div className="relative max-w-[960px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4"
             style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
@@ -69,7 +69,7 @@ export default function PriceDigitalMarketing() {
           </p>
         </div>
 
-        {/* ── Plan Cards ── */}
+        {/* â”€â”€ Plan Cards â”€â”€ */}
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 gap-5 items-start">
 
           {/* PRO Card */}
@@ -86,7 +86,7 @@ export default function PriceDigitalMarketing() {
                 <span className="text-[11px] font-bold uppercase tracking-widest text-blue-600">PRO</span>
               </div>
               <div className="flex items-end gap-1.5 mb-1">
-                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">₹35,000</span>
+                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">â‚¹35,000</span>
                 <span className="text-[13px] text-slate-400 font-medium mb-1">/month</span>
               </div>
               <p className="text-[12px] text-slate-400">Perfect for growing brands</p>
@@ -99,7 +99,7 @@ export default function PriceDigitalMarketing() {
 
             {/* CTA */}
             <div className="px-6 pb-6 pt-2">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="block w-full text-center py-3 rounded-xl text-[13px] font-bold text-blue-600 transition-all duration-200 hover:text-blue-700"
                 style={{ border: '1px solid #bfdbfe', background: '#eff6ff' }}>
                 Get Started with PRO
@@ -133,7 +133,7 @@ export default function PriceDigitalMarketing() {
                 <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#0ea5e9' }}>PRO+</span>
               </div>
               <div className="flex items-end gap-1.5 mb-1">
-                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">₹50,000</span>
+                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">â‚¹50,000</span>
                 <span className="text-[13px] text-slate-400 font-medium mb-1">/month</span>
               </div>
               <p className="text-[12px] text-slate-400">Full-scale digital domination</p>
@@ -146,7 +146,7 @@ export default function PriceDigitalMarketing() {
 
             {/* CTA */}
             <div className="px-6 pb-6 pt-2">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="block w-full text-center py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 6px 24px rgba(37,99,235,0.28)' }}>
                 Get Started with PRO+

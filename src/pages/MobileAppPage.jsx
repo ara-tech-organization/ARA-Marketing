@@ -21,20 +21,27 @@ const maSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/mobile-application-development',
+      '@id': 'https://discovermarketing.co/services/mobile-application-development',
       name: 'Mobile Application Development Company in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing is a top Mobile Application Development Company in Thanjavur developing innovative iOS and Android applications with AI-powered features.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -84,7 +91,7 @@ const maSchema = {
         {
           '@type': 'Question',
           name: 'What platforms do you develop for?',
-          acceptedAnswer: { '@type': 'Answer', text: 'We develop for Android (Kotlin/Java), iOS (Swift), and cross-platform (Flutter, React Native) — covering every major mobile platform your audience uses.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'We develop for Android (Kotlin/Java), iOS (Swift), and cross-platform (Flutter, React Native) Ã¢â‚¬â€ covering every major mobile platform your audience uses.' },
         },
       ],
     },
@@ -97,7 +104,7 @@ export default function MobileAppPage() {
     title: 'Mobile Application Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a top Mobile Application Development Company in Thanjavur developing innovative iOS and Android applications with AI-powered features.',
     keywords: 'best app development agencies in thanjavur, custom mobile app development services in thanjavur, e commerce mobile app development services in thanjavur, mobile application development agency in thanjavur, mobile application development service in thanjavur, android app development company in thanjavur, ios and android development in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/mobile-application-development',
+    canonical: 'https://discovermarketing.co/services/mobile-application-development',
     ogImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: maSchema,
   })

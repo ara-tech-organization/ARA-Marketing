@@ -18,9 +18,9 @@ const quickWins = [
 ]
 
 const orders = [
-  { id: '#EC-1842', product: 'Blue Denim Jacket',  amount: '₹2,499', status: 'Confirmed', dot: '#2563eb' },
-  { id: '#EC-1841', product: 'Wireless Earbuds Pro', amount: '₹3,999', status: 'Shipping',  dot: '#0ea5e9' },
-  { id: '#EC-1840', product: 'Silk Saree (Red)',    amount: '₹5,499', status: 'Delivered', dot: '#2563eb' },
+  { id: '#EC-1842', product: 'Blue Denim Jacket',  amount: 'â‚¹2,499', status: 'Confirmed', dot: '#2563eb' },
+  { id: '#EC-1841', product: 'Wireless Earbuds Pro', amount: 'â‚¹3,999', status: 'Shipping',  dot: '#0ea5e9' },
+  { id: '#EC-1840', product: 'Silk Saree (Red)',    amount: 'â‚¹5,499', status: 'Delivered', dot: '#2563eb' },
 ]
 
 export default function ECHero() {
@@ -41,14 +41,14 @@ export default function ECHero() {
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7 py-10 sm:py-14">
         <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
 
-          {/* ── Left: Text ── */}
+          {/* â”€â”€ Left: Text â”€â”€ */}
           <div className="flex-1 min-w-0 lg:pr-4 text-center md:text-left">
 
             {/* Breadcrumb */}
             <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
+              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
               <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <a href="/ARA-Marketing/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
+              <a href="/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
               <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
               <span className="whitespace-nowrap text-blue-600 font-medium">Ecommerce Website</span>
             </nav>
@@ -88,10 +88,10 @@ export default function ECHero() {
 
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-wrap justify-center md:justify-start gap-3 mb-10">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
                 style={{ background: '#2563eb', boxShadow: '0 4px 16px rgba(37,99,235,0.22)' }}>
-                Start Your E-commerce Journey Today <ArrowRight size={15} />
+                Take a First Step <ArrowRight size={15} />
               </a>
               <a href="#ec-intro"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold border-2 border-blue-500 text-blue-600 transition-all duration-300 hover:bg-blue-50">
@@ -114,7 +114,7 @@ export default function ECHero() {
             </div>
           </div>
 
-          {/* ── Right: Ecommerce Dashboard Mockup ── */}
+          {/* â”€â”€ Right: Ecommerce Dashboard Mockup â”€â”€ */}
           <div className="animate-hero-visual hidden md:block md:w-[360px] lg:w-[460px] flex-shrink-0">
             <div className="relative mt-6">
 
@@ -144,7 +144,7 @@ export default function ECHero() {
                   <div className="flex items-end justify-between gap-2 mb-3">
                     <div>
                       <p className="text-[10px] text-slate-400 font-semibold mb-1">TODAY'S REVENUE</p>
-                      <p className="text-[22px] font-black text-slate-900 leading-none">₹2,45,800</p>
+                      <p className="text-[22px] font-black text-slate-900 leading-none">â‚¹2,45,800</p>
                     </div>
                     <span className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg"
                       style={{ background: 'rgba(14,165,233,0.1)', color: '#0ea5e9' }}>
@@ -172,7 +172,7 @@ export default function ECHero() {
                   {[
                     { val: '142', lbl: 'Orders Today',    color: '#2563eb', icon: Package },
                     { val: '98%', lbl: 'Fulfillment Rate', color: '#0ea5e9', icon: CheckCircle2 },
-                    { val: '4.9★', lbl: 'Store Rating',   color: '#2563eb', icon: Star },
+                    { val: '4.9â˜…', lbl: 'Store Rating',   color: '#2563eb', icon: Star },
                   ].map(({ val, lbl, color, icon: Icon }, i) => (
                     <div key={lbl} className="flex-1 text-center py-3.5"
                       style={{ borderRight: i < 2 ? '1px solid #f1f5f9' : 'none' }}>
@@ -213,7 +213,7 @@ export default function ECHero() {
                 </div>
                 <div>
                   <p className="text-[9.5px] text-slate-400 font-semibold leading-none mb-0.5">Payment Success</p>
-                  <p className="text-[15px] font-black text-slate-800 leading-tight">₹8,499</p>
+                  <p className="text-[15px] font-black text-slate-800 leading-tight">â‚¹8,499</p>
                 </div>
               </div>
 

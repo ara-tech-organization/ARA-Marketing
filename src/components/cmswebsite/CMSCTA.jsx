@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Phone, Globe, Sparkles, CheckCircle2, Users, Star, Clock } from 'lucide-react'
+import { Phone, Globe, Sparkles, CheckCircle2, Users, Star, Clock } from 'lucide-react'
 
 const stats = [
   { icon: Globe,  val: '200+', lbl: 'WordPress Sites Delivered', color: '#2563eb' },
@@ -65,20 +65,13 @@ export default function CMSCTA() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
                 style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}
                 onMouseEnter={e => e.currentTarget.style.boxShadow = '0 12px 36px rgba(37,99,235,0.4)'}
                 onMouseLeave={e => e.currentTarget.style.boxShadow = '0 8px 28px rgba(37,99,235,0.28)'}
               >
                 <Phone size={14} /> Call Us Now
-              </a>
-              <a
-                href="/ARA-Marketing/contact-us"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold transition-all duration-300 hover:scale-[1.03]"
-                style={{ background: 'white', border: '1.5px solid rgba(37,99,235,0.3)', color: '#1d4ed8', boxShadow: '0 4px 16px rgba(37,99,235,0.1)' }}
-              >
-                Talk to an Expert <ArrowRight size={14} />
               </a>
             </div>
 

@@ -30,7 +30,7 @@ export default function SEMCTA() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-10 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px]
             font-bold uppercase tracking-widest mb-6 bg-white border border-blue-200 text-blue-600 shadow-sm">
@@ -50,7 +50,7 @@ export default function SEMCTA() {
 
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-4 mb-10">
-            <a href="/ARA-Marketing/contact-us"
+            <a href="tel:+918110025254"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full
                 text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
               style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>
@@ -65,7 +65,7 @@ export default function SEMCTA() {
           </div>
         </div>
 
-        {/* ── Package card ── */}
+        {/* â”€â”€ Package card â”€â”€ */}
         <div className="reveal rounded-3xl overflow-hidden border border-blue-100"
           style={{ boxShadow: '0 20px 60px rgba(37,99,235,0.10)' }}>
 

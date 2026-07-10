@@ -1,4 +1,4 @@
-﻿import { Code2, Smartphone, Zap, DollarSign, Users, Award, ArrowRight } from 'lucide-react'
+import { Code2, Smartphone, Zap, DollarSign, Users, Award, ArrowRight } from 'lucide-react'
 
 const reasons = [
   {
@@ -127,7 +127,7 @@ export default function SWWhyUs() {
             </div>
 
             <a
-              href="/ARA-Marketing/contact-us"
+              href="tel:+918110025254"
               className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-full text-[13px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
               style={{ background: 'linear-gradient(135deg, #2563eb, #1d4ed8)' }}
             >

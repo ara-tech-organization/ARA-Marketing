@@ -1,8 +1,8 @@
-﻿import { Quote, Star, Users, CheckCircle2 } from 'lucide-react'
+import { Quote, Star, Users, CheckCircle2 } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "Ara's dynamic website solution helped us manage our content easily and improved our online engagement and sales significantly.",
+    quote: "ARA's dynamic website solution helped us manage our content easily and improved our online engagement and sales significantly.",
     name: 'Ravi Kumar',
     role: 'Business Owner, Thanjavur',
     tag: 'E-Commerce',
@@ -10,7 +10,7 @@ const testimonials = [
     barColor: '#3b82f6',
   },
   {
-    quote: "Ara's Web development team is highly professional and our website is now highly visualing, faster, scalable, and easy to update.",
+    quote: "ARA's Web development team is highly professional and our website is now highly visualing, faster, scalable, and easy to update.",
     name: 'Akash Chopra',
     role: 'Startup Founder',
     tag: 'Startup',

@@ -6,7 +6,7 @@ import {
 
 const stats = [
   { value: '200+', label: 'Apps Delivered'    },
-  { value: '5★',   label: 'Client Rating'     },
+  { value: '5â˜…',   label: 'Client Rating'     },
   { value: '100%', label: 'On-Time Delivery'  },
   { value: '3+',   label: 'Years Experience'  },
 ]
@@ -27,7 +27,7 @@ const tabItems = [
 ]
 
 const appCards = [
-  { label: 'Total Revenue', val: '₹2.4M', change: '+24%', color: '#2563eb',  bg: '#eff6ff' },
+  { label: 'Total Revenue', val: 'â‚¹2.4M', change: '+24%', color: '#2563eb',  bg: '#eff6ff' },
   { label: 'Active Users',  val: '12.4K', change: '+18%', color: '#0ea5e9',  bg: '#e0f2fe' },
 ]
 
@@ -43,21 +43,21 @@ export default function MAHero() {
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.07) 1px,transparent 1px)', backgroundSize: '36px 36px' }} />
 
-      {/* Soft colour wash — top right only */}
+      {/* Soft colour wash â€” top right only */}
       <div className="absolute top-0 right-0 w-[520px] h-[520px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle,rgba(219,234,254,0.55) 0%,transparent 65%)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
 
-          {/* ── LEFT: Text ── */}
+          {/* â”€â”€ LEFT: Text â”€â”€ */}
           <div className="flex-1 min-w-0 animate-hero-enter text-center lg:text-left flex flex-col justify-center">
 
             {/* Breadcrumb */}
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
-              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
+              <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
               <ChevronRight size={12} className="text-slate-300" />
-              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
+              <a href="/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
               <ChevronRight size={12} className="text-slate-300" />
               <span className="text-blue-600 font-medium">Mobile App Development</span>
             </nav>
@@ -65,10 +65,10 @@ export default function MAHero() {
             {/* Badge */}
             <span className="inline-flex self-start items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-7 text-blue-700"
               style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.20)' }}>
-              <Smartphone size={10} /> Mobile App Development · Thanjavur
+              <Smartphone size={10} /> Mobile App Development Â· Thanjavur
             </span>
 
-            {/* H1 — 2 lines */}
+            {/* H1 â€” 2 lines */}
             <h1 className="font-bold leading-[1.2] tracking-tight mb-5 text-slate-900"
               style={{ fontSize: '50px' }}>
               <span style={{ display: 'block' }}>Build Powerful Mobile</span>
@@ -104,7 +104,7 @@ export default function MAHero() {
 
             {/* CTAs */}
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Take a First Step <ArrowRight size={14} />
@@ -132,7 +132,7 @@ export default function MAHero() {
             </div>
           </div>
 
-          {/* ── RIGHT: Phone Frame Mockup ── */}
+          {/* â”€â”€ RIGHT: Phone Frame Mockup â”€â”€ */}
           <div className="hidden md:flex flex-col items-center lg:w-[500px] flex-shrink-0 reveal-right">
             <div className="relative">
 
@@ -140,7 +140,7 @@ export default function MAHero() {
               <div className="absolute inset-0 -m-8 rounded-full pointer-events-none"
                 style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />
 
-              {/* Floating badge — AI */}
+              {/* Floating badge â€” AI */}
               <div className="absolute -top-8 -left-14 z-20 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white animate-float"
                 style={{ border: '1px solid #dbeafe', boxShadow: '0 8px 28px rgba(37,99,235,0.15)' }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -153,7 +153,7 @@ export default function MAHero() {
                 </div>
               </div>
 
-              {/* Floating badge — rating */}
+              {/* Floating badge â€” rating */}
               <div className="absolute -bottom-8 -right-14 z-20 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white animate-float"
                 style={{ border: '1px solid #bae6fd', boxShadow: '0 8px 28px rgba(14,165,233,0.16)', animationDelay: '1.6s' }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -162,24 +162,24 @@ export default function MAHero() {
                 </div>
                 <div>
                   <p className="text-[8px] text-slate-400 font-semibold leading-none mb-0.5">Client Rating</p>
-                  <p className="text-[13px] font-black text-slate-800 leading-tight">5★ Reviews</p>
+                  <p className="text-[13px] font-black text-slate-800 leading-tight">5â˜… Reviews</p>
                 </div>
               </div>
 
-              {/* ── iPhone 17 frame ── */}
+              {/* â”€â”€ iPhone 17 frame â”€â”€ */}
               <div className="relative mx-auto"
                 style={{ width: 300, filter: 'drop-shadow(0 36px 72px rgba(37,99,235,0.20))' }}>
 
-                {/* Side buttons — volume */}
+                {/* Side buttons â€” volume */}
                 <div className="absolute left-0 top-[90px] w-[3px] h-7 rounded-r-full"
                   style={{ background: '#334155', marginLeft: '-3px' }} />
                 <div className="absolute left-0 top-[128px] w-[3px] h-7 rounded-r-full"
                   style={{ background: '#334155', marginLeft: '-3px' }} />
-                {/* Side button — power */}
+                {/* Side button â€” power */}
                 <div className="absolute right-0 top-[108px] w-[3px] h-10 rounded-l-full"
                   style={{ background: '#334155', marginRight: '-3px' }} />
 
-                {/* Phone shell — titanium-style */}
+                {/* Phone shell â€” titanium-style */}
                 <div className="relative overflow-hidden"
                   style={{
                     width: 300,
@@ -210,7 +210,7 @@ export default function MAHero() {
                     <div className="flex items-center justify-between px-4 py-3"
                       style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
                       <div>
-                        <p className="text-[8px] font-semibold text-blue-200">Good Morning 👋</p>
+                        <p className="text-[8px] font-semibold text-blue-200">Good Morning ðŸ‘‹</p>
                         <p className="text-[11px] font-black text-white leading-tight">ARA Business App</p>
                       </div>
                       <div className="relative">
@@ -229,7 +229,7 @@ export default function MAHero() {
                           style={{ background: bg, border: `1px solid ${color}18` }}>
                           <p className="text-[8px] font-semibold mb-1" style={{ color: `${color}99` }}>{label}</p>
                           <p className="text-[14px] font-black leading-none" style={{ color }}>{val}</p>
-                          <p className="text-[8px] mt-1 font-bold text-emerald-600">{change} ↑</p>
+                          <p className="text-[8px] mt-1 font-bold text-emerald-600">{change} â†‘</p>
                         </div>
                       ))}
                     </div>
@@ -258,9 +258,9 @@ export default function MAHero() {
                         <p className="text-[7.5px] font-bold text-blue-600">See all</p>
                       </div>
                       {[
-                        { name: 'Priya S.',    amount: '₹2,499', dot: '#0ea5e9' },
-                        { name: 'Karthik R.',  amount: '₹5,200', dot: '#2563eb' },
-                        { name: 'Meena Co.',   amount: '₹8,750', dot: '#60a5fa' },
+                        { name: 'Priya S.',    amount: 'â‚¹2,499', dot: '#0ea5e9' },
+                        { name: 'Karthik R.',  amount: 'â‚¹5,200', dot: '#2563eb' },
+                        { name: 'Meena Co.',   amount: 'â‚¹8,750', dot: '#60a5fa' },
                       ].map(({ name, amount, dot }) => (
                         <div key={name} className="flex items-center gap-2 px-3 py-2"
                           style={{ borderBottom: '1px solid #f8fafc' }}>

@@ -5,7 +5,7 @@ const bullets = [
   'Native iOS & Android apps built for performance',
   'AI mobile app development in Thanjavur',
   'Cross-platform solutions with consistent UX',
-  'Full-cycle — strategy, design, launch & support',
+  'Full-cycle â€” strategy, design, launch & support',
   'Transparent process & timely delivery',
 ]
 
@@ -19,7 +19,7 @@ const features = [
   {
     icon: Cpu,
     title: 'AI-Driven Intelligence',
-    desc: 'Our AI mobile app development in Thanjavur embeds smart features — recommendation engines, chatbots, predictive analytics — turning your app into a competitive asset.',
+    desc: 'Our AI mobile app development in Thanjavur embeds smart features â€” recommendation engines, chatbots, predictive analytics â€” turning your app into a competitive asset.',
     color: '#2563eb',
   },
   {
@@ -55,7 +55,7 @@ export default function MAIntro() {
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Top: split layout ── */}
+        {/* â”€â”€ Top: split layout â”€â”€ */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-center mb-14 lg:mb-16">
 
           {/* LEFT: text */}
@@ -70,7 +70,7 @@ export default function MAIntro() {
 
               {/* H2 */}
               <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-slate-900 mb-5">
-                Mobile Apps —{' '}
+                Mobile Apps â€”{' '}
                 <span style={{
                   background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
                   WebkitBackgroundClip: 'text',
@@ -97,7 +97,7 @@ export default function MAIntro() {
             </ul>
 
             {/* CTA */}
-            <a href="/ARA-Marketing/contact-us"
+            <a href="tel:+918110025254"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:gap-3"
               style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
               Start Your App Project <ArrowRight size={14} />
@@ -132,12 +132,12 @@ export default function MAIntro() {
                     We are one of the best app development agencies in Thanjavur offering innovative solutions that seamlessly integrate with your digital strategy.
                   </p>
                   <p className="text-[12px]" style={{ color: '#93c5fd' }}>
-                    Native iOS &amp; Android apps, cross-platform solutions, and AI-powered features — all under one roof.
+                    Native iOS &amp; Android apps, cross-platform solutions, and AI-powered features â€” all under one roof.
                   </p>
                 </div>
               </div>
 
-              {/* Floating badge — top left */}
+              {/* Floating badge â€” top left */}
               <div className="absolute -top-5 left-6 bg-white rounded-2xl px-4 py-3 hidden md:flex items-center gap-3 animate-float"
                 style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.28)', border: '1px solid rgba(37,99,235,0.15)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -150,7 +150,7 @@ export default function MAIntro() {
                 </div>
               </div>
 
-              {/* Floating badge — bottom right */}
+              {/* Floating badge â€” bottom right */}
               <div className="absolute -bottom-5 right-6 bg-white rounded-2xl px-4 py-3 hidden md:flex items-center gap-3 animate-float"
                 style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.22)', border: '1px solid rgba(37,99,235,0.15)', animationDelay: '1.6s' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -167,7 +167,7 @@ export default function MAIntro() {
           </div>
         </div>
 
-        {/* ── Bottom: feature cards ── */}
+        {/* â”€â”€ Bottom: feature cards â”€â”€ */}
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 reveal">
           {features.map(({ icon: Icon, title, desc, color }) => (
             <div key={title}
@@ -202,7 +202,7 @@ export default function MAIntro() {
           <p className="text-[13.5px] mb-3" style={{ color: '#64748b' }}>
             As a leading mobile app development company in Thanjavur, we make your brand shine in the competitive market.
           </p>
-          <a href="/ARA-Marketing/contact-us"
+          <a href="/contact-us"
             className="inline-flex items-center gap-2 text-[13.5px] font-semibold transition-all duration-200 hover:gap-3"
             style={{ color: '#2563eb' }}>
             Start Your App Project Today <ArrowRight size={14} />

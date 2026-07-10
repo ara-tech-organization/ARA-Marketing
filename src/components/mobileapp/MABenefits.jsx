@@ -80,7 +80,7 @@ export default function MABenefits() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Split layout ── */}
+        {/* â”€â”€ Split layout â”€â”€ */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
 
           {/* LEFT: sticky heading panel */}
@@ -108,7 +108,7 @@ export default function MABenefits() {
                 style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
 
               <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
-                Our mobile application development service in Thanjavur delivers measurable results — from increased engagement and streamlined operations to a higher ROI for your business.
+                Our mobile application development service in Thanjavur delivers measurable results â€” from increased engagement and streamlined operations to a higher ROI for your business.
               </p>
             </div>
 
@@ -122,7 +122,7 @@ export default function MABenefits() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact-us"
+            <a href="tel:+918110025254"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:gap-3"
               style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
               Start Your App Project <ArrowRight size={13} />

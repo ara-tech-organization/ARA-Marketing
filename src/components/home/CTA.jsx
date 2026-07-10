@@ -50,7 +50,7 @@ export default function CTA() {
             </h2>
 
             <p className="text-[17px] text-white/55 leading-[1.75] mb-11 max-w-[620px] mx-auto">
-              Partner with ARA Discover Marketing — the best digital marketing agency in Thanjavur —
+              Partner with ARA Discover Marketing â€” the best digital marketing agency in Thanjavur â€”
               to achieve higher visibility, better engagement and increased revenue through
               result-driven digital marketing strategies.
             </p>
@@ -58,7 +58,7 @@ export default function CTA() {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 justify-center mb-11">
               <a
-                href="tel:+919876543210"
+                href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2.5 px-8 py-3.5 text-white
                   rounded-full font-bold text-sm transition-all duration-300"
               >

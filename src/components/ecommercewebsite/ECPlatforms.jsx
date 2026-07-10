@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { CheckCircle2, ArrowRight, Layers, Zap, Globe } from 'lucide-react'
 import shopifyImg    from '../../assets/E-commerce/Shopify.webp'
 import wooImg        from '../../assets/E-commerce/woo.webp'
@@ -144,7 +144,7 @@ export default function ECPlatforms() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: '#2563eb', boxShadow: `0 8px 24px ${accent}35` }}>
               Build with {plat.name} <ArrowRight size={13} />

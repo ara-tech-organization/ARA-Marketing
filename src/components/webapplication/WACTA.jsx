@@ -1,4 +1,4 @@
-﻿import { Shield, Clock, Headphones, Cpu, ArrowRight, Phone, CheckCircle2 } from 'lucide-react'
+import { Shield, Clock, Headphones, Cpu, ArrowRight, Phone, CheckCircle2 } from 'lucide-react'
 
 const guarantees = [
   {
@@ -159,7 +159,7 @@ export default function WACTA() {
                 {/* Buttons */}
                 <div className="flex flex-col xs:flex-row gap-2.5 xs:gap-3 mt-auto">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+918110025254"
                     className="flex-1 inline-flex items-center justify-center gap-2 px-4 xs:px-5 py-3 xs:py-3.5 rounded-xl text-[12.5px] xs:text-[13px] font-bold text-blue-700 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
                   >
                     <Phone size={13} /> Call Us Now

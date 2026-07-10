@@ -88,9 +88,9 @@ function DropdownPanel({ items, title, onClose, pathname }) {
         style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
         <div>
           <p className="text-[12px] font-semibold" style={{ color: 'rgba(255,255,255,0.80)' }}>Need a custom solution?</p>
-          <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>Free consultation · No commitment</p>
+          <p className="text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>Free consultation Â· No commitment</p>
         </div>
-        <a href="/ARA-Marketing/contact-us" onClick={onClose}
+        <a href="/contact-us" onClick={onClose}
           className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full
             text-white text-[12px] font-semibold transition-all duration-200 flex-shrink-0 hover:opacity-90"
           style={{ background: 'linear-gradient(135deg, #2563eb, #4f46e5)' }}>
@@ -155,20 +155,20 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ─── Desktop nav ─── */}
+      {/* â”€â”€â”€ Desktop nav â”€â”€â”€ */}
       <div className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
 
         {/* top micro-bar */}
         <div className="pointer-events-auto w-full hidden lg:flex items-center justify-between px-8 py-1.5"
           style={{ background: 'linear-gradient(90deg,#1e3a8a,#2563eb,#4f46e5)', fontSize: '11.5px', color: 'rgba(255,255,255,0.85)' }}>
-          {/* left — phone */}
+          {/* left â€” phone */}
           <a href="tel:+918110025254" className="flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-150 no-underline">
             <Phone size={11} />
             <span className="font-medium">+91 81100 25254</span>
           </a>
-          {/* center — tagline */}
+          {/* center â€” tagline */}
           <span className="font-semibold tracking-wide">Best Digital Marketing Agency in Thanjavur</span>
-          {/* right — email */}
+          {/* right â€” email */}
           <a href="mailto:aradiscovermarketing@gmail.com" className="flex items-center gap-1.5 text-white/80 hover:text-white transition-colors duration-150 no-underline">
             <span className="font-medium">aradiscovermarketing@gmail.com</span>
           </a>
@@ -270,7 +270,7 @@ export default function Navbar() {
               {/* CTA */}
               <div className="hidden lg:flex items-center flex-shrink-0">
                 <a
-                  href="/ARA-Marketing/contact-us"
+                  href="/contact-us"
                   className="inline-flex items-center gap-2 px-5 py-2.5
                     text-white rounded-xl text-[13px] font-semibold transition-all duration-300
                     hover:opacity-90 hover:scale-[1.03] hover:-translate-y-0.5"
@@ -294,7 +294,7 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* ─── Mobile menu ─── */}
+      {/* â”€â”€â”€ Mobile menu â”€â”€â”€ */}
       <div
         className={`lg:hidden fixed top-[82px] left-3 right-3 z-40 rounded-2xl
           overflow-y-auto max-h-[calc(100vh-90px)] transition-all duration-300
@@ -426,7 +426,7 @@ export default function Navbar() {
 
           {/* Get Started */}
           <div className="pt-1">
-            <a href="/ARA-Marketing/contact-us" onClick={() => setOpen(false)}
+            <a href="/contact-us" onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-4
                 bg-gradient-to-r from-blue-600 to-indigo-600 text-white
                 rounded-2xl text-[13.5px] font-semibold transition-all duration-300

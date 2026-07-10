@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { Search, Monitor, Play, ShoppingBag, CheckCircle2, Layers, ArrowRight } from 'lucide-react'
 import googleImg   from '../../assets/SEM/google.webp'
 import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
@@ -156,7 +156,7 @@ export default function SEMServices() {
             </div>
 
             <div className="flex justify-center sm:justify-start">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white text-[13px]
                   font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
                 style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}35` }}>

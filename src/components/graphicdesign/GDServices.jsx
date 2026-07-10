@@ -1,4 +1,4 @@
-﻿import { Check, ArrowRight, Layers } from 'lucide-react'
+import { Check, ArrowRight, Layers } from 'lucide-react'
 import logoImg        from '../../assets/GD/LogoDesign.webp'
 import bannerImg      from '../../assets/GD/Banner .webp'
 import pamphletImg    from '../../assets/GD/Pamphlet.webp'
@@ -175,7 +175,7 @@ export default function GDServices() {
                 </div>
 
                 <a
-                  href="/ARA-Marketing/contact-us"
+                  href="/contact-us"
                   className="flex items-center gap-1.5 text-[11px] font-bold transition-all duration-200 group/link"
                   style={{ color: accent }}
                 >

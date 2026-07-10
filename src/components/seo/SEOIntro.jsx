@@ -1,4 +1,4 @@
-﻿import { Cpu, Globe2, FileText, MapPin, Smartphone, ArrowRight } from 'lucide-react'
+import { Cpu, Globe2, FileText, MapPin, Smartphone } from 'lucide-react'
 import seoIntroImg from '../../assets/SEO/S2.webp'
 
 const services = [
@@ -79,12 +79,6 @@ export default function SEOIntro() {
                   We also offer content marketing and SEO in Thanjavur for brands to build authority, drive relevant traffic, and improve customer engagement by delivering high-quality optimized content.
                 </p>
               </div>
-
-              <a href="#seo-services"
-                className="mt-8 inline-flex items-center gap-2 text-blue-600 font-semibold text-[14px]
-                  hover:gap-3 transition-all duration-300">
-                View All SEO Services <ArrowRight size={15} />
-              </a>
             </div>
           </div>
         </div>

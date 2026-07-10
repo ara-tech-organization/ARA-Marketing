@@ -16,7 +16,7 @@ const services = [
     heading: 'Strategic Email Marketing Campaigns',
     desc: [
       'Email marketing remains one of the most powerful ways to reach targeted customers and improve conversions. As one of the best email marketing agencies in Thanjavur, we craft campaigns that improve open rates and drive measurable results.',
-      'We are the best email marketing service in Thanjavur for businesses seeking customer-focused strategies. We provide bulk email advertising services in Thanjavur — including bulk sending emails in Thanjavur for businesses across sectors.',
+      'We are the best email marketing service in Thanjavur for businesses seeking customer-focused strategies. We provide bulk email advertising services in Thanjavur â€” including bulk sending emails in Thanjavur for businesses across sectors.',
       'As a trusted email marketing service provider in Thanjavur, our email marketing advertising in Thanjavur delivers consistent, measurable ROI.',
     ],
     items: [
@@ -168,7 +168,7 @@ export default function OMServices() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ background: `linear-gradient(135deg,${s.color},${s.color}cc)`, boxShadow: `0 6px 20px ${s.color}28` }}>
               Get Started <ArrowRight size={13} />

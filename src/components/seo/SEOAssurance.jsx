@@ -1,4 +1,4 @@
-﻿import { FileBarChart, Headphones, Activity, Shield, TrendingUp, Cpu, Award, ArrowRight } from 'lucide-react'
+import { FileBarChart, Headphones, Activity, Shield, TrendingUp, Cpu, Award, ArrowRight } from 'lucide-react'
 
 const promises = [
   { icon: FileBarChart, title: 'Monthly SEO Reports & Performance Tracking',       desc: 'Transparent monthly reports covering keyword rankings, traffic trends, and actionable growth insights.',                       color: '#2563eb' },
@@ -72,11 +72,11 @@ export default function SEOAssurance() {
                 Every client gets a dedicated commitment from our team — from transparent reporting to AI-powered strategy. We don't just rank you, we grow your business.
               </p>
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-6 py-3 text-white
                   rounded-xl text-[13px] font-semibold transition-all duration-300 hover:-translate-y-0.5"
               >
-                Call our team today for customized Search Engine Optimization Service in Thanjavur <ArrowRight size={14} />
+                Call Us <ArrowRight size={14} />
               </a>
             </div>
           </div>

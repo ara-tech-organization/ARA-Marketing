@@ -6,7 +6,6 @@ import SEMHero         from '../components/sem/SEMHero'
 import SEMIntro        from '../components/sem/SEMIntro'
 import SEMWhyUs        from '../components/sem/SEMWhyUs'
 import SEMServices     from '../components/sem/SEMServices'
-import SEMAdTypes      from '../components/sem/SEMAdTypes'
 import SEMStats        from '../components/sem/SEMStats'
 import SEMProcess      from '../components/sem/SEMProcess'
 import SEMAssurance    from '../components/sem/SEMAssurance'
@@ -19,20 +18,27 @@ const semSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-marketing',
+      '@id': 'https://discovermarketing.co/services/search-engine-marketing',
       name: 'Best Search Engine Marketing Company (SEM) in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -95,7 +101,7 @@ export default function SEMPage() {
     title: 'Best Search Engine Marketing Company (SEM) in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is the best Search Engine Marketing Company (SEM) in Thanjavur, helping businesses increase traffic, generate quality leads, and grow online.',
     keywords: 'google ads and ppc service in thanjavur, google paid advertising in thanjavur, ppc ads service in thanjavur, youtube ads in thanjavur, ppc search ads in thanjavur, shopping ads in thanjavur, best search engine marketing sem agencies in thanjavur, search engine marketing consulting services in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-marketing',
+    canonical: 'https://discovermarketing.co/services/search-engine-marketing',
     ogImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: semSchema,
   })
@@ -108,7 +114,6 @@ export default function SEMPage() {
         <SEMIntro />
         <SEMWhyUs />
         <SEMServices />
-        <SEMAdTypes />
         <SEMStats />
         <SEMProcess />
         <SEMAssurance />

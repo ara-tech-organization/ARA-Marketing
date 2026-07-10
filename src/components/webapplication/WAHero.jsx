@@ -7,12 +7,12 @@ import {
 const highlights = [
   { val: '200+', label: 'Apps Delivered' },
   { val: '98%',  label: 'Client Satisfaction' },
-  { val: '5★',   label: 'Average Rating' },
+  { val: '5â˜…',   label: 'Average Rating' },
 ]
 
 const kpis = [
   { label: 'Total Users', val: '12,450', change: '+18%', color: '#3b82f6' },
-  { label: 'Revenue',     val: '₹2.1M',  change: '+24%', color: '#0891b2' },
+  { label: 'Revenue',     val: 'â‚¹2.1M',  change: '+24%', color: '#0891b2' },
   { label: 'Orders',      val: '843',    change: '+12%', color: '#6366f1' },
   { label: 'Uptime',      val: '99.9%',  change: 'Stable', color: '#10b981' },
 ]
@@ -28,9 +28,9 @@ const sidebarItems = [
 ]
 
 const tableRows = [
-  { name: 'Priya Sharma',    type: 'Web App Order',  amount: '₹45,000',  status: 'Completed',   dot: '#10b981' },
-  { name: 'Karthik Rajan',   type: 'Mobile App Dev', amount: '₹72,000',  status: 'In Progress', dot: '#3b82f6' },
-  { name: 'Meena Logistics', type: 'eCommerce App',  amount: '₹1,20,000',status: 'Review',      dot: '#f59e0b' },
+  { name: 'Priya Sharma',    type: 'Web App Order',  amount: 'â‚¹45,000',  status: 'Completed',   dot: '#10b981' },
+  { name: 'Karthik Rajan',   type: 'Mobile App Dev', amount: 'â‚¹72,000',  status: 'In Progress', dot: '#3b82f6' },
+  { name: 'Meena Logistics', type: 'eCommerce App',  amount: 'â‚¹1,20,000',status: 'Review',      dot: '#f59e0b' },
 ]
 
 const gradBlue = {
@@ -64,15 +64,15 @@ export default function WAHero() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
 
-          {/* ── Left: Content ── */}
+          {/* â”€â”€ Left: Content â”€â”€ */}
           <div className="flex-1 min-w-0 animate-hero-enter text-center lg:text-left">
 
             {/* Breadcrumb */}
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] mb-6"
               style={{ color: 'rgba(255,255,255,0.35)' }}>
-              <a href="/ARA-Marketing/" className="transition-colors hover:text-sky-300">Home</a>
+              <a href="/" className="transition-colors hover:text-sky-300">Home</a>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <a href="/ARA-Marketing/services/website-development" className="transition-colors hover:text-sky-300">Web Design</a>
+              <a href="/services/website-development" className="transition-colors hover:text-sky-300">Web Design</a>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
               <span className="text-sky-300 font-medium">Web Application</span>
             </nav>
@@ -128,7 +128,7 @@ export default function WAHero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-12">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#1d4ed8,#0369a1)', boxShadow: '0 8px 32px rgba(29,78,216,0.45)' }}>
                 Take a First Step <ArrowRight size={14} />
@@ -157,7 +157,7 @@ export default function WAHero() {
             </div>
           </div>
 
-          {/* ── Right: App Dashboard card ── */}
+          {/* â”€â”€ Right: App Dashboard card â”€â”€ */}
           <div className="hidden md:block lg:w-[500px] flex-shrink-0 w-full max-w-[500px] reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
@@ -185,7 +185,7 @@ export default function WAHero() {
                 </div>
                 <div>
                   <p className="text-[8px] font-semibold text-slate-400 leading-none mb-0.5">Client Rating</p>
-                  <p className="text-[12px] font-black text-white leading-tight">5★ Reviews</p>
+                  <p className="text-[12px] font-black text-white leading-tight">5â˜… Reviews</p>
                 </div>
               </div>
 
@@ -278,7 +278,7 @@ export default function WAHero() {
                         ))}
                       </div>
                       <div className="flex items-center justify-between mt-1">
-                        <span className="text-[7px] text-slate-600">Jan — Dec</span>
+                        <span className="text-[7px] text-slate-600">Jan â€” Dec</span>
                         <span className="text-[7.5px] font-bold" style={{ color: '#3b82f6' }}>+42% YoY</span>
                       </div>
                     </div>

@@ -11,9 +11,9 @@ const schema = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/about-us',
+      '@id': 'https://discovermarketing.co/about-us',
       name: 'ARA Discover Marketing',
-      url: 'https://ara-tech-organization.github.io/ARA-Marketing',
+      url: 'https://discovermarketing.co',
       description: 'ARA Discover Marketing is a leading digital marketing agency in Thanjavur helping businesses grow through innovative branding, SEO, social media marketing and performance-driven strategies.',
       foundingDate: '2022',
       founder: {
@@ -38,10 +38,11 @@ const schema = {
 export default function AboutUsPage() {
   useReveal()
   useSEO({
-    title: 'About Us | Ara Discover Marketing',
+    title: 'About Us | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a trusted digital marketing company in Thanjavur delivering SEO, social media marketing, branding, and web solutions for business growth.',
     keywords: 'ARA Discover Marketing, digital marketing company in Thanjavur, best digital marketing company in Thanjavur, digital marketing services in Thanjavur, SEO services Thanjavur, social media marketing Thanjavur, branding agency Thanjavur, website development Thanjavur, online marketing agency, business growth solutions',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/about-us',
+    canonical: 'https://discovermarketing.co/about-us',
+    schema,
   })
 
   return (

@@ -36,14 +36,14 @@ export default function CMSHero() {
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 py-10 sm:py-16">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-stretch">
 
-          {/* ── Left: Text ── */}
+          {/* â”€â”€ Left: Text â”€â”€ */}
           <div className="flex-1 min-w-0 text-center lg:text-left">
 
             {/* Breadcrumb */}
             <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] mb-6 animate-hero-enter text-slate-400">
-              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
+              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
               <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <a href="/ARA-Marketing/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
+              <a href="/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
               <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
               <span className="whitespace-nowrap text-blue-600 font-medium">CMS Website</span>
             </nav>
@@ -55,7 +55,7 @@ export default function CMSHero() {
                 style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.22)' }}
               >
                 <Sparkles size={11} />
-                CMS Website Development — Thanjavur
+                CMS Website Development â€” Thanjavur
               </span>
             </div>
 
@@ -90,7 +90,7 @@ export default function CMSHero() {
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] w-fit"
                 style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 4px 20px rgba(37,99,235,0.28)' }}
               >
@@ -128,7 +128,7 @@ export default function CMSHero() {
             </div>
           </div>
 
-          {/* ── Right: CMS Dashboard Mockup ── */}
+          {/* â”€â”€ Right: CMS Dashboard Mockup â”€â”€ */}
           <div className="animate-hero-visual hidden lg:flex flex-col lg:w-[460px] flex-shrink-0 self-start mt-[60px]">
             <div className="relative flex flex-col">
 
@@ -163,7 +163,7 @@ export default function CMSHero() {
                 <div className="relative overflow-hidden" style={{ height: '480px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=300&fit=crop&auto=format&q=80"
-                    alt="CMS Website Development in Thanjavur — ARA Discover Marketing"
+                    alt="CMS Website Development in Thanjavur â€” ARA Discover Marketing"
                     className="w-full h-full object-cover"
                     loading="eager"
                   />
@@ -189,7 +189,7 @@ export default function CMSHero() {
                     { val: '40%+', lbl: 'Web Market',  color: '#2563eb' },
                     { val: '200+', lbl: 'Sites Built',  color: '#1d4ed8' },
                     { val: 'A+',   lbl: 'Performance',  color: '#60a5fa' },
-                    { val: '5★',   lbl: 'Rating',       color: '#60a5fa' },
+                    { val: '5â˜…',   lbl: 'Rating',       color: '#60a5fa' },
                   ].map(({ val, lbl, color }, i) => (
                     <div key={lbl} className="flex-1 text-center py-3.5"
                       style={{ borderRight: i < 3 ? '1px solid rgba(37,99,235,0.1)' : 'none' }}>
@@ -234,7 +234,7 @@ export default function CMSHero() {
                 </div>
                 <div>
                   <p className="text-[8px] font-medium mb-0.5 text-slate-400">Client Rating</p>
-                  <p className="text-[11px] font-black text-slate-800 leading-tight">5★ Reviews</p>
+                  <p className="text-[11px] font-black text-slate-800 leading-tight">5â˜… Reviews</p>
                 </div>
               </div>
 

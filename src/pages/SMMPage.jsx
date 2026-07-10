@@ -18,20 +18,27 @@ const smmSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/social-media-marketing',
+      '@id': 'https://discovermarketing.co/services/social-media-marketing',
       name: 'Best Social Media Marketing Services in Thanjavur',
       description: 'ARA Discover Marketing is recognized as one of the best Social Media Marketing (SMM) companies in Thanjavur, offering creative strategies and result-driven campaigns.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -74,7 +81,7 @@ const smmSchema = {
         {
           '@type': 'Question',
           name: 'What is Social Media Optimisation (SMO)?',
-          acceptedAnswer: { '@type': 'Answer', text: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brand’s online presence stronger.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'SMO means improving the visibility, engagement, audience, and content performance of your social profile to make your brandÃ¢â‚¬â„¢s online presence stronger.' },
         },
         {
           '@type': 'Question',
@@ -92,7 +99,7 @@ export default function SMMPage() {
     title: 'Best Social Media Marketing Company (SMM) in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is recognized as one of the best Social Media Marketing (SMM) companies in Thanjavur, offering creative strategies and result-driven campaigns.',
     keywords: 'best social media companies in thanjavur, best social media marketing services in thanjavur, social advertising agency in thanjavur, facebook advertising companies in thanjavur, linkedin social media marketing in thanjavur, pinterest digital marketing in thanjavur, best social media optimization SMO companies in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/social-media-marketing',
+    canonical: 'https://discovermarketing.co/services/social-media-marketing',
     ogImage: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: smmSchema,
   })

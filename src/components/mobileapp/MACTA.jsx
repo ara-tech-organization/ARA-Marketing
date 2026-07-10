@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
+import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
 
 const highlights = [
   { icon: Zap,          text: 'On-time delivery with zero compromise on quality'     },
@@ -55,7 +55,7 @@ export default function MACTA() {
             </div>
 
             {/* Phone CTA */}
-            <a href="tel:+919876543210"
+            <a href="tel:+918110025254"
               className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl transition-all duration-300 hover:scale-[1.03]"
               style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.25)' }}>
               <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -64,7 +64,7 @@ export default function MACTA() {
               </div>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#64748b' }}>Call Us Now</p>
-                <p className="text-[15px] font-black" style={{ color: '#1e293b' }}>+91 98765 43210</p>
+                <p className="text-[15px] font-black" style={{ color: '#1e293b' }}>+91 81100 25254</p>
               </div>
             </a>
           </div>

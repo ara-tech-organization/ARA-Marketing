@@ -21,12 +21,12 @@ export default function PriceCTA() {
 
         <p className="reveal text-[15px] text-slate-500 leading-relaxed mb-8 max-w-[540px] mx-auto">
           Let&apos;s talk about your goals. Our team will help you pick the best plan and
-          customize it to fit your business needs and budget — with no pressure.
+          customize it to fit your business needs and budget â€” with no pressure.
         </p>
 
         <div className="reveal flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
-            href="/ARA-Marketing/contact-us"
+            href="tel:+918110025254"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold
               text-white transition-all duration-200 hover:-translate-y-0.5"
             style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
@@ -36,7 +36,7 @@ export default function PriceCTA() {
             <ArrowRight size={15} />
           </a>
           <a
-            href="tel:+919876543210"
+            href="tel:+918110025254"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold
               text-blue-600 border border-blue-200 hover:border-blue-400 hover:bg-blue-50
               transition-all duration-200 hover:-translate-y-0.5"

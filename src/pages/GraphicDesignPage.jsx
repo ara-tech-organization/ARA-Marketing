@@ -18,21 +18,28 @@ const gdSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/graphic-design',
+      '@id': 'https://discovermarketing.co/services/graphic-design',
       name: 'ARA Discover Marketing Graphic Design Services',
       description:
         'ARA Discover Marketing offers creative, high-quality design services including logo design, brochure design, flyer design, social media creatives, business card design and complete brand identity solutions in Thanjavur.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -63,7 +70,7 @@ export default function GraphicDesignPage() {
       'ARA Discover Marketing is the Best Graphic Design Company in Thanjavur, offering creative, high-quality design services with expert solutions and fast delivery.',
     keywords:
       'best graphic design service in thanjavur, top graphic design agencies in thanjavur, top graphic design companies in thanjavur, best graphic design company in thanjavur, best brochure design in thanjavur, best advertisement design in thanjavur, best graphic design studios in thanjavur, best professional logo design in thanjavur, best business flyer design in thanjavur, leading graphic design companies in thanjavur, best graphic design agencies in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/graphic-design',
+    canonical: 'https://discovermarketing.co/services/graphic-design',
     ogImage:
       'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: gdSchema,

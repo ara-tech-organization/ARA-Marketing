@@ -54,15 +54,15 @@ export default function DWHero() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
 
-          {/* ── Left: Content ── */}
+          {/* â”€â”€ Left: Content â”€â”€ */}
           <div className="flex-1 min-w-0 animate-hero-enter text-center lg:text-left">
 
             {/* Breadcrumb */}
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] mb-6"
               style={{ color: 'rgba(255,255,255,0.35)' }}>
-              <a href="/ARA-Marketing/" className="transition-colors hover:text-sky-300">Home</a>
+              <a href="/" className="transition-colors hover:text-sky-300">Home</a>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <a href="/ARA-Marketing/services/website-development" className="transition-colors hover:text-sky-300">Web Design</a>
+              <a href="/services/website-development" className="transition-colors hover:text-sky-300">Web Design</a>
               <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
               <span className="text-sky-300 font-medium">Dynamic Website</span>
             </nav>
@@ -101,7 +101,7 @@ export default function DWHero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-12">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.35)' }}>
                 Take a First Step <ArrowRight size={14} />
@@ -130,7 +130,7 @@ export default function DWHero() {
             </div>
           </div>
 
-          {/* ── Right: CMS Dashboard card ── */}
+          {/* â”€â”€ Right: CMS Dashboard card â”€â”€ */}
           <div className="hidden md:block lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"

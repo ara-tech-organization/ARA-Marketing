@@ -12,14 +12,14 @@ const audiences = [
     image: imgLocalBusiness,
     imgPos: 'center center',
     color: '#0ea5e9',
-    tag: '★ Most Popular',
+    tag: 'â˜… Most Popular',
     tagGold: true,
     points: ['Instant online credibility', 'Local SEO ready', 'Fast to launch'],
   },
   {
     icon: Briefcase,
     title: 'Portfolio Websites for Professionals',
-    desc: 'Designers, photographers, architects, and freelancers — showcase your work with a blazing-fast portfolio site that leaves a lasting impression.',
+    desc: 'Designers, photographers, architects, and freelancers â€” showcase your work with a blazing-fast portfolio site that leaves a lasting impression.',
     image: imgPortfolio,
     imgPos: 'center center',
     color: '#2563eb',
@@ -39,7 +39,7 @@ const audiences = [
   {
     icon: Wrench,
     title: 'Small Service-Based Companies',
-    desc: 'Plumbers, electricians, consultants, salons — a professional website builds trust with local customers and generates leads around the clock.',
+    desc: 'Plumbers, electricians, consultants, salons â€” a professional website builds trust with local customers and generates leads around the clock.',
     image: imgService,
     imgPos: 'center center',
     color: '#0ea5e9',
@@ -64,7 +64,7 @@ export default function SWWhoShouldInvest() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-12 reveal">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full
             text-[10px] font-bold uppercase tracking-widest mb-4"
@@ -89,7 +89,7 @@ export default function SWWhoShouldInvest() {
           </p>
         </div>
 
-        {/* ── Cards ── */}
+        {/* â”€â”€ Cards â”€â”€ */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
           {audiences.map(({ icon: Icon, title, desc, image, imgPos, color, tag, tagGold, points }, i) => (
             <div
@@ -106,7 +106,7 @@ export default function SWWhoShouldInvest() {
                 e.currentTarget.style.borderColor = '#f1f5f9'
               }}
             >
-              {/* Image — clean, no heavy overlay */}
+              {/* Image â€” clean, no heavy overlay */}
               <div className="relative h-44 overflow-hidden">
                 <img
                   src={image}
@@ -119,7 +119,7 @@ export default function SWWhoShouldInvest() {
                 <div className="absolute inset-0"
                   style={{ background: 'linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.45) 100%)' }} />
 
-                {/* Tag pill — top left */}
+                {/* Tag pill â€” top left */}
                 <span
                   className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider"
                   style={tagGold
@@ -130,7 +130,7 @@ export default function SWWhoShouldInvest() {
                   {tag}
                 </span>
 
-                {/* Icon — bottom right of image */}
+                {/* Icon â€” bottom right of image */}
                 <div className="absolute bottom-3 right-3 w-9 h-9 rounded-xl flex items-center justify-center"
                   style={{ background: `${color}`, boxShadow: `0 4px 14px ${color}55` }}>
                   <Icon size={16} className="text-white" />
@@ -162,7 +162,7 @@ export default function SWWhoShouldInvest() {
           ))}
         </div>
 
-        {/* ── Bottom CTA strip ── */}
+        {/* â”€â”€ Bottom CTA strip â”€â”€ */}
         <div className="reveal rounded-2xl px-6 sm:px-10 py-7 flex flex-col sm:flex-row items-center justify-between gap-5"
           style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #eef2ff 100%)', border: '1px solid rgba(37,99,235,0.12)' }}>
           <div>
@@ -174,7 +174,7 @@ export default function SWWhoShouldInvest() {
             </p>
           </div>
           <a
-            href="/ARA-Marketing/contact-us"
+            href="/contact-us"
             className="shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
               font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
             style={{

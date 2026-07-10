@@ -12,7 +12,7 @@ const benefits = [
   {
     icon: Globe2,
     title: 'Global Customer Reach',
-    desc: 'Break geographic limits and sell to customers nationwide — or worldwide — from a single online platform.',
+    desc: 'Break geographic limits and sell to customers nationwide â€” or worldwide â€” from a single online platform.',
     metric: '190+', metricLabel: 'Countries Reachable',
     color: '#0ea5e9', grad: 'linear-gradient(135deg,#0ea5e9,#0284c7)', border: '#bae6fd',
   },
@@ -26,7 +26,7 @@ const benefits = [
   {
     icon: DollarSign,
     title: 'Increased Revenue Opportunities',
-    desc: 'Upsell, cross-sell, discount coupons, and abandoned cart recovery — all built into your store by default to maximise every transaction.',
+    desc: 'Upsell, cross-sell, discount coupons, and abandoned cart recovery â€” all built into your store by default to maximise every transaction.',
     metric: '3x', metricLabel: 'Revenue Potential',
     color: '#0ea5e9', grad: 'linear-gradient(135deg,#0ea5e9,#0284c7)', border: '#bae6fd',
     wide: true,
@@ -111,7 +111,7 @@ export default function ECBenefits() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-10 sm:mb-12 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 text-blue-600 bg-blue-50"
             style={{ border: '1px solid rgba(37,99,235,0.15)' }}>
@@ -134,21 +134,21 @@ export default function ECBenefits() {
           </p>
         </div>
 
-        {/* ── Row 1: 3 equal cards ── */}
+        {/* â”€â”€ Row 1: 3 equal cards â”€â”€ */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 reveal">
           {benefits.slice(0, 3).map(b => <BenefitCard key={b.title} {...b} />)}
         </div>
 
-        {/* ── Row 2: 1 wide (2-col) + 1 regular ── */}
+        {/* â”€â”€ Row 2: 1 wide (2-col) + 1 regular â”€â”€ */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 reveal">
           {benefits.slice(3).map(b => <BenefitCard key={b.title} {...b} />)}
         </div>
 
-        {/* ── Bottom split banner ── */}
+        {/* â”€â”€ Bottom split banner â”€â”€ */}
         <div className="mt-8 rounded-3xl overflow-hidden flex flex-col sm:flex-row reveal"
           style={{ boxShadow: '0 20px 60px rgba(15,23,42,0.12)', border: '1px solid #e2e8f0' }}>
 
-          {/* Left — dark text panel */}
+          {/* Left â€” dark text panel */}
           <div className="flex flex-col justify-between items-center sm:items-start p-7 sm:p-10 flex-1 text-center sm:text-left"
             style={{ background: 'linear-gradient(145deg, #0d1f3c 0%, #0f2850 100%)', minWidth: 0 }}>
 
@@ -183,18 +183,18 @@ export default function ECBenefits() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="self-center sm:self-start inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-200 hover:opacity-90 hover:gap-3"
               style={{ background: '#2563eb', boxShadow: '0 4px 18px rgba(37,99,235,0.45)' }}>
               Get Started <ArrowRight size={14} />
             </a>
           </div>
 
-          {/* Right — full-cover image */}
+          {/* Right â€” full-cover image */}
           <div className="relative sm:w-[52%] flex-shrink-0 self-stretch" style={{ minHeight: 280 }}>
             <img
               src={ecBenefitsImg}
-              alt="E-commerce web design and development company in Thanjavur — ARA Discover Marketing"
+              alt="E-commerce web design and development company in Thanjavur â€” ARA Discover Marketing"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover object-center"
             />

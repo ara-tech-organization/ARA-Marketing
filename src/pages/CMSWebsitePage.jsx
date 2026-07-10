@@ -19,20 +19,27 @@ const cmsSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/cms-website-development',
+      '@id': 'https://discovermarketing.co/services/cms-website-development',
       name: 'CMS Website Design and Development Company in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing is a trusted CMS Website Design and Development Company in Thanjavur delivering easy-to-manage WordPress websites.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
+        url: 'https://discovermarketing.co',
         telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -66,7 +73,7 @@ const cmsSchema = {
           name: 'Why is WordPress good for business websites?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'WordPress is flexible, SEO-friendly, scalable, and easy to manage — making it the right choice for all types of business websites. It powers over 40% of the web globally.',
+            text: 'WordPress is flexible, SEO-friendly, scalable, and easy to manage Ã¢â‚¬â€ making it the right choice for all types of business websites. It powers over 40% of the web globally.',
           },
         },
         {
@@ -98,7 +105,7 @@ const cmsSchema = {
           name: 'Do you provide custom WordPress development?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, we offer fully custom WordPress solutions tailored to your business requirements and branding — no pre-made templates, every site is built from scratch.',
+            text: 'Yes, we offer fully custom WordPress solutions tailored to your business requirements and branding Ã¢â‚¬â€ no pre-made templates, every site is built from scratch.',
           },
         },
       ],
@@ -112,7 +119,7 @@ export default function CMSWebsitePage() {
     title:       'CMS Website Design and Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a trusted CMS Website Design and Development Company in Thanjavur delivering easy-to-manage websites.',
     keywords:    'best wordpress development companies in thanjavur, wordpress cms development services in thanjavur, custom cms wordpress development company in thanjavur, custom cms wordpress development services in thanjavur, cms website development services in thanjavur, cms web development company in thanjavur',
-    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/cms-website-development',
+    canonical:   'https://discovermarketing.co/services/cms-website-development',
     ogImage:     'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop&auto=format&q=80',
     schema:      cmsSchema,
   })

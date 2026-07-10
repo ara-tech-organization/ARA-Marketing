@@ -57,7 +57,7 @@ export default function DynamicWebsitePage() {
     title:       'Dynamic Website Design and Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a leading Dynamic Website Design and Development Company in Thanjavur offering responsive and scalable web solutions.',
     keywords:    'dynamic website development company in thanjavur, dynamic website development service in thanjavur, dynamic website designing company in thanjavur',
-    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/dynamic-website-development',
+    canonical:   'https://discovermarketing.co/services/dynamic-website-development',
     schema,
   })
 

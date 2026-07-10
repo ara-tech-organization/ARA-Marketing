@@ -5,7 +5,7 @@ const techTags = ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS', 'Vi
 
 const quickWins = [
   { icon: Zap,          text: 'Lightning-fast loading speed' },
-  { icon: Shield,       text: 'Enhanced security — no DB' },
+  { icon: Shield,       text: 'Enhanced security â€” no DB' },
   { icon: CheckCircle2, text: 'SEO-optimized clean code' },
 ]
 
@@ -36,14 +36,14 @@ export default function SWHero() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch">
 
-          {/* ── Left: Text ── */}
+          {/* â”€â”€ Left: Text â”€â”€ */}
           <div className="flex-1 min-w-0 animate-hero-enter text-center lg:text-left flex flex-col justify-center">
 
             {/* Breadcrumb */}
             <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
-              <a href="/ARA-Marketing/" className="hover:text-blue-600 transition-colors">Home</a>
+              <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
               <ChevronRight size={12} className="text-slate-300" />
-              <a href="/ARA-Marketing/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
+              <a href="/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
               <ChevronRight size={12} className="text-slate-300" />
               <span className="text-blue-600 font-medium">Static Website</span>
             </nav>
@@ -91,7 +91,7 @@ export default function SWHero() {
 
             {/* CTAs */}
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Take a First Step <ArrowRight size={14} />
@@ -118,7 +118,7 @@ export default function SWHero() {
             </div>
           </div>
 
-          {/* ── Right: unified card + built-with ── */}
+          {/* â”€â”€ Right: unified card + built-with â”€â”€ */}
           <div className="hidden md:flex flex-col lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative mt-10 flex flex-col flex-1">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
@@ -152,7 +152,7 @@ export default function SWHero() {
                 <div className="relative overflow-hidden flex-1" style={{ minHeight: '230px' }}>
                   <img
                     src={swHeroImg}
-                    alt="Static Website Development in Thanjavur — ARA Discover Marketing"
+                    alt="Static Website Development in Thanjavur â€” ARA Discover Marketing"
                     className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-[1.5s]"
                     loading="eager"
                   />
@@ -194,7 +194,7 @@ export default function SWHero() {
                     { val: '100', lbl: 'Performance', color: '#2563eb' },
                     { val: '98',  lbl: 'SEO Score',   color: '#1d4ed8' },
                     { val: '<1s', lbl: 'Load Time',   color: '#0ea5e9' },
-                    { val: '5★',  lbl: 'Rating',      color: '#2563eb' },
+                    { val: '5â˜…',  lbl: 'Rating',      color: '#2563eb' },
                   ].map(({ val, lbl, color }, i) => (
                     <div key={lbl} className="flex-1 text-center py-4"
                       style={{ borderRight: i < 3 ? '1px solid #f1f5f9' : 'none' }}>
@@ -214,7 +214,7 @@ export default function SWHero() {
                 </div>
                 <div>
                   <p className="text-[9px] text-slate-400 font-semibold leading-none mb-0.5">Delivered In</p>
-                  <p className="text-[15px] font-black text-slate-800 leading-tight">3–7 Days</p>
+                  <p className="text-[15px] font-black text-slate-800 leading-tight">3â€“7 Days</p>
                 </div>
               </div>
 
@@ -227,12 +227,12 @@ export default function SWHero() {
                 </div>
                 <div>
                   <p className="text-[9px] text-slate-400 font-semibold leading-none mb-0.5">Client Rating</p>
-                  <p className="text-[15px] font-black text-slate-800 leading-tight">5★ Reviews</p>
+                  <p className="text-[15px] font-black text-slate-800 leading-tight">5â˜… Reviews</p>
                 </div>
               </div>
             </div>
 
-            {/* Built with — separate frosted glass strip */}
+            {/* Built with â€” separate frosted glass strip */}
             <div className="mt-10 px-4 py-4 rounded-2xl flex items-center gap-2.5 flex-wrap"
               style={{ background: 'rgba(255,255,255,0.70)', border: '1px solid rgba(37,99,235,0.12)', backdropFilter: 'blur(8px)' }}>
               <span className="text-[9px] font-black uppercase tracking-widest flex-shrink-0 px-2.5 py-1 rounded-lg"

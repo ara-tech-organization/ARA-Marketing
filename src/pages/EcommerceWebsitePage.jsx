@@ -33,12 +33,12 @@ const schema = {
     {
       '@type': 'Question',
       name: 'What is the estimated time to develop an e-commerce website?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Typically 2–8 weeks, depending on features, design complexity, product catalogue size, and platform choice. A basic Shopify store can go live in 2 weeks, while a custom multi-vendor marketplace may take 6–8 weeks or more.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Typically 2â€“8 weeks, depending on features, design complexity, product catalogue size, and platform choice. A basic Shopify store can go live in 2 weeks, while a custom multi-vendor marketplace may take 6â€“8 weeks or more.' },
     },
     {
       '@type': 'Question',
       name: 'Can I manage my e-commerce website myself?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes — all e-commerce websites we build come with an intuitive admin panel where you can manage products, update stock, process orders, apply discounts, and track revenue without any technical knowledge.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes â€” all e-commerce websites we build come with an intuitive admin panel where you can manage products, update stock, process orders, apply discounts, and track revenue without any technical knowledge.' },
     },
     {
       '@type': 'Question',
@@ -48,7 +48,7 @@ const schema = {
     {
       '@type': 'Question',
       name: 'Do you provide custom e-commerce solutions?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer fully custom e-commerce website development services tailored to your unique business requirements — from multi-vendor marketplaces to B2B ordering portals and brand-specific shopping experiences.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer fully custom e-commerce website development services tailored to your unique business requirements â€” from multi-vendor marketplaces to B2B ordering portals and brand-specific shopping experiences.' },
     },
   ],
 }
@@ -59,7 +59,7 @@ export default function EcommerceWebsitePage() {
     title:       'E Commerce Website Design and Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is an expert E Commerce Website Design and Development Company in Thanjavur creating secure online stores.',
     keywords:    'best ecommerce development agencies in thanjavur, best ecommerce web design and development company in thanjavur, custom e commerce website development company in thanjavur, custom ecommerce website development services in thanjavur',
-    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/ecommerce-website-development',
+    canonical:   'https://discovermarketing.co/services/ecommerce-website-development',
     schema,
   })
 

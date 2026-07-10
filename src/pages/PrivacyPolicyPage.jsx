@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
   useSEO({
     title: 'Privacy Policy | ARA Discover Marketing',
     description: 'Read the Privacy Policy of ARA Discover Marketing. Learn how we collect, use, and protect your personal data.',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/privacy-policy',
+    canonical: 'https://discovermarketing.co/privacy-policy',
   })
 
   return (

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { Quote, Star, MessageSquare } from 'lucide-react'
 
 const testimonials = [
@@ -17,7 +17,7 @@ const testimonials = [
     color: '#7c3aed',
   },
   {
-    text: "Ara's SEO and digital marketing services in Thanjavur helped us generate high quality leads consistently.",
+    text: "ARA's SEO and digital marketing services in Thanjavur helped us generate high quality leads consistently.",
     name: 'Selvam Arumugam',
     role: 'eCommerce Entrepreneur',
     initials: 'SA',

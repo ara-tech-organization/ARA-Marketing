@@ -1,4 +1,4 @@
-﻿import { FileBarChart, Headphones, Activity, Shield, TrendingUp, DollarSign, Award, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { FileBarChart, Headphones, Activity, Shield, TrendingUp, DollarSign, Award, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 const promises = [
   { icon: FileBarChart, title: 'Monthly Google Ads Performance Reports',     desc: 'Transparent monthly reports covering impressions, clicks, conversions, cost-per-lead, and ROAS for complete campaign visibility.',               color: '#2563eb' },
@@ -83,7 +83,7 @@ export default function SEMAssurance() {
                 </div>
 
                 <div className="flex justify-center lg:justify-start">
-                  <a href="/ARA-Marketing/contact-us"
+                  <a href="tel:+918110025254"
                     className="btn-glow inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px]
                       font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
                     style={{ boxShadow: '0 6px 24px rgba(37,99,235,0.30)' }}>

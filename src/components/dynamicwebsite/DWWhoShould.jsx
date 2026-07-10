@@ -1,4 +1,4 @@
-﻿import { ShoppingCart, BookOpen, Newspaper, Home, Briefcase, ArrowRight, Users, CheckCircle2 } from 'lucide-react'
+import { ShoppingCart, BookOpen, Newspaper, Home, Briefcase, ArrowRight, Users, CheckCircle2 } from 'lucide-react'
 
 const industries = [
   { icon: ShoppingCart, label: 'E-Commerce Businesses',     desc: 'Online stores that need product catalogue updates, cart systems, and real-time inventory management for seamless shopping.',             color: '#2563eb' },
@@ -82,7 +82,7 @@ export default function DWWhoShould() {
             style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 40px rgba(37,99,235,0.28)' }}>
             <p className="text-[11px] font-black uppercase tracking-widest text-white/80">Get Your Custom Website Plan Today</p>
             <p className="text-[13px] sm:text-[13.5px] font-medium text-white/90 leading-snug">Start building a powerful digital presence with our expert team.</p>
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5 mt-1"
               style={{ background: 'white', color: '#2563eb', boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}>
               Get Started Today <ArrowRight size={13} />

@@ -56,7 +56,7 @@ export default function EnterpriseWebsitePage() {
     title:       'Enterprise Website Design and Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a reliable Enterprise Website Design and Development Company in Thanjavur offering business-driven solutions.',
     keywords:    'enterprise web development agency in thanjavur, enterprise website development company in thanjavur, enterprise web development services in thanjavur',
-    canonical:   'https://ara-tech-organization.github.io/ARA-Marketing/services/enterprise-website-development',
+    canonical:   'https://discovermarketing.co/services/enterprise-website-development',
     schema,
   })
 

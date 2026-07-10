@@ -17,20 +17,27 @@ const swSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/static-website-development',
+      '@id': 'https://discovermarketing.co/services/static-website-development',
       name: 'Static Website Design and Development Company in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing is a leading Static Website Design and Development Company in Thanjavur, delivering fast, responsive, and SEO-friendly websites.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -72,7 +79,7 @@ const swSchema = {
           name: 'How long does it take to develop a static website?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Depending on your requirements, a basic static website can be built in 3–7 days with full design and deployment.',
+            text: 'Depending on your requirements, a basic static website can be built in 3Ã¢â‚¬â€œ7 days with full design and deployment.',
           },
         },
         {
@@ -110,7 +117,7 @@ export default function StaticWebsitePage() {
     title: 'Static Website Design and Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a leading Static Website Design and Development Company in Thanjavur, delivering fast, responsive, and SEO-friendly websites.',
     keywords: 'static web page development in thanjavur, static website development services in thanjavur, static website development company in thanjavur, static website design & development company in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/static-website-development',
+    canonical: 'https://discovermarketing.co/services/static-website-development',
     ogImage: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: swSchema,
   })

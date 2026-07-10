@@ -5,13 +5,13 @@ const features = [
   {
     icon: Zap,
     title: 'Blazing Fast Performance',
-    desc: 'Pre-built HTML files served directly — no server processing. Pages load in milliseconds.',
+    desc: 'Pre-built HTML files served directly â€” no server processing. Pages load in milliseconds.',
     color: '#0ea5e9',
   },
   {
     icon: Shield,
     title: 'Bulletproof Security',
-    desc: 'No backend, no database — static websites eliminate entire categories of vulnerabilities.',
+    desc: 'No backend, no database â€” static websites eliminate entire categories of vulnerabilities.',
     color: '#2563eb',
   },
   {
@@ -23,7 +23,7 @@ const features = [
   {
     icon: DollarSign,
     title: 'Cost Effective Solution',
-    desc: 'Minimal hosting costs, no server maintenance — long-term value for every business.',
+    desc: 'Minimal hosting costs, no server maintenance â€” long-term value for every business.',
     color: '#2563eb',
   },
 ]
@@ -45,7 +45,7 @@ export default function SWIntro() {
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
-        {/* ── Header ── */}
+        {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-10 reveal">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full
             text-[10px] font-bold uppercase tracking-widest mb-4"
@@ -65,13 +65,13 @@ export default function SWIntro() {
             </span>
           </h2>
           <p className="text-[13px] text-slate-500 leading-[1.85] max-w-2xl mx-auto">
-            Fast, secure, and easy to maintain — our static website development services help
+            Fast, secure, and easy to maintain â€” our static website development services help
             startups, local businesses, and professionals build a strong online presence with
             minimal cost and maximum performance.
           </p>
         </div>
 
-        {/* ── Image + Text row ── */}
+        {/* â”€â”€ Image + Text row â”€â”€ */}
         <div className="reveal flex flex-col lg:flex-row gap-7 lg:gap-12 items-stretch mb-8">
 
           {/* Image */}
@@ -91,14 +91,14 @@ export default function SWIntro() {
             <div className="absolute bottom-4 left-4 right-4 px-4 py-3 rounded-xl"
               style={{ background: 'rgba(3,17,31,0.78)', backdropFilter: 'blur(12px)', border: '1px solid rgba(14,165,233,0.22)' }}>
               <p className="text-[10px] font-black uppercase tracking-widest text-sky-400 mb-1">
-                Static Website Development · Thanjavur
+                Static Website Development Â· Thanjavur
               </p>
               <p className="text-[12px] font-semibold text-white leading-snug">
-                Quick · SEO Ready · Mobile Responsive · Secure
+                Quick Â· SEO Ready Â· Mobile Responsive Â· Secure
               </p>
             </div>
 
-            {/* Stat chip — top right */}
+            {/* Stat chip â€” top right */}
             <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-2 rounded-xl"
               style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(8px)' }}>
               <Zap size={12} style={{ color: '#0ea5e9' }} />
@@ -120,7 +120,7 @@ export default function SWIntro() {
               business owner or an enterprise, our solutions will make your brand shine online.
             </p>
             <p className="text-[13px] text-slate-500 leading-[1.85]">
-              We specialize in static web page development in Thanjavur — websites that load
+              We specialize in static web page development in Thanjavur â€” websites that load
               instantly and look great on all devices, helping you attract more customers and
               grow your business online.
             </p>
@@ -144,7 +144,7 @@ export default function SWIntro() {
             </div>
 
             <a
-              href="/ARA-Marketing/contact-us"
+              href="/contact-us"
               className="inline-flex items-center gap-2 self-center lg:self-start px-5 py-2.5 rounded-full
                 text-[12.5px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 mt-1"
               style={{
@@ -157,7 +157,7 @@ export default function SWIntro() {
           </div>
         </div>
 
-        {/* ── Feature cards — horizontal row ── */}
+        {/* â”€â”€ Feature cards â€” horizontal row â”€â”€ */}
         <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map(({ icon: Icon, title, desc, color }, i) => (
             <div

@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import { ArrowRight, Rocket, Phone, CheckCircle2, Globe } from 'lucide-react'
 
 const gradBlue = {
@@ -55,7 +55,7 @@ export default function DWCTA() {
 
             {/* Phone CTA */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-3">
-              <a href="tel:+919876543210"
+              <a href="tel:+918110025254"
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3.5 sm:py-3 rounded-full text-[14px] sm:text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                 style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
                 <Phone size={14} /> Call Us Now
@@ -119,7 +119,7 @@ export default function DWCTA() {
                   <button type="submit"
                     className="btn-glow w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-white text-[14px] font-bold transition-all duration-300 hover:-translate-y-0.5 mt-1"
                     style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}>
-                    Talk to an Expert <ArrowRight size={14} />
+                    Get Free Consultation <ArrowRight size={14} />
                   </button>
                 </form>
                 <div className="flex items-center gap-2 mt-4">

@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Search, TrendingUp, Zap } from 'lucide-react'
+import { ArrowRight, Search, TrendingUp, Zap } from 'lucide-react'
 
 export default function SEOCTA() {
   return (
@@ -51,19 +51,11 @@ export default function SEOCTA() {
             {/* CTAs */}
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 text-white
                   rounded-full text-[14px] font-bold transition-all duration-300 hover:-translate-y-0.5"
               >
                 Get Free SEO Consultation <ArrowRight size={15} />
-              </a>
-              <a
-                href="#seo-services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 border border-blue-300
-                  text-blue-700 bg-white/70 rounded-full text-[14px] font-semibold
-                  hover:bg-white hover:border-blue-400 transition-all duration-300 backdrop-blur-sm"
-              >
-                Explore Services
               </a>
             </div>
           </div>

@@ -11,7 +11,6 @@ import Industries    from '../components/home/Industries'
 import Tools         from '../components/home/Tools'
 import Testimonials  from '../components/home/Testimonials'
 import Assurance     from '../components/home/Assurance'
-import Blog          from '../components/home/Blog'
 import CTA           from '../components/home/CTA'
 import FAQ           from '../components/home/FAQ'
 import Footer        from '../components/home/Footer'
@@ -21,17 +20,24 @@ const homeSchema = {
   '@graph': [
     {
       '@type': 'LocalBusiness',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing',
+      '@id': 'https://discovermarketing.co',
       name: 'ARA Discover Marketing',
       description: 'ARA Discover Marketing is one of the best digital marketing companies in Thanjavur and offers best digital marketing services in Thanjavur for business growth.',
-      url: 'https://ara-tech-organization.github.io/ARA-Marketing',
+      url: 'https://discovermarketing.co',
       telephone: '+91 81100 25254',
       email: 'aradiscovermarketing@gmail.com',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: '67A, Giri Rd, Srinivasapuram',
         addressLocality: 'Thanjavur',
         addressRegion: 'Tamil Nadu',
+        postalCode: '613009',
         addressCountry: 'IN',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 10.7870,
+        longitude: 79.1378,
       },
       areaServed: 'Thanjavur',
     },
@@ -55,7 +61,7 @@ export default function Home() {
     title: 'Best Digital Marketing Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is one of the best digital marketing companies in Thanjavur and offers best digital marketing services in Thanjavur for business growth.',
     keywords: 'Best digital marketing company in thanjavur, Best digital marketing companies in thanjavur, Best digital marketing services in thanjavur, Best digital marketing agency in thanjavur, Best branding agency in thanjavur, Best digital branding and advertising in thanjavur, Top digital marketing company in thanjavur, Top digital marketing companies in thanjavur, Top digital marketing services in thanjavur, Top digital marketing agency in thanjavur, Top branding agency in thanjavur, Top digital branding and advertising in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/',
+    canonical: 'https://discovermarketing.co/',
     schema: homeSchema,
   })
   return (
@@ -72,7 +78,6 @@ export default function Home() {
         <Tools />
         <Testimonials />
         <Assurance />
-        <Blog />
         <CTA />
         <FAQ />
       </main>

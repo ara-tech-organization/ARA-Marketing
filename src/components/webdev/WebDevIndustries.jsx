@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 import {
   HeartPulse, GraduationCap, Building2, ShoppingCart,
   UtensilsCrossed, Factory, TrendingUp, Store, Layers, ArrowRight
@@ -77,7 +77,7 @@ export default function WebDevIndustries() {
             professional web development services in Thanjavur
             {' '}trusted by businesses across every sector.
           </p>
-          <a href="/ARA-Marketing/contact-us"
+          <a href="/contact-us"
             className="btn-glow inline-flex items-center gap-2 px-5 py-2.5 text-white
               rounded-full text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5 flex-shrink-0">
             Start Your Project <ArrowRight size={13} />

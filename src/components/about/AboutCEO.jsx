@@ -1,4 +1,4 @@
-﻿import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
+import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
   Globe, Quote, Sparkles } from 'lucide-react'
 import mamImg from '../../assets/Mam.png'
 
@@ -199,7 +199,7 @@ export default function AboutCEO() {
 
             {/* CTA row */}
             <div className="flex flex-wrap items-center gap-4">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="/contact-us"
                 className="btn-glow inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full
                   font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
                 style={{ boxShadow: '0 8px 32px rgba(124,58,237,0.28)' }}>

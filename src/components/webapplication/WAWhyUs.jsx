@@ -1,4 +1,4 @@
-﻿import { Trophy, Clock, BarChart3, Shield, Handshake, Smartphone, CheckCircle2, ArrowRight, Cpu } from 'lucide-react'
+import { Trophy, Clock, BarChart3, Shield, Handshake, Smartphone, CheckCircle2, ArrowRight, Cpu } from 'lucide-react'
 
 const reasons = [
   { icon: Trophy,    label: 'Experienced Team',              desc: 'Professional custom web application development company in Thanjavur with a proven track record of successful projects across diverse industries.' },
@@ -29,7 +29,7 @@ export default function WAWhyUs() {
             className="inline-flex items-center gap-2 px-3 xs:px-4 py-1.5 rounded-full text-[10px] xs:text-[11px] font-black uppercase tracking-widest mb-4 sm:mb-5"
             style={{ background: 'rgba(37,99,235,0.08)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.18)' }}
           >
-            <Trophy size={10} /> Why Choose Ara
+            <Trophy size={10} /> Why Choose ARA
           </span>
           <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900">
             Why Businesses{' '}
@@ -92,7 +92,7 @@ export default function WAWhyUs() {
                   </h3>
                 </div>
                 <p className="text-[13px] xs:text-[13.5px] leading-relaxed" style={{ color: '#94a3b8' }}>
-                  We are a full-service web and mobile applications development company in Thanjavur. Your solutions work seamlessly across all platforms — from responsive web apps to mobile-friendly interfaces.
+                  We are a full-service web and mobile applications development company in Thanjavur. Your solutions work seamlessly across all platforms â€” from responsive web apps to mobile-friendly interfaces.
                 </p>
               </div>
 
@@ -116,7 +116,7 @@ export default function WAWhyUs() {
                 </div>
 
                 <a
-                  href="/ARA-Marketing/contact-us"
+                  href="/contact-us"
                   className="mt-6 xs:mt-7 inline-flex items-center gap-2 px-4 xs:px-5 py-2.5 xs:py-3 rounded-xl text-[12.5px] xs:text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 w-full justify-center"
                   style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 24px rgba(37,99,235,0.3)' }}
                 >

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail, ArrowRight, Heart } from 'lucide-react'
+import { MapPin, Phone, Mail, Heart } from 'lucide-react'
 import logoImg from '../../assets/Footer.png'
 
 const FacebookIcon = () => (
@@ -32,18 +32,18 @@ const LinkedInIcon = () => (
 )
 
 const services = [
-  { label: 'SEO',                  href: '/ARA-Marketing/services/search-engine-optimization' },
-  { label: 'Social Media Marketing', href: '/ARA-Marketing/services/social-media-marketing' },
-  { label: 'SEM / Google Ads',     href: '/ARA-Marketing/services/search-engine-marketing' },
-  { label: 'Graphic Design',       href: '/ARA-Marketing/services/graphic-design' },
-  { label: 'Video Editing',        href: '/ARA-Marketing/services/video-editing' },
-  { label: 'Website Development',  href: '/ARA-Marketing/services/website-development' },
+  { label: 'SEO',                  href: '/services/search-engine-optimization' },
+  { label: 'Social Media Marketing', href: '/services/social-media-marketing' },
+  { label: 'SEM / Google Ads',     href: '/services/search-engine-marketing' },
+  { label: 'Graphic Design',       href: '/services/graphic-design' },
+  { label: 'Video Editing',        href: '/services/video-editing' },
+  { label: 'Website Development',  href: '/services/website-development' },
 ]
 const company = [
-  { label: 'Home',        href: '/ARA-Marketing/' },
-  { label: 'Web Design',  href: '/ARA-Marketing/services/website-development' },
-  { label: 'About Us',    href: '/ARA-Marketing/about-us' },
-  { label: 'Contact Us',  href: '/ARA-Marketing/contact-us' },
+  { label: 'Home',        href: '/' },
+  { label: 'Web Design',  href: '/services/website-development' },
+  { label: 'About Us',    href: '/about-us' },
+  { label: 'Contact Us',  href: '/contact-us' },
 ]
 const socials  = [
   [FacebookIcon,  'Facebook',  'https://www.facebook.com/aradiscovermarketing'],
@@ -147,21 +147,13 @@ export default function Footer() {
               <Mail size={14} className="text-blue-400 flex-shrink-0" />
               <span>aradiscovermarketing@gmail.com</span>
             </div>
-            <a
-              href="/ARA-Marketing/contact-us"
-              className="btn-glow inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white
-                rounded-full text-[13px] font-semibold transition-all duration-300
-                hover:bg-blue-500 shadow-lg shadow-blue-600/25"
-            >
-              Talk to an Expert <ArrowRight size={13} />
-            </a>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="border-t border-white/8 pt-7 flex flex-col sm:grid sm:grid-cols-3 items-center gap-3 sm:gap-4 text-center sm:text-left">
           <p className="text-[13px] text-white/30">
-            &copy; 2025 ARA Marketing. All rights reserved.
+            &copy; 2025 ARA Discover Marketing. All rights reserved.
           </p>
           <div className="flex justify-center gap-6">
             <Link to="/privacy-policy" className="text-[13px] text-white/30 hover:text-blue-400 transition-colors duration-300">

@@ -88,14 +88,14 @@ export default function Hero() {
 
   return (
     <>
-      {/* ════════════════════════════════════════
-          SECTION 1 — Content  (with bg effects)
-      ════════════════════════════════════════ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+          SECTION 1 â€” Content  (with bg effects)
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section
         className="relative overflow-hidden pt-[88px]"
         style={{ minHeight: '92vh' }}
       >
-        {/* Full background image — covers entire section */}
+        {/* Full background image â€” covers entire section */}
         <img
           src={heroBgImage}
           alt=""
@@ -103,7 +103,7 @@ export default function Hero() {
           className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none"
         />
 
-        {/* Left — text content sits on top of image */}
+        {/* Left â€” text content sits on top of image */}
         <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8
           flex flex-col items-center text-center sm:items-start sm:text-left
           pt-14 pb-20 sm:pt-20 sm:pb-28">
@@ -114,7 +114,7 @@ export default function Hero() {
               text-[10px] font-bold text-blue-400 uppercase tracking-[0.12em] whitespace-nowrap"
               style={{ background:'rgba(37,99,235,0.1)', border:'1px solid rgba(37,99,235,0.3)', animation: revS(0) }}>
               <Zap size={11} className="shrink-0" />
-              Best Digital Marketing Agency · Thanjavur
+              Best Digital Marketing Agency Â· Thanjavur
               <Zap size={11} className="shrink-0" />
             </div>
 
@@ -138,13 +138,13 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap justify-center sm:justify-start gap-4 mb-8" style={{ animation: revS(360) }}>
-              <a href="/ARA-Marketing/contact-us"
+              <a href="/contact-us"
                 className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-[14px]
                   transition-all duration-300 hover:opacity-90"
                 style={{ background:'#2563eb', color:'#fff', boxShadow:'0 8px 24px rgba(37,99,235,0.35)' }}>
                 Take a First Step <ArrowRight size={15} />
               </a>
-              <a href="tel:+919876543210"
+              <a href="tel:+918110025254"
                 className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-[14px]
                   transition-all duration-300 hover:bg-white/5"
                 style={{ color:'rgba(255,255,255,0.75)', border:'1px solid rgba(255,255,255,0.18)' }}>
@@ -170,9 +170,9 @@ export default function Hero() {
       </section>
 
 
-      {/* ════════════════════════════════════════
-          SECTION 2 — Image + Stats
-      ════════════════════════════════════════ */}
+      {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+          SECTION 2 â€” Image + Stats
+      â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section style={{ background: '#ffffff', borderTop: '1px solid rgba(0,0,0,0.06)' }}>
         <div className="w-full max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 pt-10 pb-14"
           style={{ animation: fade(500) }}>

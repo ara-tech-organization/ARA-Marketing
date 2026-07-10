@@ -1,7 +1,7 @@
 import { ArrowRight, Phone, Rocket, CheckCircle2, Zap, Shield, TrendingUp } from 'lucide-react'
 
 const highlights = [
-  { icon: Zap,          text: 'Lightning-fast delivery in 3–7 days' },
+  { icon: Zap,          text: 'Lightning-fast delivery in 3â€“7 days' },
   { icon: Shield,       text: 'SEO-optimized & mobile responsive' },
   { icon: TrendingUp,   text: 'Performance score 95+ guaranteed' },
   { icon: CheckCircle2, text: 'Free consultation, no commitment' },
@@ -33,7 +33,7 @@ export default function SWCTA() {
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
-          {/* ── Left: CTA Content ── */}
+          {/* â”€â”€ Left: CTA Content â”€â”€ */}
           <div className="flex-1 reveal-left">
             <div className="text-center lg:text-left">
               <span
@@ -64,7 +64,7 @@ export default function SWCTA() {
                 As a leading static web design company in Thanjavur, we bring expertise in speed, security, and SEO to every project we deliver.
               </p>
               <p className="text-[15px] text-slate-500 leading-[1.85] mb-10">
-                Fill in the form and our specialists will help you plan your perfect static website solution — fast, affordable, and built to perform.
+                Fill in the form and our specialists will help you plan your perfect static website solution â€” fast, affordable, and built to perform.
               </p>
             </div>
 
@@ -85,7 +85,7 @@ export default function SWCTA() {
 
             {/* Phone CTA */}
             <a
-              href="tel:+919876543210"
+              href="tel:+918110025254"
               className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-white transition-all duration-300 hover:scale-[1.03]"
               style={{ border: '1px solid #bae6fd', boxShadow: '0 4px 16px rgba(37,99,235,0.08)' }}
             >
@@ -97,12 +97,12 @@ export default function SWCTA() {
               </div>
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Call Us Now</p>
-                <p className="text-[15px] font-black text-slate-900">+91 98765 43210</p>
+                <p className="text-[15px] font-black text-slate-900">+91 81100 25254</p>
               </div>
             </a>
           </div>
 
-          {/* ── Right: Contact Form ── */}
+          {/* â”€â”€ Right: Contact Form â”€â”€ */}
           <div className="lg:w-[440px] flex-shrink-0 reveal-right">
             <div
               className="rounded-3xl p-5 sm:p-8 bg-white"

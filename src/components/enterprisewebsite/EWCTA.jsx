@@ -45,7 +45,7 @@ export default function EWCTA() {
         }}
       />
 
-      {/* Orbs — md+ only */}
+      {/* Orbs â€” md+ only */}
       <div
         className="hidden md:block absolute -top-20 -left-20 w-[440px] h-[440px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }}
@@ -60,7 +60,7 @@ export default function EWCTA() {
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
-        {/* 1col xs/sm/md → 2col lg */}
+        {/* 1col xs/sm/md â†’ 2col lg */}
         <div className="flex flex-col lg:flex-row gap-8 sm:gap-10 lg:gap-16 items-start lg:items-center reveal">
 
           {/* LEFT: Copy */}
@@ -104,7 +104,7 @@ export default function EWCTA() {
             {/* Trust points */}
             <div className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-8">
               {[
-                'Free initial consultation — no commitment',
+                'Free initial consultation â€” no commitment',
                 'Dedicated project manager from day one',
                 'Post-launch maintenance & continuous support',
                 'Transparent pricing with milestone-based delivery',
@@ -121,9 +121,9 @@ export default function EWCTA() {
               ))}
             </div>
 
-            {/* Phone CTA — glassmorphism */}
+            {/* Phone CTA â€” glassmorphism */}
             <a
-              href="tel:+919876543210"
+              href="tel:+918110025254"
               className="inline-flex items-center gap-2.5 sm:gap-3 px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl sm:rounded-2xl transition-all duration-300 hover:-translate-y-0.5 w-full sm:w-auto"
               style={{
                 background: '#ffffff',
@@ -144,7 +144,7 @@ export default function EWCTA() {
                 >
                   Call Us Directly
                 </p>
-                <p className="text-[13px] sm:text-[14px] font-bold" style={{ color: '#0f172a' }}>+91 98765 43210</p>
+                <p className="text-[13px] sm:text-[14px] font-bold" style={{ color: '#0f172a' }}>+91 81100 25254</p>
               </div>
               <ChevronRight size={13} style={{ color: '#94a3b8' }} />
             </a>

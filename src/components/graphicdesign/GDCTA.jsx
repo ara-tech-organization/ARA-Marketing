@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Palette, Frame, BookOpen, Layers, PhoneCall } from 'lucide-react'
+import { ArrowRight, Palette, Frame, BookOpen, Layers } from 'lucide-react'
 
 const highlights = [
   { icon: Frame,    label: 'Logo Design',       color: '#bfdbfe' },
@@ -97,22 +97,13 @@ export default function GDCTA() {
             {/* Contact actions */}
             <div className="flex flex-col gap-3">
               <a
-                href="/ARA-Marketing/contact-us"
+                href="tel:+918110025254"
                 className="btn-glow inline-flex items-center justify-between gap-3 px-6 py-4
                   bg-blue-600 text-white rounded-2xl font-bold text-[14px]
                   hover:bg-blue-500 transition-all duration-300 shadow-lg shadow-blue-600/25 group"
               >
                 <span>Start Your Project</span>
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-200" />
-              </a>
-              <a
-                href="tel:+919876543210"
-                className="inline-flex items-center justify-between gap-3 px-6 py-4
-                  border-2 border-blue-100 text-blue-700 rounded-2xl font-bold text-[14px]
-                  hover:bg-blue-50 hover:border-blue-300 transition-all duration-300"
-              >
-                <span>Talk to an Expert</span>
-                <PhoneCall size={16} />
               </a>
             </div>
 

@@ -42,12 +42,12 @@ export default function VECTA() {
           Join hands with ARA Discover Marketing, a trusted video editing service provider in Thanjavur that offers creative, cinematic, and high-converting video editing solutions.
         </p>
         <p className="hidden sm:block text-[14px] text-slate-400 leading-[1.8] mb-10 sm:mb-12 max-w-[480px] mx-auto">
-          From raw footage to a polished final cut — we handle every frame with precision and creativity.
+          From raw footage to a polished final cut â€” we handle every frame with precision and creativity.
         </p>
 
         {/* CTA buttons */}
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-14">
-          <a href="/ARA-Marketing/contact-us"
+          <a href="tel:+918110025254"
             className="inline-flex items-center gap-2 sm:gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-[13px] sm:text-[14px]
               font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
             style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 36px rgba(37,99,235,0.28)' }}>

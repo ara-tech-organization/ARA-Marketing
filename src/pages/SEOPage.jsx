@@ -19,20 +19,27 @@ const seoSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-optimization',
+      '@id': 'https://discovermarketing.co/services/search-engine-optimization',
       name: 'Best Search Engine Optimization Company (SEO) in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -94,7 +101,7 @@ export default function SEOPage() {
     title: 'Best Search Engine Optimization Company (SEO) in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing offers the best SEO services in Thanjavur. Trusted as the best SEO company in Thanjavur for growth-focused digital marketing.',
     keywords: 'best seo companies in thanjavur, digital marketing seo services in thanjavur, international seo services in thanjavur, seo and digital marketing services in thanjavur, top seo agencies in thanjavur, top seo companies in thanjavur, top seo services in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/search-engine-optimization',
+    canonical: 'https://discovermarketing.co/services/search-engine-optimization',
     ogImage: 'https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: seoSchema,
   })

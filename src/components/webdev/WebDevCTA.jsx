@@ -27,12 +27,12 @@ export default function WebDevCTA() {
                 business growth.
               </p>
               <div className="flex flex-wrap gap-3">
-                <a href="tel:+919876543210"
+                <a href="tel:+918110025254"
                   className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-white text-blue-600
                     rounded-full text-sm font-bold shadow-lg hover:bg-blue-50 hover:-translate-y-0.5 transition-all duration-300">
                   <Phone size={15} /> Call Us Now
                 </a>
-                <a href="/ARA-Marketing/contact-us"
+                <a href="/contact-us"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border-2 border-white/35
                     text-white rounded-full text-sm font-semibold hover:bg-white/10 hover:border-white/55 transition-all duration-300">
                   Get Free Quote <ArrowRight size={15} />

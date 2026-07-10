@@ -1,4 +1,4 @@
-﻿import { Smartphone, Search, Zap, Shield, Headphones, Eye, Phone, ArrowRight, Layers } from 'lucide-react'
+import { Smartphone, Search, Zap, Shield, Headphones, Eye, Phone, ArrowRight, Layers } from 'lucide-react'
 
 const assurances = [
   { icon: Smartphone, title: 'Fully Responsive Website Design',  color: '#2563eb', num: '01' },
@@ -90,13 +90,13 @@ export default function WebDevAssurance() {
                 </h3>
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-3 flex-shrink-0">
-                <a href="tel:+919876543210"
+                <a href="tel:+918110025254"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-blue-600
                     rounded-full text-[13px] font-bold shadow-md hover:bg-blue-50
                     hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
                   <Phone size={14} /> Call Us Now
                 </a>
-                <a href="/ARA-Marketing/contact-us"
+                <a href="/contact-us"
                   className="inline-flex items-center gap-2 px-5 py-2.5 border border-white/30
                     text-white rounded-full text-[13px] font-semibold
                     hover:bg-white/10 hover:border-white/50 transition-all duration-300 whitespace-nowrap">

@@ -21,20 +21,27 @@ const webDevSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/website-development',
+      '@id': 'https://discovermarketing.co/services/website-development',
       name: 'ARA Discover Marketing Web Development Services',
       description: 'ARA Discover Marketing is one of the best website design and development companies in Thanjavur, creating AI-driven and SEO-friendly websites for businesses.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -61,7 +68,7 @@ export default function WebDevPage() {
     title: 'Best Website Design and Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is one of the best website design and development companies in Thanjavur, creating AI-driven and SEO-friendly websites for businesses.',
     keywords: 'best web design and development companies in thanjavur, best website design and development agency in thanjavur, best website design and development company in thanjavur, best website design and development firms in thanjavur, best website design and development services in thanjavur, best website design and development services providers in thanjavur, custom website development company in thanjavur, custom website development services in thanjavur, professional web development services in thanjavur, top web development firms in thanjavur, top website design and development agencies in thanjavur, web development and designing company in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/website-development',
+    canonical: 'https://discovermarketing.co/services/website-development',
     schema: webDevSchema,
   })
 

@@ -16,7 +16,7 @@ export default function ThankYouPage() {
   useSEO({
     title: 'Thank You | ARA Discover Marketing',
     description: 'Thank you for reaching out to ARA Discover Marketing. Our team will get back to you within 24 hours.',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/thank-you',
+    canonical: 'https://discovermarketing.co/thank-you',
   })
 
   return (
@@ -39,7 +39,7 @@ export default function ThankYouPage() {
 
           <div className="relative z-10 max-w-[720px] mx-auto px-4 sm:px-6 py-16 sm:py-20">
 
-            {/* ── Success card ── */}
+            {/* â”€â”€ Success card â”€â”€ */}
             <div className="reveal rounded-[28px] bg-white text-center px-6 sm:px-12 py-12 sm:py-16"
               style={{ border: '1px solid #bfdbfe', boxShadow: '0 24px 64px rgba(37,99,235,0.14), 0 4px 16px rgba(0,0,0,0.04)' }}>
 
@@ -83,7 +83,7 @@ export default function ThankYouPage() {
                 </Link>
               </div>
 
-              {/* ── What happens next ── */}
+              {/* â”€â”€ What happens next â”€â”€ */}
               <div className="rounded-2xl p-6 sm:p-7 text-left"
                 style={{ background: '#f8fafc', border: '1.5px solid #e2e8f0' }}>
                 <h3 className="text-[11px] font-bold uppercase tracking-widest text-slate-700 mb-5 text-center">
@@ -108,7 +108,7 @@ export default function ThankYouPage() {
               </div>
             </div>
 
-            {/* ── Quick contact chips ── */}
+            {/* â”€â”€ Quick contact chips â”€â”€ */}
             <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
               <a href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-semibold bg-white border border-slate-200 text-slate-600 hover:border-blue-300 hover:text-blue-700 transition-all duration-300"

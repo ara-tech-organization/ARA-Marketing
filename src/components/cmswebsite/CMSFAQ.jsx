@@ -1,5 +1,5 @@
-﻿import { useState } from 'react'
-import { HelpCircle, ChevronDown, MessageCircle, Phone, ArrowRight, BookOpen } from 'lucide-react'
+import { useState } from 'react'
+import { HelpCircle, ChevronDown, BookOpen } from 'lucide-react'
 
 const faqs = [
   {
@@ -120,32 +120,6 @@ export default function CMSFAQ() {
                 <p className="text-[13px] font-bold text-slate-800">{faqs.length} Questions Answered</p>
                 <p className="text-[11.5px] text-slate-400">Click any question to expand</p>
               </div>
-            </div>
-
-            {/* Contact card */}
-            <div className="rounded-2xl p-5 mb-4 relative overflow-hidden"
-              style={{ background: '#071a36', boxShadow: '0 12px 36px rgba(7,26,54,0.4)' }}>
-              {/* Inner glow */}
-              <div className="absolute top-0 right-0 w-40 h-40 rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 65%)' }} />
-              <div className="relative flex items-start gap-3 mb-4">
-                <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'rgba(255,255,255,0.2)', border: '1px solid rgba(255,255,255,0.25)' }}>
-                  <MessageCircle size={15} className="text-white" />
-                </div>
-                <div>
-                  <p className="text-[13px] font-bold text-white leading-tight">Still have questions?</p>
-                  <p className="text-[11.5px] mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>Our team is happy to help you</p>
-                </div>
-              </div>
-              <a
-                href="/ARA-Marketing/contact-us"
-                className="relative flex items-center justify-between w-full px-4 py-2.5 rounded-xl text-[13px] font-bold transition-all duration-300 hover:scale-[1.02]"
-                style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.25)', color: 'white', backdropFilter: 'blur(8px)' }}
-              >
-                <span className="flex items-center gap-2"><Phone size={13} /> Call Us Now</span>
-                <ArrowRight size={13} />
-              </a>
             </div>
 
           </div>

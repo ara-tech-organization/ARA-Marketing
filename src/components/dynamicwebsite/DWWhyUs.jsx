@@ -1,4 +1,4 @@
-﻿import { Package, Settings, Cpu, Smartphone, Search, ArrowRight, Zap } from 'lucide-react'
+import { Package, Settings, Cpu, Smartphone, Search, ArrowRight, Zap } from 'lucide-react'
 
 const reasons = [
   { icon: Package,    title: 'Custom-Built Dynamic Website Solutions Tailored to Business Needs', desc: 'Every feature, every page, and every interaction is built specifically for your business goals — no generic templates, no compromise on quality.', color: '#2563eb' },
@@ -85,7 +85,7 @@ export default function DWWhyUs() {
             </div>
           </div>
           <div className="relative flex-shrink-0">
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-[12px] sm:text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
               style={{ background: 'white', color: '#1d4ed8' }}>
               Work With Us <ArrowRight size={13} />

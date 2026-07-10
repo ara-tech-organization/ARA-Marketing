@@ -28,7 +28,7 @@ export default function OMIntro() {
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
-          {/* Left — content */}
+          {/* Left â€” content */}
           <div className="flex-1 min-w-0 reveal-left text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6 shadow-sm">
@@ -46,7 +46,7 @@ export default function OMIntro() {
               Today's businesses need more than ad campaigns to stay competitive. ARA Discover Marketing offers strategic email marketing, influencer marketing, and SMS marketing solutions that help you engage and retain your audience effectively.
             </p>
             <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-8 max-w-[500px]">
-              We are one of the best email marketing companies in Thanjavur and a trusted influencers marketing agency in Thanjavur — building custom campaigns for startups, local businesses, and growing brands with transparent reporting and measurable results.
+              We are one of the best email marketing companies in Thanjavur and a trusted influencers marketing agency in Thanjavur â€” building custom campaigns for startups, local businesses, and growing brands with transparent reporting and measurable results.
             </p>
 
             {/* Feature rows */}
@@ -69,14 +69,14 @@ export default function OMIntro() {
               ))}
             </div>
 
-            <a href="/ARA-Marketing/contact-us"
+            <a href="/contact-us"
               className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
               style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
               Start Your Campaign <ArrowRight size={15} />
             </a>
           </div>
 
-          {/* Right — image with floating overlays */}
+          {/* Right â€” image with floating overlays */}
           <div className="lg:w-[460px] flex-shrink-0 reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[3rem]"

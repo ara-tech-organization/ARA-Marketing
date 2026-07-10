@@ -17,20 +17,27 @@ const waSchema = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://ara-tech-organization.github.io/ARA-Marketing/services/web-application-development',
+      '@id': 'https://discovermarketing.co/services/web-application-development',
       name: 'Web Application Development Company in Thanjavur | ARA Discover Marketing',
       description: 'ARA Discover Marketing is a professional Web Application Development Company in Thanjavur specializing in ecommerce apps and custom web apps.',
       provider: {
         '@type': 'LocalBusiness',
         name: 'ARA Discover Marketing',
-        url: 'https://ara-tech-organization.github.io/ARA-Marketing',
-        telephone: '+91 98765 43210',
+        url: 'https://discovermarketing.co',
+        telephone: '+91 81100 25254',
         email: 'aradiscovermarketing@gmail.com',
         address: {
           '@type': 'PostalAddress',
+          streetAddress: '67A, Giri Rd, Srinivasapuram',
           addressLocality: 'Thanjavur',
           addressRegion: 'Tamil Nadu',
+          postalCode: '613009',
           addressCountry: 'IN',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 10.7870,
+          longitude: 79.1378,
         },
         areaServed: 'Thanjavur',
       },
@@ -110,7 +117,7 @@ export default function WebAppPage() {
     title: 'Web Application Development Company in Thanjavur | ARA Discover Marketing',
     description: 'ARA Discover Marketing is a professional Web Application Development Company in Thanjavur specializing in ecommerce apps and custom web apps.',
     keywords: 'web application and development companies in thanjavur, website application development services in thanjavur, web application development agency in thanjavur, ecommerce application development company in thanjavur, custom web application development company in thanjavur',
-    canonical: 'https://ara-tech-organization.github.io/ARA-Marketing/services/web-application-development',
+    canonical: 'https://discovermarketing.co/services/web-application-development',
     ogImage: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&h=630&fit=crop&auto=format&q=80',
     schema: waSchema,
   })

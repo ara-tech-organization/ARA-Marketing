@@ -26,7 +26,7 @@ export default function GDHero() {
       <div className="relative max-w-[1300px] mx-auto px-4 sm:px-6 md:px-7 w-full py-16">
         <div className="grid lg:grid-cols-[0.65fr_1.4fr_0.7fr] gap-6 items-center">
 
-          {/* ── Left: Image ── */}
+          {/* â”€â”€ Left: Image â”€â”€ */}
           <div className="hidden lg:block animate-hero-enter">
             <div className="relative rounded-3xl overflow-hidden"
               style={{ height: 'clamp(340px,45vw,480px)', boxShadow: '0 24px 64px rgba(37,99,235,0.18)' }}>
@@ -57,12 +57,12 @@ export default function GDHero() {
             </div>
           </div>
 
-          {/* ── Center: Content ── */}
+          {/* â”€â”€ Center: Content â”€â”€ */}
           <div className="flex flex-col items-center text-center lg:items-center">
 
             {/* Breadcrumb */}
             <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-slate-500 mb-8 animate-hero-enter">
-              <a href="/ARA-Marketing/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+              <a href="/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
               <ChevronRight size={11} className="text-slate-600 flex-shrink-0" />
               <span className="whitespace-nowrap">Digital Marketing</span>
               <ChevronRight size={11} className="text-slate-600 flex-shrink-0" />
@@ -93,7 +93,7 @@ export default function GDHero() {
 
             {/* CTAs */}
             <div className="animate-hero-d4 flex flex-wrap justify-center gap-3 mb-10">
-              <a href="/ARA-Marketing/contact-us"
+              <a href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
                 style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.45)' }}>
                 Take a First Step <ArrowRight size={15} />
@@ -125,13 +125,13 @@ export default function GDHero() {
             </div>
           </div>
 
-          {/* ── Right: Grid tiles ── */}
+          {/* â”€â”€ Right: Grid tiles â”€â”€ */}
           <div className="hidden lg:block animate-hero-visual">
             <div className="flex gap-3" style={{ minHeight: 420 }}>
 
               {/* Left column: Box 1 top, Box 3 bottom */}
               <div className="flex-1 flex flex-col gap-3">
-                {/* Box 1 — Logo Design: top */}
+                {/* Box 1 â€” Logo Design: top */}
                 <div className="rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
                   style={{ background: 'linear-gradient(145deg,rgba(37,99,235,0.18),rgba(37,99,235,0.07))', border: '1px solid rgba(96,165,250,0.2)' }}>
                   <div className="absolute inset-0 rounded-2xl pointer-events-none"
@@ -146,7 +146,7 @@ export default function GDHero() {
                   </div>
                 </div>
 
-                {/* Box 3 — Brochure: centered in remaining space */}
+                {/* Box 3 â€” Brochure: centered in remaining space */}
                 <div className="flex-1 flex items-center">
                 <div className="w-full rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
                   style={{ background: 'linear-gradient(145deg,rgba(37,99,235,0.18),rgba(37,99,235,0.07))', border: '1px solid rgba(96,165,250,0.2)' }}>
