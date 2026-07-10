@@ -86,7 +86,7 @@ export default function PriceDigitalMarketing() {
                 <span className="text-[11px] font-bold uppercase tracking-widest text-blue-600">PRO</span>
               </div>
               <div className="flex items-end gap-1.5 mb-1">
-                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">â‚¹35,000</span>
+                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">₹35,000</span>
                 <span className="text-[13px] text-slate-400 font-medium mb-1">/month</span>
               </div>
               <p className="text-[12px] text-slate-400">Perfect for growing brands</p>
@@ -133,7 +133,7 @@ export default function PriceDigitalMarketing() {
                 <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: '#0ea5e9' }}>PRO+</span>
               </div>
               <div className="flex items-end gap-1.5 mb-1">
-                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">â‚¹50,000</span>
+                <span className="text-[38px] font-black text-slate-900 leading-none tracking-tight">₹50,000</span>
                 <span className="text-[13px] text-slate-400 font-medium mb-1">/month</span>
               </div>
               <p className="text-[12px] text-slate-400">Full-scale digital domination</p>

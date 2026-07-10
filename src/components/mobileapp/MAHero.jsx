@@ -27,7 +27,7 @@ const tabItems = [
 ]
 
 const appCards = [
-  { label: 'Total Revenue', val: 'â‚¹2.4M', change: '+24%', color: '#2563eb',  bg: '#eff6ff' },
+  { label: 'Total Revenue', val: '₹2.4M', change: '+24%', color: '#2563eb',  bg: '#eff6ff' },
   { label: 'Active Users',  val: '12.4K', change: '+18%', color: '#0ea5e9',  bg: '#e0f2fe' },
 ]
 
@@ -258,9 +258,9 @@ export default function MAHero() {
                         <p className="text-[7.5px] font-bold text-blue-600">See all</p>
                       </div>
                       {[
-                        { name: 'Priya S.',    amount: 'â‚¹2,499', dot: '#0ea5e9' },
-                        { name: 'Karthik R.',  amount: 'â‚¹5,200', dot: '#2563eb' },
-                        { name: 'Meena Co.',   amount: 'â‚¹8,750', dot: '#60a5fa' },
+                        { name: 'Priya S.',    amount: '₹2,499', dot: '#0ea5e9' },
+                        { name: 'Karthik R.',  amount: '₹5,200', dot: '#2563eb' },
+                        { name: 'Meena Co.',   amount: '₹8,750', dot: '#60a5fa' },
                       ].map(({ name, amount, dot }) => (
                         <div key={name} className="flex items-center gap-2 px-3 py-2"
                           style={{ borderBottom: '1px solid #f8fafc' }}>

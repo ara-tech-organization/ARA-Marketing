@@ -31,19 +31,37 @@ const LinkedInIcon = () => (
   </svg>
 )
 
-const services = [
-  { label: 'SEO',                  href: '/services/search-engine-optimization' },
-  { label: 'Social Media Marketing', href: '/services/social-media-marketing' },
-  { label: 'SEM / Google Ads',     href: '/services/search-engine-marketing' },
-  { label: 'Graphic Design',       href: '/services/graphic-design' },
-  { label: 'Video Editing',        href: '/services/video-editing' },
-  { label: 'Website Development',  href: '/services/website-development' },
-]
 const company = [
-  { label: 'Home',        href: '/' },
-  { label: 'Web Design',  href: '/services/website-development' },
-  { label: 'About Us',    href: '/about-us' },
-  { label: 'Contact Us',  href: '/contact-us' },
+  { label: 'Home',                href: '/' },
+  { label: 'About Us',            href: '/about-us' },
+  { label: 'Contact Us',          href: '/contact-us' },
+  { label: 'Privacy Policy',      href: '/privacy-policy' },
+  { label: 'Terms & Conditions',  href: '/terms-and-conditions' },
+]
+const digitalMarketing = [
+  { label: 'SEO',                     href: '/services/search-engine-optimization' },
+  { label: 'Social Media Marketing',  href: '/services/social-media-marketing' },
+  { label: 'SEM / Google Ads',        href: '/services/search-engine-marketing' },
+  { label: 'Graphic Design',          href: '/services/graphic-design' },
+  { label: 'Video Editing',           href: '/services/video-editing' },
+  { label: 'Other Services',          href: '/services/other-digital-marketing-services' },
+]
+const websiteDevelopment = [
+  { label: 'Static Website',      href: '/services/static-website-development' },
+  { label: 'Dynamic Website',     href: '/services/dynamic-website-development' },
+  { label: 'WordPress Website',   href: '/services/cms-website-development' },
+  { label: 'Ecommerce Website',   href: '/services/ecommerce-website-development' },
+  { label: 'Enterprise Website',  href: '/services/enterprise-website-development' },
+]
+const appDevelopment = [
+  { label: 'Web Application',     href: '/services/web-application-development' },
+  { label: 'Mobile Application',  href: '/services/mobile-application-development' },
+]
+const linkColumns = [
+  { title: 'Company',             links: company },
+  { title: 'Digital Marketing',   links: digitalMarketing },
+  { title: 'Website Development', links: websiteDevelopment },
+  { title: 'App Development',     links: appDevelopment },
 ]
 const socials  = [
   [FacebookIcon,  'Facebook',  'https://www.facebook.com/aradiscovermarketing'],
@@ -62,7 +80,7 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr] gap-10 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] gap-10 mb-16">
 
           {/* Brand */}
           <div>
@@ -74,7 +92,7 @@ export default function Footer() {
               social media, branding and performance marketing solutions that drive
               real business growth.
             </p>
-            <div className="flex gap-2.5">
+            <div className="flex gap-2.5 mb-7">
               {socials.map(([Icon, label, href]) => (
                 <a
                   key={label}
@@ -91,50 +109,6 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* Services + Company */}
-          <div className="grid grid-cols-2 sm:contents gap-6">
-            {/* Services */}
-            <div>
-              <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Services</h4>
-              <ul className="flex flex-col gap-2.5">
-                {services.map(({ label, href }) => (
-                  <li key={label}>
-                    <Link
-                      to={href}
-                      className="text-sm text-white/40 hover:text-blue-400
-                        hover:pl-1 transition-all duration-300"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div>
-              <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Company</h4>
-              <ul className="flex flex-col gap-2.5">
-                {company.map(({ label, href }) => (
-                  <li key={label}>
-                    <Link
-                      to={href}
-                      className="text-sm text-white/40 hover:text-blue-400
-                        hover:pl-1 transition-all duration-300"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-xs font-bold text-white mb-5 tracking-wide">Contact</h4>
             <div className="flex items-start gap-2.5 text-sm text-white/40 mb-3">
               <MapPin size={14} className="text-blue-400 flex-shrink-0 mt-0.5" />
               <span>67A, Giri Rd, Srinivasapuram, Thanjavur, Tamil Nadu 613009</span>
@@ -143,10 +117,32 @@ export default function Footer() {
               <Phone size={14} className="text-blue-400 flex-shrink-0" />
               <a href="tel:+918110025254" className="hover:text-blue-400 transition-colors duration-300">(+91) 81100 25254</a>
             </div>
-            <div className="flex items-center gap-2.5 text-sm text-white/40 mb-6">
+            <div className="flex items-center gap-2.5 text-sm text-white/40">
               <Mail size={14} className="text-blue-400 flex-shrink-0" />
               <span>aradiscovermarketing@gmail.com</span>
             </div>
+          </div>
+
+          {/* Link columns */}
+          <div className="grid grid-cols-2 sm:contents gap-6">
+            {linkColumns.map(({ title, links }) => (
+              <div key={title}>
+                <h4 className="text-xs font-bold text-white mb-5 tracking-wide">{title}</h4>
+                <ul className="flex flex-col gap-2.5">
+                  {links.map(({ label, href }) => (
+                    <li key={label}>
+                      <Link
+                        to={href}
+                        className="text-sm text-white/40 hover:text-blue-400
+                          hover:pl-1 transition-all duration-300"
+                      >
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 

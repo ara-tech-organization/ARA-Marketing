@@ -12,7 +12,7 @@ const highlights = [
 
 const kpis = [
   { label: 'Total Users', val: '12,450', change: '+18%', color: '#3b82f6' },
-  { label: 'Revenue',     val: 'â‚¹2.1M',  change: '+24%', color: '#0891b2' },
+  { label: 'Revenue',     val: '₹2.1M',  change: '+24%', color: '#0891b2' },
   { label: 'Orders',      val: '843',    change: '+12%', color: '#6366f1' },
   { label: 'Uptime',      val: '99.9%',  change: 'Stable', color: '#10b981' },
 ]
@@ -28,9 +28,9 @@ const sidebarItems = [
 ]
 
 const tableRows = [
-  { name: 'Priya Sharma',    type: 'Web App Order',  amount: 'â‚¹45,000',  status: 'Completed',   dot: '#10b981' },
-  { name: 'Karthik Rajan',   type: 'Mobile App Dev', amount: 'â‚¹72,000',  status: 'In Progress', dot: '#3b82f6' },
-  { name: 'Meena Logistics', type: 'eCommerce App',  amount: 'â‚¹1,20,000',status: 'Review',      dot: '#f59e0b' },
+  { name: 'Priya Sharma',    type: 'Web App Order',  amount: '₹45,000',  status: 'Completed',   dot: '#10b981' },
+  { name: 'Karthik Rajan',   type: 'Mobile App Dev', amount: '₹72,000',  status: 'In Progress', dot: '#3b82f6' },
+  { name: 'Meena Logistics', type: 'eCommerce App',  amount: '₹1,20,000',status: 'Review',      dot: '#f59e0b' },
 ]
 
 const gradBlue = {

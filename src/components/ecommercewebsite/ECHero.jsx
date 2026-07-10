@@ -18,9 +18,9 @@ const quickWins = [
 ]
 
 const orders = [
-  { id: '#EC-1842', product: 'Blue Denim Jacket',  amount: 'â‚¹2,499', status: 'Confirmed', dot: '#2563eb' },
-  { id: '#EC-1841', product: 'Wireless Earbuds Pro', amount: 'â‚¹3,999', status: 'Shipping',  dot: '#0ea5e9' },
-  { id: '#EC-1840', product: 'Silk Saree (Red)',    amount: 'â‚¹5,499', status: 'Delivered', dot: '#2563eb' },
+  { id: '#EC-1842', product: 'Blue Denim Jacket',  amount: '₹2,499', status: 'Confirmed', dot: '#2563eb' },
+  { id: '#EC-1841', product: 'Wireless Earbuds Pro', amount: '₹3,999', status: 'Shipping',  dot: '#0ea5e9' },
+  { id: '#EC-1840', product: 'Silk Saree (Red)',    amount: '₹5,499', status: 'Delivered', dot: '#2563eb' },
 ]
 
 export default function ECHero() {
@@ -144,7 +144,7 @@ export default function ECHero() {
                   <div className="flex items-end justify-between gap-2 mb-3">
                     <div>
                       <p className="text-[10px] text-slate-400 font-semibold mb-1">TODAY'S REVENUE</p>
-                      <p className="text-[22px] font-black text-slate-900 leading-none">â‚¹2,45,800</p>
+                      <p className="text-[22px] font-black text-slate-900 leading-none">₹2,45,800</p>
                     </div>
                     <span className="flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg"
                       style={{ background: 'rgba(14,165,233,0.1)', color: '#0ea5e9' }}>
@@ -213,7 +213,7 @@ export default function ECHero() {
                 </div>
                 <div>
                   <p className="text-[9.5px] text-slate-400 font-semibold leading-none mb-0.5">Payment Success</p>
-                  <p className="text-[15px] font-black text-slate-800 leading-tight">â‚¹8,499</p>
+                  <p className="text-[15px] font-black text-slate-800 leading-tight">₹8,499</p>
                 </div>
               </div>
 

@@ -3,7 +3,7 @@ import { Globe, Check } from 'lucide-react'
 const plans = [
   {
     name: 'Static Website',
-    price: 'â‚¹10,000',
+    price: '₹10,000',
     label: 'Starting from',
     for: 'Schools, Clinics, Small Businesses',
     color: '#2563eb',
@@ -19,7 +19,7 @@ const plans = [
   },
   {
     name: 'Dynamic Website',
-    price: 'â‚¹20,000',
+    price: '₹20,000',
     label: 'Starting from',
     for: 'Educational Institutions, Hospitals, Service Businesses',
     color: '#0ea5e9',
@@ -37,7 +37,7 @@ const plans = [
   },
   {
     name: 'E-Commerce Website',
-    price: 'â‚¹30,000',
+    price: '₹30,000',
     label: 'Starting from',
     for: 'Retail Stores, Fashion Brands, D2C Businesses',
     color: '#2563eb',

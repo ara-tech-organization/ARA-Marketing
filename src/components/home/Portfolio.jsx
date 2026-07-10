@@ -14,9 +14,9 @@ const caseStudies = [
   },
   {
     industry: 'eCommerce',
-    title: 'Online Store — 500+ Qualified Leads Generated Monthly',
-    desc: 'End-to-end performance marketing, Meta Ads and SEO strategy for an eCommerce brand that generated 500+ qualified leads every month with a consistent 4x return on ad spend.',
-    metrics: [{ val: '500+', label: 'Monthly Leads' }, { val: '4x', label: 'ROAS' }, { val: '95%', label: 'Retention' }],
+    title: 'Online Store — 500+ Sales Generated Monthly',
+    desc: 'End-to-end performance marketing, Meta Ads and SEO strategy for an eCommerce brand that generated 500+ sales every month with a consistent 4x return on ad spend.',
+    metrics: [{ val: '500+', label: 'Monthly Sales' }, { val: '4x', label: 'ROAS' }, { val: '95%', label: 'Retention' }],
     image: ecommerceImg,
     tag: 'eCommerce',
   },

@@ -74,7 +74,7 @@ const introColumns = [
 
 const introStats = [
   { val: '500+', label: 'Clients Served',      color: '#2563eb' },
-  { val: '5.0â˜…', label: 'Google Rating',       color: '#0ea5e9' },
+  { val: '5.0★', label: 'Google Rating',       color: '#0ea5e9' },
   { val: '98%',  label: 'Client Satisfaction',  color: '#2563eb' },
 ]
 
