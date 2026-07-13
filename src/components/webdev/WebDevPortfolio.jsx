@@ -79,7 +79,7 @@ function ProjectCard({ num, icon: Icon, title, desc, tags, count, color, bg }) {
       onMouseLeave={() => setHovered(false)}
     >
       <div className="h-1 w-full transition-all duration-300"
-        style={{ background: hovered ? `linear-gradient(90deg, ${color}, ${color}88)` : `linear-gradient(90deg, ${color}30, ${color}10)` }} />
+        style={{ background: 'var(--brand-gradient-soft)', opacity: hovered ? 1 : 0.35 }} />
 
       <div className="p-6">
         <div className="flex items-start justify-between mb-4">

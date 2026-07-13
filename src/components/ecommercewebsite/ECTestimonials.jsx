@@ -32,11 +32,11 @@ export default function ECTestimonials() {
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />
       <div className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-16 -left-16 w-[340px] h-[340px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="hidden sm:block absolute top-10 left-10 w-[160px] h-[160px] rounded-full border pointer-events-none animate-[spin_38s_linear_infinite]"
         style={{ borderColor: 'rgba(37,99,235,0.12)' }} />
 

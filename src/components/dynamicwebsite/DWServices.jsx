@@ -95,7 +95,7 @@ const services = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -107,11 +107,11 @@ export default function DWServices() {
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       <div className="hidden sm:block absolute -top-20 -right-20 w-[360px] h-[360px] rounded-full border border-blue-100/60 pointer-events-none animate-[spin_38s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -left-16 w-[300px] h-[300px] rounded-full border border-sky-100/50 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.12) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -141,7 +141,7 @@ export default function DWServices() {
                 onClick={() => setActive(id)}
                 className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-[12px] font-bold transition-all duration-300"
                 style={isActive
-                  ? { background: `linear-gradient(135deg,${color},${color}cc)`, color: 'white', boxShadow: `0 6px 18px ${color}35` }
+                  ? { background: 'var(--brand-gradient)', color: 'white', boxShadow: `0 6px 18px ${color}35` }
                   : { background: color + '0d', color, border: `1.5px solid ${color}22` }}
               >
                 <Icon size={12} />
@@ -166,7 +166,7 @@ export default function DWServices() {
                 style={{ minHeight: 200 }}
               />
               <div className="absolute inset-0"
-                style={{ background: `linear-gradient(135deg, ${svc.color}28 0%, transparent 60%)` }} />
+                style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
               <div className="absolute top-4 left-4">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-white"
                   style={{ background: svc.color, boxShadow: `0 4px 14px ${svc.color}50` }}>
@@ -179,7 +179,7 @@ export default function DWServices() {
             <div className="flex-1 px-5 sm:px-8 lg:px-10 py-6 sm:py-8 lg:py-10 bg-white flex flex-col justify-center">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center"
-                  style={{ background: `linear-gradient(135deg,${svc.color}15,${svc.color}08)`, border: `1.5px solid ${svc.color}25` }}>
+                  style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${svc.color}25` }}>
                   <svc.icon size={18} style={{ color: svc.color }} />
                 </div>
                 <h3 className="text-[17px] sm:text-[19px] font-bold text-slate-900 leading-snug">{svc.label}</h3>
@@ -202,7 +202,7 @@ export default function DWServices() {
 
               <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-full text-white text-[13px] font-bold self-start transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-                style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}30` }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${svc.color}30` }}>
                 Get Started <ArrowRight size={13} />
               </a>
             </div>

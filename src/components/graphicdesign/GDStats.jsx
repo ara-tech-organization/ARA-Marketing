@@ -40,14 +40,13 @@ export default function GDStats() {
     <section
       className="relative overflow-hidden py-2"
       style={{
-        background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%)',
+        background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)',
       }}
     >
       {/* Subtle dot pattern */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.08) 1px, transparent 1px)',
           backgroundSize: '28px 28px',
         }}
       />
@@ -62,20 +61,14 @@ export default function GDStats() {
             >
               {/* Number */}
               <p
-                className="text-[clamp(26px,3.5vw,48px)] font-black leading-none mb-3 transition-transform duration-300 group-hover:scale-105"
-                style={{
-                  background: 'linear-gradient(135deg, #1d4ed8 0%, #0ea5e9 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
+                className="text-[clamp(26px,3.5vw,48px)] font-black leading-none mb-3 transition-transform duration-300 group-hover:scale-105 text-gradient-blue"
               >
                 <Counter target={value} suffix={suffix} />
               </p>
               {/* Accent line */}
               <div
                 className="w-8 h-0.5 rounded-full mb-3"
-                style={{ background: 'linear-gradient(90deg, #2563eb, #38bdf8)' }}
+                style={{ background: 'var(--brand-gradient-soft)' }}
               />
               <p className="text-[14px] font-bold text-slate-800 mb-1">{label}</p>
               <p className="text-[11px] text-slate-500">{sub}</p>

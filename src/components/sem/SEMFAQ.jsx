@@ -80,7 +80,7 @@ export default function SEMFAQ() {
                   style={{ maxHeight: isOpen ? 200 : 0 }}>
                   <div className="px-6 pb-6 bg-white">
                     <div className="h-px mb-4"
-                      style={{ background: `linear-gradient(90deg,${color}40,transparent)` }} />
+                      style={{ background: 'var(--brand-gradient-line)' }} />
                     <p className="text-[13.5px] text-slate-600 leading-[1.85] pl-12">{a}</p>
                   </div>
                 </div>

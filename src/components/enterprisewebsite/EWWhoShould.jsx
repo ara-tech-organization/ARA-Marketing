@@ -44,7 +44,7 @@ export default function EWWhoShould() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '34px 34px',
         }}
       />
@@ -68,12 +68,7 @@ export default function EWWhoShould() {
 
           <h2 className="text-[clamp(20px,3.6vw,44px)] font-bold leading-[1.10] tracking-tight mb-3 sm:mb-4 text-slate-900">
             Who Should Invest in an{' '}
-            <span style={{
-              background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
+            <span className="text-gradient-blue">
               Enterprise Website?
             </span>
           </h2>
@@ -136,7 +131,7 @@ export default function EWWhoShould() {
               {/* Bottom accent bar */}
               <div
                 className="absolute bottom-0 left-5 right-5 sm:left-6 sm:right-6 h-0.5 rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"
-                style={{ background: `linear-gradient(90deg, transparent, ${color}, transparent)` }}
+                style={{ background: 'var(--brand-gradient-line)' }}
               />
             </div>
           ))}

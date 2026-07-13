@@ -19,7 +19,7 @@ function StatItem({ target, suffix, label, icon: Icon, index }) {
       {/* Vertical right border — hidden on last */}
       {index < stats.length - 1 && (
         <div className="hidden lg:block absolute right-0 inset-y-8 w-px"
-          style={{ background: 'linear-gradient(180deg, transparent, #93c5fd, transparent)' }} />
+          style={{ background: 'var(--brand-gradient-line-vertical)' }} />
       )}
 
       {/* Icon pill */}
@@ -46,7 +46,7 @@ function StatItem({ target, suffix, label, icon: Icon, index }) {
 
       {/* Hover glow spot */}
       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500"
-        style={{ background: 'radial-gradient(circle at 50% 40%, rgba(37,99,235,0.06) 0%, transparent 70%)' }} />
+        style={{ background: 'radial-gradient(circle at 50% 40%, rgba(219,234,254,0.6) 0%, transparent 70%)' }} />
     </div>
   )
 }
@@ -59,20 +59,20 @@ export default function WebDevStats() {
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '32px 32px',
           opacity: 0.22,
         }} />
 
       {/* Blue glow blobs */}
       <div className="absolute -top-32 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.45) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(96,165,250,0.3) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Top edge line */}
       <div className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, #93c5fd, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -101,12 +101,12 @@ export default function WebDevStats() {
 
         {/* Bottom bar */}
         <div className="mt-12 h-px reveal"
-          style={{ background: 'linear-gradient(90deg, transparent, rgba(96,165,250,0.3), transparent)' }} />
+          style={{ background: 'var(--brand-gradient-line)' }} />
       </div>
 
       {/* Bottom edge line */}
       <div className="absolute bottom-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, #93c5fd, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line)' }} />
     </section>
   )
 }

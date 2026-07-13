@@ -7,6 +7,29 @@
   --breakpoint-xs: 380px;
 }
 
+/* ── Brand gradient system (single source of truth — do not introduce ad-hoc gradients) ── */
+:root {
+  /* Solid brand gradient: CTA sections, icon tiles, card overlays, buttons, borders */
+  --brand-gradient: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  /* Lighter variant: hero accent bars, badges, subtle highlights */
+  --brand-gradient-soft: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
+  /* Text-clip gradient: gradient headline words */
+  --brand-gradient-text: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
+  /* Ambient radial glow behind hero content */
+  --brand-gradient-glow: radial-gradient(ellipse, rgba(219, 234, 254, 0.7) 0%, transparent 65%);
+  /* Faint dot-grid texture for section backgrounds */
+  --brand-gradient-dots: radial-gradient(rgba(37, 99, 235, 0.07) 1.5px, transparent 1.5px);
+  /* Horizontal fade divider line */
+  --brand-gradient-line: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.2), transparent);
+  /* Vertical fade divider line (timelines/connectors) */
+  --brand-gradient-line-vertical: linear-gradient(180deg, transparent, rgba(37, 99, 235, 0.3), transparent);
+}
+
+.bg-brand-gradient { background-image: var(--brand-gradient); }
+.bg-brand-gradient-soft { background-image: var(--brand-gradient-soft); }
+.bg-brand-gradient-glow { background-image: var(--brand-gradient-glow); }
+.bg-brand-gradient-dots { background-image: var(--brand-gradient-dots); }
+
 /* ── Base ── */
 html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 body { font-family: var(--font-poppins), sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; width: 100%; }
@@ -98,7 +121,7 @@ h6 { font-size: 12px !important; }
 /* ── Metric bar ── */
 .metric-fill {
   height: 100%;
-  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  background: var(--brand-gradient-soft);
   border-radius: 4px;
   width: 0%;
   transition: width 1.3s cubic-bezier(0.4,0,0.2,1);
@@ -133,7 +156,7 @@ h6 { font-size: 12px !important; }
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #60a5fa, #1d4ed8);
+  background: var(--brand-gradient-soft);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.38s cubic-bezier(0.4,0,0.2,1);
@@ -145,7 +168,7 @@ h6 { font-size: 12px !important; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: var(--brand-gradient);
   opacity: 0;
   transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1);
   border-radius: inherit;
@@ -157,7 +180,7 @@ h6 { font-size: 12px !important; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: var(--brand-gradient);
   opacity: 0;
   transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1);
   border-radius: inherit;
@@ -187,7 +210,7 @@ h6 { font-size: 12px !important; }
   position: absolute;
   bottom: -5px; left: 0; right: 0;
   height: 5px;
-  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  background: var(--brand-gradient-soft);
   border-radius: 3px;
   transform-origin: left;
 }
@@ -250,8 +273,8 @@ h6 { font-size: 12px !important; }
 .industry-pill:hover { transform: scale(1.08) translateY(-3px); background: rgba(59,130,246,0.25); border-color: rgba(96,165,250,0.5); }
 
 /* ── Glow button ── */
-.btn-glow { background: linear-gradient(90deg, #3b82f6 0%, #7c3aed 100%) !important; box-shadow: 0 4px 18px rgba(124,58,237,0.22); transition: all 0.3s ease; }
-.btn-glow:hover { background: linear-gradient(90deg, #60a5fa 0%, #8b5cf6 100%) !important; box-shadow: 0 0 32px 0 rgba(124,58,237,0.4), 0 8px 32px rgba(59,130,246,0.3); transform: translateY(-2px); }
+.btn-glow { background: var(--brand-gradient) !important; box-shadow: 0 4px 18px rgba(37,99,235,0.22); transition: all 0.3s ease; }
+.btn-glow:hover { background: var(--brand-gradient-soft) !important; box-shadow: 0 0 32px 0 rgba(37,99,235,0.4), 0 8px 32px rgba(59,130,246,0.3); transform: translateY(-2px); }
 
 /* ── Testimonial card hover ── */
 .testi-hover { transition: all 0.4s cubic-bezier(0.4,0,0.2,1); }
@@ -266,7 +289,7 @@ h6 { font-size: 12px !important; }
 .blog-dark-card:hover { border-color: rgba(59,130,246,0.4); box-shadow: 0 0 32px rgba(37,99,235,0.15); }
 
 /* ── Hero gradient text ── */
-.text-gradient-blue { background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.text-gradient-blue { background-image: var(--brand-gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
 /* ── Zigzag timeline ── */
 .timeline-line { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, transparent, #93c5fd 20%, #93c5fd 80%, transparent); transform: translateX(-50%); }

@@ -69,7 +69,7 @@ export default function PriceWebsite() {
             style={{ fontSize: 'clamp(22px,3vw,34px)' }}>
             Website Development{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
+              background: 'var(--brand-gradient-text)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -94,7 +94,7 @@ export default function PriceWebsite() {
               {/* Popular badge */}
               {popular && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-[11px] font-bold text-white uppercase tracking-widest"
-                  style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   Most Popular
                 </div>
               )}

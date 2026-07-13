@@ -20,15 +20,14 @@ export default function GDCTA() {
           <div
             className="relative overflow-hidden flex flex-col justify-between p-7 sm:p-10 lg:p-14"
             style={{
-              background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%)',
+              background: 'var(--brand-gradient-soft)',
               borderRight: '1px solid #bfdbfe',
             }}
           >
             {/* Dot pattern */}
             <div
-              className="absolute inset-0 pointer-events-none"
+              className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
               style={{
-                backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.1) 1px, transparent 1px)',
                 backgroundSize: '26px 26px',
               }}
             />
@@ -36,7 +35,7 @@ export default function GDCTA() {
             {/* Radial glow */}
             <div
               className="absolute top-0 right-0 w-72 h-72 pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.4) 0%, transparent 70%)' }}
+              style={{ background: 'var(--brand-gradient-glow)' }}
             />
 
             <div className="relative">
@@ -46,19 +45,13 @@ export default function GDCTA() {
                 <Palette size={11} /> Build Your Brand
               </span>
 
-              <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold leading-[1.1] tracking-tight mb-5"
-                style={{ color: '#0f172a' }}>
+              <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold leading-[1.1] tracking-tight mb-5 text-white">
                 Let's Build{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg, #1d4ed8, #0ea5e9)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-white/70">
                   With Us
                 </span>
               </h2>
-              <p className="text-[15px] text-slate-600 leading-[1.8] max-w-[400px]">
+              <p className="text-[15px] text-white/75 leading-[1.8] max-w-[400px]">
                 Team up with ARA Discover Marketing — the{' '}
                 leading design agency in thanjavur{' '}
                 — for innovative branding, logo designing, brochure designing, and complete visual

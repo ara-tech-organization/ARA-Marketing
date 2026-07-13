@@ -24,7 +24,7 @@ function StatRow({ target, suffix, label, icon: Icon, delay, color }) {
       <div
         className="text-[clamp(26px,2.8vw,38px)] font-bold leading-none tracking-tight w-28 flex-shrink-0"
         style={{
-          background: `linear-gradient(135deg, ${color}, ${color}88)`,
+          background: 'var(--brand-gradient-text)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
@@ -48,14 +48,14 @@ export default function SEOStats() {
   return (
     <section
       className="relative overflow-hidden py-12 md:py-16 lg:py-16"
-      style={{ background: 'linear-gradient(135deg, #dbeafe 0%, #e0f2fe 50%, #ede9fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       <div className="absolute -top-20 -left-20 w-[460px] h-[460px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.6) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-20 -right-20 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(167,139,250,0.4) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.15) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-14 items-start">

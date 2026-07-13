@@ -14,23 +14,18 @@ const stats = [
   { value: '98%',  label: 'Client Retention', icon: TrendingUp, color: '#2563eb' },
 ]
 
-const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
-
 export default function VEIntro() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.30) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -47,7 +42,7 @@ export default function VEIntro() {
 
             <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Professional Video Editing That Turns Ideas Into{' '}
-              <span style={gradBlue}>Powerful Visual Stories</span>
+              <span className="text-gradient-blue">Powerful Visual Stories</span>
             </h2>
 
             <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-6 max-w-[540px] mx-auto lg:mx-0">
@@ -64,7 +59,7 @@ export default function VEIntro() {
                 <div key={label} className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/80"
                   style={{ border: `1px solid ${color}18`, boxShadow: `0 4px 16px ${color}0a` }}>
                   <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}22` }}>
+                    style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}22` }}>
                     <Icon size={15} style={{ color }} />
                   </div>
                   <div>
@@ -78,7 +73,7 @@ export default function VEIntro() {
             <div className="flex justify-center lg:justify-start">
               <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
                 Get Video Editing Services <ArrowRight size={14} />
               </a>
             </div>
@@ -128,7 +123,7 @@ export default function VEIntro() {
               onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.90)' }}
             >
               <div className="w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}28` }}>
+                style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}28` }}>
                 <Icon size={18} style={{ color }} />
               </div>
               <div>
@@ -136,7 +131,7 @@ export default function VEIntro() {
                 <p className="text-[12px] text-slate-500 leading-[1.75]">{desc}</p>
               </div>
               <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500 mt-auto"
-                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
             </div>
           ))}
         </div>

@@ -97,10 +97,10 @@ export default function Services() {
         {/* Background decorations â€” identical to AboutMV */}
         <div className="absolute pointer-events-none rounded-full"
           style={{ top: '-5%', right: '-4%', width: '320px', height: '320px',
-            background: 'radial-gradient(circle, rgba(186,230,253,0.6) 0%, transparent 65%)' }} />
+            background: 'var(--brand-gradient-glow)' }} />
         <div className="absolute pointer-events-none rounded-full"
           style={{ bottom: '-5%', left: '-4%', width: '260px', height: '260px',
-            background: 'radial-gradient(circle, rgba(219,234,254,0.7) 0%, transparent 65%)' }} />
+            background: 'var(--brand-gradient-glow)' }} />
         <div className="absolute pointer-events-none rounded-full hidden lg:block"
           style={{ top: '30%', left: '-3%', width: '160px', height: '160px',
             border: '1.5px dashed rgba(14,165,233,0.25)' }} />
@@ -128,12 +128,7 @@ export default function Services() {
               <h2 className="font-bold text-slate-900 leading-tight tracking-tight"
                 style={{ fontSize: 'clamp(26px,3.6vw,50px)' }}>
                 Result-Driven Digital Marketing{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-gradient-blue">
                   Services for Modern Businesses
                 </span>
               </h2>
@@ -155,11 +150,11 @@ export default function Services() {
 
           {/* Dot divider â€” identical to AboutMV */}
           <div className="flex items-center gap-4 mb-12">
-            <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,transparent,#bfdbfe)' }} />
+            <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
             <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
             <div className="w-2 h-2 rounded-full" style={{ background: '#0ea5e9' }} />
             <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
-            <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#bfdbfe,transparent)' }} />
+            <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
           </div>
 
           {/* â”€â”€ Zone 2: 3 feature columns â”€â”€ */}
@@ -180,7 +175,7 @@ export default function Services() {
                 <p className="text-[13.5px] leading-[1.85] text-slate-500">{text}</p>
                 {/* Bottom accent line â€” identical to AboutMV */}
                 <div className="mt-5 h-[3px] w-16 rounded-full"
-                  style={{ background: `linear-gradient(90deg,${iconColor},#0ea5e9)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
               </div>
             ))}
           </div>

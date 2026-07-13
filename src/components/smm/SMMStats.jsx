@@ -14,7 +14,7 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
       {/* Icon */}
       <div
         className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-        style={{ background: 'linear-gradient(135deg, #dbeafe, #bfdbfe)' }}
+        style={{ background: 'var(--brand-gradient)' }}
       >
         <Icon size={24} className="text-blue-600" />
       </div>
@@ -23,7 +23,7 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
       <div
         className="text-[clamp(20px,2.4vw,32px)] font-bold leading-none tracking-tight mb-2"
         style={{
-          background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)',
+          background: 'var(--brand-gradient-text)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
@@ -40,7 +40,7 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
       {/* Bottom accent line */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-1 rounded-full"
-        style={{ background: 'linear-gradient(90deg, #2563eb, #60a5fa)' }}
+        style={{ background: 'var(--brand-gradient-soft)' }}
       />
     </div>
   )
@@ -58,28 +58,28 @@ export default function SMMStats() {
   return (
     <section
       className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
 
       {/* Decorative orbs */}
       <div
         className="absolute -top-24 -left-24 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.45) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
       <div
         className="absolute -bottom-24 -right-24 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(96,165,250,0.35) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.5) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       {/* Dot grid pattern */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '32px 32px',
           opacity: 0.35,
         }}
@@ -87,7 +87,7 @@ export default function SMMStats() {
 
       {/* Top wave divider */}
       <div className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, #93c5fd, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -117,7 +117,7 @@ export default function SMMStats() {
 
       {/* Bottom wave divider */}
       <div className="absolute bottom-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, #93c5fd, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line)' }} />
 
     </section>
   )

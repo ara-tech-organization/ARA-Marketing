@@ -1,20 +1,35 @@
+import { useRef } from 'react'
 import { Share2, TrendingUp, Users, ChevronRight, ArrowRight, ArrowUpRight, Activity } from 'lucide-react'
 import smmHeroImg from '../../assets/SMM/m1.webp'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 export default function SMMHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-[88vh] flex items-center"
-      style={{ background: 'linear-gradient(135deg, #ffffff 0%, #eff6ff 45%, #e0f2fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Decorative orbs */}
       <div
         className="absolute top-16 right-0 w-[650px] h-[650px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.65) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
       <div
         className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(224,242,254,0.55) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 w-full py-20">
@@ -115,7 +130,7 @@ export default function SMMHero() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0"
-                    style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.18) 0%, rgba(10,26,80,0.55) 100%)' }} />
+                    style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
 
                   {/* Live badge on image */}
                   <div className="absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5
@@ -160,7 +175,7 @@ export default function SMMHero() {
                         <div key={i} style={{
                           flex: 1, height: `${h}%`,
                           borderRadius: '4px 4px 0 0',
-                          background: i >= 7 ? 'linear-gradient(180deg, #60a5fa, #2563eb)' : '#dbeafe',
+                          background: i >= 7 ? 'var(--brand-gradient-soft)' : '#dbeafe',
                           animation: `bar-in 0.7s ${i * 0.06 + 0.3}s cubic-bezier(0,0,0.2,1) both`,
                         }} />
                       ))}

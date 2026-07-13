@@ -7,7 +7,7 @@ const PARTICLES = Array.from({ length: 22 }, (_, i) => ({
   size: 1.4 + (i % 3) * 0.7,
   dur:  3 + (i % 5) * 0.6,
   delay: (i * 0.28) % 2.2,
-  color: ['#3b82f6','#8b5cf6','#06b6d4'][i % 3],
+  color: ['#3b82f6','#2563eb','#60a5fa'][i % 3],
 }))
 
 const BUBBLES = Array.from({ length: 10 }, (_, i) => ({
@@ -16,7 +16,7 @@ const BUBBLES = Array.from({ length: 10 }, (_, i) => ({
   size: 14 + (i % 4) * 12,
   dur:  5 + (i % 4) * 1.5,
   delay: (i * 0.45) % 3,
-  color: ['rgba(59,130,246,', 'rgba(139,92,246,', 'rgba(6,182,212,'][i % 3],
+  color: ['rgba(59,130,246,', 'rgba(37,99,235,', 'rgba(96,165,250,'][i % 3],
 }))
 
 export default function PageLoader({ duration = 2600 }) {
@@ -71,13 +71,13 @@ export default function PageLoader({ duration = 2600 }) {
       }} />
       <div style={{
         position: 'absolute', width: 440, height: 440, borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(139,92,246,0.11) 0%, transparent 65%)',
+        background: 'radial-gradient(circle, rgba(37,99,235,0.11) 0%, transparent 65%)',
         bottom: '-8%', right: '-6%', filter: 'blur(65px)',
         animation: 'loaderBlob2 11s 1.2s ease-in-out infinite',
       }} />
       <div style={{
         position: 'absolute', width: 300, height: 300, borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(6,182,212,0.09) 0%, transparent 65%)',
+        background: 'radial-gradient(circle, rgba(96,165,250,0.09) 0%, transparent 65%)',
         top: '35%', right: '8%', filter: 'blur(55px)',
         animation: 'loaderBlob1 7s 2.5s ease-in-out infinite reverse',
       }} />
@@ -117,19 +117,19 @@ export default function PageLoader({ duration = 2600 }) {
             <defs>
               <linearGradient id="plg1" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%"   stopColor="#3b82f6" />
-                <stop offset="100%" stopColor="#8b5cf6" />
+                <stop offset="100%" stopColor="#2563eb" />
               </linearGradient>
               <linearGradient id="plg2" x1="100%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%"   stopColor="#06b6d4" />
+                <stop offset="0%"   stopColor="#60a5fa" />
                 <stop offset="100%" stopColor="#3b82f6" />
               </linearGradient>
               <linearGradient id="plg3" x1="0%" y1="100%" x2="100%" y2="0%">
-                <stop offset="0%"   stopColor="#8b5cf6" />
-                <stop offset="100%" stopColor="#ec4899" />
+                <stop offset="0%"   stopColor="#2563eb" />
+                <stop offset="100%" stopColor="#60a5fa" />
               </linearGradient>
               <linearGradient id="plgDot" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%"   stopColor="#38bdf8" />
-                <stop offset="100%" stopColor="#818cf8" />
+                <stop offset="100%" stopColor="#60a5fa" />
               </linearGradient>
               <filter id="pglow">
                 <feGaussianBlur stdDeviation="2.5" result="blur" />
@@ -201,7 +201,7 @@ export default function PageLoader({ duration = 2600 }) {
           <span style={{
             fontFamily: 'Poppins, sans-serif', fontWeight: 700, fontSize: '1.35rem',
             letterSpacing: '0.24em', textTransform: 'uppercase',
-            background: 'linear-gradient(90deg, #93c5fd 0%, #c4b5fd 40%, #93c5fd 80%, #c4b5fd 100%)',
+            background: 'linear-gradient(90deg, #93c5fd 0%, #60a5fa 40%, #93c5fd 80%, #60a5fa 100%)',
             backgroundSize: '250% 100%',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             animation: 'loaderShimmer 2.8s linear infinite',
@@ -230,7 +230,7 @@ export default function PageLoader({ duration = 2600 }) {
           <span style={{
             fontFamily: 'Poppins, sans-serif', fontWeight: 300, fontSize: '0.68rem',
             letterSpacing: '0.28em',
-            background: 'linear-gradient(90deg, #60a5fa, #a78bfa)',
+            background: 'var(--brand-gradient-text)',
             WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
             minWidth: '3.5ch', textAlign: 'center',
           }}>
@@ -244,7 +244,7 @@ export default function PageLoader({ duration = 2600 }) {
           }}>
             <div style={{
               position: 'absolute', inset: 0, borderRadius: 99,
-              background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4)',
+              background: 'linear-gradient(90deg, #3b82f6, #2563eb, #60a5fa)',
               backgroundSize: '200% 100%',
               animation: 'loaderShimmer 1.8s linear infinite',
               width: `${progress}%`,

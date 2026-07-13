@@ -36,7 +36,7 @@ export default function SMMFAQ() {
   return (
     <section
       className="py-16"
-      style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

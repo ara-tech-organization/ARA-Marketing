@@ -64,7 +64,7 @@ export default function WebDevServices() {
               >
                 <div className="absolute left-0 top-0 bottom-0 w-1 rounded-r-full transition-all duration-500
                   opacity-0 group-hover:opacity-100"
-                  style={{ background: `linear-gradient(180deg, ${color}, ${color}66)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
                 <span className="absolute right-4 top-1/2 -translate-y-1/2 font-black leading-none
                   select-none pointer-events-none"
                   style={{ fontSize: 72, color: color + '0c', fontFamily: 'var(--font-poppins)' }}>
@@ -104,7 +104,7 @@ export default function WebDevServices() {
         <div className="reveal">
           <div className="grid lg:grid-cols-[55%_45%] gap-0 rounded-3xl overflow-hidden"
             style={{ boxShadow: '0 20px 60px rgba(37,99,235,0.12)' }}>
-            <div className="p-7 lg:p-10" style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}>
+            <div className="p-7 lg:p-10" style={{ background: 'var(--brand-gradient)' }}>
               <span className="inline-flex items-center gap-2 px-3 py-1 bg-white/15 text-white
                 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5">
                 <Code2 size={10} /> Custom Web Development
@@ -136,7 +136,7 @@ export default function WebDevServices() {
                 {customFeatures.map((f, i) => (
                   <div key={f} className={`reveal delay-${i + 1} flex items-center gap-4`}>
                     <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
-                      style={{ background: 'linear-gradient(135deg, #2563eb, #3b82f6)' }}>
+                      style={{ background: 'var(--brand-gradient)' }}>
                       <CheckCircle size={15} className="text-white" />
                     </div>
                     <span className="text-[13.5px] font-semibold text-slate-700">{f}</span>

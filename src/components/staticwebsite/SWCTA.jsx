@@ -15,20 +15,20 @@ export default function SWCTA() {
     >
       {/* Orbs */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '28px 28px',
         }} />
 
       {/* Top accent line */}
       <div className="absolute top-0 left-0 right-0 h-[2px]"
-        style={{ background: 'linear-gradient(90deg, transparent, #2563eb, #0ea5e9, #2563eb, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line)' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -45,14 +45,7 @@ export default function SWCTA() {
 
               <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
                 Let's Build Your{' '}
-                <span
-                  style={{
-                    background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                >
+                <span className="text-gradient-blue">
                   Website Together
                 </span>
               </h2>
@@ -91,7 +84,7 @@ export default function SWCTA() {
             >
               <div
                 className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)' }}
+                style={{ background: 'var(--brand-gradient)' }}
               >
                 <Phone size={16} className="text-white" />
               </div>
@@ -207,7 +200,7 @@ export default function SWCTA() {
                   type="submit"
                   className="w-full flex items-center justify-center gap-2 py-4 rounded-xl text-[14px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 mt-1"
                   style={{
-                    background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+                    background: 'var(--brand-gradient)',
                     boxShadow: '0 8px 24px rgba(37,99,235,0.28)',
                   }}
                 >

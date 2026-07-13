@@ -1,7 +1,9 @@
+import { useRef } from 'react'
 import {
   ShoppingCart, Zap, Shield, ArrowRight, ArrowUpRight,
   ChevronRight, Globe, TrendingUp, CheckCircle2, Star, Package, CreditCard, BarChart2
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const stats = [
   { value: '50+',  label: 'Stores Launched',    color: '#2563eb' },
@@ -24,19 +26,31 @@ const orders = [
 ]
 
 export default function ECHero() {
+  const heroRef = useRef(null)
+
   return (
-    <section className="relative overflow-hidden pt-[72px]"
+    <section ref={heroRef} className="relative overflow-hidden pt-[72px]"
       style={{ background: 'linear-gradient(145deg, #ffffff 0%, #eff6ff 55%, #dbeafe 100%)' }}>
+
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
 
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)', animation: 'float-y 8s ease-in-out infinite' }} />
+        style={{ background: 'var(--brand-gradient-glow)', animation: 'float-y 8s ease-in-out infinite' }} />
       <div className="absolute bottom-0 -left-24 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-30"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.10) 1px, transparent 1px)', backgroundSize: '44px 44px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '44px 44px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-7 py-10 sm:py-14">
         <div className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center">
@@ -104,8 +118,7 @@ export default function ECHero() {
               {stats.map(({ value, label, color }, i) => (
                 <div key={label} className="flex flex-col"
                   style={{ borderLeft: i > 0 ? '1px solid #bfdbfe' : 'none', paddingLeft: i > 0 ? '2rem' : '0' }}>
-                  <span className="text-[28px] font-black leading-tight"
-                    style={{ background: `linear-gradient(135deg, ${color}, ${color}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  <span className="text-[28px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
                   <span className="text-[11px] text-slate-500 font-medium mt-0.5">{label}</span>
@@ -124,7 +137,7 @@ export default function ECHero() {
 
                 {/* Top bar */}
                 <div className="px-4 py-3 flex items-center justify-between"
-                  style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
                       style={{ background: 'rgba(255,255,255,0.18)' }}>
@@ -158,7 +171,7 @@ export default function ECHero() {
                         style={{
                           height: `${h}%`,
                           background: i === 11
-                            ? 'linear-gradient(180deg, #2563eb, #1d4ed8)'
+                            ? 'var(--brand-gradient)'
                             : i >= 8
                               ? 'rgba(37,99,235,0.35)'
                               : 'rgba(37,99,235,0.15)',
@@ -208,7 +221,7 @@ export default function ECHero() {
               <div className="absolute -top-5 -right-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3"
                 style={{ border: '1px solid #dbeafe', boxShadow: '0 8px 28px rgba(37,99,235,0.18)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #2563eb, #1d4ed8)', boxShadow: '0 4px 14px rgba(37,99,235,0.35)' }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 14px rgba(37,99,235,0.35)' }}>
                   <CreditCard size={15} className="text-white" />
                 </div>
                 <div>
@@ -221,7 +234,7 @@ export default function ECHero() {
               <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3"
                 style={{ border: '1px solid #bae6fd', boxShadow: '0 8px 28px rgba(14,165,233,0.18)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)', boxShadow: '0 4px 14px rgba(14,165,233,0.35)' }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 14px rgba(14,165,233,0.35)' }}>
                   <BarChart2 size={15} className="text-white" />
                 </div>
                 <div>

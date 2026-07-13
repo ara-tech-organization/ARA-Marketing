@@ -14,9 +14,9 @@ export default function MAAndroid() {
     <section className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: '#f0f9ff' }}>
       <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[500px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.12) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-10"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.5) 1px,transparent 1px)', backgroundSize: '44px 44px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '44px 44px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -30,7 +30,7 @@ export default function MAAndroid() {
               </span>
               <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
                 Android App Development{' '}
-                <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                <span className="text-gradient-blue">
                   Services
                 </span>
               </h2>
@@ -54,7 +54,7 @@ export default function MAAndroid() {
 
             <a href="/contact-us"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+              style={{ background: 'var(--brand-gradient)' }}>
               Get Android App Consultation <ArrowRight size={15} />
             </a>
           </div>
@@ -63,7 +63,7 @@ export default function MAAndroid() {
           <div className="w-full lg:w-[480px] flex-shrink-0 reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.18) 0%,transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
               <div className="relative rounded-3xl overflow-hidden"
                 style={{ border: '1px solid rgba(37,99,235,0.25)', boxShadow: '0 32px 80px rgba(0,0,0,0.5)' }}>
                 <img

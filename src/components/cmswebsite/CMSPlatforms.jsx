@@ -66,13 +66,13 @@ export default function CMSPlatforms() {
     >
       {/* Background glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.1) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-15"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.5) 1px, transparent 1px)', backgroundSize: '42px 42px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '42px 42px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -86,7 +86,7 @@ export default function CMSPlatforms() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             We Specialise in{' '}
-            <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Popular CMS Platforms
             </span>
           </h2>
@@ -107,9 +107,9 @@ export default function CMSPlatforms() {
             >
               {/* Left color accent bar */}
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl transition-all duration-300"
-                style={{ background: `linear-gradient(180deg, ${color}, ${color}44)`, opacity: 0.4 }} />
+                style={{ background: 'var(--brand-gradient-soft)', opacity: 0.4 }} />
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl group-hover:opacity-100 transition-all duration-300"
-                style={{ background: `linear-gradient(180deg, ${color}, ${color}44)`, opacity: 0 }} />
+                style={{ background: 'var(--brand-gradient-soft)', opacity: 0 }} />
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 px-7 py-5">
 

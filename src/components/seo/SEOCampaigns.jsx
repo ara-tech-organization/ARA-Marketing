@@ -18,7 +18,7 @@ export default function SEOCampaigns() {
   return (
     <section
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #f8faff 0%, #eff6ff 50%, #ffffff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

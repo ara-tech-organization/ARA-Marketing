@@ -105,7 +105,7 @@ export default function SEMAdTypes() {
                 <a href="/contact-us"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white text-[13px]
                     font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-                  style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 6px 20px ${color}35` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${color}35` }}>
                   Get {label} Services <ArrowRight size={14} />
                 </a>
               </div>

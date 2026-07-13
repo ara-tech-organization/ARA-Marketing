@@ -15,11 +15,11 @@ export default function ECProcess() {
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       <div className="hidden sm:block absolute -top-20 -left-20 w-[380px] h-[380px] rounded-full border border-blue-200/35 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.22) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -70,7 +70,7 @@ export default function ECProcess() {
                     {/* Center bubble */}
                     <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[52px] h-[52px] rounded-full flex items-center justify-center"
                       style={{
-                        background: `linear-gradient(135deg, ${color}, ${color}cc)`,
+                        background: 'var(--brand-gradient)',
                         boxShadow: `0 0 0 5px white, 0 0 0 6.5px ${color}30, 0 8px 24px ${color}35`,
                       }}>
                       <Icon size={17} className="text-white" />
@@ -92,7 +92,7 @@ export default function ECProcess() {
             <div key={num} className="flex items-start gap-4 p-5 rounded-2xl bg-white"
               style={{ border: `1.5px solid ${color}18`, boxShadow: '0 4px 16px rgba(37,99,235,0.07)' }}>
               <div className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-                style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)`, boxShadow: `0 6px 18px ${color}30` }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 18px ${color}30` }}>
                 <Icon size={16} className="text-white" />
               </div>
               <div>

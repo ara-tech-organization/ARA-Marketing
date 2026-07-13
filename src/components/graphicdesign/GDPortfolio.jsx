@@ -58,7 +58,7 @@ export default function GDPortfolio() {
   return (
     <section
       className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Wave top */}
       <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
@@ -116,7 +116,7 @@ export default function GDPortfolio() {
               {/* Overlay */}
               <div
                 className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: 'linear-gradient(180deg, transparent 30%, rgba(30,58,138,0.85) 100%)' }}
+                style={{ background: 'var(--brand-gradient)' }}
               >
                 <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest mb-1">{tag}</span>
                 <p className="text-[14px] font-bold text-white">{label}</p>

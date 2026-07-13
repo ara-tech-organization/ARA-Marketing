@@ -15,15 +15,15 @@ export default function VEWhyUs() {
 
       {/* BG decorations */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.055) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute top-0 left-0 w-80 h-80 pointer-events-none"
-        style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.07) 0%, transparent 60%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-80 h-80 pointer-events-none"
-        style={{ background: 'linear-gradient(315deg, rgba(37,99,235,0.07) 0%, transparent 60%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -35,10 +35,7 @@ export default function VEWhyUs() {
           </span>
           <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4" style={{ fontWeight: 700, color: '#0f172a' }}>
             Why Businesses Trust Our{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
-              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-            }}>
+            <span className="text-gradient-blue">
               Video Editing Expertise
             </span>
           </h2>
@@ -68,7 +65,7 @@ export default function VEWhyUs() {
             >
               {/* Top accent bar */}
               <div className="h-[3px] w-full"
-                style={{ background: `linear-gradient(90deg, ${color}, ${color}55)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               {/* Ghost number */}
               <span className="absolute -bottom-2 -right-1 text-[80px] font-black leading-none select-none pointer-events-none"
@@ -107,11 +104,11 @@ export default function VEWhyUs() {
         {/* Bottom banner */}
         <div className="reveal relative rounded-2xl overflow-hidden px-7 py-6 flex flex-col sm:flex-row items-center justify-between gap-5"
           style={{
-            background: 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)',
+            background: 'var(--brand-gradient)',
             boxShadow: '0 16px 48px rgba(37,99,235,0.25)',
           }}>
           <div className="absolute inset-0 pointer-events-none"
-            style={{ background: 'radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 60%)' }} />
+            style={{ background: 'var(--brand-gradient-glow)' }} />
           <div className="relative flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>

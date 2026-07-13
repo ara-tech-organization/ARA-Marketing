@@ -428,9 +428,9 @@ export default function Navbar() {
           <div className="pt-1">
             <a href="/contact-us" onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-4
-                bg-gradient-to-r from-blue-600 to-indigo-600 text-white
+                bg-brand-gradient text-white
                 rounded-2xl text-[13.5px] font-semibold transition-all duration-300
-                hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-600/30">
+                hover:opacity-90 shadow-lg shadow-blue-600/30">
               Get Started <ArrowRight size={14} />
             </a>
           </div>

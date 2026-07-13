@@ -37,7 +37,7 @@ export default function EWTestimonials() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px, transparent 1.5px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '34px 34px',
         }}
       />
@@ -85,14 +85,7 @@ export default function EWTestimonials() {
 
           <h2 className="text-[clamp(20px,3.6vw,44px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Our Clients{' '}
-            <span
-              style={{
-                background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span className="text-gradient-blue">
               Speak
             </span>
           </h2>
@@ -161,7 +154,7 @@ export default function EWTestimonials() {
               {/* Bottom color line on hover */}
               <div
                 className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
-                style={{ background: `linear-gradient(90deg, ${color}, ${color}66)` }}
+                style={{ background: 'var(--brand-gradient-soft)' }}
               />
             </div>
           ))}

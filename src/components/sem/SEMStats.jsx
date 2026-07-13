@@ -18,18 +18,18 @@ function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
       {/* Vertical divider (hidden on last) */}
       {!isLast && (
         <div className="absolute top-8 right-0 bottom-8 w-px"
-          style={{ background: 'linear-gradient(180deg, transparent, #e2e8f0 30%, #e2e8f0 70%, transparent)' }} />
+          style={{ background: 'var(--brand-gradient-line-vertical)' }} />
       )}
 
       {/* Icon */}
       <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-        style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}25` }}>
+        style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}25` }}>
         <Icon size={20} style={{ color }} />
       </div>
 
       {/* Number */}
       <p className="text-[clamp(26px,2.7vw,40px)] font-bold leading-none tracking-tight mb-2"
-        style={{ background: `linear-gradient(135deg, ${color}, ${color}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+        style={{ background: 'var(--brand-gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
         {target !== null ? `${count}${suffix}` : '—'}
       </p>
 
@@ -73,7 +73,7 @@ export default function SEMStats() {
 
           {/* Top accent */}
           <div className="h-1 w-full"
-            style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#0ea5e9)' }} />
+            style={{ background: 'var(--brand-gradient-soft)' }} />
 
           <div className="flex flex-col sm:flex-row divide-y sm:divide-y-0 divide-slate-100">
             {allStats.map((s, i) => (

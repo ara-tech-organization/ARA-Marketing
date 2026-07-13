@@ -41,7 +41,7 @@ export default function CMSIntro() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             Transform Your Business with{' '}
-            <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               WordPress CMS
             </span>
           </h2>
@@ -99,7 +99,7 @@ export default function CMSIntro() {
               style={{ minHeight: 340 }}
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(135deg, rgba(29,78,216,0.18) 0%, rgba(37,99,235,0.12) 100%)' }} />
+              style={{ background: 'var(--brand-gradient-soft)', opacity: 0.18 }} />
             <div className="absolute bottom-5 left-5 right-5 px-5 py-4 rounded-2xl"
               style={{ background: 'rgba(255,255,255,0.93)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.96)' }}>
               <p className="text-[10px] font-black uppercase tracking-widest mb-1" style={{ color: '#1d4ed8' }}>
@@ -129,7 +129,7 @@ export default function CMSIntro() {
               onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.07)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.95)' }}
             >
               <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500 mb-5"
-                style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
                 style={{ background: `${color}12`, border: `1px solid ${color}25` }}>
                 <Icon size={19} style={{ color }} />

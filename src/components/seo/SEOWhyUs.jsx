@@ -36,15 +36,15 @@ export default function SEOWhyUs() {
   return (
     <section
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #dbeafe 40%, #e0f2fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Orbs */}
       <div className="absolute -top-24 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.5) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 -left-24 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(96,165,250,0.35) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.1) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -101,7 +101,7 @@ export default function SEOWhyUs() {
               <span className="text-[13px] font-black text-blue-600">95%</span>
             </div>
             <div className="h-2 rounded-full overflow-hidden" style={{ background: '#dbeafe' }}>
-              <div className="h-full rounded-full" style={{ width: '95%', background: 'linear-gradient(90deg, #2563eb, #60a5fa)' }} />
+              <div className="h-full rounded-full" style={{ width: '95%', background: 'var(--brand-gradient-soft)' }} />
             </div>
           </div>
         </div>

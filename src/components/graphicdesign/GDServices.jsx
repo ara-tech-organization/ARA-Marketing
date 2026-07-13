@@ -91,9 +91,8 @@ export default function GDServices() {
     >
       {/* Subtle dot bg */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.04) 1px, transparent 1px)',
           backgroundSize: '36px 36px',
         }}
       />
@@ -148,7 +147,7 @@ export default function GDServices() {
                 {/* Subtle bottom gradient for smooth card transition */}
                 <div
                   className="absolute bottom-0 left-0 right-0 h-8"
-                  style={{ background: 'linear-gradient(to bottom, transparent, rgba(255,255,255,0.9))' }}
+                  style={{ background: 'var(--brand-gradient-soft)', opacity: 0.15 }}
                 />
               </div>
 

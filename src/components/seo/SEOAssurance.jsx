@@ -57,7 +57,7 @@ export default function SEOAssurance() {
             <div
               className="rounded-3xl p-4 sm:p-5 md:p-6 lg:p-7 border border-blue-100"
               style={{
-                background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                background: 'var(--brand-gradient-soft)',
                 boxShadow: '0 12px 40px rgba(37,99,235,0.10)',
               }}
             >

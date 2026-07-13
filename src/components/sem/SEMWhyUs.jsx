@@ -56,12 +56,12 @@ export default function SEMWhyUs() {
             >
               {/* Subtle inner glow on hover */}
               <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                style={{ background: `radial-gradient(ellipse at top left, ${color}08 0%, transparent 65%)` }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               {/* Top row: icon */}
               <div className="flex items-start justify-end mb-5">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                  style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1px solid ${color}28` }}>
+                  style={{ background: 'var(--brand-gradient)', border: `1px solid ${color}28` }}>
                   <Icon size={19} style={{ color }} />
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function SEMWhyUs() {
 
               {/* Bottom accent bar */}
               <div className="mt-5 h-0.5 w-0 rounded-full group-hover:w-8 transition-all duration-500"
-                style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
             </div>
           ))}
         </div>
@@ -79,7 +79,7 @@ export default function SEMWhyUs() {
         {/* ── Bottom certified bar ── */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 px-7 py-5 rounded-2xl"
           style={{
-            background: 'linear-gradient(135deg, #1e3a6e 0%, #2563eb 100%)',
+            background: 'var(--brand-gradient)',
             boxShadow: '0 16px 48px rgba(37,99,235,0.22)',
           }}>
           <div className="flex items-center gap-4">

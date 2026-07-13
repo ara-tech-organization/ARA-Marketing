@@ -50,7 +50,7 @@ export default function OMFAQ() {
           </span>
           <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
             Frequently Asked Questions{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               About Our Services
             </span>
           </h2>
@@ -76,7 +76,7 @@ export default function OMFAQ() {
 
                   {/* Top accent */}
                   <div className="h-[3px] w-full transition-all duration-300"
-                    style={{ background: isOpen ? `linear-gradient(90deg,${color},${color}44)` : 'transparent' }} />
+                    style={{ background: isOpen ? 'var(--brand-gradient-soft)' : 'transparent' }} />
 
                   <button
                     type="button"
@@ -87,7 +87,7 @@ export default function OMFAQ() {
                     {/* Icon box */}
                     <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
                       style={isOpen
-                        ? { background: `linear-gradient(135deg,${color},${color}bb)` }
+                        ? { background: 'var(--brand-gradient)' }
                         : { background: color + '12', border: `1px solid ${color}22` }}>
                       <Icon size={14} style={{ color: isOpen ? 'white' : color }} />
                     </div>
@@ -134,7 +134,7 @@ export default function OMFAQ() {
               ].map(({ icon: Icon, label, color, stat }) => (
                 <div key={label} className="group flex items-center gap-3 px-5 py-3.5 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors duration-200 cursor-default">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}25` }}>
+                    style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}25` }}>
                     <Icon size={13} style={{ color }} />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -147,9 +147,9 @@ export default function OMFAQ() {
 
             {/* Still have questions card */}
             <div className="rounded-2xl p-5 overflow-hidden relative"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 36px rgba(37,99,235,0.22)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 12px 36px rgba(37,99,235,0.22)' }}>
               <div className="absolute inset-0 pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse at 80% 20%,rgba(255,255,255,0.12) 0%,transparent 60%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
               <div className="relative">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
                   style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>

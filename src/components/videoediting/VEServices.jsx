@@ -67,11 +67,6 @@ const services = [
   },
 ]
 
-const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
-
 export default function VEServices() {
   const [active, setActive] = useState(0)
   const svc = services[active]
@@ -82,7 +77,7 @@ export default function VEServices() {
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
 
       {/* ── Double circle – top right ── */}
       <div className="absolute -top-16 -right-16 w-[320px] h-[320px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_38s_linear_infinite]" />
@@ -94,7 +89,7 @@ export default function VEServices() {
 
       {/* Ambient orb */}
       <div className="absolute bottom-0 right-1/4 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.18) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -107,7 +102,7 @@ export default function VEServices() {
           </span>
           <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3">
             Complete Video Production &amp;{' '}
-            <span style={gradBlue}>Editing Solutions</span>
+            <span className="text-gradient-blue">Editing Solutions</span>
           </h2>
           <p className="text-[13.5px] sm:text-[14.5px] text-slate-500 max-w-[520px] mx-auto leading-[1.85] px-2 sm:px-0">
             Full-service video editing across every format and platform — from raw footage to polished final cut.
@@ -126,7 +121,7 @@ export default function VEServices() {
                 className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full text-[11.5px] sm:text-[12.5px] font-semibold
                   transition-all duration-300 hover:-translate-y-0.5"
                 style={isActive
-                  ? { background: `linear-gradient(135deg,${color},${color}cc)`, color: 'white', boxShadow: `0 6px 20px ${color}35` }
+                  ? { background: 'var(--brand-gradient)', color: 'white', boxShadow: `0 6px 20px ${color}35` }
                   : { background: 'white', color: '#64748b', border: '1.5px solid #e8edf5', boxShadow: '0 2px 8px rgba(37,99,235,0.05)' }}
               >
                 <Icon size={13} style={{ color: isActive ? 'white' : color }} />
@@ -146,7 +141,7 @@ export default function VEServices() {
           }}>
 
           {/* Top accent */}
-          <div className="h-1 w-full" style={{ background: `linear-gradient(90deg,${svc.color},${svc.color}55)` }} />
+          <div className="h-1 w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
 
           <div className="flex flex-col lg:flex-row">
 
@@ -156,7 +151,7 @@ export default function VEServices() {
               {/* Service label */}
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center"
-                  style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}bb)`, boxShadow: `0 6px 18px ${svc.color}35` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 18px ${svc.color}35` }}>
                   <svc.icon size={19} className="text-white" />
                 </div>
                 <div>
@@ -186,7 +181,7 @@ export default function VEServices() {
               <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white text-[13px] font-bold
                   transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"
-                style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}30` }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${svc.color}30` }}>
                 Get {svc.tag} Video Editing <ArrowRight size={14} />
               </a>
             </div>
@@ -223,7 +218,7 @@ export default function VEServices() {
 
               {/* Info card */}
               <div className="flex-1 rounded-2xl p-5"
-                style={{ background: `linear-gradient(135deg, ${svc.color}06, ${svc.color}02)`, border: `1.5px solid ${svc.color}14` }}>
+                style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${svc.color}14` }}>
                 <p className="text-[10px] font-black uppercase tracking-widest mb-3" style={{ color: svc.color }}>Why This Service</p>
                 <div className="flex flex-col gap-2.5">
                   {['High-converting visual content', 'Platform-optimised delivery', 'Fast turnaround guaranteed'].map(t => (

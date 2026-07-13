@@ -46,23 +46,23 @@ export default function SEMServices() {
 
   return (
     <section id="sem-services" className="relative py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 60%, #f0f9ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Dot grid */}
       <div className="pointer-events-none absolute inset-0"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
 
       {/* Orb glows */}
       <div className="absolute top-0 right-0 w-[560px] h-[560px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.38) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(196,219,254,0.35) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Vertical accent lines */}
       <div className="absolute top-0 left-1/4 w-px h-full opacity-[0.08] pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, transparent, #2563eb, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line-vertical)' }} />
       <div className="absolute top-0 right-1/4 w-px h-full opacity-[0.08] pointer-events-none"
-        style={{ background: 'linear-gradient(180deg, transparent, #2563eb, transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line-vertical)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -92,19 +92,19 @@ export default function SEMServices() {
                 text-left transition-all duration-300 overflow-hidden
                 ${active === i ? '-translate-y-1' : 'bg-white border-slate-100 hover:-translate-y-0.5'}`}
               style={active === i
-                ? { background: `linear-gradient(135deg, ${color}12, white)`, borderColor: `${color}35`, boxShadow: 'none' }
+                ? { background: 'var(--brand-gradient-soft)', borderColor: `${color}35`, boxShadow: 'none' }
                 : { boxShadow: 'none' }}
             >
               {/* Active indicator */}
               {active === i && (
                 <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl"
-                  style={{ background: `linear-gradient(90deg, ${color}, ${color}55)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
               )}
 
               <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white
                 transition-all duration-300 group-hover:scale-105"
                 style={active === i
-                  ? { background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 4px 14px ${color}35` }
+                  ? { background: 'var(--brand-gradient)', boxShadow: `0 4px 14px ${color}35` }
                   : { background: color + '16', border: `1.5px solid ${color}28` }}>
                 <Icon size={17} style={active === i ? { color: 'white' } : { color }} />
               </div>
@@ -132,7 +132,7 @@ export default function SEMServices() {
           <div className="flex-1 min-w-0 p-8 lg:p-10">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-11 h-11 rounded-2xl flex items-center justify-center text-white"
-                style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}bb)`, boxShadow: `0 6px 18px ${svc.color}30` }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 18px ${svc.color}30` }}>
                 <svc.icon size={19} />
               </div>
               <div>
@@ -159,7 +159,7 @@ export default function SEMServices() {
               <a href="/contact-us"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-white text-[13px]
                   font-bold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-                style={{ background: `linear-gradient(135deg,${svc.color},${svc.color}cc)`, boxShadow: `0 6px 20px ${svc.color}35` }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${svc.color}35` }}>
                 Get {svc.label} Services <ArrowRight size={14} />
               </a>
             </div>
@@ -171,7 +171,7 @@ export default function SEMServices() {
             <img src={svc.imgSrc} alt={svc.imgAlt} loading="lazy"
               className="w-full h-full object-cover absolute inset-0" />
             <div className="absolute inset-0"
-              style={{ background: `linear-gradient(180deg, ${svc.color}30 0%, rgba(10,26,52,0.55) 100%)` }} />
+              style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
 
             {/* Service count badge */}
             <div className="absolute top-5 right-5 flex flex-col items-center px-4 py-3 rounded-2xl"

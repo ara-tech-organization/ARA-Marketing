@@ -11,13 +11,13 @@ const promises = [
 export default function ECCTA() {
   return (
     <section id="ec-cta" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #020b18 0%, #0c1e4a 40%, #0f2d6b 70%, #1e3a8a 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Decorative orbs */}
       <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.18) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-20 -right-20 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(5,150,105,0.12) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.030) 1px, transparent 1px)', backgroundSize: '38px 38px' }} />
       <div className="hidden sm:block absolute top-10 right-10 w-[200px] h-[200px] rounded-full border pointer-events-none animate-[spin_36s_linear_infinite]"
@@ -30,20 +30,20 @@ export default function ECCTA() {
 
           {/* Left: Headline */}
           <div className="flex-1 text-center md:text-left reveal">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.22)', color: '#93c5fd', border: '1px solid rgba(37,99,235,0.35)' }}>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6
+              border border-blue-200 bg-white/80 text-blue-600">
               <ShoppingCart size={10} /> Our Delivery Promise
             </div>
 
-            <h2 className="text-[clamp(23px,3.6vw,49px)] font-bold leading-[1.1] tracking-tight mb-5 text-white">
+            <h2 className="text-[clamp(23px,3.6vw,49px)] font-bold leading-[1.1] tracking-tight mb-5 text-slate-900">
               Let&apos;s Build Your{' '}
-              <span style={{ color: '#60a5fa' }}>
+              <span className="text-gradient-blue">
                 E-Commerce Store
               </span>{' '}
               Together
             </h2>
 
-            <p className="text-[15px] leading-[1.85] mb-8 max-w-lg mx-auto md:mx-0" style={{ color: 'rgba(255,255,255,0.60)' }}>
+            <p className="text-[15px] text-slate-600 leading-[1.85] mb-8 max-w-lg mx-auto md:mx-0">
               Are you searching to launch a powerful online store that drives sales? Get in touch with the best e-commerce website design and development company in Thanjavur and boost your online business with confidence. We are committed to delivering excellence in every project.
             </p>
 
@@ -51,8 +51,8 @@ export default function ECCTA() {
             <div className="space-y-2.5 mb-8 text-left inline-block">
               {promises.map((p) => (
                 <div key={p} className="flex items-center gap-3">
-                  <CheckCircle2 size={14} className="text-emerald-400 flex-shrink-0" />
-                  <span className="text-[13.5px] font-medium" style={{ color: 'rgba(255,255,255,0.78)' }}>{p}</span>
+                  <CheckCircle2 size={14} className="text-emerald-500 flex-shrink-0" />
+                  <span className="text-[13.5px] font-medium text-slate-600">{p}</span>
                 </div>
               ))}
             </div>
@@ -61,10 +61,10 @@ export default function ECCTA() {
           {/* Right: CTA card */}
           <div className="w-full md:w-[380px] flex-shrink-0 reveal">
             <div className="p-7 sm:p-8 rounded-3xl"
-              style={{ background: 'rgba(255,255,255,0.06)', border: '1.5px solid rgba(255,255,255,0.14)', backdropFilter: 'blur(20px)', boxShadow: '0 24px 70px rgba(0,0,0,0.40)' }}>
+              style={{ background: '#0d2244', border: '1px solid rgba(96,165,250,0.2)', boxShadow: '0 24px 70px rgba(13,34,68,0.25)' }}>
 
               <h3 className="text-[17px] font-bold text-white mb-2">Start Your E-commerce Journey</h3>
-              <p className="text-[13px] mb-6" style={{ color: 'rgba(255,255,255,0.50)' }}>
+              <p className="text-[13px] mb-6 text-white/60">
                 Fill out the form and get a free consultation from our expert e-commerce developers.
               </p>
 
@@ -119,7 +119,7 @@ export default function ECCTA() {
 
               <div className="flex items-center gap-2 mt-4 justify-center">
                 <Phone size={11} className="text-emerald-400" />
-                <span className="text-[11px]" style={{ color: 'rgba(255,255,255,0.45)' }}>Free consultation · No commitment</span>
+                <span className="text-[11px] text-white/40">Free consultation · No commitment</span>
               </div>
             </div>
           </div>

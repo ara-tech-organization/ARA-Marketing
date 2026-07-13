@@ -53,7 +53,7 @@ export default function SEMIntro() {
               className="w-full h-full object-cover absolute inset-0"
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(160deg, rgba(37,99,235,0.55) 0%, rgba(10,26,52,0.72) 100%)' }} />
+              style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
 
             {/* AI badge */}
             <div className="absolute top-4 left-4 sm:top-5 sm:left-5 flex items-center gap-2 px-3 py-1.5 sm:py-2 rounded-xl"
@@ -85,7 +85,7 @@ export default function SEMIntro() {
                 onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}
               >
                 <div className="h-0.5 w-0 rounded-full group-hover:w-8 transition-all duration-400 mb-3"
-                  style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
                 <p className="text-[13px] sm:text-[13.5px] text-slate-600 leading-[1.78]">{text}</p>
               </div>
             ))}
@@ -99,7 +99,7 @@ export default function SEMIntro() {
             <a href="#sem-services"
               className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-[12px] sm:text-[13px]
                 font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 6px 24px rgba(37,99,235,0.28)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 24px rgba(37,99,235,0.28)' }}>
               View All SEM Services <ArrowRight size={14} />
             </a>
           </div>
@@ -114,7 +114,7 @@ export default function SEMIntro() {
                 onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}>
                 <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center text-white
                   transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                  style={{ background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 6px 16px ${color}28` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 16px ${color}28` }}>
                   <Icon size={17} />
                 </div>
                 <div>

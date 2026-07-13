@@ -49,7 +49,7 @@ function FAQItem({ faq, index, active, setActive }) {
           className="flex-shrink-0 text-[11px] font-black w-7 h-7 rounded-lg flex items-center justify-center transition-all duration-300 mt-0.5"
           style={
             isOpen
-              ? { background: 'linear-gradient(135deg, #0ea5e9, #2563eb)', color: 'white' }
+              ? { background: 'var(--brand-gradient)', color: 'white' }
               : { background: '#e0f2fe', color: '#0ea5e9' }
           }
         >
@@ -77,7 +77,7 @@ function FAQItem({ faq, index, active, setActive }) {
         <div className="px-6 pb-6 bg-white">
           <div
             className="h-px mb-4"
-            style={{ background: 'linear-gradient(90deg, rgba(14,165,233,0.5), transparent)' }}
+            style={{ background: 'var(--brand-gradient-line)' }}
           />
           <p className="text-[13.5px] text-slate-600 leading-[1.85] pl-11">{faq.a}</p>
         </div>
@@ -93,7 +93,7 @@ export default function SWFAQ() {
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div
         className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7">
@@ -108,14 +108,7 @@ export default function SWFAQ() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Frequently Asked{' '}
-            <span
-              style={{
-                background: 'linear-gradient(135deg, #0ea5e9, #2563eb)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span className="text-gradient-blue">
               Questions
             </span>
           </h2>

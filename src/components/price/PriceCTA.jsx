@@ -6,7 +6,7 @@ export default function PriceCTA() {
 
       {/* Subtle bg tint */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at center, rgba(37,99,235,0.05) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative z-10 max-w-[700px] mx-auto px-4 sm:px-6 text-center">
 
@@ -29,7 +29,7 @@ export default function PriceCTA() {
             href="tel:+918110025254"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold
               text-white transition-all duration-200 hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+            style={{ background: 'var(--brand-gradient)',
               boxShadow: '0 8px 30px rgba(37,99,235,0.28)' }}
           >
             Request a Free Quote

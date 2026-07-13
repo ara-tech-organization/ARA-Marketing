@@ -43,9 +43,9 @@ export default function WACTA() {
     >
       {/* Decorative orbs */}
       <div className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[260px] h-[260px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.08) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-8">
 
@@ -62,7 +62,7 @@ export default function WACTA() {
               </span>
               <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight">
                 Our Commitment{' '}
-                <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                <span className="text-gradient-blue">
                   to You
                 </span>
               </h2>
@@ -106,7 +106,7 @@ export default function WACTA() {
             <div
               className="relative rounded-3xl overflow-hidden h-full"
               style={{
-                background: 'linear-gradient(145deg,#1e3a8a 0%,#2563eb 55%,#0369a1 100%)',
+                background: 'var(--brand-gradient)',
                 boxShadow: '0 24px 64px rgba(37,99,235,0.35)',
               }}
             >
@@ -118,7 +118,7 @@ export default function WACTA() {
               {/* Glow orb */}
               <div
                 className="absolute -top-20 -right-20 w-56 h-56 rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 65%)' }}
+                style={{ background: 'var(--brand-gradient-glow)' }}
               />
 
               <div className="relative p-6 xs:p-7 sm:p-8 flex flex-col h-full">

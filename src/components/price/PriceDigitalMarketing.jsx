@@ -45,9 +45,9 @@ export default function PriceDigitalMarketing() {
 
       {/* subtle glow orbs */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[300px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(219,234,254,0.6) 0%,transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(186,230,253,0.5) 0%,transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[960px] mx-auto px-4 sm:px-6 md:px-8">
 
@@ -60,7 +60,7 @@ export default function PriceDigitalMarketing() {
           <h2 className="font-bold text-slate-900 leading-tight mb-4"
             style={{ fontSize: 'clamp(22px,3vw,34px)' }}>
             Digital Marketing{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'var(--brand-gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Packages
             </span>
           </h2>
@@ -113,12 +113,12 @@ export default function PriceDigitalMarketing() {
             style={{ border: '1.5px solid #bae6fd', boxShadow: '0 16px 48px rgba(14,165,233,0.14)' }}>
 
             {/* top accent */}
-            <div className="h-[3px]" style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+            <div className="h-[3px]" style={{ background: 'var(--brand-gradient-soft)' }} />
 
             {/* best value badge */}
             <div className="absolute top-4 right-4">
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold text-white"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
+                style={{ background: 'var(--brand-gradient)' }}>
                 <Star size={9} fill="currentColor" /> Best Value
               </span>
             </div>
@@ -148,7 +148,7 @@ export default function PriceDigitalMarketing() {
             <div className="px-6 pb-6 pt-2">
               <a href="tel:+918110025254"
                 className="block w-full text-center py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 6px 24px rgba(37,99,235,0.28)' }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 24px rgba(37,99,235,0.28)' }}>
                 Get Started with PRO+
               </a>
               <p className="text-[11px] text-slate-400 text-center mt-3">* Ad budget charged separately</p>

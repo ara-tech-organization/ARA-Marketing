@@ -7,13 +7,13 @@ export default function VECTA() {
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
 
       {/* Orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Decorative rings */}
       <div className="hidden lg:block absolute pointer-events-none rounded-full"
@@ -33,7 +33,7 @@ export default function VECTA() {
         {/* Heading */}
         <h2 className="text-[clamp(23px,3.6vw,55px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5 sm:mb-6">
           Transform Your Videos Into{' '}
-          <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+          <span className="text-gradient-blue">
             Powerful Visual Stories
           </span>
         </h2>
@@ -50,7 +50,7 @@ export default function VECTA() {
           <a href="tel:+918110025254"
             className="inline-flex items-center gap-2 sm:gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-[13px] sm:text-[14px]
               font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 36px rgba(37,99,235,0.28)' }}>
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 12px 36px rgba(37,99,235,0.28)' }}>
             Start Your Video Project <ArrowRight size={15} />
           </a>
           <a href="#ve-services"
@@ -71,8 +71,7 @@ export default function VECTA() {
             ['7',    'Step Editing Process'],
           ].map(([num, label]) => (
             <div key={label} className="flex flex-col items-center">
-              <span className="text-[24px] sm:text-[28px] font-black leading-tight"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-[24px] sm:text-[28px] font-black leading-tight text-gradient-blue">
                 {num}
               </span>
               <span className="text-[10px] sm:text-[11px] mt-0.5 text-slate-400">{label}</span>

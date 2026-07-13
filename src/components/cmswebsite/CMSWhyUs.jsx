@@ -22,13 +22,13 @@ export default function CMSWhyUs() {
 
       {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '30px 30px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '30px 30px' }} />
 
       {/* Light ambient orbs */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-24 -left-24 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(14,165,233,0.06) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -41,7 +41,7 @@ export default function CMSWhyUs() {
             </span>
             <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               We Build{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Digital
               </span>{' '}
               Success
@@ -65,7 +65,7 @@ export default function CMSWhyUs() {
               loading="lazy"
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(160deg,rgba(29,78,216,0.5) 0%,rgba(10,26,52,0.6) 100%)' }} />
+              style={{ background: 'var(--brand-gradient)', opacity: 0.55 }} />
 
             <div className="absolute top-5 left-5 flex items-center gap-2 px-3.5 py-2 rounded-xl"
               style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)' }}>
@@ -108,7 +108,7 @@ export default function CMSWhyUs() {
             >
               {/* Top accent line */}
               <div className="absolute top-0 left-6 right-6 h-[3px] rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300"
-                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <div className="flex items-start justify-between">
                 <div className="w-13 h-13 w-[52px] h-[52px] rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"

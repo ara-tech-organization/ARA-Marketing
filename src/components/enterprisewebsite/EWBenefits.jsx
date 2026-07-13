@@ -58,7 +58,7 @@ export default function EWBenefits() {
 
       {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.035) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       <div className="hidden lg:block absolute -top-20 -right-20 w-[300px] h-[300px] rounded-full pointer-events-none"
         style={{ border: '1.5px solid rgba(124,58,237,0.07)', animation: 'spin 60s linear infinite' }} />
@@ -79,19 +79,14 @@ export default function EWBenefits() {
 
               <h2 className="text-[clamp(22px,3vw,40px)] font-bold text-slate-900 leading-[1.12] tracking-tight mb-4">
                 Benefits of{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-gradient-blue">
                   Enterprise Website
                 </span>{' '}
                 Design &amp; Development
               </h2>
 
               <div className="w-10 h-[3px] rounded-full mb-5 mx-auto lg:mx-0"
-                style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
                 Partnering with ARA Discover Marketing ensures your enterprise gets a future-ready digital platform built for performance, security, and scale.

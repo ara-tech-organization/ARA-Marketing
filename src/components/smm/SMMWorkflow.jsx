@@ -51,7 +51,7 @@ export default function SMMWorkflow() {
   return (
     <section
       className="py-16"
-      style={{ background: 'linear-gradient(180deg,#f8faff 0%,#ffffff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -89,7 +89,7 @@ export default function SMMWorkflow() {
                       className="w-12 h-12 rounded-full flex items-center justify-center
                         text-white text-[13px] font-bold z-10 flex-shrink-0"
                       style={{
-                        background: `linear-gradient(135deg, ${step.color}, ${step.color}cc)`,
+                        background: 'var(--brand-gradient)',
                         boxShadow: `0 4px 16px ${step.color}35`,
                       }}
                     >
@@ -101,7 +101,7 @@ export default function SMMWorkflow() {
                         style={{
                           width: 2,
                           minHeight: 32,
-                          background: `linear-gradient(180deg, ${step.color}55, #e2e8f0)`,
+                          background: 'var(--brand-gradient-line-vertical)',
                           borderRadius: 2,
                         }}
                       />
@@ -162,7 +162,7 @@ export default function SMMWorkflow() {
                       className="w-12 h-12 rounded-full flex items-center justify-center
                         text-white text-[13px] font-bold z-10 flex-shrink-0"
                       style={{
-                        background: `linear-gradient(135deg, ${step.color}, ${step.color}cc)`,
+                        background: 'var(--brand-gradient)',
                         boxShadow: `0 4px 16px ${step.color}35`,
                       }}
                     >
@@ -174,7 +174,7 @@ export default function SMMWorkflow() {
                         style={{
                           width: 2,
                           minHeight: 32,
-                          background: `linear-gradient(180deg, ${step.color}55, #e2e8f0)`,
+                          background: 'var(--brand-gradient-line-vertical)',
                           borderRadius: 2,
                         }}
                       />

@@ -101,11 +101,11 @@ export default function ContactMain() {
       {/* Subtle bg orbs */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ top: '10%', right: '-5%', width: '480px', height: '480px',
-          background: 'radial-gradient(circle, rgba(219,234,254,0.5) 0%, transparent 65%)' }}
+          background: 'var(--brand-gradient-glow)' }}
       />
       <div className="absolute pointer-events-none rounded-full"
         style={{ bottom: '5%', left: '-4%', width: '380px', height: '380px',
-          background: 'radial-gradient(circle, rgba(186,230,253,0.4) 0%, transparent 65%)' }}
+          background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
@@ -133,7 +133,7 @@ export default function ContactMain() {
               >
                 {/* Top accent line */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] rounded-t-[20px]"
-                  style={{ background: `linear-gradient(90deg, transparent, ${color}, transparent)`, opacity: 0.6 }}
+                  style={{ background: 'var(--brand-gradient-line)', opacity: 0.6 }}
                 />
 
                 <div className="w-11 h-11 rounded-[13px] flex items-center justify-center mb-4"
@@ -213,12 +213,12 @@ export default function ContactMain() {
 
             {/* Decorative orbs */}
             <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.5) 0%, transparent 65%)' }} />
+              style={{ background: 'var(--brand-gradient-glow)' }} />
             <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.4) 0%, transparent 65%)' }} />
+              style={{ background: 'var(--brand-gradient-glow)' }} />
             {/* Dot grid */}
             <div className="absolute inset-0 pointer-events-none"
-              style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.04) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+              style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
 
             {/* ── Form ── */}
             <div className="relative z-10 p-4 sm:p-6 md:p-7 lg:p-10">
@@ -317,7 +317,7 @@ export default function ContactMain() {
 
                         <button type="submit" disabled={loading}
                           className="btn-glow w-full flex items-center justify-center gap-2.5 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 disabled:opacity-75 disabled:cursor-not-allowed hover:-translate-y-0.5"
-                          style={{ background: loading ? '#3b82f6' : 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 32px rgba(37,99,235,0.28)' }}
+                          style={{ background: loading ? '#3b82f6' : 'var(--brand-gradient)', boxShadow: '0 8px 32px rgba(37,99,235,0.28)' }}
                         >
                           {loading ? <><Loader2 size={17} className="animate-spin" /> Sending Message...</> : <><Send size={16} /> Send Message</>}
                         </button>

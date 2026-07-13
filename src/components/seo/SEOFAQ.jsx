@@ -72,7 +72,7 @@ function AccordionItem({ faq, index, active, setActive }) {
       {isOpen && (
         <div className="px-5 pb-5 bg-white">
           <div className="h-px mb-3.5"
-            style={{ background: 'linear-gradient(90deg, #2563eb50, transparent)' }} />
+            style={{ background: 'var(--brand-gradient-line)' }} />
           <p className="text-[13px] text-slate-600 leading-[1.85] pl-0 sm:pl-10">{faq.a}</p>
         </div>
       )}

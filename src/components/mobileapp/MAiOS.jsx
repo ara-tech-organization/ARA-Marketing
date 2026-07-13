@@ -13,9 +13,9 @@ export default function MAiOS() {
   return (
     <section className="py-16 sm:py-16 bg-slate-50 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.05) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -24,7 +24,7 @@ export default function MAiOS() {
           <div className="w-full lg:w-[480px] flex-shrink-0 reveal-left order-2 lg:order-1">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
               <div className="relative rounded-3xl overflow-hidden"
                 style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(37,99,235,0.12)' }}>
                 <img
@@ -75,7 +75,7 @@ export default function MAiOS() {
               </span>
               <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
                 iOS App Development{' '}
-                <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                <span className="text-gradient-blue">
                   Services
                 </span>
               </h2>
@@ -113,7 +113,7 @@ export default function MAiOS() {
 
             <a href="/contact-us"
               className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.25)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 20px rgba(37,99,235,0.25)' }}>
               Get iOS App Consultation <ArrowRight size={15} />
             </a>
           </div>

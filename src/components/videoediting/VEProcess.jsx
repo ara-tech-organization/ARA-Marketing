@@ -16,11 +16,11 @@ export default function VEProcess() {
 
       {/* BG decoration */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
       <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -33,10 +33,7 @@ export default function VEProcess() {
             </span>
             <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight" style={{ fontWeight: 700 }}>
               Our Strategic Video{' '}
-              <span style={{
-                background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
-                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-              }}>
+              <span className="text-gradient-blue">
                 Editing Workflow
               </span>
             </h2>
@@ -60,7 +57,7 @@ export default function VEProcess() {
               <div key={i} className="rounded-full transition-all"
                 style={{
                   width: i === 3 ? 8 : 5, height: i === 3 ? 8 : 5,
-                  background: i === 3 ? 'linear-gradient(135deg,#2563eb,#0ea5e9)' : 'rgba(37,99,235,0.18)',
+                  background: i === 3 ? 'var(--brand-gradient)' : 'rgba(37,99,235,0.18)',
                 }} />
             ))}
           </div>
@@ -86,13 +83,13 @@ function StepCard({ num, Icon, title, desc, color, accent, border }) {
       onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 20px 48px rgba(37,99,235,0.12)`; e.currentTarget.style.borderColor = color + '55' }}
       onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.06)'; e.currentTarget.style.borderColor = border }}
     >
-      <div className="h-[3px] w-full" style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+      <div className="h-[3px] w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
       <span className="absolute -bottom-3 -right-1 text-[72px] font-black leading-none select-none pointer-events-none"
         style={{ color: color + '0e' }}>{num}</span>
       <div className="p-5">
         <div className="flex items-center justify-between mb-4">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-[12px] transition-transform duration-300 group-hover:scale-105"
-            style={{ background: `linear-gradient(135deg,${color},${color}99)`, boxShadow: `0 4px 12px ${color}30` }}>
+            style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 12px ${color}30` }}>
             {num}
           </div>
           <div className="w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"

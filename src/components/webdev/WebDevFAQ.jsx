@@ -99,7 +99,7 @@ export default function WebDevFAQ() {
           <div className="sticky top-24 bg-white rounded-3xl overflow-hidden"
             style={{ border: '1.5px solid #e2e8f0', boxShadow: '0 16px 56px rgba(37,99,235,0.08)' }}>
             <div className="h-1.5 w-full"
-              style={{ background: 'linear-gradient(90deg, #1e40af, #2563eb, #3b82f6)' }} />
+              style={{ background: 'var(--brand-gradient-soft)' }} />
             <div className="p-8">
               <div className="flex items-start gap-5 mb-5">
                 <span className="text-[64px] font-black leading-none select-none flex-shrink-0"
@@ -111,7 +111,7 @@ export default function WebDevFAQ() {
                 </h3>
               </div>
               <div className="h-px mb-6"
-                style={{ background: 'linear-gradient(90deg, #dbeafe 0%, transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-line)' }} />
               <p className="text-[14px] text-slate-500 leading-[1.9]">{faqs[active].a}</p>
               <div className="flex items-center gap-2 mt-8">
                 {faqs.map((_, i) => (

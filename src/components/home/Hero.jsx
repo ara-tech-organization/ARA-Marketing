@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { ArrowRight, Phone, Star, CheckCheck, Users, TrendingUp, Search, BarChart2, Target, Zap, Activity } from 'lucide-react'
 import heroBgImage from '../../assets/Home/h1.webp'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 let _firstHeroLoad = true
 
@@ -37,6 +38,7 @@ function FloatItem({ icon: Icon, iconColor, stat, title, style }) {
 }
 
 export default function Hero() {
+  const heroRef = useRef(null)
   const [mouse, setMouse] = useState({ x: 0, y: 0 })
   const [scrollY, setScrollY] = useState(0)
 
@@ -92,9 +94,20 @@ export default function Hero() {
           SECTION 1 â€” Content  (with bg effects)
       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
       <section
+        ref={heroRef}
         className="relative overflow-hidden pt-[88px]"
         style={{ minHeight: '92vh' }}
       >
+        {/* Cursor-follow spotlight */}
+        <CursorSpotlight
+          targetRef={heroRef}
+          size={720}
+          blur={110}
+          blendMode="normal"
+          opacity={0.5}
+          background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+        />
+
         {/* Full background image â€” covers entire section */}
         <img
           src={heroBgImage}

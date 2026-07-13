@@ -58,9 +58,9 @@ export default function MAWhyUs() {
 
       {/* subtle background accents */}
       <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.05) 0%,transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[500px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.04) 0%,transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7 relative">
 
@@ -72,7 +72,7 @@ export default function MAWhyUs() {
           </span>
           <h2 className="text-[clamp(24px,3vw,42px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             Why Choose ARA Discover as Your{' '}
-            <span style={{ background: 'linear-gradient(135deg,#1e40af,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               App Partner?
             </span>
           </h2>
@@ -87,7 +87,7 @@ export default function MAWhyUs() {
           {/* Hero feature card — spans 5 cols, 2 rows */}
           <div className="lg:col-span-5 lg:row-span-2 reveal-left">
             <div className="relative h-full min-h-[360px] lg:min-h-[500px] rounded-3xl overflow-hidden flex flex-col justify-between p-8"
-              style={{ background: 'linear-gradient(145deg,#1e3a8a 0%,#1d4ed8 55%,#1e40af 100%)', border: '1px solid rgba(37,99,235,0.3)' }}>
+              style={{ background: 'var(--brand-gradient)', border: '1px solid rgba(37,99,235,0.3)' }}>
 
               <img src={whyUsImage} alt="Mobile App Development Agency Thanjavur"
                 className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-20" loading="lazy" />
@@ -96,7 +96,7 @@ export default function MAWhyUs() {
                 style={{ backgroundImage: 'radial-gradient(circle,rgba(255,255,255,0.7) 1px,transparent 1px)', backgroundSize: '26px 26px' }} />
 
               <div className="absolute top-[-60px] right-[-60px] w-[240px] h-[240px] rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(circle,rgba(255,255,255,0.06) 0%,transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               <div className="relative">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5"
@@ -149,7 +149,7 @@ export default function MAWhyUs() {
               >
                 {/* left icon panel */}
                 <div className="icon-panel flex-shrink-0 w-[68px] flex flex-col items-center justify-center gap-3 transition-all duration-300"
-                  style={{ background: `linear-gradient(160deg,${accent}22,${accent}10)` }}>
+                  style={{ background: 'var(--brand-gradient-soft)' }}>
                   <Icon size={22} style={{ color: accent }} className="transition-colors duration-300" />
                   <span className="text-[10px] font-black" style={{ color: `${accent}99` }}>{num}</span>
                 </div>
@@ -179,7 +179,7 @@ export default function MAWhyUs() {
                 }}
               >
                 <div className="icon-panel flex-shrink-0 w-[60px] flex flex-col items-center justify-center gap-2 transition-all duration-300"
-                  style={{ background: `linear-gradient(160deg,${accent}22,${accent}10)` }}>
+                  style={{ background: 'var(--brand-gradient-soft)' }}>
                   <Icon size={20} style={{ color: accent }} />
                   <span className="text-[10px] font-black" style={{ color: `${accent}99` }}>{num}</span>
                 </div>

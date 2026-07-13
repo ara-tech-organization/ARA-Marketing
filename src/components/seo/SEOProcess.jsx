@@ -1,5 +1,6 @@
 ﻿import { useRef, useEffect, useCallback } from 'react'
 import { Search, BarChart2, Cpu, FileText, Globe2, MapPin, LineChart, ChevronLeft, ChevronRight } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const steps = [
   { num: '01', icon: Search,    title: 'Website SEO Audit',                  desc: 'Comprehensive audit analyzing technical health, on-page factors, backlink profile, and current keyword positions to identify growth opportunities.',                                          color: '#2563eb' },
@@ -12,6 +13,7 @@ const steps = [
 ]
 
 export default function SEOProcess() {
+  const sectionRef = useRef(null)
   const scrollRef = useRef(null)
   const intervalRef = useRef(null)
   const pausedRef = useRef(false)
@@ -42,22 +44,33 @@ export default function SEOProcess() {
 
   return (
     <section
+      ref={sectionRef}
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      {/* Cursor-follow multi-color glow */}
+      <CursorSpotlight
+        targetRef={sectionRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.30) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(196,219,254,0.30) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.08) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
-      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative w-full px-4 sm:px-6 md:px-7">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 reveal">
-          <div className="text-center sm:text-left">
+        <div className="flex flex-col items-center text-center gap-4 mb-10 reveal px-6 sm:px-10">
+          <div>
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
               border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4 shadow-sm">
               <LineChart size={11} /> Our Workflow
@@ -66,7 +79,7 @@ export default function SEOProcess() {
               Our Strategic SEO Workflow{' '}
               <span className="text-gradient-blue">for Long-Term Rankings</span>
             </h2>
-            <p className="text-[15px] text-slate-600 max-w-2xl leading-[1.85]">
+            <p className="text-[15px] text-slate-600 max-w-2xl mx-auto leading-[1.85]">
               We are the best SEO consultancy services in Thanjavur — our systematic SEO process is designed for long-term visibility and growth.
             </p>
           </div>
@@ -96,13 +109,6 @@ export default function SEOProcess() {
 
         {/* Horizontal scroll container */}
         <div className="reveal relative">
-          {/* Left fade */}
-          <div className="absolute left-0 top-0 bottom-4 w-8 z-10 pointer-events-none"
-            style={{ background: 'linear-gradient(90deg, rgba(248,251,255,0.9), transparent)' }} />
-          {/* Right fade */}
-          <div className="absolute right-0 top-0 bottom-4 w-8 z-10 pointer-events-none"
-            style={{ background: 'linear-gradient(270deg, rgba(248,251,255,0.9), transparent)' }} />
-
           <div
             ref={scrollRef}
             className="flex gap-4 overflow-x-auto pb-4 scroll-smooth snap-x snap-mandatory"
@@ -118,7 +124,7 @@ export default function SEOProcess() {
                 style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
               >
                 {/* Top colored bar */}
-                <div className="h-1 w-full" style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+                <div className="h-1 w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 <div className="p-6">
                   {/* Step number + icon row */}
@@ -126,7 +132,7 @@ export default function SEOProcess() {
                     <div
                       className="w-12 h-12 rounded-2xl flex items-center justify-center text-white
                         font-black text-[14px] transition-all duration-300 group-hover:scale-105"
-                      style={{ background: `linear-gradient(135deg, ${color}, ${color}bb)`, boxShadow: `0 4px 14px ${color}35` }}
+                      style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 14px ${color}35` }}
                     >
                       {num}
                     </div>

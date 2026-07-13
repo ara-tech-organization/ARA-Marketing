@@ -38,7 +38,7 @@ export default function EWFAQ() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '34px 34px',
         }}
       />
@@ -56,14 +56,7 @@ export default function EWFAQ() {
 
           <h2 className="text-[clamp(20px,3.6vw,42px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             Common Questions{' '}
-            <span
-              style={{
-                background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span className="text-gradient-blue">
               Answered
             </span>
           </h2>
@@ -101,7 +94,7 @@ export default function EWFAQ() {
                     className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center transition-all duration-300"
                     style={{
                       background: isOpen
-                        ? 'linear-gradient(135deg,#2563eb,#7c3aed)'
+                        ? 'var(--brand-gradient)'
                         : '#f1f5f9',
                       transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
                     }}

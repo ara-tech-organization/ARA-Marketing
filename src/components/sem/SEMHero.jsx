@@ -1,8 +1,10 @@
+import { useRef } from 'react'
 import {
   ChevronRight, ArrowRight, ArrowUpRight,
   Search, MousePointer2, Play, ShoppingBag,
   Megaphone, Sparkles, Target, TrendingUp, CheckCircle2,
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 import semImg1 from '../../assets/SEM/google.webp'
 import semImg2 from '../../assets/SEM/DisplayAdvertising.webp'
 import semImg3 from '../../assets/SEM/youtube.webp'
@@ -16,7 +18,7 @@ const campaignTypes = [
     roas: '4.2x',
     sub: 'High-intent keyword targeting',
     color: '#2563eb',
-    grad: 'linear-gradient(140deg,#1d4ed8 0%,#3b82f6 100%)',
+    grad: 'var(--brand-gradient)',
   },
   {
     icon: MousePointer2,
@@ -25,7 +27,7 @@ const campaignTypes = [
     roas: 'Wide Reach',
     sub: 'Brand awareness across the web',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
   {
     icon: Play,
@@ -34,7 +36,7 @@ const campaignTypes = [
     roas: '5.1x',
     sub: 'Video-led brand campaigns',
     color: '#0ea5e9',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
   {
     icon: ShoppingBag,
@@ -43,25 +45,38 @@ const campaignTypes = [
     roas: '6.3x',
     sub: 'E-commerce product visibility',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
 ]
 
 export default function SEMHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(135deg, #f0f7ff 0%, #eff6ff 45%, #e0f2fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.08) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
 
       {/* Orbs */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.55) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[550px] h-[550px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(196,219,254,0.50) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Decorative rings */}
       <div className="absolute top-20 left-[6%] w-28 h-28 rounded-full border border-blue-200/50 pointer-events-none" />
@@ -184,7 +199,7 @@ export default function SEMHero() {
                     <p className="text-[11px] text-slate-500 leading-snug">{sub}</p>
                     <div className="mt-3 h-1 rounded-full bg-slate-100 overflow-hidden">
                       <div className="h-full rounded-full transition-all duration-700 group-hover:w-full"
-                        style={{ width: '65%', background: grad }} />
+                        style={{ width: '65%', background: 'var(--brand-gradient-soft)' }} />
                     </div>
                   </div>
                 </div>

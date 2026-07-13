@@ -47,7 +47,7 @@ export default function WAFAQ() {
           </span>
           <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold tracking-tight text-slate-900 mb-3">
             Common{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Questions
             </span>
           </h2>
@@ -77,7 +77,7 @@ export default function WAFAQ() {
                   <span
                     className="flex-shrink-0 w-6 xs:w-7 h-6 xs:h-7 rounded-lg flex items-center justify-center text-[10px] xs:text-[11px] font-black transition-all duration-300"
                     style={{
-                      background: isOpen ? 'linear-gradient(135deg,#2563eb,#0891b2)' : 'rgba(37,99,235,0.10)',
+                      background: isOpen ? 'var(--brand-gradient)' : 'rgba(37,99,235,0.10)',
                       color: isOpen ? 'white' : '#2563eb',
                     }}
                   >

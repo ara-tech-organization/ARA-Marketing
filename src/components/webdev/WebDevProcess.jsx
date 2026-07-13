@@ -38,7 +38,7 @@ export default function WebDevProcess() {
             <div className="absolute left-4 right-4 pointer-events-none"
               style={{
                 top: 158, height: 2,
-                background: 'linear-gradient(90deg, #bfdbfe 0%, #2563eb 30%, #2563eb 70%, #bfdbfe 100%)',
+                background: 'var(--brand-gradient-line)',
                 borderRadius: 2,
               }} />
 
@@ -53,7 +53,7 @@ export default function WebDevProcess() {
                       flex items-center justify-center text-white text-[11px] font-bold z-10"
                       style={{
                         top: 138,
-                        background: `linear-gradient(135deg, ${step.color}, ${step.color}cc)`,
+                        background: 'var(--brand-gradient)',
                         boxShadow: `0 4px 16px ${step.color}55`,
                       }}>
                       {step.num}
@@ -92,7 +92,7 @@ export default function WebDevProcess() {
               <div key={step.num} className={`reveal delay-${(i % 4) + 1} flex gap-4`}>
                 <div className="flex flex-col items-center flex-shrink-0">
                   <div className="w-11 h-11 rounded-full flex items-center justify-center text-white text-[12px] font-bold"
-                    style={{ background: `linear-gradient(135deg, ${step.color}, ${step.color}cc)`, boxShadow: `0 4px 12px ${step.color}35` }}>
+                    style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 12px ${step.color}35` }}>
                     {step.num}
                   </div>
                   {i < steps.length - 1 && (

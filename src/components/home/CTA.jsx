@@ -7,28 +7,7 @@ export default function CTA() {
     <section
       id="contact"
       className="relative py-16 overflow-hidden text-center"
-      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
     >
-      {/* Dot grid */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.18) 1px, transparent 1px)',
-          backgroundSize: '50px 50px',
-          opacity: 0.4,
-        }}
-      />
-      {/* Orb top right */}
-      <div
-        className="absolute w-[650px] h-[650px] rounded-full pointer-events-none"
-        style={{ background: 'rgba(37,99,235,0.08)', top: '-250px', right: '-150px' }}
-      />
-      {/* Orb bottom left */}
-      <div
-        className="absolute w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'rgba(96,165,250,0.07)', bottom: '-160px', left: '-100px' }}
-      />
-
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
         <div className="max-w-[720px] mx-auto reveal">
           <div

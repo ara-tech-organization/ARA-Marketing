@@ -45,17 +45,17 @@ export default function CMSTestimonials() {
   return (
     <section
       className="relative py-16 sm:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Subtle orbs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.05) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[350px] h-[350px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(29,78,216,0.04) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-20"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.12) 1px, transparent 1px)', backgroundSize: '44px 44px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '44px 44px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -69,7 +69,7 @@ export default function CMSTestimonials() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Hear From{' '}
-            <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Our Clients
             </span>
           </h2>
@@ -114,7 +114,7 @@ export default function CMSTestimonials() {
               </p>
 
               {/* Divider */}
-              <div className="h-px mb-5" style={{ background: `linear-gradient(90deg, ${color}30, transparent)` }} />
+              <div className="h-px mb-5" style={{ background: 'var(--brand-gradient-line)' }} />
 
               {/* Author */}
               <div className="flex items-center gap-3">

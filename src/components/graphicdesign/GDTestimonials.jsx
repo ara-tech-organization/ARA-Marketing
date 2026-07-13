@@ -89,15 +89,14 @@ export default function GDTestimonials() {
     <section className="relative overflow-hidden py-16 bg-white">
       {/* Dot bg */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.045) 1px, transparent 1px)',
           backgroundSize: '32px 32px',
         }}
       />
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[300px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(219,234,254,0.45) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
@@ -164,17 +163,17 @@ export default function GDTestimonials() {
                       <div
                         className="relative rounded-3xl overflow-hidden"
                         style={{
-                          background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 45%, #bfdbfe 100%)',
+                          background: 'var(--brand-gradient-soft)',
                           boxShadow: '0 24px 64px rgba(37,99,235,0.18)',
                           border: '1.5px solid #bfdbfe',
                           minHeight: '290px',
                         }}
                       >
                         {/* Dot pattern */}
-                        <div className="absolute inset-0 pointer-events-none"
-                          style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.08) 1px, transparent 1px)', backgroundSize: '22px 22px' }} />
+                        <div className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
+                          style={{ backgroundSize: '22px 22px' }} />
                         <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full pointer-events-none"
-                          style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.4) 0%,transparent 70%)' }} />
+                          style={{ background: 'var(--brand-gradient-glow)' }} />
 
                         <div className="relative p-7 flex flex-col justify-between h-full" style={{ minHeight: '290px' }}>
                           <div>
@@ -280,7 +279,7 @@ export default function GDTestimonials() {
                 height: '8px',
                 borderRadius: '9999px',
                 background: i === realIdx
-                  ? 'linear-gradient(90deg,#2563eb,#38bdf8)'
+                  ? 'var(--brand-gradient-soft)'
                   : 'rgba(37,99,235,0.18)',
               }}
               aria-label={`Go to testimonial ${i + 1}`}

@@ -23,9 +23,9 @@ export default function CMSWhoShould() {
     >
       {/* Decorative background */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Large background text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
@@ -47,7 +47,7 @@ export default function CMSWhoShould() {
 
             <h2 className="text-[clamp(23px,2.7vw,41px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Is WordPress Right{' '}
-              <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 For You?
               </span>
             </h2>
@@ -92,7 +92,7 @@ export default function CMSWhoShould() {
 
               {/* Commitment header card */}
               <div className="rounded-2xl p-6 mb-4"
-                style={{ background: 'linear-gradient(145deg, #0d1f3c 0%, #1d4ed8 100%)', boxShadow: '0 16px 48px rgba(29,78,216,0.22)' }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 16px 48px rgba(29,78,216,0.22)' }}>
                 <p className="text-[10px] font-black uppercase tracking-[0.18em] mb-3" style={{ color: 'rgba(147,197,253,0.80)' }}>
                   WordPress CMS Solutions in Thanjavur
                 </p>
@@ -106,7 +106,7 @@ export default function CMSWhoShould() {
 
               {/* Commitments list */}
               <div className="rounded-2xl p-6"
-                style={{ background: 'linear-gradient(135deg, #eff6ff, #dbeafe)', border: '1px solid rgba(37,99,235,0.15)' }}>
+                style={{ background: 'var(--brand-gradient-soft)', border: '1px solid rgba(37,99,235,0.15)' }}>
                 <h3 className="text-[13px] font-bold text-slate-700 mb-5 uppercase tracking-widest">Our Commitments</h3>
                 <div className="flex flex-col gap-3.5">
                   {commitments.map((c, i) => (

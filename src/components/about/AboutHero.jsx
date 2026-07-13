@@ -1,6 +1,8 @@
+import { useRef } from 'react'
 import { Building2, Users, TrendingUp, Award, Star, ArrowRight, CheckCircle2 } from 'lucide-react'
 
 import heroImage from '../../assets/About/A1.webp'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const stats = [
   { icon: Users,      val: '100+', label: 'Brands Served'  },
@@ -16,22 +18,34 @@ const trustPoints = [
 ]
 
 export default function AboutHero() {
+  const heroRef = useRef(null)
+
   return (
-    <section className="relative overflow-hidden pt-[72px] bg-white">
+    <section ref={heroRef} className="relative overflow-hidden pt-[72px] bg-white">
+
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
 
       {/* ── Background decorations ── */}
       {/* Large light-blue blob top-right */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ top: '-12%', right: '-10%', width: '700px', height: '700px',
-          background: 'radial-gradient(circle, rgba(219,234,254,0.75) 0%, transparent 62%)' }} />
+          background: 'var(--brand-gradient-glow)' }} />
       {/* Soft blob bottom-left */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ bottom: '-8%', left: '-6%', width: '450px', height: '450px',
-          background: 'radial-gradient(circle, rgba(186,230,253,0.45) 0%, transparent 65%)' }} />
+          background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.07) 1px, transparent 1px)',
+        style={{ backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '28px 28px' }} />
 
       {/* Decorative ring — top-left */}
@@ -67,13 +81,10 @@ export default function AboutHero() {
               style={{ fontSize: 'clamp(21px,2.7vw,43px)' }}>
               We Are{' '}
               <span className="relative inline-block">
-                <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-                }}>ARA Discover</span>
+                <span className="text-gradient-blue">ARA Discover</span>
                 {/* Underline draw */}
                 <span className="absolute left-0 right-0 h-[3px] rounded-full animate-underline"
-                  style={{ bottom: '-4px', background: 'linear-gradient(90deg,#2563eb,#0ea5e9)',
+                  style={{ bottom: '-4px', background: 'var(--brand-gradient-soft)',
                     transformOrigin: 'left' }} />
               </span>
               {' '}Marketing
@@ -117,7 +128,7 @@ export default function AboutHero() {
               <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-full
                   font-bold text-[14px] text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+                style={{ background: 'var(--brand-gradient)',
                   boxShadow: '0 8px 32px rgba(37,99,235,0.3)' }}>
                 Work With Us <ArrowRight size={15} />
               </a>
@@ -141,7 +152,7 @@ export default function AboutHero() {
               {/* Blue accent square behind image */}
               <div className="absolute pointer-events-none rounded-[24px]"
                 style={{ bottom: '-12px', right: '-12px', width: '75%', height: '75%',
-                  background: 'linear-gradient(135deg,#dbeafe,#bfdbfe)', zIndex: 0 }} />
+                  background: 'var(--brand-gradient)', zIndex: 0 }} />
 
               {/* Image */}
               <div className="relative z-10 rounded-[24px] overflow-hidden"
@@ -154,7 +165,7 @@ export default function AboutHero() {
                 />
                 {/* Subtle gradient overlay */}
                 <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(to bottom, transparent 50%, rgba(15,23,42,0.15))' }} />
+                  style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
               </div>
 
               {/* Floating badge — trusted agency */}
@@ -171,7 +182,7 @@ export default function AboutHero() {
 
               {/* Floating badge — projects count */}
               <div className="absolute top-3 right-3 sm:-top-5 sm:-right-5 z-20 rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+                style={{ background: 'var(--brand-gradient)',
                   boxShadow: '0 12px 36px rgba(37,99,235,0.4)' }}>
                 <p className="text-[26px] font-black text-white leading-none">150+</p>
                 <p className="text-[11px] text-blue-100 font-medium mt-0.5">Projects Delivered</p>

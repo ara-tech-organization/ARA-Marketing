@@ -28,12 +28,12 @@ export default function ThankYouPage() {
 
           {/* Dot grid */}
           <div className="absolute inset-0 pointer-events-none"
-            style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '36px 36px' }} />
+            style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
           {/* Orbs */}
           <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
+            style={{ background: 'var(--brand-gradient-glow)' }} />
           <div className="absolute bottom-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle,rgba(14,165,233,0.09) 0%,transparent 65%)' }} />
+            style={{ background: 'var(--brand-gradient-glow)' }} />
           <div className="absolute top-24 left-[10%] w-10 h-10 rounded-full border border-blue-300/25 pointer-events-none hidden sm:block" />
           <div className="absolute bottom-24 right-[12%] w-6 h-6 rounded-full border border-violet-300/20 pointer-events-none hidden sm:block" />
 
@@ -47,7 +47,7 @@ export default function ThankYouPage() {
                 <div className="absolute inset-0 rounded-full animate-pulse-dot"
                   style={{ background: 'rgba(37,99,235,0.12)' }} />
                 <div className="relative w-20 h-20 rounded-full flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 32px rgba(37,99,235,0.35)' }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 12px 32px rgba(37,99,235,0.35)' }}>
                   <CheckCircle2 size={38} style={{ color: '#fff' }} />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function ThankYouPage() {
                 style={{ fontSize: 'clamp(26px,3.4vw,42px)' }}>
                 Thank You for{' '}
                 <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+                  background: 'var(--brand-gradient-text)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                 }}>Reaching Out!</span>
               </h1>

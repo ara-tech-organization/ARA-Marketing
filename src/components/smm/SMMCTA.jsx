@@ -4,16 +4,16 @@ export default function SMMCTA() {
   return (
     <section
       className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(135deg, #0d2244 0%, #0f2245 50%, #0d2244 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Decorative orbs */}
       <div
         className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
       <div
         className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(96,165,250,0.1) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 text-center">
@@ -25,20 +25,15 @@ export default function SMMCTA() {
         </div>
 
         {/* Heading */}
-        <h2 className="reveal text-[clamp(21px,2.7vw,37px)] font-bold text-white leading-tight tracking-tight mb-5 max-w-4xl mx-auto">
+        <h2 className="reveal text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5 max-w-4xl mx-auto">
           Are You Ready to Grow Your Brand Through{' '}
-          <span style={{
-            background: 'linear-gradient(135deg, #93c5fd, #60a5fa, #3b82f6)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}>
+          <span className="text-gradient-blue">
             Social Media Marketing?
           </span>
         </h2>
 
         {/* Subtext */}
-        <p className="reveal delay-1 text-[15px] text-white/45 leading-[1.85] max-w-2xl mx-auto mb-10">
+        <p className="reveal delay-1 text-[15px] text-slate-600 leading-[1.85] max-w-2xl mx-auto mb-10">
           Partner with ARA Discover Marketing, a trusted provider of social media agency services in
           Thanjavur, delivering creative campaigns, audience engagement strategies, and high-performing
           paid social advertising solutions.
@@ -49,8 +44,8 @@ export default function SMMCTA() {
           <a
             href="#smm-services"
             className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-[15px]
-              text-white/80 hover:text-white transition-all duration-300"
-            style={{ border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.05)' }}
+              text-blue-600 hover:bg-blue-50 transition-all duration-300"
+            style={{ border: '1px solid rgba(37,99,235,0.2)', background: 'rgba(255,255,255,0.8)' }}
           >
             <MessageSquare size={16} /> View Our Services
           </a>
@@ -65,7 +60,7 @@ export default function SMMCTA() {
           ].map(item => (
             <div key={item} className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
-              <span className="text-[12px] font-medium text-white/40">{item}</span>
+              <span className="text-[12px] font-medium text-slate-500">{item}</span>
             </div>
           ))}
         </div>

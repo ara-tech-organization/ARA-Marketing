@@ -37,14 +37,14 @@ export default function AboutCEO() {
       {/* ── Background decorations ── */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ top: '-8%', right: '-6%', width: '480px', height: '480px',
-          background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+          background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute pointer-events-none rounded-full"
         style={{ bottom: '-6%', left: '-4%', width: '360px', height: '360px',
-          background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
+          background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.06) 1px, transparent 1px)',
+        style={{ backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '30px 30px' }} />
 
       {/* Decorative rings */}
@@ -69,10 +69,7 @@ export default function AboutCEO() {
           <h2 className="font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontSize: 'clamp(25px,3.1vw,43px)' }}>
             Meet The Visionary Behind{' '}
-            <span style={{
-              background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-            }}>ARA Discover Marketing</span>
+            <span className="text-gradient-blue">ARA Discover Marketing</span>
           </h2>
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto mt-3">
             A passionate leader committed to transforming businesses through innovative digital strategies.
@@ -90,7 +87,7 @@ export default function AboutCEO() {
               {/* Accent square behind photo */}
               <div className="absolute pointer-events-none rounded-[24px]"
                 style={{ bottom: '-10px', right: '-10px', width: '80%', height: '70%',
-                  background: 'linear-gradient(135deg,#bfdbfe,#bae6fd)', zIndex: 0 }} />
+                  background: 'var(--brand-gradient)', zIndex: 0 }} />
 
               {/* Outer decorative border */}
               <div className="absolute pointer-events-none rounded-[28px]"
@@ -107,7 +104,7 @@ export default function AboutCEO() {
                 />
                 {/* Bottom overlay */}
                 <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(to top, rgba(37,99,235,0.12) 0%, transparent 50%)' }} />
+                  style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
               </div>
 
               {/* Floating name card */}
@@ -219,7 +216,7 @@ export default function AboutCEO() {
 
         {/* ── Bottom dark stats band ── */}
         <div className="mt-16 reveal rounded-[24px] overflow-hidden"
-          style={{ background: 'linear-gradient(135deg,#0f172a,#1e3a5f)' }}>
+          style={{ background: 'var(--brand-gradient)' }}>
           <div className="grid grid-cols-2 sm:grid-cols-4">
             {[
               { val: '100+', label: 'Brands Promoted',     sub: 'Across industries'          },
@@ -233,7 +230,7 @@ export default function AboutCEO() {
                 {/* Subtle top gradient line */}
                 {i === 0 && (
                   <div className="absolute top-0 left-0 right-0 h-[2px]"
-                    style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+                    style={{ background: 'var(--brand-gradient-soft)' }} />
                 )}
                 <span className="text-[28px] font-bold text-white leading-none">{s.val}</span>
                 <span className="text-[13px] font-semibold text-white/70">{s.label}</span>

@@ -96,7 +96,7 @@ export default function PriceAdditional() {
               style={{ fontSize: 'clamp(22px,3vw,34px)' }}>
               Complete Printing &amp;{' '}
               <span style={{
-                background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
+                background: 'var(--brand-gradient-text)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',

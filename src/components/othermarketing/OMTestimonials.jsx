@@ -51,7 +51,7 @@ export default function OMTestimonials() {
             </span>
             <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               What Clients Say About{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Our Services
               </span>
             </h2>
@@ -80,7 +80,7 @@ export default function OMTestimonials() {
               onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.06)' }}>
 
               {/* Coloured top bar */}
-              <div className="h-1 w-full" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
+              <div className="h-1 w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <div className="flex flex-col flex-1 p-6">
 
@@ -104,7 +104,7 @@ export default function OMTestimonials() {
                 </p>
 
                 {/* Divider */}
-                <div className="h-px mb-4" style={{ background: `linear-gradient(90deg,${color}20,transparent)` }} />
+                <div className="h-px mb-4" style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 {/* Author row */}
                 <div className="flex items-center justify-between gap-3">

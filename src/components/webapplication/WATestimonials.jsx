@@ -74,7 +74,7 @@ export default function WATestimonials() {
           </span>
           <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold text-slate-900 tracking-tight mb-3">
             What Our{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Clients Say
             </span>
           </h2>
@@ -90,7 +90,7 @@ export default function WATestimonials() {
               key={name}
               className={`relative rounded-3xl overflow-hidden transition-all duration-300 reveal delay-${i + 1} flex flex-col`}
               style={{
-                background: featured ? `linear-gradient(145deg,#1e3a8a,#2563eb 50%,#0369a1)` : 'white',
+                background: featured ? 'var(--brand-gradient)' : 'white',
                 border: featured ? 'none' : '1.5px solid #e2e8f0',
                 boxShadow: featured
                   ? '0 24px 60px rgba(37,99,235,0.35), 0 0 0 1px rgba(37,99,235,0.2)'
@@ -99,7 +99,7 @@ export default function WATestimonials() {
             >
               {/* Top accent line for non-featured */}
               {!featured && (
-                <div className="h-[3px] w-full" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
+                <div className="h-[3px] w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
               )}
 
               {/* Dot grid for featured */}
@@ -197,8 +197,7 @@ export default function WATestimonials() {
               </div>
               <div>
                 <p
-                  className="text-[20px] xs:text-[22px] font-black leading-tight"
-                  style={{ background: `linear-gradient(135deg,${color},${color}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}
+                  className="text-[20px] xs:text-[22px] font-black leading-tight text-gradient-blue"
                 >
                   {val}
                 </p>

@@ -8,24 +8,24 @@ const expertise = [
 ]
 
 const gradInd = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
 export default function DWIntro() {
   return (
     <section id="dw-intro" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="hidden sm:block absolute -top-20 -right-20 w-[380px] h-[380px] rounded-full border border-blue-200/35 pointer-events-none animate-[spin_30s_linear_infinite]" />
       <div className="hidden sm:block absolute -top-8 -right-8 w-[260px] h-[260px] rounded-full border border-sky-200/25 pointer-events-none animate-[spin_20s_linear_infinite_reverse]" />
       <div className="hidden sm:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full border border-blue-200/20 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.22) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[200px] sm:w-[400px] h-[200px] sm:h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.18) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -58,7 +58,7 @@ export default function DWIntro() {
               style={{ minHeight: 220 }}
             />
             <div className="absolute inset-0"
-              style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.22) 0%, rgba(14,165,233,0.18) 100%)' }} />
+              style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
             <div className="absolute bottom-5 left-5 right-5 px-5 py-4 rounded-2xl"
               style={{ background: 'rgba(255,255,255,0.92)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.95)' }}>
               <p className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-1">Dynamic Web Page Development in Thanjavur</p>
@@ -104,9 +104,9 @@ export default function DWIntro() {
               }}
             >
               <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500"
-                style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
-                style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}28` }}>
+                style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}28` }}>
                 <Icon size={17} style={{ color }} />
               </div>
               <div>

@@ -1,8 +1,10 @@
+import { useRef } from 'react'
 import {
   Smartphone, Cpu, Shield, Zap, Star, ArrowRight, ArrowUpRight,
   ChevronRight, CheckCircle2, TrendingUp, Users, Bell,
   Home, BarChart2, ShoppingBag, Settings, Heart,
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const stats = [
   { value: '200+', label: 'Apps Delivered'    },
@@ -34,18 +36,31 @@ const appCards = [
 const chartBars = [28, 45, 38, 60, 48, 75, 55, 70, 50, 88, 65, 92]
 
 export default function MAHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px]"
       style={{ background: '#ffffff' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Very subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.07) 1px,transparent 1px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       {/* Soft colour wash â€” top right only */}
       <div className="absolute top-0 right-0 w-[520px] h-[520px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(219,234,254,0.55) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
@@ -74,12 +89,7 @@ export default function MAHero() {
               <span style={{ display: 'block' }}>Build Powerful Mobile</span>
               <span style={{ display: 'block' }}>
                 Apps for{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg,#1e40af,#2563eb)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-gradient-blue">
                   IOS &amp; Android
                 </span>
               </span>
@@ -106,7 +116,7 @@ export default function MAHero() {
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Take a First Step <ArrowRight size={14} />
               </a>
               <a href="#ma-intro"
@@ -122,8 +132,7 @@ export default function MAHero() {
                 <div key={label}
                   className="flex flex-col items-center lg:items-start px-3 sm:px-6 first:pl-0"
                   style={{ borderLeft: i > 0 ? '1px solid #dbeafe' : 'none' }}>
-                  <span className="text-[18px] sm:text-[26px] font-black leading-tight"
-                    style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  <span className="text-[18px] sm:text-[26px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
                   <span className="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5 leading-tight text-center lg:text-left">{label}</span>
@@ -138,13 +147,13 @@ export default function MAHero() {
 
               {/* Soft glow behind phone */}
               <div className="absolute inset-0 -m-8 rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.12) 0%,transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               {/* Floating badge â€” AI */}
               <div className="absolute -top-8 -left-14 z-20 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white animate-float"
                 style={{ border: '1px solid #dbeafe', boxShadow: '0 8px 28px rgba(37,99,235,0.15)' }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Cpu size={14} className="text-white" />
                 </div>
                 <div>
@@ -157,7 +166,7 @@ export default function MAHero() {
               <div className="absolute -bottom-8 -right-14 z-20 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white animate-float"
                 style={{ border: '1px solid #bae6fd', boxShadow: '0 8px 28px rgba(14,165,233,0.16)', animationDelay: '1.6s' }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#0ea5e9,#2563eb)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Star size={14} className="text-white" />
                 </div>
                 <div>
@@ -208,7 +217,7 @@ export default function MAHero() {
 
                     {/* App top bar */}
                     <div className="flex items-center justify-between px-4 py-3"
-                      style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+                      style={{ background: 'var(--brand-gradient)' }}>
                       <div>
                         <p className="text-[8px] font-semibold text-blue-200">Good Morning ðŸ‘‹</p>
                         <p className="text-[11px] font-black text-white leading-tight">ARA Business App</p>

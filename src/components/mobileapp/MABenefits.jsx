@@ -8,7 +8,7 @@ const benefits = [
     metric: '3x',
     metricLabel: 'Higher Engagement',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg,#1e40af,#3b82f6)',
+    grad: 'var(--brand-gradient-text)',
     bg: '#eff6ff',
     border: '#bfdbfe',
   },
@@ -19,7 +19,7 @@ const benefits = [
     metric: '60%',
     metricLabel: 'Efficiency Gain',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+    grad: 'var(--brand-gradient-text)',
     bg: '#e0f2fe',
     border: '#bae6fd',
   },
@@ -30,7 +30,7 @@ const benefits = [
     metric: '<1s',
     metricLabel: 'Load Time',
     color: '#0ea5e9',
-    grad: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
+    grad: 'var(--brand-gradient-text)',
     bg: '#e0f2fe',
     border: '#bae6fd',
   },
@@ -41,7 +41,7 @@ const benefits = [
     metric: '40%',
     metricLabel: 'ROI Increase',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+    grad: 'var(--brand-gradient-text)',
     bg: '#dbeafe',
     border: '#bfdbfe',
   },
@@ -52,7 +52,7 @@ const benefits = [
     metric: '50%',
     metricLabel: 'Cost Reduction',
     color: '#0ea5e9',
-    grad: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
+    grad: 'var(--brand-gradient-text)',
     bg: '#e0f2fe',
     border: '#bae6fd',
   },
@@ -70,11 +70,11 @@ export default function MABenefits() {
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       {/* Orbs */}
       <div className="absolute -top-24 -right-24 w-[360px] h-[360px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="hidden lg:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full pointer-events-none"
         style={{ border: '1.5px solid rgba(37,99,235,0.07)', animation: 'spin 55s linear infinite' }} />
 
@@ -94,18 +94,13 @@ export default function MABenefits() {
 
               <h2 className="text-[clamp(22px,2.8vw,38px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-4">
                 Benefits of Our{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg,#1e40af,#2563eb)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-gradient-blue">
                   Mobile App Services
                 </span>
               </h2>
 
               <div className="w-10 h-[3px] rounded-full mb-5 mx-auto lg:mx-0"
-                style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <p className="text-[13px] sm:text-[14px] text-slate-500 leading-[1.85] mb-7">
                 Our mobile application development service in Thanjavur delivers measurable results â€” from increased engagement and streamlined operations to a higher ROI for your business.
@@ -124,7 +119,7 @@ export default function MABenefits() {
 
             <a href="tel:+918110025254"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:gap-3"
-              style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
               Start Your App Project <ArrowRight size={13} />
             </a>
           </div>

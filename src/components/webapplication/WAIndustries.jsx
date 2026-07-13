@@ -12,7 +12,7 @@ const industries = [
     label: 'eCommerce & Retail',
     desc: 'Scalable storefronts with AI-driven product discovery and seamless checkout flows.',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg,#1d4ed8,#2563eb)',
+    grad: 'var(--brand-gradient)',
     image: ecommerceImage,
   },
   {
@@ -20,7 +20,7 @@ const industries = [
     label: 'Healthcare & Fitness',
     desc: 'HIPAA-ready patient portals, appointment systems, and fitness tracking applications.',
     color: '#0891b2',
-    grad: 'linear-gradient(135deg,#0369a1,#0891b2)',
+    grad: 'var(--brand-gradient)',
     image: healthcareImage,
   },
   {
@@ -28,7 +28,7 @@ const industries = [
     label: 'Education & E-learning',
     desc: 'Interactive LMS platforms, virtual classrooms, and student management systems.',
     color: '#1d4ed8',
-    grad: 'linear-gradient(135deg,#1e3a8a,#1d4ed8)',
+    grad: 'var(--brand-gradient)',
     image: educationImage,
   },
   {
@@ -36,7 +36,7 @@ const industries = [
     label: 'Finance & Banking',
     desc: 'Secure fintech apps, dashboards, and payment platforms built for compliance.',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg,#1e3a8a,#2563eb)',
+    grad: 'var(--brand-gradient)',
     image: financeImage,
   },
   {
@@ -44,7 +44,7 @@ const industries = [
     label: 'Logistics & Transportation',
     desc: 'Real-time tracking, fleet management, and supply chain optimisation tools.',
     color: '#0891b2',
-    grad: 'linear-gradient(135deg,#155e75,#0891b2)',
+    grad: 'var(--brand-gradient)',
     image: logisticsImage,
   },
   {
@@ -52,7 +52,7 @@ const industries = [
     label: 'Startups & Enterprises',
     desc: 'MVP-to-scale solutions and enterprise platforms built for growth and agility.',
     color: '#1d4ed8',
-    grad: 'linear-gradient(135deg,#1e40af,#1d4ed8)',
+    grad: 'var(--brand-gradient)',
     image: startupImage,
   },
 ]
@@ -74,7 +74,7 @@ export default function WAIndustries() {
           </span>
           <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
             Built for Every{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Industry
             </span>
           </h2>

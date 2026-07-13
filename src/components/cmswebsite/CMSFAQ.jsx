@@ -45,7 +45,7 @@ function FAQItem({ faq, index, active, setActive }) {
         {/* Left accent bar */}
         <div
           className="flex-shrink-0 w-1 self-stretch rounded-full mt-0.5 transition-all duration-300"
-          style={{ background: isOpen ? 'linear-gradient(180deg, #1d4ed8, #3b82f6)' : '#e2e8f0', minHeight: 20 }}
+          style={{ background: isOpen ? 'var(--brand-gradient-soft)' : '#e2e8f0', minHeight: 20 }}
         />
 
         <div className="flex-1 min-w-0">
@@ -78,13 +78,13 @@ export default function CMSFAQ() {
   return (
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute top-0 left-0 w-[350px] h-[350px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-20"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.1) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-20 items-start">
@@ -101,7 +101,7 @@ export default function CMSFAQ() {
             {/* Heading */}
             <h2 className="text-[clamp(23px,2.5vw,41px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
               Frequently Asked{' '}
-              <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Questions
               </span>
             </h2>

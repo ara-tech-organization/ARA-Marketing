@@ -72,7 +72,7 @@ export default function SEMTestimonials() {
               }}
             >
               <div className="h-1 w-full"
-                style={{ background: `linear-gradient(90deg, ${t.color}, ${t.color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <div className="p-6 lg:p-8">
                 <div className="flex items-start justify-between mb-3">
@@ -89,7 +89,7 @@ export default function SEMTestimonials() {
                 </p>
 
                 <div className="h-px mb-4"
-                  style={{ background: `linear-gradient(90deg, ${t.color}30, transparent)` }} />
+                  style={{ background: 'var(--brand-gradient-line)' }} />
 
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2.5">
@@ -132,11 +132,11 @@ export default function SEMTestimonials() {
                   onClick={() => setActive(i)}
                   className="group relative text-left rounded-xl p-5 border transition-all duration-300 overflow-hidden"
                   style={isActive
-                    ? { background: `linear-gradient(135deg, white 0%, ${color}06 100%)`, borderColor: `${color}28`, boxShadow: `0 6px 20px ${color}10` }
+                    ? { background: 'var(--brand-gradient-soft)', borderColor: `${color}28`, boxShadow: `0 6px 20px ${color}10` }
                     : { background: 'white', borderColor: '#f1f5f9', boxShadow: '0 1px 6px rgba(0,0,0,0.03)' }}
                 >
                   <div className="absolute top-0 left-0 bottom-0 w-0.5 rounded-l-xl transition-all duration-300"
-                    style={{ background: isActive ? `linear-gradient(180deg,${color},${color}44)` : 'transparent' }} />
+                    style={{ background: isActive ? 'var(--brand-gradient-soft)' : 'transparent' }} />
 
                   <div className="flex items-center gap-2 mb-1.5 pl-1">
                     <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[12px]"

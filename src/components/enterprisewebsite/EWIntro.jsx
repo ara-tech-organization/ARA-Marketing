@@ -28,7 +28,7 @@ export default function EWIntro() {
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
 
       {/* Decorative rings */}
       <div className="hidden lg:block absolute -right-28 top-1/3 w-[340px] h-[340px] rounded-full pointer-events-none"
@@ -37,7 +37,7 @@ export default function EWIntro() {
         style={{ border: '1.5px solid rgba(124,58,237,0.06)', animation: 'spin 50s linear infinite reverse' }} />
 
       {/* ── Stats strip ── */}
-      <div className="relative" style={{ background: 'linear-gradient(90deg,#1e3a8a,#1d4ed8 40%,#0891b2 80%,#0e7490)' }}>
+      <div className="relative" style={{ background: 'var(--brand-gradient)' }}>
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4">
             {stats.map(({ val, label }, i) => (
@@ -71,7 +71,7 @@ export default function EWIntro() {
             {/* Heading */}
             <h2 className="text-[clamp(19px,4vw,43px)] font-bold leading-[1.12] tracking-tight mb-4 text-slate-900">
               Trusted{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Enterprise Web Development
               </span>{' '}
               Company in Thanjavur
@@ -79,7 +79,7 @@ export default function EWIntro() {
 
             {/* Accent bar */}
             <div className="w-12 h-[3px] rounded-full mb-4 sm:mb-5 mx-auto lg:mx-0"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#7c3aed)' }} />
+              style={{ background: 'var(--brand-gradient-soft)' }} />
 
             <p className="text-[12.5px] sm:text-[13.5px] lg:text-[14.5px] text-slate-500 leading-[1.90] mb-6 sm:mb-7">
               In today's competitive market, enterprises need websites that are visually attractive, secure, scalable, and capable of managing complex business operations. Our enterprise web development services in Thanjavur apply the latest technology, personalised designs, and data-driven insights to help enterprises realise measurable growth.
@@ -130,8 +130,7 @@ export default function EWIntro() {
               {/* Top-right badge */}
               <div className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 px-2.5 sm:px-3 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-center"
                 style={{ background: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(12px)', boxShadow: '0 6px 20px rgba(0,0,0,0.11)' }}>
-                <p className="text-[16px] sm:text-[20px] font-bold leading-none"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#7c3aed)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>98%</p>
+                <p className="text-[16px] sm:text-[20px] font-bold leading-none text-gradient-blue">98%</p>
                 <p className="text-[8px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-wider mt-0.5">Client Retention</p>
               </div>
 

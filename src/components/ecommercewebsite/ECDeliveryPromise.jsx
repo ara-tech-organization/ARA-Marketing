@@ -14,7 +14,7 @@ export default function ECDeliveryPromise() {
     <section className="relative py-16 sm:py-16 overflow-hidden" style={{ background: '#f0f9ff' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '30px 30px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '30px 30px' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -27,7 +27,7 @@ export default function ECDeliveryPromise() {
             </span>
             <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Committed to{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Delivering Excellence
               </span>
             </h2>
@@ -51,7 +51,7 @@ export default function ECDeliveryPromise() {
                 loading="lazy"
               />
               <div className="absolute inset-0"
-                style={{ background: 'linear-gradient(160deg,rgba(29,78,216,0.6) 0%,rgba(10,26,52,0.7) 100%)' }} />
+                style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
               <div className="absolute inset-0 flex flex-col justify-end p-8">
                 <p className="text-[11px] font-bold uppercase tracking-widest text-blue-300 mb-3">Our promise to you</p>
                 <p className="text-[18px] font-bold text-white leading-snug mb-5">
@@ -102,7 +102,7 @@ export default function ECDeliveryPromise() {
           </p>
           <a href="/contact-us"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px] font-bold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 flex-shrink-0"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}>
             Get Started <ArrowRight size={14} />
           </a>
         </div>

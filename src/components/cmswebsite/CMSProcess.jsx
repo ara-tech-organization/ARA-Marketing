@@ -55,13 +55,13 @@ export default function CMSProcess() {
     >
       {/* Subtle orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(29,78,216,0.04) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-25"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.12) 1px, transparent 1px)', backgroundSize: '42px 42px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '42px 42px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -75,7 +75,7 @@ export default function CMSProcess() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             How We Build{' '}
-            <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               WordPress Websites
             </span>
           </h2>
@@ -127,10 +127,10 @@ export default function CMSProcess() {
                 {/* Icon + top accent */}
                 <div className="flex items-center gap-3 mb-1">
                   <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                    style={{ background: `linear-gradient(135deg, ${color}, ${color}bb)`, boxShadow: `0 4px 14px ${glow}` }}>
+                    style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 14px ${glow}` }}>
                     <Icon size={15} className="text-white" />
                   </div>
-                  <div className="h-0.5 flex-1 rounded-full" style={{ background: `linear-gradient(90deg, ${color}50, transparent)` }} />
+                  <div className="h-0.5 flex-1 rounded-full" style={{ background: 'var(--brand-gradient-line)' }} />
                 </div>
 
                 <h3 className="text-[11px] font-bold text-slate-800 leading-snug">{title}</h3>
@@ -164,7 +164,7 @@ export default function CMSProcess() {
               >
                 <div className="flex items-center gap-3 mb-1">
                   <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: `linear-gradient(135deg, ${color}, ${color}bb)`, boxShadow: `0 4px 14px ${glow}` }}>
+                    style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 14px ${glow}` }}>
                     <Icon size={15} className="text-white" />
                   </div>
                   <span className="text-[10px] font-black tracking-widest px-2 py-0.5 rounded-full"
@@ -196,12 +196,12 @@ export default function CMSProcess() {
               <div className="flex flex-col items-center flex-shrink-0">
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: `linear-gradient(135deg, ${color}, ${color}bb)`, boxShadow: `0 6px 20px ${glow}` }}
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${glow}` }}
                 >
                   <Icon size={17} className="text-white" />
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="w-px flex-1 mt-2 mb-2" style={{ background: `linear-gradient(180deg, ${color}50, transparent)`, minHeight: 32 }} />
+                  <div className="w-px flex-1 mt-2 mb-2" style={{ background: 'var(--brand-gradient-line-vertical)', minHeight: 32 }} />
                 )}
               </div>
 
@@ -241,7 +241,7 @@ export default function CMSProcess() {
           <a
             href="/contact-us"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13px] font-bold text-white flex-shrink-0 transition-all duration-300 hover:scale-[1.04]"
-            style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 4px 16px rgba(37,99,235,0.28)' }}
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 16px rgba(37,99,235,0.28)' }}
           >
             Start Your Project <ChevronRight size={14} />
           </a>

@@ -81,7 +81,7 @@ export default function WAServices() {
           </span>
           <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900 mb-3 sm:mb-4">
             Our Web App Development{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Services
             </span>
           </h2>
@@ -133,7 +133,7 @@ export default function WAServices() {
               <div className="relative overflow-hidden" style={{ height: '200px' }}>
                 <img key={active} src={s.image} alt={s.title} className="w-full h-full object-cover" />
                 <div className="absolute inset-0"
-                  style={{ background: `linear-gradient(to bottom, transparent 20%, ${s.color}cc 100%)` }} />
+                  style={{ background: 'linear-gradient(to bottom, transparent 20%, #2563ebcc 100%)' }} />
                 <div className="absolute bottom-3 xs:bottom-4 left-4 xs:left-5 right-4 xs:right-5">
                   <p className="text-[10px] xs:text-[11px] font-bold uppercase tracking-widest text-white/80">{s.subtitle}</p>
                 </div>

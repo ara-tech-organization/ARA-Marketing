@@ -15,11 +15,11 @@ export default function ECWhoShould() {
       style={{ background: '#f0f9ff' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
       <div className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-16 -left-16 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="hidden sm:block absolute top-20 left-20 w-[200px] h-[200px] rounded-full border pointer-events-none animate-[spin_40s_linear_infinite]"
         style={{ borderColor: 'rgba(37,99,235,0.15)' }} />
 
@@ -33,7 +33,7 @@ export default function ECWhoShould() {
           </span>
           <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight mb-4 text-slate-900">
             Who Should Invest in{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               E-Commerce Websites?
             </span>
           </h2>
@@ -96,7 +96,7 @@ export default function ECWhoShould() {
             </p>
             <a href="/contact-us"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-white text-[13px] font-bold transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 24px rgba(37,99,235,0.28)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 24px rgba(37,99,235,0.28)' }}>
               Get Started Today <ArrowRight size={13} />
             </a>
           </div>

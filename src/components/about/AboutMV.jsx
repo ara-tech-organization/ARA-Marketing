@@ -23,10 +23,10 @@ export default function AboutMV() {
       {/* ── Background decorations ── */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ top: '-5%', right: '-4%', width: '320px', height: '320px',
-          background: 'radial-gradient(circle, rgba(186,230,253,0.6) 0%, transparent 65%)' }} />
+          background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute pointer-events-none rounded-full"
         style={{ bottom: '-5%', left: '-4%', width: '260px', height: '260px',
-          background: 'radial-gradient(circle, rgba(219,234,254,0.7) 0%, transparent 65%)' }} />
+          background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute pointer-events-none rounded-full hidden lg:block"
         style={{ top: '30%', left: '-3%', width: '160px', height: '160px',
           border: '1.5px dashed rgba(14,165,233,0.25)' }} />
@@ -50,10 +50,7 @@ export default function AboutMV() {
           <h2 className="font-bold text-slate-900 leading-tight tracking-tight"
             style={{ fontSize: 'clamp(25px,3.1vw,43px)' }}>
             The Purpose That{' '}
-            <span style={{
-              background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-            }}>Drives Us Forward</span>
+            <span className="text-gradient-blue">Drives Us Forward</span>
           </h2>
           <p className="text-[15px] text-slate-500 leading-relaxed max-w-2xl mx-auto mt-3.5">
             Our mission and vision are the foundation of everything we do — guiding how we serve
@@ -70,7 +67,7 @@ export default function AboutMV() {
               {/* Blue accent behind */}
               <div className="absolute pointer-events-none rounded-[20px]"
                 style={{ top: '12px', left: '-12px', width: '90%', height: '90%',
-                  background: 'linear-gradient(135deg,#bfdbfe,#93c5fd)', zIndex: 0 }} />
+                  background: 'var(--brand-gradient)', zIndex: 0 }} />
               <div className="relative z-10 rounded-[20px] overflow-hidden"
                 style={{ boxShadow: '0 24px 60px rgba(37,99,235,0.15)' }}>
                 <img
@@ -95,10 +92,7 @@ export default function AboutMV() {
             <h3 className="font-bold text-slate-900 mb-4 leading-tight"
               style={{ fontSize: 'clamp(19px,2vw,29px)' }}>
               Helping Businesses Become{' '}
-              <span style={{
-                background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-              }}>Strong Digital Brands</span>
+              <span className="text-gradient-blue">Strong Digital Brands</span>
             </h3>
 
             <p className="text-[14.5px] leading-[1.9] mb-7 text-slate-500">
@@ -123,17 +117,17 @@ export default function AboutMV() {
 
             {/* Bottom accent line */}
             <div className="h-[3px] w-24 rounded-full mx-auto lg:mx-0"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+              style={{ background: 'var(--brand-gradient-soft)' }} />
           </div>
         </div>
 
         {/* Divider */}
         <div className="flex items-center gap-4 mb-16">
-          <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,transparent,#bfdbfe)' }} />
+          <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
           <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
           <div className="w-2 h-2 rounded-full" style={{ background: '#0ea5e9' }} />
           <div className="w-2 h-2 rounded-full" style={{ background: '#2563eb' }} />
-          <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,#bfdbfe,transparent)' }} />
+          <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
         </div>
 
         {/* ── Vision block ── */}
@@ -145,7 +139,7 @@ export default function AboutMV() {
               {/* Accent behind */}
               <div className="absolute pointer-events-none rounded-[20px]"
                 style={{ top: '12px', right: '-12px', width: '90%', height: '90%',
-                  background: 'linear-gradient(135deg,#bae6fd,#93c5fd)', zIndex: 0 }} />
+                  background: 'var(--brand-gradient)', zIndex: 0 }} />
               <div className="relative z-10 rounded-[20px] overflow-hidden"
                 style={{ boxShadow: '0 24px 60px rgba(14,165,233,0.18)' }}>
                 <img
@@ -170,10 +164,7 @@ export default function AboutMV() {
             <h3 className="font-bold text-slate-900 mb-4 leading-tight"
               style={{ fontSize: 'clamp(19px,2vw,29px)' }}>
               Empowering Every Business to{' '}
-              <span style={{
-                background: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
-                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-              }}>Lead the Digital Age</span>
+              <span className="text-gradient-blue">Lead the Digital Age</span>
             </h3>
 
             <p className="text-[14.5px] leading-[1.9] mb-7 text-slate-500">
@@ -198,7 +189,7 @@ export default function AboutMV() {
 
             {/* Bottom accent line */}
             <div className="h-[3px] w-24 rounded-full mx-auto lg:mx-0"
-              style={{ background: 'linear-gradient(90deg,#0ea5e9,#2563eb)' }} />
+              style={{ background: 'var(--brand-gradient-soft)' }} />
           </div>
         </div>
 

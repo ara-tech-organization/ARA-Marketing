@@ -19,13 +19,13 @@ export default function CMSCTA() {
     <section className="relative py-16 sm:py-16 overflow-hidden bg-white">
       {/* Subtle orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(29,78,216,0.04) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-20"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.12) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-16 items-center">
@@ -42,7 +42,7 @@ export default function CMSCTA() {
             {/* Heading */}
             <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Let's Build Your WordPress{' '}
-              <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Website Together
               </span>
             </h2>
@@ -67,7 +67,7 @@ export default function CMSCTA() {
               <a
                 href="tel:+918110025254"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-bold text-white transition-all duration-300 hover:scale-[1.03]"
-                style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 28px rgba(37,99,235,0.28)' }}
                 onMouseEnter={e => e.currentTarget.style.boxShadow = '0 12px 36px rgba(37,99,235,0.4)'}
                 onMouseLeave={e => e.currentTarget.style.boxShadow = '0 8px 28px rgba(37,99,235,0.28)'}
               >
@@ -84,9 +84,9 @@ export default function CMSCTA() {
 
               {/* Panel glow */}
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 65%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full pointer-events-none"
-                style={{ background: 'radial-gradient(circle, rgba(29,78,216,0.4) 0%, transparent 65%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               {/* Panel header */}
               <div className="relative mb-6">

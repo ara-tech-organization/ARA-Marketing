@@ -1,8 +1,10 @@
+import { useRef } from 'react'
 import {
   Code2, Cpu, Shield, ArrowRight, ArrowUpRight, ChevronRight,
   Globe, Smartphone, Zap, Star, Users, TrendingUp, ShoppingBag,
   BarChart3, Activity, CheckCircle2,
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const highlights = [
   { val: '200+', label: 'Apps Delivered' },
@@ -33,30 +35,36 @@ const tableRows = [
   { name: 'Meena Logistics', type: 'eCommerce App',  amount: '₹1,20,000',status: 'Review',      dot: '#f59e0b' },
 ]
 
-const gradBlue = {
-  background: 'linear-gradient(135deg,#60a5fa,#38bdf8)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-  backgroundClip: 'text',
-}
-
 export default function WAHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={720}
+        blur={110}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.16) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       {/* Noise */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
       {/* Orbs */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.20) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       {/* Rings */}
       <div className="hidden md:block absolute top-20 right-[8%] w-48 h-48 rounded-full border border-blue-500/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-20 left-[5%] w-32 h-32 rounded-full border border-sky-500/10 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
@@ -68,44 +76,36 @@ export default function WAHero() {
           <div className="flex-1 min-w-0 animate-hero-enter text-center lg:text-left">
 
             {/* Breadcrumb */}
-            <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] mb-6"
-              style={{ color: 'rgba(255,255,255,0.35)' }}>
-              <a href="/" className="transition-colors hover:text-sky-300">Home</a>
-              <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <a href="/services/website-development" className="transition-colors hover:text-sky-300">Web Design</a>
-              <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
-              <span className="text-sky-300 font-medium">Web Application</span>
+            <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
+              <a href="/" className="transition-colors hover:text-blue-600">Home</a>
+              <ChevronRight size={12} className="text-slate-300" />
+              <a href="/services/website-development" className="transition-colors hover:text-blue-600">Web Design</a>
+              <ChevronRight size={12} className="text-slate-300" />
+              <span className="text-blue-600 font-medium">Web Application</span>
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8"
-              style={{
-                background: 'rgba(37,99,235,0.18)',
-                border: '1px solid rgba(96,165,250,0.30)',
-                color: '#93c5fd',
-                backdropFilter: 'blur(8px)',
-              }}>
+            <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8
+              border border-blue-200 bg-white/80 text-blue-600"
+              style={{ backdropFilter: 'blur(8px)' }}>
               <Code2 size={10} /> Web Application Development Service
             </span>
 
             {/* H1 */}
-            <h1 className="leading-[1.2] tracking-tight mb-5 sm:mb-6" style={{ color: '#ffffff', fontWeight: 600, fontSize: 'clamp(26px,5vw,44px)' }}>
+            <h1 className="leading-[1.2] tracking-tight mb-5 sm:mb-6 text-slate-900" style={{ fontWeight: 600, fontSize: 'clamp(26px,5vw,44px)' }}>
               <span style={{ display: 'block' }}>Power Your Business with</span>
-              <span style={{ display: 'block', ...gradBlue }}>Advanced Web App Solutions</span>
+              <span className="text-gradient-blue" style={{ display: 'block' }}>Advanced Web App Solutions</span>
             </h1>
 
             {/* Tagline */}
-            <p className="text-[13px] sm:text-[15px] font-medium tracking-wide mb-4 sm:mb-5"
-              style={{ color: 'rgba(255,255,255,0.45)' }}>
+            <p className="text-[13px] sm:text-[15px] font-medium tracking-wide mb-4 sm:mb-5 text-slate-500">
               AI-Powered &middot; Secure &middot; Scalable &middot; Results-Driven
             </p>
 
-            <p className="text-[13.5px] sm:text-[14.5px] leading-[1.85] mb-3 max-w-[560px] mx-auto lg:mx-0"
-              style={{ color: 'rgba(255,255,255,0.55)' }}>
+            <p className="text-[13.5px] sm:text-[14.5px] leading-[1.85] mb-3 max-w-[560px] mx-auto lg:mx-0 text-slate-600">
               ARA Discover Marketing is the best custom web application development company in Thanjavur, offering reliable AI-powered solutions customised as per your requirements.
             </p>
-            <p className="hidden sm:block text-[13px] sm:text-[13.5px] leading-[1.8] mb-8 sm:mb-10 max-w-[560px] mx-auto lg:mx-0"
-              style={{ color: 'rgba(255,255,255,0.35)' }}>
+            <p className="hidden sm:block text-[13px] sm:text-[13.5px] leading-[1.8] mb-8 sm:mb-10 max-w-[560px] mx-auto lg:mx-0 text-slate-500">
               We are one of the best web and mobile app development companies in Thanjavur, delivering powerful, secure, and result-driven web applications for businesses of every scale.
             </p>
 
@@ -118,9 +118,9 @@ export default function WAHero() {
                 { icon: Zap,        text: 'Scalable Architecture' },
               ].map(({ icon: Icon, text }) => (
                 <span key={text}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold"
-                  style={{ background: 'rgba(37,99,235,0.12)', border: '1px solid rgba(37,99,235,0.28)', color: '#93c5fd' }}>
-                  <Icon size={11} />
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-semibold text-slate-600"
+                  style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid rgba(37,99,235,0.15)' }}>
+                  <Icon size={11} className="text-blue-600" />
                   {text}
                 </span>
               ))}
@@ -130,28 +130,22 @@ export default function WAHero() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8 sm:mb-12">
               <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0369a1)', boxShadow: '0 8px 32px rgba(29,78,216,0.45)' }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 32px rgba(29,78,216,0.35)' }}>
                 Take a First Step <ArrowRight size={14} />
               </a>
               <a href="#wa-services"
-                className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5"
-                style={{
-                  color: 'rgba(255,255,255,0.80)',
-                  background: 'rgba(255,255,255,0.06)',
-                  border: '1px solid rgba(255,255,255,0.15)',
-                  backdropFilter: 'blur(8px)',
-                }}>
+                className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-sm font-semibold text-blue-600 transition-all duration-300 hover:-translate-y-0.5 hover:text-white hover:bg-blue-600"
+                style={{ border: '1px solid rgba(37,99,235,0.3)' }}>
                 Explore Services <ArrowUpRight size={14} />
               </a>
             </div>
 
             {/* Stats strip */}
-            <div className="flex justify-center lg:justify-start flex-wrap gap-6 sm:gap-8 pt-6 sm:pt-8"
-              style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+            <div className="flex justify-center lg:justify-start flex-wrap gap-6 sm:gap-8 pt-6 sm:pt-8 border-t border-blue-100">
               {highlights.map(({ val, label }) => (
                 <div key={label} className="flex flex-col items-center lg:items-start">
-                  <span className="text-[26px] sm:text-[30px] font-black leading-tight" style={gradBlue}>{val}</span>
-                  <span className="text-[11px] sm:text-[12px] mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>{label}</span>
+                  <span className="text-[26px] sm:text-[30px] font-black leading-tight text-gradient-blue">{val}</span>
+                  <span className="text-[11px] sm:text-[12px] mt-0.5 text-slate-500">{label}</span>
                 </div>
               ))}
             </div>
@@ -161,13 +155,13 @@ export default function WAHero() {
           <div className="hidden md:block lg:w-[500px] flex-shrink-0 w-full max-w-[500px] reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse, rgba(29,78,216,0.28) 0%, transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               {/* Floating left badge */}
               <div className="absolute -left-5 top-12 z-20 flex items-center gap-2.5 px-3 py-2 rounded-2xl animate-float"
                 style={{ background: 'rgba(13,27,58,0.95)', border: '1px solid rgba(37,99,235,0.35)', backdropFilter: 'blur(12px)', boxShadow: '0 8px 30px rgba(37,99,235,0.2)' }}>
                 <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#1d4ed8,#2563eb)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Cpu size={13} className="text-white" />
                 </div>
                 <div>
@@ -180,7 +174,7 @@ export default function WAHero() {
               <div className="absolute -right-5 bottom-20 z-20 flex items-center gap-2.5 px-3 py-2 rounded-2xl animate-float"
                 style={{ background: 'rgba(13,27,58,0.95)', border: '1px solid rgba(245,158,11,0.35)', backdropFilter: 'blur(12px)', boxShadow: '0 8px 30px rgba(245,158,11,0.15)', animationDelay: '1.8s' }}>
                 <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#d97706,#f59e0b)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Star size={13} className="text-white" />
                 </div>
                 <div>
@@ -194,7 +188,7 @@ export default function WAHero() {
                 style={{ border: '1.5px solid rgba(37,99,235,0.30)', boxShadow: '0 40px 100px rgba(0,0,0,0.60)' }}>
 
                 {/* Accent bar */}
-                <div className="h-1" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#38bdf8,#0891b2)' }} />
+                <div className="h-1" style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 {/* Browser chrome */}
                 <div className="flex items-center gap-2 px-4 py-2.5"
@@ -223,7 +217,7 @@ export default function WAHero() {
                     style={{ background: '#161b22', borderRight: '1px solid rgba(37,99,235,0.12)' }}>
                     <div className="flex items-center gap-2 px-2 py-2 mb-2">
                       <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
-                        style={{ background: 'linear-gradient(135deg,#1d4ed8,#2563eb)' }}>
+                        style={{ background: 'var(--brand-gradient)' }}>
                         <Code2 size={10} className="text-white" />
                       </div>
                       <span className="text-[11px] font-bold text-white">AraApp</span>
@@ -274,7 +268,7 @@ export default function WAHero() {
                       <div className="flex items-end gap-0.5 h-12">
                         {chartBars.map((h, i) => (
                           <div key={i} className="flex-1 rounded-sm min-w-[3px]"
-                            style={{ height: `${h}%`, background: 'linear-gradient(180deg, rgba(59,130,246,0.85), rgba(8,145,178,0.55))' }} />
+                            style={{ height: `${h}%`, background: 'var(--brand-gradient-soft)' }} />
                         ))}
                       </div>
                       <div className="flex items-center justify-between mt-1">
@@ -316,7 +310,7 @@ export default function WAHero() {
 
                 {/* Bottom strip */}
                 <div className="flex items-center justify-between gap-2 px-4 py-2.5"
-                  style={{ background: 'linear-gradient(90deg,#1e3a8a,#1d4ed8,#0891b2)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 size={10} className="text-white/70" />
                     <span className="text-[9px] font-bold text-white/80">200+ Apps Delivered</span>

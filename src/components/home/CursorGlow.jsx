@@ -13,7 +13,7 @@ export default function CursorGlow() {
     <div
       className="cursor-glow"
       style={{
-        background: `radial-gradient(400px circle at ${pos.x}px ${pos.y}px, rgba(59,130,246,0.07), transparent 70%)`,
+        background: `radial-gradient(400px circle at ${pos.x}px ${pos.y}px, rgba(37,99,235,0.07), transparent 70%)`,
       }}
     />
   )

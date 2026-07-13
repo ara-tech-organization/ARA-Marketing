@@ -9,7 +9,7 @@ const benefits = [
     color: '#0ea5e9',
     metric: '<1s',
     metricLabel: 'Load Time',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
   {
     num: '02',
@@ -19,7 +19,7 @@ const benefits = [
     color: '#2563eb',
     metric: '0',
     metricLabel: 'DB Risk',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
   {
     num: '03',
@@ -29,7 +29,7 @@ const benefits = [
     color: '#0ea5e9',
     metric: '98+',
     metricLabel: 'SEO Score',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
   {
     num: '04',
@@ -39,7 +39,7 @@ const benefits = [
     color: '#2563eb',
     metric: '90%',
     metricLabel: 'Cost Saving',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
   {
     num: '05',
@@ -49,7 +49,7 @@ const benefits = [
     color: '#0ea5e9',
     metric: '99.9%',
     metricLabel: 'Uptime',
-    grad: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+    grad: 'var(--brand-gradient)',
   },
 ]
 
@@ -60,14 +60,14 @@ export default function SWBenefits() {
     >
       {/* Orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.06) 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '28px 28px',
         }} />
 
@@ -89,12 +89,7 @@ export default function SWBenefits() {
               {/* Heading */}
               <h2 className="text-[clamp(22px,2.5vw,36px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
                 Benefits of{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-gradient-blue">
                   Static Websites
                 </span>
               </h2>
@@ -126,14 +121,8 @@ export default function SWBenefits() {
                       <Icon size={13} style={{ color }} />
                     </div>
                     <div
-                      className="font-black tabular-nums leading-none mb-1"
-                      style={{
-                        fontSize: '30px',
-                        background: grad,
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                      }}
+                      className="font-black tabular-nums leading-none mb-1 text-gradient-blue"
+                      style={{ fontSize: '30px' }}
                     >
                       {metric}
                     </div>
@@ -155,14 +144,8 @@ export default function SWBenefits() {
                     </div>
                     <div>
                       <div
-                        className="font-black tabular-nums leading-none mb-0.5"
-                        style={{
-                          fontSize: '26px',
-                          background: grad,
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent',
-                          backgroundClip: 'text',
-                        }}
+                        className="font-black tabular-nums leading-none mb-0.5 text-gradient-blue"
+                        style={{ fontSize: '26px' }}
                       >
                         {metric}
                       </div>
@@ -170,7 +153,7 @@ export default function SWBenefits() {
                         {metricLabel}
                       </div>
                     </div>
-                    <div className="flex-1 h-px ml-2" style={{ background: `linear-gradient(90deg, ${color}30, transparent)` }} />
+                    <div className="flex-1 h-px ml-2" style={{ background: 'var(--brand-gradient-line)' }} />
                   </div>
                 )
               })()}

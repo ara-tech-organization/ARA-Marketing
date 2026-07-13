@@ -56,12 +56,12 @@ const industries = [
 export default function CMSPortfolio() {
   return (
     <section className="relative py-16 sm:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg,#f8faff 0%,#eff6ff 50%,#f0f9ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px,transparent 1.5px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -73,7 +73,7 @@ export default function CMSPortfolio() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             WordPress Websites{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Across Industries
             </span>
           </h2>
@@ -95,7 +95,7 @@ export default function CMSPortfolio() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   style={{ minHeight: 220 }} />
                 <div className="absolute inset-0"
-                  style={{ background: `linear-gradient(135deg,${color}44 0%,rgba(10,26,52,0.55) 100%)` }} />
+                  style={{ background: 'var(--brand-gradient)', opacity: 0.55 }} />
 
                 {/* Number badge */}
                 <div className="absolute top-5 left-5 flex items-center justify-center w-12 h-12 rounded-2xl"
@@ -139,7 +139,7 @@ export default function CMSPortfolio() {
 
                 {/* Accent bottom bar */}
                 <div className="mt-6 h-1 w-0 rounded-full group-hover:w-16 transition-all duration-500"
-                  style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
               </div>
 
             </div>

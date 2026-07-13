@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail, Heart } from 'lucide-react'
+import { Heart } from 'lucide-react'
 import logoImg from '../../assets/Footer.png'
 
 const FacebookIcon = () => (
@@ -74,13 +74,13 @@ const socials  = [
 export default function Footer() {
   return (
     <footer
-      className="text-white/65 pt-20 pb-9 border-t border-blue-600/20"
+      className="text-white/65 pt-12 pb-6 border-t border-blue-600/20"
       style={{ background: '#071a36' }}
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="max-w-[1280px] mx-auto px-3 sm:px-4 md:px-5">
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] gap-10 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] gap-10 mb-8">
 
           {/* Brand */}
           <div>
@@ -109,32 +109,20 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="flex items-start gap-2.5 text-sm text-white/40 mb-3">
-              <MapPin size={14} className="text-blue-400 flex-shrink-0 mt-0.5" />
-              <span>67A, Giri Rd, Srinivasapuram, Thanjavur, Tamil Nadu 613009</span>
-            </div>
-            <div className="flex items-center gap-2.5 text-sm text-white/40 mb-3">
-              <Phone size={14} className="text-blue-400 flex-shrink-0" />
-              <a href="tel:+918110025254" className="hover:text-blue-400 transition-colors duration-300">(+91) 81100 25254</a>
-            </div>
-            <div className="flex items-center gap-2.5 text-sm text-white/40">
-              <Mail size={14} className="text-blue-400 flex-shrink-0" />
-              <span>aradiscovermarketing@gmail.com</span>
-            </div>
           </div>
 
           {/* Link columns */}
-          <div className="grid grid-cols-2 sm:contents gap-6">
+          <div className="grid grid-cols-2 md:contents gap-8">
             {linkColumns.map(({ title, links }) => (
               <div key={title}>
-                <h4 className="text-xs font-bold text-white mb-5 tracking-wide">{title}</h4>
-                <ul className="flex flex-col gap-2.5">
+                <h4 className="text-xs font-bold text-white mb-5 tracking-wide whitespace-nowrap">{title}</h4>
+                <ul className="flex flex-col gap-3">
                   {links.map(({ label, href }) => (
                     <li key={label}>
                       <Link
                         to={href}
                         className="text-sm text-white/40 hover:text-blue-400
-                          hover:pl-1 transition-all duration-300"
+                          hover:pl-1 transition-all duration-300 whitespace-nowrap"
                       >
                         {label}
                       </Link>
@@ -147,7 +135,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/8 pt-7 flex flex-col sm:grid sm:grid-cols-3 items-center gap-3 sm:gap-4 text-center sm:text-left">
+        <div className="border-t border-white/8 pt-5 flex flex-col sm:grid sm:grid-cols-3 items-center gap-3 sm:gap-4 text-center sm:text-left">
           <p className="text-[13px] text-white/30">
             &copy; 2025 ARA Discover Marketing. All rights reserved.
           </p>

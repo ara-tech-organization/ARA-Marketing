@@ -20,7 +20,7 @@ function StepCard({ s, isLast }) {
       {/* Connector line (not on last in row) */}
       {!isLast && (
         <div className="absolute top-[22px] left-1/2 w-full h-[2px] z-0"
-          style={{ background: 'linear-gradient(90deg, rgba(37,99,235,0.3), rgba(37,99,235,0.1))' }} />
+          style={{ background: 'var(--brand-gradient-line)' }} />
       )}
 
       {/* Circle node */}
@@ -73,9 +73,9 @@ export default function Process() {
     <section id="process" className="relative py-16 overflow-hidden bg-white">
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Diamond corners */}
       <div className="absolute -top-12 -left-12 w-44 h-44 pointer-events-none"

@@ -20,11 +20,11 @@ function StepCard({ num, icon: Icon, title, desc, color }) {
       onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}
     >
       <div className="w-1 flex-shrink-0 transition-all duration-300 group-hover:w-1.5"
-        style={{ background: `linear-gradient(180deg,${color},${color}66)` }} />
+        style={{ background: 'var(--brand-gradient-soft)' }} />
       <div className="flex-1 flex items-start gap-3 px-4 py-3">
         <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
           transition-all duration-300 group-hover:scale-110"
-          style={{ background: `linear-gradient(135deg,${color}16,${color}08)`, border: `1.5px solid ${color}28` }}>
+          style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}28` }}>
           <Icon size={16} style={{ color }} />
         </div>
         <div className="flex-1 min-w-0">

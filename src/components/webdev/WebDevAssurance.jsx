@@ -14,7 +14,7 @@ export default function WebDevAssurance() {
     <section className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}>
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)', backgroundSize: '28px 28px', opacity: 0.22 }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px', opacity: 0.22 }} />
       <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
         <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,0 L0,0 Z" fill="rgba(191,219,254,0.35)" />
       </svg>
@@ -48,7 +48,7 @@ export default function WebDevAssurance() {
                 e.currentTarget.style.borderColor = '#f1f5f9'
               }}
             >
-              <div className="h-1.5 w-full" style={{ background: `linear-gradient(90deg, ${color}00, ${color}, ${color}00)` }} />
+              <div className="h-1.5 w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="px-7 pt-7 pb-8">
                 <span className="absolute bottom-3 right-5 font-black leading-none select-none pointer-events-none"
                   style={{ fontSize: 80, color: color + '09', fontFamily: 'var(--font-poppins)' }}>
@@ -76,11 +76,11 @@ export default function WebDevAssurance() {
 
         <div className="reveal">
           <div className="relative rounded-3xl overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 60%, #3b82f6 100%)', boxShadow: '0 20px 60px rgba(37,99,235,0.25)' }}>
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 20px 60px rgba(37,99,235,0.25)' }}>
             <div className="absolute inset-0 pointer-events-none"
-              style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.10) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+              style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
             <div className="absolute -right-16 -top-16 w-48 h-48 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%)' }} />
+              style={{ background: 'var(--brand-gradient-glow)' }} />
             <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 px-10 py-8">
               <div>
                 <p className="text-[11px] font-bold text-blue-200 uppercase tracking-widest mb-2">Call Us Today</p>

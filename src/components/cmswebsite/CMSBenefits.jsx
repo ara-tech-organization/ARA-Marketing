@@ -1,4 +1,4 @@
-﻿import { Edit3, Search, Puzzle, TrendingUp, DollarSign, RefreshCw, Layers } from 'lucide-react'
+import { Edit3, Search, Puzzle, TrendingUp, DollarSign, RefreshCw, Layers } from 'lucide-react'
 
 const benefits = [
   {
@@ -49,17 +49,17 @@ export default function CMSBenefits() {
   return (
     <section
       className="relative py-16 sm:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Background glow */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-12"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.5) 1px, transparent 1px)', backgroundSize: '44px 44px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '44px 44px' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -73,7 +73,7 @@ export default function CMSBenefits() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             Benefits of{' '}
-            <span style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               WordPress Development
             </span>
           </h2>
@@ -101,7 +101,7 @@ export default function CMSBenefits() {
                 </span>
 
                 <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500 mb-5"
-                  style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110"
                   style={{ background: `${color}15`, border: `1px solid ${color}28` }}>
@@ -130,7 +130,7 @@ export default function CMSBenefits() {
                 </span>
 
                 <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500 mb-5"
-                  style={{ background: `linear-gradient(90deg, ${color}, ${color}44)` }} />
+                  style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110"
                   style={{ background: `${color}15`, border: `1px solid ${color}28` }}>

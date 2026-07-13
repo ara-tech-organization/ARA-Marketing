@@ -19,11 +19,11 @@ export default function OMIntro() {
     <section className="relative py-20 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -37,7 +37,7 @@ export default function OMIntro() {
 
             <h2 className="text-[clamp(23px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
               Multi-Channel Marketing Solutions That{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Drive Engagement & Conversions
               </span>
             </h2>
@@ -58,7 +58,7 @@ export default function OMIntro() {
                   onMouseEnter={e => { e.currentTarget.style.borderColor = color + '30'; e.currentTarget.style.boxShadow = `0 8px 24px ${color}12` }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9'; e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.04)' }}>
                   <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-                    style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}28` }}>
+                    style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}28` }}>
                     <Icon size={17} style={{ color }} />
                   </div>
                   <div>
@@ -80,7 +80,7 @@ export default function OMIntro() {
           <div className="lg:w-[460px] flex-shrink-0 reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[3rem]"
-                style={{ background: 'linear-gradient(135deg,rgba(37,99,235,0.12),rgba(37,99,235,0.08))', filter: 'blur(4px)' }} />
+                style={{ background: 'var(--brand-gradient-soft)', filter: 'blur(4px)' }} />
 
               <div className="relative rounded-3xl overflow-hidden shadow-2xl"
                 style={{ boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
@@ -109,7 +109,7 @@ export default function OMIntro() {
               {/* Floating badge top-right */}
               <div className="hidden sm:flex absolute -top-4 -right-4 items-center gap-2.5 px-4 py-2.5 bg-white rounded-2xl shadow-xl border border-violet-100 animate-float">
                 <div className="w-8 h-8 rounded-xl flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Award size={14} className="text-white" />
                 </div>
                 <div>

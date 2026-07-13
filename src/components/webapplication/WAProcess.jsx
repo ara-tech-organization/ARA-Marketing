@@ -51,9 +51,9 @@ export default function WAProcess() {
     >
       {/* Decorative orbs */}
       <div className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.06) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[280px] h-[280px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="max-w-[1280px] mx-auto px-3 xs:px-4 sm:px-7">
 
@@ -67,7 +67,7 @@ export default function WAProcess() {
           </span>
           <h2 className="text-[clamp(21px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-3 sm:mb-4">
             How We Build Your{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Web Application
             </span>
           </h2>
@@ -91,7 +91,7 @@ export default function WAProcess() {
                 {/* Circle node */}
                 <div
                   className="relative w-14 h-14 rounded-full flex items-center justify-center mb-4 z-10 transition-all duration-300 group-hover:scale-110"
-                  style={{ background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 4px 20px ${color}45` }}
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 20px ${color}45` }}
                 >
                   <Icon size={20} className="text-white" />
                   <span
@@ -149,7 +149,7 @@ export default function WAProcess() {
               <div className="flex flex-col items-center gap-1.5 flex-shrink-0">
                 <div
                   className="w-10 xs:w-12 h-10 xs:h-12 rounded-2xl flex items-center justify-center"
-                  style={{ background: `linear-gradient(135deg,${color},${color}bb)`, boxShadow: `0 4px 14px ${color}35` }}
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 14px ${color}35` }}
                 >
                   <Icon size={17} className="text-white" />
                 </div>
@@ -176,7 +176,7 @@ export default function WAProcess() {
           <a
             href="/contact-us"
             className="inline-flex items-center gap-2 px-6 xs:px-7 py-3 xs:py-3.5 rounded-full text-[13px] xs:text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 24px rgba(37,99,235,0.28)' }}
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 24px rgba(37,99,235,0.28)' }}
           >
             Start Your Project <ArrowRight size={14} />
           </a>

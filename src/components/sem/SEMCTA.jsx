@@ -16,17 +16,17 @@ const packageItems = [
 export default function SEMCTA() {
   return (
     <section className="relative overflow-hidden py-20"
-      style={{ background: 'linear-gradient(160deg,#f8fbff 0%,#eff6ff 60%,#f0f9ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px, transparent 1.5px)', backgroundSize: '30px 30px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '30px 30px' }} />
 
       {/* Orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(196,219,254,0.40) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(219,234,254,0.35) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -39,7 +39,7 @@ export default function SEMCTA() {
 
           <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
             Are You Ready to Generate More Leads{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'var(--brand-gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Through Google Ads?
             </span>
           </h2>
@@ -53,7 +53,7 @@ export default function SEMCTA() {
             <a href="tel:+918110025254"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full
                 text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 10px 36px rgba(37,99,235,0.30)' }}>
               Get Free PPC Consultation <ArrowRight size={16} />
             </a>
             <a href="#sem-services"
@@ -71,7 +71,7 @@ export default function SEMCTA() {
 
           {/* Gradient header */}
           <div className="relative px-8 py-7 overflow-hidden"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
+            style={{ background: 'var(--brand-gradient)' }}>
             {/* Decorative ring */}
             <div className="absolute -top-8 -right-8 w-40 h-40 rounded-full pointer-events-none"
               style={{ border: '1.5px solid rgba(255,255,255,0.15)' }} />
@@ -104,7 +104,7 @@ export default function SEMCTA() {
                     ${i % 2 === 0 && !isLast ? 'sm:border-r sm:border-blue-50' : ''}
                   `}>
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-200 group-hover:scale-110"
-                    style={{ background: 'linear-gradient(135deg,#eff6ff,#e0f2fe)', border: '1px solid #bfdbfe' }}>
+                    style={{ background: 'var(--brand-gradient-soft)', border: '1px solid #bfdbfe' }}>
                     <Icon size={14} style={{ color: '#2563eb' }} />
                   </div>
                   <span className="text-[13px] font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-200">

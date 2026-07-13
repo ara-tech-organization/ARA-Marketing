@@ -7,7 +7,7 @@ const reasons = [
     title: 'Top Enterprise Web Development Agency in Thanjavur',
     body: 'Proven track record across finance, healthcare, retail, logistics, and global enterprises — consistently rated the most trusted agency in the region.',
     color: '#2563eb',
-    grad: 'linear-gradient(135deg,#eff6ff,#dbeafe)',
+    grad: 'var(--brand-gradient)',
     border: '#bfdbfe',
     tag: 'Industry Leader',
   },
@@ -17,7 +17,7 @@ const reasons = [
     title: 'AI-Integrated Websites for Superior Performance',
     body: 'As a leading enterprise website development company in Thanjavur, we build AI-powered platforms for better decision-making, higher user engagement, and intelligent analytics.',
     color: '#7c3aed',
-    grad: 'linear-gradient(135deg,#f5f3ff,#ede9fe)',
+    grad: 'var(--brand-gradient)',
     border: '#ddd6fe',
     tag: 'AI-Powered',
   },
@@ -27,7 +27,7 @@ const reasons = [
     title: 'Enterprise-Level Security Protocols',
     body: 'Industry-grade security measures including SSL, WAF protection, GDPR compliance, and ISO-aligned protocols protecting sensitive data at every layer.',
     color: '#0891b2',
-    grad: 'linear-gradient(135deg,#ecfeff,#cffafe)',
+    grad: 'var(--brand-gradient)',
     border: '#a5f3fc',
     tag: 'Fully Secured',
   },
@@ -37,7 +37,7 @@ const reasons = [
     title: 'Transparent Process & Timely Delivery',
     body: 'Our enterprise web development services in Thanjavur include structured sprints, clear communication, and dedicated project management ensuring consistent on-time delivery.',
     color: '#059669',
-    grad: 'linear-gradient(135deg,#ecfdf5,#d1fae5)',
+    grad: 'var(--brand-gradient)',
     border: '#a7f3d0',
     tag: 'On-Time Always',
   },
@@ -47,7 +47,7 @@ const reasons = [
     title: 'Multi-Industry Experience & Domain Expertise',
     body: "Tailored strategies for every domain — your solution aligns with your industry's unique demands, compliance requirements, and growth targets.",
     color: '#f59e0b',
-    grad: 'linear-gradient(135deg,#fffbeb,#fef3c7)',
+    grad: 'var(--brand-gradient)',
     border: '#fde68a',
     tag: 'Domain Expert',
   },
@@ -124,7 +124,7 @@ function WhyCard({ num, Icon, title, body, color, tag }) {
       {/* Bottom accent bar */}
       <div
         className="absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 transition-transform duration-[400ms] origin-left"
-        style={{ background: `linear-gradient(90deg,${color},${color}55)` }}
+        style={{ background: 'var(--brand-gradient-soft)' }}
       />
     </div>
   )
@@ -141,7 +141,7 @@ export default function EWWhyUs() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.09) 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '28px 28px',
         }}
       />
@@ -149,13 +149,13 @@ export default function EWWhyUs() {
       {/* Purple orb — top-right */}
       <div
         className="hidden md:block absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       {/* Cyan orb — bottom-left */}
       <div
         className="hidden md:block absolute bottom-0 left-0 w-[340px] h-[340px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.10) 0%, transparent 65%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
@@ -178,14 +178,7 @@ export default function EWWhyUs() {
           >
             Why ARA Discover Marketing{' '}
             <br className="hidden sm:block lg:hidden" />
-            <span
-              style={{
-                background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span className="text-gradient-blue">
               Stands Apart
             </span>
           </h2>

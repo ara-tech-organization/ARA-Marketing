@@ -46,9 +46,8 @@ export default function GDProcess() {
     <section className="relative overflow-hidden py-16 bg-white">
       {/* Light grid pattern */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.05) 1px, transparent 1px)',
           backgroundSize: '36px 36px',
         }}
       />
@@ -75,7 +74,7 @@ export default function GDProcess() {
           {/* Connecting line */}
           <div
             className="absolute left-[28px] top-8 bottom-8 w-px hidden sm:block"
-            style={{ background: 'linear-gradient(180deg, #dbeafe 0%, #2563eb 50%, #dbeafe 100%)' }}
+            style={{ background: 'var(--brand-gradient-line-vertical)' }}
           />
 
           <div className="flex flex-col gap-0">

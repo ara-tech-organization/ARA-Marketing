@@ -45,13 +45,13 @@ export default function MAIntro() {
     >
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-10"
-        style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.4) 1px,transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />
 
       {/* Orbs */}
       <div className="absolute -top-32 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.14) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-24 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -71,12 +71,7 @@ export default function MAIntro() {
               {/* H2 */}
               <h2 className="text-[clamp(22px,2.8vw,42px)] font-bold leading-tight tracking-tight text-slate-900 mb-5">
                 Mobile Apps â€”{' '}
-                <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}>
+                <span className="text-gradient-blue">
                   The Backbone of Growth
                 </span>
               </h2>
@@ -99,7 +94,7 @@ export default function MAIntro() {
             {/* CTA */}
             <a href="tel:+918110025254"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:gap-3"
-              style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 28px rgba(37,99,235,0.35)' }}>
               Start Your App Project <ArrowRight size={14} />
             </a>
           </div>
@@ -110,7 +105,7 @@ export default function MAIntro() {
 
               {/* Glow halo */}
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.22) 0%, transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               {/* Image */}
               <div className="relative rounded-3xl overflow-hidden"
@@ -141,7 +136,7 @@ export default function MAIntro() {
               <div className="absolute -top-5 left-6 bg-white rounded-2xl px-4 py-3 hidden md:flex items-center gap-3 animate-float"
                 style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.28)', border: '1px solid rgba(37,99,235,0.15)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Cpu size={16} className="text-white" />
                 </div>
                 <div>
@@ -154,7 +149,7 @@ export default function MAIntro() {
               <div className="absolute -bottom-5 right-6 bg-white rounded-2xl px-4 py-3 hidden md:flex items-center gap-3 animate-float"
                 style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.22)', border: '1px solid rgba(37,99,235,0.15)', animationDelay: '1.6s' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <TrendingUp size={16} className="text-white" />
                 </div>
                 <div>
@@ -186,7 +181,7 @@ export default function MAIntro() {
                 e.currentTarget.style.transform = 'none'
               }}
             >
-              <div className="h-0.5 rounded-full mb-5 w-10" style={{ background: `linear-gradient(90deg,${color},${color}60)` }} />
+              <div className="h-0.5 rounded-full mb-5 w-10" style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
                 style={{ background: `${color}18`, border: `1px solid ${color}30` }}>
                 <Icon size={18} style={{ color }} />

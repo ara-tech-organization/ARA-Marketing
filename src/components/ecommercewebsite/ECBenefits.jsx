@@ -7,28 +7,28 @@ const benefits = [
     title: '24/7 Online Selling',
     desc: 'Your store never closes. Capture sales at midnight, weekends, and holidays without any staff intervention.',
     metric: '100%', metricLabel: 'Always Online',
-    color: '#2563eb', grad: 'linear-gradient(135deg,#1e40af,#2563eb)', border: '#bfdbfe',
+    color: '#2563eb', grad: 'var(--brand-gradient)', border: '#bfdbfe',
   },
   {
     icon: Globe2,
     title: 'Global Customer Reach',
     desc: 'Break geographic limits and sell to customers nationwide â€” or worldwide â€” from a single online platform.',
     metric: '190+', metricLabel: 'Countries Reachable',
-    color: '#0ea5e9', grad: 'linear-gradient(135deg,#0ea5e9,#0284c7)', border: '#bae6fd',
+    color: '#0ea5e9', grad: 'var(--brand-gradient)', border: '#bae6fd',
   },
   {
     icon: RefreshCw,
     title: 'Automated Order & Inventory',
     desc: 'Eliminate manual errors with automated stock tracking, order notifications, and fulfilment workflows.',
     metric: '80%', metricLabel: 'Less Manual Work',
-    color: '#2563eb', grad: 'linear-gradient(135deg,#2563eb,#1d4ed8)', border: '#bfdbfe',
+    color: '#2563eb', grad: 'var(--brand-gradient)', border: '#bfdbfe',
   },
   {
     icon: DollarSign,
     title: 'Increased Revenue Opportunities',
     desc: 'Upsell, cross-sell, discount coupons, and abandoned cart recovery â€” all built into your store by default to maximise every transaction.',
     metric: '3x', metricLabel: 'Revenue Potential',
-    color: '#0ea5e9', grad: 'linear-gradient(135deg,#0ea5e9,#0284c7)', border: '#bae6fd',
+    color: '#0ea5e9', grad: 'var(--brand-gradient)', border: '#bae6fd',
     wide: true,
   },
   {
@@ -36,7 +36,7 @@ const benefits = [
     title: 'Better Customer Engagement',
     desc: 'Loyalty programmes, personalised recommendations, and review systems that build lasting customer relationships.',
     metric: '60%', metricLabel: 'Repeat Purchase Rate',
-    color: '#2563eb', grad: 'linear-gradient(135deg,#2563eb,#1d4ed8)', border: '#bfdbfe',
+    color: '#2563eb', grad: 'var(--brand-gradient)', border: '#bfdbfe',
   },
 ]
 
@@ -97,13 +97,13 @@ export default function ECBenefits() {
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       {/* Orbs */}
       <div className="absolute -top-24 -right-24 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-16 -left-16 w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Spinning ring */}
       <div className="hidden lg:block absolute -top-16 -right-16 w-[260px] h-[260px] rounded-full pointer-events-none"
@@ -119,12 +119,7 @@ export default function ECBenefits() {
           </span>
           <h2 className="text-[clamp(21px,3.4vw,44px)] font-bold text-slate-900 leading-[1.15] tracking-tight mb-3">
             Benefits of{' '}
-            <span style={{
-              background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
+            <span className="text-gradient-blue">
               E-Commerce Websites
             </span>
           </h2>
@@ -150,7 +145,7 @@ export default function ECBenefits() {
 
           {/* Left â€” dark text panel */}
           <div className="flex flex-col justify-between items-center sm:items-start p-7 sm:p-10 flex-1 text-center sm:text-left"
-            style={{ background: 'linear-gradient(145deg, #0d1f3c 0%, #0f2850 100%)', minWidth: 0 }}>
+            style={{ background: 'var(--brand-gradient)', minWidth: 0 }}>
 
             <span className="inline-flex items-center gap-1.5 self-center sm:self-start text-[9px] font-black uppercase tracking-[0.18em] px-3 py-1.5 rounded-full mb-6"
               style={{ background: 'rgba(37,99,235,0.25)', color: '#93c5fd', border: '1px solid rgba(147,197,253,0.20)' }}>

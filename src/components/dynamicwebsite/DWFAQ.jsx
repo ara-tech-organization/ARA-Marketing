@@ -47,15 +47,15 @@ export default function DWFAQ() {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 50%,#e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="hidden sm:block absolute -top-20 -left-20 w-[360px] h-[360px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-200/25 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.18) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -67,7 +67,7 @@ export default function DWFAQ() {
           </span>
           <h2 className="text-[clamp(21px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Got Questions?{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span style={{ background: 'var(--brand-gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               We Have Answers
             </span>
           </h2>
@@ -83,10 +83,10 @@ export default function DWFAQ() {
           <div className="lg:w-[300px] flex-shrink-0 lg:sticky lg:top-28">
             <div className="rounded-3xl overflow-hidden"
               style={{ background: 'white', border: '1.5px solid #dbeafe', boxShadow: '0 16px 48px rgba(37,99,235,0.10)' }}>
-              <div className="h-1.5 w-full" style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+              <div className="h-1.5 w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="p-5 sm:p-7">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-5"
-                  style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
+                  style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
                   <HelpCircle size={18} className="text-blue-600" />
                 </div>
                 <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-2">Dynamic Website FAQs</h3>
@@ -104,7 +104,7 @@ export default function DWFAQ() {
                         : { background: 'transparent', border: '1px solid transparent' }}>
                       <span className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0 text-[9px] font-black transition-all duration-200"
                         style={open === i
-                          ? { background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', color: 'white' }
+                          ? { background: 'var(--brand-gradient)', color: 'white' }
                           : { background: '#f1f5f9', color: '#94a3b8' }}>
                         {String(i + 1).padStart(2, '0')}
                       </span>
@@ -122,7 +122,7 @@ export default function DWFAQ() {
                   <p className="text-[11px] text-slate-400 mb-3">Still have questions?</p>
                   <a href="/contact-us"
                     className="inline-flex items-center justify-center gap-2 w-full px-4 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200 hover:-translate-y-0.5"
-                    style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', color: 'white', boxShadow: '0 4px 14px rgba(37,99,235,0.25)' }}>
+                    style={{ background: 'var(--brand-gradient)', color: 'white', boxShadow: '0 4px 14px rgba(37,99,235,0.25)' }}>
                     Contact Us <ArrowRight size={11} />
                   </a>
                 </div>
@@ -150,7 +150,7 @@ export default function DWFAQ() {
 
                       {/* Left accent bar */}
                       <div className="w-1 self-stretch rounded-full flex-shrink-0 transition-all duration-300"
-                        style={{ background: isOpen ? `linear-gradient(180deg,${faq.color},${faq.color}88)` : '#f1f5f9' }} />
+                        style={{ background: isOpen ? 'var(--brand-gradient-line-vertical)' : '#f1f5f9' }} />
 
                       {/* Tag + question */}
                       <div className="flex-1 min-w-0">
@@ -200,7 +200,7 @@ export default function DWFAQ() {
               style={{ background: 'white', border: '1.5px solid #dbeafe', boxShadow: '0 8px 32px rgba(37,99,235,0.07)' }}>
               <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg,#eff6ff,#dbeafe)', border: '1px solid #bfdbfe' }}>
+                  style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
                   <MessageSquare size={15} className="text-blue-600" />
                 </div>
                 <div>
@@ -216,7 +216,7 @@ export default function DWFAQ() {
                 </div>
                 <a href="/contact-us"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
                   Contact Us <ArrowRight size={12} />
                 </a>
               </div>

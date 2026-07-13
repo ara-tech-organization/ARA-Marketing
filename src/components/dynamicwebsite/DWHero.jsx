@@ -1,8 +1,10 @@
+import { useRef } from 'react'
 import {
   Zap, ArrowRight, ArrowUpRight, ChevronRight,
   Globe, Database, RefreshCw, Code2,
   TrendingUp, Monitor, Layers, CheckCircle2,
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const cmsModules = [
   { label: 'Pages Published',  val: '48',   pct: 80, color: '#2563eb' },
@@ -24,29 +26,42 @@ const highlights = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#93c5fd,#60a5fa)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   backgroundClip: 'text',
 }
 
 export default function DWHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}
+      style={{ background: 'linear-gradient(160deg, #05070f 0%, #0a0a14 45%, #04060c 100%)' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={720}
+        blur={110}
+        blendMode="normal"
+        opacity={0.5}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.16) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       {/* Noise */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
       {/* Orbs */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.20) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       {/* Rings */}
       <div className="hidden md:block absolute top-20 right-[8%] w-48 h-48 rounded-full border border-blue-500/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-20 left-[5%] w-32 h-32 rounded-full border border-sky-500/10 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
@@ -134,14 +149,14 @@ export default function DWHero() {
           <div className="hidden md:block lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse, rgba(29,78,216,0.28) 0%, transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               <div className="relative rounded-3xl overflow-hidden border border-white/10"
                 style={{ background: 'white', boxShadow: '0 40px 100px rgba(0,0,0,0.60)' }}>
 
                 {/* Header bar */}
                 <div className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4"
-                  style={{ background: 'linear-gradient(135deg,#0f172a 0%,#1e3a8a 60%,#1d4ed8 100%)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <div className="flex items-center gap-2 sm:gap-3">
                     <div className="flex gap-1.5">
                       <div className="w-2.5 h-2.5 rounded-full bg-red-400/80" />
@@ -173,7 +188,7 @@ export default function DWHero() {
                       </div>
                     </div>
                     <span className="text-[28px] font-black leading-none"
-                      style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                      style={{ background: 'var(--brand-gradient-text)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                       98<span className="text-[14px] text-slate-300">/100</span>
                     </span>
                   </div>
@@ -185,7 +200,7 @@ export default function DWHero() {
                           <span className="text-[11.5px] font-bold" style={{ color }}>{val}</span>
                         </div>
                         <div className="h-2 rounded-full bg-slate-100">
-                          <div style={{ height: '100%', width: `${pct}%`, borderRadius: 4, background: `linear-gradient(90deg,${color}60,${color})`, animation: 'bar-in 1s cubic-bezier(0,0,0.2,1) both' }} />
+                          <div style={{ height: '100%', width: `${pct}%`, borderRadius: 4, background: 'var(--brand-gradient-soft)', animation: 'bar-in 1s cubic-bezier(0,0,0.2,1) both' }} />
                         </div>
                       </div>
                     ))}
@@ -213,7 +228,7 @@ export default function DWHero() {
 
                 {/* Bottom strip */}
                 <div className="flex flex-wrap items-center justify-between gap-2 px-5 sm:px-7 py-3"
-                  style={{ background: 'linear-gradient(90deg,#0f172a,#1d4ed8,#0ea5e9)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <div className="flex items-center gap-2">
                     <Layers size={11} className="text-white/70" />
                     <span className="text-[10px] font-bold text-white/80">CMS Powered</span>

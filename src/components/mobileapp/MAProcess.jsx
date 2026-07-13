@@ -42,9 +42,9 @@ export default function MAProcess() {
   return (
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.05) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.04) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -56,7 +56,7 @@ export default function MAProcess() {
           </span>
           <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
             How We Build Your{' '}
-            <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Mobile App?
             </span>
           </h2>
@@ -69,12 +69,12 @@ export default function MAProcess() {
         <div className="hidden lg:block reveal">
           <div className="relative flex items-stretch gap-0">
             <div className="absolute top-[28px] left-[10%] right-[10%] h-[2px] pointer-events-none"
-              style={{ background: 'linear-gradient(90deg,#1e40af,#2563eb,#0ea5e9,#2563eb,#1e40af)' }} />
+              style={{ background: 'var(--brand-gradient-soft)' }} />
 
             {steps.map(({ num, icon: Icon, title, desc, color }) => (
               <div key={num} className="flex-1 flex flex-col items-center text-center px-3 group">
                 <div className="relative w-14 h-14 rounded-full flex items-center justify-center mb-6 flex-shrink-0 transition-all duration-300 group-hover:scale-110 z-10"
-                  style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 4px 20px ${color}40` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 20px ${color}40` }}>
                   <Icon size={20} className="text-white" />
                   <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full text-[9px] font-black flex items-center justify-center text-white"
                     style={{ background: color, border: '2px solid white' }}>
@@ -111,7 +111,7 @@ export default function MAProcess() {
               style={{ background: '#f8fafc', border: '1px solid #e2e8f0' }}>
               <div className="flex flex-col items-center gap-2 flex-shrink-0">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                  style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 4px 16px ${color}35` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 4px 16px ${color}35` }}>
                   <Icon size={18} className="text-white" />
                 </div>
                 <span className="text-[10px] font-black" style={{ color: `${color}80` }}>{num}</span>
@@ -131,7 +131,7 @@ export default function MAProcess() {
           </p>
           <a href="tel:+918110025254"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03]"
-            style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+            style={{ background: 'var(--brand-gradient)' }}>
             Start Your App Project <ArrowRight size={15} />
           </a>
         </div>

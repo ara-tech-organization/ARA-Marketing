@@ -138,7 +138,7 @@ export default function PromoPopup() {
               <h3 className="text-[19px] sm:text-[22px] font-bold text-slate-900 leading-tight">
                 Let&apos;s Build Something{' '}
                 <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+                  background: 'var(--brand-gradient-text)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                 }}>Great</span>{' '}Together
               </h3>
@@ -231,7 +231,7 @@ export default function PromoPopup() {
 
               <button type="submit" disabled={loading}
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-75"
-                style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 28px rgba(37,99,235,0.30)' }}
               >
                 {loading
                   ? <><Loader2 size={16} className="animate-spin" /> Sending...</>
@@ -253,7 +253,7 @@ export default function PromoPopup() {
 
             {/* Illustration */}
             <div className="relative mx-auto mb-5 illustration-float" style={{ width: 140, height: 116 }}>
-              <div className="absolute inset-0 rounded-full" style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.35) 0%, transparent 70%)' }} />
+              <div className="absolute inset-0 rounded-full" style={{ background: 'var(--brand-gradient-glow)' }} />
               <div className="absolute" style={{ left: 6, bottom: 12, width: 54, height: 40, background: '#fbbf24', borderRadius: 6, transform: 'rotate(-8deg)', boxShadow: '0 8px 20px rgba(251,191,36,0.30)' }}>
                 <Mail size={17} style={{ position: 'absolute', top: 11, left: 18, color: '#fff' }} />
               </div>
@@ -267,7 +267,7 @@ export default function PromoPopup() {
             </div>
 
             <h4 className="text-[15px] font-bold text-white mb-1">Why work with us?</h4>
-            <div className="h-[3px] w-9 rounded-full mb-4" style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+            <div className="h-[3px] w-9 rounded-full mb-4" style={{ background: 'var(--brand-gradient-soft)' }} />
 
             <div className="flex flex-col gap-3.5 mb-5">
               {perks.map(({ icon: Icon, color, bg, title, desc }) => (

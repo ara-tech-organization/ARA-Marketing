@@ -19,7 +19,7 @@ const promises = ['No setup fees', 'Free consultation', 'Monthly transparent rep
 export default function OMCTA() {
   return (
     <section className="relative overflow-hidden py-20"
-      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
@@ -49,7 +49,7 @@ export default function OMCTA() {
 
                 {/* Light blue overlay instead of dark */}
                 <div className="absolute inset-0"
-                  style={{ background: 'linear-gradient(160deg,rgba(37,99,235,0.35) 0%,rgba(37,99,235,0.25) 55%,rgba(14,165,233,0.20) 100%)' }} />
+                  style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
 
                 {/* Overlay content */}
                 <div className="absolute inset-0 flex flex-col justify-between p-7">
@@ -87,7 +87,7 @@ export default function OMCTA() {
 
             <h2 className="text-[clamp(23px,3.1vw,47px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
               Ready to Improve{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Customer Engagement
               </span>{' '}
               & Business Growth?
@@ -115,7 +115,7 @@ export default function OMCTA() {
               style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.07)' }}>
               <div className="flex items-center gap-3 px-5 py-3.5 border-b border-slate-100">
                 <div className="w-8 h-8 rounded-xl flex items-center justify-center text-white"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <TrendingUp size={14} />
                 </div>
                 <p className="text-[12.5px] font-bold text-slate-800">What's Included in Your Package</p>
@@ -126,7 +126,7 @@ export default function OMCTA() {
                     className="inline-flex items-center gap-2 px-3 py-2 rounded-xl border transition-all duration-200 hover:shadow-md"
                     style={{ background: `${color}07`, borderColor: `${color}20` }}>
                     <div className="w-5 h-5 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{ background: `linear-gradient(135deg,${color},${color}bb)` }}>
+                      style={{ background: 'var(--brand-gradient)' }}>
                       <Icon size={10} className="text-white" />
                     </div>
                     <span className="text-[11.5px] font-semibold text-slate-700">{label}</span>
@@ -134,7 +134,7 @@ export default function OMCTA() {
                 ))}
               </div>
               <div className="flex flex-wrap items-center gap-4 px-5 py-3 border-t border-slate-100"
-                style={{ background: 'linear-gradient(135deg,#e0f2fe,#eff6ff)' }}>
+                style={{ background: 'var(--brand-gradient)' }}>
                 {promises.map((text, i) => (
                   <span key={text} className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium">
                     {i > 0 && <span className="w-px h-3 bg-slate-200 mr-2" />}

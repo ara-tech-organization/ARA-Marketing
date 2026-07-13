@@ -7,35 +7,35 @@ const stats = [
     target: 150, suffix: '+',
     label: 'Successful Projects Completed',
     accent: '#2563eb',
-    grad: 'linear-gradient(135deg,#93c5fd,#2563eb)',
+    grad: 'var(--brand-gradient-text)',
   },
   {
     icon: Smile,
     target: 95, suffix: '%',
     label: 'Client Satisfaction Rate',
     accent: '#0ea5e9',
-    grad: 'linear-gradient(135deg,#7dd3fc,#0ea5e9)',
+    grad: 'var(--brand-gradient-text)',
   },
   {
     icon: BarChart2,
     target: 120, suffix: '+',
     label: 'SEO Campaigns Managed',
     accent: '#2563eb',
-    grad: 'linear-gradient(135deg,#60a5fa,#2563eb)',
+    grad: 'var(--brand-gradient-text)',
   },
   {
     icon: TrendingUp,
     target: 200, suffix: '%',
     label: 'Average Increase in Online Visibility',
     accent: '#0ea5e9',
-    grad: 'linear-gradient(135deg,#bae6fd,#0ea5e9)',
+    grad: 'var(--brand-gradient-text)',
   },
   {
     icon: Megaphone,
     target: 100, suffix: '+',
     label: 'Brands Successfully Promoted',
     accent: '#2563eb',
-    grad: 'linear-gradient(135deg,#93c5fd,#2563eb)',
+    grad: 'var(--brand-gradient-text)',
   },
 ]
 
@@ -101,15 +101,15 @@ export default function StatsBand() {
       {/* dot grid texture */}
       <div className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.055) 1px,transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '30px 30px',
         }} />
 
       {/* soft glow corners */}
       <div className="absolute top-0 left-0 w-[480px] h-[360px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(37,99,235,0.06) 0%,transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[480px] h-[360px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse,rgba(14,165,233,0.06) 0%,transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
 
@@ -122,7 +122,7 @@ export default function StatsBand() {
           <h2 className="font-black leading-tight tracking-tight text-slate-900"
             style={{ fontSize: 'clamp(26px,3.2vw,46px)' }}>
             Delivering Measurable Growth{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Through Strategic Marketing
             </span>
           </h2>
@@ -135,11 +135,11 @@ export default function StatsBand() {
         {/* ── Stats Strip ── */}
         <div className="reveal mb-6 rounded-3xl overflow-hidden"
           style={{
-            background: 'linear-gradient(135deg,#0f172a,#1e3a5f)',
+            background: 'var(--brand-gradient)',
             boxShadow: '0 24px 64px rgba(15,23,42,0.22)',
           }}>
           {/* top shimmer line */}
-          <div className="h-[1px]" style={{ background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent)' }} />
+          <div className="h-[1px]" style={{ background: 'var(--brand-gradient-line)' }} />
 
           <div className="flex flex-wrap sm:flex-nowrap">
             {stats.map((s, i) => (
@@ -148,7 +148,7 @@ export default function StatsBand() {
           </div>
 
           {/* bottom shimmer line */}
-          <div className="h-[1px]" style={{ background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.08),transparent)' }} />
+          <div className="h-[1px]" style={{ background: 'var(--brand-gradient-line)' }} />
         </div>
 
         {/* ── Feature Cards ── */}
@@ -157,7 +157,7 @@ export default function StatsBand() {
             <div key={eyebrow}
               className="rounded-2xl p-7 flex flex-col gap-4 transition-all duration-300 hover:-translate-y-1"
               style={dark ? {
-                background: 'linear-gradient(135deg,#0f172a,#1e3a5f)',
+                background: 'var(--brand-gradient)',
                 boxShadow: '0 16px 48px rgba(15,47,87,0.18)',
               } : {
                 background: '#f8fafc',

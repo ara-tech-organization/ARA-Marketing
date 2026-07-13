@@ -106,7 +106,7 @@ export default function OMServices() {
             </span>
             <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
               Strategic Marketing Services That{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Drive Real Results
               </span>
             </h2>
@@ -141,7 +141,7 @@ export default function OMServices() {
 
           {/* Left: description */}
           <div className="flex-1 bg-white p-5 sm:p-8 border-b lg:border-b-0 lg:border-r border-slate-100">
-            <div className="h-0.5 w-12 rounded-full mb-6" style={{ background: `linear-gradient(90deg,${s.color},${s.color}44)` }} />
+            <div className="h-0.5 w-12 rounded-full mb-6" style={{ background: 'var(--brand-gradient-soft)' }} />
 
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-5"
               style={{ background: s.bg, color: s.color, border: `1px solid ${s.color}22` }}>
@@ -159,8 +159,7 @@ export default function OMServices() {
             <div className="flex flex-wrap gap-5 pt-5 mb-7" style={{ borderTop: `1px solid ${s.color}10` }}>
               {s.stats.map(({ value, label }) => (
                 <div key={label}>
-                  <span className="text-[24px] font-black leading-none block mb-0.5"
-                    style={{ background: `linear-gradient(135deg,${s.color},${s.color}99)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  <span className="text-[24px] font-black leading-none block mb-0.5 text-gradient-blue">
                     {value}
                   </span>
                   <span className="text-[11px] text-slate-500 font-medium">{label}</span>
@@ -170,7 +169,7 @@ export default function OMServices() {
 
             <a href="/contact-us"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: `linear-gradient(135deg,${s.color},${s.color}cc)`, boxShadow: `0 6px 20px ${s.color}28` }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${s.color}28` }}>
               Get Started <ArrowRight size={13} />
             </a>
           </div>
@@ -187,7 +186,7 @@ export default function OMServices() {
                   onMouseLeave={e => { e.currentTarget.style.borderColor = s.color + '14' }}
                 >
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: `linear-gradient(135deg,${s.color}18,${s.color}08)`, border: `1px solid ${s.color}18` }}>
+                    style={{ background: 'var(--brand-gradient-soft)', border: `1px solid ${s.color}18` }}>
                     <Icon size={14} style={{ color: s.color }} />
                   </div>
                   <span className="text-[13px] font-semibold text-slate-700">{text}</span>

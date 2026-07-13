@@ -84,14 +84,14 @@ function TestiCard({ t, featured }) {
 export default function Testimonials() {
   return (
     <section id="testimonials" className="relative py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Blurred orb â€” top left */}
       <div className="absolute -top-24 -left-24 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       {/* Blurred orb â€” bottom right */}
       <div className="absolute -bottom-20 -right-20 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.2) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Rotated diamond â€” top right */}
       <div className="absolute -top-12 -right-12 w-44 h-44 pointer-events-none"

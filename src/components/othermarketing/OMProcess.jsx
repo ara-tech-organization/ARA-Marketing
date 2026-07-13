@@ -24,7 +24,7 @@ export default function OMProcess() {
           </span>
           <h2 className="text-[clamp(23px,3.1vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Our Strategic Multi-Channel{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Marketing Workflow
             </span>
           </h2>
@@ -46,7 +46,7 @@ export default function OMProcess() {
               {/* Top: icon + step pill */}
               <div className="flex items-center justify-between mb-5">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                  style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 6px 20px ${color}35` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${color}35` }}>
                   <Icon size={18} className="text-white" />
                 </div>
                 <span className="text-[10px] font-bold px-2.5 py-1 rounded-full border"
@@ -56,7 +56,7 @@ export default function OMProcess() {
               </div>
 
               {/* Accent line */}
-              <div className="h-0.5 w-8 rounded-full mb-4" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
+              <div className="h-0.5 w-8 rounded-full mb-4" style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <h3 className="text-[12px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
               <p className="text-[12px] text-slate-500 leading-[1.68] relative z-10">{desc}</p>
@@ -75,7 +75,7 @@ export default function OMProcess() {
 
               <div className="flex items-center justify-between mb-5">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                  style={{ background: `linear-gradient(135deg,${color},${color}cc)`, boxShadow: `0 6px 20px ${color}35` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 20px ${color}35` }}>
                   <Icon size={18} className="text-white" />
                 </div>
                 <span className="text-[10px] font-bold px-2.5 py-1 rounded-full border"
@@ -84,7 +84,7 @@ export default function OMProcess() {
                 </span>
               </div>
 
-              <div className="h-0.5 w-8 rounded-full mb-4" style={{ background: `linear-gradient(90deg,${color},${color}55)` }} />
+              <div className="h-0.5 w-8 rounded-full mb-4" style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <h3 className="text-[12px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
               <p className="text-[12px] text-slate-500 leading-[1.68] relative z-10">{desc}</p>
@@ -97,7 +97,7 @@ export default function OMProcess() {
           style={{ boxShadow: '0 6px 24px rgba(37,99,235,0.07)' }}>
           <div className="flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg,#eff6ff,#e0f2fe)', border: '1px solid #c7d2fe' }}>
+              style={{ background: 'var(--brand-gradient)', border: '1px solid #c7d2fe' }}>
               <LineChart size={16} className="text-blue-600" />
             </div>
             <div>
@@ -107,7 +107,7 @@ export default function OMProcess() {
           </div>
           <a href="/contact-us"
             className="flex-shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold transition-all duration-300 hover:-translate-y-0.5"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 5px 16px rgba(37,99,235,0.22)' }}>
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 5px 16px rgba(37,99,235,0.22)' }}>
             Start Your Campaign <ArrowRight size={13} />
           </a>
         </div>

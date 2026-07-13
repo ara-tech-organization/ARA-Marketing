@@ -1,4 +1,6 @@
+import { useRef } from 'react'
 import { Globe, ArrowRight, ArrowUpRight, ChevronRight, Database, Layers, Cpu, Star, Sparkles, LayoutDashboard } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const stats = [
   { value: '40%+', label: 'Web Powered by WP',  color: '#2563eb' },
@@ -15,21 +17,34 @@ const highlights = [
 const cmsTags = ['WordPress', 'Shopify', 'Wix', 'Joomla', 'Drupal']
 
 export default function CMSHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(145deg, #f0f7ff 0%, #eff6ff 55%, #dbeafe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Background orbs */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-20"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.5) 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '40px 40px',
         }} />
 
@@ -92,7 +107,7 @@ export default function CMSHero() {
               <a
                 href="tel:+918110025254"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] w-fit"
-                style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)', boxShadow: '0 4px 20px rgba(37,99,235,0.28)' }}
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 20px rgba(37,99,235,0.28)' }}
               >
                 Take a First Step <ArrowRight size={15} />
               </a>
@@ -118,8 +133,7 @@ export default function CMSHero() {
                     paddingLeft: i > 0 ? '2rem' : 0,
                   }}
                 >
-                  <span className="text-[28px] font-black leading-tight"
-                    style={{ background: `linear-gradient(135deg, ${color}, ${color}77)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  <span className="text-[28px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
                   <span className="text-[11px] font-medium mt-0.5 text-slate-400">{label}</span>
@@ -144,7 +158,7 @@ export default function CMSHero() {
                 {/* Header bar */}
                 <div
                   className="px-5 py-3.5 flex items-center justify-between"
-                  style={{ background: 'linear-gradient(135deg, #1e40af 0%, #2563eb 100%)' }}
+                  style={{ background: 'var(--brand-gradient)' }}
                 >
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
@@ -168,7 +182,7 @@ export default function CMSHero() {
                     loading="eager"
                   />
                   <div className="absolute inset-0"
-                    style={{ background: 'linear-gradient(135deg, rgba(3,12,9,0.55) 0%, rgba(37,99,235,0.1) 100%)' }} />
+                    style={{ background: 'var(--brand-gradient)', opacity: 0.5 }} />
                   <div className="absolute top-3 left-3 flex gap-2">
                     {[
                       { lbl: 'SEO Score', val: '98', bg: 'rgba(37,99,235,0.92)' },
@@ -210,7 +224,7 @@ export default function CMSHero() {
                 }}
               >
                 <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #1d4ed8, #2563eb)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Globe size={10} className="text-white" />
                 </div>
                 <div>
@@ -229,7 +243,7 @@ export default function CMSHero() {
                 }}
               >
                 <div className="w-6 h-6 rounded-lg flex items-center justify-center flex-shrink-0"
-                  style={{ background: 'linear-gradient(135deg, #f59e0b, #d97706)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   <Star size={10} className="text-white" />
                 </div>
                 <div>

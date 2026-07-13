@@ -93,7 +93,7 @@ export default function PriceSEO() {
               href="tel:+918110025254"
               className="mt-7 w-full flex items-center justify-center py-3 rounded-full text-[13px]
                 font-bold text-white transition-all duration-200 hover:-translate-y-0.5"
-              style={{ background: 'linear-gradient(135deg, #2563eb, #0ea5e9)', boxShadow: '0 4px 16px rgba(14,165,233,0.28)' }}
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 16px rgba(14,165,233,0.28)' }}
             >
               Get Started
             </a>

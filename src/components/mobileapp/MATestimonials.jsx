@@ -83,9 +83,9 @@ export default function MATestimonials() {
     >
       {/* Orbs */}
       <div className="absolute -top-24 -left-24 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.25) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute -bottom-20 -right-20 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(30,64,175,0.2) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       {/* Diamonds */}
       <div className="absolute -top-12 -right-12 w-44 h-44 pointer-events-none"

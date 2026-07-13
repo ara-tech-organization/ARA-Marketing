@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Zap, ArrowDown } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 export default function ContactHero() {
+  const heroRef = useRef(null)
   const [mouse, setMouse] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
@@ -20,27 +22,38 @@ export default function ContactHero() {
 
   return (
     <section
+      ref={heroRef}
       className="relative flex items-center justify-center overflow-hidden pt-[72px]"
       style={{ background: 'white', minHeight: '40vh' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* BG orbs */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ ...parallax(20), top: '-18%', right: '-10%', width: '700px', height: '700px',
-          background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }}
+          background: 'var(--brand-gradient-glow)' }}
       />
       <div className="absolute pointer-events-none rounded-full"
         style={{ ...parallax(-16), bottom: '-12%', left: '-8%', width: '500px', height: '500px',
-          background: 'radial-gradient(circle, rgba(186,230,253,0.5) 0%, transparent 65%)' }}
+          background: 'var(--brand-gradient-glow)' }}
       />
       <div className="absolute pointer-events-none rounded-full"
         style={{ ...parallax(12), top: '30%', left: '20%', width: '300px', height: '300px',
-          background: 'radial-gradient(circle, rgba(219,234,254,0.4) 0%, transparent 65%)' }}
+          background: 'var(--brand-gradient-glow)' }}
       />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
         style={{ ...parallax(10),
-          backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.06) 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '32px 32px' }}
       />
 
@@ -77,12 +90,7 @@ export default function ContactHero() {
           style={{ fontSize: 'clamp(23px,3.1vw,43px)', fontWeight: 700 }}
         >
           Let&apos;s Build Something{' '}
-          <span style={{
-            background: 'linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text',
-          }}>
+          <span className="text-gradient-blue">
             Remarkable Together
           </span>
         </h1>

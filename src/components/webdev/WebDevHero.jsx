@@ -1,26 +1,40 @@
+import { useRef } from 'react'
 import {
   Globe2, TrendingUp, Search, Smartphone, ChevronRight,
   ArrowRight, ArrowUpRight, Zap, CheckCircle
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 export default function WebDevHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px]"
       style={{ background: '#ffffff' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '28px 28px',
         }}
       />
       <div className="absolute top-[72px] left-0 right-0 h-px pointer-events-none"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(37,99,235,0.2), transparent)' }} />
+        style={{ background: 'var(--brand-gradient-line)' }} />
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse, rgba(219,234,254,0.7) 0%, transparent 65%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7 pt-16 pb-6">
@@ -107,7 +121,7 @@ export default function WebDevHero() {
           }}
         >
           <div className="h-1.5 w-full"
-            style={{ background: 'linear-gradient(90deg, #1d4ed8, #2563eb, #38bdf8)' }} />
+            style={{ background: 'var(--brand-gradient-soft)' }} />
 
           <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-100">
 
@@ -122,20 +136,14 @@ export default function WebDevHero() {
                   />
                   <defs>
                     <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#3b82f6" />
-                      <stop offset="100%" stopColor="#1d4ed8" />
+                      <stop offset="0%" stopColor="#60a5fa" />
+                      <stop offset="100%" stopColor="#2563eb" />
                     </linearGradient>
                   </defs>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <span
-                    className="text-[32px] font-black leading-none"
-                    style={{
-                      background: 'linear-gradient(135deg, #1d4ed8, #3b82f6)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
+                    className="text-[32px] font-black leading-none text-gradient-blue"
                   >98</span>
                   <span className="text-[9px] text-slate-400 font-semibold mt-0.5">/ 100</span>
                 </div>
@@ -164,7 +172,7 @@ export default function WebDevHero() {
                   <div className="h-2 bg-blue-50 rounded-full overflow-hidden">
                     <div style={{
                       height: '100%', width: `${pct}%`, borderRadius: 4,
-                      background: 'linear-gradient(90deg, #60a5fa, #2563eb)',
+                      background: 'var(--brand-gradient-soft)',
                       animation: `bar-in 0.8s ${delay}s cubic-bezier(0,0,0.2,1) both`,
                     }} />
                   </div>

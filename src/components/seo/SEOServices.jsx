@@ -117,7 +117,7 @@ export default function SEOServices() {
                     : 'bg-white border border-slate-100 text-slate-600 hover:border-blue-100 hover:bg-blue-50/50'
                   }`}
                 style={active === i
-                  ? { background: `linear-gradient(135deg, ${color}, ${color}cc)`, boxShadow: `0 8px 24px ${color}30` }
+                  ? { background: 'var(--brand-gradient)', boxShadow: `0 8px 24px ${color}30` }
                   : {}
                 }
               >
@@ -142,7 +142,7 @@ export default function SEOServices() {
               <img src={tab.imgSrc} alt={tab.imgAlt} loading="lazy"
                 className="w-full h-full object-cover" />
               <div className="absolute inset-0"
-                style={{ background: `linear-gradient(90deg, ${tab.color}70 0%, transparent 60%)` }} />
+                style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }} />
               {/* Tag + H3 */}
               <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-5 md:p-7">
                 <span className="inline-flex self-start px-3 py-1 text-white text-[10px] font-bold

@@ -113,7 +113,7 @@ function StepCard({ num, icon: Icon, title, body, color, lightBg, border, origin
       {/* Bottom accent bar */}
       <div
         className={`absolute bottom-0 left-0 right-0 h-[3px] scale-x-0 group-hover:scale-x-100 transition-transform duration-[400ms] ${originDir === 'right' ? 'origin-right' : 'origin-left'} rounded-b-3xl`}
-        style={{ background: `linear-gradient(${originDir === 'right' ? '270' : '90'}deg,${color},${color}60)` }}
+        style={{ background: 'var(--brand-gradient-soft)' }}
       />
     </div>
   )
@@ -127,7 +127,7 @@ export default function EWProcess() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.045) 1.5px, transparent 1.5px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '34px 34px',
         }}
       />
@@ -154,14 +154,7 @@ export default function EWProcess() {
           </span>
           <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
             From Concept to{' '}
-            <span
-              style={{
-                background: 'linear-gradient(135deg,#2563eb,#7c3aed)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-              }}
-            >
+            <span className="text-gradient-blue">
               Launch
             </span>
           </h2>
@@ -177,7 +170,7 @@ export default function EWProcess() {
               <div
                 className="flex-shrink-0 w-8 h-8 lg:w-9 lg:h-9 rounded-full flex items-center justify-center font-bold text-[11px] lg:text-[12px] text-white"
                 style={{
-                  background: `linear-gradient(135deg,${color},${color}bb)`,
+                  background: 'var(--brand-gradient)',
                   boxShadow: `0 3px 12px ${color}40`,
                 }}
               >
@@ -186,7 +179,7 @@ export default function EWProcess() {
               {i < steps.length - 1 && (
                 <div
                   className="flex-1 h-px mx-1.5 lg:mx-2 min-w-0"
-                  style={{ background: `linear-gradient(90deg,${color}55,${steps[i + 1].color}55)` }}
+                  style={{ background: 'var(--brand-gradient-soft)' }}
                 />
               )}
             </div>
@@ -204,14 +197,14 @@ export default function EWProcess() {
 
         {/* ── Continue divider ── */}
         <div className="flex items-center gap-3 my-3 sm:my-4 reveal">
-          <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,transparent,rgba(37,99,235,0.18))' }} />
+          <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
           <span
             className="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full"
             style={{ color: 'rgba(37,99,235,0.55)', background: '#eff6ff', border: '1px solid #bfdbfe' }}
           >
             Continue
           </span>
-          <div className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,rgba(124,58,237,0.18),transparent)' }} />
+          <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
         </div>
 
         {/* ── Row 2 (steps 04–06) ── */}

@@ -28,23 +28,23 @@ const testimonials = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
 export default function DWTestimonials() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="hidden sm:block absolute -top-20 -right-20 w-[360px] h-[360px] rounded-full border border-blue-200/35 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -left-16 w-[280px] h-[280px] rounded-full border border-sky-200/28 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
       <div className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.18) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(186,230,253,0.22) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -85,7 +85,7 @@ export default function DWTestimonials() {
             >
               {/* Top accent bar */}
               <div className="h-1.5 w-full flex-shrink-0"
-                style={{ background: `linear-gradient(90deg, ${t.color}, ${t.barColor})` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <div className="flex flex-col flex-1 p-6 sm:p-7">
 
@@ -115,7 +115,7 @@ export default function DWTestimonials() {
                 </p>
 
                 {/* Divider */}
-                <div className="h-px mb-5" style={{ background: `linear-gradient(90deg, ${t.color}20, transparent)` }} />
+                <div className="h-px mb-5" style={{ background: 'var(--brand-gradient-line)' }} />
 
                 {/* Author row */}
                 <div className="flex items-center gap-3">

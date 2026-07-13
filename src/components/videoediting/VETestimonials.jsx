@@ -6,23 +6,18 @@ const testimonials = [
   { text: 'ARA helped us improve engagement on social media significantly. Their Instagram Reels and YouTube editing made our content go viral. Highly recommend for any business.',                 name: 'Karthik Rajan',  role: 'Founder, TechBridge Solutions',       rating: 5, color: '#0ea5e9', avatar: 'K' },
 ]
 
-const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
-
 export default function VETestimonials() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.05) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       <div className="hidden sm:block absolute -top-20 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full border border-blue-100/45 pointer-events-none" />
       <div className="hidden sm:block absolute -top-10 left-1/2 -translate-x-1/2 w-[260px] h-[260px] rounded-full border border-violet-100/35 pointer-events-none animate-[spin_30s_linear_infinite]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-100/40 pointer-events-none" />
       <div className="hidden sm:block absolute -bottom-8 -right-8 w-[180px] h-[180px] rounded-full border border-blue-200/28 pointer-events-none animate-[spin_22s_linear_infinite_reverse]" />
       <div className="absolute top-0 left-0 w-[250px] sm:w-[450px] h-[250px] sm:h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.14) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -34,7 +29,7 @@ export default function VETestimonials() {
           </span>
           <h2 className="text-[clamp(21px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-3 sm:mb-4">
             What Clients Say About Our{' '}
-            <span style={gradBlue}>Video Editing Services</span>
+            <span className="text-gradient-blue">Video Editing Services</span>
           </h2>
           <p className="text-[13.5px] sm:text-[15px] text-slate-500 max-w-xl mx-auto px-2 sm:px-0">
             Trusted by businesses across Thanjavur for creative, cinematic, and high-converting video editing solutions.
@@ -59,14 +54,14 @@ export default function VETestimonials() {
               }}
             >
               <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl sm:rounded-t-3xl"
-                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="absolute inset-0 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
-                style={{ background: `radial-gradient(ellipse at top left, ${color}06 0%, transparent 60%)` }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
               <div className="hidden sm:block absolute bottom-4 right-4 w-20 h-20 rounded-full border border-slate-100/70 pointer-events-none" />
               <div className="hidden sm:block absolute bottom-7 right-7 w-10 h-10 rounded-full border border-slate-100/50 pointer-events-none" />
 
               <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
-                style={{ background: `linear-gradient(135deg,${color}16,${color}06)`, border: `1.5px solid ${color}22` }}>
+                style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}22` }}>
                 <Quote size={15} style={{ color }} />
               </div>
 

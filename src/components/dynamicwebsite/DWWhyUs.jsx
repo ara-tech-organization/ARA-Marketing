@@ -9,7 +9,7 @@ const reasons = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
@@ -49,7 +49,7 @@ export default function DWWhyUs() {
             >
               {/* Icon */}
               <div className="flex-shrink-0 mt-0.5 w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}25` }}>
+                style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}25` }}>
                 <Icon size={17} style={{ color }} />
               </div>
               {/* Text */}
@@ -67,9 +67,9 @@ export default function DWWhyUs() {
 
         {/* ── Bottom banner ── */}
         <div className="reveal mt-10 sm:mt-14 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 px-5 sm:px-8 py-5 sm:py-6 rounded-2xl sm:rounded-3xl overflow-hidden relative"
-          style={{ background: 'linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #0ea5e9 100%)', boxShadow: '0 20px 60px rgba(37,99,235,0.28)' }}>
+          style={{ background: 'var(--brand-gradient)', boxShadow: '0 20px 60px rgba(37,99,235,0.28)' }}>
           <div className="absolute inset-0 pointer-events-none"
-            style={{ background: 'radial-gradient(ellipse at 25% 50%, rgba(255,255,255,0.12) 0%, transparent 60%)' }} />
+            style={{ background: 'var(--brand-gradient-glow)' }} />
           <div className="hidden sm:block absolute right-8 top-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-white/10 pointer-events-none" />
           <div className="hidden sm:block absolute right-12 top-1/2 -translate-y-1/2 w-16 h-16 rounded-full border border-white/08 pointer-events-none" />
           <div className="relative flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left w-full sm:w-auto">

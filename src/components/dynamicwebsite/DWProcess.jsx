@@ -9,27 +9,27 @@ const steps = [
 ]
 
 const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
 export default function DWProcess() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       {/* Rings */}
       <div className="hidden sm:block absolute -top-20 -left-20 w-[380px] h-[380px] rounded-full border border-blue-200/35 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="hidden sm:block absolute -top-10 -left-10 w-[240px] h-[240px] rounded-full border border-sky-200/25 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[320px] h-[320px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_40s_linear_infinite]" />
       {/* Orbs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.22) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(186,230,253,0.20) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -52,13 +52,13 @@ export default function DWProcess() {
         <div className="hidden lg:flex items-stretch gap-4 relative reveal">
           {/* Connector line */}
           <div className="absolute top-[52px] left-[10%] right-[10%] h-0.5 pointer-events-none"
-            style={{ background: 'linear-gradient(90deg, #2563eb, #60a5fa, #0ea5e9, #60a5fa, #2563eb)' }} />
+            style={{ background: 'var(--brand-gradient-line)' }} />
           {steps.map(({ icon: Icon, num, title, desc, color }, i) => (
             <div key={num} className="flex-1 flex flex-col items-center text-center group">
               {/* Icon bubble */}
               <div className="relative z-10 mb-6 w-[52px] h-[52px] rounded-full flex items-center justify-center transition-all duration-400 group-hover:scale-110 group-hover:shadow-xl"
                 style={{
-                  background: `linear-gradient(135deg, ${color}, ${color}cc)`,
+                  background: 'var(--brand-gradient)',
                   boxShadow: `0 0 0 5px white, 0 0 0 6px ${color}30, 0 8px 24px ${color}35`,
                 }}>
                 <Icon size={18} className="text-white" />
@@ -88,7 +88,7 @@ export default function DWProcess() {
             <div key={num} className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white"
               style={{ border: `1.5px solid ${color}18`, boxShadow: '0 4px 16px rgba(37,99,235,0.07)' }}>
               <div className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center"
-                style={{ background: `linear-gradient(135deg, ${color}, ${color}cc)`, boxShadow: `0 6px 18px ${color}30` }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 18px ${color}30` }}>
                 <Icon size={16} className="text-white" />
               </div>
               <div>

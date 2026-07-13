@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, lazy, Suspense } from 'react'
 import MouseEffect from './components/common/MouseEffect'
+import CursorGlow from './components/common/CursorGlow'
 import FloatingSocial from './components/common/FloatingSocial'
 import PromoPopup from './components/common/PromoPopup'
 import './index.css'
@@ -47,6 +48,7 @@ function PageLoader() {
 export default function App() {
   return (
     <BrowserRouter>
+      <CursorGlow />
       <MouseEffect />
       <FloatingSocial />
       <PromoPopup />

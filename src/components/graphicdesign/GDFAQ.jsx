@@ -35,13 +35,12 @@ export default function GDFAQ() {
   return (
     <section
       className="py-16"
-      style={{ background: 'linear-gradient(180deg, #f0f7ff 0%, #e8f3ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Dot grid */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
         style={{
-          backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)',
           backgroundSize: '28px 28px',
           opacity: 0.22,
         }}

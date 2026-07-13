@@ -33,7 +33,7 @@ export default function WAWhyUs() {
           </span>
           <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900">
             Why Businesses{' '}
-            <span style={{ background: 'linear-gradient(135deg,#2563eb,#0891b2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <span className="text-gradient-blue">
               Choose Us
             </span>
           </h2>
@@ -76,7 +76,7 @@ export default function WAWhyUs() {
               className="rounded-3xl overflow-hidden"
               style={{ background: '#071a36', border: '1px solid rgba(37,99,235,0.3)', boxShadow: '0 24px 60px rgba(37,99,235,0.18)' }}
             >
-              <div className="h-1" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#38bdf8)' }} />
+              <div className="h-1" style={{ background: 'var(--brand-gradient-soft)' }} />
 
               {/* Integration */}
               <div className="p-6 xs:p-7 pb-5" style={{ borderBottom: '1px solid rgba(37,99,235,0.2)' }}>
@@ -118,7 +118,7 @@ export default function WAWhyUs() {
                 <a
                   href="/contact-us"
                   className="mt-6 xs:mt-7 inline-flex items-center gap-2 px-4 xs:px-5 py-2.5 xs:py-3 rounded-xl text-[12.5px] xs:text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 w-full justify-center"
-                  style={{ background: 'linear-gradient(135deg,#1d4ed8,#0891b2)', boxShadow: '0 8px 24px rgba(37,99,235,0.3)' }}
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 8px 24px rgba(37,99,235,0.3)' }}
                 >
                   Start Building Today <ArrowRight size={13} />
                 </a>

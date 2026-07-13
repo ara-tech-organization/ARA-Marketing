@@ -9,22 +9,22 @@ const industries = [
 ]
 
 const gradInd = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+  background: 'var(--brand-gradient-text)',
   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
 }
 
 export default function DWWhoShould() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px, transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="hidden sm:block absolute -top-20 -left-20 w-[360px] h-[360px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="hidden sm:block absolute -top-10 -left-10 w-[230px] h-[230px] rounded-full border border-sky-200/22 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
       <div className="hidden sm:block absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-200/25 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(14,165,233,0.16) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -65,7 +65,7 @@ export default function DWWhoShould() {
               }}
             >
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                style={{ background: `linear-gradient(135deg, ${color}18, ${color}08)`, border: `1.5px solid ${color}28` }}>
+                style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}28` }}>
                 <Icon size={18} style={{ color }} />
               </div>
               <h3 className="text-[13px] sm:text-[14px] font-bold text-slate-900 mb-2">{label}</h3>
@@ -79,7 +79,7 @@ export default function DWWhoShould() {
 
           {/* 6th tile — CTA box */}
           <div className="flex flex-col items-center justify-center gap-3 p-5 sm:p-6 rounded-2xl sm:rounded-3xl text-center"
-            style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 40px rgba(37,99,235,0.28)' }}>
+            style={{ background: 'var(--brand-gradient)', boxShadow: '0 12px 40px rgba(37,99,235,0.28)' }}>
             <p className="text-[11px] font-black uppercase tracking-widest text-white/80">Get Your Custom Website Plan Today</p>
             <p className="text-[13px] sm:text-[13.5px] font-medium text-white/90 leading-snug">Start building a powerful digital presence with our expert team.</p>
             <a href="/contact-us"

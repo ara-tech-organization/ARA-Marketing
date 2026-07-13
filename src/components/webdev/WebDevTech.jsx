@@ -47,7 +47,7 @@ export default function WebDevTech() {
               }}
             >
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-r-full opacity-0 group-hover:opacity-100 transition-all duration-400"
-                style={{ background: `linear-gradient(180deg, ${color}, ${color}88)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
               <div className="flex items-center gap-5 pl-5 pr-6 py-4">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0
                   transition-all duration-300 group-hover:scale-110"
@@ -65,7 +65,7 @@ export default function WebDevTech() {
                 <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
                   <div className="h-2 rounded-full overflow-hidden" style={{ width: 120, background: color + '14' }}>
                     <div className="h-full rounded-full"
-                      style={{ width: `${pct}%`, background: `linear-gradient(90deg, ${color}88, ${color})`, transition: 'width 0.8s ease' }} />
+                      style={{ width: `${pct}%`, background: 'var(--brand-gradient-soft)', transition: 'width 0.8s ease' }} />
                   </div>
                   <span className="text-[11px] font-bold w-8" style={{ color }}>{pct}%</span>
                 </div>

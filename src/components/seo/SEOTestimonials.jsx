@@ -31,15 +31,15 @@ export default function SEOTestimonials() {
   return (
     <section
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 50%, #f0f9ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Orbs */}
       <div className="absolute -top-16 right-0 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.35) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 -left-16 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(196,219,254,0.35) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.08) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -70,7 +70,7 @@ export default function SEOTestimonials() {
                   hover:-translate-y-1 ${isActive ? 'shadow-2xl' : 'bg-white/70 border-slate-100 hover:bg-white hover:shadow-lg'}`}
                 style={isActive
                   ? {
-                      background: `linear-gradient(135deg, ${color}12 0%, white 60%)`,
+                      background: 'var(--brand-gradient-soft)',
                       border: `1.5px solid ${color}30`,
                       boxShadow: `0 20px 60px ${color}18`,
                     }
@@ -81,7 +81,7 @@ export default function SEOTestimonials() {
                 <div
                   className="h-1 rounded-full mb-6 transition-all duration-300"
                   style={{
-                    background: isActive ? `linear-gradient(90deg, ${color}, ${color}40)` : '#e2e8f0',
+                    background: isActive ? 'var(--brand-gradient-soft)' : '#e2e8f0',
                   }}
                 />
 

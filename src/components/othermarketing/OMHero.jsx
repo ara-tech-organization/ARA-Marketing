@@ -1,7 +1,9 @@
+import { useRef } from 'react'
 import {
   Mail, Smartphone, Users, ChevronRight, ArrowRight,
   TrendingUp, CheckCircle2, Send, Star, BarChart2,
 } from 'lucide-react'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const channels = [
   { icon: Mail,       label: 'Email Marketing',      metric: '68%',  sub: 'Avg open rate',  pct: 68, color: '#2563eb', light: '#eff6ff' },
@@ -10,18 +12,30 @@ const channels = [
 ]
 
 export default function OMHero() {
+  const heroRef = useRef(null)
+
   return (
-    <section className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#e0f2fe 100%)' }}>
+    <section ref={heroRef} className="relative overflow-hidden pt-[72px]"
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       {/* Orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.09) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.07) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute top-16 left-[12%] w-10 h-10 rounded-full border border-blue-300/25 pointer-events-none" />
       <div className="absolute top-28 right-[14%] w-6 h-6 rounded-full border border-violet-300/20 pointer-events-none" />
 
@@ -57,7 +71,7 @@ export default function OMHero() {
 
             <h1 className="text-[clamp(28px,3.2vw,48px)] font-bold leading-[1.1] tracking-tight text-slate-900 mb-4">
               Advanced Digital{' '}
-              <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              <span className="text-gradient-blue">
                 Marketing
               </span>
               <span className="block">Services in Thanjavur</span>
@@ -67,7 +81,7 @@ export default function OMHero() {
             </h1>
 
             <div className="w-16 h-1 rounded-full mb-6 mx-auto lg:mx-0"
-              style={{ background: 'linear-gradient(90deg,#2563eb,#0ea5e9)' }} />
+              style={{ background: 'var(--brand-gradient-soft)' }} />
 
             <p className="text-[15px] text-slate-500 leading-[1.9] max-w-[520px]">
               ARA Discover Marketing delivers results-oriented email, influencer, and SMS marketing solutions â€” driving customer engagement, brand awareness, and measurable leads. As one of the best email marketing companies in Thanjavur and trusted influencer marketing experts, we build custom campaigns for startups, local businesses, and growing brands.
@@ -94,8 +108,7 @@ export default function OMHero() {
               {[['500+','Campaigns','#2563eb'],['98%','Satisfied','#2563eb'],['4x','Avg ROI','#0ea5e9']].map(([v, l, c]) => (
                 <div key={l} className="flex flex-col items-center text-center px-3 py-4 rounded-2xl bg-white border border-slate-100"
                   style={{ boxShadow: '0 2px 12px rgba(37,99,235,0.07)' }}>
-                  <span className="text-[22px] font-black leading-none mb-1"
-                    style={{ background: `linear-gradient(135deg,${c},${c}88)`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  <span className="text-[22px] font-black leading-none mb-1 text-gradient-blue">
                     {v}
                   </span>
                   <span className="text-[10px] text-slate-400 font-medium leading-tight">{l}</span>
@@ -120,12 +133,12 @@ export default function OMHero() {
 
               {/* Top accent line */}
               <div className="h-[3px] w-full absolute top-0 left-0 right-0"
-                style={{ background: `linear-gradient(90deg,${color},${color}44)` }} />
+                style={{ background: 'var(--brand-gradient-soft)' }} />
 
               <div className="flex items-center justify-between mb-4 mt-1">
                 <div className="flex items-center gap-2.5">
                   <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-                    style={{ background: `linear-gradient(135deg,${color}18,${color}08)`, border: `1.5px solid ${color}25` }}>
+                    style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}25` }}>
                     <Icon size={17} style={{ color }} />
                   </div>
                   <div>
@@ -138,7 +151,7 @@ export default function OMHero() {
 
               {/* Progress bar */}
               <div className="h-1.5 rounded-full bg-slate-100 mb-3">
-                <div className="h-full rounded-full" style={{ width: `${pct}%`, background: `linear-gradient(90deg,${color}70,${color})` }} />
+                <div className="h-full rounded-full" style={{ width: `${pct}%`, background: 'var(--brand-gradient-soft)' }} />
               </div>
 
               <div className="flex items-center gap-1.5">

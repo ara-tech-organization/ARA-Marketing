@@ -9,11 +9,6 @@ const faqs = [
   { q: 'What makes your video editing services different from others?',       a: 'We combine cinematic storytelling, AI-powered marketing strategy, professional editing tools, and creative expertise to deliver high-performing video content. Our platform-optimised formats and fast turnaround time set us apart.',          color: '#2563eb', tag: 'Expertise' },
 ]
 
-const gradBlue = {
-  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
-}
-
 export default function VEFAQ() {
   const [active, setActive] = useState(0)
   const faq = faqs[active]
@@ -41,13 +36,13 @@ export default function VEFAQ() {
       style={{ background: '#ffffff' }}>
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="absolute -top-20 -left-20 w-[360px] h-[360px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="absolute -top-10 -left-10 w-[230px] h-[230px] rounded-full border border-sky-300/22 pointer-events-none animate-[spin_24s_linear_infinite_reverse]" />
       <div className="absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-blue-200/25 pointer-events-none" />
       <div className="absolute -bottom-8 -right-8 w-[180px] h-[180px] rounded-full border border-sky-300/18 pointer-events-none animate-[spin_28s_linear_infinite]" />
       <div className="absolute top-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.20) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -59,7 +54,7 @@ export default function VEFAQ() {
           </span>
           <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
             Everything You Want to{' '}
-            <span style={gradBlue}>Know About Us</span>
+            <span className="text-gradient-blue">Know About Us</span>
           </h2>
           <p className="text-[15px] text-slate-500 leading-[1.85] max-w-[500px] mx-auto">
             Answers to the most common questions about our video editing services in Thanjavur.
@@ -85,7 +80,7 @@ export default function VEFAQ() {
                 {/* Number bubble */}
                 <span className="w-9 h-9 rounded-xl flex items-center justify-center text-[12px] font-black transition-all duration-300"
                   style={isActive
-                    ? { background: `linear-gradient(135deg,${color},${color}cc)`, color: 'white', boxShadow: `0 4px 14px ${color}35` }
+                    ? { background: 'var(--brand-gradient)', color: 'white', boxShadow: `0 4px 14px ${color}35` }
                     : { background: color + '0f', color: color + 'aa' }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
@@ -123,7 +118,7 @@ export default function VEFAQ() {
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                    style={{ background: `linear-gradient(135deg,${faq.color},${faq.color}bb)`, boxShadow: `0 8px 22px ${faq.color}30` }}>
+                    style={{ background: 'var(--brand-gradient)', boxShadow: `0 8px 22px ${faq.color}30` }}>
                     <Film size={20} className="text-white" />
                   </div>
                   <div>
@@ -141,7 +136,7 @@ export default function VEFAQ() {
                   <div className="h-full rounded-full transition-all duration-500"
                     style={{
                       width: `${((active + 1) / faqs.length) * 100}%`,
-                      background: `linear-gradient(90deg,${faq.color},${faq.color}cc)`,
+                      background: 'var(--brand-gradient)',
                     }} />
                 </div>
                 <div className="flex justify-between mt-1.5">
@@ -170,7 +165,7 @@ export default function VEFAQ() {
                   disabled={active === faqs.length - 1}
                   className="flex-1 py-2.5 rounded-xl text-[12px] font-bold transition-all duration-200"
                   style={{
-                    background: active === faqs.length - 1 ? '#f8fafc' : `linear-gradient(135deg,${faq.color},${faq.color}cc)`,
+                    background: active === faqs.length - 1 ? '#f8fafc' : 'var(--brand-gradient)',
                     color: active === faqs.length - 1 ? '#cbd5e1' : 'white',
                     boxShadow: active === faqs.length - 1 ? 'none' : `0 4px 14px ${faq.color}30`,
                   }}>
@@ -213,7 +208,7 @@ export default function VEFAQ() {
                         width: active === i ? 28 : 8,
                         height: 8,
                         background: active === i
-                          ? `linear-gradient(90deg,${faq.color},${faq.color}cc)`
+                          ? 'var(--brand-gradient)'
                           : faq.color + '22',
                       }}
                     />
@@ -229,7 +224,7 @@ export default function VEFAQ() {
           style={{ background: 'white', border: '1.5px solid #e0eaff', boxShadow: '0 8px 32px rgba(37,99,235,0.08)' }}>
           <div className="flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg,#eff6ff,#e0f2fe)', border: '1px solid #bfdbfe' }}>
+              style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
               <MessageSquare size={16} className="text-blue-600" />
             </div>
             <div>
@@ -246,7 +241,7 @@ export default function VEFAQ() {
             <a href="/contact-us"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-[12.5px] font-bold
                 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
+              style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 18px rgba(37,99,235,0.25)' }}>
               Contact Us <ArrowRight size={13} />
             </a>
           </div>

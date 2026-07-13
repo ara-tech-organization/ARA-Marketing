@@ -12,17 +12,17 @@ const promises = [
 export default function SEMAssurance() {
   return (
     <section className="relative py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(160deg, #f8fbff 0%, #eff6ff 55%, #f0f9ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.07) 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
 
       {/* Orbs */}
       <div className="absolute top-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.40) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(196,219,254,0.40) 0%, transparent 70%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -51,7 +51,7 @@ export default function SEMAssurance() {
           <div className="lg:w-[300px] flex-shrink-0">
             <div className="h-full rounded-3xl p-7 border border-blue-200 relative overflow-hidden"
               style={{
-                background: 'linear-gradient(160deg, #dbeafe 0%, #bfdbfe 60%, #c7d2fe 100%)',
+                background: 'var(--brand-gradient-soft)',
                 boxShadow: '0 16px 50px rgba(37,99,235,0.14)',
               }}>
 
@@ -61,7 +61,7 @@ export default function SEMAssurance() {
 
               <div className="relative">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-white"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
                   <Award size={24} />
                 </div>
 

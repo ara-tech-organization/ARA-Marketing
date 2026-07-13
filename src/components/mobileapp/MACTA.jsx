@@ -25,7 +25,7 @@ export default function MACTA() {
 
               <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-gray-900 leading-tight tracking-tight mb-5">
                 Let's Build Your{' '}
-                <span style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                <span className="text-gradient-blue">
                   Mobile App Together
                 </span>
               </h2>
@@ -59,7 +59,7 @@ export default function MACTA() {
               className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl transition-all duration-300 hover:scale-[1.03]"
               style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.25)' }}>
               <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+                style={{ background: 'var(--brand-gradient)' }}>
                 <Phone size={16} className="text-white" />
               </div>
               <div>
@@ -112,7 +112,7 @@ export default function MACTA() {
 
                 <button type="submit"
                   className="w-full flex items-center justify-center gap-2 py-4 rounded-xl text-[14px] font-bold text-white transition-all duration-300 hover:scale-[1.02] mt-1"
-                  style={{ background: 'linear-gradient(135deg,#1e40af,#2563eb)' }}>
+                  style={{ background: 'var(--brand-gradient)' }}>
                   Send Free Consultation Request <ArrowRight size={16} />
                 </button>
               </form>

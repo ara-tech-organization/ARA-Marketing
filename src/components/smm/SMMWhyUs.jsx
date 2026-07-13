@@ -38,13 +38,13 @@ export default function SMMWhyUs() {
   return (
     <section
       className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
       {/* Full-section dot grid */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, #93c5fd 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '28px 28px',
           opacity: 0.28,
         }}
@@ -53,13 +53,13 @@ export default function SMMWhyUs() {
       {/* Soft colour wash — top-right */}
       <div
         className="absolute top-0 right-0 w-72 h-72 pointer-events-none"
-        style={{ background: 'radial-gradient(circle at top right, rgba(191,219,254,0.5) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       {/* Soft colour wash — bottom-left */}
       <div
         className="absolute bottom-0 left-0 w-72 h-72 pointer-events-none"
-        style={{ background: 'radial-gradient(circle at bottom left, rgba(186,230,255,0.45) 0%, transparent 70%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       {/* Wave top */}

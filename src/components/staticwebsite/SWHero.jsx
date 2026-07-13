@@ -1,5 +1,7 @@
+import { useRef } from 'react'
 import { Layout, Zap, Shield, ArrowRight, ArrowUpRight, ChevronRight, Globe, Monitor, CheckCircle2, Star } from 'lucide-react'
 import swHeroImg from '../../assets/static/s1.webp'
+import CursorSpotlight from '../common/CursorSpotlight'
 
 const techTags = ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Tailwind CSS', 'Vite', 'Netlify', 'Vercel']
 
@@ -16,19 +18,32 @@ const stats = [
 ]
 
 export default function SWHero() {
+  const heroRef = useRef(null)
+
   return (
     <section
+      ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(145deg, #f0f7ff 0%, #eff6ff 55%, #dbeafe 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      {/* Cursor-follow spotlight */}
+      <CursorSpotlight
+        targetRef={heroRef}
+        size={560}
+        blur={90}
+        blendMode="multiply"
+        opacity={0.2}
+        background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
+      />
+
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-40"
-        style={{ backgroundImage: 'radial-gradient(circle, rgba(37,99,235,0.12) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.09) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 -left-24 w-[480px] h-[480px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.07) 0%, transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
       {/* Rings */}
       <div className="hidden md:block absolute top-20 right-[6%] w-52 h-52 rounded-full border border-blue-200/40 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-24 left-[4%] w-36 h-36 rounded-full border border-sky-200/35 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
@@ -61,7 +76,7 @@ export default function SWHero() {
               style={{ fontSize: '40px', fontWeight: 600 }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>
                 Launch Your Online{' '}
-                <span style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Presence</span>
+                <span className="text-gradient-blue">Presence</span>
               </span>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>with Static Websites</span>
             </h1>
@@ -93,7 +108,7 @@ export default function SWHero() {
             <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-3 mb-10">
               <a href="tel:+918110025254"
                 className="btn-glow inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                style={{ background: 'linear-gradient(135deg,#1d4ed8,#0ea5e9)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
+                style={{ background: 'var(--brand-gradient)', boxShadow: '0 6px 20px rgba(37,99,235,0.28)' }}>
                 Take a First Step <ArrowRight size={14} />
               </a>
               <a href="#sw-intro"
@@ -108,8 +123,7 @@ export default function SWHero() {
               {stats.map(({ value, label }, i) => (
                 <div key={label} className="flex flex-col items-center lg:items-start"
                   style={{ borderLeft: i > 0 ? '1px solid #bfdbfe' : 'none', paddingLeft: i > 0 ? '1.75rem' : '0' }}>
-                  <span className="text-[26px] sm:text-[30px] font-black leading-tight"
-                    style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  <span className="text-[26px] sm:text-[30px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
                   <span className="text-[11px] text-slate-400 font-medium mt-0.5">{label}</span>
@@ -122,14 +136,14 @@ export default function SWHero() {
           <div className="hidden md:flex flex-col lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative mt-10 flex flex-col flex-1">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.14) 0%, transparent 70%)' }} />
+                style={{ background: 'var(--brand-gradient-glow)' }} />
 
               {/* Single unified card */}
               <div className="relative rounded-3xl overflow-hidden flex flex-col flex-1"
                 style={{ background: 'white', border: '1.5px solid #e2e8f0', boxShadow: '0 32px 80px rgba(37,99,235,0.16)' }}>
 
                 {/* Accent bar */}
-                <div className="h-1.5" style={{ background: 'linear-gradient(90deg,#1d4ed8,#2563eb,#0ea5e9)' }} />
+                <div className="h-1.5" style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 {/* Browser chrome */}
                 <div className="flex items-center gap-2 px-4 py-2.5" style={{ background: '#f8fafc', borderBottom: '1px solid #e2e8f0' }}>

@@ -6,10 +6,8 @@ export default function GDIntro() {
     <section className="relative overflow-hidden py-16 bg-white">
       {/* Subtle grid */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"
         style={{
-          backgroundImage: `linear-gradient(rgba(37,99,235,0.025) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(37,99,235,0.025) 1px, transparent 1px)`,
           backgroundSize: '48px 48px',
         }}
       />
@@ -37,16 +35,12 @@ export default function GDIntro() {
             }}
           >
             {/* Top gradient accent bar */}
-            <div className="h-1.5" style={{ background: 'linear-gradient(90deg, #2563eb, #38bdf8, #0ea5e9)' }} />
+            <div className="h-1.5" style={{ background: 'var(--brand-gradient-soft)' }} />
 
             {/* Large watermark */}
             <div
-              className="absolute bottom-0 right-2 text-[130px] font-black leading-none select-none pointer-events-none"
+              className="absolute bottom-0 right-2 text-[130px] font-black leading-none select-none pointer-events-none text-gradient-blue"
               style={{
-                background: 'linear-gradient(135deg, #dbeafe 0%, #e0f2fe 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
                 lineHeight: 0.85,
               }}
             >
@@ -86,7 +80,7 @@ export default function GDIntro() {
             />
             <div
               className="absolute inset-0"
-              style={{ background: 'linear-gradient(160deg, rgba(15,23,42,0.4) 0%, rgba(29,78,216,0.5) 50%, rgba(15,23,42,0.82) 100%)' }}
+              style={{ background: 'linear-gradient(180deg, rgba(37,99,235,0.06) 0%, rgba(30,64,175,0.32) 100%)' }}
             />
 
             {/* Top badge */}
@@ -99,7 +93,7 @@ export default function GDIntro() {
 
             {/* Bottom panel */}
             <div className="absolute bottom-0 left-0 right-0 px-6 py-5"
-              style={{ background: 'linear-gradient(0deg, rgba(15,23,42,0.95) 0%, transparent 100%)' }}>
+              style={{ background: 'var(--brand-gradient)' }}>
               <div className="flex items-end justify-between">
                 <div>
                   <p className="text-[14px] font-bold text-white mb-1.5">Best Graphic Design Company</p>
@@ -120,19 +114,18 @@ export default function GDIntro() {
           <div
             className="reveal lg:col-span-4 rounded-3xl p-8 flex flex-col justify-between overflow-hidden relative"
             style={{
-              background: 'linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%)',
+              background: 'var(--brand-gradient)',
               boxShadow: '0 8px 32px rgba(15,23,42,0.28)',
               minHeight: '240px',
             }}
           >
             {/* Dot pattern */}
-            <div className="absolute inset-0 rounded-3xl pointer-events-none"
+            <div className="absolute inset-0 rounded-3xl pointer-events-none bg-brand-gradient-dots"
               style={{
-                backgroundImage: 'radial-gradient(circle, rgba(147,197,253,0.1) 1px, transparent 1px)',
                 backgroundSize: '24px 24px',
               }} />
             <div className="absolute -top-16 -right-16 w-52 h-52 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.28) 0%, transparent 70%)' }} />
+              style={{ background: 'var(--brand-gradient-glow)' }} />
 
             <div className="relative">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-5"
@@ -185,13 +178,13 @@ export default function GDIntro() {
           <div
             className="reveal lg:col-span-3 rounded-3xl p-8 flex flex-col justify-between overflow-hidden relative"
             style={{
-              background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%)',
+              background: 'var(--brand-gradient-soft)',
               border: '1.5px solid #bfdbfe',
               boxShadow: '0 4px 20px rgba(37,99,235,0.1)',
             }}
           >
             <div className="absolute -bottom-8 -right-8 w-36 h-36 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%)' }} />
+              style={{ background: 'var(--brand-gradient-glow)' }} />
             <div className="relative">
               <p className="text-[11px] font-bold text-blue-500 uppercase tracking-widest mb-5">Our Impact</p>
               {[

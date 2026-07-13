@@ -5,7 +5,7 @@ import wooImg        from '../../assets/E-commerce/woo.webp'
 import enterpriseImg from '../../assets/E-commerce/Enterprise.webp'
 
 const C1 = '#2563eb'
-const C2 = '#0ea5e9'
+const C2 = '#1e40af'
 
 const platforms = [
   {
@@ -64,7 +64,7 @@ export default function ECPlatforms() {
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
 
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.04) 1.5px, transparent 1.5px)', backgroundSize: '36px 36px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       <div className="hidden sm:block absolute -top-20 -right-20 w-[340px] h-[340px] rounded-full border border-blue-100/50 pointer-events-none animate-[spin_34s_linear_infinite]" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
@@ -98,7 +98,7 @@ export default function ECPlatforms() {
                   ? { background: col + '0e', border: `1.5px solid ${col}`, borderBottom: 'none', boxShadow: `0 -4px 16px ${col}12` }
                   : { background: '#f8fafc', border: '1.5px solid #e2e8f0', borderBottom: '1.5px solid #e2e8f0' }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                  style={{ background: isActive ? `linear-gradient(135deg,${col},${col}bb)` : '#e2e8f0', boxShadow: isActive ? `0 4px 12px ${col}35` : 'none' }}>
+                  style={{ background: isActive ? 'var(--brand-gradient)' : '#e2e8f0', boxShadow: isActive ? `0 4px 12px ${col}35` : 'none' }}>
                   <Globe size={15} style={{ color: isActive ? '#fff' : '#94a3b8' }} />
                 </div>
                 <div className="min-w-0">

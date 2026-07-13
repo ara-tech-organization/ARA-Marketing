@@ -8,11 +8,11 @@ export default function WebDevCTA() {
           style={{ boxShadow: '0 32px 80px rgba(15,23,42,0.22)' }}>
 
           <div className="relative p-7 sm:p-10 lg:p-14"
-            style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 55%, #1e40af 100%)' }}>
+            style={{ background: 'var(--brand-gradient)' }}>
             <div className="absolute inset-0 pointer-events-none"
-              style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+              style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
             <div className="absolute top-0 right-0 w-48 h-48 rounded-full pointer-events-none"
-              style={{ background: 'radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)' }} />
+              style={{ background: 'var(--brand-gradient-glow)' }} />
             <div className="relative">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
                 style={{ background: 'rgba(255,255,255,0.10)' }}>
@@ -49,7 +49,7 @@ export default function WebDevCTA() {
                   style={{
                     width: size, height: size,
                     border: `1.5px solid rgba(37,99,235,${0.06 + i * 0.07})`,
-                    background: i === 3 ? 'linear-gradient(135deg, #1e40af, #2563eb)' : 'transparent',
+                    background: i === 3 ? 'var(--brand-gradient)' : 'transparent',
                   }} />
               ))}
               <div className="relative z-10 flex items-center justify-center" style={{ width: 72, height: 72 }}>

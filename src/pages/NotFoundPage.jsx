@@ -21,11 +21,11 @@ export default function NotFoundPage() {
           style={{ background: 'linear-gradient(160deg,#f0f7ff 0%,#eff6ff 55%,#e0f2fe 100%)' }}>
 
           <div className="absolute inset-0 pointer-events-none"
-            style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '36px 36px' }} />
+            style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
           <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 65%)' }} />
+            style={{ background: 'var(--brand-gradient-glow)' }} />
           <div className="absolute bottom-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle,rgba(14,165,233,0.09) 0%,transparent 65%)' }} />
+            style={{ background: 'var(--brand-gradient-glow)' }} />
 
           <div className="relative z-10 max-w-[720px] mx-auto px-4 sm:px-6 py-16 sm:py-20 w-full">
             <div className="reveal rounded-[28px] bg-white text-center px-6 sm:px-12 py-12 sm:py-16"
@@ -33,7 +33,7 @@ export default function NotFoundPage() {
 
               <div className="relative w-20 h-20 mx-auto mb-7">
                 <div className="relative w-20 h-20 rounded-full flex items-center justify-center"
-                  style={{ background: 'linear-gradient(135deg,#2563eb,#0ea5e9)', boxShadow: '0 12px 32px rgba(37,99,235,0.35)' }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: '0 12px 32px rgba(37,99,235,0.35)' }}>
                   <SearchX size={34} style={{ color: '#fff' }} />
                 </div>
               </div>
@@ -47,7 +47,7 @@ export default function NotFoundPage() {
                 style={{ fontSize: 'clamp(26px,3.4vw,42px)' }}>
                 Page Not{' '}
                 <span style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
+                  background: 'var(--brand-gradient-text)',
                   WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
                 }}>Found</span>
               </h1>

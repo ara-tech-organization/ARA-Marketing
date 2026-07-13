@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { HelpCircle, MessageSquare, ArrowRight, ShoppingCart, ChevronRight } from 'lucide-react'
 
 const C1 = '#2563eb'
-const C2 = '#0ea5e9'
+const C2 = '#1e40af'
 
 const faqs = [
   {
@@ -64,11 +64,11 @@ export default function ECFAQ() {
 
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none"
-        style={{ backgroundImage: 'radial-gradient(rgba(37,99,235,0.06) 1.5px,transparent 1.5px)', backgroundSize: '34px 34px' }} />
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       <div className="absolute -top-20 -left-20 w-[360px] h-[360px] rounded-full border border-blue-200/30 pointer-events-none animate-[spin_36s_linear_infinite]" />
       <div className="absolute -bottom-16 -right-16 w-[300px] h-[300px] rounded-full border border-sky-200/25 pointer-events-none animate-[spin_28s_linear_infinite_reverse]" />
       <div className="absolute top-0 right-0 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle,rgba(147,197,253,0.16) 0%,transparent 65%)' }} />
+        style={{ background: 'var(--brand-gradient-glow)' }} />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -120,7 +120,7 @@ export default function ECFAQ() {
                     {/* Number */}
                     <span className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-black transition-all duration-250"
                       style={isActive
-                        ? { background: `linear-gradient(135deg,${color},${color}bb)`, color: 'white', boxShadow: `0 4px 10px ${color}30` }
+                        ? { background: 'var(--brand-gradient)', color: 'white', boxShadow: `0 4px 10px ${color}30` }
                         : { background: color + '12', color }}>
                       {String(i + 1).padStart(2, '0')}
                     </span>
@@ -155,7 +155,7 @@ export default function ECFAQ() {
               <div className="px-8 py-5 border-b border-slate-100 flex items-center gap-3"
                 style={{ background: `linear-gradient(135deg, ${accent}08, transparent)` }}>
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: `linear-gradient(135deg,${accent},${accent}bb)`, boxShadow: `0 6px 16px ${accent}30` }}>
+                  style={{ background: 'var(--brand-gradient)', boxShadow: `0 6px 16px ${accent}30` }}>
                   <span className="text-[11px] font-black text-white">Q</span>
                 </div>
                 <div>
@@ -174,7 +174,7 @@ export default function ECFAQ() {
                         width: active === i ? 20 : 6,
                         height: 6,
                         background: active === i
-                          ? `linear-gradient(90deg,${accent},${accent}bb)`
+                          ? 'var(--brand-gradient-soft)'
                           : accent + '22',
                       }} />
                   ))}
@@ -187,7 +187,7 @@ export default function ECFAQ() {
               </div>
 
               {/* Divider */}
-              <div className="mx-8 h-px" style={{ background: `linear-gradient(90deg,${accent}30,transparent)` }} />
+              <div className="mx-8 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
 
               {/* Answer */}
               <div className="px-8 py-5 flex items-start gap-3 flex-1">
@@ -214,7 +214,7 @@ export default function ECFAQ() {
                   disabled={active === faqs.length - 1}
                   className="px-5 py-2 rounded-xl text-[12px] font-bold transition-all duration-200"
                   style={{
-                    background: active === faqs.length - 1 ? '#f8fafc' : `linear-gradient(135deg,${accent},${accent}cc)`,
+                    background: active === faqs.length - 1 ? '#f8fafc' : 'var(--brand-gradient)',
                     color: active === faqs.length - 1 ? '#cbd5e1' : 'white',
                     boxShadow: active === faqs.length - 1 ? 'none' : `0 4px 12px ${accent}30`,
                   }}>

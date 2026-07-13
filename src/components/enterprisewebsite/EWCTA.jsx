@@ -40,7 +40,7 @@ export default function EWCTA() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(rgba(37,99,235,0.09) 1px, transparent 1px)',
+          backgroundImage: 'var(--brand-gradient-dots)',
           backgroundSize: '30px 30px',
         }}
       />
@@ -48,15 +48,15 @@ export default function EWCTA() {
       {/* Orbs â€” md+ only */}
       <div
         className="hidden md:block absolute -top-20 -left-20 w-[440px] h-[440px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.10) 0%, transparent 65%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
       <div
         className="hidden md:block absolute -bottom-20 -right-20 w-[380px] h-[380px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.10) 0%, transparent 65%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
       <div
         className="hidden lg:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(8,145,178,0.04) 0%, transparent 60%)' }}
+        style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8">
@@ -81,14 +81,7 @@ export default function EWCTA() {
               style={{ color: '#0f172a' }}
             >
               Let's Build Your{' '}
-              <span
-                style={{
-                  background: 'linear-gradient(135deg,#2563eb,#0ea5e9)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
-              >
+              <span className="text-gradient-blue">
                 Enterprise Website
               </span>{' '}
               Together
@@ -133,7 +126,7 @@ export default function EWCTA() {
             >
               <div
                 className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{ background: 'linear-gradient(135deg,#1d4ed8,#7c3aed)' }}
+                style={{ background: 'var(--brand-gradient)' }}
               >
                 <Phone size={13} className="text-white" />
               </div>
@@ -240,7 +233,7 @@ export default function EWCTA() {
                   <div>
                     <label
                       className="block text-[10px] sm:text-[11px] font-bold uppercase tracking-wider mb-1 sm:mb-1.5"
-                      style={{ color: 'rgba(255,255,255,0.38)' }}
+                      style={{ color: '#64748b' }}
                     >
                       Company Name
                     </label>
@@ -259,7 +252,7 @@ export default function EWCTA() {
                   <div>
                     <label
                       className="block text-[10px] sm:text-[11px] font-bold uppercase tracking-wider mb-1 sm:mb-1.5"
-                      style={{ color: 'rgba(255,255,255,0.38)' }}
+                      style={{ color: '#64748b' }}
                     >
                       Project Details
                     </label>
@@ -281,7 +274,7 @@ export default function EWCTA() {
                     type="submit"
                     className="w-full inline-flex items-center justify-center gap-2 py-3 sm:py-3.5 rounded-xl text-[13px] sm:text-[14px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90"
                     style={{
-                      background: 'linear-gradient(135deg,#7c3aed,#2563eb)',
+                      background: 'var(--brand-gradient)',
                       boxShadow: '0 8px 28px rgba(124,58,237,0.36)',
                     }}
                   >
