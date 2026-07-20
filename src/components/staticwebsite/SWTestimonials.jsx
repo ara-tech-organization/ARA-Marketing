@@ -1,4 +1,5 @@
 import { Quote, Star, MessageSquare, TrendingUp, Users } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -28,6 +29,7 @@ const stats = [
 export default function SWTestimonials() {
   return (
     <section className="py-14 sm:py-20 bg-white relative overflow-hidden">
+      <SectionDecor variant="b" />
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}

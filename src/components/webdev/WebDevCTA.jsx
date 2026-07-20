@@ -1,9 +1,12 @@
 import { Phone, ArrowRight, Globe2, Code2, Smartphone, Zap } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 export default function WebDevCTA() {
   return (
-    <section className="py-20" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-20 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="reveal grid lg:grid-cols-[60%_40%] rounded-3xl overflow-hidden"
           style={{ boxShadow: '0 32px 80px rgba(15,23,42,0.22)' }}>
 

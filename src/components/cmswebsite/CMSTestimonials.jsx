@@ -1,4 +1,5 @@
 ﻿import { Quote, Star, MessageSquare } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -47,6 +48,7 @@ export default function CMSTestimonials() {
       className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      <SectionDecor variant="a" />
       {/* Subtle orbs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

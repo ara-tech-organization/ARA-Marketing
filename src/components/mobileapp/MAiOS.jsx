@@ -1,4 +1,5 @@
 import { Smartphone, Star, Shield, Layers, Code2, ArrowRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 import iosImage from '../../assets/MobileApp/IOS.webp'
 
@@ -12,12 +13,13 @@ const iosServices = [
 export default function MAiOS() {
   return (
     <section className="py-16 sm:py-16 bg-slate-50 relative overflow-hidden">
+      <SectionDecor variant="a" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left: Image */}

@@ -1,4 +1,5 @@
 import { MessageSquare } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 export default function SMMCTA() {
   return (
@@ -6,6 +7,7 @@ export default function SMMCTA() {
       className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      <SectionDecor variant="a" />
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 text-center">
 
         {/* Heading */}

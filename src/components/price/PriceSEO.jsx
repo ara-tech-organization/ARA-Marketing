@@ -1,4 +1,5 @@
 import { Search, MessageCircle, Check } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const seoFeatures = [
   'Google Business Profile Optimization',
@@ -19,8 +20,9 @@ const waFeatures = [
 
 export default function PriceSEO() {
   return (
-    <section className="py-16 sm:py-20 bg-white">
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
+    <section className="relative overflow-hidden py-16 sm:py-20 bg-white">
+      <SectionDecor variant="b" />
+      <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

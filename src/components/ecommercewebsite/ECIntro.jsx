@@ -1,4 +1,5 @@
 import { Globe, TrendingUp, ShoppingBag, Layers, Zap } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const features = [
   { icon: Globe,       label: 'Scalable Architecture',      desc: 'Grows with your business from day one'  },
@@ -18,6 +19,7 @@ export default function ECIntro() {
   return (
     <section id="ec-intro" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="c" />
 
       {/* Background orbs */}
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"

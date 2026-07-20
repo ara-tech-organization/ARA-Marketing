@@ -1,4 +1,5 @@
 import { Star, MessageSquare, Quote, CheckCircle2, TrendingUp } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -38,7 +39,8 @@ const testimonials = [
 
 export default function OMTestimonials() {
   return (
-    <section className="py-20 overflow-hidden bg-white">
+    <section className="relative py-20 overflow-hidden bg-white">
+      <SectionDecor variant="c" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

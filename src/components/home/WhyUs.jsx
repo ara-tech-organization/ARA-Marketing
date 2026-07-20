@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Star, ArrowRight, Zap, TrendingUp, Eye, BarChart3, Award, Target } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const stats = [
   { val: '150+', num: 150, suffix: '+', label: 'Projects Completed',  icon: Award,      color: '#2563eb', bg: '#eff6ff', border: '#bfdbfe', grad: 'linear-gradient(135deg,#2563eb,#0ea5e9)' },
@@ -126,6 +127,7 @@ export default function WhyUs() {
 
   return (
     <section id="why-us" ref={sectionRef} className="relative overflow-hidden py-16 sm:py-20 bg-white">
+      <SectionDecor variant="b" />
 
       {/* Dot grid â€” matches about page */}
       <div className="absolute inset-0 pointer-events-none"

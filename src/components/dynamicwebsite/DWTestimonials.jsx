@@ -1,4 +1,5 @@
 import { Quote, Star, Users, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -36,6 +37,7 @@ export default function DWTestimonials() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+      <SectionDecor variant="b" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />

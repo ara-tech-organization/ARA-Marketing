@@ -1,4 +1,5 @@
 ﻿import { Monitor, Server, Smartphone, Database, Cloud } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const categories = [
   {
@@ -40,8 +41,10 @@ const categories = [
 
 export default function WATech() {
   return (
-    <section className="py-16 sm:py-20 lg:py-18 bg-white">
-      <div className="max-w-[1100px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
+    <section className="py-16 sm:py-20 lg:py-18 bg-white relative overflow-hidden">
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1100px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span

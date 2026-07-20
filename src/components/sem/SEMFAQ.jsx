@@ -1,5 +1,6 @@
 ﻿import { useState } from 'react'
 import { HelpCircle, Plus, Minus } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   { q: 'What is the best Google Ads company in Thanjavur?',             a: 'ARA Discover Marketing is one of the best search engine marketing (SEM) agencies in Thanjavur, offering PPC Management, Google Search Ads, Display Ads, YouTube Ads, and Shopping Ads services.',                                                                                    color: '#2563eb' },
@@ -14,8 +15,9 @@ export default function SEMFAQ() {
   const [active, setActive] = useState(0)
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[860px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="relative py-16 bg-white overflow-hidden">
+      <SectionDecor variant="b" />
+      <div className="relative max-w-[860px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* â”€â”€ Header â”€â”€ */}
         <div className="text-center mb-12 reveal">

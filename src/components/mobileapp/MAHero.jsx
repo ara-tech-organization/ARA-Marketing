@@ -80,12 +80,12 @@ export default function MAHero() {
             {/* Badge */}
             <span className="inline-flex self-start items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-7"
               style={{ background: 'rgba(37,99,235,0.18)', border: '1px solid rgba(96,165,250,0.30)', color: '#93c5fd' }}>
-              <Smartphone size={10} /> Mobile App Development Â· Thanjavur
+              <Smartphone size={10} /> Mobile App Development &middot; Thanjavur
             </span>
 
-            {/* H1 â€” 2 lines */}
+            {/* H1 — 2 lines */}
             <h1 className="font-bold leading-[1.2] tracking-tight mb-5"
-              style={{ fontSize: '50px', color: '#ffffff' }}>
+              style={{ fontSize: 'clamp(28px, 7vw, 50px)', color: '#ffffff' }}>
               <span style={{ display: 'block' }}>Build Powerful Mobile</span>
               <span style={{ display: 'block' }}>
                 Apps for{' '}

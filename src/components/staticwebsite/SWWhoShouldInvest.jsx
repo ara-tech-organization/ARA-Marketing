@@ -3,6 +3,7 @@ import imgLocalBusiness from '../../assets/Static/Local Businesses.webp'
 import imgPortfolio     from '../../assets/Static/Portfolio.Websites.webp'
 import imgEducational   from '../../assets/Static/Educational.jpg'
 import imgService       from '../../assets/Static/Service.jpg'
+import SectionDecor from '../common/SectionDecor'
 
 const audiences = [
   {
@@ -53,6 +54,7 @@ export default function SWWhoShouldInvest() {
     <section
       className="py-16 sm:py-20 relative overflow-hidden bg-white"
     >
+      <SectionDecor variant="b" />
       {/* Subtle bg */}
       <div className="absolute inset-0 pointer-events-none"
         style={{

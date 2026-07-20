@@ -2,6 +2,7 @@
   ClipboardList, Search, Layout, PenTool, MessageSquare,
   Package, Printer, Layers
 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   {
@@ -44,6 +45,8 @@ const steps = [
 export default function GDProcess() {
   return (
     <section className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="b" />
+
       {/* Light grid pattern */}
       <div
         className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"

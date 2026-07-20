@@ -4,6 +4,7 @@ import wpEduImg       from '../../assets/Wordpress/educational.webp'
 import wpCorpImg      from '../../assets/Wordpress/Corporate.webp'
 import wpPortImg      from '../../assets/Wordpress/Portfolio.webp'
 import wpServiceImg   from '../../assets/Wordpress/Service.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   {
@@ -57,6 +58,7 @@ export default function CMSPortfolio() {
   return (
     <section className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+      <SectionDecor variant="c" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />

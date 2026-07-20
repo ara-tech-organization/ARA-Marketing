@@ -1,4 +1,5 @@
 import { Zap, TrendingUp, Settings, DollarSign, Smartphone, Cpu, ArrowRight, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const benefits = [
   {
@@ -67,6 +68,7 @@ const trustPoints = [
 export default function MABenefits() {
   return (
     <section className="relative py-14 sm:py-16 lg:py-20 overflow-hidden bg-white">
+      <SectionDecor variant="c" />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

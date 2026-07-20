@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Phone, Mail, MapPin, Clock, Send, User, ArrowRight, Loader2 } from 'lucide-react'
 import { submitContactForm } from '../../utils/submitContactForm'
 import ServiceDropdown from '../common/ServiceDropdown'
+import SectionDecor from '../common/SectionDecor'
 
 const infoCards = [
   {
@@ -96,7 +97,8 @@ export default function ContactMain() {
   const inputBlur  = { borderColor: '#e2e8f0', boxShadow: 'none' }
 
   return (
-    <section id="contact-form" className="relative py-12 md:py-16 lg:py-20" style={{ background: 'white' }}>
+    <section id="contact-form" className="relative overflow-hidden py-12 md:py-16 lg:py-20" style={{ background: 'white' }}>
+      <SectionDecor variant="b" />
 
       {/* Subtle bg orbs */}
       <div className="absolute pointer-events-none rounded-full"

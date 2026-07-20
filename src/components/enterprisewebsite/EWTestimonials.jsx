@@ -1,4 +1,5 @@
 import { Quote, Star, Users } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -33,6 +34,8 @@ export default function EWTestimonials() {
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{ background: '#ffffff' }}
     >
+      <SectionDecor variant="b" />
+
       {/* Dot grid */}
       <div
         className="absolute inset-0 pointer-events-none"

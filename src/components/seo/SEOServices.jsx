@@ -8,6 +8,7 @@ import offPageImg   from '../../assets/SEO/Off-page.webp'
 import technicalImg from '../../assets/SEO/Technical.webp'
 import localImg     from '../../assets/SEO/Local.webp'
 import mobileImg    from '../../assets/SEO/Mobile.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const tabs = [
   {
@@ -81,9 +82,10 @@ export default function SEOServices() {
   const tab = tabs[active]
 
   return (
-    <section id="seo-services" className="py-12 md:py-16 lg:py-16 bg-white relative">
+    <section id="seo-services" className="py-12 md:py-16 lg:py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="c" />
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-8 md:mb-10 lg:mb-14 reveal">

@@ -1,5 +1,6 @@
 ﻿import { useState } from 'react'
 import { Layers, ChevronRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -32,8 +33,10 @@ export default function WebDevFAQ() {
   const [active, setActive] = useState(0)
 
   return (
-    <section className="py-16" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-16 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
+      <SectionDecor variant="c" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600

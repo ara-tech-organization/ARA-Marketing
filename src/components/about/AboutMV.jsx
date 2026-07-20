@@ -2,6 +2,7 @@ import { Target, Eye, Zap, Globe, Rocket, TrendingUp, Lightbulb, Cpu } from 'luc
 
 import missionImage from '../../assets/About/A2.webp'
 import visionImage from '../../assets/About/A3.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const missionPoints = [
   { icon: Target,     text: 'Deliver customized solutions that enhance online visibility' },
@@ -19,6 +20,7 @@ export default function AboutMV() {
   return (
     <section id="our-story" className="relative overflow-hidden py-20 sm:py-18"
       style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="a" />
 
       {/* ── Background decorations ── */}
       <div className="absolute pointer-events-none rounded-full"

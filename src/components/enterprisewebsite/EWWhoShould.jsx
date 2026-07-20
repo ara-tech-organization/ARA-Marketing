@@ -1,4 +1,5 @@
 import { Building2, ShoppingCart, Globe, BrainCircuit, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const segments = [
   {
@@ -40,6 +41,8 @@ export default function EWWhoShould() {
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#f8faff 0%,#eef4ff 60%,#f4f8ff 100%)' }}
     >
+      <SectionDecor variant="c" />
+
       {/* Dot grid */}
       <div
         className="absolute inset-0 pointer-events-none"

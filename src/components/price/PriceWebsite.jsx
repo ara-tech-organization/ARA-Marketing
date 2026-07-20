@@ -1,4 +1,5 @@
 import { Globe, Check } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const plans = [
   {
@@ -56,8 +57,9 @@ const plans = [
 
 export default function PriceWebsite() {
   return (
-    <section className="py-16 sm:py-20" style={{ background: '#f0f9ff' }}>
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
+    <section className="relative overflow-hidden py-16 sm:py-20" style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

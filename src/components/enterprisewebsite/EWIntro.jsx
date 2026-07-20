@@ -1,5 +1,6 @@
 import { Layers, TrendingUp, ShieldCheck, Clock4, Globe2 } from 'lucide-react'
 import ewIntroImg from '../../assets/Enterprise/e1.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const stats = [
   { val: '500+', label: 'Projects Delivered' },
@@ -25,6 +26,7 @@ export default function EWIntro() {
   return (
     <section id="ew-intro" className="relative overflow-hidden"
       style={{ background: 'linear-gradient(160deg,#f8faff 0%,#eef4ff 60%,#f4f8ff 100%)' }}>
+      <SectionDecor variant="a" />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

@@ -2,6 +2,7 @@
   ClipboardList, Palette, LayoutDashboard, Code2,
   FileText, TestTube, Rocket, Layers
 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   { num: '01', icon: ClipboardList,   title: 'Business Requirement Analysis',      color: '#2563eb', light: '#dbeafe' },
@@ -15,8 +16,10 @@ const steps = [
 
 export default function WebDevProcess() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="a" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600

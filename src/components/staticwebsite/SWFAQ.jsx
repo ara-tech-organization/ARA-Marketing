@@ -1,5 +1,6 @@
 ﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -91,12 +92,13 @@ export default function SWFAQ() {
 
   return (
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="a" />
       <div
         className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }}
       />
 
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1000px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

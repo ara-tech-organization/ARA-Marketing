@@ -1,4 +1,5 @@
 ﻿import { Quote, Star, MessageSquare } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -54,6 +55,8 @@ export default function WATestimonials() {
       className="py-16 sm:py-20 lg:py-18 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, white 0%, #f0f7ff 100%)' }}
     >
+      <SectionDecor variant="c" />
+
       {/* Decorative large background quote */}
       <div
         className="absolute top-10 left-1/2 -translate-x-1/2 pointer-events-none select-none"

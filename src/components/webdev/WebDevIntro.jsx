@@ -1,9 +1,12 @@
 ﻿import { Smartphone, Search, Zap, Code2, Layers } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 export default function WebDevIntro() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="grid lg:grid-cols-[55%_45%] gap-8 lg:gap-14 items-center">
 
           <div className="text-center lg:text-left">

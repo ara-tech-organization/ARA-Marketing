@@ -1,4 +1,5 @@
 import { Smartphone, Code2, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 import androidImage from '../../assets/MobileApp/Android.webp'
 
@@ -13,6 +14,7 @@ export default function MAAndroid() {
   return (
     <section className="relative overflow-hidden py-16 sm:py-16"
       style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="a" />
       <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[500px] h-[500px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-10"

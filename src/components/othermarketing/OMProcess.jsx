@@ -1,4 +1,5 @@
 import { Search, ClipboardList, Palette, Zap, Eye, BarChart2, RefreshCw, LineChart, ArrowRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   { num: 1, icon: Search,        title: 'Business & Audience Analysis',      desc: 'Deep-dive analysis of goals, audience, and competitors to identify winning opportunities across all channels.',  color: '#2563eb', accent: '#dbeafe' },
@@ -12,9 +13,10 @@ const steps = [
 
 export default function OMProcess() {
   return (
-    <section className="py-20 overflow-hidden bg-white">
+    <section className="relative py-20 overflow-hidden bg-white">
+      <SectionDecor variant="a" />
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

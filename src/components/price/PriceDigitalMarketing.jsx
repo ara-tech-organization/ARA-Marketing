@@ -1,4 +1,5 @@
 import { Megaphone, Check, X, Zap, Star } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const features = [
   { label: 'Facebook & Instagram Management', pro: true,  proPlus: true },
@@ -42,6 +43,7 @@ function FeatureRow({ label, value, accent }) {
 export default function PriceDigitalMarketing() {
   return (
     <section className="py-16 sm:py-20 relative overflow-hidden" style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="a" />
 
       {/* subtle glow orbs */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[300px] pointer-events-none"

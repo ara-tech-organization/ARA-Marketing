@@ -70,13 +70,13 @@ export default function CMSHero() {
                 style={{ background: 'rgba(255,255,255,0.1)', color: '#93c5fd', border: '1px solid rgba(255,255,255,0.2)' }}
               >
                 <Sparkles size={11} />
-                CMS Website Development â€” Thanjavur
+                CMS Website Development &mdash; Thanjavur
               </span>
             </div>
 
             {/* H1 */}
             <h1 className="animate-hero-d2 text-white leading-[1.2] tracking-tight mb-6"
-              style={{ fontWeight: 600, fontSize: '40px' }}>
+              style={{ fontWeight: 600, fontSize: 'clamp(26px, 6.5vw, 40px)' }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>Build Powerful WordPress</span>
               <span style={{ display: 'block', whiteSpace: 'normal', color: '#60a5fa' }}>Websites That Grow Your Business</span>
             </h1>
@@ -177,7 +177,7 @@ export default function CMSHero() {
                 <div className="relative overflow-hidden" style={{ height: '480px' }}>
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=700&h=300&fit=crop&auto=format&q=80"
-                    alt="CMS Website Development in Thanjavur â€” ARA Discover Marketing"
+                    alt="CMS Website Development in Thanjavur — ARA Discover Marketing"
                     className="w-full h-full object-cover"
                     loading="eager"
                   />

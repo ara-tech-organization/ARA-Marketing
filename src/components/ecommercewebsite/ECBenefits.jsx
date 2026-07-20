@@ -1,5 +1,6 @@
 import { Clock, Globe2, RefreshCw, DollarSign, Heart, Zap, ArrowRight } from 'lucide-react'
 import ecBenefitsImg from '../../assets/E-commerce/e2.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const benefits = [
   {
@@ -94,6 +95,7 @@ export default function ECBenefits() {
   return (
     <section className="relative py-16 sm:py-20 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f8faff 0%, #ffffff 50%, #f0f7ff 100%)' }}>
+      <SectionDecor variant="b" />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

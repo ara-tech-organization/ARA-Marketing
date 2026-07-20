@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Quote, Star, MessageSquare } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -33,6 +34,8 @@ export default function SEOTestimonials() {
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: '#ffffff' }}
     >
+      <SectionDecor variant="c" />
+
       {/* Orbs */}
       <div className="absolute -top-16 right-0 w-[480px] h-[480px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

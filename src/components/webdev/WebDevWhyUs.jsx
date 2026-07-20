@@ -1,4 +1,5 @@
 ﻿import { Smartphone, Search, Zap, Palette, Shield, Headphones, Layers, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   { icon: Smartphone, title: 'Mobile-first responsive design approach',        desc: 'Every website we build looks flawless on all screen sizes — from desktop to mobile.',        color: '#2563eb' },
@@ -11,8 +12,10 @@ const reasons = [
 
 export default function WebDevWhyUs() {
   return (
-    <section className="py-16" style={{ background: 'linear-gradient(180deg, #f0f9ff 0%, #f8faff 100%)' }}>
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-16 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #f0f9ff 0%, #f8faff 100%)' }}>
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="reveal grid lg:grid-cols-[42%_58%] gap-8 lg:gap-14 items-center">
 

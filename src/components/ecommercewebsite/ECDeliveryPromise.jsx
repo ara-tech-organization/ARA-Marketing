@@ -1,5 +1,6 @@
 import { Award, ShieldCheck, Zap, Clock, Headphones, Layers, ArrowRight, CheckCircle2 } from 'lucide-react'
 import ecDeliveryImg from '../../assets/E-commerce/e1.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const promises = [
   { icon: Layers,      title: 'Fully Customised\nE-Commerce Solutions',  desc: 'Every store is built from scratch, tailored to your brand identity and business goals.',          color: '#2563eb', bg: '#dbeafe' },
@@ -12,6 +13,7 @@ const promises = [
 export default function ECDeliveryPromise() {
   return (
     <section className="relative py-16 sm:py-16 overflow-hidden" style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="c" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '30px 30px' }} />

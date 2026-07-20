@@ -2,6 +2,7 @@ import { Monitor, Play, ShoppingBag, CheckCircle2, ArrowRight } from 'lucide-rea
 import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
 import videoImg    from '../../assets/SEM/Video-editing.webp'
 import ecommerceImg from '../../assets/SEM/E-commerce.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const adTypes = [
   {
@@ -56,8 +57,9 @@ const adTypes = [
 
 export default function SEMAdTypes() {
   return (
-    <section className="py-16 sm:py-20 lg:py-16 bg-white overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col gap-20 sm:gap-24 lg:gap-28">
+    <section className="relative py-16 sm:py-20 lg:py-16 bg-white overflow-hidden">
+      <SectionDecor variant="a" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 flex flex-col gap-20 sm:gap-24 lg:gap-28">
         {adTypes.map(({ id, icon: Icon, label, tag, color, imgSrc, imgAlt, paragraphs, items, reverse }) => (
           <div key={id} className={`reveal flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-12 items-center`}>
 

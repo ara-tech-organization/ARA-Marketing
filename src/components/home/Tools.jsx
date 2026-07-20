@@ -1,4 +1,5 @@
 import { BarChart, Search, Globe, TrendingUp, BarChart2, Target, MessageSquare, Palette, Bot } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const tools = [
   { icon: BarChart,      name: 'Google Analytics', desc: 'Data & Insights' },
@@ -13,8 +14,9 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section id="tools" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="tools" className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="a" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

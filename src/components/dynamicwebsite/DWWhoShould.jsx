@@ -1,4 +1,5 @@
 import { ShoppingCart, BookOpen, Newspaper, Home, Briefcase, ArrowRight, Users, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   { icon: ShoppingCart, label: 'E-Commerce Businesses',     desc: 'Online stores that need product catalogue updates, cart systems, and real-time inventory management for seamless shopping.',             color: '#2563eb' },
@@ -17,6 +18,7 @@ export default function DWWhoShould() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+      <SectionDecor variant="c" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />

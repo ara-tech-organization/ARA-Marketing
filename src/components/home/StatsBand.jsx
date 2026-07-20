@@ -1,5 +1,6 @@
 import { FolderCheck, Smile, BarChart2, TrendingUp, Megaphone, Zap, Target, Award } from 'lucide-react'
 import useCounter from '../../hooks/useCounter'
+import SectionDecor from '../common/SectionDecor'
 
 const stats = [
   {
@@ -97,6 +98,7 @@ function StatItem({ icon: Icon, target, suffix, label, accent, grad, last }) {
 export default function StatsBand() {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
+      <SectionDecor variant="b" />
 
       {/* dot grid texture */}
       <div className="absolute inset-0 pointer-events-none"

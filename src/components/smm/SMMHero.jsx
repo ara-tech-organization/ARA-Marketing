@@ -56,7 +56,7 @@ export default function SMMHero() {
 
             {/* H1 */}
             <h1 className="animate-hero-d2 text-white leading-[1.12] tracking-tight mb-5"
-              style={{ fontSize: '40px', fontWeight: 600 }}>
+              style={{ fontSize: 'clamp(26px, 6.5vw, 40px)', fontWeight: 600 }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>Best Social Media Marketing</span>
               <span className="text-gradient-blue" style={{ display: 'block', whiteSpace: 'normal' }}>Services in Thanjavur</span>
             </h1>

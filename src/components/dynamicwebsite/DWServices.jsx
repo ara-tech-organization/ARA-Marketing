@@ -9,6 +9,7 @@ import portalImg   from '../../assets/Dynamic/ortalWebsites.webp'
 import newsImg     from '../../assets/Dynamic/News&Blog.webp'
 import apiImg      from '../../assets/Dynamic/API-Integrated Websites.webp'
 import webappImg   from '../../assets/Dynamic/CustomWebApplications.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   {
@@ -105,6 +106,7 @@ export default function DWServices() {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
+      <SectionDecor variant="a" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />

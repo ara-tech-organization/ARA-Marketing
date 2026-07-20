@@ -1,4 +1,5 @@
 import { Smartphone, TrendingUp, Users, Cpu, ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 import introImage from '../../assets/MobileApp/m1.webp'
 
 const bullets = [
@@ -43,6 +44,7 @@ export default function MAIntro() {
       className="relative overflow-hidden py-14 sm:py-16 lg:py-20"
       style={{ background: '#f0f9ff' }}
     >
+      <SectionDecor variant="c" />
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-10"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />

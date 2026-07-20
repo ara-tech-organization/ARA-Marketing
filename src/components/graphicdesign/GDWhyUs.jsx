@@ -1,4 +1,5 @@
 ﻿import { Lightbulb, Target, Award, Zap, RotateCcw, DollarSign, Layers } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   {
@@ -36,7 +37,7 @@ const reasons = [
 export default function GDWhyUs() {
   return (
     <section className="relative overflow-hidden py-16 bg-white">
-
+      <SectionDecor variant="b" />
 
       {/* Top border line */}
       <div className="absolute top-0 left-0 right-0 h-px pointer-events-none"

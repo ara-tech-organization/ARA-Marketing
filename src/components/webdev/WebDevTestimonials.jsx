@@ -1,4 +1,5 @@
 ﻿import { Star, Quote, Layers } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -23,8 +24,10 @@ const testimonials = [
 
 export default function WebDevTestimonials() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="a" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
             border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">

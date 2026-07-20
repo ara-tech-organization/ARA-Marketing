@@ -2,6 +2,7 @@ import { ArrowUpRight, Briefcase } from 'lucide-react'
 import healthcareImg from '../../assets/Home/H9.webp'
 import ecommerceImg from '../../assets/Home/H4.webp'
 import realEstateImg from '../../assets/Home/H5.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const caseStudies = [
   {
@@ -33,8 +34,9 @@ const caseStudies = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="portfolio" className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-5 sm:gap-6 mb-14 reveal text-center sm:text-left">

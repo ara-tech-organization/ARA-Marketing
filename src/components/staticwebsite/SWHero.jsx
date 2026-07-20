@@ -73,7 +73,7 @@ export default function SWHero() {
 
             {/* H1 */}
             <h1 className="leading-[1.08] tracking-tight mb-5 text-white"
-              style={{ fontSize: '40px', fontWeight: 600 }}>
+              style={{ fontSize: 'clamp(26px, 6.5vw, 40px)', fontWeight: 600 }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>
                 Launch Your Online{' '}
                 <span className="text-gradient-blue">Presence</span>

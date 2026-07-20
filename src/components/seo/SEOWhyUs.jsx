@@ -1,4 +1,5 @@
 ﻿import { Cpu, Users, BarChart2, Shield, DollarSign, Target, Award, ArrowRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   { icon: Target,     num: '01', title: 'Customized SEO Strategies',    desc: 'Tailored SEO solutions designed for every business type, industry, and target audience.',                      color: '#2563eb' },
@@ -38,6 +39,8 @@ export default function SEOWhyUs() {
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      <SectionDecor variant="a" />
+
       {/* Orbs */}
       <div className="absolute -top-24 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

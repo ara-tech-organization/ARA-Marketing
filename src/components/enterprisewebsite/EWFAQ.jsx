@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -33,6 +34,7 @@ export default function EWFAQ() {
 
   return (
     <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-white">
+      <SectionDecor variant="c" />
 
       {/* Very subtle dot grid */}
       <div

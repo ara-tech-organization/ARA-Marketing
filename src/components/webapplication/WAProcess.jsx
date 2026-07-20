@@ -1,4 +1,5 @@
 import { Search, Palette, Code2, FlaskConical, Rocket, ArrowRight, GitBranch } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   {
@@ -49,13 +50,15 @@ export default function WAProcess() {
       className="py-16 sm:py-20 lg:py-18 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #eff6ff 0%, #f0f7ff 100%)' }}
     >
+      <SectionDecor variant="c" />
+
       {/* Decorative orbs */}
       <div className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute bottom-0 right-0 w-[280px] h-[280px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
 
-      <div className="max-w-[1280px] mx-auto px-3 xs:px-4 sm:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-3 xs:px-4 sm:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 reveal">

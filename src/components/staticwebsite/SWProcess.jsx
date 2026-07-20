@@ -1,4 +1,5 @@
 import { ClipboardList, Palette, Code2, Gauge, Rocket, ArrowRight, GitBranch } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   {
@@ -41,6 +42,7 @@ const steps = [
 export default function SWProcess() {
   return (
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="a" />
       {/* Background tint */}
       <div
         className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
@@ -51,7 +53,7 @@ export default function SWProcess() {
         style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.04) 0%, transparent 65%)' }}
       />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

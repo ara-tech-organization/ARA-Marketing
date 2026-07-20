@@ -3,6 +3,7 @@ import { CheckCircle2, ArrowRight, Layers, Zap, Globe } from 'lucide-react'
 import shopifyImg    from '../../assets/E-commerce/Shopify.webp'
 import wooImg        from '../../assets/E-commerce/woo.webp'
 import enterpriseImg from '../../assets/E-commerce/Enterprise.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const C1 = '#2563eb'
 const C2 = '#1e40af'
@@ -62,6 +63,7 @@ export default function ECPlatforms() {
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
+      <SectionDecor variant="a" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />

@@ -5,6 +5,7 @@ import ecommerceImg  from '../../assets/WebApp/E-commerce.webp'
 import aiImg         from '../../assets/WebApp/AI.webp'
 import webImg        from '../../assets/WebApp/Web.webp'
 import enterpriseImg from '../../assets/WebApp/Enterprise.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   {
@@ -69,8 +70,10 @@ export default function WAServices() {
   const s = services[active]
 
   return (
-    <section id="wa-services" className="py-16 sm:py-20 lg:py-18 bg-white">
-      <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
+    <section id="wa-services" className="py-16 sm:py-20 lg:py-18 bg-white relative overflow-hidden">
+      <SectionDecor variant="a" />
+
+      <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span

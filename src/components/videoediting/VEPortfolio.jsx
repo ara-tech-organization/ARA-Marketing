@@ -5,6 +5,7 @@ import corporateImg from '../../assets/Video-editing/corporate-films.webp'
 import productImg   from '../../assets/Video-editing/product-add.webp'
 import droneImg     from '../../assets/Video-editing/Drone-add.webp'
 import eventImg     from '../../assets/Video-editing/Event-coverage.webp'
+import SectionDecor from '../common/SectionDecor'
 
 // Row 1: Branding(2) + Social(1)   = 3 cols
 // Row 2: Corporate(1) + Product(1) + Drone(1) = 3 cols
@@ -21,6 +22,8 @@ const categories = [
 export default function VEPortfolio() {
   return (
     <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#f0f9ff' }}>
+
+      <SectionDecor variant="c" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />

@@ -1,5 +1,6 @@
 ﻿import { useState } from 'react'
 import { ChevronDown, Layers } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -35,10 +36,11 @@ export default function SMMFAQ() {
 
   return (
     <section
-      className="py-16"
+      className="relative overflow-hidden py-16"
       style={{ background: '#ffffff' }}
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <SectionDecor variant="b" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

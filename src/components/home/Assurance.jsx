@@ -1,4 +1,5 @@
 import { BarChart, Users, Eye, Target, TrendingUp, Shield } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const assurances = [
   { icon: BarChart,   title: 'Monthly Marketing Reports & Campaign Performance Tracking', desc: 'Detailed monthly campaign performance tracking with clear insights and actionable recommendations.' },
@@ -11,8 +12,9 @@ const assurances = [
 
 export default function Assurance() {
   return (
-    <section id="assurance" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="assurance" className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="a" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

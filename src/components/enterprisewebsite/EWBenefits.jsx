@@ -1,4 +1,5 @@
 import { Cpu, TrendingUp, ShieldCheck, Paintbrush2, ShoppingBag, Settings2, Zap, CheckCircle2, ArrowUpRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const benefits = [
   {
@@ -55,6 +56,7 @@ const trustPoints = [
 export default function EWBenefits() {
   return (
     <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden bg-white">
+      <SectionDecor variant="a" />
 
       {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"

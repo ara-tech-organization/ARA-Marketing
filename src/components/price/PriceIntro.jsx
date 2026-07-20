@@ -1,4 +1,5 @@
 import { Globe, Search, Megaphone, Share2, MapPin, MessageCircle, Palette, Printer } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   { icon: Globe,         label: 'Website Development Packages' },
@@ -13,8 +14,9 @@ const services = [
 
 export default function PriceIntro() {
   return (
-    <section id="price-packages" className="py-16 sm:py-20 bg-white">
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
+    <section id="price-packages" className="relative overflow-hidden py-16 sm:py-20 bg-white">
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { HelpCircle, MessageSquare, ArrowRight, ShoppingCart, ChevronRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const C1 = '#2563eb'
 const C2 = '#1e40af'
@@ -61,6 +62,7 @@ export default function ECFAQ() {
   return (
     <section className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 50%, #e0f2fe 100%)' }}>
+      <SectionDecor variant="a" />
 
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none"

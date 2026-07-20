@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { HelpCircle, ChevronDown, BookOpen } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -77,6 +78,7 @@ export default function CMSFAQ() {
 
   return (
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="a" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute top-0 left-0 w-[350px] h-[350px] rounded-full pointer-events-none"

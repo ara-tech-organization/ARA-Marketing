@@ -4,6 +4,7 @@ import mobileImg       from '../../assets/E-commerce/Mobile-Friendly.webp'
 import seoOptImg       from '../../assets/E-commerce/SEO-optimization.webp'
 import seoImg          from '../../assets/E-commerce/SEO.webp'
 import highSpeedImg    from '../../assets/E-commerce/High-Speed.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   {
@@ -51,6 +52,7 @@ const reasons = [
 export default function ECWhyUs() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
+      <SectionDecor variant="a" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />

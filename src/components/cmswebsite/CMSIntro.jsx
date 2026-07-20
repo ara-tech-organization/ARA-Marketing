@@ -1,5 +1,6 @@
 import { ArrowRight, TrendingUp, Settings, Users, Sparkles } from 'lucide-react'
 import cmsIntroImg from '../../assets/Wordpress/w1.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const pillars = [
   {
@@ -26,8 +27,9 @@ export default function CMSIntro() {
   return (
     <section
       id="cms-intro"
-      className="overflow-hidden py-16 sm:py-16 bg-white"
+      className="relative overflow-hidden py-16 sm:py-16 bg-white"
     >
+      <SectionDecor variant="b" />
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
 

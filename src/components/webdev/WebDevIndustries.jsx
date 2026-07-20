@@ -3,6 +3,7 @@ import {
   HeartPulse, GraduationCap, Building2, ShoppingCart,
   UtensilsCrossed, Factory, TrendingUp, Store, Layers, ArrowRight
 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   { icon: HeartPulse,      title: 'Healthcare',                color: '#db2777', bg: '#fce7f3' },
@@ -43,8 +44,10 @@ function IndustryPill({ icon: Icon, title, color, bg }) {
 
 export default function WebDevIndustries() {
   return (
-    <section className="py-16" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="py-16 relative overflow-hidden" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #ffffff 100%)' }}>
+      <SectionDecor variant="a" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-blue-600

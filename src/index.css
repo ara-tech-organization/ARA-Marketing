@@ -87,6 +87,18 @@ h6 { font-size: 12px !important; }
   0%, 100% { opacity: 1; transform: scale(1); }
   50%       { opacity: 0.45; transform: scale(1.45); }
 }
+@keyframes decor-drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50%       { transform: translate(14px, -18px) rotate(8deg); }
+}
+@keyframes decor-drift-rev {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50%       { transform: translate(-16px, 14px) rotate(-10deg); }
+}
+@keyframes decor-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
 @keyframes hero-enter {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: none; }
@@ -110,6 +122,14 @@ h6 { font-size: 12px !important; }
 .animate-orb         { animation: orb-drift 12s ease-in-out infinite; }
 .animate-orb-rev     { animation: orb-drift 10s 2s ease-in-out infinite reverse; }
 .animate-pulse-dot   { animation: pulse-dot 2s infinite; }
+.animate-decor-drift     { animation: decor-drift 14s ease-in-out infinite; }
+.animate-decor-drift-rev { animation: decor-drift-rev 18s ease-in-out infinite; }
+.animate-decor-spin      { animation: decor-spin 60s linear infinite; }
+.animate-decor-spin-rev  { animation: decor-spin 80s linear infinite reverse; }
+@media (prefers-reduced-motion: reduce) {
+  .animate-decor-drift, .animate-decor-drift-rev,
+  .animate-decor-spin, .animate-decor-spin-rev { animation: none; }
+}
 
 .animate-hero-enter   { animation: hero-enter .8s cubic-bezier(0.4,0,0.2,1) both; }
 .animate-hero-d1      { animation: hero-enter .7s 0.05s cubic-bezier(0.4,0,0.2,1) both; }

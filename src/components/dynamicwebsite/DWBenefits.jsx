@@ -1,5 +1,6 @@
 ﻿import { Database, RefreshCw, TrendingUp, Users, GitBranch, Globe2, CheckCircle2, Zap } from 'lucide-react'
 import dwBenefitsImg from '../../assets/Dynamic/d1.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const benefits = [
   { icon: Database,   label: 'Easy content management through CMS platforms',   color: '#93c5fd' },
@@ -12,6 +13,7 @@ const benefits = [
 export default function DWBenefits() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
+      <SectionDecor variant="a" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />

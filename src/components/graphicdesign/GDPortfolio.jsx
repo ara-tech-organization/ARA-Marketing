@@ -5,6 +5,7 @@ import socialImg     from '../../assets/GD/SocialMediaPost.webp'
 import flyerImg      from '../../assets/GD/Flyer&Poster Design.webp'
 import visualsImg    from '../../assets/GD/Visuals.webp'
 import visitingImg   from '../../assets/GD/Visitingcard.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const categories = [
   { label: 'Logo Designs',           icon: Frame,     color: '#2563eb', bg: '#dbeafe' },
@@ -60,6 +61,8 @@ export default function GDPortfolio() {
       className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      <SectionDecor variant="a" />
+
       {/* Wave top */}
       <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>
         <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,0 L0,0 Z" fill="rgba(255,255,255,0.9)" />

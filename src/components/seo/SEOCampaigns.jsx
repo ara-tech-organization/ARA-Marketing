@@ -1,5 +1,6 @@
 ﻿import { Trophy, TrendingUp, Users, BarChart2, Globe2, CheckCircle, Briefcase } from 'lucide-react'
 import seoCampaignImg from '../../assets/SEO/s3.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   'Healthcare', 'Education', 'Real Estate',
@@ -20,7 +21,9 @@ export default function SEOCampaigns() {
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
       style={{ background: '#ffffff' }}
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-8 md:mb-10 lg:mb-14 reveal">

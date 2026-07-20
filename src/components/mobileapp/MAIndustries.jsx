@@ -1,4 +1,5 @@
 ﻿import { ShoppingCart, Heart, BookOpen, DollarSign, Truck, Building2, Sparkles } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   { icon: ShoppingCart, title: 'eCommerce & Retail',        desc: 'Feature-rich shopping apps with seamless checkout, product catalogues, and secure payment integrations.', color: '#1e40af' },
@@ -16,6 +17,7 @@ export default function MAIndustries() {
   return (
     <section className="py-16 sm:py-16 relative overflow-hidden"
       style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="b" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-10"

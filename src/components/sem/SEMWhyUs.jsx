@@ -1,4 +1,5 @@
 ﻿import { Cpu, Users, BarChart2, Shield, DollarSign, Target, Award } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   { icon: Target,     title: 'AI-Focused PPC Campaign Strategies',       desc: 'Advanced AI-powered bidding and targeting strategies that maximize conversions while reducing wasted ad spend.',                     color: '#60a5fa', num: '01' },
@@ -12,6 +13,7 @@ const reasons = [
 export default function SEMWhyUs() {
   return (
     <section className="relative py-16 overflow-hidden bg-white">
+      <SectionDecor variant="b" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

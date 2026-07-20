@@ -1,5 +1,6 @@
 ﻿import useCounter from '../../hooks/useCounter'
 import { FolderOpen, Users, TrendingUp, Star, Globe2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const allStats = [
   { target: 200, suffix: '+', label: 'PPC Campaigns Successfully Managed',  sub: 'All ad types covered',      icon: FolderOpen, color: '#2563eb' },
@@ -46,9 +47,10 @@ function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
 
 export default function SEMStats() {
   return (
-    <section className="overflow-hidden py-16 bg-white">
+    <section className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="a" />
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="flex flex-col lg:flex-row gap-8 items-end mb-12 reveal">

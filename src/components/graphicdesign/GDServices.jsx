@@ -7,6 +7,7 @@ import stationeryImg  from '../../assets/GD/CorporateStationery.webp'
 import socialImg      from '../../assets/GD/SocialMediaPost.webp'
 import flyerImg       from '../../assets/GD/Flyer&Poster Design.webp'
 import visualsImg     from '../../assets/GD/Visuals.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   {
@@ -89,6 +90,8 @@ export default function GDServices() {
       id="gd-services"
       className="relative overflow-hidden py-16 bg-white"
     >
+      <SectionDecor variant="c" />
+
       {/* Subtle dot bg */}
       <div
         className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"

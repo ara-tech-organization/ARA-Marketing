@@ -1,4 +1,5 @@
 import { Smartphone, Search, Zap, Shield, Headphones, Eye, Phone, ArrowRight, Layers } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const assurances = [
   { icon: Smartphone, title: 'Fully Responsive Website Design',  color: '#2563eb', num: '01' },
@@ -13,6 +14,8 @@ export default function WebDevAssurance() {
   return (
     <section className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eff6ff 100%)' }}>
+      <SectionDecor variant="a" />
+
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px', opacity: 0.22 }} />
       <svg className="absolute top-0 left-0 w-full pointer-events-none" viewBox="0 0 1200 60" preserveAspectRatio="none" style={{ height: 60 }}>

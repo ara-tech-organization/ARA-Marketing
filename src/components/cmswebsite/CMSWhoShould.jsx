@@ -1,4 +1,5 @@
 ﻿import { Store, ShoppingCart, PenLine, Building2, GraduationCap, CheckCircle2, Target } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const audiences = [
   { icon: Store,         title: 'Small & Medium Businesses',  desc: 'Get a professional online presence that grows with your business — flexible, affordable, and easy to manage.',       color: '#2563eb' },
@@ -21,6 +22,7 @@ export default function CMSWhoShould() {
     <section
       className="relative py-16 sm:py-16 overflow-hidden bg-white"
     >
+      <SectionDecor variant="b" />
       {/* Decorative background */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

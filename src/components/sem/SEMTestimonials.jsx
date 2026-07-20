@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Star, MessageSquare, Quote, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -39,9 +40,10 @@ export default function SEMTestimonials() {
   const t = testimonials[active]
 
   return (
-    <section className="py-20 overflow-hidden bg-white">
+    <section className="relative py-20 overflow-hidden bg-white">
+      <SectionDecor variant="c" />
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="text-center mb-10 reveal">

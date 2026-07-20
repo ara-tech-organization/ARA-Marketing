@@ -80,7 +80,7 @@ export default function EWHero() {
 
               {/* H1 */}
               <h1 className="leading-[1.2] tracking-tight mb-5 text-white"
-                style={{ fontWeight: 700, fontSize: '40px' }}>
+                style={{ fontWeight: 700, fontSize: 'clamp(26px, 6.5vw, 40px)' }}>
                 <span style={{ display: 'block' }}>Transform Your Enterprise</span>
                 <span className="text-gradient-blue" style={{ display: 'block' }}>
                   Digital Presence

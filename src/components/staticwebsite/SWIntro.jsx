@@ -1,5 +1,6 @@
 import { Zap, Shield, Search, DollarSign, ArrowRight, Sparkles } from 'lucide-react'
 import swIntroImg from '../../assets/static/s2.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const features = [
   {
@@ -35,6 +36,7 @@ export default function SWIntro() {
       className="relative overflow-hidden py-14 sm:py-16"
       style={{ background: '#f0f9ff' }}
     >
+      <SectionDecor variant="c" />
       {/* BG orbs */}
       <div className="absolute -top-28 -right-28 w-[480px] h-[480px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(219,234,254,0.6) 0%, transparent 65%)' }} />

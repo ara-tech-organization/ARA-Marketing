@@ -1,4 +1,5 @@
 ﻿import { Star, Quote, MessageSquare } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   { text: 'ARA Discover Marketing provided professional corporate video editing services in Thanjavur with excellent creativity and fast delivery. Their team truly understands brand storytelling.', name: 'Ramesh Kumar',   role: 'CEO, Thanjavur Textile Exports',  rating: 5, color: '#2563eb', avatar: 'R' },
@@ -9,6 +10,8 @@ const testimonials = [
 export default function VETestimonials() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
+
+      <SectionDecor variant="b" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />

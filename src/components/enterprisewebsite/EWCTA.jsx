@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Send, Phone, Building2, ChevronRight, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 export default function EWCTA() {
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' })
@@ -36,6 +37,8 @@ export default function EWCTA() {
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{ background: '#f0f9ff' }}
     >
+      <SectionDecor variant="b" />
+
       {/* Dot grid */}
       <div
         className="absolute inset-0 pointer-events-none"

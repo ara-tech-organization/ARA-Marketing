@@ -1,4 +1,5 @@
 import { Trophy, Cpu, Users, Clock, Briefcase, Sparkles, CheckCircle2, Star } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 import whyUsImage from '../../assets/MobileApp/m2.webp'
 
 const checklist = [
@@ -55,6 +56,7 @@ const reasons = [
 export default function MAWhyUs() {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
+      <SectionDecor variant="c" />
 
       {/* subtle background accents */}
       <div className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"

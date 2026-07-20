@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ChevronDown, MessageSquare, ArrowRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   { q: 'Which is the best digital marketing company in Thanjavur?',          a: 'ARA Discover Marketing is known as one of the best digital marketing companies in Thanjavur, providing SEO, social media marketing, Google Ads, branding and lead generation services for businesses across all industries.' },
@@ -14,8 +15,9 @@ export default function FAQ() {
   const [open, setOpen] = useState(0)
 
   return (
-    <section id="faq" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="faq" className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="b" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-20 items-start">
 
           {/* Left */}

@@ -1,9 +1,11 @@
 ﻿import { Sparkles, TrendingUp, Users, Award, Zap, CheckCircle, Star } from 'lucide-react'
 import gdIntroImg from '../../assets/GD/G2.webp'
+import SectionDecor from '../common/SectionDecor'
 
 export default function GDIntro() {
   return (
     <section className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="a" />
       {/* Subtle grid */}
       <div
         className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"

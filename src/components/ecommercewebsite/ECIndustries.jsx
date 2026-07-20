@@ -4,6 +4,7 @@ import electronicsImg from '../../assets/E-commerce/Electronics.webp'
 import groceryImg    from '../../assets/E-commerce/Grocery.webp'
 import furnitureImg  from '../../assets/E-commerce/Furniture.webp'
 import multiVendorImg from '../../assets/E-commerce/Multi-Vendor.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   {
@@ -52,6 +53,7 @@ export default function ECIndustries() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(160deg, #f0f7ff 0%, #eff6ff 55%, #e0f2fe 100%)' }}>
+      <SectionDecor variant="b" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />

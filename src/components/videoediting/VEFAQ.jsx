@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { HelpCircle, MessageSquare, ArrowRight, Sparkles, Film } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   { q: 'Which company offers the best video editing services in Thanjavur?',  a: 'ARA Discover Marketing is one of the best video editing services in Thanjavur, offering complete YouTube editing solutions, social media videos, corporate videos, branding videos, drone video editing, and more for businesses and brands.', color: '#2563eb', tag: 'General' },
@@ -34,6 +35,8 @@ export default function VEFAQ() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: '#ffffff' }}>
+
+      <SectionDecor variant="a" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />

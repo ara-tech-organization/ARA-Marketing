@@ -1,4 +1,5 @@
 import { Globe, ShoppingBag, Layout, BookOpen, Server, ArrowRight, CheckCircle2 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const platforms = [
   {
@@ -64,6 +65,7 @@ export default function CMSPlatforms() {
       className="relative py-16 sm:py-16 overflow-hidden"
       style={{ background: '#ffffff' }}
     >
+      <SectionDecor variant="c" />
       {/* Background glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

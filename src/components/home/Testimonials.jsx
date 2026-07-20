@@ -1,5 +1,6 @@
 import { Star, Quote, CheckCheck } from 'lucide-react'
 import useTilt from '../../hooks/useTilt'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -86,6 +87,7 @@ export default function Testimonials() {
     <section id="testimonials" className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
+      <SectionDecor variant="c" />
       {/* Blurred orb â€” top left */}
       <div className="absolute -top-24 -left-24 w-[380px] h-[380px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

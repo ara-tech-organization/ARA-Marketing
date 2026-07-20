@@ -1,4 +1,5 @@
 import { PhoneCall, Megaphone, Users, Palette, Video, Printer, BookOpen, Gift, Package } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const additionalServices = [
   { icon: Megaphone, label: 'Meta Ads',            color: '#2563eb' },
@@ -39,8 +40,9 @@ export default function PriceAdditional() {
   return (
     <>
       {/* Additional Services */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
+      <section className="relative overflow-hidden py-16 sm:py-20 bg-white">
+        <SectionDecor variant="a" />
+        <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
 
           <div className="text-center mb-12 reveal">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
@@ -84,8 +86,9 @@ export default function PriceAdditional() {
       </section>
 
       {/* Printing & Branding */}
-      <section className="py-16 sm:py-20" style={{ background: '#f0f9ff' }}>
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
+      <section className="relative overflow-hidden py-16 sm:py-20" style={{ background: '#f0f9ff' }}>
+        <SectionDecor variant="b" />
+        <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 md:px-8">
 
           <div className="text-center mb-12 reveal">
             <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4"

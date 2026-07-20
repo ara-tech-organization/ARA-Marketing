@@ -4,6 +4,7 @@ import googleImg   from '../../assets/SEM/google.webp'
 import displayImg  from '../../assets/SEM/DisplayAdvertising.webp'
 import youtubeImg  from '../../assets/SEM/youtube.webp'
 import shoppingImg from '../../assets/SEM/Shopping.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   {
@@ -47,6 +48,8 @@ export default function SEMServices() {
   return (
     <section id="sem-services" className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+
+      <SectionDecor variant="a" />
 
       {/* Dot grid */}
       <div className="pointer-events-none absolute inset-0"

@@ -1,5 +1,6 @@
 import { Wand2, Layers, Globe, Palette, Play, TrendingUp, Award, ArrowRight } from 'lucide-react'
 import veIntroImg from '../../assets/Video-editing/V2.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const expertise = [
   { icon: Wand2,   label: 'Digital Marketing Video', color: '#2563eb', desc: 'Platform-specific edits crafted to drive engagement and conversions across all digital channels.' },
@@ -18,6 +19,8 @@ export default function VEIntro() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+
+      <SectionDecor variant="b" />
 
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none"

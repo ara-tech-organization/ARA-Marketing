@@ -1,5 +1,6 @@
 ﻿import { useState } from 'react'
 import { HelpCircle, ChevronDown } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -84,8 +85,9 @@ export default function SEOFAQ() {
   const [active, setActive] = useState(0)
 
   return (
-    <section className="py-12 md:py-16 lg:py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="relative py-12 md:py-16 lg:py-16 bg-white overflow-hidden">
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-8 md:mb-10 lg:mb-12 reveal">

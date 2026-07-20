@@ -4,6 +4,7 @@ import {
   Send, UserCheck, MessageSquare, BellRing, Share2,
   MailOpen, RefreshCw, Heart, Megaphone, Activity, InboxIcon,
 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   {
@@ -94,8 +95,9 @@ export default function OMServices() {
   const s = services.find(x => x.id === active)
 
   return (
-    <section id="om-services" className="py-14 bg-white overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="om-services" className="relative py-14 bg-white overflow-hidden">
+      <SectionDecor variant="b" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 reveal text-center sm:text-left">

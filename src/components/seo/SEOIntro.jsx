@@ -1,5 +1,6 @@
 import { Cpu, Globe2, FileText, MapPin, Smartphone } from 'lucide-react'
 import seoIntroImg from '../../assets/SEO/S2.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   { icon: FileText,   label: 'On-Page SEO',   color: '#2563eb', href: '#seo-services' },
@@ -11,8 +12,9 @@ const services = [
 
 export default function SEOIntro() {
   return (
-    <section className="py-12 md:py-16 lg:py-16 overflow-hidden" style={{ background: '#ffffff' }}>
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="relative py-12 md:py-16 lg:py-16 overflow-hidden" style={{ background: '#ffffff' }}>
+      <SectionDecor variant="b" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Split layout: image left, content right ── */}
         <div className="flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-14 items-stretch mb-10 md:mb-12 lg:mb-16">

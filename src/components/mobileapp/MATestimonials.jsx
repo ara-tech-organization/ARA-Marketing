@@ -1,4 +1,5 @@
 ﻿import { Star, Quote, CheckCheck, Users } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const testimonials = [
   {
@@ -81,6 +82,7 @@ export default function MATestimonials() {
     <section className="relative py-16 overflow-hidden"
       style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 40%, #eff6ff 100%)' }}
     >
+      <SectionDecor variant="b" />
       {/* Orbs */}
       <div className="absolute -top-24 -left-24 w-[380px] h-[380px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

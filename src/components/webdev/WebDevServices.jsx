@@ -3,6 +3,7 @@ import {
   Palette, RefreshCw, Code2, Wrench,
   ArrowRight, ChevronRight, Layers, CheckCircle
 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const serviceItems = [
   { icon: Globe2,          label: 'Business Website Development',            color: '#2563eb', bg: '#dbeafe' },
@@ -25,8 +26,10 @@ const customFeatures = [
 
 export default function WebDevServices() {
   return (
-    <section id="webdev-services" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="webdev-services" className="py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-16 reveal">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600

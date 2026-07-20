@@ -1,6 +1,7 @@
 ﻿import {
   Search, Target, Palette, Megaphone, MessageSquare, Activity, BarChart2, Layers
 } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   {
@@ -50,10 +51,11 @@ const steps = [
 export default function SMMWorkflow() {
   return (
     <section
-      className="py-16"
+      className="relative overflow-hidden py-16"
       style={{ background: '#ffffff' }}
     >
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">

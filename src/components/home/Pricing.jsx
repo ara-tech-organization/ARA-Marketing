@@ -1,10 +1,12 @@
 import { TrendingUp, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import SectionDecor from '../common/SectionDecor'
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-16 bg-slate-50">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="pricing" className="relative overflow-hidden py-16 bg-slate-50">
+      <SectionDecor variant="a" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-10 reveal">

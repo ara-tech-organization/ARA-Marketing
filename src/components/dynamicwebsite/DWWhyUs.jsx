@@ -1,4 +1,5 @@
 import { Package, Settings, Cpu, Smartphone, Search, ArrowRight, Zap } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   { icon: Package,    title: 'Custom-Built Dynamic Website Solutions Tailored to Business Needs', desc: 'Every feature, every page, and every interaction is built specifically for your business goals — no generic templates, no compromise on quality.', color: '#2563eb' },
@@ -16,7 +17,7 @@ const gradBlue = {
 export default function DWWhyUs() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden bg-white">
-
+      <SectionDecor variant="a" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

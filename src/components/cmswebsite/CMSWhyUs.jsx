@@ -1,5 +1,6 @@
 ﻿import { Palette, Search, Zap, Shield, Smartphone, HeadphonesIcon, Award, Star, CheckCircle2 } from 'lucide-react'
 import cmsWhyUsImg from '../../assets/Wordpress/w2.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   { icon: Palette,        title: 'Fully Customised WordPress Development', desc: 'Every website we build is crafted from scratch — no templates. Unique designs aligned to your brand identity.',   color: '#2563eb', light: '#dbeafe' },
@@ -19,6 +20,7 @@ const stats = [
 export default function CMSWhyUs() {
   return (
     <section className="relative py-20 sm:py-18 overflow-hidden bg-white">
+      <SectionDecor variant="b" />
 
       {/* Subtle dot grid */}
       <div className="absolute inset-0 pointer-events-none"

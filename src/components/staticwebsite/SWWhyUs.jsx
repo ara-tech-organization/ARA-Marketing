@@ -1,4 +1,5 @@
 import { Code2, Smartphone, Zap, DollarSign, Users, Award, ArrowRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   {
@@ -41,13 +42,14 @@ const reasons = [
 export default function SWWhyUs() {
   return (
     <section className="py-16 sm:py-16 bg-white relative overflow-hidden">
+      <SectionDecor variant="c" />
       {/* Subtle background tint top-right */}
       <div
         className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 65%)' }}
       />
 
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
+      <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
 
           {/* ── Left: Intro block ── */}

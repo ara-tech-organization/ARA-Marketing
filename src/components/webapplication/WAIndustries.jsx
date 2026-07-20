@@ -5,6 +5,7 @@ import startupImage from '../../assets/WebApp/Startup.webp'
 import financeImage from '../../assets/WebApp/Finance.webp'
 import educationImage from '../../assets/WebApp/Education.webp'
 import healthcareImage from '../../assets/WebApp/Healthcare.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const industries = [
   {
@@ -60,10 +61,12 @@ const industries = [
 export default function WAIndustries() {
   return (
     <section
-      className="py-16 sm:py-20 lg:py-18 overflow-hidden"
+      className="py-16 sm:py-20 lg:py-18 overflow-hidden relative"
       style={{ background: 'linear-gradient(180deg, white 0%, #f0f7ff 100%)' }}
     >
-      <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
+      <SectionDecor variant="b" />
+
+      <div className="relative max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span

@@ -9,6 +9,7 @@ import corporateImg  from '../../assets/Video-editing/CorporateFilms.webp'
 import eventImg      from '../../assets/Video-editing/event.webp'
 import socialImg     from '../../assets/Video-editing/Socialmedia.webp'
 import droneImg      from '../../assets/Video-editing/Drone.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const services = [
   {
@@ -74,6 +75,8 @@ export default function VEServices() {
   return (
     <section id="ve-services" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: '#f0f9ff' }}>
+
+      <SectionDecor variant="a" />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"

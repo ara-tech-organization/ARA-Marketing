@@ -1,4 +1,5 @@
 import { Award, Cpu, ShieldCheck, Clock4, Layers3, ArrowUpRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const reasons = [
   {
@@ -136,6 +137,7 @@ export default function EWWhyUs() {
       className="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
       style={{ background: '#ffffff' }}
     >
+      <SectionDecor variant="a" />
 
       {/* Dot grid overlay */}
       <div

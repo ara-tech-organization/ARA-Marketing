@@ -1,5 +1,6 @@
 import { Cpu, Search, Monitor, Play, ShoppingBag, ArrowRight, TrendingUp, BarChart2, Star } from 'lucide-react'
 import semIntroImg from '../../assets/SEM/e1.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const highlights = [
   { value: '300%', label: 'Lead Growth',   color: '#2563eb', icon: TrendingUp },
@@ -23,8 +24,9 @@ const paragraphs = [
 
 export default function SEMIntro() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section className="relative py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Section heading ── */}
         <div className="text-center max-w-[900px] mx-auto mb-8 sm:mb-10 reveal">

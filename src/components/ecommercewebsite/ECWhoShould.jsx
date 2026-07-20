@@ -1,4 +1,5 @@
 import { Store, Truck, Rocket, MapPin, Network, Tag, ArrowRight, Users } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const segments = [
   { icon: Store,   label: 'Retail Businesses',          desc: 'Take your physical retail store online and reach customers across cities.',           color: '#2563eb' },
@@ -13,6 +14,7 @@ export default function ECWhoShould() {
   return (
     <section className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
       style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="c" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />

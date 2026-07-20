@@ -1,5 +1,6 @@
 ﻿import { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -34,8 +35,10 @@ export default function GDFAQ() {
 
   return (
     <section
-      className="py-16 bg-white"
+      className="relative overflow-hidden py-16 bg-white"
     >
+      <SectionDecor variant="c" />
+
       {/* Dot grid */}
       <div
         className="absolute inset-0 pointer-events-none bg-brand-gradient-dots"

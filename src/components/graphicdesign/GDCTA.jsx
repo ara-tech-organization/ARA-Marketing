@@ -1,4 +1,5 @@
 import { ArrowRight, Palette, Frame, BookOpen, Layers, Sparkles, PenTool, Type } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const highlights = [
   { icon: Frame,    label: 'Logo Design' },
@@ -10,6 +11,7 @@ const highlights = [
 export default function GDCTA() {
   return (
     <section className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="b" />
       <div className="relative max-w-[820px] mx-auto px-4 sm:px-6 md:px-7">
         <div
           className="reveal relative overflow-hidden rounded-3xl text-center px-6 py-12 sm:px-12 sm:py-16"

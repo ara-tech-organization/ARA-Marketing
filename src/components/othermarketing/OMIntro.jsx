@@ -1,4 +1,5 @@
 import { Mail, Users, Smartphone, BarChart2, CheckCircle2, TrendingUp, Award, ArrowRight, Sparkles } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 import omIntroImg from '../../assets/Other-services/o1.webp'
 
 const features = [
@@ -17,6 +18,7 @@ const imageStats = [
 export default function OMIntro() {
   return (
     <section className="relative py-20 overflow-hidden bg-white">
+      <SectionDecor variant="c" />
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { HelpCircle, MessageSquare, ArrowRight, ChevronDown, Mail, Users, Smartphone } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const faqs = [
   {
@@ -38,7 +39,8 @@ export default function OMFAQ() {
   const [open, setOpen] = useState(0)
 
   return (
-    <section className="py-20 overflow-hidden bg-white">
+    <section className="relative py-20 overflow-hidden bg-white">
+      <SectionDecor variant="b" />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 

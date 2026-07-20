@@ -6,6 +6,7 @@ import facebookImg    from '../../assets/SMM/Facebook.webp'
 import linkedinImg    from '../../assets/SMM/Linkedin.webp'
 import pinterestImg   from '../../assets/SMM/Pintrest.webp'
 import socialMediaImg from '../../assets/SMM/Socialmedia.webp'
+import SectionDecor from '../common/SectionDecor'
 
 const overviewItems = [
   { icon: Target,        label: 'Social Media Strategy & Planning' },
@@ -140,8 +141,9 @@ function PlatformImage({ src, alt, color, bgLight }) {
 
 export default function SMMServices() {
   return (
-    <section id="smm-services" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
+    <section id="smm-services" className="relative overflow-hidden py-16 bg-white">
+      <SectionDecor variant="c" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-14 reveal">

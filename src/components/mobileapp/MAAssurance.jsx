@@ -1,4 +1,5 @@
 ﻿import { Clock, Cpu, Layers, MessageSquare, CheckCircle2, Shield } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const commitments = [
   {
@@ -31,6 +32,7 @@ export default function MAAssurance() {
   return (
     <section className="py-16 sm:py-16 relative overflow-hidden"
       style={{ background: '#f0f9ff' }}>
+      <SectionDecor variant="b" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-10"

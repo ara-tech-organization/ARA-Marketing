@@ -1,6 +1,7 @@
 import { MapPin, Award, Star, Briefcase, CheckCircle2, ArrowRight, Users, TrendingUp,
   Globe, Quote, Sparkles } from 'lucide-react'
 import mamImg from '../../assets/Mam.png'
+import SectionDecor from '../common/SectionDecor'
 
 const expertise = [
   'Digital Marketing', 'Brand Strategy', 'SEO & SEM',
@@ -33,6 +34,7 @@ const bioParagraphs = [
 export default function AboutCEO() {
   return (
     <section className="relative overflow-hidden py-20 sm:py-18 bg-white">
+      <SectionDecor variant="c" />
 
       {/* ── Background decorations ── */}
       <div className="absolute pointer-events-none rounded-full"

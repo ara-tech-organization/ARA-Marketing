@@ -1,4 +1,5 @@
 import { ClipboardList, Monitor, Code2, Puzzle, Rocket, ChevronRight } from 'lucide-react'
+import SectionDecor from '../common/SectionDecor'
 
 const steps = [
   {
@@ -53,6 +54,7 @@ export default function CMSProcess() {
     <section
       className="relative py-16 sm:py-16 overflow-hidden bg-white"
     >
+      <SectionDecor variant="a" />
       {/* Subtle orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />
