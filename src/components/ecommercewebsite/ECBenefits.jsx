@@ -56,22 +56,22 @@ function BenefitCard({ icon: Icon, title, desc, metric, metricLabel, color, grad
         e.currentTarget.style.transform = 'none'
       }}
     >
-      {/* Gradient top panel */}
-      <div className="flex items-center justify-between px-5 sm:px-6 py-5" style={{ background: grad }}>
+      {/* Top panel */}
+      <div className="flex items-center justify-between px-5 sm:px-6 py-5" style={{ background: '#f0f9ff' }}>
         <div className={`flex items-center gap-4${wide ? '' : ''}`}>
           <div
             className="rounded-xl flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-110"
-            style={{ width: wide ? 48 : 44, height: wide ? 48 : 44, background: 'rgba(255,255,255,0.20)', border: '1.5px solid rgba(255,255,255,0.30)' }}
+            style={{ width: wide ? 48 : 44, height: wide ? 48 : 44, background: grad, border: '1.5px solid #bfdbfe' }}
           >
             <Icon size={wide ? 22 : 19} className="text-white" />
           </div>
           {wide && (
-            <p className="text-[14px] sm:text-[15px] font-bold text-white leading-snug hidden sm:block">{title}</p>
+            <p className="text-[14px] sm:text-[15px] font-bold text-slate-800 leading-snug hidden sm:block">{title}</p>
           )}
         </div>
         <div className="text-right flex-shrink-0">
-          <p className="font-black text-white leading-none" style={{ fontSize: wide ? 44 : 30 }}>{metric}</p>
-          <p className="text-[9.5px] font-semibold mt-0.5" style={{ color: 'rgba(255,255,255,0.68)' }}>{metricLabel}</p>
+          <p className="font-black leading-none" style={{ fontSize: wide ? 44 : 30, color }}>{metric}</p>
+          <p className="text-[9.5px] font-semibold mt-0.5 text-slate-500">{metricLabel}</p>
         </div>
       </div>
 
@@ -143,24 +143,24 @@ export default function ECBenefits() {
         <div className="mt-8 rounded-3xl overflow-hidden flex flex-col sm:flex-row reveal"
           style={{ boxShadow: '0 20px 60px rgba(15,23,42,0.12)', border: '1px solid #e2e8f0' }}>
 
-          {/* Left â€” dark text panel */}
+          {/* Left â€” light text panel */}
           <div className="flex flex-col justify-between items-center sm:items-start p-7 sm:p-10 flex-1 text-center sm:text-left"
-            style={{ background: 'var(--brand-gradient)', minWidth: 0 }}>
+            style={{ background: '#f0f9ff', minWidth: 0 }}>
 
             <span className="inline-flex items-center gap-1.5 self-center sm:self-start text-[9px] font-black uppercase tracking-[0.18em] px-3 py-1.5 rounded-full mb-6"
-              style={{ background: 'rgba(37,99,235,0.25)', color: '#93c5fd', border: '1px solid rgba(147,197,253,0.20)' }}>
+              style={{ background: '#dbeafe', color: '#2563eb', border: '1px solid rgba(37,99,235,0.15)' }}>
               ARA Discover Marketing
             </span>
 
             <div className="flex-1">
-              <h3 className="font-bold text-white leading-[1.25] mb-4"
+              <h3 className="font-bold text-slate-900 leading-[1.25] mb-4"
                 style={{ fontSize: 'clamp(17px,2.2vw,26px)' }}>
                 The Best E-Commerce Web Design &amp; Development Company in Thanjavur
               </h3>
-              <p className="text-[12.5px] leading-[1.80] mb-2" style={{ color: 'rgba(255,255,255,0.55)' }}>
+              <p className="text-[12.5px] leading-[1.80] mb-2 text-slate-600">
                 We offer e-commerce platform development in Thanjavur, which helps you to grow your business in the long run.
               </p>
-              <p className="text-[12.5px] leading-[1.80]" style={{ color: 'rgba(255,255,255,0.40)' }}>
+              <p className="text-[12.5px] leading-[1.80] text-slate-500">
                 We are the best e-commerce web design and development company in Thanjavur, providing secure, scalable, and fast e-commerce systems.
               </p>
             </div>
@@ -171,9 +171,8 @@ export default function ECBenefits() {
                 { val: '3x',   label: 'Revenue Growth'  },
               ].map(({ val, label }) => (
                 <div key={label}>
-                  <div className="text-[26px] font-black leading-none text-white">{val}</div>
-                  <div className="text-[9.5px] font-semibold mt-0.5 uppercase tracking-wider"
-                    style={{ color: 'rgba(255,255,255,0.35)' }}>{label}</div>
+                  <div className="text-[26px] font-black leading-none text-blue-600">{val}</div>
+                  <div className="text-[9.5px] font-semibold mt-0.5 uppercase tracking-wider text-slate-500">{label}</div>
                 </div>
               ))}
             </div>

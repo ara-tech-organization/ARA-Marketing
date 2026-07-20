@@ -56,30 +56,31 @@ const stats = [
 export default function OMWhyUs() {
   return (
     <section className="relative py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}>
 
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
       <div className="absolute top-0 right-0 w-[520px] h-[520px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* Header */}
         <div className="text-center mb-12 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white text-violet-600
-            border border-violet-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 text-blue-400
+            rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
+            style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <Award size={11} /> Why Choose Us
           </span>
-          <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-4">
+          <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-white leading-[1.1] tracking-tight mb-4">
             Why Businesses Choose{' '}
             <span className="text-gradient-blue">
               ARA Discover Marketing
             </span>
           </h2>
-          <p className="text-[14.5px] text-slate-500 leading-[1.85] max-w-[580px] mx-auto">
+          <p className="text-[14.5px] text-white/60 leading-[1.85] max-w-[580px] mx-auto">
             AI-driven strategies, audience targeting, and multi-channel expertise to deliver impactful campaigns with measurable business results.
           </p>
         </div>
@@ -88,12 +89,12 @@ export default function OMWhyUs() {
         <div className="reveal grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-3 mb-12">
           {stats.map(({ value, label, color }) => (
             <div key={label}
-              className="flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-white border border-slate-100 shadow-sm"
-              style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+              className="flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-white/5"
+              style={{ border: '1px solid rgba(255,255,255,0.1)' }}>
               <span className="text-[22px] sm:text-[28px] font-bold leading-none flex-shrink-0 text-gradient-blue">
                 {value}
               </span>
-              <span className="text-[11px] sm:text-[12px] text-slate-500 font-medium max-w-[90px] leading-snug">{label}</span>
+              <span className="text-[11px] sm:text-[12px] text-white/50 font-medium max-w-[90px] leading-snug">{label}</span>
             </div>
           ))}
         </div>
@@ -117,25 +118,26 @@ export default function OMWhyUs() {
           <div className="flex-1 flex flex-col gap-3">
             {reasons.map(({ icon: Icon, title, desc, color, num, highlight }) => (
               <div key={num}
-                className="group flex items-start gap-4 px-5 py-4 rounded-2xl bg-white border border-slate-100
+                className="group flex items-start gap-4 px-5 py-4 rounded-2xl bg-white/5
                   hover:-translate-x-1 transition-all duration-300"
-                onMouseEnter={e => { e.currentTarget.style.borderColor = color + '25' }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}>
+                style={{ border: '1px solid rgba(255,255,255,0.08)' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = color + '40' }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)' }}>
 
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 transition-all duration-300 group-hover:scale-110"
-                  style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}25` }}>
+                  style={{ background: `${color}22`, border: `1.5px solid ${color}45` }}>
                   <Icon size={15} style={{ color }} />
                 </div>
 
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1 flex-wrap">
-                    <p className="text-[13.5px] font-bold text-slate-900">{title}</p>
+                    <p className="text-[13.5px] font-bold text-white">{title}</p>
                     <span className="text-[9.5px] font-bold px-2 py-0.5 rounded-full"
-                      style={{ background: color + '12', color }}>
+                      style={{ background: color + '20', color }}>
                       {highlight}
                     </span>
                   </div>
-                  <p className="text-[12.5px] text-slate-500 leading-[1.68]">{desc}</p>
+                  <p className="text-[12.5px] text-white/50 leading-[1.68]">{desc}</p>
                 </div>
               </div>
             ))}
@@ -147,7 +149,7 @@ export default function OMWhyUs() {
         <div className="reveal mt-10 flex flex-col sm:flex-row items-center justify-between gap-5 px-7 py-5 rounded-2xl overflow-hidden relative"
           style={{ background: 'var(--brand-gradient)', boxShadow: '0 16px 48px rgba(37,99,235,0.25)' }}>
           <div className="absolute inset-0 pointer-events-none"
-            style={{ background: 'var(--brand-gradient-glow)' }} />
+            style={{ background: 'var(--brand-gradient-glow-dark)' }} />
           <div className="relative flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.22)' }}>

@@ -49,13 +49,13 @@ export default function CMSBenefits() {
   return (
     <section
       className="relative py-16 sm:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#071a36 0%,#0f2a52 45%,#071a36 100%)' }}
     >
       {/* Background glow */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-12"
@@ -67,17 +67,17 @@ export default function CMSBenefits() {
         <div className="text-center mb-14 reveal">
           <span
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.2)' }}
+            style={{ background: 'rgba(255,255,255,0.1)', color: '#93c5fd', border: '1px solid rgba(255,255,255,0.2)' }}
           >
             <Layers size={11} /> WordPress Advantages
           </span>
-          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+          <h2 className="text-[clamp(23px,2.7vw,43px)] font-bold text-white leading-[1.1] tracking-tight mb-5">
             Benefits of{' '}
             <span className="text-gradient-blue">
               WordPress Development
             </span>
           </h2>
-          <p className="text-[15px] leading-[1.85] max-w-2xl mx-auto" style={{ color: '#64748b' }}>
+          <p className="text-[15px] leading-[1.85] max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.6)' }}>
             WordPress offers unmatched advantages for modern businesses. Here is why thousands of companies choose WordPress as their CMS platform every day.
           </p>
         </div>
@@ -90,26 +90,20 @@ export default function CMSBenefits() {
               <div
                 key={title}
                 className="group flex-1 relative rounded-2xl p-6 overflow-hidden transition-all duration-400 hover:-translate-y-1"
-                style={{ background: '#ffffff', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}
-                onMouseEnter={e => { e.currentTarget.style.background = `${color}05`; e.currentTarget.style.borderColor = `${color}35`; e.currentTarget.style.boxShadow = `0 12px 36px rgba(37,99,235,0.12), 0 0 0 1px ${color}18` }}
-                onMouseLeave={e => { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.borderColor = '#e2e8f0'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)' }}
+                style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 4px 20px rgba(0,0,0,0.2)' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = `${color}55`; e.currentTarget.style.boxShadow = `0 12px 36px rgba(0,0,0,0.3), 0 0 0 1px ${color}30` }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)' }}
               >
-                {/* Decorative large number */}
-                <span className="absolute top-2 right-4 text-[64px] font-black leading-none select-none pointer-events-none transition-all duration-400 group-hover:opacity-100"
-                  style={{ color: `${color}12`, fontVariantNumeric: 'tabular-nums' }}>
-                  {num}
-                </span>
-
                 <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500 mb-5"
                   style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110"
-                  style={{ background: `${color}15`, border: `1px solid ${color}28` }}>
-                  <Icon size={18} style={{ color }} />
+                  style={{ background: 'rgba(255,255,255,0.12)', border: `1px solid ${color}40` }}>
+                  <Icon size={18} style={{ color: '#93c5fd' }} />
                 </div>
 
-                <h3 className="text-[13px] font-bold text-slate-800 mb-2.5 leading-snug pr-8">{title}</h3>
-                <p className="text-[12.5px] leading-[1.75]" style={{ color: '#64748b' }}>{desc}</p>
+                <h3 className="text-[13px] font-bold text-white mb-2.5 leading-snug pr-8">{title}</h3>
+                <p className="text-[12.5px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.6)' }}>{desc}</p>
               </div>
             ))}
           </div>
@@ -120,25 +114,20 @@ export default function CMSBenefits() {
               <div
                 key={title}
                 className="group flex-1 relative rounded-2xl p-6 overflow-hidden transition-all duration-400 hover:-translate-y-1"
-                style={{ background: '#ffffff', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}
-                onMouseEnter={e => { e.currentTarget.style.background = `${color}05`; e.currentTarget.style.borderColor = `${color}35`; e.currentTarget.style.boxShadow = `0 12px 36px rgba(37,99,235,0.12), 0 0 0 1px ${color}18` }}
-                onMouseLeave={e => { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.borderColor = '#e2e8f0'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)' }}
+                style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', boxShadow: '0 4px 20px rgba(0,0,0,0.2)' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = `${color}55`; e.currentTarget.style.boxShadow = `0 12px 36px rgba(0,0,0,0.3), 0 0 0 1px ${color}30` }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.2)' }}
               >
-                <span className="absolute top-2 right-4 text-[64px] font-black leading-none select-none pointer-events-none"
-                  style={{ color: `${color}12`, fontVariantNumeric: 'tabular-nums' }}>
-                  {num}
-                </span>
-
                 <div className="h-0.5 w-0 rounded-full group-hover:w-10 transition-all duration-500 mb-5"
                   style={{ background: 'var(--brand-gradient-soft)' }} />
 
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110"
-                  style={{ background: `${color}15`, border: `1px solid ${color}28` }}>
-                  <Icon size={18} style={{ color }} />
+                  style={{ background: 'rgba(255,255,255,0.12)', border: `1px solid ${color}40` }}>
+                  <Icon size={18} style={{ color: '#93c5fd' }} />
                 </div>
 
-                <h3 className="text-[13px] font-bold text-slate-800 mb-2.5 leading-snug pr-8">{title}</h3>
-                <p className="text-[12.5px] leading-[1.75]" style={{ color: '#64748b' }}>{desc}</p>
+                <h3 className="text-[13px] font-bold text-white mb-2.5 leading-snug pr-8">{title}</h3>
+                <p className="text-[12.5px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.6)' }}>{desc}</p>
               </div>
             ))}
           </div>

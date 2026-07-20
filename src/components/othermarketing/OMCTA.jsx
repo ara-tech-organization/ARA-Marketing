@@ -19,7 +19,7 @@ const promises = ['No setup fees', 'Free consultation', 'Monthly transparent rep
 export default function OMCTA() {
   return (
     <section className="relative overflow-hidden py-20"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}>
 
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
@@ -81,11 +81,12 @@ export default function OMCTA() {
           {/* Right: CTA content */}
           <div className="flex-1 min-w-0 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px]
-              font-bold uppercase tracking-widest mb-6 bg-white border border-violet-200 text-violet-600 shadow-sm">
+              font-bold uppercase tracking-widest mb-6 text-blue-400"
+              style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
               <Zap size={11} /> Ready to Grow Your Business
             </span>
 
-            <h2 className="text-[clamp(23px,3.1vw,47px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,3.1vw,47px)] font-bold text-white leading-[1.08] tracking-tight mb-5">
               Ready to Improve{' '}
               <span className="text-gradient-blue">
                 Customer Engagement
@@ -93,7 +94,7 @@ export default function OMCTA() {
               & Business Growth?
             </h2>
 
-            <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-7 max-w-[480px] mx-auto lg:mx-0">
+            <p className="text-[14.5px] text-white/60 leading-[1.85] mb-7 max-w-[480px] mx-auto lg:mx-0">
               Partner with ARA Discover Marketing to build strategic email marketing, influencer collaborations, and SMS marketing tactics that boost audience engagement and drive measurable business results.
             </p>
 
@@ -105,40 +106,41 @@ export default function OMCTA() {
                 Start Your Campaign <ArrowRight size={15} />
               </a>
               <a href="#om-services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-semibold text-violet-700 bg-white border border-violet-200 hover:bg-violet-50 hover:border-violet-300 transition-all duration-300 shadow-sm">
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-semibold text-white/70 hover:text-white hover:bg-white/5 transition-all duration-300"
+                style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
                 Explore Services
               </a>
             </div>
 
             {/* Package items */}
-            <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden"
-              style={{ boxShadow: '0 8px 32px rgba(37,99,235,0.07)' }}>
-              <div className="flex items-center gap-3 px-5 py-3.5 border-b border-slate-100">
+            <div className="rounded-2xl bg-white/5 overflow-hidden"
+              style={{ border: '1px solid rgba(255,255,255,0.1)' }}>
+              <div className="flex items-center gap-3 px-5 py-3.5 border-b border-white/10">
                 <div className="w-8 h-8 rounded-xl flex items-center justify-center text-white"
                   style={{ background: 'var(--brand-gradient)' }}>
                   <TrendingUp size={14} />
                 </div>
-                <p className="text-[12.5px] font-bold text-slate-800">What's Included in Your Package</p>
+                <p className="text-[12.5px] font-bold text-white">What's Included in Your Package</p>
               </div>
               <div className="flex flex-wrap gap-2.5 px-5 py-4">
                 {packageItems.map(({ icon: Icon, label, color }) => (
                   <div key={label}
                     className="inline-flex items-center gap-2 px-3 py-2 rounded-xl border transition-all duration-200 hover:shadow-md"
-                    style={{ background: `${color}07`, borderColor: `${color}20` }}>
+                    style={{ background: `${color}14`, borderColor: `${color}30` }}>
                     <div className="w-5 h-5 rounded-lg flex items-center justify-center flex-shrink-0"
                       style={{ background: 'var(--brand-gradient)' }}>
                       <Icon size={10} className="text-white" />
                     </div>
-                    <span className="text-[11.5px] font-semibold text-slate-700">{label}</span>
+                    <span className="text-[11.5px] font-semibold text-white/80">{label}</span>
                   </div>
                 ))}
               </div>
-              <div className="flex flex-wrap items-center gap-4 px-5 py-3 border-t border-slate-100"
+              <div className="flex flex-wrap items-center gap-4 px-5 py-3 border-t border-white/10"
                 style={{ background: 'var(--brand-gradient)' }}>
                 {promises.map((text, i) => (
-                  <span key={text} className="flex items-center gap-1.5 text-[11px] text-slate-500 font-medium">
-                    {i > 0 && <span className="w-px h-3 bg-slate-200 mr-2" />}
-                    <CheckCircle2 size={10} className="text-violet-400 flex-shrink-0" /> {text}
+                  <span key={text} className="flex items-center gap-1.5 text-[11px] text-white/70 font-medium">
+                    {i > 0 && <span className="w-px h-3 bg-white/25 mr-2" />}
+                    <CheckCircle2 size={10} className="text-white flex-shrink-0" /> {text}
                   </span>
                 ))}
               </div>

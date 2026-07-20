@@ -163,7 +163,7 @@ export default function GDTestimonials() {
                       <div
                         className="relative rounded-3xl overflow-hidden"
                         style={{
-                          background: 'var(--brand-gradient-soft)',
+                          background: '#f0f9ff',
                           boxShadow: '0 24px 64px rgba(37,99,235,0.18)',
                           border: '1.5px solid #bfdbfe',
                           minHeight: '290px',

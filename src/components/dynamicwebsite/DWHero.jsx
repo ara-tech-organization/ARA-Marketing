@@ -39,7 +39,7 @@ export default function DWHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(160deg, #05070f 0%, #0a0a14 45%, #04060c 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #0d2244 0%, #0a1a34 40%, #0d2244 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -59,9 +59,9 @@ export default function DWHero() {
         style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
       {/* Orbs */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       {/* Rings */}
       <div className="hidden md:block absolute top-20 right-[8%] w-48 h-48 rounded-full border border-blue-500/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
       <div className="hidden md:block absolute bottom-20 left-[5%] w-32 h-32 rounded-full border border-sky-500/10 pointer-events-none animate-[spin_30s_linear_infinite_reverse]" />
@@ -149,7 +149,7 @@ export default function DWHero() {
           <div className="hidden md:block lg:w-[460px] flex-shrink-0 w-full max-w-[460px] reveal-right">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'var(--brand-gradient-glow)' }} />
+                style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
               <div className="relative rounded-3xl overflow-hidden border border-white/10"
                 style={{ background: 'white', boxShadow: '0 40px 100px rgba(0,0,0,0.60)' }}>

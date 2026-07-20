@@ -25,28 +25,28 @@ function StatItem({ target, suffix, label, icon: Icon, index }) {
       {/* Icon pill */}
       <div className="inline-flex items-center justify-center w-11 h-11 rounded-2xl mb-5
         transition-all duration-300 group-hover:scale-110"
-        style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.1)' }}>
-        <Icon size={20} className="text-blue-600" />
+        style={{ background: 'rgba(96,165,250,0.15)', border: '1px solid rgba(96,165,250,0.3)', boxShadow: '0 2px 12px rgba(37,99,235,0.15)' }}>
+        <Icon size={20} className="text-blue-300" />
       </div>
 
       {/* Number */}
       <div className="flex items-end gap-0.5 mb-3">
-        <span className="font-bold leading-none tracking-tight text-slate-900"
+        <span className="font-bold leading-none tracking-tight text-white"
           style={{ fontSize: 'clamp(28px,3vw,40px)', lineHeight: 1 }}>
           {count}
         </span>
-        <span className="font-bold leading-none text-blue-500 mb-1"
+        <span className="font-bold leading-none text-blue-400 mb-1"
           style={{ fontSize: 'clamp(16px,1.8vw,22px)', lineHeight: 1 }}>
           {suffix}
         </span>
       </div>
 
       {/* Label */}
-      <p className="text-[12.5px] font-semibold text-slate-500 leading-snug max-w-[110px]">{label}</p>
+      <p className="text-[12.5px] font-semibold text-white/55 leading-snug max-w-[110px]">{label}</p>
 
       {/* Hover glow spot */}
       <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500"
-        style={{ background: 'radial-gradient(circle at 50% 40%, rgba(219,234,254,0.6) 0%, transparent 70%)' }} />
+        style={{ background: 'radial-gradient(circle at 50% 40%, rgba(96,165,250,0.18) 0%, transparent 70%)' }} />
     </div>
   )
 }
@@ -54,7 +54,7 @@ function StatItem({ target, suffix, label, icon: Icon, index }) {
 export default function WebDevStats() {
   return (
     <section className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #e0f2fe 100%)' }}>
+      style={{ background: 'linear-gradient(180deg, #0a1a34 0%, #071a36 100%)' }}>
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 pointer-events-none"
@@ -66,9 +66,9 @@ export default function WebDevStats() {
 
       {/* Blue glow blobs */}
       <div className="absolute -top-32 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute -bottom-32 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Top edge line */}
       <div className="absolute top-0 left-0 right-0 h-px"
@@ -78,15 +78,15 @@ export default function WebDevStats() {
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
-            border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/10 text-blue-300
+            border border-blue-400/25 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Proven Results
           </span>
-          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-white leading-tight tracking-tight mb-4">
             Proven Success in Website Design &amp;{' '}
             <span className="text-gradient-blue">Development</span>
           </h2>
-          <p className="text-[15px] text-slate-500 leading-relaxed max-w-xl mx-auto">
+          <p className="text-[15px] text-white/60 leading-relaxed max-w-xl mx-auto">
             We are proud to be among the best website design and development services in Thanjavur
             delivering measurable results across multiple industries.
           </p>

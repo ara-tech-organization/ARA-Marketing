@@ -7,35 +7,28 @@ function StatCard({ target, suffix, label, sub, icon: Icon, delay }) {
     <div
       ref={ref}
       className={`reveal delay-${delay} relative flex flex-col items-center text-center px-6 py-10
-        bg-white/60 border border-blue-100 rounded-3xl backdrop-blur-sm
-        hover:bg-white/90 hover:shadow-xl hover:shadow-blue-100/60 hover:-translate-y-1.5
+        bg-white/5 border border-white/10 rounded-3xl backdrop-blur-sm
+        hover:bg-white/10 hover:shadow-xl hover:shadow-blue-900/30 hover:-translate-y-1.5
         transition-all duration-300`}
     >
       {/* Icon */}
       <div
         className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-        style={{ background: 'var(--brand-gradient)' }}
+        style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)' }}
       >
-        <Icon size={24} className="text-blue-600" />
+        <Icon size={24} className="text-blue-400" />
       </div>
 
       {/* Number */}
       <div
-        className="text-[clamp(20px,2.4vw,32px)] font-bold leading-none tracking-tight mb-2"
-        style={{
-          background: 'var(--brand-gradient-text)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          boxDecorationBreak: 'clone',
-        }}
+        className="text-[clamp(20px,2.4vw,32px)] font-bold leading-none tracking-tight mb-2 text-white"
       >
         {target !== null ? `${count}${suffix}` : 'Active'}
       </div>
 
       {/* Label */}
-      <p className="text-[14px] font-semibold text-slate-800 mb-1">{label}</p>
-      {sub && <p className="text-[12px] text-slate-400">{sub}</p>}
+      <p className="text-[14px] font-semibold text-white/80 mb-1">{label}</p>
+      {sub && <p className="text-[12px] text-white/40">{sub}</p>}
 
       {/* Bottom accent line */}
       <div
@@ -58,21 +51,21 @@ export default function SMMStats() {
   return (
     <section
       className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
 
       {/* Decorative orbs */}
       <div
         className="absolute -top-24 -left-24 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }}
+        style={{ background: 'var(--brand-gradient-glow-dark)' }}
       />
       <div
         className="absolute -bottom-24 -right-24 w-[420px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }}
+        style={{ background: 'var(--brand-gradient-glow-dark)' }}
       />
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }}
+        style={{ background: 'var(--brand-gradient-glow-dark)' }}
       />
 
       {/* Dot grid pattern */}
@@ -93,15 +86,15 @@ export default function SMMStats() {
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
-            border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/5 text-blue-400
+            border border-white/10 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <TrendingUp size={11} /> Our Results
           </span>
-          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(21px,2.7vw,37px)] font-bold text-white leading-tight tracking-tight mb-4">
             Delivering Measurable Social Media{' '}
             <span className="text-gradient-blue">Growth &amp; Engagement</span>
           </h2>
-          <p className="text-[15px] text-slate-600 font-medium max-w-2xl mx-auto">
+          <p className="text-[15px] text-white/60 font-medium max-w-2xl mx-auto">
             Our paid social media marketing agency in Thanjavur helps businesses to maximise engagement, visibility, and customer interaction.
           </p>
         </div>

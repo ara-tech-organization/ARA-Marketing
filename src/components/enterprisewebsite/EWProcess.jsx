@@ -60,23 +60,24 @@ const steps = [
   },
 ]
 
-function StepCard({ num, icon: Icon, title, body, color, lightBg, border, originDir = 'left' }) {
+function StepCard({ num, icon: Icon, title, body, color, originDir = 'left' }) {
   return (
     <div
       className="group relative rounded-2xl sm:rounded-3xl p-4 sm:p-5 lg:p-6 overflow-hidden transition-all duration-300 cursor-default h-full"
       style={{
-        background: lightBg,
-        border: `1.5px solid ${border}`,
-        boxShadow: '0 4px 18px rgba(0,0,0,0.04)',
+        background: 'rgba(255,255,255,0.04)',
+        border: '1px solid rgba(255,255,255,0.10)',
+        boxShadow: '0 4px 18px rgba(0,0,0,0.20)',
+        backdropFilter: 'blur(8px)',
       }}
       onMouseEnter={e => {
-        e.currentTarget.style.boxShadow = `0 16px 40px ${color}1a`
+        e.currentTarget.style.boxShadow = `0 16px 40px rgba(0,0,0,0.35)`
         e.currentTarget.style.borderColor = `${color}55`
         e.currentTarget.style.transform = 'translateY(-4px)'
       }}
       onMouseLeave={e => {
-        e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.04)'
-        e.currentTarget.style.borderColor = border
+        e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.20)'
+        e.currentTarget.style.borderColor = 'rgba(255,255,255,0.10)'
         e.currentTarget.style.transform = 'none'
       }}
     >
@@ -84,7 +85,7 @@ function StepCard({ num, icon: Icon, title, body, color, lightBg, border, origin
       {/* Watermark number */}
       <span
         className="absolute -top-2 -right-0.5 text-[60px] sm:text-[72px] font-bold leading-none select-none pointer-events-none"
-        style={{ color: `${color}0d` }}
+        style={{ color: 'rgba(255,255,255,0.05)' }}
       >
         {num}
       </span>
@@ -92,7 +93,7 @@ function StepCard({ num, icon: Icon, title, body, color, lightBg, border, origin
       {/* Icon */}
       <div
         className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 transition-all duration-300 group-hover:scale-110"
-        style={{ background: `${color}18`, border: `1px solid ${color}30` }}
+        style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)' }}
       >
         <Icon size={16} style={{ color }} />
       </div>
@@ -100,15 +101,15 @@ function StepCard({ num, icon: Icon, title, body, color, lightBg, border, origin
       {/* Phase label */}
       <p
         className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest mb-1 sm:mb-1.5"
-        style={{ color: `${color}90` }}
+        style={{ color: `${color}b0` }}
       >
         Phase {num}
       </p>
 
-      <h3 className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold text-slate-800 mb-2 sm:mb-2.5 leading-snug">
+      <h3 className="text-[12px] sm:text-[13px] lg:text-[14px] font-bold text-white mb-2 sm:mb-2.5 leading-snug">
         {title}
       </h3>
-      <p className="text-[11.5px] sm:text-[12.5px] text-slate-500 leading-[1.78]">{body}</p>
+      <p className="text-[11.5px] sm:text-[12.5px] text-white/55 leading-[1.78]">{body}</p>
 
       {/* Bottom accent bar */}
       <div
@@ -121,7 +122,7 @@ function StepCard({ num, icon: Icon, title, body, color, lightBg, border, origin
 
 export default function EWProcess() {
   return (
-    <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden" style={{ background: '#f0f9ff' }}>
+    <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden" style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}>
 
       {/* Dot grid */}
       <div
@@ -147,18 +148,18 @@ export default function EWProcess() {
         {/* ── Header ── */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-14 reveal">
           <span
-            className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-600 bg-blue-50"
-            style={{ border: '1px solid rgba(37,99,235,0.15)' }}
+            className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-4 sm:mb-5 text-blue-300"
+            style={{ background: 'rgba(37,99,235,0.18)', border: '1px solid rgba(96,165,250,0.30)' }}
           >
             <Zap size={9} /> Development Process
           </span>
-          <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-slate-900 leading-[1.10] tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-[clamp(19px,3.6vw,43px)] font-bold text-white leading-[1.10] tracking-tight mb-3 sm:mb-4">
             From Concept to{' '}
             <span className="text-gradient-blue">
               Launch
             </span>
           </h2>
-          <p className="text-[12.5px] sm:text-[14px] lg:text-[15px] text-slate-500 leading-[1.85] max-w-xl mx-auto px-2 sm:px-0">
+          <p className="text-[12.5px] sm:text-[14px] lg:text-[15px] text-white/55 leading-[1.85] max-w-xl mx-auto px-2 sm:px-0">
             Our structured 6-phase process ensures every enterprise project is delivered on time, within scope, and beyond expectations.
           </p>
         </div>
@@ -179,7 +180,7 @@ export default function EWProcess() {
               {i < steps.length - 1 && (
                 <div
                   className="flex-1 h-px mx-1.5 lg:mx-2 min-w-0"
-                  style={{ background: 'var(--brand-gradient-soft)' }}
+                  style={{ background: 'rgba(255,255,255,0.15)' }}
                 />
               )}
             </div>
@@ -197,14 +198,14 @@ export default function EWProcess() {
 
         {/* ── Continue divider ── */}
         <div className="flex items-center gap-3 my-3 sm:my-4 reveal">
-          <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
+          <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.12)' }} />
           <span
             className="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full"
-            style={{ color: 'rgba(37,99,235,0.55)', background: '#eff6ff', border: '1px solid #bfdbfe' }}
+            style={{ color: 'rgba(147,197,253,0.85)', background: 'rgba(37,99,235,0.15)', border: '1px solid rgba(96,165,250,0.25)' }}
           >
             Continue
           </span>
-          <div className="flex-1 h-px" style={{ background: 'var(--brand-gradient-line)' }} />
+          <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.12)' }} />
         </div>
 
         {/* ── Row 2 (steps 04–06) ── */}

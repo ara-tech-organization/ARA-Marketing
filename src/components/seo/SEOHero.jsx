@@ -30,7 +30,7 @@ export default function SEOHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[80px]"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)', minHeight: '100vh' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)', minHeight: '100vh' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -44,9 +44,9 @@ export default function SEOHero() {
 
       {/* Background glows */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
@@ -61,12 +61,12 @@ export default function SEOHero() {
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 py-6 lg:py-8">
 
         {/* Breadcrumb */}
-        <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-5">
-          <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
-          <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
-          <span className="whitespace-nowrap text-slate-500">Digital Marketing</span>
-          <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
-          <span className="whitespace-nowrap text-blue-600 font-medium">SEO Services</span>
+        <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-white/40 mb-5">
+          <a href="/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+          <ChevronRight size={12} className="text-white/20 flex-shrink-0" />
+          <span className="whitespace-nowrap text-white/50">Digital Marketing</span>
+          <ChevronRight size={12} className="text-white/20 flex-shrink-0" />
+          <span className="whitespace-nowrap text-blue-400 font-medium">SEO Services</span>
         </nav>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -76,16 +76,16 @@ export default function SEOHero() {
 
             {/* Label */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-6
-              border border-blue-200 bg-white/80"
+              border border-white/10 bg-white/5"
               style={{ backdropFilter: 'blur(8px)' }}>
-              <Search size={11} className="text-blue-600" />
-              <span className="text-[11px] font-bold uppercase tracking-widest text-blue-600">
+              <Search size={11} className="text-blue-400" />
+              <span className="text-[11px] font-bold uppercase tracking-widest text-blue-400">
                 Search Engine Optimization
               </span>
             </div>
 
             {/* Heading */}
-            <h1 className="text-[clamp(28px,4vw,56px)] font-black leading-[1.1] tracking-tight mb-6 text-slate-900">
+            <h1 className="text-[clamp(28px,4vw,56px)] font-black leading-[1.1] tracking-tight mb-6 text-white">
               Rank Higher.{' '}
               <span className="text-gradient-blue">
                 Get Found.
@@ -93,10 +93,10 @@ export default function SEOHero() {
               <br />Grow Faster.
             </h1>
 
-            <p className="text-[15px] text-slate-600 leading-[1.85] mb-4 max-w-xl">
+            <p className="text-[15px] text-white/70 leading-[1.85] mb-4 max-w-xl">
               ARA Discover Marketing is Thanjavur's leading SEO agency, delivering AI-driven strategies that push your business to the top of Google â€” and keep it there.
             </p>
-            <p className="text-[14px] text-slate-500 leading-[1.8] mb-8 max-w-xl">
+            <p className="text-[14px] text-white/50 leading-[1.8] mb-8 max-w-xl">
               From technical SEO and high-quality backlinks to local search domination and content marketing â€” we build rankings that convert to revenue.
             </p>
 
@@ -104,9 +104,9 @@ export default function SEOHero() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
               {badges.map(({ icon: Icon, text }) => (
                 <span key={text}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold text-slate-600"
-                  style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid rgba(37,99,235,0.15)' }}>
-                  <Icon size={12} className="text-blue-600" /> {text}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold text-white/70"
+                  style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <Icon size={12} className="text-blue-400" /> {text}
                 </span>
               ))}
             </div>
@@ -120,9 +120,9 @@ export default function SEOHero() {
                 Get Free SEO Audit <ArrowRight size={15} />
               </a>
               <a href="/contact-us"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-semibold text-blue-600
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[14px] font-semibold text-blue-400
                   transition-all duration-300 hover:text-white hover:bg-blue-600"
-                style={{ border: '1px solid rgba(37,99,235,0.3)' }}>
+                style={{ border: '1px solid rgba(255,255,255,0.2)' }}>
                 Explore Services <ArrowUpRight size={15} />
               </a>
             </div>
@@ -131,10 +131,10 @@ export default function SEOHero() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {stats.map(({ num, label, color }) => (
                 <div key={label}
-                  className="rounded-2xl px-4 py-3 bg-white/80"
-                  style={{ border: '1px solid rgba(37,99,235,0.12)' }}>
-                  <p className="text-[22px] font-black leading-tight" style={{ color: '#2563eb' }}>{num}</p>
-                  <p className="text-[10px] text-slate-500 font-medium mt-0.5 leading-snug">{label}</p>
+                  className="rounded-2xl px-4 py-3 bg-white/5"
+                  style={{ border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <p className="text-[22px] font-black leading-tight" style={{ color: '#60a5fa' }}>{num}</p>
+                  <p className="text-[10px] text-white/50 font-medium mt-0.5 leading-snug">{label}</p>
                 </div>
               ))}
             </div>

@@ -60,7 +60,7 @@ export default function VEIntro() {
                   style={{ border: `1px solid ${color}18`, boxShadow: `0 4px 16px ${color}0a` }}>
                   <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}22` }}>
-                    <Icon size={15} style={{ color }} />
+                    <Icon size={15} style={{ color: '#ffffff' }} />
                   </div>
                   <div>
                     <p className="text-[18px] font-black text-slate-900 leading-none">{value}</p>
@@ -124,7 +124,7 @@ export default function VEIntro() {
             >
               <div className="w-11 h-11 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                 style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}28` }}>
-                <Icon size={18} style={{ color }} />
+                <Icon size={18} style={{ color: '#ffffff' }} />
               </div>
               <div>
                 <p className="text-[13.5px] font-bold text-slate-900 mb-2 leading-snug">{label}</p>

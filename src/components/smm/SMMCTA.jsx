@@ -1,4 +1,4 @@
-import { Share2, MessageSquare } from 'lucide-react'
+import { MessageSquare } from 'lucide-react'
 
 export default function SMMCTA() {
   return (
@@ -6,23 +6,7 @@ export default function SMMCTA() {
       className="relative overflow-hidden py-16"
       style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
     >
-      {/* Decorative orbs */}
-      <div
-        className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'var(--brand-gradient-glow)' }}
-      />
-      <div
-        className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'var(--brand-gradient-glow)' }}
-      />
-
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 text-center">
-
-        {/* Icon */}
-        <div className="reveal inline-flex items-center justify-center w-16 h-16 bg-blue-600 rounded-2xl
-          mb-6 shadow-xl shadow-blue-600/30">
-          <Share2 size={28} className="text-white" />
-        </div>
 
         {/* Heading */}
         <h2 className="reveal text-[clamp(21px,2.7vw,37px)] font-bold text-slate-900 leading-tight tracking-tight mb-5 max-w-4xl mx-auto">
@@ -33,7 +17,7 @@ export default function SMMCTA() {
         </h2>
 
         {/* Subtext */}
-        <p className="reveal delay-1 text-[15px] text-slate-600 leading-[1.85] max-w-2xl mx-auto mb-10">
+        <p className="reveal delay-1 text-[15px] text-slate-500 leading-[1.85] max-w-2xl mx-auto mb-10">
           Partner with ARA Discover Marketing, a trusted provider of social media agency services in
           Thanjavur, delivering creative campaigns, audience engagement strategies, and high-performing
           paid social advertising solutions.
@@ -45,7 +29,7 @@ export default function SMMCTA() {
             href="#smm-services"
             className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-[15px]
               text-blue-600 hover:bg-blue-50 transition-all duration-300"
-            style={{ border: '1px solid rgba(37,99,235,0.2)', background: 'rgba(255,255,255,0.8)' }}
+            style={{ border: '1px solid #e2e8f0', background: '#f8faff' }}
           >
             <MessageSquare size={16} /> View Our Services
           </a>
@@ -59,7 +43,7 @@ export default function SMMCTA() {
             'Transparent ROI Reporting',
           ].map(item => (
             <div key={item} className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
               <span className="text-[12px] font-medium text-slate-500">{item}</span>
             </div>
           ))}

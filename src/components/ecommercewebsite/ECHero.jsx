@@ -30,23 +30,23 @@ export default function ECHero() {
 
   return (
     <section ref={heroRef} className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(145deg, #ffffff 0%, #eff6ff 55%, #dbeafe 100%)' }}>
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}>
 
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
         targetRef={heroRef}
         size={560}
         blur={90}
-        blendMode="multiply"
-        opacity={0.2}
+        blendMode="normal"
+        opacity={0.35}
         background="conic-gradient(from 0deg at 50% 50%, #1e3a8a 0%, #2563eb 25%, #60a5fa 50%, #2563eb 75%, #1e3a8a 100%)"
       />
 
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)', animation: 'float-y 8s ease-in-out infinite' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)', animation: 'float-y 8s ease-in-out infinite' }} />
       <div className="absolute bottom-0 -left-24 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-30"
@@ -59,12 +59,12 @@ export default function ECHero() {
           <div className="flex-1 min-w-0 lg:pr-4 text-center md:text-left">
 
             {/* Breadcrumb */}
-            <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <a href="/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
-              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <span className="whitespace-nowrap text-blue-600 font-medium">Ecommerce Website</span>
+            <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-white/40 mb-6 animate-hero-enter">
+              <a href="/" className="whitespace-nowrap hover:text-blue-300 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-white/20 flex-shrink-0" />
+              <a href="/services/website-development" className="whitespace-nowrap hover:text-blue-300 transition-colors duration-200">Web Design</a>
+              <ChevronRight size={13} className="text-white/20 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-300 font-medium">Ecommerce Website</span>
             </nav>
 
             {/* Badge */}
@@ -77,16 +77,16 @@ export default function ECHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-slate-900 leading-[1.15] tracking-tight mb-6"
+            <h1 className="animate-hero-d2 text-white leading-[1.15] tracking-tight mb-6"
               style={{ fontWeight: 600, fontSize: '40px' }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>Build High-Performance</span>
-              <span style={{ display: 'block', whiteSpace: 'normal', color: '#2563eb' }}>Ecommerce Websites That Sell 24/7</span>
+              <span style={{ display: 'block', whiteSpace: 'normal', color: '#60a5fa' }}>Ecommerce Websites That Sell 24/7</span>
             </h1>
 
-            <p className="animate-hero-d3 text-[15px] text-slate-600 leading-[1.9] mb-4">
+            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-4" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Are you looking for the best e-commerce development agencies in Thanjavur to develop a fast-loading, SEO-friendly, and robust online store that boosts sales and growth? We are professionals at developing and designing highly converting e-commerce websites that allow businesses to sell products online with ease.
             </p>
-            <p className="animate-hero-d3 text-[15px] text-slate-600 leading-[1.9] mb-8">
+            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-8" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Our solutions are built for speed, scalability, security, and maximum conversions.
             </p>
 
@@ -94,8 +94,8 @@ export default function ECHero() {
             <div className="animate-hero-d3 flex flex-col gap-2 mb-8">
               {quickWins.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-2.5 justify-center md:justify-start">
-                  <Icon size={14} className="text-blue-600 flex-shrink-0" />
-                  <span className="text-[13.5px] text-slate-600 font-medium">{text}</span>
+                  <Icon size={14} className="text-blue-400 flex-shrink-0" />
+                  <span className="text-[13.5px] font-medium" style={{ color: 'rgba(255,255,255,0.65)' }}>{text}</span>
                 </div>
               ))}
             </div>
@@ -108,7 +108,7 @@ export default function ECHero() {
                 Take a First Step <ArrowRight size={15} />
               </a>
               <a href="#ec-intro"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold border-2 border-blue-500 text-blue-600 transition-all duration-300 hover:bg-blue-50">
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold border-2 border-blue-400 text-blue-300 transition-all duration-300 hover:bg-white/10">
                 Explore Solutions <ArrowUpRight size={15} />
               </a>
             </div>
@@ -117,11 +117,11 @@ export default function ECHero() {
             <div className="animate-hero-d5 flex flex-wrap justify-center md:justify-start gap-4 sm:gap-8">
               {stats.map(({ value, label, color }, i) => (
                 <div key={label} className="flex flex-col"
-                  style={{ borderLeft: i > 0 ? '1px solid #bfdbfe' : 'none', paddingLeft: i > 0 ? '2rem' : '0' }}>
+                  style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.15)' : 'none', paddingLeft: i > 0 ? '2rem' : '0' }}>
                   <span className="text-[28px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
-                  <span className="text-[11px] text-slate-500 font-medium mt-0.5">{label}</span>
+                  <span className="text-[11px] font-medium mt-0.5" style={{ color: 'rgba(255,255,255,0.45)' }}>{label}</span>
                 </div>
               ))}
             </div>
@@ -132,8 +132,8 @@ export default function ECHero() {
             <div className="relative mt-6">
 
               {/* Dashboard card */}
-              <div className="bg-white rounded-3xl overflow-hidden"
-                style={{ border: '1px solid #e2e8f0', boxShadow: '0 24px 60px rgba(37,99,235,0.13)' }}>
+              <div className="bg-white rounded-3xl overflow-hidden border border-white/10"
+                style={{ boxShadow: '0 24px 60px rgba(0,0,0,0.45)' }}>
 
                 {/* Top bar */}
                 <div className="px-4 py-3 flex items-center justify-between"
@@ -218,8 +218,8 @@ export default function ECHero() {
               </div>
 
               {/* Floating: Cart activity */}
-              <div className="absolute -top-5 -right-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3"
-                style={{ border: '1px solid #dbeafe', boxShadow: '0 8px 28px rgba(37,99,235,0.18)' }}>
+              <div className="absolute -top-5 -right-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3 border border-white/10"
+                style={{ boxShadow: '0 8px 28px rgba(0,0,0,0.35)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 14px rgba(37,99,235,0.35)' }}>
                   <CreditCard size={15} className="text-white" />
@@ -231,8 +231,8 @@ export default function ECHero() {
               </div>
 
               {/* Floating: Conversion rate */}
-              <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3"
-                style={{ border: '1px solid #bae6fd', boxShadow: '0 8px 28px rgba(14,165,233,0.18)' }}>
+              <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl px-4 py-3 flex items-center gap-3 border border-white/10"
+                style={{ boxShadow: '0 8px 28px rgba(0,0,0,0.35)' }}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ background: 'var(--brand-gradient)', boxShadow: '0 4px 14px rgba(14,165,233,0.35)' }}>
                   <BarChart2 size={15} className="text-white" />
@@ -247,12 +247,12 @@ export default function ECHero() {
 
             {/* Platform tags */}
             <div className="mt-12 flex items-center gap-2 flex-wrap">
-              <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400 flex-shrink-0 mr-1">
+              <span className="text-[9px] font-bold uppercase tracking-widest text-white/40 flex-shrink-0 mr-1">
                 Platforms
               </span>
               {platformTags.map((tag) => (
                 <span key={tag} className="px-2 py-0.5 rounded-full text-[10px] font-semibold"
-                  style={{ background: 'rgba(37,99,235,0.06)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.12)' }}>
+                  style={{ background: 'rgba(96,165,250,0.10)', color: '#93c5fd', border: '1px solid rgba(96,165,250,0.20)' }}>
                   {tag}
                 </span>
               ))}

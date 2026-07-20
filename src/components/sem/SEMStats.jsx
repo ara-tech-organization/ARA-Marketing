@@ -24,7 +24,7 @@ function StatItem({ target, suffix, label, sub, icon: Icon, color, isLast }) {
       {/* Icon */}
       <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
         style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}25` }}>
-        <Icon size={20} style={{ color }} />
+        <Icon size={20} className="text-white" />
       </div>
 
       {/* Number */}

@@ -42,7 +42,7 @@ export default function MAHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: '#ffffff' }}
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -60,7 +60,7 @@ export default function MAHero() {
 
       {/* Soft colour wash â€” top right only */}
       <div className="absolute top-0 right-0 w-[520px] h-[520px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 py-12 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
@@ -69,23 +69,23 @@ export default function MAHero() {
           <div className="flex-1 min-w-0 animate-hero-enter text-center lg:text-left flex flex-col justify-center">
 
             {/* Breadcrumb */}
-            <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] text-slate-400 mb-6">
-              <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
-              <ChevronRight size={12} className="text-slate-300" />
-              <a href="/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
-              <ChevronRight size={12} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">Mobile App Development</span>
+            <nav className="hidden sm:flex items-center justify-center lg:justify-start gap-1.5 text-[12px] mb-6" style={{ color: 'rgba(255,255,255,0.35)' }}>
+              <a href="/" className="transition-colors hover:text-sky-300">Home</a>
+              <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
+              <a href="/services/website-development" className="transition-colors hover:text-sky-300">Web Design</a>
+              <ChevronRight size={12} style={{ color: 'rgba(255,255,255,0.20)' }} />
+              <span className="text-sky-300 font-medium">Mobile App Development</span>
             </nav>
 
             {/* Badge */}
-            <span className="inline-flex self-start items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-7 text-blue-700"
-              style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.20)' }}>
+            <span className="inline-flex self-start items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-7"
+              style={{ background: 'rgba(37,99,235,0.18)', border: '1px solid rgba(96,165,250,0.30)', color: '#93c5fd' }}>
               <Smartphone size={10} /> Mobile App Development Â· Thanjavur
             </span>
 
             {/* H1 â€” 2 lines */}
-            <h1 className="font-bold leading-[1.2] tracking-tight mb-5 text-slate-900"
-              style={{ fontSize: '50px' }}>
+            <h1 className="font-bold leading-[1.2] tracking-tight mb-5"
+              style={{ fontSize: '50px', color: '#ffffff' }}>
               <span style={{ display: 'block' }}>Build Powerful Mobile</span>
               <span style={{ display: 'block' }}>
                 Apps for{' '}
@@ -95,10 +95,10 @@ export default function MAHero() {
               </span>
             </h1>
 
-            <p className="text-[14px] sm:text-[15px] text-slate-600 leading-[1.9] mb-3 max-w-[560px] mx-auto lg:mx-0">
+            <p className="text-[14px] sm:text-[15px] leading-[1.9] mb-3 max-w-[560px] mx-auto lg:mx-0" style={{ color: 'rgba(255,255,255,0.55)' }}>
               ARA Discover Marketing is a leading custom mobile app development agency in Thanjavur delivering fast-loaded, secure, and AI-powered mobile apps for iOS and Android.
             </p>
-            <p className="hidden sm:block text-[13.5px] text-slate-500 leading-[1.85] mb-8 max-w-[540px] mx-auto lg:mx-0">
+            <p className="hidden sm:block text-[13.5px] leading-[1.85] mb-8 max-w-[540px] mx-auto lg:mx-0" style={{ color: 'rgba(255,255,255,0.35)' }}>
               As one of the best app development agencies in Thanjavur, we offer innovative solutions that seamlessly integrate with your digital strategy and make your brand shine.
             </p>
 
@@ -106,8 +106,8 @@ export default function MAHero() {
             <div className="flex flex-col gap-2.5 mb-8 items-start ml-4">
               {quickWins.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-2.5">
-                  <Icon size={14} className="text-blue-600 flex-shrink-0" />
-                  <span className="text-[13.5px] text-slate-600 font-medium">{text}</span>
+                  <Icon size={14} className="text-sky-400 flex-shrink-0" />
+                  <span className="text-[13.5px] font-medium" style={{ color: 'rgba(255,255,255,0.65)' }}>{text}</span>
                 </div>
               ))}
             </div>
@@ -120,22 +120,23 @@ export default function MAHero() {
                 Take a First Step <ArrowRight size={14} />
               </a>
               <a href="#ma-intro"
-                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-semibold border-2 border-blue-300 text-blue-600 transition-all duration-300 hover:bg-blue-50 hover:-translate-y-0.5">
+                className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13.5px] font-semibold transition-all duration-300 hover:-translate-y-0.5"
+                style={{ color: 'rgba(255,255,255,0.80)', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)' }}>
                 Explore Services <ArrowUpRight size={14} />
               </a>
             </div>
 
             {/* Stats strip */}
             <div className="flex flex-row justify-center lg:justify-start gap-0 pt-6"
-              style={{ borderTop: '1px solid rgba(37,99,235,0.10)' }}>
+              style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
               {stats.map(({ value, label }, i) => (
                 <div key={label}
                   className="flex flex-col items-center lg:items-start px-3 sm:px-6 first:pl-0"
-                  style={{ borderLeft: i > 0 ? '1px solid #dbeafe' : 'none' }}>
+                  style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.08)' : 'none' }}>
                   <span className="text-[18px] sm:text-[26px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
-                  <span className="text-[10px] sm:text-[11px] text-slate-400 font-medium mt-0.5 leading-tight text-center lg:text-left">{label}</span>
+                  <span className="text-[10px] sm:text-[11px] font-medium mt-0.5 leading-tight text-center lg:text-left" style={{ color: 'rgba(255,255,255,0.35)' }}>{label}</span>
                 </div>
               ))}
             </div>
@@ -147,7 +148,7 @@ export default function MAHero() {
 
               {/* Soft glow behind phone */}
               <div className="absolute inset-0 -m-8 rounded-full pointer-events-none"
-                style={{ background: 'var(--brand-gradient-glow)' }} />
+                style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
               {/* Floating badge â€” AI */}
               <div className="absolute -top-8 -left-14 z-20 flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white animate-float"

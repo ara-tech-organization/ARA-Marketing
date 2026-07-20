@@ -57,18 +57,18 @@ export default function SEOAssurance() {
             <div
               className="rounded-3xl p-4 sm:p-5 md:p-6 lg:p-7 border border-blue-100"
               style={{
-                background: 'var(--brand-gradient-soft)',
-                boxShadow: '0 12px 40px rgba(37,99,235,0.10)',
+                background: 'linear-gradient(135deg, #1e3a8a 0%, #172554 100%)',
+                boxShadow: '0 12px 40px rgba(30,58,138,0.25)',
               }}
             >
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 text-white"
-                style={{ background: '#2563eb', boxShadow: '0 6px 20px rgba(37,99,235,0.30)' }}>
+                style={{ background: 'rgba(255,255,255,0.15)', boxShadow: '0 6px 20px rgba(0,0,0,0.20)' }}>
                 <Award size={24} />
               </div>
-              <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-3">
+              <h3 className="text-[17px] font-bold text-white leading-snug mb-3">
                 6 Core Commitments to Your SEO Success
               </h3>
-              <p className="text-[13px] text-slate-600 leading-[1.8] mb-6">
+              <p className="text-[13px] text-blue-100 leading-[1.8] mb-6">
                 Every client gets a dedicated commitment from our team — from transparent reporting to AI-powered strategy. We don't just rank you, we grow your business.
               </p>
               <a

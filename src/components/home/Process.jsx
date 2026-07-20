@@ -37,10 +37,10 @@ function StepCard({ s, isLast }) {
       </div>
 
       {/* Card */}
-      <div className="w-full h-full bg-white rounded-2xl p-5 border border-blue-100 shadow-sm
+      <div className="w-full h-full bg-white/5 rounded-2xl p-5 border border-white/10 shadow-sm
         text-center transition-all duration-300
-        group-hover:-translate-y-1.5 group-hover:shadow-xl group-hover:shadow-blue-100/80
-        group-hover:border-blue-200">
+        group-hover:-translate-y-1.5 group-hover:shadow-xl group-hover:shadow-blue-900/30
+        group-hover:border-blue-400/30">
 
         {/* Top accent */}
         <div className="w-8 h-1 rounded-full mx-auto mb-4"
@@ -49,18 +49,18 @@ function StepCard({ s, isLast }) {
         {/* Icon */}
         <div className="w-11 h-11 rounded-xl flex items-center justify-center mx-auto mb-4
           transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]"
-          style={{ background: s.light }}>
+          style={{ background: `${s.color}20` }}>
           <Icon size={19} style={{ color: s.color }} />
         </div>
 
         {/* Title */}
-        <h3 className="text-[13px] font-bold text-slate-900 mb-2 leading-snug
-          transition-colors duration-300 group-hover:text-blue-700">
+        <h3 className="text-[13px] font-bold text-white mb-2 leading-snug
+          transition-colors duration-300 group-hover:text-blue-300">
           {s.title}
         </h3>
 
         {/* Desc */}
-        <p className="text-[12px] text-slate-400 leading-relaxed">
+        <p className="text-[12px] text-white/50 leading-relaxed">
           {s.desc}
         </p>
       </div>
@@ -70,34 +70,39 @@ function StepCard({ s, isLast }) {
 
 export default function Process() {
   return (
-    <section id="process" className="relative py-16 overflow-hidden bg-white">
+    <section id="process" className="relative py-16 overflow-hidden"
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}>
       {/* Orbs */}
       <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
+
+      {/* Dot grid */}
+      <div className="absolute inset-0 pointer-events-none"
+        style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '32px 32px' }} />
 
       {/* Diamond corners */}
       <div className="absolute -top-12 -left-12 w-44 h-44 pointer-events-none"
-        style={{ border: '1.5px solid rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
+        style={{ border: '1.5px solid rgba(255,255,255,0.1)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
       <div className="absolute -bottom-12 -right-12 w-44 h-44 pointer-events-none"
-        style={{ border: '1.5px solid rgba(37,99,235,0.15)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
+        style={{ border: '1.5px solid rgba(255,255,255,0.1)', transform: 'rotate(45deg)', borderRadius: '16px' }} />
 
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 relative z-10">
 
         {/* Header */}
         <div className="text-center mb-16 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-100 text-blue-700
-            border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/5 text-blue-400
+            border border-white/10 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
             <Rocket size={11} /> How We Work
           </span>
           <h2
-            className="text-[clamp(23px,3.1vw,35px)] font-bold text-slate-900 leading-tight tracking-tight"
+            className="text-[clamp(23px,3.1vw,35px)] font-bold text-white leading-tight tracking-tight"
             style={{ fontWeight: 700 }}
           >
             Our Proven Digital Marketing Workflow
           </h2>
-          <p className="text-base text-slate-500 leading-relaxed max-w-xl mx-auto mt-3.5">
+          <p className="text-base text-white/60 leading-relaxed max-w-xl mx-auto mt-3.5">
             As a top digital marketing company in Thanjavur, we follow a strategic and methodical
             approach that ensures maximum ROI and long-term digital success.
           </p>
@@ -122,18 +127,18 @@ export default function Process() {
           {steps.map(s => {
             const Icon = s.icon
             return (
-              <div key={s.n} className="flex items-start gap-4 bg-white rounded-2xl p-5
-                border border-blue-100 shadow-sm">
+              <div key={s.n} className="flex items-start gap-4 bg-white/5 rounded-2xl p-5
+                border border-white/10 shadow-sm">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: s.light }}>
+                  style={{ background: `${s.color}20` }}>
                   <Icon size={18} style={{ color: s.color }} />
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-[10px] font-black" style={{ color: s.color }}>Step {s.n}</span>
                   </div>
-                  <h3 className="text-[13px] font-bold text-slate-900 mb-1">{s.title}</h3>
-                  <p className="text-[12px] text-slate-500 leading-relaxed">{s.desc}</p>
+                  <h3 className="text-[13px] font-bold text-white mb-1">{s.title}</h3>
+                  <p className="text-[12px] text-white/60 leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             )

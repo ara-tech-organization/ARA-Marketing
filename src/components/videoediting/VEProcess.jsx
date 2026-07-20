@@ -12,15 +12,16 @@ const steps = [
 
 export default function VEProcess() {
   return (
-    <section className="relative py-20 lg:py-18 overflow-hidden" style={{ background: '#ffffff' }}>
+    <section className="relative py-20 lg:py-18 overflow-hidden"
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}>
 
       {/* BG decoration */}
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
       <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute -bottom-24 -right-24 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
 
@@ -28,17 +29,17 @@ export default function VEProcess() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-12 reveal text-center lg:text-left">
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-              style={{ background: 'white', border: '1px solid #bfdbfe', color: '#2563eb', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}>
+              style={{ background: 'rgba(37,99,235,0.18)', border: '1px solid rgba(96,165,250,0.30)', color: '#93c5fd', backdropFilter: 'blur(8px)' }}>
               <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight" style={{ fontWeight: 700 }}>
+            <h2 className="text-[clamp(23px,3.6vw,45px)] font-bold leading-[1.1] tracking-tight" style={{ fontWeight: 700, color: '#ffffff' }}>
               Our Strategic Video{' '}
               <span className="text-gradient-blue">
                 Editing Workflow
               </span>
             </h2>
           </div>
-          <p className="text-[14px] text-slate-500 leading-[1.85] lg:max-w-[360px]">
+          <p className="text-[14px] leading-[1.85] lg:max-w-[360px]" style={{ color: 'rgba(255,255,255,0.55)' }}>
             Our strategic process assures high-quality video output from a professional video editing studio in Thanjavur.
           </p>
         </div>
@@ -78,14 +79,12 @@ export default function VEProcess() {
 function StepCard({ num, Icon, title, desc, color, accent, border }) {
   return (
     <div
-      className="group relative rounded-2xl overflow-hidden bg-white transition-all duration-350 hover:-translate-y-2"
-      style={{ border: `1px solid ${border}`, boxShadow: '0 4px 20px rgba(37,99,235,0.06)' }}
-      onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 20px 48px rgba(37,99,235,0.12)`; e.currentTarget.style.borderColor = color + '55' }}
-      onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(37,99,235,0.06)'; e.currentTarget.style.borderColor = border }}
+      className="group relative rounded-2xl overflow-hidden transition-all duration-350 hover:-translate-y-2"
+      style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.10)', boxShadow: '0 4px 20px rgba(0,0,0,0.20)', backdropFilter: 'blur(8px)' }}
+      onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 20px 48px rgba(0,0,0,0.35)`; e.currentTarget.style.borderColor = color + '55' }}
+      onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.20)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.10)' }}
     >
       <div className="h-[3px] w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
-      <span className="absolute -bottom-3 -right-1 text-[72px] font-black leading-none select-none pointer-events-none"
-        style={{ color: color + '0e' }}>{num}</span>
       <div className="p-5">
         <div className="flex items-center justify-between mb-4">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white font-black text-[12px] transition-transform duration-300 group-hover:scale-105"
@@ -93,12 +92,12 @@ function StepCard({ num, Icon, title, desc, color, accent, border }) {
             {num}
           </div>
           <div className="w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
-            style={{ background: accent, border: `1px solid ${border}` }}>
+            style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)' }}>
             <Icon size={14} style={{ color }} />
           </div>
         </div>
-        <h3 className="text-[12px] font-bold text-slate-900 leading-snug mb-2">{title}</h3>
-        <p className="text-[12px] text-slate-500 leading-[1.75]">{desc}</p>
+        <h3 className="text-[12px] font-bold leading-snug mb-2" style={{ color: '#ffffff' }}>{title}</h3>
+        <p className="text-[12px] leading-[1.75]" style={{ color: 'rgba(255,255,255,0.55)' }}>{desc}</p>
       </div>
     </div>
   )

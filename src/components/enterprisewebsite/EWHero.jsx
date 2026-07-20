@@ -34,7 +34,7 @@ export default function EWHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -52,9 +52,9 @@ export default function EWHero() {
 
       {/* Orbs */}
       <div className="hidden lg:block absolute -top-32 -left-32 w-[700px] h-[700px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="hidden lg:block absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-8 py-14 sm:py-16 lg:py-20 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
@@ -63,23 +63,23 @@ export default function EWHero() {
           <div className="flex-1 lg:max-w-[52%] animate-hero-enter">
 
             {/* Breadcrumb */}
-            <nav className="hidden sm:flex items-center gap-1.5 text-[11.5px] mb-6 text-slate-400">
-              <a href="/" className="hover:text-blue-600 transition-colors">Home</a>
-              <ChevronRight size={11} className="text-slate-300" />
-              <a href="/services/website-development" className="hover:text-blue-600 transition-colors">Web Design</a>
-              <ChevronRight size={11} className="text-slate-300" />
-              <span className="text-blue-600 font-medium">Enterprise Website</span>
+            <nav className="hidden sm:flex items-center gap-1.5 text-[11.5px] mb-6 text-white/40">
+              <a href="/" className="hover:text-blue-400 transition-colors">Home</a>
+              <ChevronRight size={11} className="text-white/20" />
+              <a href="/services/website-development" className="hover:text-blue-400 transition-colors">Web Design</a>
+              <ChevronRight size={11} className="text-white/20" />
+              <span className="text-blue-400 font-medium">Enterprise Website</span>
             </nav>
 
             <div className="text-center lg:text-left">
               {/* Badge */}
-              <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 text-blue-600 bg-white/80 border border-blue-200"
+              <span className="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 text-blue-400 bg-white/10 border border-white/20"
                 style={{ backdropFilter: 'blur(8px)' }}>
                 <Building2 size={10} /> Enterprise Website Development
               </span>
 
               {/* H1 */}
-              <h1 className="leading-[1.2] tracking-tight mb-5 text-slate-900"
+              <h1 className="leading-[1.2] tracking-tight mb-5 text-white"
                 style={{ fontWeight: 700, fontSize: '40px' }}>
                 <span style={{ display: 'block' }}>Transform Your Enterprise</span>
                 <span className="text-gradient-blue" style={{ display: 'block' }}>
@@ -87,7 +87,7 @@ export default function EWHero() {
                 </span>
               </h1>
 
-              <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-7 max-w-[540px] mx-auto lg:mx-0 text-slate-600">
+              <p className="text-[13px] sm:text-[14.5px] leading-[1.90] mb-7 max-w-[540px] mx-auto lg:mx-0 text-white/65">
                 ARA Discover Marketing is a trusted enterprise website development company in Thanjavur that creates AI-driven enterprise websites to boost your digital presence and simplify complex business operations.
               </p>
             </div>
@@ -96,8 +96,8 @@ export default function EWHero() {
             <ul className="flex flex-col gap-2.5 mb-8">
               {bullets.map(b => (
                 <li key={b} className="flex items-start gap-2.5">
-                  <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-blue-600" />
-                  <span className="text-[13px] sm:text-[13.5px] leading-[1.7] text-slate-600">{b}</span>
+                  <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5 text-blue-400" />
+                  <span className="text-[13px] sm:text-[13.5px] leading-[1.7] text-white/70">{b}</span>
                 </li>
               ))}
             </ul>
@@ -105,13 +105,13 @@ export default function EWHero() {
             {/* Feature chips */}
             <div className="flex flex-wrap gap-2 mb-8">
               {chips.map(({ icon: Icon, label }) => (
-                <span key={label} className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-semibold text-slate-600"
+                <span key={label} className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-semibold text-white/70"
                   style={{
-                    background: 'rgba(255,255,255,0.8)',
-                    border: '1px solid rgba(37,99,235,0.15)',
+                    background: 'rgba(255,255,255,0.08)',
+                    border: '1px solid rgba(255,255,255,0.15)',
                     backdropFilter: 'blur(6px)',
                   }}>
-                  <Icon size={10} className="text-blue-600" /> {label}
+                  <Icon size={10} className="text-blue-400" /> {label}
                 </span>
               ))}
             </div>
@@ -124,21 +124,21 @@ export default function EWHero() {
                 Start Your Project <ArrowRight size={13} />
               </a>
               <a href="#ew-intro"
-                className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-sm font-semibold text-blue-600 transition-all duration-300 hover:-translate-y-0.5 hover:text-white hover:bg-blue-600"
-                style={{ border: '1px solid rgba(37,99,235,0.3)' }}>
+                className="inline-flex items-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 rounded-full text-[13px] sm:text-sm font-semibold text-blue-400 transition-all duration-300 hover:-translate-y-0.5 hover:text-white hover:bg-blue-600"
+                style={{ border: '1px solid rgba(96,165,250,0.3)' }}>
                 Explore Services <ArrowUpRight size={13} />
               </a>
             </div>
 
             {/* Stats strip */}
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 sm:gap-10 pt-6 sm:pt-8"
-              style={{ borderTop: '1px solid rgba(37,99,235,0.12)' }}>
+              style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
               {stats.map(({ val, label }) => (
                 <div key={label} className="flex flex-col">
                   <span className="text-[20px] sm:text-[28px] font-bold leading-tight text-gradient-blue">
                     {val}
                   </span>
-                  <span className="text-[10.5px] mt-0.5 text-slate-500">{label}</span>
+                  <span className="text-[10.5px] mt-0.5 text-white/50">{label}</span>
                 </div>
               ))}
             </div>
@@ -150,11 +150,11 @@ export default function EWHero() {
 
               {/* Glow halo */}
               <div className="absolute -inset-6 rounded-[2.5rem] pointer-events-none"
-                style={{ background: 'var(--brand-gradient-glow)' }} />
+                style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
               {/* Main image */}
               <div className="relative rounded-3xl overflow-hidden"
-                style={{ border: '1px solid rgba(37,99,235,0.15)', boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
+                style={{ border: '1px solid rgba(255,255,255,0.15)', boxShadow: '0 32px 80px rgba(37,99,235,0.18)' }}>
 
                 <img
                   src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=520&fit=crop&auto=format&q=80"

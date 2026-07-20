@@ -135,7 +135,7 @@ export default function OMFAQ() {
                 <div key={label} className="group flex items-center gap-3 px-5 py-3.5 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors duration-200 cursor-default">
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}25` }}>
-                    <Icon size={13} style={{ color }} />
+                    <Icon size={13} className="text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-[12px] font-bold text-slate-800">{label}</p>
@@ -147,9 +147,9 @@ export default function OMFAQ() {
 
             {/* Still have questions card */}
             <div className="rounded-2xl p-5 overflow-hidden relative"
-              style={{ background: 'var(--brand-gradient)', boxShadow: '0 12px 36px rgba(37,99,235,0.22)' }}>
+              style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)', boxShadow: '0 12px 36px rgba(0,0,0,0.30)' }}>
               <div className="absolute inset-0 pointer-events-none"
-                style={{ background: 'var(--brand-gradient-glow)' }} />
+                style={{ background: 'var(--brand-gradient-glow-dark)' }} />
               <div className="relative">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3"
                   style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>

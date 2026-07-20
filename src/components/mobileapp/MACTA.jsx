@@ -10,7 +10,8 @@ const highlights = [
 export default function MACTA() {
   return (
     <section id="contact"
-      className="relative overflow-hidden py-16 sm:py-16">
+      className="relative overflow-hidden py-16 sm:py-16"
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}>
 
       <div className="relative max-w-[1280px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-14 items-center">
@@ -19,24 +20,24 @@ export default function MACTA() {
           <div className="flex-1 reveal-left">
             <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-                style={{ color: '#1e40af', border: '1px solid rgba(37,99,235,0.3)' }}>
+                style={{ color: '#93c5fd', border: '1px solid rgba(96,165,250,0.30)', background: 'rgba(37,99,235,0.18)' }}>
                 <Rocket size={11} /> Let's Build Your App
               </span>
 
-              <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-gray-900 leading-tight tracking-tight mb-5">
+              <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold leading-tight tracking-tight mb-5" style={{ color: '#ffffff' }}>
                 Let's Build Your{' '}
                 <span className="text-gradient-blue">
                   Mobile App Together
                 </span>
               </h2>
 
-              <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
+              <p className="text-[15px] leading-[1.85] mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>
                 Partner with a reliable mobile app development company in Thanjavur to build your iOS and Android app from the ground up.
               </p>
-              <p className="text-[15px] leading-[1.85] mb-4" style={{ color: '#475569' }}>
+              <p className="text-[15px] leading-[1.85] mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>
                 Our custom mobile app development services in Thanjavur are tailored to your unique business requirements — from ideation to launch.
               </p>
-              <p className="text-[15px] leading-[1.85] mb-10" style={{ color: '#475569' }}>
+              <p className="text-[15px] leading-[1.85] mb-10" style={{ color: 'rgba(255,255,255,0.55)' }}>
                 Fill in the form and our specialists will help you plan your perfect app solution — secure, scalable, and built to perform.
               </p>
             </div>
@@ -46,10 +47,10 @@ export default function MACTA() {
               {highlights.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">
                   <div className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(37,99,235,0.10)', border: '1px solid rgba(37,99,235,0.25)' }}>
-                    <Icon size={13} style={{ color: '#1e40af' }} />
+                    style={{ background: 'rgba(37,99,235,0.18)', border: '1px solid rgba(96,165,250,0.30)' }}>
+                    <Icon size={13} style={{ color: '#93c5fd' }} />
                   </div>
-                  <span className="text-[13.5px] font-medium" style={{ color: '#334155' }}>{text}</span>
+                  <span className="text-[13.5px] font-medium" style={{ color: 'rgba(255,255,255,0.70)' }}>{text}</span>
                 </div>
               ))}
             </div>
@@ -57,14 +58,14 @@ export default function MACTA() {
             {/* Phone CTA */}
             <a href="tel:+918110025254"
               className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl transition-all duration-300 hover:scale-[1.03]"
-              style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.25)' }}>
+              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)' }}>
               <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                 style={{ background: 'var(--brand-gradient)' }}>
                 <Phone size={16} className="text-white" />
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider" style={{ color: '#64748b' }}>Call Us Now</p>
-                <p className="text-[15px] font-black" style={{ color: '#1e293b' }}>+91 81100 25254</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider" style={{ color: 'rgba(255,255,255,0.45)' }}>Call Us Now</p>
+                <p className="text-[15px] font-black" style={{ color: '#ffffff' }}>+91 81100 25254</p>
               </div>
             </a>
           </div>
@@ -72,11 +73,11 @@ export default function MACTA() {
           {/* Right: Contact Form */}
           <div className="w-full lg:w-[440px] flex-shrink-0 reveal-right">
             <div className="rounded-3xl p-5 sm:p-8"
-              style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.15)', boxShadow: '0 32px 80px rgba(0,0,0,0.10)' }}>
+              style={{ background: 'rgba(10,26,52,0.9)', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 32px 80px rgba(0,0,0,0.35)' }}>
 
               <div className="mb-7">
-                <h3 className="text-[17px] font-bold mb-1" style={{ color: '#1e293b' }}>Get a Free Consultation</h3>
-                <p className="text-[12.5px]" style={{ color: '#64748b' }}>Tell us about your app idea and our specialists will help you plan the perfect mobile solution.</p>
+                <h3 className="text-[17px] font-bold mb-1" style={{ color: '#ffffff' }}>Get a Free Consultation</h3>
+                <p className="text-[12.5px]" style={{ color: 'rgba(255,255,255,0.50)' }}>Tell us about your app idea and our specialists will help you plan the perfect mobile solution.</p>
               </div>
 
               <form className="flex flex-col gap-4" onSubmit={e => e.preventDefault()}>
@@ -86,27 +87,27 @@ export default function MACTA() {
                   { label: 'Phone Number',  type: 'tel',   placeholder: 'Enter your phone number' },
                 ].map(({ label, type, placeholder }) => (
                   <div key={label}>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider mb-1.5" style={{ color: '#475569' }}>{label}</label>
+                    <label className="block text-[11px] font-bold uppercase tracking-wider mb-1.5" style={{ color: 'rgba(255,255,255,0.55)' }}>{label}</label>
                     <input
                       type={type}
                       placeholder={placeholder}
                       className="w-full px-4 py-3 rounded-xl text-[13.5px] outline-none transition-all duration-200"
-                      style={{ background: '#f8fafc', border: '1px solid #e2e8f0', color: '#1e293b' }}
-                      onFocus={e => { e.currentTarget.style.border = '1px solid rgba(37,99,235,0.6)'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(37,99,235,0.10)' }}
-                      onBlur={e => { e.currentTarget.style.border = '1px solid #e2e8f0'; e.currentTarget.style.boxShadow = 'none' }}
+                      style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', color: '#ffffff' }}
+                      onFocus={e => { e.currentTarget.style.border = '1px solid rgba(96,165,250,0.6)'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(37,99,235,0.15)' }}
+                      onBlur={e => { e.currentTarget.style.border = '1px solid rgba(255,255,255,0.15)'; e.currentTarget.style.boxShadow = 'none' }}
                     />
                   </div>
                 ))}
 
                 <div>
-                  <label className="block text-[11px] font-bold uppercase tracking-wider mb-1.5" style={{ color: '#475569' }}>App Requirements</label>
+                  <label className="block text-[11px] font-bold uppercase tracking-wider mb-1.5" style={{ color: 'rgba(255,255,255,0.55)' }}>App Requirements</label>
                   <textarea
                     rows={3}
                     placeholder="Describe your app idea and requirements..."
                     className="w-full px-4 py-3 rounded-xl text-[13.5px] outline-none transition-all duration-200 resize-none"
-                    style={{ background: '#f8fafc', border: '1px solid #e2e8f0', color: '#1e293b' }}
-                    onFocus={e => { e.currentTarget.style.border = '1px solid rgba(37,99,235,0.6)'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(37,99,235,0.10)' }}
-                    onBlur={e => { e.currentTarget.style.border = '1px solid #e2e8f0'; e.currentTarget.style.boxShadow = 'none' }}
+                    style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', color: '#ffffff' }}
+                    onFocus={e => { e.currentTarget.style.border = '1px solid rgba(96,165,250,0.6)'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(37,99,235,0.15)' }}
+                    onBlur={e => { e.currentTarget.style.border = '1px solid rgba(255,255,255,0.15)'; e.currentTarget.style.boxShadow = 'none' }}
                   />
                 </div>
 

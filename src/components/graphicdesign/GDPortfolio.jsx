@@ -116,15 +116,15 @@ export default function GDPortfolio() {
               {/* Overlay */}
               <div
                 className="absolute inset-0 flex flex-col justify-end p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: 'var(--brand-gradient)' }}
+                style={{ background: 'linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)' }}
               >
-                <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest mb-1">{tag}</span>
+                <span className="text-[10px] font-bold text-blue-100 uppercase tracking-widest mb-1">{tag}</span>
                 <p className="text-[14px] font-bold text-white">{label}</p>
               </div>
               {/* Tag chip (always visible) */}
               <div
                 className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold"
-                style={{ background: 'rgba(37,99,235,0.9)', color: '#fff' }}
+                style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)', color: '#fff' }}
               >
                 {tag}
               </div>

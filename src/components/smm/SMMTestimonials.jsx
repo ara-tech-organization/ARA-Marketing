@@ -25,39 +25,30 @@ export default function SMMTestimonials() {
   return (
     <section
       className="relative overflow-hidden py-16"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Large decorative rings */}
       <div
         className="absolute -top-20 -left-20 w-[320px] h-[320px] rounded-full pointer-events-none"
-        style={{ border: '2px solid rgba(147,197,253,0.35)' }}
+        style={{ border: '2px solid rgba(147,197,253,0.2)' }}
       />
       <div
         className="absolute -top-10 -left-10 w-[220px] h-[220px] rounded-full pointer-events-none"
-        style={{ border: '1.5px solid rgba(147,197,253,0.25)' }}
+        style={{ border: '1.5px solid rgba(147,197,253,0.15)' }}
       />
       <div
         className="absolute -bottom-20 -right-20 w-[340px] h-[340px] rounded-full pointer-events-none"
-        style={{ border: '2px solid rgba(96,165,250,0.3)' }}
+        style={{ border: '2px solid rgba(96,165,250,0.18)' }}
       />
       <div
         className="absolute -bottom-10 -right-10 w-[230px] h-[230px] rounded-full pointer-events-none"
-        style={{ border: '1.5px solid rgba(96,165,250,0.2)' }}
-      />
-
-      {/* Cross / plus dot grid */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'var(--brand-gradient-dots)',
-          backgroundSize: '48px 48px',
-        }}
+        style={{ border: '1.5px solid rgba(96,165,250,0.12)' }}
       />
 
       {/* Soft centre glow */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[420px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }}
+        style={{ background: 'var(--brand-gradient-glow-dark)' }}
       />
 
 
@@ -65,15 +56,15 @@ export default function SMMTestimonials() {
 
         {/* Header */}
         <div className="text-center mb-14 reveal">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
-            border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5 shadow-sm">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/10 text-blue-300
+            border border-blue-400/25 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
             <Layers size={11} /> Client Reviews
           </span>
-          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-white leading-tight tracking-tight mb-4">
             What Clients Say About Our{' '}
             <span className="text-gradient-blue">Social Media Marketing</span> Services
           </h2>
-          <p className="text-[15px] text-slate-500 max-w-xl mx-auto">
+          <p className="text-[15px] text-blue-100/70 max-w-xl mx-auto">
             Real results, real growth. Hear from businesses we have helped build stronger social media presence in Thanjavur.
           </p>
         </div>
@@ -83,14 +74,13 @@ export default function SMMTestimonials() {
           {testimonials.map(({ text, name, role, stars }, i) => (
             <div
               key={name}
-              className={`reveal delay-${i + 1} relative bg-white/70 border border-blue-100
-                rounded-3xl p-7 flex flex-col gap-5 backdrop-blur-sm
-                hover:bg-white/90 hover:shadow-xl hover:shadow-blue-100/50 hover:-translate-y-1.5
-                transition-all duration-300`}
+              className={`reveal delay-${i + 1} relative rounded-3xl p-7 flex flex-col gap-5
+                hover:-translate-y-1.5 transition-all duration-300`}
+              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}
             >
               {/* Quote icon */}
-              <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Quote size={18} className="text-blue-400" />
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(255,255,255,0.1)' }}>
+                <Quote size={18} className="text-blue-300" />
               </div>
 
               {/* Stars */}
@@ -101,19 +91,19 @@ export default function SMMTestimonials() {
               </div>
 
               {/* Text */}
-              <p className="text-[14px] text-slate-600 leading-[1.85] flex-1 italic">
+              <p className="text-[14px] text-blue-100/80 leading-[1.85] flex-1 italic">
                 &ldquo;{text}&rdquo;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-blue-100">
+              <div className="flex items-center gap-3 pt-4" style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
                 <div className="w-9 h-9 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[15px]"
-                  style={{ background: '#dbeafe', color: '#2563eb' }}>
+                  style={{ background: 'rgba(255,255,255,0.12)', color: '#93c5fd' }}>
                   {name.charAt(0)}
                 </div>
                 <div>
-                  <p className="text-[13px] font-bold text-slate-800">{name}</p>
-                  <p className="text-[11px] text-slate-400">{role}</p>
+                  <p className="text-[13px] font-bold text-white">{name}</p>
+                  <p className="text-[11px] text-blue-200/60">{role}</p>
                 </div>
               </div>
             </div>

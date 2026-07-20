@@ -17,39 +17,39 @@ export default function DWCTA() {
 
   return (
     <section id="dw-cta" className="relative py-16 sm:py-20 lg:py-16 overflow-hidden"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}>
+      style={{ background: 'linear-gradient(135deg, #0d2244 0%, #0a1a34 40%, #0d2244 100%)' }}>
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '34px 34px' }} />
       {/* Orbs */}
       <div className="absolute top-0 left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 right-1/4 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       {/* Rings */}
-      <div className="hidden sm:block absolute -top-16 -left-16 w-[320px] h-[320px] rounded-full border border-blue-300/25 pointer-events-none animate-[spin_40s_linear_infinite]" />
-      <div className="hidden sm:block absolute -bottom-16 -right-16 w-[280px] h-[280px] rounded-full border border-sky-300/20 pointer-events-none animate-[spin_35s_linear_infinite_reverse]" />
+      <div className="hidden sm:block absolute -top-16 -left-16 w-[320px] h-[320px] rounded-full border border-blue-500/10 pointer-events-none animate-[spin_40s_linear_infinite]" />
+      <div className="hidden sm:block absolute -bottom-16 -right-16 w-[280px] h-[280px] rounded-full border border-sky-500/10 pointer-events-none animate-[spin_35s_linear_infinite_reverse]" />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
 
           {/* ── Left: text ── */}
           <div className="flex-1 text-center lg:text-left reveal">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8 text-blue-600 bg-white shadow-sm"
-              style={{ border: '1px solid rgba(37,99,235,0.20)' }}>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full text-[10px] sm:text-[11px] font-bold uppercase tracking-widest mb-6 sm:mb-8"
+              style={{ background: 'rgba(37,99,235,0.18)', border: '1px solid rgba(96,165,250,0.30)', color: '#93c5fd', backdropFilter: 'blur(8px)' }}>
               <Rocket size={10} /> Let's Build With Us
             </div>
 
-            <h2 className="text-[clamp(23px,3.6vw,51px)] font-bold text-slate-900 leading-[1.08] tracking-tight mb-5">
+            <h2 className="text-[clamp(23px,3.6vw,51px)] font-bold leading-[1.08] tracking-tight mb-5" style={{ color: '#ffffff' }}>
               Let's Build Your{' '}
               <span style={gradBlue}>Dynamic Website Together</span>
             </h2>
 
-            <p className="text-[14px] sm:text-[16px] leading-[1.85] mb-3 max-w-[500px] mx-auto lg:mx-0 text-slate-600">
+            <p className="text-[14px] sm:text-[16px] leading-[1.85] mb-3 max-w-[500px] mx-auto lg:mx-0" style={{ color: 'rgba(255,255,255,0.65)' }}>
               Ready to upgrade your business with a powerful, dynamic website?
             </p>
-            <p className="text-[13px] sm:text-[14px] leading-[1.80] mb-8 sm:mb-10 max-w-[460px] mx-auto lg:mx-0 text-slate-400">
+            <p className="text-[13px] sm:text-[14px] leading-[1.80] mb-8 sm:mb-10 max-w-[460px] mx-auto lg:mx-0" style={{ color: 'rgba(255,255,255,0.40)' }}>
               Work with a trusted dynamic website designing company in Thanjavur and upgrade your digital experience with modern design and advanced functionality.
             </p>
 
@@ -61,13 +61,13 @@ export default function DWCTA() {
                 <Phone size={14} /> Call Us Now
               </a>
             </div>
-            <p className="text-[13px] text-slate-500 mb-8 sm:mb-10 text-center lg:text-left">
+            <p className="text-[13px] mb-8 sm:mb-10 text-center lg:text-left" style={{ color: 'rgba(255,255,255,0.45)' }}>
               Or request a free consultation today.
             </p>
 
             {/* Trust stats */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-5 pt-6 sm:pt-8"
-              style={{ borderTop: '1px solid rgba(37,99,235,0.15)' }}>
+              style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
               {[
                 ['200+', 'Websites Delivered'],
                 ['98%',  'Client Satisfaction'],
@@ -75,7 +75,7 @@ export default function DWCTA() {
               ].map(([num, label]) => (
                 <div key={label} className="flex flex-col items-center lg:items-start">
                   <span className="text-[22px] sm:text-[26px] font-black leading-tight" style={gradBlue}>{num}</span>
-                  <span className="text-[10px] sm:text-[11px] mt-0.5 text-slate-400">{label}</span>
+                  <span className="text-[10px] sm:text-[11px] mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>{label}</span>
                 </div>
               ))}
             </div>

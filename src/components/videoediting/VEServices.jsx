@@ -218,16 +218,15 @@ export default function VEServices() {
 
               {/* Info card */}
               <div className="flex-1 rounded-2xl p-5"
-                style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${svc.color}14` }}>
-                <p className="text-[10px] font-black uppercase tracking-widest mb-3" style={{ color: svc.color }}>Why This Service</p>
+                style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)', border: '1.5px solid rgba(255,255,255,0.1)' }}>
+                <p className="text-[10px] font-black uppercase tracking-widest mb-3 text-blue-400">Why This Service</p>
                 <div className="flex flex-col gap-2.5">
                   {['High-converting visual content', 'Platform-optimised delivery', 'Fast turnaround guaranteed'].map(t => (
                     <div key={t} className="flex items-center gap-2">
-                      <div className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0"
-                        style={{ background: svc.color + '18' }}>
-                        <CheckCircle2 size={10} style={{ color: svc.color }} />
+                      <div className="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0 bg-white/10">
+                        <CheckCircle2 size={10} className="text-blue-400" />
                       </div>
-                      <span className="text-[12px] text-slate-600">{t}</span>
+                      <span className="text-[12px] text-white/70">{t}</span>
                     </div>
                   ))}
                 </div>

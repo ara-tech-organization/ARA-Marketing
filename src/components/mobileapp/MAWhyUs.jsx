@@ -87,29 +87,29 @@ export default function MAWhyUs() {
           {/* Hero feature card — spans 5 cols, 2 rows */}
           <div className="lg:col-span-5 lg:row-span-2 reveal-left">
             <div className="relative h-full min-h-[360px] lg:min-h-[500px] rounded-3xl overflow-hidden flex flex-col justify-between p-8"
-              style={{ background: 'var(--brand-gradient)', border: '1px solid rgba(37,99,235,0.3)' }}>
+              style={{ background: '#f0f9ff', border: '1px solid #bfdbfe' }}>
 
               <img src={whyUsImage} alt="Mobile App Development Agency Thanjavur"
-                className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-20" loading="lazy" />
+                className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-[0.06]" loading="lazy" />
 
-              <div className="absolute inset-0 opacity-10"
-                style={{ backgroundImage: 'radial-gradient(circle,rgba(255,255,255,0.7) 1px,transparent 1px)', backgroundSize: '26px 26px' }} />
+              <div className="absolute inset-0 opacity-50"
+                style={{ backgroundImage: 'radial-gradient(circle,rgba(37,99,235,0.18) 1px,transparent 1px)', backgroundSize: '26px 26px' }} />
 
               <div className="absolute top-[-60px] right-[-60px] w-[240px] h-[240px] rounded-full pointer-events-none"
                 style={{ background: 'var(--brand-gradient-glow)' }} />
 
               <div className="relative">
                 <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5"
-                  style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                  style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
                   <Star size={20} className="text-white" />
                 </div>
-                <p className="text-[11px] font-bold uppercase tracking-widest text-blue-200 mb-2">
+                <p className="text-[11px] font-bold uppercase tracking-widest text-blue-500 mb-2">
                   Mobile App Development Agency Thanjavur
                 </p>
-                <h3 className="text-[22px] font-bold text-white leading-snug mb-4">
+                <h3 className="text-[22px] font-bold text-slate-900 leading-snug mb-4">
                   Professional Mobile App Development Services
                 </h3>
-                <p className="text-[13.5px] text-blue-100 leading-[1.8]">
+                <p className="text-[13.5px] text-slate-600 leading-[1.8]">
                   Meeting business goals with innovative solutions that seamlessly integrate with your digital strategy and make your brand stand out.
                 </p>
               </div>
@@ -117,15 +117,15 @@ export default function MAWhyUs() {
               <div className="relative mt-6 flex flex-col gap-2.5">
                 {checklist.map(item => (
                   <div key={item} className="flex items-start gap-2.5">
-                    <CheckCircle2 size={13} className="text-blue-200 flex-shrink-0 mt-0.5" />
-                    <span className="text-[12px] text-blue-100 font-medium leading-snug">{item}</span>
+                    <CheckCircle2 size={13} className="text-blue-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-[12px] text-slate-700 font-medium leading-snug">{item}</span>
                   </div>
                 ))}
               </div>
 
               <div className="relative mt-6 self-start">
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold text-white"
-                  style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold text-blue-700"
+                  style={{ background: '#dbeafe', border: '1px solid rgba(37,99,235,0.15)' }}>
                   <Trophy size={11} /> Best App Agency · Thanjavur
                 </span>
               </div>
@@ -149,9 +149,9 @@ export default function MAWhyUs() {
               >
                 {/* left icon panel */}
                 <div className="icon-panel flex-shrink-0 w-[68px] flex flex-col items-center justify-center gap-3 transition-all duration-300"
-                  style={{ background: 'var(--brand-gradient-soft)' }}>
-                  <Icon size={22} style={{ color: accent }} className="transition-colors duration-300" />
-                  <span className="text-[10px] font-black" style={{ color: `${accent}99` }}>{num}</span>
+                  style={{ background: 'var(--brand-gradient)' }}>
+                  <Icon size={22} className="text-white transition-colors duration-300" />
+                  <span className="text-[10px] font-black text-white/70">{num}</span>
                 </div>
                 {/* right content */}
                 <div className="flex-1 p-4">
@@ -179,9 +179,9 @@ export default function MAWhyUs() {
                 }}
               >
                 <div className="icon-panel flex-shrink-0 w-[60px] flex flex-col items-center justify-center gap-2 transition-all duration-300"
-                  style={{ background: 'var(--brand-gradient-soft)' }}>
-                  <Icon size={20} style={{ color: accent }} />
-                  <span className="text-[10px] font-black" style={{ color: `${accent}99` }}>{num}</span>
+                  style={{ background: 'var(--brand-gradient)' }}>
+                  <Icon size={20} className="text-white" />
+                  <span className="text-[10px] font-black text-white/70">{num}</span>
                 </div>
                 <div className="flex-1 p-4">
                   <div className="w-5 h-[2.5px] rounded-full mb-2.5" style={{ background: accent }} />

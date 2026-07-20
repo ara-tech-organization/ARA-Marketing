@@ -16,12 +16,12 @@ const perks = [
 
 export default function CMSCTA() {
   return (
-    <section className="relative py-16 sm:py-16 overflow-hidden bg-white">
+    <section className="relative py-16 sm:py-16 overflow-hidden" style={{ background: 'linear-gradient(135deg,#071a36 0%,#0f2a52 45%,#071a36 100%)' }}>
       {/* Subtle orbs */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Dot pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-20"
@@ -35,12 +35,12 @@ export default function CMSCTA() {
 
             {/* Badge */}
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-6"
-              style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.2)' }}>
+              style={{ background: 'rgba(255,255,255,0.1)', color: '#93c5fd', border: '1px solid rgba(255,255,255,0.2)' }}>
               <Sparkles size={11} /> Let's Build Together
             </span>
 
             {/* Heading */}
-            <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
+            <h2 className="text-[clamp(25px,3.1vw,47px)] font-bold text-white leading-[1.1] tracking-tight mb-5">
               Let's Build Your WordPress{' '}
               <span className="text-gradient-blue">
                 Website Together
@@ -48,16 +48,16 @@ export default function CMSCTA() {
             </h2>
 
             {/* Sub */}
-            <p className="text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-lg mx-auto md:mx-0">
-              Are you ready to grow your business online with a powerful WordPress website? Collaborate with one of the <span className="text-slate-600">best WordPress development firms in Thanjavur</span> and elevate your online presence to the next level.
+            <p className="text-[15px] text-white/60 leading-[1.85] mb-8 max-w-lg mx-auto md:mx-0">
+              Are you ready to grow your business online with a powerful WordPress website? Collaborate with one of the <span className="text-white/80">best WordPress development firms in Thanjavur</span> and elevate your online presence to the next level.
             </p>
 
             {/* Perks checklist */}
             <div className="flex flex-col gap-2.5 mb-8">
               {perks.map(p => (
                 <div key={p} className="flex items-center gap-3">
-                  <CheckCircle2 size={15} className="flex-shrink-0" style={{ color: '#2563eb' }} />
-                  <span className="text-[13px] text-slate-600 font-medium">{p}</span>
+                  <CheckCircle2 size={15} className="flex-shrink-0" style={{ color: '#60a5fa' }} />
+                  <span className="text-[13px] text-white/80 font-medium">{p}</span>
                 </div>
               ))}
             </div>
@@ -80,13 +80,13 @@ export default function CMSCTA() {
           {/* ── Right: Stats panel ── */}
           <div className="md:w-[340px] lg:w-[420px] flex-shrink-0 reveal">
             <div className="rounded-3xl p-7 relative overflow-hidden"
-              style={{ background: '#071a36', boxShadow: '0 24px 64px rgba(7,26,54,0.50)' }}>
+              style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03))', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 24px 64px rgba(7,26,54,0.50)' }}>
 
               {/* Panel glow */}
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full pointer-events-none"
-                style={{ background: 'var(--brand-gradient-glow)' }} />
+                style={{ background: 'var(--brand-gradient-glow-dark)' }} />
               <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full pointer-events-none"
-                style={{ background: 'var(--brand-gradient-glow)' }} />
+                style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
               {/* Panel header */}
               <div className="relative mb-6">

@@ -42,36 +42,51 @@ export default function DWBenefits() {
           style={{ boxShadow: '0 24px 80px rgba(37,99,235,0.15)', border: '1.5px solid #dbeafe' }}>
 
           {/* Left dark panel */}
-          <div className="lg:w-[48%] flex-shrink-0 relative px-5 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-14"
-            style={{ background: 'var(--brand-gradient)' }}>
+          <div className="lg:w-[48%] flex-shrink-0 relative overflow-hidden px-5 sm:px-8 lg:px-10 py-8 sm:py-10 lg:py-14"
+            style={{ background: '#f0f9ff' }}>
             <div className="absolute inset-0 pointer-events-none"
-              style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px' }} />
+              style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '28px 28px', opacity: 0.5 }} />
             <div className="absolute -top-20 -right-20 w-[260px] h-[260px] rounded-full pointer-events-none"
               style={{ background: 'var(--brand-gradient-glow)' }} />
+
+            {/* Decorative rings */}
+            <div className="absolute -top-24 -left-24 w-56 h-56 rounded-full pointer-events-none"
+              style={{ border: '1.5px solid rgba(37,99,235,0.10)' }} />
+            <div className="absolute -bottom-20 -right-16 w-64 h-64 rounded-full pointer-events-none"
+              style={{ border: '1.5px solid rgba(37,99,235,0.08)' }} />
+            <div className="absolute bottom-10 -left-16 w-40 h-40 rounded-full pointer-events-none"
+              style={{ border: '1.5px solid rgba(14,165,233,0.10)' }} />
+
+            {/* Accent dots */}
+            <div className="absolute top-10 right-10 w-2.5 h-2.5 rounded-sm rotate-45 pointer-events-none"
+              style={{ background: 'rgba(37,99,235,0.25)' }} />
+            <div className="absolute top-1/2 right-6 w-2 h-2 rounded-full pointer-events-none"
+              style={{ background: 'rgba(14,165,233,0.30)' }} />
+            <div className="absolute bottom-14 left-8 w-2 h-2 rounded-full pointer-events-none"
+              style={{ background: 'rgba(37,99,235,0.22)' }} />
+
             <div className="relative">
-              <p className="text-[10px] font-black uppercase tracking-widest mb-6" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              <p className="text-[10px] font-black uppercase tracking-widest mb-6 text-blue-500">
                 Key benefits include
               </p>
               <div className="space-y-4">
                 {benefits.map(({ icon: Icon, label, color }) => (
                   <div
                     key={label}
-                    className="group flex items-start gap-4 p-4 rounded-2xl transition-all duration-300 hover:translate-x-1 cursor-default"
-                    style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.10)' }}
+                    className="group flex items-start gap-4 p-4 rounded-2xl transition-all duration-300 hover:translate-x-1 cursor-default bg-white"
+                    style={{ border: '1px solid #dbeafe' }}
                     onMouseEnter={e => {
-                      e.currentTarget.style.background = 'rgba(255,255,255,0.10)'
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.22)'
+                      e.currentTarget.style.borderColor = '#93c5fd'
                     }}
                     onMouseLeave={e => {
-                      e.currentTarget.style.background = 'rgba(255,255,255,0.06)'
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.10)'
+                      e.currentTarget.style.borderColor = '#dbeafe'
                     }}
                   >
                     <div className="flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center"
-                      style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.20)' }}>
-                      <Icon size={15} style={{ color }} />
+                      style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
+                      <Icon size={15} className="text-white" />
                     </div>
-                    <p className="text-[13px] sm:text-[14px] font-semibold leading-snug" style={{ color: 'rgba(255,255,255,0.88)' }}>
+                    <p className="text-[13px] sm:text-[14px] font-semibold leading-snug text-slate-700">
                       {label}
                     </p>
                   </div>

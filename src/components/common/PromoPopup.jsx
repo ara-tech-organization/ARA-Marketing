@@ -249,7 +249,7 @@ export default function PromoPopup() {
 
           {/* ── RIGHT: Info panel ── */}
           <div className="relative hidden md:flex flex-col p-5 pt-11 overflow-y-auto"
-            style={{ background: 'linear-gradient(160deg,#0b1526 0%,#0f2247 100%)', maxHeight: '86vh' }}>
+            style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)', maxHeight: '86vh' }}>
 
             {/* Illustration */}
             <div className="relative mx-auto mb-5 illustration-float" style={{ width: 140, height: 116 }}>

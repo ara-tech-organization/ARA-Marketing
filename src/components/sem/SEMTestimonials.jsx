@@ -132,11 +132,11 @@ export default function SEMTestimonials() {
                   onClick={() => setActive(i)}
                   className="group relative text-left rounded-xl p-5 border transition-all duration-300 overflow-hidden"
                   style={isActive
-                    ? { background: 'var(--brand-gradient-soft)', borderColor: `${color}28`, boxShadow: `0 6px 20px ${color}10` }
+                    ? { background: 'linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%)', borderColor: `${color}28`, boxShadow: `0 6px 20px ${color}10` }
                     : { background: 'white', borderColor: '#f1f5f9', boxShadow: '0 1px 6px rgba(0,0,0,0.03)' }}
                 >
                   <div className="absolute top-0 left-0 bottom-0 w-0.5 rounded-l-xl transition-all duration-300"
-                    style={{ background: isActive ? 'var(--brand-gradient-soft)' : 'transparent' }} />
+                    style={{ background: isActive ? 'linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%)' : 'transparent' }} />
 
                   <div className="flex items-center gap-2 mb-1.5 pl-1">
                     <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center font-bold text-[12px]"

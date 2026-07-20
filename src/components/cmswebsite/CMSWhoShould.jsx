@@ -106,7 +106,7 @@ export default function CMSWhoShould() {
 
               {/* Commitments list */}
               <div className="rounded-2xl p-6"
-                style={{ background: 'var(--brand-gradient-soft)', border: '1px solid rgba(37,99,235,0.15)' }}>
+                style={{ background: 'rgb(240, 249, 255)', border: '1px solid rgba(37,99,235,0.15)' }}>
                 <h3 className="text-[13px] font-bold text-slate-700 mb-5 uppercase tracking-widest">Our Commitments</h3>
                 <div className="flex flex-col gap-3.5">
                   {commitments.map((c, i) => (

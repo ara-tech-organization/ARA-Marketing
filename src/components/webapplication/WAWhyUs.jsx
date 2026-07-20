@@ -20,18 +20,18 @@ export default function WAWhyUs() {
   return (
     <section
       className="py-16 sm:py-20 lg:py-18 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #f8fafc 0%, white 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #0a1a34 0%, #071a36 100%)' }}
     >
       <div className="max-w-[1200px] mx-auto px-3 xs:px-4 sm:px-6 md:px-7">
 
         <div className="text-center mb-10 sm:mb-14 reveal">
           <span
             className="inline-flex items-center gap-2 px-3 xs:px-4 py-1.5 rounded-full text-[10px] xs:text-[11px] font-black uppercase tracking-widest mb-4 sm:mb-5"
-            style={{ background: 'rgba(37,99,235,0.08)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.18)' }}
+            style={{ background: 'rgba(96,165,250,0.12)', color: '#93c5fd', border: '1px solid rgba(96,165,250,0.25)' }}
           >
             <Trophy size={10} /> Why Choose ARA
           </span>
-          <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-slate-900">
+          <h2 className="text-[clamp(21px,2.7vw,41px)] font-bold tracking-tight text-white">
             Why Businesses{' '}
             <span className="text-gradient-blue">
               Choose Us
@@ -46,21 +46,21 @@ export default function WAWhyUs() {
             {reasons.map(({ icon: Icon, label, desc }, i) => (
               <div
                 key={label}
-                className="group flex items-start gap-4 xs:gap-5 py-4 xs:py-5 px-2 xs:px-3 rounded-2xl transition-all duration-300 hover:bg-blue-50/60 reveal"
+                className="group flex items-start gap-4 xs:gap-5 py-4 xs:py-5 px-2 xs:px-3 rounded-2xl transition-all duration-300 hover:bg-white/5 reveal"
                 style={{
-                  borderBottom: i < reasons.length - 1 ? '1px solid #dbeafe' : 'none',
+                  borderBottom: i < reasons.length - 1 ? '1px solid rgba(255,255,255,0.1)' : 'none',
                   transitionDelay: `${i * 55}ms`,
                 }}
               >
                 <div
                   className="w-11 xs:w-12 h-11 xs:h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
-                  style={{ background: 'rgba(37,99,235,0.09)', color: '#2563eb' }}
+                  style={{ background: 'rgba(96,165,250,0.15)', color: '#93c5fd' }}
                 >
                   <Icon size={19} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-[13px] xs:text-[14px] font-bold text-slate-800 mb-1">{label}</h3>
-                  <p className="text-[12.5px] xs:text-[13.5px] text-slate-500 leading-relaxed">{desc}</p>
+                  <h3 className="text-[13px] xs:text-[14px] font-bold text-white mb-1">{label}</h3>
+                  <p className="text-[12.5px] xs:text-[13.5px] text-white/60 leading-relaxed">{desc}</p>
                 </div>
                 <ArrowRight
                   size={13}
@@ -74,7 +74,7 @@ export default function WAWhyUs() {
           <div className="lg:w-[400px] flex-shrink-0 w-full reveal-right">
             <div
               className="rounded-3xl overflow-hidden"
-              style={{ background: '#071a36', border: '1px solid rgba(37,99,235,0.3)', boxShadow: '0 24px 60px rgba(37,99,235,0.18)' }}
+              style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.14)', boxShadow: '0 24px 60px rgba(0,0,0,0.35)' }}
             >
               <div className="h-1" style={{ background: 'var(--brand-gradient-soft)' }} />
 

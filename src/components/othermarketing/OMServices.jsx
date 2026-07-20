@@ -175,7 +175,7 @@ export default function OMServices() {
           </div>
 
           {/* Right: service list */}
-          <div className="w-full lg:w-[320px] flex-shrink-0 p-5 sm:p-8" style={{ background: s.bg + '70' }}>
+          <div className="w-full lg:w-[320px] flex-shrink-0 p-5 sm:p-8" style={{ background: '#f0f9ff' }}>
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-5">What We Offer</p>
             <div className="flex flex-col gap-2.5">
               {s.items.map(({ icon: Icon, text }) => (
@@ -187,7 +187,7 @@ export default function OMServices() {
                 >
                   <div className="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ background: 'var(--brand-gradient-soft)', border: `1px solid ${s.color}18` }}>
-                    <Icon size={14} style={{ color: s.color }} />
+                    <Icon size={14} className="text-white" />
                   </div>
                   <span className="text-[13px] font-semibold text-slate-700">{text}</span>
                   <CheckCircle2 size={12} className="ml-auto flex-shrink-0" style={{ color: s.color + '70' }} />

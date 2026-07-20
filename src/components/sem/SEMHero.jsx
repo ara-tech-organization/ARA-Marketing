@@ -56,7 +56,7 @@ export default function SEMHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-screen flex items-center"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -74,38 +74,38 @@ export default function SEMHero() {
 
       {/* Orbs */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 right-0 w-[550px] h-[550px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Decorative rings */}
-      <div className="absolute top-20 left-[6%] w-28 h-28 rounded-full border border-blue-200/50 pointer-events-none" />
-      <div className="absolute bottom-20 right-[6%] w-20 h-20 rounded-full border-[1.5px] border-blue-300/40 pointer-events-none" />
-      <div className="absolute top-1/3 right-[3%] w-14 h-14 rounded-full border border-indigo-200/40 pointer-events-none" />
+      <div className="absolute top-20 left-[6%] w-28 h-28 rounded-full border border-white/10 pointer-events-none" />
+      <div className="absolute bottom-20 right-[6%] w-20 h-20 rounded-full border-[1.5px] border-white/10 pointer-events-none" />
+      <div className="absolute top-1/3 right-[3%] w-14 h-14 rounded-full border border-white/10 pointer-events-none" />
 
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7 py-10 w-full">
         <div className="text-center animate-hero-enter">
 
           {/* Breadcrumb */}
-          <nav className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-4">
-            <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
-            <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
+          <nav className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[12px] text-white/40 mb-4">
+            <a href="/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+            <ChevronRight size={12} className="text-white/20 flex-shrink-0" />
             <span className="whitespace-nowrap">Digital Marketing</span>
-            <ChevronRight size={12} className="text-slate-300 flex-shrink-0" />
-            <span className="whitespace-nowrap text-blue-600 font-medium">SEM Services</span>
+            <ChevronRight size={12} className="text-white/20 flex-shrink-0" />
+            <span className="whitespace-nowrap text-blue-400 font-medium">SEM Services</span>
           </nav>
 
           {/* Badge */}
           <div className="flex justify-center mb-4">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[11px]
-              font-bold uppercase tracking-widest bg-white border border-blue-200 text-blue-600 shadow-sm">
+              font-bold uppercase tracking-widest bg-white/5 border border-white/10 text-blue-400 shadow-sm">
               <Sparkles size={11} /> Search Engine Marketing (SEM)
             </span>
           </div>
 
           {/* H1 */}
           <h1 className="font-bold tracking-tight mb-4 max-w-[900px] mx-auto">
-            <span className="block text-[clamp(18px,2.2vw,34px)] text-slate-900 leading-[1.1]">
+            <span className="block text-[clamp(18px,2.2vw,34px)] text-white leading-[1.1]">
               Best Google Ads Services &amp; PPC Services in Thanjavur
             </span>
             <span className="block text-[clamp(15px,1.8vw,26px)] text-gradient-blue leading-snug mt-1.5">
@@ -114,15 +114,15 @@ export default function SEMHero() {
           </h1>
 
           {/* Tagline */}
-          <p className="text-[15px] font-medium text-slate-500 tracking-wide mb-3">
+          <p className="text-[15px] font-medium text-white/60 tracking-wide mb-3">
             AI-Powered Campaigns &middot; Transparent Reporting &middot; ROI-Focused Results
           </p>
 
           {/* Description */}
-          <p className="text-[14.5px] text-slate-500 leading-[1.85] mb-2 max-w-[860px] mx-auto">
+          <p className="text-[14.5px] text-white/70 leading-[1.85] mb-2 max-w-[860px] mx-auto">
             ARA Discover Marketing provides result-driven Google Ads and ppc service in Thanjavur to help businesses generate high-quality leads, increase website traffic, and optimize ROI with targeted paid advertising campaigns. We are one of the best search engine advertising agencies in Thanjavur, and we develop strategic Google Ads campaigns for startups, local businesses, and growing businesses.
           </p>
-          <p className="text-[13.5px] text-slate-400 leading-[1.8] mb-6 max-w-[820px] mx-auto">
+          <p className="text-[13.5px] text-white/50 leading-[1.8] mb-6 max-w-[820px] mx-auto">
             Our paid advertising specialists offer full ppc ads service in Thanjavur, focusing on audience targeting, conversion optimization, and AI-enabled campaign strategies that allow businesses to achieve measurable growth with Google Search, Display, YouTube, and Shopping Ads.
           </p>
 
@@ -136,17 +136,17 @@ export default function SEMHero() {
             </a>
             <a href="#sem-services"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm
-                font-semibold text-blue-700 bg-white border border-blue-200
-                hover:bg-blue-50 hover:border-blue-300 transition-all duration-300">
+                font-semibold text-white/70 bg-white/5 border border-white/10
+                hover:bg-white/10 hover:border-white/20 transition-all duration-300">
               Explore Services <ArrowUpRight size={15} />
             </a>
           </div>
 
           {/* Stats inline */}
-          <div className="flex flex-wrap justify-center items-center gap-6 mb-8 text-[13px] text-slate-400">
+          <div className="flex flex-wrap justify-center items-center gap-6 mb-8 text-[13px] text-white/50">
             {[['200+', 'PPC Campaigns'], ['95%', 'Client Satisfaction'], ['300%', 'Avg. Lead Growth']].map(([num, lbl], i) => (
               <span key={lbl} className="flex items-center gap-1.5">
-                {i > 0 && <span className="w-px h-3.5 bg-slate-200 mr-4" />}
+                {i > 0 && <span className="w-px h-3.5 bg-white/15 mr-4" />}
                 {num}
                 <span>{lbl}</span>
               </span>
@@ -157,24 +157,24 @@ export default function SEMHero() {
           <div className="reveal relative">
 
             {/* Floating badges */}
-            <div className="absolute -top-4 left-0 z-10 hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white
-              border border-blue-200 shadow-lg animate-float"
+            <div className="absolute -top-4 left-0 z-10 hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/5
+              border border-white/10 shadow-lg animate-float"
               style={{ boxShadow: '0 8px 28px rgba(37,99,235,0.18)' }}>
-              <Megaphone size={13} className="text-blue-600" />
-              <span className="text-[11px] font-bold text-slate-700">Certified Google Partner</span>
+              <Megaphone size={13} className="text-blue-400" />
+              <span className="text-[11px] font-bold text-white/80">Certified Google Partner</span>
             </div>
-            <div className="absolute -top-4 right-0 z-10 hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white
-              border border-blue-100 shadow-lg animate-float-delay"
+            <div className="absolute -top-4 right-0 z-10 hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/5
+              border border-white/10 shadow-lg animate-float-delay"
               style={{ boxShadow: '0 8px 24px rgba(37,99,235,0.12)' }}>
-              <Target size={13} className="text-blue-600" />
-              <span className="text-[11px] font-bold text-slate-700">150+ Campaign Optimizations</span>
+              <Target size={13} className="text-blue-400" />
+              <span className="text-[11px] font-bold text-white/80">150+ Campaign Optimizations</span>
             </div>
 
             {/* 4 campaign cards */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
               {campaignTypes.map(({ icon: Icon, img, label, roas, sub, color, grad }) => (
                 <div key={label}
-                  className="group rounded-2xl overflow-hidden bg-white border border-slate-100
+                  className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10
                     hover:-translate-y-2 transition-all duration-300"
                   style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
                   onMouseEnter={e => { e.currentTarget.style.boxShadow = `0 16px 44px ${color}20` }}
@@ -195,9 +195,9 @@ export default function SEMHero() {
                   {/* White bottom */}
                   <div className="px-5 py-4 text-center">
                     <p className="text-[26px] font-bold leading-none mb-0.5" style={{ color }}>{roas}</p>
-                    <p className="text-[9px] font-bold uppercase tracking-widest text-slate-400 mb-3">Avg. ROAS</p>
-                    <p className="text-[11px] text-slate-500 leading-snug">{sub}</p>
-                    <div className="mt-3 h-1 rounded-full bg-slate-100 overflow-hidden">
+                    <p className="text-[9px] font-bold uppercase tracking-widest text-white/40 mb-3">Avg. ROAS</p>
+                    <p className="text-[11px] text-white/60 leading-snug">{sub}</p>
+                    <div className="mt-3 h-1 rounded-full bg-white/10 overflow-hidden">
                       <div className="h-full rounded-full transition-all duration-700 group-hover:w-full"
                         style={{ width: '65%', background: 'var(--brand-gradient-soft)' }} />
                     </div>
@@ -208,20 +208,20 @@ export default function SEMHero() {
 
             {/* Live status bar */}
             <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-3
-              px-6 py-3.5 rounded-2xl bg-white border border-slate-100"
+              px-6 py-3.5 rounded-2xl bg-white/5 border border-white/10"
               style={{ boxShadow: '0 4px 16px rgba(37,99,235,0.06)' }}>
-              <span className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-600">
+              <span className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse-dot" />
                 All Campaigns Running Live
               </span>
-              <span className="hidden sm:block w-px h-4 bg-slate-200" />
-              <span className="flex items-center gap-1.5 text-[11px] text-slate-500">
-                <TrendingUp size={11} className="text-blue-500" />
+              <span className="hidden sm:block w-px h-4 bg-white/15" />
+              <span className="flex items-center gap-1.5 text-[11px] text-white/60">
+                <TrendingUp size={11} className="text-blue-400" />
                 Real-time tracking &amp; bid optimization
               </span>
-              <span className="hidden sm:block w-px h-4 bg-slate-200" />
-              <span className="flex items-center gap-1.5 text-[11px] text-slate-500">
-                <CheckCircle2 size={11} className="text-blue-500" />
+              <span className="hidden sm:block w-px h-4 bg-white/15" />
+              <span className="flex items-center gap-1.5 text-[11px] text-white/60">
+                <CheckCircle2 size={11} className="text-blue-400" />
                 Transparent monthly reporting
               </span>
             </div>

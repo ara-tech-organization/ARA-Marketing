@@ -30,9 +30,9 @@ const categories = [
 export default function MATech() {
   return (
     <section className="py-16 sm:py-16 relative overflow-hidden"
-      style={{ background: '#f0f9ff' }}>
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute inset-0 pointer-events-none opacity-10"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '40px 40px' }} />
 
@@ -41,16 +41,16 @@ export default function MATech() {
         {/* Header */}
         <div className="text-center mb-14 reveal">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-            style={{ background: 'rgba(37,99,235,0.10)', color: '#2563eb', border: '1px solid rgba(37,99,235,0.20)' }}>
+            style={{ background: 'rgba(37,99,235,0.18)', color: '#93c5fd', border: '1px solid rgba(96,165,250,0.30)' }}>
             <Code2 size={11} /> Technology Stack
           </span>
-          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-4">
+          <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold leading-tight tracking-tight mb-4" style={{ color: '#ffffff' }}>
             Cutting-Edge Technologies We{' '}
             <span className="text-gradient-blue">
               Leverage
             </span>
           </h2>
-          <p className="text-[15px] max-w-2xl mx-auto" style={{ color: '#64748b' }}>
+          <p className="text-[15px] max-w-2xl mx-auto" style={{ color: 'rgba(255,255,255,0.55)' }}>
             We use cutting-edge technologies to deliver world-class mobile apps that are scalable, secure, and built for performance at scale.
           </p>
         </div>
@@ -60,34 +60,34 @@ export default function MATech() {
           {categories.map(({ icon: Icon, label, color, items }) => (
             <div key={label}
               className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-5 sm:p-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5"
-              style={{ background: '#ffffff', border: '1px solid rgba(37,99,235,0.12)' }}
+              style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.10)' }}
               onMouseEnter={e => {
-                e.currentTarget.style.border = `1px solid ${color}35`
-                e.currentTarget.style.background = `${color}08`
+                e.currentTarget.style.border = `1px solid ${color}55`
+                e.currentTarget.style.background = `${color}14`
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.border = '1px solid rgba(37,99,235,0.12)'
-                e.currentTarget.style.background = '#ffffff'
+                e.currentTarget.style.border = '1px solid rgba(255,255,255,0.10)'
+                e.currentTarget.style.background = 'rgba(255,255,255,0.04)'
               }}
             >
               {/* Category label */}
               <div className="flex items-center gap-3 w-full sm:w-[160px] flex-shrink-0">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                  style={{ background: `${color}20`, border: `1px solid ${color}35` }}>
+                  style={{ background: `${color}30`, border: `1px solid ${color}55` }}>
                   <Icon size={17} style={{ color }} />
                 </div>
-                <span className="text-[14px] font-bold text-slate-900">{label}</span>
+                <span className="text-[14px] font-bold" style={{ color: '#ffffff' }}>{label}</span>
               </div>
 
               {/* Vertical divider — desktop only */}
-              <div className="hidden sm:block w-px h-8 flex-shrink-0" style={{ background: 'rgba(37,99,235,0.15)' }} />
+              <div className="hidden sm:block w-px h-8 flex-shrink-0" style={{ background: 'rgba(255,255,255,0.12)' }} />
 
               {/* Tech pills */}
               <div className="flex flex-wrap gap-2.5">
                 {items.map(item => (
                   <span key={item}
                     className="px-4 py-1.5 rounded-full text-[12px] font-semibold transition-all duration-200 hover:-translate-y-0.5 cursor-default"
-                    style={{ background: `${color}15`, color, border: `1px solid ${color}30` }}>
+                    style={{ background: `${color}25`, color: '#e2e8f0', border: `1px solid ${color}55` }}>
                     {item}
                   </span>
                 ))}

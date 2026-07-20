@@ -10,7 +10,7 @@ export default function SMMHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-[88vh] flex items-center"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -25,11 +25,11 @@ export default function SMMHero() {
       {/* Decorative orbs */}
       <div
         className="absolute top-16 right-0 w-[650px] h-[650px] rounded-full pointer-events-none animate-orb"
-        style={{ background: 'var(--brand-gradient-glow)' }}
+        style={{ background: 'var(--brand-gradient-glow-dark)' }}
       />
       <div
         className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full pointer-events-none animate-orb-rev"
-        style={{ background: 'var(--brand-gradient-glow)' }}
+        style={{ background: 'var(--brand-gradient-glow-dark)' }}
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7 w-full py-20">
@@ -38,34 +38,34 @@ export default function SMMHero() {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             {/* Breadcrumb */}
-            <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] text-slate-400 mb-6 animate-hero-enter">
-              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
+            <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] text-white/40 mb-6 animate-hero-enter">
+              <a href="/" className="whitespace-nowrap hover:text-blue-400 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-white/20 flex-shrink-0" />
               <span className="whitespace-nowrap">Digital Marketing</span>
-              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <span className="whitespace-nowrap text-blue-600 font-medium">Social Media Marketing</span>
+              <ChevronRight size={13} className="text-white/20 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-400 font-medium">Social Media Marketing</span>
             </nav>
 
             {/* Badge */}
             <div className="animate-hero-d1">
-              <span className="inline-flex items-center gap-2 px-2.5 sm:px-3.5 py-1.5 bg-blue-50 text-blue-600
-                border border-blue-200 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-5">
+              <span className="inline-flex items-center gap-2 px-2.5 sm:px-3.5 py-1.5 bg-white/5 text-blue-400
+                border border-white/10 rounded-full text-[9px] sm:text-[11px] font-bold uppercase tracking-widest mb-5">
                 <Share2 size={11} /> Social Media Marketing (SMM)
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-slate-900 leading-[1.12] tracking-tight mb-5"
+            <h1 className="animate-hero-d2 text-white leading-[1.12] tracking-tight mb-5"
               style={{ fontSize: '40px', fontWeight: 600 }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>Best Social Media Marketing</span>
               <span className="text-gradient-blue" style={{ display: 'block', whiteSpace: 'normal' }}>Services in Thanjavur</span>
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-4 max-w-[620px] mx-auto lg:mx-0">
+            <p className="animate-hero-d3 text-[15px] text-white/70 leading-[1.85] mb-4 max-w-[620px] mx-auto lg:mx-0">
               ARA Discover Marketing provides the best social media marketing services in Thanjavur, which help businesses to build brand awareness, improve customer engagement, and generate quality leads through result-driven social media strategies. As one of the best social media companies in Thanjavur, we create and optimize high-performance campaigns for startups, local businesses, and emerging brands.
             </p>
-            <p className="animate-hero-d3 text-[15px] text-slate-500 leading-[1.85] mb-8 max-w-[620px] mx-auto lg:mx-0">
+            <p className="animate-hero-d3 text-[15px] text-white/50 leading-[1.85] mb-8 max-w-[620px] mx-auto lg:mx-0">
               From organic building to paid advertising campaigns, our dedicated social media team specializes in platform-specific strategies that keep businesses ahead in today's competitive digital landscape.
             </p>
 
@@ -80,9 +80,9 @@ export default function SMMHero() {
               </a>
               <a
                 href="#smm-services"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-blue-200
-                  text-blue-600 bg-white/80 rounded-full text-sm font-semibold
-                  hover:bg-blue-50 hover:border-blue-300 transition-all duration-300"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-white/20
+                  text-blue-400 bg-white/5 rounded-full text-sm font-semibold
+                  hover:bg-white/10 hover:border-white/30 hover:text-white transition-all duration-300"
               >
                 Explore Services <ArrowUpRight size={15} />
               </a>
@@ -96,8 +96,8 @@ export default function SMMHero() {
                 ['300%', 'Engagement Growth'],
               ].map(([num, label]) => (
                 <div key={label} className="flex flex-col items-center lg:items-start">
-                  <span className="text-2xl font-bold text-blue-600 leading-tight">{num}</span>
-                  <span className="text-[12px] text-slate-400 mt-0.5">{label}</span>
+                  <span className="text-2xl font-bold text-blue-400 leading-tight">{num}</span>
+                  <span className="text-[12px] text-white/50 mt-0.5">{label}</span>
                 </div>
               ))}
             </div>

@@ -50,7 +50,7 @@ export default function DWWhyUs() {
               {/* Icon */}
               <div className="flex-shrink-0 mt-0.5 w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
                 style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}25` }}>
-                <Icon size={17} style={{ color }} />
+                <Icon size={17} className="text-white" />
               </div>
               {/* Text */}
               <div className="flex-1 min-w-0">

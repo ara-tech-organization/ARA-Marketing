@@ -75,7 +75,7 @@ export default function Footer() {
   return (
     <footer
       className="text-white/65 pt-12 pb-6 border-t border-blue-600/20"
-      style={{ background: '#071a36' }}
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)' }}
     >
       <div className="max-w-[1280px] mx-auto px-3 sm:px-4 md:px-5">
 

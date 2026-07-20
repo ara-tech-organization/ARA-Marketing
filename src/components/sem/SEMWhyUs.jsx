@@ -62,7 +62,7 @@ export default function SEMWhyUs() {
               <div className="flex items-start justify-end mb-5">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
                   style={{ background: 'var(--brand-gradient)', border: `1px solid ${color}28` }}>
-                  <Icon size={19} style={{ color }} />
+                  <Icon size={19} className="text-white" />
                 </div>
               </div>
 
@@ -79,8 +79,8 @@ export default function SEMWhyUs() {
         {/* ── Bottom certified bar ── */}
         <div className="reveal flex flex-col sm:flex-row items-center justify-between gap-6 px-7 py-5 rounded-2xl"
           style={{
-            background: 'var(--brand-gradient)',
-            boxShadow: '0 16px 48px rgba(37,99,235,0.22)',
+            background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)',
+            boxShadow: '0 16px 48px rgba(0,0,0,0.30)',
           }}>
           <div className="flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"

@@ -31,7 +31,7 @@ export default function SEOTestimonials() {
   return (
     <section
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: '#ffffff' }}
     >
       {/* Orbs */}
       <div className="absolute -top-16 right-0 w-[480px] h-[480px] rounded-full pointer-events-none"
@@ -70,7 +70,7 @@ export default function SEOTestimonials() {
                   hover:-translate-y-1 ${isActive ? 'shadow-2xl' : 'bg-white/70 border-slate-100 hover:bg-white hover:shadow-lg'}`}
                 style={isActive
                   ? {
-                      background: 'var(--brand-gradient-soft)',
+                      background: 'linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%)',
                       border: `1.5px solid ${color}30`,
                       boxShadow: `0 20px 60px ${color}18`,
                     }
@@ -81,7 +81,7 @@ export default function SEOTestimonials() {
                 <div
                   className="h-1 rounded-full mb-6 transition-all duration-300"
                   style={{
-                    background: isActive ? 'var(--brand-gradient-soft)' : '#e2e8f0',
+                    background: isActive ? 'linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%)' : '#e2e8f0',
                   }}
                 />
 

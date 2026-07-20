@@ -11,13 +11,13 @@ export default function SWCTA() {
   return (
     <section
       className="relative overflow-hidden py-16 sm:py-16"
-      style={{ background: '#f0f9ff' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Orbs */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none"
@@ -38,25 +38,25 @@ export default function SWCTA() {
             <div className="text-center lg:text-left">
               <span
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5"
-                style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}
+                style={{ background: 'rgba(255,255,255,0.06)', color: '#60a5fa', border: '1px solid rgba(96,165,250,0.25)' }}
               >
                 <Rocket size={11} /> Let's Build Together
               </span>
 
-              <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-slate-900 leading-tight tracking-tight mb-5">
+              <h2 className="text-[clamp(25px,2.7vw,43px)] font-bold text-white leading-tight tracking-tight mb-5">
                 Let's Build Your{' '}
                 <span className="text-gradient-blue">
                   Website Together
                 </span>
               </h2>
 
-              <p className="text-[15px] text-slate-500 leading-[1.85] mb-4">
+              <p className="text-[15px] text-white/60 leading-[1.85] mb-4">
                 Ready to take your business online with a powerful static website? Join hands with a trusted static web design services firm in Thanjavur and change your digital presence with speed and simplicity.
               </p>
-              <p className="text-[15px] text-slate-500 leading-[1.85] mb-4">
+              <p className="text-[15px] text-white/60 leading-[1.85] mb-4">
                 As a leading static web design company in Thanjavur, we bring expertise in speed, security, and SEO to every project we deliver.
               </p>
-              <p className="text-[15px] text-slate-500 leading-[1.85] mb-10">
+              <p className="text-[15px] text-white/60 leading-[1.85] mb-10">
                 Fill in the form and our specialists will help you plan your perfect static website solution â€” fast, affordable, and built to perform.
               </p>
             </div>
@@ -67,11 +67,11 @@ export default function SWCTA() {
                 <div key={text} className="flex items-center gap-3">
                   <div
                     className="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: '#eff6ff', border: '1px solid #bfdbfe' }}
+                    style={{ background: 'rgba(37,99,235,0.12)', border: '1px solid rgba(37,99,235,0.3)' }}
                   >
-                    <Icon size={13} style={{ color: '#2563eb' }} />
+                    <Icon size={13} style={{ color: '#60a5fa' }} />
                   </div>
-                  <span className="text-[13.5px] font-medium text-slate-700">{text}</span>
+                  <span className="text-[13.5px] font-medium text-white/75">{text}</span>
                 </div>
               ))}
             </div>
@@ -79,8 +79,8 @@ export default function SWCTA() {
             {/* Phone CTA */}
             <a
               href="tel:+918110025254"
-              className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-white transition-all duration-300 hover:scale-[1.03]"
-              style={{ border: '1px solid #bae6fd', boxShadow: '0 4px 16px rgba(37,99,235,0.08)' }}
+              className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl transition-all duration-300 hover:scale-[1.03]"
+              style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 4px 16px rgba(0,0,0,0.2)' }}
             >
               <div
                 className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
@@ -89,8 +89,8 @@ export default function SWCTA() {
                 <Phone size={16} className="text-white" />
               </div>
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Call Us Now</p>
-                <p className="text-[15px] font-black text-slate-900">+91 81100 25254</p>
+                <p className="text-[10px] font-bold uppercase tracking-wider text-white/40">Call Us Now</p>
+                <p className="text-[15px] font-black text-white">+91 81100 25254</p>
               </div>
             </a>
           </div>

@@ -10,7 +10,7 @@ export default function GDHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px] min-h-[100vh] flex items-center"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -28,11 +28,11 @@ export default function GDHero() {
 
       {/* Glow blobs */}
       <div className="absolute top-0 right-0 w-[700px] h-[700px] pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute top-[30%] left-0 w-[350px] h-[350px] pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Top border line */}
       <div className="absolute top-[72px] left-0 right-0 h-px"
@@ -76,33 +76,33 @@ export default function GDHero() {
           <div className="flex flex-col items-center text-center lg:items-center">
 
             {/* Breadcrumb */}
-            <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-slate-400 mb-8 animate-hero-enter">
-              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors">Home</a>
-              <ChevronRight size={11} className="text-slate-300 flex-shrink-0" />
-              <span className="whitespace-nowrap text-slate-500">Digital Marketing</span>
-              <ChevronRight size={11} className="text-slate-300 flex-shrink-0" />
-              <span className="whitespace-nowrap text-blue-600 font-medium">Graphic Design</span>
+            <nav className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12px] text-white/40 mb-8 animate-hero-enter">
+              <a href="/" className="whitespace-nowrap hover:text-blue-400 transition-colors">Home</a>
+              <ChevronRight size={11} className="text-white/20 flex-shrink-0" />
+              <span className="whitespace-nowrap text-white/50">Digital Marketing</span>
+              <ChevronRight size={11} className="text-white/20 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-400 font-medium">Graphic Design</span>
             </nav>
 
             {/* Badge */}
             <div className="animate-hero-d1 mb-7">
-              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-blue-600"
-                style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid #bfdbfe' }}>
+              <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest text-blue-400"
+                style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
                 <Palette size={11} /> Branding &amp; Graphic Design
               </span>
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 tracking-tight mb-7 text-slate-900"
+            <h1 className="animate-hero-d2 tracking-tight mb-7 text-white"
               style={{ fontSize: 'clamp(16px,1.7vw,27px)', lineHeight: 1.12, fontWeight: 700 }}>
               Best Branding &amp; Graphic Design Services in Thanjavur
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[14px] text-slate-600 leading-[1.85] mb-4">
+            <p className="animate-hero-d3 text-[14px] leading-[1.85] mb-4" style={{ color: 'rgba(255,255,255,0.65)' }}>
               ARA Discover Marketing is the best graphic design service in thanjavur for businesses to create visually appealing brand identities that attract, engage and convert customers. We create visuals from logos to marketing creatives that tell your brand story effectively and professionally.
             </p>
-            <p className="animate-hero-d3 text-[13.5px] text-slate-500 leading-[1.8] mb-10">
+            <p className="animate-hero-d3 text-[13.5px] leading-[1.8] mb-10" style={{ color: 'rgba(255,255,255,0.45)' }}>
               As the top graphic design agency in thanjavur, we offer AI powered and modern branding solutions such as logo design, brochures, social media posters, business cards, and digital creatives that help businesses stand out from competitive markets.
             </p>
 
@@ -114,26 +114,26 @@ export default function GDHero() {
                 Take a First Step <ArrowRight size={15} />
               </a>
               <a href="#gd-services"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-blue-600 transition-all duration-300 hover:text-white hover:bg-blue-600"
-                style={{ border: '1px solid rgba(37,99,235,0.3)' }}>
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-blue-400 transition-all duration-300 hover:text-white hover:bg-blue-600"
+                style={{ border: '1px solid rgba(255,255,255,0.18)' }}>
                 View Services <ArrowUpRight size={15} />
               </a>
             </div>
 
             {/* Stats */}
             <div className="animate-hero-d5 flex flex-wrap justify-center gap-6 border-t pt-8 w-full"
-              style={{ borderColor: 'rgba(37,99,235,0.12)' }}>
+              style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
               {[
                 ['500+', 'Designs Delivered'],
                 ['100+', 'Brands Created'],
                 ['98%',  'Client Satisfaction'],
               ].map(([num, label], i) => (
                 <div key={label} className={`flex flex-col items-center ${i < 2 ? 'pr-6 border-r' : ''}`}
-                  style={{ borderColor: 'rgba(37,99,235,0.12)' }}>
+                  style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
                   <span className="text-[24px] font-black leading-tight text-gradient-blue">
                     {num}
                   </span>
-                  <span className="text-[12px] text-slate-400 mt-0.5">{label}</span>
+                  <span className="text-[12px] text-white/40 mt-0.5">{label}</span>
                 </div>
               ))}
             </div>
@@ -147,7 +147,7 @@ export default function GDHero() {
               <div className="flex-1 flex flex-col gap-3">
                 {/* Box 1 â€” Logo Design: top */}
                 <div className="rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
-                  style={{ background: 'var(--brand-gradient-soft)', border: '1px solid rgba(96,165,250,0.2)' }}>
+                  style={{ background: '#f0f9ff', opacity: 1, border: '1px solid rgba(96,165,250,0.2)' }}>
                   <div className="absolute inset-0 rounded-2xl pointer-events-none bg-brand-gradient-dots"
                     style={{ backgroundSize: '18px 18px' }} />
                   <div className="relative w-10 h-10 rounded-xl flex items-center justify-center"
@@ -155,15 +155,15 @@ export default function GDHero() {
                     <Frame size={18} className="text-white" />
                   </div>
                   <div className="relative">
-                    <p className="text-[13px] font-black text-white leading-tight mb-1">Logo Design</p>
-                    <p className="text-[11px] text-slate-400">Brand mark creation</p>
+                    <p className="text-[13px] font-black text-slate-800 leading-tight mb-1">Logo Design</p>
+                    <p className="text-[11px] text-slate-500">Brand mark creation</p>
                   </div>
                 </div>
 
                 {/* Box 3 â€” Brochure: centered in remaining space */}
                 <div className="flex-1 flex items-center">
                 <div className="w-full rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
-                  style={{ background: 'var(--brand-gradient-soft)', border: '1px solid rgba(96,165,250,0.2)' }}>
+                  style={{ background: '#f0f9ff', opacity: 1, border: '1px solid rgba(96,165,250,0.2)' }}>
                   <div className="absolute inset-0 rounded-2xl pointer-events-none bg-brand-gradient-dots"
                     style={{ backgroundSize: '18px 18px' }} />
                   <div className="relative w-10 h-10 rounded-xl flex items-center justify-center"
@@ -171,8 +171,8 @@ export default function GDHero() {
                     <Type size={18} className="text-white" />
                   </div>
                   <div className="relative">
-                    <p className="text-[13px] font-black text-white leading-tight mb-1">Brochure</p>
-                    <p className="text-[11px] text-slate-400">Print &amp; digital design</p>
+                    <p className="text-[13px] font-black text-slate-800 leading-tight mb-1">Brochure</p>
+                    <p className="text-[11px] text-slate-500">Print &amp; digital design</p>
                   </div>
                 </div>
                 </div>
@@ -184,7 +184,7 @@ export default function GDHero() {
                 <div className="flex-1 flex items-center">
                   {[{ icon: Layers, label: 'Social Media', sub: 'Creative post designs', g: ['#0284c7','#38bdf8'], br: 'rgba(56,189,248,0.2)' }].map(({ icon: Icon, label, sub, g, br }) => (
                     <div key={label} className="w-full rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
-                      style={{ background: 'var(--brand-gradient-soft)', border: `1px solid ${br}` }}>
+                      style={{ background: '#f0f9ff', opacity: 1, border: `1px solid ${br}` }}>
                       <div className="absolute inset-0 rounded-2xl pointer-events-none bg-brand-gradient-dots"
                         style={{ backgroundSize: '18px 18px' }} />
                       <div className="relative w-10 h-10 rounded-xl flex items-center justify-center"
@@ -192,15 +192,15 @@ export default function GDHero() {
                         <Icon size={18} className="text-white" />
                       </div>
                       <div className="relative">
-                        <p className="text-[13px] font-black text-white leading-tight mb-1">{label}</p>
-                        <p className="text-[11px] text-slate-400">{sub}</p>
+                        <p className="text-[13px] font-black text-slate-800 leading-tight mb-1">{label}</p>
+                        <p className="text-[11px] text-slate-500">{sub}</p>
                       </div>
                     </div>
                   ))}
                 </div>
                 {/* Box 4 bottom */}
                 <div className="rounded-2xl p-4 flex flex-col gap-3 relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300"
-                  style={{ background: 'var(--brand-gradient-soft)', border: '1px solid rgba(56,189,248,0.2)' }}>
+                  style={{ background: '#f0f9ff', opacity: 1, border: '1px solid rgba(56,189,248,0.2)' }}>
                   <div className="absolute inset-0 rounded-2xl pointer-events-none bg-brand-gradient-dots"
                     style={{ backgroundSize: '18px 18px' }} />
                   <div className="relative w-10 h-10 rounded-xl flex items-center justify-center"
@@ -208,8 +208,8 @@ export default function GDHero() {
                     <CheckCircle size={18} className="text-white" />
                   </div>
                   <div className="relative">
-                    <p className="text-[13px] font-black text-white leading-tight mb-1">Business Card</p>
-                    <p className="text-[11px] text-slate-400">Professional identity</p>
+                    <p className="text-[13px] font-black text-slate-800 leading-tight mb-1">Business Card</p>
+                    <p className="text-[11px] text-slate-500">Professional identity</p>
                   </div>
                 </div>
               </div>

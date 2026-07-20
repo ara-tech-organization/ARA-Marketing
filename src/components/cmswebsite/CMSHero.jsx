@@ -23,7 +23,7 @@ export default function CMSHero() {
     <section
       ref={heroRef}
       className="relative overflow-hidden pt-[72px]"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#071a36 0%,#0f2a52 45%,#071a36 100%)' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -37,9 +37,9 @@ export default function CMSHero() {
 
       {/* Background orbs */}
       <div className="absolute top-0 left-0 w-[700px] h-[700px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 right-0 w-[450px] h-[450px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
 
       {/* Dot grid */}
       <div className="absolute inset-0 pointer-events-none opacity-20"
@@ -55,19 +55,19 @@ export default function CMSHero() {
           <div className="flex-1 min-w-0 text-center lg:text-left">
 
             {/* Breadcrumb */}
-            <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] mb-6 animate-hero-enter text-slate-400">
-              <a href="/" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Home</a>
-              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <a href="/services/website-development" className="whitespace-nowrap hover:text-blue-600 transition-colors duration-200">Web Design</a>
-              <ChevronRight size={13} className="text-slate-300 flex-shrink-0" />
-              <span className="whitespace-nowrap text-blue-600 font-medium">CMS Website</span>
+            <nav className="flex flex-wrap items-center justify-center lg:justify-start gap-x-1.5 gap-y-1 text-[13px] mb-6 animate-hero-enter text-white/50">
+              <a href="/" className="whitespace-nowrap hover:text-blue-300 transition-colors duration-200">Home</a>
+              <ChevronRight size={13} className="text-white/30 flex-shrink-0" />
+              <a href="/services/website-development" className="whitespace-nowrap hover:text-blue-300 transition-colors duration-200">Web Design</a>
+              <ChevronRight size={13} className="text-white/30 flex-shrink-0" />
+              <span className="whitespace-nowrap text-blue-300 font-medium">CMS Website</span>
             </nav>
 
             {/* Badge */}
             <div className="animate-hero-d1 mb-5">
               <span
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest"
-                style={{ background: 'rgba(37,99,235,0.08)', color: '#1d4ed8', border: '1px solid rgba(37,99,235,0.22)' }}
+                style={{ background: 'rgba(255,255,255,0.1)', color: '#93c5fd', border: '1px solid rgba(255,255,255,0.2)' }}
               >
                 <Sparkles size={11} />
                 CMS Website Development â€” Thanjavur
@@ -75,17 +75,17 @@ export default function CMSHero() {
             </div>
 
             {/* H1 */}
-            <h1 className="animate-hero-d2 text-slate-900 leading-[1.2] tracking-tight mb-6"
+            <h1 className="animate-hero-d2 text-white leading-[1.2] tracking-tight mb-6"
               style={{ fontWeight: 600, fontSize: '40px' }}>
               <span style={{ display: 'block', whiteSpace: 'normal' }}>Build Powerful WordPress</span>
-              <span style={{ display: 'block', whiteSpace: 'normal', color: '#2563eb' }}>Websites That Grow Your Business</span>
+              <span style={{ display: 'block', whiteSpace: 'normal', color: '#60a5fa' }}>Websites That Grow Your Business</span>
             </h1>
 
             {/* Description */}
-            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-4 text-slate-600">
+            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-4 text-white/70">
               Are you seeking the best WordPress development companies in Thanjavur offering AI-based, high-performing, scalable and SEO-friendly websites? We build powerful WordPress solutions for companies of all sizes.
             </p>
-            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-8 text-slate-600">
+            <p className="animate-hero-d3 text-[15px] leading-[1.9] mb-8 text-white/70">
               Our dedicated team builds fast, secure, mobile-responsive and easy-to-manage websites using WordPress CMS.
             </p>
 
@@ -94,10 +94,10 @@ export default function CMSHero() {
               {highlights.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center justify-center lg:justify-start gap-2.5">
                   <div className="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0"
-                    style={{ background: 'rgba(37,99,235,0.15)' }}>
-                    <Icon size={11} style={{ color: '#2563eb' }} />
+                    style={{ background: 'rgba(255,255,255,0.15)' }}>
+                    <Icon size={11} style={{ color: '#93c5fd' }} />
                   </div>
-                  <span className="text-[13.5px] font-medium text-slate-600">{text}</span>
+                  <span className="text-[13.5px] font-medium text-white/80">{text}</span>
                 </div>
               ))}
             </div>
@@ -114,8 +114,8 @@ export default function CMSHero() {
               <a
                 href="#cms-intro"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-[13.5px] font-semibold transition-all duration-300 w-fit"
-                style={{ border: '2px solid #2563eb', color: '#1d4ed8' }}
-                onMouseEnter={e => { e.currentTarget.style.background = '#eff6ff' }}
+                style={{ border: '2px solid rgba(255,255,255,0.4)', color: '#ffffff' }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)' }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'transparent' }}
               >
                 Explore Services <ArrowUpRight size={15} />
@@ -129,14 +129,14 @@ export default function CMSHero() {
                   key={label}
                   className="flex flex-col"
                   style={{
-                    borderLeft: i > 0 ? '1px solid rgba(37,99,235,0.2)' : 'none',
+                    borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.15)' : 'none',
                     paddingLeft: i > 0 ? '2rem' : 0,
                   }}
                 >
                   <span className="text-[28px] font-black leading-tight text-gradient-blue">
                     {value}
                   </span>
-                  <span className="text-[11px] font-medium mt-0.5 text-slate-400">{label}</span>
+                  <span className="text-[11px] font-medium mt-0.5 text-white/50">{label}</span>
                 </div>
               ))}
             </div>
@@ -256,14 +256,14 @@ export default function CMSHero() {
 
             {/* CMS platform tags */}
             <div className="mt-6 flex items-center gap-2 flex-wrap">
-              <span className="text-[9px] font-bold uppercase tracking-widest flex-shrink-0 mr-1 text-slate-400">
+              <span className="text-[9px] font-bold uppercase tracking-widest flex-shrink-0 mr-1 text-white/50">
                 CMS Platforms
               </span>
               {cmsTags.map(tag => (
                 <span
                   key={tag}
                   className="px-2 py-0.5 rounded-full text-[10px] font-semibold"
-                  style={{ background: 'white', color: '#1d4ed8', border: '1.5px solid rgba(37,99,235,0.18)' }}
+                  style={{ background: 'rgba(255,255,255,0.08)', color: '#bfdbfe', border: '1.5px solid rgba(255,255,255,0.18)' }}
                 >
                   {tag}
                 </span>

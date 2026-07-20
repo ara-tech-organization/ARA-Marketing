@@ -40,7 +40,7 @@ export default function GDStats() {
     <section
       className="relative overflow-hidden py-2"
       style={{
-        background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)',
+        background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)',
       }}
     >
       {/* Subtle dot pattern */}
@@ -52,12 +52,12 @@ export default function GDStats() {
       />
 
       <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-7">
-        <div className="grid grid-cols-2 md:grid-cols-4 divide-x-0 md:divide-x divide-blue-200/60">
+        <div className="grid grid-cols-2 md:grid-cols-4 divide-x-0 md:divide-x divide-white/10">
           {stats.map(({ value, suffix, label, sub }) => (
             <div
               key={label}
               className="reveal flex flex-col items-center text-center py-12 px-4
-                hover:bg-blue-100/40 transition-colors duration-300 group"
+                hover:bg-white/5 transition-colors duration-300 group"
             >
               {/* Number */}
               <p
@@ -70,8 +70,8 @@ export default function GDStats() {
                 className="w-8 h-0.5 rounded-full mb-3"
                 style={{ background: 'var(--brand-gradient-soft)' }}
               />
-              <p className="text-[14px] font-bold text-slate-800 mb-1">{label}</p>
-              <p className="text-[11px] text-slate-500">{sub}</p>
+              <p className="text-[14px] font-bold text-white mb-1">{label}</p>
+              <p className="text-[11px] text-white/50">{sub}</p>
             </div>
           ))}
         </div>

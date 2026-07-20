@@ -15,8 +15,10 @@
   --brand-gradient-soft: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
   /* Text-clip gradient: gradient headline words */
   --brand-gradient-text: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
-  /* Ambient radial glow behind hero content */
+  /* Ambient radial glow behind hero content (light sections) */
   --brand-gradient-glow: radial-gradient(ellipse, rgba(219, 234, 254, 0.7) 0%, transparent 65%);
+  /* Ambient radial glow for dark-navy sections — same role, blue instead of near-white */
+  --brand-gradient-glow-dark: radial-gradient(ellipse, rgba(37, 99, 235, 0.35) 0%, transparent 65%);
   /* Faint dot-grid texture for section backgrounds */
   --brand-gradient-dots: radial-gradient(rgba(37, 99, 235, 0.07) 1.5px, transparent 1.5px);
   /* Horizontal fade divider line */

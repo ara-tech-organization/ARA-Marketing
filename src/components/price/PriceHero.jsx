@@ -24,7 +24,7 @@ export default function PriceHero() {
     <section
       ref={heroRef}
       className="relative flex items-center justify-center overflow-hidden pt-[72px]"
-      style={{ background: '#f0f9ff', minHeight: '42vh' }}
+      style={{ background: 'linear-gradient(135deg, #020b18 0%, #071428 45%, #040e1f 100%)', minHeight: '42vh' }}
     >
       {/* Cursor-follow spotlight */}
       <CursorSpotlight
@@ -39,15 +39,15 @@ export default function PriceHero() {
       {/* BG orbs */}
       <div className="absolute pointer-events-none rounded-full"
         style={{ ...parallax(20), top: '-18%', right: '-10%', width: '700px', height: '700px',
-          background: 'var(--brand-gradient-glow)' }}
+          background: 'var(--brand-gradient-glow-dark)' }}
       />
       <div className="absolute pointer-events-none rounded-full"
         style={{ ...parallax(-16), bottom: '-12%', left: '-8%', width: '500px', height: '500px',
-          background: 'var(--brand-gradient-glow)' }}
+          background: 'var(--brand-gradient-glow-dark)' }}
       />
       <div className="absolute pointer-events-none rounded-full"
         style={{ ...parallax(12), top: '30%', left: '20%', width: '300px', height: '300px',
-          background: 'var(--brand-gradient-glow)' }}
+          background: 'var(--brand-gradient-glow-dark)' }}
       />
 
       {/* Dot grid */}
@@ -60,15 +60,15 @@ export default function PriceHero() {
       {/* Decorative rings */}
       <div className="absolute pointer-events-none rounded-full hidden lg:block"
         style={{ ...parallax(-26), top: '20%', left: '6%', width: '160px', height: '160px',
-          border: '1.5px solid rgba(37,99,235,0.15)' }}
+          border: '1.5px solid rgba(96,165,250,0.20)' }}
       />
       <div className="absolute pointer-events-none rounded-full hidden lg:block"
         style={{ ...parallax(22), bottom: '20%', right: '5%', width: '110px', height: '110px',
-          border: '1px dashed rgba(14,165,233,0.2)' }}
+          border: '1px dashed rgba(96,165,250,0.25)' }}
       />
       <div className="absolute pointer-events-none hidden lg:block"
         style={{ ...parallax(-20), top: '28%', right: '9%', width: '52px', height: '52px',
-          border: '1px solid rgba(37,99,235,0.22)',
+          border: '1px solid rgba(96,165,250,0.28)',
           transform: `rotate(45deg) translate(${mouse.x * -20}px, ${mouse.y * -20}px)`,
           borderRadius: '10px' }}
       />
@@ -78,7 +78,7 @@ export default function PriceHero() {
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full text-[12px] font-bold uppercase tracking-[0.15em]"
-          style={{ background: 'white', color: '#2563eb', border: '1px solid #bfdbfe', boxShadow: '0 2px 12px rgba(37,99,235,0.08)' }}
+          style={{ background: 'rgba(37,99,235,0.18)', color: '#93c5fd', border: '1px solid rgba(96,165,250,0.30)', backdropFilter: 'blur(8px)' }}
         >
           <Tag size={12} />
           Transparent &amp; Flexible Pricing
@@ -86,7 +86,7 @@ export default function PriceHero() {
         </div>
 
         {/* Heading */}
-        <h1 className="font-bold text-slate-900 leading-[1.1] tracking-[-1.5px] mb-5"
+        <h1 className="font-bold text-white leading-[1.1] tracking-[-1.5px] mb-5"
           style={{ fontSize: 'clamp(23px,3.1vw,43px)', fontWeight: 700 }}
         >
           Simple, Transparent Pricing for{' '}
@@ -101,12 +101,12 @@ export default function PriceHero() {
         </h1>
 
         {/* Sub */}
-        <p className="text-[16px] leading-[1.8] max-w-[780px] mb-4 text-slate-500">
+        <p className="text-[16px] leading-[1.8] max-w-[780px] mb-4" style={{ color: 'rgba(255,255,255,0.65)' }}>
           At ARA Discover Marketing, we believe in transparent and flexible pricing to help
           businesses of all sizes achieve their digital goals. From startups to established
           brands — our tailored packages deliver measurable results without compromising quality.
         </p>
-        <p className="text-[14px] leading-[1.75] max-w-[680px] mb-10 text-slate-400">
+        <p className="text-[14px] leading-[1.75] max-w-[680px] mb-10" style={{ color: 'rgba(255,255,255,0.40)' }}>
           All prices listed are starting from rates and may vary depending on your project
           requirements, customization, and business objectives.
         </p>
@@ -117,17 +117,17 @@ export default function PriceHero() {
           onClick={e => { e.preventDefault(); document.getElementById('price-packages')?.scrollIntoView({ behavior: 'smooth' }) }}
           className="flex flex-col items-center gap-2 opacity-50 hover:opacity-80 transition-opacity duration-200 cursor-pointer"
         >
-          <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-widest">
+          <span className="text-[11px] font-semibold uppercase tracking-widest" style={{ color: 'rgba(255,255,255,0.60)' }}>
             Explore Packages
           </span>
-          <ArrowDown size={14} className="text-blue-500 animate-bounce" />
+          <ArrowDown size={14} className="text-blue-400 animate-bounce" />
         </a>
 
       </div>
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none"
-        style={{ background: 'linear-gradient(to bottom, transparent, #f0f9ff)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #040e1f)' }}
       />
     </section>
   )

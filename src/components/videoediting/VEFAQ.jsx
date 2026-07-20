@@ -225,7 +225,7 @@ export default function VEFAQ() {
           <div className="flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
-              <MessageSquare size={16} className="text-blue-600" />
+              <MessageSquare size={16} className="text-white" />
             </div>
             <div>
               <p className="text-[13.5px] font-bold text-slate-800">Still have questions?</p>

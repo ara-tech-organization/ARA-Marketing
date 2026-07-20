@@ -59,7 +59,7 @@ export default function OMIntro() {
                   onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9'; e.currentTarget.style.boxShadow = '0 2px 10px rgba(0,0,0,0.04)' }}>
                   <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
                     style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}28` }}>
-                    <Icon size={17} style={{ color }} />
+                    <Icon size={17} className="text-white" />
                   </div>
                   <div>
                     <p className="text-[13px] font-bold text-slate-800 mb-0.5">{label}</p>

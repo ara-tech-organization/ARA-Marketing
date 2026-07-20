@@ -104,11 +104,11 @@ export default function VEWhyUs() {
         {/* Bottom banner */}
         <div className="reveal relative rounded-2xl overflow-hidden px-7 py-6 flex flex-col sm:flex-row items-center justify-between gap-5"
           style={{
-            background: 'var(--brand-gradient)',
-            boxShadow: '0 16px 48px rgba(37,99,235,0.25)',
+            background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)',
+            boxShadow: '0 16px 48px rgba(0,0,0,0.30)',
           }}>
           <div className="absolute inset-0 pointer-events-none"
-            style={{ background: 'var(--brand-gradient-glow)' }} />
+            style={{ background: 'var(--brand-gradient-glow-dark)' }} />
           <div className="relative flex items-center gap-4">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{ background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)' }}>

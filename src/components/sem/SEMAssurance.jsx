@@ -49,15 +49,15 @@ export default function SEMAssurance() {
 
           {/* Left: light blue feature panel */}
           <div className="lg:w-[300px] flex-shrink-0">
-            <div className="h-full rounded-3xl p-7 border border-blue-200 relative overflow-hidden"
+            <div className="h-full rounded-3xl p-7 border border-white/10 relative overflow-hidden"
               style={{
-                background: 'var(--brand-gradient-soft)',
-                boxShadow: '0 16px 50px rgba(37,99,235,0.14)',
+                background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)',
+                boxShadow: '0 16px 50px rgba(0,0,0,0.30)',
               }}>
 
               {/* Decorative rings */}
-              <div className="absolute -bottom-8 -right-8 w-44 h-44 rounded-full border-[2px] border-blue-400/20 pointer-events-none" />
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full border border-blue-400/25 pointer-events-none" />
+              <div className="absolute -bottom-8 -right-8 w-44 h-44 rounded-full border-[2px] border-white/10 pointer-events-none" />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-full border border-white/10 pointer-events-none" />
 
               <div className="relative">
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-white"
@@ -65,10 +65,10 @@ export default function SEMAssurance() {
                   <Award size={24} />
                 </div>
 
-                <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-4">
+                <h3 className="text-[17px] font-bold text-white leading-snug mb-4">
                   6 Core Commitments to Your Google Ads Success
                 </h3>
-                <p className="text-[13px] text-slate-600 leading-[1.8] mb-6">
+                <p className="text-[13px] text-blue-100/70 leading-[1.8] mb-6">
                   Trusted among the top search engine marketing agencies in Thanjavur, every client receives a dedicated commitment from our team — from transparent reporting to AI-powered strategy. We don't just run ads, we grow your business.
                 </p>
 
@@ -76,8 +76,8 @@ export default function SEMAssurance() {
                 <div className="space-y-2.5 mb-7">
                   {['Transparent campaign management', 'Consistent lead generation', 'Dedicated support & reporting'].map(t => (
                     <div key={t} className="flex items-center gap-2">
-                      <CheckCircle2 size={13} className="text-blue-600 flex-shrink-0" />
-                      <span className="text-[12px] text-slate-700 font-medium">{t}</span>
+                      <CheckCircle2 size={13} className="text-blue-400 flex-shrink-0" />
+                      <span className="text-[12px] text-blue-100/80 font-medium">{t}</span>
                     </div>
                   ))}
                 </div>

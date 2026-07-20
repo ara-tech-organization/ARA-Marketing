@@ -13,11 +13,11 @@ const steps = [
 function StepCard({ num, icon: Icon, title, desc, color }) {
   return (
     <div
-      className="group flex overflow-hidden rounded-2xl border border-slate-100
-        hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 bg-white"
-      style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
-      onMouseEnter={e => { e.currentTarget.style.borderColor = color + '30' }}
-      onMouseLeave={e => { e.currentTarget.style.borderColor = '#f1f5f9' }}
+      className="group flex overflow-hidden rounded-2xl border border-white/10
+        hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 bg-white/5"
+      style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.16)' }}
+      onMouseEnter={e => { e.currentTarget.style.borderColor = color + '40' }}
+      onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)' }}
     >
       <div className="w-1 flex-shrink-0 transition-all duration-300 group-hover:w-1.5"
         style={{ background: 'var(--brand-gradient-soft)' }} />
@@ -25,14 +25,14 @@ function StepCard({ num, icon: Icon, title, desc, color }) {
         <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5
           transition-all duration-300 group-hover:scale-110"
           style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}28` }}>
-          <Icon size={16} style={{ color }} />
+          <Icon size={16} className="text-white" />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-1">{title}</h3>
-          <p className="text-[12.5px] text-slate-500 leading-[1.72]">{desc}</p>
+          <h3 className="text-[13px] font-bold text-white leading-snug mb-1">{title}</h3>
+          <p className="text-[12.5px] text-white/60 leading-[1.72]">{desc}</p>
         </div>
         <span className="flex-shrink-0 text-[10px] font-black px-2 py-1 rounded-lg self-start mt-0.5"
-          style={{ background: color + '10', color }}>{num}</span>
+          style={{ background: color + '18', color }}>{num}</span>
       </div>
     </div>
   )
@@ -40,22 +40,23 @@ function StepCard({ num, icon: Icon, title, desc, color }) {
 
 export default function SEMProcess() {
   return (
-    <section className="py-14 bg-white overflow-hidden">
+    <section className="py-14 overflow-hidden"
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}>
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-7">
 
         {/* ── Header ── */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 reveal text-center sm:text-left">
           <div>
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-50 text-blue-600
-              border border-blue-100 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/5 text-blue-400
+              border border-white/10 rounded-full text-[11px] font-bold uppercase tracking-widest mb-5">
               <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-slate-900 leading-[1.1] tracking-tight">
+            <h2 className="text-[clamp(25px,3.1vw,45px)] font-bold text-white leading-[1.1] tracking-tight">
               Our Strategic Google Ads{' '}
               <span className="text-gradient-blue">&amp; PPC Workflow</span>
             </h2>
           </div>
-          <p className="text-[14px] text-slate-500 sm:max-w-[320px] leading-[1.85]">
+          <p className="text-[14px] text-white/60 sm:max-w-[320px] leading-[1.85]">
             As a trusted search engine marketing ppc agency in Thanjavur, we focus on improving campaign performance and lowering cost-per-conversion.
           </p>
         </div>

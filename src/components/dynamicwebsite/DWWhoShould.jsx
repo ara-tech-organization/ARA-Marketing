@@ -66,7 +66,7 @@ export default function DWWhoShould() {
             >
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
                 style={{ background: 'var(--brand-gradient)', border: `1.5px solid ${color}28` }}>
-                <Icon size={18} style={{ color }} />
+                <Icon size={18} className="text-white" />
               </div>
               <h3 className="text-[13px] sm:text-[14px] font-bold text-slate-900 mb-2">{label}</h3>
               <p className="text-[12px] sm:text-[13px] text-slate-500 leading-[1.75]">{desc}</p>

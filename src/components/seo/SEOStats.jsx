@@ -48,7 +48,7 @@ export default function SEOStats() {
   return (
     <section
       className="relative overflow-hidden py-12 md:py-16 lg:py-16"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: '#ffffff' }}
     >
       <div className="absolute -top-20 -left-20 w-[460px] h-[460px] rounded-full pointer-events-none"
         style={{ background: 'var(--brand-gradient-glow)' }} />

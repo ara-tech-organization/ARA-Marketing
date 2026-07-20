@@ -87,7 +87,7 @@ export default function DWFAQ() {
               <div className="p-5 sm:p-7">
                 <div className="w-11 h-11 rounded-2xl flex items-center justify-center mb-5"
                   style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
-                  <HelpCircle size={18} className="text-blue-600" />
+                  <HelpCircle size={18} className="text-white" />
                 </div>
                 <h3 className="text-[17px] font-bold text-slate-900 leading-snug mb-2">Dynamic Website FAQs</h3>
                 <p className="text-[12.5px] text-slate-500 leading-[1.80] mb-7">
@@ -201,7 +201,7 @@ export default function DWFAQ() {
               <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
                   style={{ background: 'var(--brand-gradient)', border: '1px solid #bfdbfe' }}>
-                  <MessageSquare size={15} className="text-blue-600" />
+                  <MessageSquare size={15} className="text-white" />
                 </div>
                 <div>
                   <p className="text-[13px] font-bold text-slate-800">Still have questions?</p>

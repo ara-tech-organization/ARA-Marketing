@@ -62,7 +62,7 @@ export default function VETestimonials() {
 
               <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"
                 style={{ background: 'var(--brand-gradient-soft)', border: `1.5px solid ${color}22` }}>
-                <Quote size={15} style={{ color }} />
+                <Quote size={15} className="text-white" />
               </div>
 
               <div className="flex items-center gap-1">

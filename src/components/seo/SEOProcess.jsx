@@ -46,7 +46,7 @@ export default function SEOProcess() {
     <section
       ref={sectionRef}
       className="py-12 md:py-16 lg:py-16 relative overflow-hidden"
-      style={{ background: 'linear-gradient(135deg,#eff6ff 0%,#dbeafe 40%,#eff6ff 100%)' }}
+      style={{ background: 'linear-gradient(135deg,#0d2244 0%,#0a1a34 40%,#0d2244 100%)' }}
     >
       {/* Cursor-follow multi-color glow */}
       <CursorSpotlight
@@ -60,9 +60,9 @@ export default function SEOProcess() {
 
       {/* Orbs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
-        style={{ background: 'var(--brand-gradient-glow)' }} />
+        style={{ background: 'var(--brand-gradient-glow-dark)' }} />
       <div className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'var(--brand-gradient-dots)', backgroundSize: '36px 36px' }} />
 
@@ -71,15 +71,15 @@ export default function SEOProcess() {
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-10 reveal px-6 sm:px-10">
           <div>
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 text-blue-600
-              border border-blue-200 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4 shadow-sm">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/5 text-blue-400
+              border border-white/10 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4 shadow-sm">
               <LineChart size={11} /> Our Workflow
             </span>
-            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-slate-900 leading-tight tracking-tight mb-2">
+            <h2 className="text-[clamp(23px,2.7vw,39px)] font-bold text-white leading-tight tracking-tight mb-2">
               Our Strategic SEO Workflow{' '}
               <span className="text-gradient-blue">for Long-Term Rankings</span>
             </h2>
-            <p className="text-[15px] text-slate-600 max-w-2xl mx-auto leading-[1.85]">
+            <p className="text-[15px] text-white/60 max-w-2xl mx-auto leading-[1.85]">
               We are the best SEO consultancy services in Thanjavur — our systematic SEO process is designed for long-term visibility and growth.
             </p>
           </div>
@@ -89,8 +89,8 @@ export default function SEOProcess() {
             <button
               type="button"
               onClick={() => { clearInterval(intervalRef.current); scroll(-1); startAuto() }}
-              className="w-10 h-10 rounded-full bg-white border border-blue-100 flex items-center justify-center
-                text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center
+                text-white/70 hover:bg-blue-600 hover:text-white hover:border-blue-600
                 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <ChevronLeft size={18} />
@@ -98,8 +98,8 @@ export default function SEOProcess() {
             <button
               type="button"
               onClick={() => { clearInterval(intervalRef.current); scroll(1); startAuto() }}
-              className="w-10 h-10 rounded-full bg-white border border-blue-100 flex items-center justify-center
-                text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center
+                text-white/70 hover:bg-blue-600 hover:text-white hover:border-blue-600
                 transition-all duration-300 shadow-sm hover:shadow-md"
             >
               <ChevronRight size={18} />
@@ -119,9 +119,9 @@ export default function SEOProcess() {
             {steps.map(({ num, icon: Icon, title, desc, color }, i) => (
               <div
                 key={num}
-                className="group snap-center flex-shrink-0 w-[calc(100vw-48px)] sm:w-[280px] bg-white/90 rounded-3xl border border-white
+                className="group snap-center flex-shrink-0 w-[calc(100vw-48px)] sm:w-[280px] bg-white/5 rounded-3xl border border-white/10
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-                style={{ boxShadow: '0 4px 20px rgba(37,99,235,0.07)' }}
+                style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.2)' }}
               >
                 {/* Top colored bar */}
                 <div className="h-1 w-full" style={{ background: 'var(--brand-gradient-soft)' }} />
@@ -145,10 +145,10 @@ export default function SEOProcess() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-[13px] font-bold text-slate-900 leading-snug mb-3">{title}</h3>
+                  <h3 className="text-[13px] font-bold text-white leading-snug mb-3">{title}</h3>
 
                   {/* Description */}
-                  <p className="text-[12.5px] text-slate-500 leading-[1.78]">{desc}</p>
+                  <p className="text-[12.5px] text-white/60 leading-[1.78]">{desc}</p>
                 </div>
 
                 {/* Step indicator at bottom */}
