@@ -196,10 +196,10 @@ export default function ContactMain() {
               <div className="relative flex-1" style={{ minHeight: '320px' }}>
                 <iframe
                   title="ARA Discover Marketing - Thanjavur Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0!2d79.1504!3d10.7730!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89cea453039%3A0xe113da9b1f632be4!2s67A%2C%20Giri%20Rd%2C%20Srinivasapuram%2C%20Thanjavur%2C%20Tamil%20Nadu%20613009!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1677645884342!2d79.12459417504202!3d10.785150989364219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab986fba40a6b%3A0xc60663bc6b08e04e!2sARA%20Discoveries%20Pvt%20Ltd%20%E2%80%93%20IT%20Solutions%20%26%20Digital%20Marketing!5e1!3m2!1sen!2sin!4v1785759174710!5m2!1sen!2sin"
                   width="100%" height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen loading="lazy" referrerPolicy="strict-origin-when-cross-origin"
                 />
               </div>
             </div>
