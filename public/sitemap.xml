@@ -5,71 +5,79 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/search-engine-optimization</loc>
+    <loc>https://discovermarketing.co/services/search-engine-optimization/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/social-media-marketing</loc>
+    <loc>https://discovermarketing.co/services/social-media-marketing/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/search-engine-marketing</loc>
+    <loc>https://discovermarketing.co/services/search-engine-marketing/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/graphic-design</loc>
+    <loc>https://discovermarketing.co/services/graphic-design/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/video-editing</loc>
+    <loc>https://discovermarketing.co/services/video-editing/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/other-digital-marketing-services</loc>
+    <loc>https://discovermarketing.co/services/other-digital-marketing-services/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/website-development</loc>
+    <loc>https://discovermarketing.co/services/website-development/</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/static-website-development</loc>
+    <loc>https://discovermarketing.co/services/static-website-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/dynamic-website-development</loc>
+    <loc>https://discovermarketing.co/services/dynamic-website-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/cms-website-development</loc>
+    <loc>https://discovermarketing.co/services/cms-website-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/ecommerce-website-development</loc>
+    <loc>https://discovermarketing.co/services/ecommerce-website-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/enterprise-website-development</loc>
+    <loc>https://discovermarketing.co/services/enterprise-website-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/web-application-development</loc>
+    <loc>https://discovermarketing.co/services/web-application-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/services/mobile-application-development</loc>
+    <loc>https://discovermarketing.co/services/mobile-application-development/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/about-us</loc>
+    <loc>https://discovermarketing.co/about-us/</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/price-details</loc>
+    <loc>https://discovermarketing.co/price-details/</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://discovermarketing.co/contact-us</loc>
+    <loc>https://discovermarketing.co/contact-us/</loc>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://discovermarketing.co/privacy-policy/</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://discovermarketing.co/terms-and-conditions/</loc>
+    <priority>0.3</priority>
   </url>
 </urlset>
