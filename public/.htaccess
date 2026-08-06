@@ -1,42 +1,91 @@
-# ── Security headers ──
+# =====================================================
+# Security Headers
+# =====================================================
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # frame-src is what allows the Google Maps embed on /contact-us/.
+  # Without it, iframes fall back to default-src 'self' and the map is blocked.
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com; frame-src 'self' https://www.google.com https://maps.google.com; frame-ancestors 'self'; upgrade-insecure-requests"
 </IfModule>
 
-# ── Custom error page ──
+# =====================================================
+# Custom 404
+# =====================================================
 ErrorDocument 404 /404.html
 
-# ── SPA routing fallback ──
-# Serve real files/folders (e.g. /services/search-engine-optimization/) as-is;
-# everything else falls back to index.html so React Router can handle it.
+# =====================================================
+# Rewrite Engine
+# =====================================================
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+
+  # -----------------------------------------------------
+  # Force HTTPS
+  # Second condition is required: Hostinger terminates TLS at the
+  # hcdn edge, so the origin may never see HTTPS=on. Without the
+  # X-Forwarded-Proto check this rule can loop forever.
+  # -----------------------------------------------------
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://discovermarketing.co%{REQUEST_URI} [R=301,L]
+
+  # -----------------------------------------------------
+  # Remove WWW
+  # -----------------------------------------------------
+  RewriteCond %{HTTP_HOST} ^www\.discovermarketing\.co$ [NC]
+  RewriteRule ^(.*)$ https://discovermarketing.co/$1 [R=301,L]
+
+  # -----------------------------------------------------
+  # Remove index.html
+  # -----------------------------------------------------
+  RewriteCond %{THE_REQUEST} /index\.html [NC]
+  RewriteRule ^index\.html$ https://discovermarketing.co/ [R=301,L]
+
+  # -----------------------------------------------------
+  # Force trailing slash
+  # -----------------------------------------------------
   RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.+)$ https://discovermarketing.co/$1/ [R=301,L]
+
+  # -----------------------------------------------------
+  # Existing files and folders served as-is
+  # (hashed assets, /services/<page>/, sitemap.xml, robots.txt)
+  # -----------------------------------------------------
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # -----------------------------------------------------
+  # React SPA fallback
+  # -----------------------------------------------------
+  RewriteRule ^ index.html [L]
 </IfModule>
 
-# ── Compression ──
+# =====================================================
+# Compression
+# =====================================================
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml
 </IfModule>
 
-# ── Caching ──
+# =====================================================
+# Browser Cache
+# =====================================================
 <IfModule mod_expires.c>
   ExpiresActive On
+  ExpiresByType text/html               "access plus 0 seconds"
   ExpiresByType text/css                "access plus 1 year"
   ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType image/webp              "access plus 1 year"
   ExpiresByType image/png               "access plus 1 year"
   ExpiresByType image/jpeg              "access plus 1 year"
-  ExpiresByType image/webp              "access plus 1 year"
   ExpiresByType image/svg+xml           "access plus 1 year"
-  ExpiresByType text/html               "access plus 0 seconds"
+  ExpiresByType font/woff2              "access plus 1 year"
 </IfModule>
 
 <IfModule mod_headers.c>
