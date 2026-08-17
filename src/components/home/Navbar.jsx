@@ -5,7 +5,7 @@ import {
   ArrowRight, Menu, X, ChevronDown,
   Search, Share2, TrendingUp, Palette, Video, Sparkles,
   Layout, Zap, Globe, ShoppingCart, Building2, Code2, Smartphone,
-  Info, Phone, Tag
+  Info, Phone, Tag, Briefcase
 } from 'lucide-react'
 
 const digitalMarketingItems = [
@@ -189,16 +189,19 @@ export default function Navbar() {
           <div className="absolute bottom-0 left-0 right-0 h-[2px]"
             style={{ background: 'linear-gradient(90deg,transparent 0%,#2563eb 30%,#6366f1 60%,transparent 100%)', opacity: scrolled ? 1 : 0, transition: 'opacity 0.3s' }} />
 
-          <div className="max-w-[1400px] mx-auto px-6 sm:px-10">
-            <div className="flex items-center justify-between h-[76px] gap-6">
+          {/* Between lg and xl the full link row + CTA needs more width than the
+              container has (1009px of content in 944px at 1024), so padding, logo
+              and gaps tighten in that band only — xl and up is unchanged. */}
+          <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-5 xl:px-10">
+            <div className="flex items-center justify-between h-[76px] gap-6 lg:gap-2 xl:gap-6">
 
               {/* Logo */}
               <Link to="/" className="flex items-center no-underline flex-shrink-0">
-                <img src={logoImg} alt="ARA Discover Marketing" className="h-16 w-auto object-contain mix-blend-multiply" />
+                <img src={logoImg} alt="ARA Discover Marketing" className="h-16 lg:h-12 xl:h-16 w-auto object-contain mix-blend-multiply" />
               </Link>
 
               {/* Desktop links */}
-              <div className="hidden lg:flex items-center gap-3 flex-1 justify-center">
+              <div className="hidden lg:flex items-center gap-3 lg:gap-1 xl:gap-3 flex-1 justify-center">
 
                 {/* Digital Marketing */}
                 <div
@@ -258,6 +261,11 @@ export default function Navbar() {
                 {/* Pricing */}
                 <Link to="/price-details" onClick={closeAll} className={`${headerItemCls(isActive('/price-details'))} ${headerTextCls}`}>
                   Pricing
+                </Link>
+
+                {/* Careers */}
+                <Link to="/careers" onClick={closeAll} className={`${headerItemCls(isActive('/careers'))} ${headerTextCls}`}>
+                  Careers
                 </Link>
 
                 {/* Contact Us */}
@@ -414,6 +422,14 @@ export default function Navbar() {
               transition-all duration-200 border
               ${isActive('/price-details') ? 'text-blue-600 bg-blue-50 border-blue-100' : 'text-slate-700 bg-white border-slate-100 hover:bg-slate-50'}`}>
             <Tag size={15} className="opacity-40" /> Pricing
+          </Link>
+
+          {/* Careers */}
+          <Link to="/careers" onClick={() => setOpen(false)}
+            className={`flex items-center gap-3 py-3.5 px-4 rounded-xl text-[14px] font-medium
+              transition-all duration-200 border
+              ${isActive('/careers') ? 'text-blue-600 bg-blue-50 border-blue-100' : 'text-slate-700 bg-white border-slate-100 hover:bg-slate-50'}`}>
+            <Briefcase size={15} className="opacity-40" /> Careers
           </Link>
 
           {/* Contact Us */}

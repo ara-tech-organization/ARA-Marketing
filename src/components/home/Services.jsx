@@ -1,11 +1,11 @@
-import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowRight, ArrowUpRight, TrendingUp, CheckCircle, Zap, Target, BarChart } from 'lucide-react'
+import { Search, Share2, BarChart2, Palette, Video, Layers, LayoutGrid, ArrowUpRight, CheckCircle, Zap, Target, BarChart } from 'lucide-react'
 
 const services = [
   {
     icon: Search,
     title: 'Search Engine Optimization (SEO)',
     desc: 'ARA offers AI-powered SEO services like On-Page SEO, Off-Page SEO, Technical SEO, Local SEO and Mobile SEO to improve search engine rankings and organic traffic. Our SEO experts deliver the best digital marketing services in Thanjavur and are among the best digital marketing companies in Thanjavur, optimizing websites for users and search engines.',
-    link: '/services/seo',
+    link: '/services/search-engine-optimization',
     tag: 'Most Popular',
   },
   {
@@ -18,7 +18,7 @@ const services = [
     icon: BarChart2,
     title: 'Search Engine Marketing (SEM)',
     desc: 'We are skilled professionals in Google Ads, PPC campaigns, Display Ads, YouTube Ads and Shopping Ads. Businesses looking for the top digital marketing services in Thanjavur rely on us to generate qualified leads through targeted paid advertising campaigns.',
-    link: '/services/google-ads',
+    link: '/services/search-engine-marketing',
   },
   {
     icon: Palette,
@@ -34,12 +34,14 @@ const services = [
   },
 ]
 
+/* Labels only — these have no pages of their own yet, so they render as plain
+   pills rather than links. Give them a `link` again once the pages exist. */
 const otherTags = [
-  { label: 'Email Marketing',          link: '/services/email-marketing' },
-  { label: 'Influencer Marketing',     link: '/services/influencer-marketing' },
-  { label: 'SMS Marketing',            link: '/services/sms-marketing' },
-  { label: 'Content Marketing',        link: '/services/content-marketing' },
-  { label: 'Lead Generation Campaigns', link: '/services/lead-generation' },
+  'Email Marketing',
+  'Influencer Marketing',
+  'SMS Marketing',
+  'Content Marketing',
+  'Lead Generation Campaigns',
 ]
 
 const introColumns = [
@@ -306,25 +308,16 @@ export default function Services() {
             <h3 className="text-[14px] font-bold">Other Marketing Services</h3>
           </div>
           <div className="flex flex-wrap gap-2 flex-1">
-            {otherTags.map(t => (
-              <a
-                key={t.label}
-                href={t.link}
+            {otherTags.map(label => (
+              <span
+                key={label}
                 className="px-4 py-1.5 bg-white border border-blue-200 rounded-full text-sm
-                  font-medium text-blue-700 transition-all duration-300
-                  hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:-translate-y-0.5"
+                  font-medium text-blue-700 cursor-default select-none"
               >
-                {t.label}
-              </a>
+                {label}
+              </span>
             ))}
           </div>
-          <a
-            href="/services"
-            className="inline-flex items-center gap-1.5 text-sm font-bold
-              text-blue-600 hover:gap-2.5 transition-all duration-300 whitespace-nowrap ml-auto"
-          >
-            View All <ArrowRight size={14} />
-          </a>
         </div>
 
         <p className="reveal text-center text-[14px] text-slate-500 leading-relaxed mt-8">

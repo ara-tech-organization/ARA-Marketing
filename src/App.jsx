@@ -4,6 +4,9 @@ import MouseEffect from './components/common/MouseEffect'
 import CursorGlow from './components/common/CursorGlow'
 import FloatingSocial from './components/common/FloatingSocial'
 import PromoPopup from './components/common/PromoPopup'
+/* Downscaled copy of Footer.webp (420px, ~20KB) — the full-size logo is 373KB,
+   far too heavy for something that has to paint on the very first frame. */
+import loaderLogo from './assets/Logo-loader.webp'
 import './index.css'
 
 const Home                = lazy(() => import('./pages/Home'))
@@ -23,6 +26,7 @@ const WebAppPage          = lazy(() => import('./pages/WebAppPage'))
 const MobileAppPage       = lazy(() => import('./pages/MobileAppPage'))
 const AboutUsPage         = lazy(() => import('./pages/AboutUsPage'))
 const ContactPage         = lazy(() => import('./pages/ContactPage'))
+const CareersPage         = lazy(() => import('./pages/CareersPage'))
 const ThankYouPage        = lazy(() => import('./pages/ThankYouPage'))
 const PriceDetailsPage    = lazy(() => import('./pages/PriceDetailsPage'))
 const PrivacyPolicyPage   = lazy(() => import('./pages/PrivacyPolicyPage'))
@@ -40,7 +44,27 @@ function ScrollToTop() {
 function PageLoader() {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-[#0d2244]">
-      <div className="w-10 h-10 rounded-full border-2 border-blue-600/30 border-t-blue-500 animate-spin" />
+      <div className="relative flex items-center justify-center
+        w-[230px] h-[230px] sm:w-[290px] sm:h-[290px] lg:w-[340px] lg:h-[340px]">
+
+        {/* Soft glow behind the mark — wider than the ring so it bleeds outward */}
+        <span className="absolute -inset-10 rounded-full pointer-events-none"
+          style={{ background: 'radial-gradient(circle, rgba(37,99,235,0.32) 0%, transparent 66%)' }} />
+
+        {/* Static track */}
+        <span className="absolute inset-0 rounded-full border-[3px] border-blue-600/20" />
+
+        {/* Spinning arc */}
+        <span className="absolute inset-0 rounded-full border-[3px] border-transparent border-t-blue-500 border-r-blue-400/50 animate-spin" />
+
+        {/* Counter-rotating inner arc */}
+        <span className="absolute inset-[22px] sm:inset-[28px] rounded-full border-2 border-transparent border-b-blue-300/45 animate-spin"
+          style={{ animationDirection: 'reverse', animationDuration: '2.4s' }} />
+
+        {/* Logo — stays upright while the rings turn */}
+        <img src={loaderLogo} alt="ARA Discover Marketing"
+          className="relative w-[150px] sm:w-[190px] lg:w-[224px] object-contain animate-hero-enter" />
+      </div>
     </div>
   )
 }
@@ -73,6 +97,7 @@ export default function App() {
           <Route path="/about-us"                                        element={<AboutUsPage />}   />
           <Route path="/price-details"                                   element={<PriceDetailsPage />} />
           <Route path="/contact-us"                                      element={<ContactPage />}   />
+          <Route path="/careers"                                         element={<CareersPage />}   />
           <Route path="/thank-you"                                       element={<ThankYouPage />}   />
           <Route path="/privacy-policy"                                  element={<PrivacyPolicyPage />}   />
           <Route path="/terms-and-conditions"                            element={<TermsConditionsPage />} />

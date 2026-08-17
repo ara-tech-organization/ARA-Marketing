@@ -35,6 +35,7 @@ const company = [
   { label: 'Home',                href: '/' },
   { label: 'About Us',            href: '/about-us' },
   { label: 'Contact Us',          href: '/contact-us' },
+  { label: 'Careers',             href: '/careers' },
   { label: 'Privacy Policy',      href: '/privacy-policy' },
   { label: 'Terms & Conditions',  href: '/terms-and-conditions' },
 ]

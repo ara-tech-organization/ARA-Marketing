@@ -47,9 +47,16 @@ ErrorDocument 404 /404.html
 
   # -----------------------------------------------------
   # Force trailing slash
+  #
+  # The last condition skips anything that looks like a file (has an
+  # extension). Without it, an asset that is missing — mid-upload, say —
+  # gets 301'd to /main.js/ and then 404s, which breaks the whole module
+  # graph and white-screens the app. Excluding them makes a missing asset
+  # fail as a plain 404 that is obvious in the network tab.
   # -----------------------------------------------------
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
   RewriteRule ^(.+)$ https://discovermarketing.co/$1/ [R=301,L]
 
   # -----------------------------------------------------
