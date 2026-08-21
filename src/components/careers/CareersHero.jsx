@@ -31,6 +31,9 @@ export default function CareersHero() {
   })
 
   const openRoles = openings.filter(j => j.status === 'hiring')
+  /* Every status light on this page follows the data — with no open role the
+     green "we're hiring" signal would be a claim the page cannot back up. */
+  const isHiring  = openRoles.length > 0
 
   const facts = [
     { icon: Briefcase, value: String(openRoles.length).padStart(2, '0'), label: openRoles.length === 1 ? 'Open Role' : 'Open Roles' },
@@ -82,10 +85,12 @@ export default function CareersHero() {
               text-[11px] font-bold uppercase tracking-[0.18em] text-blue-100 animate-hero-enter"
               style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
               <span className="relative flex w-2 h-2">
-                <span className="absolute inline-flex w-full h-full rounded-full bg-green-400 animate-pulse-dot" />
-                <span className="relative inline-flex w-2 h-2 rounded-full bg-green-400" />
+                {isHiring && (
+                  <span className="absolute inline-flex w-full h-full rounded-full bg-green-400 animate-pulse-dot" />
+                )}
+                <span className={`relative inline-flex w-2 h-2 rounded-full ${isHiring ? 'bg-green-400' : 'bg-red-500'}`} />
               </span>
-              We&apos;re Hiring in Thanjavur
+              {isHiring ? "We're Hiring in Thanjavur" : 'Not Hiring Right Now'}
             </span>
 
             {/* The break is explicit so the company name always holds one line —
@@ -164,8 +169,8 @@ export default function CareersHero() {
             <div className="flex items-center gap-4 mb-6">
               <span className="inline-flex items-center gap-2.5 text-[11px] font-bold uppercase
                 tracking-[0.16em] text-white/60 whitespace-nowrap">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse-dot" />
-                Now Hiring
+                <span className={`w-1.5 h-1.5 rounded-full ${isHiring ? 'bg-green-400 animate-pulse-dot' : 'bg-red-500'}`} />
+                {isHiring ? 'Now Hiring' : 'Current Openings'}
               </span>
               <span className="flex-1 h-px" style={{ background: 'linear-gradient(90deg,transparent,rgba(255,255,255,0.16),transparent)' }} />
               <button type="button" onClick={() => scrollTo('current-openings')}

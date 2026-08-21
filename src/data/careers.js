@@ -21,7 +21,7 @@ export const openings = [
     location:   'Thanjavur',
     experience: '2+ Years',
     type:       'Full Time',
-    status:     'hiring',
+    status:     'closed',
     desc:       'Plan, launch and optimise paid campaigns across Google Ads and Meta Ads to drive qualified leads and measurable ROI for our clients.',
   },
   {
